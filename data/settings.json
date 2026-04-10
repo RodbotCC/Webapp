@@ -1,0 +1,45 @@
+{
+  "ai": {
+    "provider": "openai",
+    "openai_api_key": "",
+    "model": "gpt-5.4-nano",
+    "models_available": [
+      "gpt-5.4-nano",
+      "gpt-4.1-nano",
+      "gpt-4.1-mini",
+      "gpt-4.1",
+      "gpt-5-mini",
+      "gpt-5"
+    ],
+    "enabled": true
+  },
+  "general": {
+    "auto_sync_interval_minutes": 15,
+    "theme": "light"
+  },
+  "operator": {
+    "name": "Andre Raw",
+    "role": "Sales Representative",
+    "email": "",
+    "phone": ""
+  },
+  "crm": {
+    "close_user_id": "",
+    "verification_compare_static_pipeline": true
+  },
+  "clickup": {
+    "workspace_id": "",
+    "list_id": "",
+    "assignee_email": "",
+    "enabled": false
+  },
+  "messaging": {
+    "email_from": "",
+    "sms_from": "",
+    "enabled": false
+  },
+  "_meta": {
+    "version": 2,
+    "last_updated": "2026-04-10T01:22:41.921Z"
+  }
+}

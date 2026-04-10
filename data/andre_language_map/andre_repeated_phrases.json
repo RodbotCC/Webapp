@@ -1,0 +1,2502 @@
+[
+  {
+    "phrase": "all right",
+    "count": 228,
+    "token_count": 2
+  },
+  {
+    "phrase": "a gente",
+    "count": 205,
+    "token_count": 2
+  },
+  {
+    "phrase": "going to",
+    "count": 152,
+    "token_count": 2
+  },
+  {
+    "phrase": "for you",
+    "count": 110,
+    "token_count": 2
+  },
+  {
+    "phrase": "que voce",
+    "count": 106,
+    "token_count": 2
+  },
+  {
+    "phrase": "you have",
+    "count": 96,
+    "token_count": 2
+  },
+  {
+    "phrase": "eu vou",
+    "count": 87,
+    "token_count": 2
+  },
+  {
+    "phrase": "over here",
+    "count": 85,
+    "token_count": 2
+  },
+  {
+    "phrase": "to be",
+    "count": 83,
+    "token_count": 2
+  },
+  {
+    "phrase": "e o",
+    "count": 74,
+    "token_count": 2
+  },
+  {
+    "phrase": "this is",
+    "count": 72,
+    "token_count": 2
+  },
+  {
+    "phrase": "have a",
+    "count": 71,
+    "token_count": 2
+  },
+  {
+    "phrase": "para voce",
+    "count": 69,
+    "token_count": 2
+  },
+  {
+    "phrase": "que eu",
+    "count": 68,
+    "token_count": 2
+  },
+  {
+    "phrase": "if you",
+    "count": 68,
+    "token_count": 2
+  },
+  {
+    "phrase": "me a",
+    "count": 67,
+    "token_count": 2
+  },
+  {
+    "phrase": "let me",
+    "count": 62,
+    "token_count": 2
+  },
+  {
+    "phrase": "i'm gonna",
+    "count": 62,
+    "token_count": 2
+  },
+  {
+    "phrase": "going to be",
+    "count": 59,
+    "token_count": 3
+  },
+  {
+    "phrase": "to you",
+    "count": 57,
+    "token_count": 2
+  },
+  {
+    "phrase": "so you",
+    "count": 57,
+    "token_count": 2
+  },
+  {
+    "phrase": "you to",
+    "count": 57,
+    "token_count": 2
+  },
+  {
+    "phrase": "i can",
+    "count": 57,
+    "token_count": 2
+  },
+  {
+    "phrase": "pra voce",
+    "count": 56,
+    "token_count": 2
+  },
+  {
+    "phrase": "you know",
+    "count": 56,
+    "token_count": 2
+  },
+  {
+    "phrase": "we can",
+    "count": 56,
+    "token_count": 2
+  },
+  {
+    "phrase": "that you",
+    "count": 56,
+    "token_count": 2
+  },
+  {
+    "phrase": "you can",
+    "count": 54,
+    "token_count": 2
+  },
+  {
+    "phrase": "on the",
+    "count": 52,
+    "token_count": 2
+  },
+  {
+    "phrase": "so i",
+    "count": 50,
+    "token_count": 2
+  },
+  {
+    "phrase": "you guys",
+    "count": 49,
+    "token_count": 2
+  },
+  {
+    "phrase": "o que",
+    "count": 48,
+    "token_count": 2
+  },
+  {
+    "phrase": "for you to",
+    "count": 47,
+    "token_count": 3
+  },
+  {
+    "phrase": "the best",
+    "count": 46,
+    "token_count": 2
+  },
+  {
+    "phrase": "i have",
+    "count": 45,
+    "token_count": 2
+  },
+  {
+    "phrase": "que a",
+    "count": 44,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce vai",
+    "count": 43,
+    "token_count": 2
+  },
+  {
+    "phrase": "text message",
+    "count": 43,
+    "token_count": 2
+  },
+  {
+    "phrase": "e ai",
+    "count": 43,
+    "token_count": 2
+  },
+  {
+    "phrase": "i see",
+    "count": 43,
+    "token_count": 2
+  },
+  {
+    "phrase": "you a",
+    "count": 43,
+    "token_count": 2
+  },
+  {
+    "phrase": "e a",
+    "count": 42,
+    "token_count": 2
+  },
+  {
+    "phrase": "is andre",
+    "count": 42,
+    "token_count": 2
+  },
+  {
+    "phrase": "we have",
+    "count": 42,
+    "token_count": 2
+  },
+  {
+    "phrase": "give me",
+    "count": 41,
+    "token_count": 2
+  },
+  {
+    "phrase": "this is andre",
+    "count": 41,
+    "token_count": 3
+  },
+  {
+    "phrase": "talk to",
+    "count": 41,
+    "token_count": 2
+  },
+  {
+    "phrase": "eu te",
+    "count": 41,
+    "token_count": 2
+  },
+  {
+    "phrase": "que a gente",
+    "count": 38,
+    "token_count": 3
+  },
+  {
+    "phrase": "que e",
+    "count": 38,
+    "token_count": 2
+  },
+  {
+    "phrase": "a call",
+    "count": 38,
+    "token_count": 2
+  },
+  {
+    "phrase": "sent you",
+    "count": 38,
+    "token_count": 2
+  },
+  {
+    "phrase": "com o",
+    "count": 36,
+    "token_count": 2
+  },
+  {
+    "phrase": "do you",
+    "count": 36,
+    "token_count": 2
+  },
+  {
+    "phrase": "to the",
+    "count": 36,
+    "token_count": 2
+  },
+  {
+    "phrase": "to have",
+    "count": 36,
+    "token_count": 2
+  },
+  {
+    "phrase": "the way",
+    "count": 35,
+    "token_count": 2
+  },
+  {
+    "phrase": "i sent",
+    "count": 35,
+    "token_count": 2
+  },
+  {
+    "phrase": "tell you",
+    "count": 34,
+    "token_count": 2
+  },
+  {
+    "phrase": "ai voce",
+    "count": 33,
+    "token_count": 2
+  },
+  {
+    "phrase": "help you",
+    "count": 33,
+    "token_count": 2
+  },
+  {
+    "phrase": "give me a",
+    "count": 33,
+    "token_count": 3
+  },
+  {
+    "phrase": "per person",
+    "count": 33,
+    "token_count": 2
+  },
+  {
+    "phrase": "i sent you",
+    "count": 33,
+    "token_count": 3
+  },
+  {
+    "phrase": "ta bom",
+    "count": 32,
+    "token_count": 2
+  },
+  {
+    "phrase": "are you",
+    "count": 32,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce tem",
+    "count": 32,
+    "token_count": 2
+  },
+  {
+    "phrase": "so i can",
+    "count": 32,
+    "token_count": 3
+  },
+  {
+    "phrase": "send you",
+    "count": 32,
+    "token_count": 2
+  },
+  {
+    "phrase": "want to",
+    "count": 31,
+    "token_count": 2
+  },
+  {
+    "phrase": "vou te",
+    "count": 30,
+    "token_count": 2
+  },
+  {
+    "phrase": "eu ja",
+    "count": 30,
+    "token_count": 2
+  },
+  {
+    "phrase": "of the",
+    "count": 30,
+    "token_count": 2
+  },
+  {
+    "phrase": "a quote",
+    "count": 30,
+    "token_count": 2
+  },
+  {
+    "phrase": "keto catering",
+    "count": 30,
+    "token_count": 2
+  },
+  {
+    "phrase": "quando voce",
+    "count": 29,
+    "token_count": 2
+  },
+  {
+    "phrase": "se voce",
+    "count": 29,
+    "token_count": 2
+  },
+  {
+    "phrase": "a great",
+    "count": 29,
+    "token_count": 2
+  },
+  {
+    "phrase": "once you",
+    "count": 29,
+    "token_count": 2
+  },
+  {
+    "phrase": "from conquito",
+    "count": 29,
+    "token_count": 2
+  },
+  {
+    "phrase": "tudo bem",
+    "count": 29,
+    "token_count": 2
+  },
+  {
+    "phrase": "it's a",
+    "count": 29,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce pode",
+    "count": 28,
+    "token_count": 2
+  },
+  {
+    "phrase": "to talk",
+    "count": 28,
+    "token_count": 2
+  },
+  {
+    "phrase": "me a call",
+    "count": 28,
+    "token_count": 3
+  },
+  {
+    "phrase": "give me a call",
+    "count": 28,
+    "token_count": 4
+  },
+  {
+    "phrase": "it's going",
+    "count": 28,
+    "token_count": 2
+  },
+  {
+    "phrase": "give you",
+    "count": 28,
+    "token_count": 2
+  },
+  {
+    "phrase": "like you",
+    "count": 28,
+    "token_count": 2
+  },
+  {
+    "phrase": "so you can",
+    "count": 28,
+    "token_count": 3
+  },
+  {
+    "phrase": "e que",
+    "count": 27,
+    "token_count": 2
+  },
+  {
+    "phrase": "com a",
+    "count": 27,
+    "token_count": 2
+  },
+  {
+    "phrase": "por pessoa",
+    "count": 27,
+    "token_count": 2
+  },
+  {
+    "phrase": "to know",
+    "count": 27,
+    "token_count": 2
+  },
+  {
+    "phrase": "our food",
+    "count": 27,
+    "token_count": 2
+  },
+  {
+    "phrase": "it's going to",
+    "count": 27,
+    "token_count": 3
+  },
+  {
+    "phrase": "in the",
+    "count": 27,
+    "token_count": 2
+  },
+  {
+    "phrase": "o que voce",
+    "count": 26,
+    "token_count": 3
+  },
+  {
+    "phrase": "great day",
+    "count": 26,
+    "token_count": 2
+  },
+  {
+    "phrase": "a text",
+    "count": 26,
+    "token_count": 2
+  },
+  {
+    "phrase": "deixa eu",
+    "count": 26,
+    "token_count": 2
+  },
+  {
+    "phrase": "you the",
+    "count": 26,
+    "token_count": 2
+  },
+  {
+    "phrase": "to get",
+    "count": 26,
+    "token_count": 2
+  },
+  {
+    "phrase": "a tasting",
+    "count": 26,
+    "token_count": 2
+  },
+  {
+    "phrase": "did you",
+    "count": 26,
+    "token_count": 2
+  },
+  {
+    "phrase": "e uma",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "o seu",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "ou menos",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "e mail",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "a text message",
+    "count": 25,
+    "token_count": 3
+  },
+  {
+    "phrase": "send me",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "you say",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "with the",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "and you",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "you're going",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "with you",
+    "count": 25,
+    "token_count": 2
+  },
+  {
+    "phrase": "mais ou",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "mais ou menos",
+    "count": 24,
+    "token_count": 3
+  },
+  {
+    "phrase": "you need",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "ai eu",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "and i",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "best way",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "nos temos",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "going to have",
+    "count": 24,
+    "token_count": 3
+  },
+  {
+    "phrase": "like you know",
+    "count": 24,
+    "token_count": 3
+  },
+  {
+    "phrase": "you're going to",
+    "count": 24,
+    "token_count": 3
+  },
+  {
+    "phrase": "for the",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "i mean",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "gonna send",
+    "count": 24,
+    "token_count": 2
+  },
+  {
+    "phrase": "como e",
+    "count": 23,
+    "token_count": 2
+  },
+  {
+    "phrase": "and i'll",
+    "count": 23,
+    "token_count": 2
+  },
+  {
+    "phrase": "conquito catering",
+    "count": 23,
+    "token_count": 2
+  },
+  {
+    "phrase": "from conquito catering",
+    "count": 23,
+    "token_count": 3
+  },
+  {
+    "phrase": "the best way",
+    "count": 23,
+    "token_count": 3
+  },
+  {
+    "phrase": "up with",
+    "count": 23,
+    "token_count": 2
+  },
+  {
+    "phrase": "to come",
+    "count": 23,
+    "token_count": 2
+  },
+  {
+    "phrase": "e muito",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "gente vai",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "a gente vai",
+    "count": 22,
+    "token_count": 3
+  },
+  {
+    "phrase": "make sure",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "you have a",
+    "count": 22,
+    "token_count": 3
+  },
+  {
+    "phrase": "voce me",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "eu nao",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "eu to",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "a little",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "if i",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "let's say",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "i'm gonna send",
+    "count": 22,
+    "token_count": 3
+  },
+  {
+    "phrase": "voce esta",
+    "count": 22,
+    "token_count": 2
+  },
+  {
+    "phrase": "o rodrigo",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "qualquer coisa",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "vou colocar",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "need to",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "to talk to",
+    "count": 21,
+    "token_count": 3
+  },
+  {
+    "phrase": "when you",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "e um",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "talk to you",
+    "count": 21,
+    "token_count": 3
+  },
+  {
+    "phrase": "little bit",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "a little bit",
+    "count": 21,
+    "token_count": 3
+  },
+  {
+    "phrase": "way possible",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "best way possible",
+    "count": 21,
+    "token_count": 3
+  },
+  {
+    "phrase": "get to",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "by the",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "andre from",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "to make",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "come up",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "come up with",
+    "count": 21,
+    "token_count": 3
+  },
+  {
+    "phrase": "you get",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "kind of",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "as you",
+    "count": 21,
+    "token_count": 2
+  },
+  {
+    "phrase": "o pagamento",
+    "count": 20,
+    "token_count": 2
+  },
+  {
+    "phrase": "como e que",
+    "count": 20,
+    "token_count": 3
+  },
+  {
+    "phrase": "we'll talk",
+    "count": 20,
+    "token_count": 2
+  },
+  {
+    "phrase": "do you have",
+    "count": 20,
+    "token_count": 3
+  },
+  {
+    "phrase": "the best way possible",
+    "count": 20,
+    "token_count": 4
+  },
+  {
+    "phrase": "try to",
+    "count": 20,
+    "token_count": 2
+  },
+  {
+    "phrase": "you come",
+    "count": 20,
+    "token_count": 2
+  },
+  {
+    "phrase": "say yes",
+    "count": 20,
+    "token_count": 2
+  },
+  {
+    "phrase": "i don't",
+    "count": 20,
+    "token_count": 2
+  },
+  {
+    "phrase": "gonna send you",
+    "count": 20,
+    "token_count": 3
+  },
+  {
+    "phrase": "i'm gonna send you",
+    "count": 20,
+    "token_count": 4
+  },
+  {
+    "phrase": "can you",
+    "count": 20,
+    "token_count": 2
+  },
+  {
+    "phrase": "i'm going",
+    "count": 20,
+    "token_count": 2
+  },
+  {
+    "phrase": "i'm going to",
+    "count": 20,
+    "token_count": 3
+  },
+  {
+    "phrase": "para o",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "as pessoas",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "fazer o",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "have it",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "978 381",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "381 1212",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "978 381 1212",
+    "count": 19,
+    "token_count": 3
+  },
+  {
+    "phrase": "andre calling",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "is andre calling",
+    "count": 19,
+    "token_count": 3
+  },
+  {
+    "phrase": "this is andre calling",
+    "count": 19,
+    "token_count": 4
+  },
+  {
+    "phrase": "love to",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "you and",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "so we",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "by the way",
+    "count": 19,
+    "token_count": 3
+  },
+  {
+    "phrase": "a lot",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "the tasting",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "have the",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "com keto",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "vai ter",
+    "count": 19,
+    "token_count": 2
+  },
+  {
+    "phrase": "100 pessoas",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "the quote",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "send me a",
+    "count": 18,
+    "token_count": 3
+  },
+  {
+    "phrase": "melhor forma",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce e",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "i would",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "you the best",
+    "count": 18,
+    "token_count": 3
+  },
+  {
+    "phrase": "you the best way",
+    "count": 18,
+    "token_count": 4
+  },
+  {
+    "phrase": "you the best way possible",
+    "count": 18,
+    "token_count": 5
+  },
+  {
+    "phrase": "food and",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "to have a",
+    "count": 18,
+    "token_count": 3
+  },
+  {
+    "phrase": "to a",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "com keto catering",
+    "count": 18,
+    "token_count": 3
+  },
+  {
+    "phrase": "is that",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "to me",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "you want",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "from com",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "vamos dizer",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "and we'll",
+    "count": 18,
+    "token_count": 2
+  },
+  {
+    "phrase": "e voce",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "a comida",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "te mandar",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "eu vou te",
+    "count": 17,
+    "token_count": 3
+  },
+  {
+    "phrase": "that's awesome",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "as soon",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "soon as",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "as soon as",
+    "count": 17,
+    "token_count": 3
+  },
+  {
+    "phrase": "have any",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "if you have",
+    "count": 17,
+    "token_count": 3
+  },
+  {
+    "phrase": "talk soon",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "da melhor",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "pode ser",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "entao eu",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "ai a",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "tipos de",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "for a",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "i believe",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "it's going to be",
+    "count": 17,
+    "token_count": 4
+  },
+  {
+    "phrase": "and the",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "you said",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "that you're",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "on a",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "you say yes",
+    "count": 17,
+    "token_count": 3
+  },
+  {
+    "phrase": "have to",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "look at",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "so that",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "to see",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "you make",
+    "count": 17,
+    "token_count": 2
+  },
+  {
+    "phrase": "uma coisa",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "a great day",
+    "count": 16,
+    "token_count": 3
+  },
+  {
+    "phrase": "i just",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "like a",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "is the",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "da melhor forma",
+    "count": 16,
+    "token_count": 3
+  },
+  {
+    "phrase": "de uma",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "feijao tropeiro",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "vou fazer",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "ai a gente",
+    "count": 16,
+    "token_count": 3
+  },
+  {
+    "phrase": "aqui e",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "i'll tell",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "i'll tell you",
+    "count": 16,
+    "token_count": 3
+  },
+  {
+    "phrase": "right so",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "all right so",
+    "count": 16,
+    "token_count": 3
+  },
+  {
+    "phrase": "would be",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "you would",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "is going",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "it's 35",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "yes to",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "say yes to",
+    "count": 16,
+    "token_count": 3
+  },
+  {
+    "phrase": "one of",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "i know",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "on your",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "from com keto",
+    "count": 16,
+    "token_count": 3
+  },
+  {
+    "phrase": "from com keto catering",
+    "count": 16,
+    "token_count": 4
+  },
+  {
+    "phrase": "call you",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "molho madeira",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "acho que",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "tipo de",
+    "count": 16,
+    "token_count": 2
+  },
+  {
+    "phrase": "gente pode",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce ta",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "nao tem",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "vou te mandar",
+    "count": 15,
+    "token_count": 3
+  },
+  {
+    "phrase": "para a",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "te falar",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "coisa que",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "how about",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "you have any",
+    "count": 15,
+    "token_count": 3
+  },
+  {
+    "phrase": "can i",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "de carne",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "get to know",
+    "count": 15,
+    "token_count": 3
+  },
+  {
+    "phrase": "trying to",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "andre here",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "going to have a",
+    "count": 15,
+    "token_count": 4
+  },
+  {
+    "phrase": "have you",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "is going to",
+    "count": 15,
+    "token_count": 3
+  },
+  {
+    "phrase": "35 per",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "35 per person",
+    "count": 15,
+    "token_count": 3
+  },
+  {
+    "phrase": "you say yes to",
+    "count": 15,
+    "token_count": 4
+  },
+  {
+    "phrase": "right i'm",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "all right i'm",
+    "count": 15,
+    "token_count": 3
+  },
+  {
+    "phrase": "take a",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "a look",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "take a look",
+    "count": 15,
+    "token_count": 3
+  },
+  {
+    "phrase": "give you a",
+    "count": 15,
+    "token_count": 3
+  },
+  {
+    "phrase": "dia 15",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "e eu",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "o preco",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "pure de",
+    "count": 15,
+    "token_count": 2
+  },
+  {
+    "phrase": "nao e",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "os aperitivos",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "a gente pode",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "quando a",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "gente faz",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "quando a gente",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "a gente faz",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "vai ser",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "o nosso",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "e a gente",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "a data",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "a couple",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "i'll send",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "we'll talk soon",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "you should",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "if you need",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "voce falou",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "com voce",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "me pediu",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "calling you",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "you could",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "so we can",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "ate mais",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "have a tasting",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "here from",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "andre here from",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "with a",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "come to",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "chicken salad",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "just now",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "the bill",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "the food",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "send you a",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "all the",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "for us",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "see that",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "ao molho",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "ao molho madeira",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "deixa eu te",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "tell me",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "and i'm",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "i got",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce vai ter",
+    "count": 14,
+    "token_count": 3
+  },
+  {
+    "phrase": "everything is",
+    "count": 14,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce nao",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce ja",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "tem que",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "todos os",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "send it",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "it to",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "you need to",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "vamos la",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "pode colocar",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "eu vou fazer",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "frango com",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "com bacon",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "frango com bacon",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "would love",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "time for",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "i was",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "great food",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "you see",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "in a",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "you what",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "to say",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "tell you what",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "take care",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "catch you",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "we're going",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "we're going to",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "hold on",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "it's 35 per",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "it's 35 per person",
+    "count": 13,
+    "token_count": 4
+  },
+  {
+    "phrase": "towards the",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "at the",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "care of",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "is andre from",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "andre from conquito",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "this is andre from",
+    "count": 13,
+    "token_count": 4
+  },
+  {
+    "phrase": "go to",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "you right",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "us to",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "right then",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "i see that",
+    "count": 13,
+    "token_count": 3
+  },
+  {
+    "phrase": "to go",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "ou seja",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "some of",
+    "count": 13,
+    "token_count": 2
+  },
+  {
+    "phrase": "um pouquinho",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "forma que",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "alguma coisa",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "o dia",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "porque ai",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "assim que",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "no worries",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "me a text",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "send me a text",
+    "count": 12,
+    "token_count": 4
+  },
+  {
+    "phrase": "voce quer",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "andre aqui",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "de queijo",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "voce ver",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "i would love",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "would love to",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "best time",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "the best time",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "get the",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "right all",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "all right all",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "right all right",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "all right all right",
+    "count": 12,
+    "token_count": 4
+  },
+  {
+    "phrase": "about the",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "know our",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "come on",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "and everything",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "brazilian barbecue",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "so it's",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "towards the bill",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "quote for",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "you just",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "can do",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "thank you",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "you at",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "the event",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "right i'm gonna",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "all right i'm gonna",
+    "count": 12,
+    "token_count": 4
+  },
+  {
+    "phrase": "many people",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "be the",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "that we",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "for us to",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "here and",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "then and",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "and there",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "right then and",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "then and there",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "right then and there",
+    "count": 12,
+    "token_count": 4
+  },
+  {
+    "phrase": "i'm sorry",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "ai e",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "the 15th",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "que nao",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "bife ao",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "bife ao molho",
+    "count": 12,
+    "token_count": 3
+  },
+  {
+    "phrase": "bife ao molho madeira",
+    "count": 12,
+    "token_count": 4
+  },
+  {
+    "phrase": "in touch",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "eu tenho",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "and cheese",
+    "count": 12,
+    "token_count": 2
+  },
+  {
+    "phrase": "de repente",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "just give",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "just give me",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "any questions",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "okay so",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "need to talk",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "you need to talk",
+    "count": 11,
+    "token_count": 4
+  },
+  {
+    "phrase": "me a text message",
+    "count": 11,
+    "token_count": 4
+  },
+  {
+    "phrase": "send me a text message",
+    "count": 11,
+    "token_count": 5
+  },
+  {
+    "phrase": "voce pode colocar",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "o seguinte",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "por favor",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "que e o",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "i would love to",
+    "count": 11,
+    "token_count": 4
+  },
+  {
+    "phrase": "have a great",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "best time for",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "the best time for",
+    "count": 11,
+    "token_count": 4
+  },
+  {
+    "phrase": "de novo",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "i'll tell you what",
+    "count": 11,
+    "token_count": 4
+  },
+  {
+    "phrase": "up with a",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "you come to",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "guys are",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "you guys are",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "that's like",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "at 2pm",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "yes to a",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "to a quote",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "say yes to a",
+    "count": 11,
+    "token_count": 4
+  },
+  {
+    "phrase": "yes to a quote",
+    "count": 11,
+    "token_count": 4
+  },
+  {
+    "phrase": "you say yes to a",
+    "count": 11,
+    "token_count": 5
+  },
+  {
+    "phrase": "say yes to a quote",
+    "count": 11,
+    "token_count": 5
+  },
+  {
+    "phrase": "lot of",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "of different",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "a lot of",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "quote for you",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "take care of",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "did i",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "i catch",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "at a",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "did i catch",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "i catch you",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "did i catch you",
+    "count": 11,
+    "token_count": 4
+  },
+  {
+    "phrase": "at all",
+    "count": 11,
+    "token_count": 2
+  },
+  {
+    "phrase": "sent you a",
+    "count": 11,
+    "token_count": 3
+  },
+  {
+    "phrase": "can help",
+    "count": 11,
+    "token_count": 2
+  }
+]

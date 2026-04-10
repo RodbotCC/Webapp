@@ -1,0 +1,236 @@
+{
+  "generated_at_utc": "2026-04-09T02:25:10.833614+00:00",
+  "opener_rows": 110,
+  "closer_rows": 110,
+  "question_rows": 623,
+  "pricing_rows": 206,
+  "qualification_rows": 196,
+  "bilingual_rows": 1319,
+  "training_jsonl_rows": 5101,
+  "top_openers": [
+    [
+      "Andre konkido catering.",
+      4
+    ],
+    [
+      "Andre kom keto catering.",
+      3
+    ],
+    [
+      "Andre.",
+      2
+    ],
+    [
+      "Andre from com keto catering.",
+      2
+    ],
+    [
+      "Hello.",
+      2
+    ],
+    [
+      "Oi, Ana Cl\u00e1udia, boa noite.",
+      1
+    ],
+    [
+      "Great morning, Matt.",
+      1
+    ],
+    [
+      "This is andre with comqito.",
+      1
+    ],
+    [
+      "Opa,",
+      1
+    ],
+    [
+      "Al\u00f4, boa noite, Marcelo?",
+      1
+    ],
+    [
+      "Hey, Jessica, this is Andre calling you from Conquito Catering.",
+      1
+    ],
+    [
+      "Hey Fiona, this is Andre Collin from Conquito Catering.",
+      1
+    ],
+    [
+      "Andr\u00e9, do Comquito.",
+      1
+    ],
+    [
+      "Hey, Glaziani.",
+      1
+    ],
+    [
+      "Hey, Bruce.",
+      1
+    ]
+  ],
+  "top_closers": [
+    [
+      "Bye.",
+      16
+    ],
+    [
+      "At\u00e9 mais.",
+      8
+    ],
+    [
+      "It.",
+      6
+    ],
+    [
+      "Tchau.",
+      5
+    ],
+    [
+      "Let's talk.",
+      3
+    ],
+    [
+      "Talk to you soon.",
+      3
+    ],
+    [
+      "Great day to you.",
+      2
+    ],
+    [
+      "We'll talk soon.",
+      2
+    ],
+    [
+      "Bye bye.",
+      2
+    ],
+    [
+      "T\u00e1, tchau.",
+      1
+    ],
+    [
+      "Thanks.",
+      1
+    ],
+    [
+      "Obrigado.",
+      1
+    ],
+    [
+      "Um abra\u00e7o, tchau.",
+      1
+    ],
+    [
+      "Um bom dia.",
+      1
+    ],
+    [
+      "Great day now.",
+      1
+    ]
+  ],
+  "top_question_templates": [
+    {
+      "normalized_question": "okay",
+      "count": 19,
+      "example_question": "Okay?"
+    },
+    {
+      "normalized_question": "how about yourself",
+      "count": 6,
+      "example_question": "How about yourself?"
+    },
+    {
+      "normalized_question": "right",
+      "count": 6,
+      "example_question": "Right?"
+    },
+    {
+      "normalized_question": "all right",
+      "count": 6,
+      "example_question": "All right?"
+    },
+    {
+      "normalized_question": "tudo bem",
+      "count": 5,
+      "example_question": "Tudo bem?"
+    },
+    {
+      "normalized_question": "ta bom",
+      "count": 5,
+      "example_question": "T\u00e1 bom?"
+    },
+    {
+      "normalized_question": "is that okay",
+      "count": 5,
+      "example_question": "Is that okay?"
+    },
+    {
+      "normalized_question": "may i give you a suggestion",
+      "count": 4,
+      "example_question": "May I give you a suggestion?"
+    },
+    {
+      "normalized_question": "how does that sound",
+      "count": 4,
+      "example_question": "How does that sound?"
+    },
+    {
+      "normalized_question": "pode ser",
+      "count": 3,
+      "example_question": "Pode ser?"
+    },
+    {
+      "normalized_question": "how's it going man",
+      "count": 3,
+      "example_question": "How's it going, man?"
+    },
+    {
+      "normalized_question": "how's it going",
+      "count": 3,
+      "example_question": "How's it going?"
+    },
+    {
+      "normalized_question": "can i help you",
+      "count": 3,
+      "example_question": "Can I help you?"
+    },
+    {
+      "normalized_question": "are you brazilian",
+      "count": 3,
+      "example_question": "Are you Brazilian?"
+    },
+    {
+      "normalized_question": "do you know fitchburg",
+      "count": 2,
+      "example_question": "Do you know Fitchburg?"
+    },
+    {
+      "normalized_question": "e o andre aqui da comiqueto",
+      "count": 2,
+      "example_question": "\u00c9 o Andr\u00e9 aqui da Comiqueto?"
+    },
+    {
+      "normalized_question": "did i catch you at a bad time",
+      "count": 2,
+      "example_question": "Did I catch you at a bad time?"
+    },
+    {
+      "normalized_question": "ta",
+      "count": 2,
+      "example_question": "T\u00e1?"
+    },
+    {
+      "normalized_question": "did you have a good weekend",
+      "count": 2,
+      "example_question": "Did you have a good weekend?"
+    },
+    {
+      "normalized_question": "huh",
+      "count": 2,
+      "example_question": "Huh?"
+    }
+  ]
+}

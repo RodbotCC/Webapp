@@ -1,0 +1,66 @@
+{
+  "identity": {
+    "name": "Andre Raw",
+    "company": "Comeketo Catering",
+    "role": "Senior Sales Representative",
+    "ranking": 1,
+    "badge": "#1 on Scoreboard",
+    "bonus_multiplier": 1.80,
+    "data_period": "February – March 2026",
+    "extraction_date": "2026-04-07",
+    "languages": ["English", "Portuguese"],
+    "total_data_sources": 124
+  },
+  "executive_summary": {
+    "total_calls": 111,
+    "outbound_rate": 78.4,
+    "inbound_rate": 21.6,
+    "active_deals": 26,
+    "won_deals": 11,
+    "win_rate": 29.7,
+    "pipeline_value": 109987.82,
+    "locked_in_revenue": 63690.82,
+    "average_deal_size": 2972.64,
+    "total_deals": 37
+  },
+  "key_strengths": [
+    "High-volume outbound caller — 87 outbound calls",
+    "494% call volume growth (Feb → Mar)",
+    "5 deals over $5,000 (largest: $14,369)",
+    "Bilingual sales in Portuguese and English",
+    "27% repeat contact rate — strong relationship builder"
+  ],
+  "development_areas": [
+    { "area": "Deposit Conversations", "severity": "critical", "deals_affected": 28, "description": "76% of pipeline has 'no_payment_signal'" },
+    { "area": "Stakeholder Management", "severity": "high", "deals_affected": 8, "description": "Deals stuck in partner/family review" },
+    { "area": "Tasting Conversion", "severity": "high", "deals_affected": 11, "description": "$25K+ stuck in tasting limbo" },
+    { "area": "Response Time", "severity": "medium", "deals_affected": 2, "description": "2 deals waiting on us" }
+  ],
+  "conversation_insights": {
+    "sample_size": 30,
+    "language_breakdown": { "portuguese": 7, "english": 20, "mixed": 3 },
+    "call_outcomes": {
+      "tasting_scheduled": { "count": 4, "rate": 13.3 },
+      "quote_sent": { "count": 10, "rate": 33.3 },
+      "pricing_objections": { "count": 6, "rate": 20.0 }
+    },
+    "style_notes": [
+      "Warm, personable openings",
+      "Relationship-focused check-ins",
+      "Natural code-switching between languages",
+      "Appropriate humor and positivity"
+    ],
+    "sample_excerpts": [
+      { "context": "Matt (Meghan Pingeton wedding)", "quote": "Another day above ground is always a great day.", "note": "Positive, rapport-building" },
+      { "context": "Andreia DePina Moore", "quote": "I'm wonderful. How about yourself?", "note": "Warm engagement" },
+      { "context": "Ana Claudia (Portuguese)", "quote": "Oi, Ana Cláudia, boa noite. Tudo tranquilo.", "note": "Natural Portuguese fluency" }
+    ]
+  },
+  "competitive_advantages": [
+    { "advantage": "Bilingual Market", "detail": "23% Portuguese calls — unique on team", "icon": "translate" },
+    { "advantage": "Work Ethic", "detail": "47.4 hrs/week, 134 dials — both #1", "icon": "fitness_center" },
+    { "advantage": "Relationship Building", "detail": "27% repeat contacts, trust-based selling", "icon": "handshake" },
+    { "advantage": "High-Value Deals", "detail": "5 deals >$5K, avg $2,973", "icon": "diamond" },
+    { "advantage": "Activity Volume", "detail": "111 calls, 78.4% outbound, growing", "icon": "trending_up" }
+  ]
+}

@@ -1,0 +1,23 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+# After first deploy, attach a Persistent Disk in the dashboard and set DATA_DIR to the mount path
+# (e.g. mount at /var/data → set DATA_DIR=/var/data in Environment).
+
+services:
+  - type: web
+    name: comeketo-command-center
+    runtime: node
+    region: oregon
+    plan: starter
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /status
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      # Render sets PORT automatically — do not override.
+      - key: DATA_DIR
+        sync: false
+      - key: CLOSE_API_KEY
+        sync: false
+      - key: CLOSE_USER_ID
+        sync: false

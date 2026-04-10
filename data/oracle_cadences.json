@@ -1,0 +1,82 @@
+{
+  "cadences": [
+    {
+      "id": "inbound_5_day",
+      "name": "5-Day Inbound Cadence",
+      "type": "inbound",
+      "days": [
+        { "day": 1, "actions": ["Call (triple tap — no VM until final)", "Text right away", "Curiosity-based email"], "intent": "Fast contact, establish momentum, make the event feel active", "tone": "responsive and curious" },
+        { "day": 2, "actions": ["Call", "Voicemail", "Text", "Follow-up email with curiosity angle"], "intent": "Persistent contact with idea-oriented energy", "tone": "persistent and idea-oriented" },
+        { "day": 3, "actions": ["Nothing"], "intent": "Strategic silence — let them breathe", "tone": "—" },
+        { "day": 4, "actions": ["Call", "Voicemail naming reasons they're hard to reach", "Dream-oriented email"], "intent": "Diagnostic — surface the real issue", "tone": "diagnostic" },
+        { "day": 5, "actions": ["Short provocative text: 'Have you given up on catering?'"], "intent": "Terminal-feeling push to force a response", "tone": "provocative and terminal" }
+      ],
+      "rules": ["Do not flatten all five days into the same message", "Each day has a distinct emotional register"]
+    },
+    {
+      "id": "post_tasting",
+      "name": "Post-Tasting 5-Day Cadence",
+      "type": "tasting_follow_up",
+      "days": [
+        { "day": 1, "actions": ["Call (if no answer, call back in 5 min, then VM)", "Text", "Ask: How did you like the food?"], "intent": "Strike while iron is hot — close while excited", "tone": "excited and assumptive" },
+        { "day": 2, "actions": ["Call", "Voicemail", "Text with brainstorming angle"], "intent": "Keep momentum alive, share ideas", "tone": "idea-sharing, promise-keeping" },
+        { "day": 3, "actions": ["Nothing"], "intent": "Strategic silence", "tone": "—" },
+        { "day": 4, "actions": ["Voicemail: 'wondering if you're swamped or not interested'"], "intent": "Diagnostic — confusing tonality", "tone": "confused, curious, non-accusatory" },
+        { "day": 5, "actions": ["Text: 'Have you given up on us catering your [event]?'"], "intent": "Terminal push", "tone": "provocative finisher" }
+      ],
+      "rules": ["Day 1 call is MOST CRITICAL — memorize the script", "Always create urgency with scarcity on post-tasting calls", "Never let a tasting go cold — contact within 24 hours"]
+    },
+    {
+      "id": "cancellation_recovery",
+      "name": "Cancellation Recovery",
+      "type": "recovery",
+      "days": [
+        { "day": 1, "actions": ["Phone call", "SMS", "Email"], "intent": "Re-open the door quickly, make rescheduling easy", "tone": "understanding, not punitive" },
+        { "day": 2, "actions": ["Audio clip via SMS", "Supportive follow-up email"], "intent": "Keep lead from drifting into silence", "tone": "willing to help, still directional" },
+        { "day": 3, "actions": ["Voicemail", "Last-chance SMS", "Final support email"], "intent": "Final recovery attempt", "tone": "supportive but closing" }
+      ],
+      "rules": ["Sound like 'we can still make this work' — NOT 'why did you cancel on us?'"]
+    },
+    {
+      "id": "no_show_recovery",
+      "name": "No-Show Recovery",
+      "type": "recovery",
+      "days": [
+        { "day": 1, "actions": ["Concern SMS: 'I hope everything is okay'", "Call"], "intent": "Show genuine concern, keep door open", "tone": "concerned, warm" },
+        { "day": 2, "actions": ["Sharper SMS: 'Have you given up on catering?'"], "intent": "Force response with provocative push", "tone": "sharp but fair" }
+      ],
+      "rules": ["No-show recovery should be shorter and sharper than standard cadence"]
+    },
+    {
+      "id": "ninja_recovery",
+      "name": "Ninja Recovery",
+      "type": "recovery",
+      "days": [
+        { "day": 1, "actions": ["Triple-tap calls", "Bonus email", "Pre-recorded voice drop"], "intent": "High-intensity revival when normal touches fail", "tone": "sharper, pattern-breaking, harder to ignore" }
+      ],
+      "rules": ["Distinct mode from standard follow-up", "Still curious, but more aggressive pattern-breaking"]
+    }
+  ],
+  "reality_packets": [
+    { "id": "service_explainer", "name": "Service Explainer & Offer Orientation", "priority": "high", "evidence_hits": 322, "andre_hits": 90, "use_when": "Lead needs to understand what Comeketo offers", "avoid_when": "Lead already knows the service and is in quote/tasting stage", "channel": "email" },
+    { "id": "tasting_invite", "name": "Tasting Invite & Attendance Momentum", "priority": "high", "evidence_hits": 453, "andre_hits": 164, "use_when": "Lead is qualified and needs to experience the food", "avoid_when": "Lead has already attended a tasting", "channel": "email + sms" },
+    { "id": "quote_navigation", "name": "Quote Send & Package Navigation", "priority": "high", "evidence_hits": 234, "andre_hits": 52, "use_when": "Lead needs pricing clarity or quote revision", "avoid_when": "Lead hasn't been qualified yet", "channel": "email" },
+    { "id": "loss_recovery", "name": "Bounded Loss Recovery", "priority": "high", "evidence_hits": 51, "andre_hits": 1, "use_when": "Lead went dark or said no — recovery attempt", "avoid_when": "Lead explicitly asked to stop contact", "channel": "email + sms" },
+    { "id": "callback_recovery", "name": "Callback Scheduling & Live Contact Recovery", "priority": "medium", "evidence_hits": 105, "andre_hits": null, "use_when": "Can't reach lead by phone, need to schedule", "avoid_when": "Lead is actively responsive", "channel": "sms + email" },
+    { "id": "inquiry_handoff", "name": "Inquiry Acknowledgement & Planner Handoff", "priority": "medium", "evidence_hits": 71, "andre_hits": null, "use_when": "New inquiry that needs routing to the right person", "avoid_when": "Lead is already assigned and in process", "channel": "email" }
+  ],
+  "voice_guide": {
+    "core_voice": ["composed", "confident", "practical", "curious", "in control"],
+    "sound_like": "A calm advisor uncovering the event problem and helping the prospect think clearly",
+    "do_not_sound_like": "An excited promoter begging for replies",
+    "tonal_levers": ["confusion", "intense curiosity", "confidence", "controlled pacing"],
+    "red_flags": ["fake warmth", "over-eager sales energy", "begging for replies", "'we'd love to work with you' softness", "vague follow-up with no directional pressure"],
+    "in_practice": ["Ask fewer generic pleasantries", "Get to the event quickly", "Keep sentences simple", "Avoid overexplaining", "Use short transitions that preserve control"]
+  },
+  "decision_rules": {
+    "primary_goal": "Book the right next step with the right person — not just 'send a message'",
+    "priorities": ["Understand situation", "Surface pain points and event context", "Guide toward right next step", "Capture enough detail for Close and internal handoff"],
+    "review_mode": "Draft first, human reviews, send logic stays conservative",
+    "automation_boundary": "Defaults to draft-first unless explicitly promoted"
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andre Raw — Sales Command Center | Comeketo Catering</title>
+  <meta name="description" content="KPI workspace and automation harness for Andre Raw, Comeketo Catering's #1 sales representative.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- LEFT SIDEBAR -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sb-logo"><i data-lucide="flame" style="width:1.2rem;height:1.2rem;"></i></div>
+    <div class="sb-divider"></div>
+    <button class="sb-btn active" data-view="command"><i data-lucide="layout-dashboard" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Command</span></button>
+    <button class="sb-btn" data-view="pipeline"><i data-lucide="funnel" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Pipeline</span></button>
+    <button class="sb-btn" data-view="actions"><i data-lucide="check-circle-2" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Actions</span></button>
+    <button class="sb-btn" data-view="performance"><i data-lucide="bar-chart-3" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Perform</span></button>
+    <button class="sb-btn" data-view="coaching"><i data-lucide="graduation-cap" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Coach</span></button>
+    <button class="sb-btn" data-view="deals"><i data-lucide="handshake" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Deals</span></button>
+    <button class="sb-btn" data-view="automation"><i data-lucide="bot" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Auto</span></button>
+    <button class="sb-btn" data-view="timeline"><i data-lucide="calendar-range" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Timeline</span></button>
+    <button class="sb-btn" data-view="oracle"><i data-lucide="message-square-text" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Oracle</span></button>
+    <div class="sb-spacer"></div>
+    <button class="sb-bottom-btn" id="themeToggle"><i data-lucide="moon" style="width:1rem;height:1rem;"></i></button>
+    <button class="sb-bottom-btn"><i data-lucide="settings" style="width:1rem;height:1rem;"></i></button>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="main-area">
+    <div class="content-panel">
+      <div class="topbar">
+        <div class="topbar-left">
+          <div class="topbar-title">Andre Raw</div>
+          <div class="topbar-sub">Comeketo Catering · Sales Command Center</div>
+        </div>
+        <div class="topbar-right">
+          <div class="topbar-clock" id="topbarClock"></div>
+          <div id="serverStatus" style="font-size:0.62rem;font-weight:600;display:flex;align-items:center;gap:0.3rem;opacity:0.7;">…</div>
+          <div id="dataFreshness" style="font-size:0.62rem;font-weight:600;color:var(--burgundy);opacity:0.55;"></div>
+          <div id="queueStatus" style="font-size:0.62rem;font-weight:600;color:var(--burgundy);opacity:0.5;"></div>
+          <div class="topbar-badge">#1 <i data-lucide="trophy" style="width:0.7rem;height:0.7rem;"></i></div>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="stage-bars"><div class="stage-bar"></div><div class="stage-bar"></div><div class="stage-bar"></div></div>
+        <div class="stage-scroll" id="stageScroll"></div>
+      </div>
+    </div>
+
+    <!-- PREVIEW PANEL -->
+    <div class="preview-panel" id="previewPanel">
+      <div class="preview-header">
+        <i data-lucide="eye" style="width:0.9rem;height:0.9rem;color:var(--burgundy);opacity:0.4;"></i>
+        <span>Detail Preview</span>
+      </div>
+      <div class="preview-body" id="previewBody">
+        <div class="preview-empty">
+          <i data-lucide="mouse-pointer-click" style="width:2.5rem;height:2.5rem;color:var(--burgundy);margin-bottom:0.6rem;"></i>
+          <p>Hover over any item to preview details</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+<script>
+  // Initialize Lucide icons after DOM is ready
+  document.addEventListener('DOMContentLoaded', () => { if (window.lucide) lucide.createIcons(); });
+</script>
+</body>
+</html>

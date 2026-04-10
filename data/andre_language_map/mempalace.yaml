@@ -1,0 +1,14 @@
+wing: andre_language_map
+rooms:
+- name: documentation
+  description: Files related to documentation
+  keywords:
+  - documentation
+- name: team
+  description: Files related to team
+  keywords:
+  - team
+- name: meetings
+  description: Files related to meetings
+  keywords:
+  - meetings

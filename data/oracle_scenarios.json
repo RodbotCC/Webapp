@@ -1,0 +1,68 @@
+{
+  "scenario_families": [
+    { "id": "readiness_owner", "name": "Readiness & Owner Assignment", "priority": "high", "type": "internal_control", "use_when": "A lead needs an owner recommendation, rep is newly onboarding, or source-channel handling depends on readiness", "signals": ["new rep owning leads before modules cleared", "shadow feedback still active", "source-channel training incomplete"] },
+    { "id": "source_routing", "name": "Source Routing & Inbound Context", "priority": "high", "type": "hybrid", "use_when": "The right opener or next step depends on where the lead came from (Crisp, WeddingWire, Zola, website, expo)", "signals": ["Crisp unclear if live chat or website", "third-party lead with generic opener", "owner unclear on source handling"] },
+    { "id": "live_call_control", "name": "Live Call Control & Shadow Feedback", "priority": "high", "type": "hybrid", "use_when": "Lead is pushing back during a live call, oracle needs to pick the next question, or draft should reflect shadow-feedback", "signals": ["coaches clarify call handling", "language sounds mushy or too eager", "recurring mistakes in live reviews"] },
+    { "id": "quote_construction", "name": "Quote Construction & Fee Approval", "priority": "high", "type": "hybrid", "use_when": "Quote needs revision, fee exceptions appear, or package-specific answers depend on product/quote-builder knowledge", "signals": ["permit fee question", "kitchen usage fee question", "preferred caterer fee question"] },
+    { "id": "contract_control", "name": "Contract Control & Won Deal Handoff", "priority": "high", "type": "internal_control", "use_when": "Deal is won or nearly won and handoff needs to be lawful, documented, and safe", "signals": ["Docusign needs explanation", "waiting on venue contract", "ops handoff on verbal fuzz"] },
+    { "id": "crm_observability", "name": "CRM Observability & Manager Pressure", "priority": "medium", "type": "internal_control", "use_when": "Execution quality depends on note hygiene, activity visibility, and manager-alert conditions", "signals": ["manager alerts", "call velocity drift", "meaningful calls not logged"] },
+    { "id": "post_sale", "name": "Post Sale Execution & BEO Handoff", "priority": "medium", "type": "internal_control", "use_when": "Commercial motion has progressed far enough that execution obligations become the main risk", "signals": ["booking still open", "cash collection open", "BEO not coordinated"] },
+    { "id": "product_config", "name": "Product Configuration & Quote Builder Mastery", "priority": "medium", "type": "hybrid", "use_when": "Bottleneck is understanding the offering well enough to draft, revise, or explain the quote", "signals": ["package changes needed", "navigating price sheets", "upsell/downsell reasoning"] },
+    { "id": "tasting_momentum", "name": "Tasting Momentum & Attendance Recovery", "priority": "foundation", "type": "customer_facing", "use_when": "Next step is a tasting, tasting is at risk, or lead is future-dated and needs momentum", "signals": ["tasting scheduling", "attendance risk", "dietary handling"] },
+    { "id": "quote_stall", "name": "Quote Follow-Up & Stall Resolution", "priority": "foundation", "type": "customer_facing", "use_when": "Lead has a quote and has gone quiet, says they need to think, or needs to loop in another person", "signals": ["quote gone quiet", "need to think", "partner review"] }
+  ],
+  "objection_families": [
+    { "id": "call_quality", "name": "Call Quality & Language Drift", "priority": "high", "mode": "internal_control", "protects": "conversation quality when real calls drift from doctrine", "signals": ["language sounds mushy", "too eager", "recurring mistakes"] },
+    { "id": "contract_docs", "name": "Contract & Document Readiness", "priority": "high", "mode": "internal_control", "protects": "document integrity before a deal becomes operational", "signals": ["Docusign explanation", "venue contract", "cleanup responsibility"] },
+    { "id": "fee_absorption", "name": "Fee Absorption & Approval Boundary", "priority": "high", "mode": "internal_control", "protects": "approval law around venue and permit fees", "signals": ["permit fee", "kitchen usage fee", "preferred caterer fee"] },
+    { "id": "quote_value", "name": "Quote Scope & Value Friction", "priority": "high", "mode": "customer_facing", "protects": "budget comfort and confidence the offer fits the event", "signals": ["quote feels too high", "need adjustments", "wrong package"] },
+    { "id": "readiness_risk", "name": "Readiness & Owner Assignment Risk", "priority": "high", "mode": "internal_control", "protects": "operator readiness before autonomous lead handling", "signals": ["new rep before modules cleared", "shadow feedback active", "source training incomplete"] },
+    { "id": "source_confusion", "name": "Source Context & Channel Confusion", "priority": "high", "mode": "hybrid", "protects": "context integrity at the first touch", "signals": ["Crisp unclear source", "generic third-party opener", "unclear source handling"] },
+    { "id": "crm_visibility", "name": "CRM Visibility & Note Quality", "priority": "medium", "mode": "internal_control", "protects": "evidence quality for trustworthy recommendations", "signals": ["manager alerts", "call velocity drift", "poor logging"] },
+    { "id": "post_sale_risk", "name": "Post Sale Execution Handoff Risk", "priority": "medium", "mode": "internal_control", "protects": "execution continuity after a deal appears won", "signals": ["booking open", "cash collection open", "BEO not coordinated"] },
+    { "id": "busy_time", "name": "Busy / Time Pressure", "priority": "foundation", "mode": "customer_facing", "protects": "the prospect's time and attention", "signals": ["busy right now", "call me later", "in a meeting"] },
+    { "id": "decision_delay", "name": "Decision Delay / Need to Think", "priority": "foundation", "mode": "customer_facing", "protects": "decision certainty and fear of committing", "signals": ["need to think about it", "still reviewing", "not ready"] },
+    { "id": "future_date", "name": "Future Date Delay", "priority": "foundation", "mode": "customer_facing", "protects": "timing safety when event feels far away", "signals": ["wedding next year", "too early", "we have time"] },
+    { "id": "partner_group", "name": "Partner & Group Alignment", "priority": "foundation", "mode": "customer_facing", "protects": "multi-person decision safety", "signals": ["talk to partner", "check with family", "team approval"] }
+  ],
+  "andre_coaching_intel": {
+    "coaching_pressure": 133,
+    "coaching_level": "high",
+    "active_leads": 26,
+    "stalled_leads": 14,
+    "quote_friction_leads": 3,
+    "live_style": { "marketing": 55, "generic_cta": 69, "loss_recovery": 1 },
+    "top_focus_families": ["Quote Follow Up And Stall Resolution", "CRM Observability And Manager Pressure", "Contract Control And Won Deal Handoff", "Quote Construction And Fee Approval"],
+    "manager_takeaway": "Andre Raw: 14 active stalled leads; 3 quote-friction leads; generic CTA drift is heavy.",
+    "team_comparison": [
+      { "name": "Sales Team EC", "pressure": 331, "active": 46, "stalled": 18, "level": "high" },
+      { "name": "Andre Raw", "pressure": 133, "active": 26, "stalled": 14, "level": "high" },
+      { "name": "Eduarda Fedrizzi", "pressure": 114, "active": 9, "stalled": 5, "level": "medium" },
+      { "name": "Rhonna Ricafort", "pressure": 73, "active": 10, "stalled": 7, "level": "medium" },
+      { "name": "Event Consultant", "pressure": 51, "active": 9, "stalled": 4, "level": "low" },
+      { "name": "Bibi De Los Santos", "pressure": 2, "active": 0, "stalled": 0, "level": "low" }
+    ]
+  },
+  "oracle_briefing": {
+    "top_priority": "Julianna Leiva",
+    "action_required": "Quote Stall Resolution",
+    "playbook_link": "08.A.(a) Quote Follow-Up",
+    "manager_message": "Andre, generic CTA drift is heavy today. Swap to bounded loss-recovery on Juliana before she goes totally cold. We cannot afford 14 stalled leads in your pipeline.",
+    "at_risk_tastings": 2,
+    "cadence_dues": 4
+  },
+  "deal_oracle_map": {
+    "Julianna Leiva": { "scenario": "quote_stall", "objection": "decision_delay", "packet": "bounded_loss_recovery", "cadence": "post_tasting", "confidence": 85, "review": false },
+    "Marcelo (Irmao Erlon)": { "scenario": "contract_control", "objection": null, "packet": "quote_navigation", "cadence": "post_tasting", "confidence": 90, "review": false },
+    "Kristen Rodriguez": { "scenario": "contract_control", "objection": null, "packet": "quote_navigation", "cadence": "post_tasting", "confidence": 90, "review": false },
+    "Dalcione Reis": { "scenario": "tasting_momentum", "objection": "partner_group", "packet": "tasting_invite", "cadence": "post_tasting", "confidence": 70, "review": false },
+    "Meghan Pingeton": { "scenario": "contract_control", "objection": null, "packet": "callback_recovery", "cadence": "cancellation_recovery", "confidence": 95, "review": true },
+    "Mariah Gerstel": { "scenario": "quote_stall", "objection": "decision_delay", "packet": "quote_navigation", "cadence": "inbound_5_day", "confidence": 75, "review": false },
+    "Ana Claudia": { "scenario": "contract_control", "objection": null, "packet": "quote_navigation", "cadence": "post_tasting", "confidence": 90, "review": false },
+    "Cheryl Rank": { "scenario": "tasting_momentum", "objection": "partner_group", "packet": "tasting_invite", "cadence": "post_tasting", "confidence": 60, "review": false },
+    "Sue Tetuan Tavares": { "scenario": "quote_construction", "objection": "quote_value", "packet": "quote_navigation", "cadence": "inbound_5_day", "confidence": 65, "review": true },
+    "Alexa Rodriguez": { "scenario": "tasting_momentum", "objection": "partner_group", "packet": "tasting_invite", "cadence": "post_tasting", "confidence": 60, "review": false },
+    "Rebecca Almeida": { "scenario": "tasting_momentum", "objection": "partner_group", "packet": "tasting_invite", "cadence": "post_tasting", "confidence": 55, "review": false },
+    "Alessandra Gaspar": { "scenario": "tasting_momentum", "objection": "decision_delay", "packet": "tasting_invite", "cadence": "inbound_5_day", "confidence": 40, "review": false }
+  }
+}

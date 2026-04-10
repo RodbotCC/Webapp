@@ -1,0 +1,890 @@
+[
+  {
+    "intent": "statement",
+    "count": 82,
+    "normalized_sentence": "all right",
+    "example_sentence": "All right."
+  },
+  {
+    "intent": "statement",
+    "count": 15,
+    "normalized_sentence": "i see",
+    "example_sentence": "I see."
+  },
+  {
+    "intent": "statement",
+    "count": 14,
+    "normalized_sentence": "978 381 1212",
+    "example_sentence": "978-381-1212."
+  },
+  {
+    "intent": "statement",
+    "count": 13,
+    "normalized_sentence": "that's awesome",
+    "example_sentence": "That's awesome."
+  },
+  {
+    "intent": "statement",
+    "count": 11,
+    "normalized_sentence": "ate mais",
+    "example_sentence": "At\u00e9 mais."
+  },
+  {
+    "intent": "statement",
+    "count": 10,
+    "normalized_sentence": "give me a call",
+    "example_sentence": "Give me a call."
+  },
+  {
+    "intent": "statement",
+    "count": 9,
+    "normalized_sentence": "i'm wonderful",
+    "example_sentence": "I'm wonderful."
+  },
+  {
+    "intent": "statement",
+    "count": 8,
+    "normalized_sentence": "all right all right",
+    "example_sentence": "All right, all right."
+  },
+  {
+    "intent": "statement",
+    "count": 7,
+    "normalized_sentence": "ta certo",
+    "example_sentence": "T\u00e1 certo."
+  },
+  {
+    "intent": "statement",
+    "count": 7,
+    "normalized_sentence": "all right awesome",
+    "example_sentence": "All right, awesome."
+  },
+  {
+    "intent": "statement",
+    "count": 7,
+    "normalized_sentence": "i'm sorry",
+    "example_sentence": "I'm sorry."
+  },
+  {
+    "intent": "statement",
+    "count": 6,
+    "normalized_sentence": "vamos la",
+    "example_sentence": "Vamos l\u00e1."
+  },
+  {
+    "intent": "statement",
+    "count": 6,
+    "normalized_sentence": "come on",
+    "example_sentence": "Come on."
+  },
+  {
+    "intent": "statement",
+    "count": 6,
+    "normalized_sentence": "oh wow",
+    "example_sentence": "Oh, wow."
+  },
+  {
+    "intent": "statement",
+    "count": 5,
+    "normalized_sentence": "meu deus",
+    "example_sentence": "Meu Deus!"
+  },
+  {
+    "intent": "question",
+    "count": 6,
+    "normalized_sentence": "how about yourself",
+    "example_sentence": "How about yourself?"
+  },
+  {
+    "intent": "question",
+    "count": 6,
+    "normalized_sentence": "all right",
+    "example_sentence": "All right?"
+  },
+  {
+    "intent": "question",
+    "count": 5,
+    "normalized_sentence": "tudo bem",
+    "example_sentence": "Tudo bem?"
+  },
+  {
+    "intent": "question",
+    "count": 5,
+    "normalized_sentence": "ta bom",
+    "example_sentence": "T\u00e1 bom?"
+  },
+  {
+    "intent": "question",
+    "count": 5,
+    "normalized_sentence": "is that okay",
+    "example_sentence": "Is that okay?"
+  },
+  {
+    "intent": "question",
+    "count": 4,
+    "normalized_sentence": "may i give you a suggestion",
+    "example_sentence": "May I give you a suggestion?"
+  },
+  {
+    "intent": "question",
+    "count": 4,
+    "normalized_sentence": "how does that sound",
+    "example_sentence": "How does that sound?"
+  },
+  {
+    "intent": "question",
+    "count": 3,
+    "normalized_sentence": "pode ser",
+    "example_sentence": "Pode ser?"
+  },
+  {
+    "intent": "question",
+    "count": 3,
+    "normalized_sentence": "how's it going man",
+    "example_sentence": "How's it going, man?"
+  },
+  {
+    "intent": "question",
+    "count": 3,
+    "normalized_sentence": "when you",
+    "example_sentence": "When you."
+  },
+  {
+    "intent": "question",
+    "count": 3,
+    "normalized_sentence": "how's it going",
+    "example_sentence": "How's it going?"
+  },
+  {
+    "intent": "question",
+    "count": 3,
+    "normalized_sentence": "can i help you",
+    "example_sentence": "Can I help you?"
+  },
+  {
+    "intent": "question",
+    "count": 3,
+    "normalized_sentence": "can you",
+    "example_sentence": "Can you."
+  },
+  {
+    "intent": "question",
+    "count": 3,
+    "normalized_sentence": "are you brazilian",
+    "example_sentence": "Are you Brazilian?"
+  },
+  {
+    "intent": "question",
+    "count": 2,
+    "normalized_sentence": "do you know fitchburg",
+    "example_sentence": "Do you know Fitchburg?"
+  },
+  {
+    "intent": "qualification",
+    "count": 5,
+    "normalized_sentence": "you can bring as many people with you as you would like",
+    "example_sentence": "You can bring as many people with you as you would like."
+  },
+  {
+    "intent": "qualification",
+    "count": 2,
+    "normalized_sentence": "we're going to have a tasting event party",
+    "example_sentence": "We're going to have a tasting event party."
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "quando chegar 30 dias para o evento",
+    "example_sentence": "Quando chegar 30 dias para o evento,"
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "quando voce efetuar o pagamento ai me manda um ok e me manda seu endereco completo endereco do evento tambem para eu poder ver aonde o dia tambem que voce vai vir pra fazer o tasting se voce quiser e quando voce quiser ta bom",
+    "example_sentence": "Quando voc\u00ea efetuar o pagamento a\u00ed, me manda um OK e me manda seu endere\u00e7o completo, endere\u00e7o do evento tamb\u00e9m, para eu poder ver aonde O dia tamb\u00e9m que voc\u00ea vai vir pra fazer o tasting, se voc\u00ea quiser e quando voc\u00ea quiser, t\u00e1 bom?"
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "maiores eventos",
+    "example_sentence": "maiores eventos."
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "assim que eu receber o pagamento aqui eu ja coloco o seu evento no",
+    "example_sentence": "Assim que eu receber o pagamento aqui, eu j\u00e1 coloco o seu evento no..."
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "pra quando que e o evento mesmo",
+    "example_sentence": "Pra quando que \u00e9 o evento mesmo?"
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "that way we can talk a little bit about your event and i can tell you all about our menus",
+    "example_sentence": "That way we can talk a little bit about your event and I can tell you all about our menus."
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "i see here that's going to be for a hundred people",
+    "example_sentence": "I see here that's going to be for a hundred people."
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "rebecca just wondering over here when is the best time for me to catch you on the phone so we could talk about the organization of the wedding",
+    "example_sentence": "Rebecca, just wondering over here when is the best time for me to catch you on the phone so we could talk about the organization of the wedding?"
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "i believe it's 400 people in 2027",
+    "example_sentence": "I believe it's 400 people in 2027."
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "do you have a venue",
+    "example_sentence": "Do you have a venue?"
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "normally people get rice tropeuro beans and garlic bread",
+    "example_sentence": "Normally people get rice, tropeuro beans and garlic bread."
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "and i've seen people get free dessert tables",
+    "example_sentence": "And I've seen people get free dessert tables."
+  },
+  {
+    "intent": "qualification",
+    "count": 1,
+    "normalized_sentence": "do you still need catering for the event",
+    "example_sentence": "Do you still need catering for the event."
+  },
+  {
+    "intent": "pricing",
+    "count": 10,
+    "normalized_sentence": "it's 35 per person",
+    "example_sentence": "It's $35 per person."
+  },
+  {
+    "intent": "pricing",
+    "count": 2,
+    "normalized_sentence": "and once you say yes to a quote",
+    "example_sentence": "And once you Say yes to a quote."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "o seu menu esta muito interessante e vai agradar as pessoas e o que voce precisa de fazer",
+    "example_sentence": "O seu menu est\u00e1 muito interessante e vai agradar as pessoas, \u00e9 o que voc\u00ea precisa de fazer."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "quando voce efetua o pagamento ele proprio ja vira um comprovante mas eu vou colocar eu vou colocar no seu quote eu vou colocar no seu quote a data que foi efetuado o pagamento e te mando por e mail tambem",
+    "example_sentence": "Quando voc\u00ea efetua o pagamento ele pr\u00f3prio j\u00e1 vira um comprovante mas eu vou colocar eu vou colocar no seu quote eu vou colocar no seu quote a data que foi efetuado o pagamento e te mando por e-mail tamb\u00e9m."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "as soon as i receive it over here i'll put the quote in and i'll send it to you",
+    "example_sentence": "As soon as I receive it over here, I'll put the quote in and I'll send it to you."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "eu fiz de uma forma como eu nao tinha o menu de voce eu fiz pra poder te mostrar e ai de repente trocar",
+    "example_sentence": "Eu fiz de uma forma, como eu n\u00e3o tinha o menu de voc\u00ea, eu fiz pra poder te mostrar e a\u00ed de repente trocar."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "ja que eu to com voce no telefone sobre o menu",
+    "example_sentence": "J\u00e1 que eu t\u00f4 com voc\u00ea no telefone, Sobre o menu,"
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "eu fiz dessa forma pra te mostrar a quote entendeu",
+    "example_sentence": "Eu fiz dessa forma pra te mostrar a quote, entendeu?"
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "entao eu vou fazer o seguinte eu vou te enviar essa quote pra voce ter ai olhar tudo direitinho e ai a gente vai conversando e melhorando da melhor forma",
+    "example_sentence": "Ent\u00e3o eu vou fazer o seguinte, eu vou te enviar essa quote pra voc\u00ea ter a\u00ed, olhar tudo direitinho e a\u00ed a gente vai conversando e melhorando da melhor forma."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "assim que eu receber eu coloco isso aqui e ja te envio o quote para voce ver",
+    "example_sentence": "Assim que eu receber, eu coloco isso aqui e j\u00e1 te envio o quote para voc\u00ea ver."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "very good for you to get to know us eat great food and understand the services and get the quote that you deserve",
+    "example_sentence": "Very good for you to get to know us, eat great food and understand the services and get the quote that you deserve."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "makes it a lot easier for you to also come up with a quote",
+    "example_sentence": "Makes it a lot easier for you to also come up with a quote."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "i'll give you the rundown and the packages and everything",
+    "example_sentence": "I'll give you the rundown and the packages and everything."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "and when we come up with the quote we'll put 30",
+    "example_sentence": "And when we come up with the quote, we'll put 30."
+  },
+  {
+    "intent": "pricing",
+    "count": 1,
+    "normalized_sentence": "all right so as far as the packages we have you said that you're interested in the deluxe buffet right",
+    "example_sentence": "All right, so as far as the packages we have, you said that you're interested in the deluxe buffet, right?"
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "geralmente aos domingos o proximo tasting",
+    "example_sentence": "Geralmente aos domingos, o pr\u00f3ximo tasting."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "i have an upcoming tasting and i was also wondering if you have time for that",
+    "example_sentence": "I have an upcoming tasting and I was also wondering if you have time for that."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "we do have a tasting every once in a while",
+    "example_sentence": "We do have a tasting every once in a while."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "we're going to have a tasting soon",
+    "example_sentence": "We're going to have a tasting soon."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "how about we do a tasting",
+    "example_sentence": "How about we do a tasting?"
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "how would you feel about coming for a tasting",
+    "example_sentence": "How would you feel about coming for a tasting?"
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "when you come to the tasting",
+    "example_sentence": "When you come to the tasting."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "our next tasting is going to happen march 15th at 2pm",
+    "example_sentence": "Our next tasting is going to happen March 15th at 2pm."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "you're going to come in and first you're going to try a lot of different appetizers",
+    "example_sentence": "You're going to come in, and first you're going to try a lot of different appetizers."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "the great thing also andrea is once you show up to one of these tastings you always come out with a gift",
+    "example_sentence": "The great thing, also, Andrea, is once you show up to one of these tastings, you always come out with a gift."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "you guys come in and eat some great food",
+    "example_sentence": "You guys come in and eat some great food."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "i'm always available",
+    "example_sentence": "I'm always available."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "i'd love to help you and also like maybe bringing you into tasting so you can taste the food and it's going to make it so much easier",
+    "example_sentence": "I'd love to help you and also, like, maybe bringing you into tasting so you can taste the food, and it's going to make it so much easier."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "i'm also sending sending you a text message with our tasting",
+    "example_sentence": "I'm also sending, sending you a text message with our tasting."
+  },
+  {
+    "intent": "scheduling",
+    "count": 1,
+    "normalized_sentence": "we're going to have a tasting march 15th",
+    "example_sentence": "We're going to have a tasting March 15th."
+  },
+  {
+    "intent": "positioning",
+    "count": 5,
+    "normalized_sentence": "this is andre from conquito catering",
+    "example_sentence": "This is Andre from Conquito Catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 4,
+    "normalized_sentence": "andre konkido catering",
+    "example_sentence": "Andre konkido catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 3,
+    "normalized_sentence": "this is andre calling you from conquito catering",
+    "example_sentence": "This is Andre calling you from Conquito Catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 3,
+    "normalized_sentence": "andre kom keto catering",
+    "example_sentence": "Andre kom keto catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 2,
+    "normalized_sentence": "andre from com keto catering",
+    "example_sentence": "Andre from com keto catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 2,
+    "normalized_sentence": "andre from conquito catering",
+    "example_sentence": "Andre from conquito catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 2,
+    "normalized_sentence": "keto catering",
+    "example_sentence": "Keto Catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 1,
+    "normalized_sentence": "nos fechamos o restaurante e agora a gente esta somente com a parte de catering",
+    "example_sentence": "N\u00f3s fechamos o restaurante e agora a gente est\u00e1 somente com a parte de catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 1,
+    "normalized_sentence": "muita gente esta pedindo para a gente abrir o catering pegou tao bem mas tao bem que eu vou te falar ta dificil para a gente parar e restabilizar completamente com a operacao do restaurante a operacao do restaurante e muito dificil e muito trabalho e bom e bom sim sempre e bom porque a gente tem que ter isso em todos os dias se precisar e uma coisa mais mas e muito trabalho ana",
+    "example_sentence": "Muita gente est\u00e1 pedindo para a gente abrir, O catering pegou t\u00e3o bem mas t\u00e3o bem que eu vou te falar t\u00e1 dif\u00edcil para a gente parar e restabilizar completamente com a opera\u00e7\u00e3o do restaurante a opera\u00e7\u00e3o do restaurante \u00e9 muito dif\u00edcil \u00e9 muito trabalho \u00e9 bom \u00e9 bom sim sempre \u00e9 bom porque a gente tem que ter isso em todos os dias se precisar \u00e9 uma coisa mais mas \u00e9 muito trabalho, Ana."
+  },
+  {
+    "intent": "positioning",
+    "count": 1,
+    "normalized_sentence": "this is andre with comqito",
+    "example_sentence": "This is andre with comqito."
+  },
+  {
+    "intent": "positioning",
+    "count": 1,
+    "normalized_sentence": "hey jessica this is andre calling you from conquito catering",
+    "example_sentence": "Hey, Jessica, this is Andre calling you from Conquito Catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 1,
+    "normalized_sentence": "hey fiona this is andre collin from conquito catering",
+    "example_sentence": "Hey Fiona, this is Andre Collin from Conquito Catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 1,
+    "normalized_sentence": "andre from comp keto catering",
+    "example_sentence": "Andre from Comp Keto Catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 1,
+    "normalized_sentence": "from come keto catering",
+    "example_sentence": "From Come Keto Catering."
+  },
+  {
+    "intent": "positioning",
+    "count": 1,
+    "normalized_sentence": "hey rebecca this is andre here from conquito catering",
+    "example_sentence": "Hey, Rebecca, this is Andre here from Conquito Catering."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 7,
+    "normalized_sentence": "no worries",
+    "example_sentence": "No worries."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 4,
+    "normalized_sentence": "i totally understand",
+    "example_sentence": "I totally understand."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 2,
+    "normalized_sentence": "no worries no worries",
+    "example_sentence": "No worries, no worries."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "no no worries",
+    "example_sentence": "No, no worries."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "i totally",
+    "example_sentence": "I totally."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "hey i totally understand",
+    "example_sentence": "Hey, I totally understand."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "when you're helping someone out it's totally different than doing it for yourself",
+    "example_sentence": "When you're helping someone out, it's totally different than doing it for yourself."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "i totally get it",
+    "example_sentence": "I totally get it."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "i totally understand julia",
+    "example_sentence": "I totally understand, Julia."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "that's not a problem",
+    "example_sentence": "That's not a problem."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "or if you reduce to 70 that's not a problem",
+    "example_sentence": "Or if you reduce to 70, that's not a problem."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "totally agree totally agree",
+    "example_sentence": "Totally agree, totally agree."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "okay i totally understand",
+    "example_sentence": "Okay, I totally understand."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "that's not a problem at all",
+    "example_sentence": "That's not a problem at all."
+  },
+  {
+    "intent": "objection_handling",
+    "count": 1,
+    "normalized_sentence": "i understand",
+    "example_sentence": "I understand."
+  },
+  {
+    "intent": "follow_up",
+    "count": 2,
+    "normalized_sentence": "all right i'm gonna send you a text message",
+    "example_sentence": "All right, I'm gonna send you a text message."
+  },
+  {
+    "intent": "follow_up",
+    "count": 2,
+    "normalized_sentence": "i sent you a couple of emails just now",
+    "example_sentence": "I sent you a couple of emails just now."
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "all right matt if you have any questions or anything just always reach out okay",
+    "example_sentence": "All right, Matt, if you have any questions or anything, just always reach out, okay?"
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "do you have a way to send a text message",
+    "example_sentence": "Do you have a way to send a text message?"
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "send me a text message with your request",
+    "example_sentence": "Send me a text message with your request."
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "yeah you can send it to 978 381 1212",
+    "example_sentence": "Yeah, you can send it to 978-381-1212."
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "okay i send",
+    "example_sentence": "Okay, I send."
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "send the text and i'll",
+    "example_sentence": "Send the text and I'll."
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "i'll send it over",
+    "example_sentence": "I'll send it over."
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "ai eu vou te mandar uma mensagem de texto",
+    "example_sentence": "A\u00ed eu vou te mandar uma mensagem de texto."
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "i'm sending you the invitation just now",
+    "example_sentence": "I'm sending you the invitation just now."
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "did you receive the text message i just sent",
+    "example_sentence": "Did you receive the text message I just sent?"
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "are you receiving my emails at all",
+    "example_sentence": "Are you receiving my emails at all?"
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "can you give me a different email so you can get that",
+    "example_sentence": "Can you give me a different email so you can get that?"
+  },
+  {
+    "intent": "follow_up",
+    "count": 1,
+    "normalized_sentence": "take a look at the email i sent you and if you have any questions just",
+    "example_sentence": "Take a look at the email I sent you, and if you have any questions, just."
+  },
+  {
+    "intent": "closing",
+    "count": 5,
+    "normalized_sentence": "thank you",
+    "example_sentence": "Thank you."
+  },
+  {
+    "intent": "closing",
+    "count": 3,
+    "normalized_sentence": "talk to you soon",
+    "example_sentence": "Talk to you soon."
+  },
+  {
+    "intent": "closing",
+    "count": 2,
+    "normalized_sentence": "i'll talk to you soon",
+    "example_sentence": "I'll talk to you soon."
+  },
+  {
+    "intent": "closing",
+    "count": 2,
+    "normalized_sentence": "take care",
+    "example_sentence": "Take care."
+  },
+  {
+    "intent": "closing",
+    "count": 2,
+    "normalized_sentence": "hope to talk to you soon",
+    "example_sentence": "Hope to talk to you soon."
+  },
+  {
+    "intent": "closing",
+    "count": 2,
+    "normalized_sentence": "bye bye",
+    "example_sentence": "Bye bye."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "jessica i would love to talk to you and understand your needs better if you could give me a call at 978 381 1212",
+    "example_sentence": "Jessica, I would love to talk to you and understand your needs better if you could give me a call at 978-381-1212."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "hope you have a great day now",
+    "example_sentence": "Hope you have a great day now."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "glaziani i'd love to talk to you and understand about your wedding",
+    "example_sentence": "Glaziani, I'd love to talk to you and understand about your wedding."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "i just wanted to make sure i touch you know i talk to you see if i understand you and i try to",
+    "example_sentence": "I just wanted to make sure I touch, you know, I talk to you, see if I understand you, and I try to."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "yeah when you take care of it just send me a message saying done",
+    "example_sentence": "Yeah, when you take care of it, just send me a message saying, done."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "thank you andrea",
+    "example_sentence": "Thank you, Andrea."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "wish you guys have a great evening",
+    "example_sentence": "Wish you guys have a great evening."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "bye bye now",
+    "example_sentence": "Bye bye now."
+  },
+  {
+    "intent": "closing",
+    "count": 1,
+    "normalized_sentence": "you know if you want to literally order a hundred dollars worth of food we can do that too just so we can take care of you",
+    "example_sentence": "You know, if you want to literally order a hundred dollars worth of food, we can do that too, just so we can take care of you."
+  },
+  {
+    "intent": "greeting",
+    "count": 4,
+    "normalized_sentence": "good morning",
+    "example_sentence": "Good morning."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "hi alexa this is andre from conquito catering",
+    "example_sentence": "Hi, Alexa, this is Andre from Conquito Catering."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "just hi on the last one",
+    "example_sentence": "Just hi on the last one."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "you should have it in a little bit because this one that i said hi to it has three pdfs with the packages and menus and latest prices",
+    "example_sentence": "You should have it in a little bit, because this one that I said hi to, it has three PDFs with the packages and menus and latest prices."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "good morning holly",
+    "example_sentence": "Good morning, Holly."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "good morning brian",
+    "example_sentence": "Good morning, Brian."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "good morning rachel",
+    "example_sentence": "Good morning, Rachel."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "hello this is andre from conquito catering",
+    "example_sentence": "Hello, this is Andre from Conquito Catering."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "hi this is andre from keto catering",
+    "example_sentence": "Hi, this is Andre from Keto Catering."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "hello joanna andre here from com keto catering",
+    "example_sentence": "Hello, Joanna Andre here from Com Keto Catering."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "yes hi i'm",
+    "example_sentence": "Yes, hi, I'm."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "hello this is andre calling from com keto catering",
+    "example_sentence": "Hello, this is andre calling from com keto catering."
+  },
+  {
+    "intent": "greeting",
+    "count": 1,
+    "normalized_sentence": "hello this is",
+    "example_sentence": "Hello, this is."
+  }
+]

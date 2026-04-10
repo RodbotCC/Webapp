@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-04-10T02:35:09.176Z",
+  "headline": "6 tasks today · 50 need attention · 0 closing this week",
+  "send_today": [
+    {
+      "lead": "Meghan Pingeton",
+      "value": 3620.7,
+      "action": "Contract/deposit confirmation — call Matt, walk through contract",
+      "category": "contracting_or_deposit",
+      "urgency": "urgent",
+      "icon": "gavel"
+    },
+    {
+      "lead": "Sue Tetuan Tavares",
+      "value": null,
+      "action": "Guest count scope + budget rescope — send rescoped quote TODAY",
+      "category": "quote_outstanding",
+      "urgency": "urgent",
+      "icon": "request_quote"
+    },
+    {
+      "lead": "Cheryl Rank",
+      "value": 3500,
+      "action": "Tasting decision — same-day follow-up call",
+      "category": "tasting_pending",
+      "urgency": "urgent",
+      "icon": "local_bar"
+    },
+    {
+      "lead": "Mayara Morgana Silva",
+      "value": 1500,
+      "action": "Event within 7 days — confirm details and logistics",
+      "category": "active_pipeline",
+      "urgency": "high",
+      "icon": "event_upcoming"
+    },
+    {
+      "lead": "Francisca Lopez",
+      "value": 1200,
+      "action": "Event within 7 days — confirm details and logistics",
+      "category": "active_pipeline",
+      "urgency": "high",
+      "icon": "event_upcoming"
+    },
+    {
+      "lead": "Edwin Portillo",
+      "value": 1000,
+      "action": "Event within 7 days — confirm details and logistics",
+      "category": "active_pipeline",
+      "urgency": "high",
+      "icon": "event_upcoming"
+    }
+  ],
+  "needs_attention": [
+    {
+      "id": "oppo_IKXLeMvHAIR25U7bAW4heyp81kysk4ZDXxp3WEsWJzI",
+      "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "name": "Gina Gallagher",
+      "value": 0,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 0,
+      "urgency": "high",
+      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+    },
+    {
+      "id": "oppo_gVRWGmwXN72UU79DJ8apmPfokgCKnIVrdv7jWE1dsDY",
+      "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "name": "Alexandra Fruzzetti",
+      "value": 1323,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "urgency": "high",
+      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+    },
+    {
+      "id": "oppo_kv52oYlo7ZQnzgqjlWNBWwlq9A1stSznlBM6UsxaANX",
+      "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "name": "Yuni Colindres",
+      "value": 1575,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "urgency": "high",
+      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+    },
+    {
+      "id": "oppo_axlG1EJZJK5uKw0u1Crqf0nsmNHkMDsimPaPfbDCLKi",
+      "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "name": "Williams Brown",
+      "value": 0,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 50,
+      "urgency": "high",
+      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+    },
+    {
+      "id": "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW",
+      "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "name": "Ju",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "urgency": "high",
+      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+    }
+  ],
+  "closing_soon": [],
+  "pipeline_summary": {
+    "total_pipeline": 109987.82,
+    "locked_in_revenue": 63690.82,
+    "at_risk_revenue": 46297,
+    "total_deals": 37,
+    "active_deals": 26,
+    "won_deals": 11,
+    "avg_deal_value": 2972.64,
+    "largest_deal": 14369
+  },
+  "alerts": [
+    {
+      "type": "deal_lost",
+      "severity": "critical",
+      "name": "Mary McGahan",
+      "value": 9000,
+      "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+      "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI"
+    }
+  ]
+}

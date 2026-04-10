@@ -1,0 +1,56 @@
+{
+  "email_templates": [
+    { "id": "inbound_day1", "name": "Inbound Day-1 Curiosity", "day": 1, "cadence": "inbound_5_day", "subject": "Curious About Your [Event Type]", "body": "Hi [Name],\n\nI noticed you recently reached out to us about catering for your [event type] on [date].\n\nWhat's the most important detail you're focusing on right now?" },
+    { "id": "inbound_day2", "name": "Inbound Day-2 Curiosity", "day": 2, "cadence": "inbound_5_day", "subject": "[First Name]", "body": "Hi [Name],\n\nIt's Andre again from Comeketo Catering.\n\nI was thinking about your [event type], and I'm curious about [specific thing].\n\nWhen would be a good time for a quick chat?" },
+    { "id": "inbound_day4", "name": "Inbound Day-4 Dream Question", "day": 4, "cadence": "inbound_5_day", "subject": "RE: [Event Type]", "body": "Quick question about your [event type]:\n\nWhat's one thing you've always dreamed of including, but weren't sure how to pull off?" },
+    { "id": "quote_direct", "name": "Quote Follow-Up Direct", "day": null, "cadence": "quote_follow_up", "subject": "[First Name]", "body": "Please let me know if there is anything specific holding you back from moving forward, or if you need any adjustments to the quote." },
+    { "id": "quote_soft", "name": "Quote Follow-Up Soft-Confused", "day": null, "cadence": "quote_follow_up", "subject": "Quote", "body": "[First Name],\n\nI get it, this catering stuff can be tough, and I wanted to see what questions you have.\n\nWhen's the best time to call?" }
+  ],
+  "sms_templates": [
+    { "id": "sms_day1", "name": "Day-1 Inbound", "day": 1, "cadence": "inbound_5_day", "body": "Hey [Name], it's Andre from Comeketo Catering. I just left you a voicemail but thought text might be easier. I have a few ideas for your [event type]. What's a good time today for a quick chat?" },
+    { "id": "sms_day2", "name": "Day-2 Inbound", "day": 2, "cadence": "inbound_5_day", "body": "Hey [Name], it's Andre again. I missed you but left a voicemail. I'm looking forward to brainstorming ideas for your [event type]. I'll try again on [day/time]." },
+    { "id": "sms_day5", "name": "Day-5 Finisher", "day": 5, "cadence": "inbound_5_day", "body": "Have you given up on catering your [event type]?" },
+    { "id": "sms_tasting_confirm", "name": "Tasting Confirmation", "day": null, "cadence": "tasting", "body": "Hi [Customer Name], this is Andre from Comeketo Catering. Your tasting appointment is confirmed for [Date] at [Time]. Please check your email for details." },
+    { "id": "sms_noshow_concern", "name": "No-Show Concern", "day": null, "cadence": "no_show_recovery", "body": "Hey [First Name], I missed you at the [tasting/appointment] today. I hope everything is okay. Give me a call so we can see when to reschedule." },
+    { "id": "sms_noshow_sharp", "name": "No-Show Sharper", "day": null, "cadence": "no_show_recovery", "body": "Hey [First Name], I missed you at the [tasting/appointment] today. Have you given up on catering?" },
+    { "id": "sms_quote_revisit", "name": "Quote Revisit", "day": null, "cadence": "quote_follow_up", "body": "Can we revisit the quote for your event?" },
+    { "id": "sms_quote_hangup", "name": "Quote Hang-Up", "day": null, "cadence": "quote_follow_up", "body": "What's holding you back from deciding on catering?" }
+  ],
+  "call_scripts": {
+    "post_tasting_day1": {
+      "name": "Post-Tasting Day 1",
+      "source": "Playbook Section 08.A Lines 1433-1442",
+      "script": "Hi [Name], this is Andre from Comeketo Catering. I'm excited to hear about your tasting yesterday. How did you like the food and our service?\n\n[PAUSE FOR RESPONSE]\n\nI'm glad to hear that! What do you feel would be a good next step?\n\n[PAUSE FOR RESPONSE]\n\nThat sounds great. We'd love to be a part of your [event]. When would you like to secure the catering service?"
+    },
+    "deposit_close": {
+      "name": "Deposit Assumptive Close",
+      "source": "Playbook Section 08.A.(c) Lines 1467-1472",
+      "script": "Based on everything we've discussed, and the quote provided, would it be a bad idea to lock in Comeketo Catering for your event?\n\n[WAIT FOR ANSWER]\n\nThat's wonderful to hear! I'll go ahead and get everything set up. To finalize, we'll need a deposit to reserve your date. Can we take care of that now?"
+    },
+    "deposit_hesitation": {
+      "name": "Deposit Hesitation Handler",
+      "source": "Playbook + Closer Scripts",
+      "script": "I completely understand. The deposit simply secures your date on our calendar - we're booking out almost 2 years in advance. It's fully refundable if anything changes after the tasting. What concerns do you have about moving forward today?"
+    },
+    "secret_weapon": {
+      "name": "Secret Weapon (Stakeholder)",
+      "source": "Playbook Section 06.02 Line 947",
+      "script": "And regarding your [partner], is this something you 2 talked about before, or are we on a secret mission here? {ha, ha}"
+    },
+    "three_way_offer": {
+      "name": "Three-Way Call Offer",
+      "source": "Playbook Section 06.02",
+      "script": "Here's what I'd suggest: Let's schedule a quick 15-minute call with you, [partner], and me. I'll walk through the menu, pricing, and answer any questions directly. That way [partner] gets the full picture and you can make the decision together. How does [day/time] work for both of you?"
+    },
+    "quote_follow_up": {
+      "name": "Quote Follow-Up Call",
+      "source": "Playbook Section 08.B Lines 1598-1618",
+      "script": "Hi [First Name], this is Andre from Comeketo Catering. I noticed you received a quote from us for your event but haven't accepted it yet. I wanted to follow up and see what the hang-up is.\n\nCan you tell me what questions you have about our quote?"
+    },
+    "urgency_scarcity": {
+      "name": "Urgency + Scarcity Close",
+      "source": "Playbook Lines 1455-1460",
+      "script": "I also wanted to mention that we have limited availability around your event date, and I'd hate for you to miss out on securing your spot. By confirming today, we can ensure everything is perfectly planned for your special day."
+    }
+  }
+}

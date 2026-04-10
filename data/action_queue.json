@@ -1,0 +1,2613 @@
+{
+  "_meta": {
+    "description": "Action queue processed by Claude / Cowork Automation",
+    "last_processed": "2026-04-10T02:20:09.139Z"
+  },
+  "pending": [
+    {
+      "id": "act_1775716167013",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:27.010Z"
+      },
+      "queued_at": "2026-04-09T06:29:27.013Z",
+      "status": "pending"
+    },
+    {
+      "id": "act_1775723058390",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan ⚠️ CANCELLED",
+        "requested_at": "2026-04-09T08:24:18.381Z"
+      },
+      "queued_at": "2026-04-09T08:24:18.390Z",
+      "status": "pending"
+    },
+    {
+      "id": "act_1775723059988",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+        "name": "Andreia DePina Moore",
+        "requested_at": "2026-04-09T08:24:19.985Z"
+      },
+      "queued_at": "2026-04-09T08:24:19.988Z",
+      "status": "pending"
+    },
+    {
+      "id": "act_1775723123808",
+      "type": "check_cadences_due",
+      "payload": {
+        "date": "Thu Apr 09 2026",
+        "requested_at": "2026-04-09T08:25:23.805Z"
+      },
+      "queued_at": "2026-04-09T08:25:23.808Z",
+      "status": "pending"
+    },
+    {
+      "id": "act_1775724408462",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+        "name": "Mary Ann Hughes",
+        "requested_at": "2026-04-09T08:46:48.459Z"
+      },
+      "queued_at": "2026-04-09T08:46:48.462Z",
+      "status": "pending"
+    },
+    {
+      "id": "act_1775766064971_gkqnu7",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T20:21:04.966Z"
+      },
+      "queued_at": "2026-04-09T20:21:04.971Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null
+    },
+    {
+      "id": "act_1775776970461_b86ij0",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+        "name": "Gabby Garcia Serrano",
+        "requested_at": "2026-04-09T23:22:50.458Z"
+      },
+      "queued_at": "2026-04-09T23:22:50.462Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null
+    }
+  ],
+  "completed": [
+    {
+      "id": "act_1775787609137_cf41su",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-10T02:20:09.136Z"
+      },
+      "queued_at": "2026-04-10T02:20:09.137Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-10T02:20:09.139Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      }
+    },
+    {
+      "id": "act_1775787129123_1lcbzq",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-10T02:12:09.122Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T02:12:09.123Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-10T02:12:09.620Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775784208546_j3laxy",
+      "type": "generate_morning_brief",
+      "payload": {
+        "date": "Thu Apr 09 2026",
+        "requested_at": "2026-04-10T01:23:28.540Z"
+      },
+      "queued_at": "2026-04-10T01:23:28.546Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-10T01:23:28.555Z",
+      "result": {
+        "file": "automation_morning_brief.json",
+        "headline": "6 tasks today · 50 need attention · 0 closing this week"
+      }
+    },
+    {
+      "id": "act_1775781621807_kkylry",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-10T00:40:21.804Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T00:40:21.807Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "completed_at": "2026-04-10T00:40:22.285Z",
+      "result": {
+        "lead_name": "Alexandra Fruzzetti",
+        "status": "🔘 Maybe",
+        "description": "Quincy Zip: 02169\nPeople 35\nEvent Desc: wedding reception\nEvent Date: August 9th 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Alexandra Fruzzetti. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775776955729_o25ja9",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-09T23:22:35.726Z"
+      },
+      "queued_at": "2026-04-09T23:22:35.730Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-09T23:22:36.170Z",
+      "result": {
+        "lead_name": "Gina Gallagher",
+        "status": "⚪ Probably Not",
+        "description": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T20:01:29.418Z\nEvent Date: December 2027\nVenue: \nEmail Permission: Yes\nImport Note: Imported from FormSubmit expo submissions.",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Gina Gallagher. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "next_step": {
+        "kind": "draft_message",
+        "label": "Ready for message drafting",
+        "activated_at": "2026-04-09T23:23:05.944Z"
+      },
+      "review": {
+        "disposition": "approved",
+        "note": "Approved in command center for next action.",
+        "reviewed_at": "2026-04-09T23:23:05.944Z",
+        "reviewed_by": "Andre Raw"
+      }
+    },
+    {
+      "id": "act_1775773889355_9ncc7c",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T22:31:29.351Z"
+      },
+      "queued_at": "2026-04-09T22:31:29.355Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-09T22:31:30.110Z",
+      "result": {
+        "synced": 688,
+        "timestamp": "2026-04-09T22:31:30.109Z"
+      }
+    },
+    {
+      "id": "act_1775773066691_gprtkp",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T22:17:46.681Z"
+      },
+      "queued_at": "2026-04-09T22:17:46.691Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-09T22:17:46.714Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      }
+    },
+    {
+      "id": "act_1775772562145_x2dhoc",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T22:09:22.144Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T22:09:22.145Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-09T22:09:22.390Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775770726594_zu6y47",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-09T21:38:46.592Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T21:38:46.594Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "completed_at": "2026-04-09T21:38:47.065Z",
+      "result": {
+        "lead_name": "Gina Gallagher",
+        "status": "⚪ Probably Not",
+        "description": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T20:01:29.418Z\nEvent Date: December 2027\nVenue: \nEmail Permission: Yes\nImport Note: Imported from FormSubmit expo submissions.",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Gina Gallagher. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775767101130_rqxs9c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-09T20:38:21.128Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T20:38:21.130Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "completed_at": "2026-04-09T20:38:21.692Z",
+      "result": {
+        "lead_name": "Alexandra Fruzzetti",
+        "status": "🔘 Maybe",
+        "description": "Quincy Zip: 02169\nPeople 35\nEvent Desc: wedding reception\nEvent Date: August 9th 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Alexandra Fruzzetti. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775766058941_usc4k0",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T20:20:58.936Z"
+      },
+      "queued_at": "2026-04-09T20:20:58.941Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-09T20:20:59.419Z",
+      "result": {
+        "lead_name": "Williams Brown",
+        "status": "⚪ Probably Not",
+        "description": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Williams Brown. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775758640849_hfo42w",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T18:17:20.847Z"
+      },
+      "queued_at": "2026-04-09T18:17:20.849Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-09T18:17:20.856Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      }
+    },
+    {
+      "id": "act_1775758041403_ynw6il",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T18:07:21.402Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T18:07:21.403Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "completed_at": "2026-04-09T18:07:21.643Z",
+      "result": {
+        "lead_name": "Williams Brown",
+        "status": "⚪ Probably Not",
+        "description": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Williams Brown. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775758040830_fv91zn",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T18:07:20.829Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T18:07:20.830Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-09T18:07:21.401Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775752581841_o0gqlf",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-09T16:36:21.841Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T16:36:21.841Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "completed_at": "2026-04-09T16:36:22.730Z",
+      "result": {
+        "lead_name": "Alexandra Fruzzetti",
+        "status": "🔘 Maybe",
+        "description": "Quincy Zip: 02169\nPeople 35\nEvent Desc: wedding reception\nEvent Date: August 9th 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Alexandra Fruzzetti. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775743299540_896t1t",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T14:01:39.538Z"
+      },
+      "queued_at": "2026-04-09T14:01:39.541Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-09T14:01:39.554Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      }
+    },
+    {
+      "id": "act_1775742700328_h4nbq8",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+        "name": "Ju",
+        "requested_at": "2026-04-09T13:51:40.327Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:40.328Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "completed_at": "2026-04-09T13:51:40.543Z",
+      "result": {
+        "lead_name": "Ju",
+        "status": "🔘 Maybe",
+        "description": "Northborough Zip: 01532\nPeople 120\nEvent Desc: Sweet 15\nEvent Date: 12/12/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Ju. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775742700073_fts7w7",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T13:51:40.072Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:40.073Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "completed_at": "2026-04-09T13:51:40.326Z",
+      "result": {
+        "lead_name": "Williams Brown",
+        "status": "⚪ Probably Not",
+        "description": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Williams Brown. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775742699533_r9rdnx",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T13:51:39.529Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:39.533Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-09T13:51:40.071Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775728791837_sky99i",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T09:59:51.836Z"
+      },
+      "queued_at": "2026-04-09T09:59:51.837Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-09T09:59:51.839Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      },
+      "review": {
+        "disposition": "approved",
+        "note": "Approved for send lane",
+        "reviewed_at": "2026-04-09T10:15:46.528Z",
+        "reviewed_by": "Andre Raw"
+      },
+      "next_step": {
+        "kind": "resolve_exception",
+        "label": "Ready for exception resolution",
+        "activated_at": "2026-04-09T10:15:46.528Z"
+      }
+    },
+    {
+      "id": "act_1775728220197_3hlwb3",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+        "name": "Ju",
+        "requested_at": "2026-04-09T09:50:20.197Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:20.197Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "completed_at": "2026-04-09T09:50:20.392Z",
+      "result": {
+        "lead_name": "Ju",
+        "status": "🔘 Maybe",
+        "description": "Northborough Zip: 01532\nPeople 120\nEvent Desc: Sweet 15\nEvent Date: 12/12/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Ju. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775728219985_pwcgqw",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T09:50:19.985Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:19.985Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "completed_at": "2026-04-09T09:50:20.196Z",
+      "result": {
+        "lead_name": "Williams Brown",
+        "status": "⚪ Probably Not",
+        "description": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Williams Brown. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775728219760_4ynxze",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T09:50:19.759Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:19.760Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-09T09:50:19.984Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775724406357",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+        "name": "Mary Ann Hughes",
+        "requested_at": "2026-04-09T08:46:46.350Z"
+      },
+      "queued_at": "2026-04-09T08:46:46.358Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T08:46:46.821Z",
+      "result": {
+        "lead_name": "Mary Ann Hughes",
+        "status": "⚪ Probably Not",
+        "description": "Mary's Party\n80 Guests\nSat, Oct 4, 2025\n(date flexible)\n1:00 PM (3.0 Hours)\n$15 - $25 / person Budget\nmahughes123@verizon.net \n508-330-4614",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Mary Ann Hughes. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775723130032",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T08:25:30.030Z"
+      },
+      "queued_at": "2026-04-09T08:25:30.032Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T08:25:30.776Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T08:25:30.775Z"
+      }
+    },
+    {
+      "id": "act_1775723033018",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+        "name": "Andreia DePina Moore",
+        "requested_at": "2026-04-09T08:23:53.013Z"
+      },
+      "queued_at": "2026-04-09T08:23:53.018Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T08:23:53.238Z",
+      "result": {
+        "lead_name": "Andreia DePina Moore",
+        "status": "🟢 Probably",
+        "description": "Boston Zip: 02119\nPeople 25\nEvent Desc: Anniversary\nEvent Date: August 1\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Andreia DePina Moore. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775723029734",
+      "type": "sync_close_crm_pipeline",
+      "payload": {
+        "requested_by": "Andre Raw",
+        "timestamp": "2026-04-09T08:23:49.730Z"
+      },
+      "queued_at": "2026-04-09T08:23:49.734Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T08:23:50.602Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T08:23:50.601Z"
+      }
+    },
+    {
+      "id": "act_1775716178555",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T06:29:38.548Z"
+      },
+      "queued_at": "2026-04-09T06:29:38.555Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T06:29:39.403Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T06:29:39.402Z"
+      }
+    },
+    {
+      "id": "act_1775716161331",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:21.319Z"
+      },
+      "queued_at": "2026-04-09T06:29:21.331Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T06:29:21.846Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775709861937",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:44:21.933Z"
+      },
+      "queued_at": "2026-04-09T04:44:21.937Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:44:22.340Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775709854204",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:44:14.200Z"
+      },
+      "queued_at": "2026-04-09T04:44:14.204Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:44:14.646Z",
+      "result": {
+        "lead_name": "",
+        "status": "🔥 Definitely",
+        "description": "76-100\n🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering\nWedding\n08/29/26\nFrom comeketocatering.com",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Website Lead (comeketocatering.com). Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775707593211",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T04:06:33.209Z"
+      },
+      "queued_at": "2026-04-09T04:06:33.211Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:33.637Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T04:06:33.636Z"
+      }
+    },
+    {
+      "id": "act_1775707589030",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:06:29.029Z"
+      },
+      "queued_at": "2026-04-09T04:06:29.030Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:29.249Z",
+      "result": {
+        "lead_name": "",
+        "status": "🔥 Definitely",
+        "description": "76-100\n🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering\nWedding\n08/29/26\nFrom comeketocatering.com",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Website Lead (comeketocatering.com). Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775707587030",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:27.028Z"
+      },
+      "queued_at": "2026-04-09T04:06:27.030Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:27.281Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775707586567",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:26.565Z"
+      },
+      "queued_at": "2026-04-09T04:06:26.567Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:27.010Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775707586375",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:26.374Z"
+      },
+      "queued_at": "2026-04-09T04:06:26.376Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:26.625Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775707582800",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:22.798Z"
+      },
+      "queued_at": "2026-04-09T04:06:22.800Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:23.253Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775707571555",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:06:11.549Z"
+      },
+      "queued_at": "2026-04-09T04:06:11.555Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:12.028Z",
+      "result": {
+        "lead_name": "",
+        "status": "🔥 Definitely",
+        "description": "76-100\n🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering\nWedding\n08/29/26\nFrom comeketocatering.com",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Website Lead (comeketocatering.com). Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775707541683",
+      "type": "sync_close_crm_pipeline",
+      "payload": {
+        "requested_by": "Andre Raw",
+        "timestamp": "2026-04-09T04:05:41.657Z"
+      },
+      "queued_at": "2026-04-09T04:05:41.683Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:05:42.498Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T04:05:42.495Z"
+      }
+    },
+    {
+      "id": "act_1775704869945",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan"
+      },
+      "queued_at": "2026-04-09T03:21:09.945Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T03:21:56.345Z",
+      "result": {
+        "status": "NO_ACTION_REQUIRED",
+        "reason": "Wedding cancelled — Mary McGahan replied on Apr 8: No. The wedding is off. Thank you.",
+        "recommendation": "Move opportunity to Lost status in Close CRM. Do not follow up.",
+        "contact_email": "missmarv123@gmail.com",
+        "deal_value_recovered": 0,
+        "action_taken": "Flagged for status update"
+      }
+    }
+  ],
+  "log": [
+    {
+      "id": "act_1775704869945",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan"
+      },
+      "queued_at": "2026-04-09T03:21:09.945Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775704869945",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan"
+      },
+      "queued_at": "2026-04-09T03:21:09.945Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T03:21:56.345Z",
+      "result": {
+        "status": "NO_ACTION_REQUIRED",
+        "reason": "Wedding cancelled — Mary McGahan replied on Apr 8: No. The wedding is off. Thank you.",
+        "recommendation": "Move opportunity to Lost status in Close CRM. Do not follow up.",
+        "contact_email": "missmarv123@gmail.com",
+        "deal_value_recovered": 0,
+        "action_taken": "Flagged for status update"
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707541683",
+      "type": "sync_close_crm_pipeline",
+      "payload": {
+        "requested_by": "Andre Raw",
+        "timestamp": "2026-04-09T04:05:41.657Z"
+      },
+      "queued_at": "2026-04-09T04:05:41.683Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707541683",
+      "type": "sync_close_crm_pipeline",
+      "payload": {
+        "requested_by": "Andre Raw",
+        "timestamp": "2026-04-09T04:05:41.657Z"
+      },
+      "queued_at": "2026-04-09T04:05:41.683Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:05:42.498Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T04:05:42.495Z"
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707571555",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:06:11.549Z"
+      },
+      "queued_at": "2026-04-09T04:06:11.555Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707571555",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:06:11.549Z"
+      },
+      "queued_at": "2026-04-09T04:06:11.555Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:12.028Z",
+      "result": {
+        "lead_name": "",
+        "status": "🔥 Definitely",
+        "description": "76-100\n🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering\nWedding\n08/29/26\nFrom comeketocatering.com",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Website Lead (comeketocatering.com). Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707582800",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:22.798Z"
+      },
+      "queued_at": "2026-04-09T04:06:22.800Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707582800",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:22.798Z"
+      },
+      "queued_at": "2026-04-09T04:06:22.800Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:23.253Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707584435",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:24.433Z"
+      },
+      "queued_at": "2026-04-09T04:06:24.435Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707585605",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:25.603Z"
+      },
+      "queued_at": "2026-04-09T04:06:25.605Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707586375",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:26.374Z"
+      },
+      "queued_at": "2026-04-09T04:06:26.376Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707586567",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:26.565Z"
+      },
+      "queued_at": "2026-04-09T04:06:26.567Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707586375",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:26.374Z"
+      },
+      "queued_at": "2026-04-09T04:06:26.376Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:26.625Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707586567",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:26.565Z"
+      },
+      "queued_at": "2026-04-09T04:06:26.567Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:27.010Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707587030",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:27.028Z"
+      },
+      "queued_at": "2026-04-09T04:06:27.030Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707587030",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:06:27.028Z"
+      },
+      "queued_at": "2026-04-09T04:06:27.030Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:27.281Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707589030",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:06:29.029Z"
+      },
+      "queued_at": "2026-04-09T04:06:29.030Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707589030",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:06:29.029Z"
+      },
+      "queued_at": "2026-04-09T04:06:29.030Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:29.249Z",
+      "result": {
+        "lead_name": "",
+        "status": "🔥 Definitely",
+        "description": "76-100\n🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering\nWedding\n08/29/26\nFrom comeketocatering.com",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Website Lead (comeketocatering.com). Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707591471",
+      "type": "check_cadences_due",
+      "payload": {
+        "date": "Thu Apr 09 2026",
+        "requested_at": "2026-04-09T04:06:31.469Z"
+      },
+      "queued_at": "2026-04-09T04:06:31.471Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707593211",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T04:06:33.209Z"
+      },
+      "queued_at": "2026-04-09T04:06:33.211Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775707593211",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T04:06:33.209Z"
+      },
+      "queued_at": "2026-04-09T04:06:33.211Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:06:33.637Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T04:06:33.636Z"
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775707594735",
+      "type": "generate_morning_brief",
+      "payload": {
+        "date": "Thu Apr 09 2026",
+        "requested_at": "2026-04-09T04:06:34.733Z"
+      },
+      "queued_at": "2026-04-09T04:06:34.735Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775709854204",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:44:14.200Z"
+      },
+      "queued_at": "2026-04-09T04:44:14.204Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775709854204",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_3UsiDR1toez7VpLHNryEwqVuarYhtGuHYD0gJRqQ5mV",
+        "name": "Website Lead (comeketocatering.com)",
+        "requested_at": "2026-04-09T04:44:14.200Z"
+      },
+      "queued_at": "2026-04-09T04:44:14.204Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:44:14.646Z",
+      "result": {
+        "lead_name": "",
+        "status": "🔥 Definitely",
+        "description": "76-100\n🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering\nWedding\n08/29/26\nFrom comeketocatering.com",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Website Lead (comeketocatering.com). Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775709861937",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:44:21.933Z"
+      },
+      "queued_at": "2026-04-09T04:44:21.937Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775709861937",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T04:44:21.933Z"
+      },
+      "queued_at": "2026-04-09T04:44:21.937Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T04:44:22.340Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775716161331",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:21.319Z"
+      },
+      "queued_at": "2026-04-09T06:29:21.331Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775716161331",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:21.319Z"
+      },
+      "queued_at": "2026-04-09T06:29:21.331Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T06:29:21.846Z",
+      "result": {
+        "lead_name": "Carolyn Boumila-Vega",
+        "status": "🔘 Maybe",
+        "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Carolyn Boumila-Vega. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775716164556",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:24.554Z"
+      },
+      "queued_at": "2026-04-09T06:29:24.556Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775716166532",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:26.529Z"
+      },
+      "queued_at": "2026-04-09T06:29:26.532Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775716166691",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:26.688Z"
+      },
+      "queued_at": "2026-04-09T06:29:26.691Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775716166837",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:26.834Z"
+      },
+      "queued_at": "2026-04-09T06:29:26.837Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775716167013",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+        "name": "Carolyn Boumila-Vega",
+        "requested_at": "2026-04-09T06:29:27.010Z"
+      },
+      "queued_at": "2026-04-09T06:29:27.013Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775716178555",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T06:29:38.548Z"
+      },
+      "queued_at": "2026-04-09T06:29:38.555Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775716178555",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T06:29:38.548Z"
+      },
+      "queued_at": "2026-04-09T06:29:38.555Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T06:29:39.403Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T06:29:39.402Z"
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775723029734",
+      "type": "sync_close_crm_pipeline",
+      "payload": {
+        "requested_by": "Andre Raw",
+        "timestamp": "2026-04-09T08:23:49.730Z"
+      },
+      "queued_at": "2026-04-09T08:23:49.734Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775723029734",
+      "type": "sync_close_crm_pipeline",
+      "payload": {
+        "requested_by": "Andre Raw",
+        "timestamp": "2026-04-09T08:23:49.730Z"
+      },
+      "queued_at": "2026-04-09T08:23:49.734Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T08:23:50.602Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T08:23:50.601Z"
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775723033018",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+        "name": "Andreia DePina Moore",
+        "requested_at": "2026-04-09T08:23:53.013Z"
+      },
+      "queued_at": "2026-04-09T08:23:53.018Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775723033018",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+        "name": "Andreia DePina Moore",
+        "requested_at": "2026-04-09T08:23:53.013Z"
+      },
+      "queued_at": "2026-04-09T08:23:53.018Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T08:23:53.238Z",
+      "result": {
+        "lead_name": "Andreia DePina Moore",
+        "status": "🟢 Probably",
+        "description": "Boston Zip: 02119\nPeople 25\nEvent Desc: Anniversary\nEvent Date: August 1\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Andreia DePina Moore. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775723058390",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan ⚠️ CANCELLED",
+        "requested_at": "2026-04-09T08:24:18.381Z"
+      },
+      "queued_at": "2026-04-09T08:24:18.390Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775723059988",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+        "name": "Andreia DePina Moore",
+        "requested_at": "2026-04-09T08:24:19.985Z"
+      },
+      "queued_at": "2026-04-09T08:24:19.988Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775723119071",
+      "type": "generate_morning_brief",
+      "payload": {
+        "date": "Thu Apr 09 2026",
+        "requested_at": "2026-04-09T08:25:19.068Z"
+      },
+      "queued_at": "2026-04-09T08:25:19.071Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775723123808",
+      "type": "check_cadences_due",
+      "payload": {
+        "date": "Thu Apr 09 2026",
+        "requested_at": "2026-04-09T08:25:23.805Z"
+      },
+      "queued_at": "2026-04-09T08:25:23.808Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775723130032",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T08:25:30.030Z"
+      },
+      "queued_at": "2026-04-09T08:25:30.032Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775723130032",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T08:25:30.030Z"
+      },
+      "queued_at": "2026-04-09T08:25:30.032Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T08:25:30.776Z",
+      "result": {
+        "synced": 100,
+        "timestamp": "2026-04-09T08:25:30.775Z"
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775724406357",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+        "name": "Mary Ann Hughes",
+        "requested_at": "2026-04-09T08:46:46.350Z"
+      },
+      "queued_at": "2026-04-09T08:46:46.358Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775724406357",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+        "name": "Mary Ann Hughes",
+        "requested_at": "2026-04-09T08:46:46.350Z"
+      },
+      "queued_at": "2026-04-09T08:46:46.358Z",
+      "status": "completed",
+      "completed_at": "2026-04-09T08:46:46.821Z",
+      "result": {
+        "lead_name": "Mary Ann Hughes",
+        "status": "⚪ Probably Not",
+        "description": "Mary's Party\n80 Guests\nSat, Oct 4, 2025\n(date flexible)\n1:00 PM (3.0 Hours)\n$15 - $25 / person Budget\nmahughes123@verizon.net \n508-330-4614",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Mary Ann Hughes. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775724408462",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+        "name": "Mary Ann Hughes",
+        "requested_at": "2026-04-09T08:46:48.459Z"
+      },
+      "queued_at": "2026-04-09T08:46:48.462Z",
+      "status": "pending",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775728219760_4ynxze",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T09:50:19.759Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:19.760Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775728219760_4ynxze",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T09:50:19.759Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:19.760Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-09T09:50:19.984Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775728219985_pwcgqw",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T09:50:19.985Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:19.985Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775728219985_pwcgqw",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T09:50:19.985Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:19.985Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "completed_at": "2026-04-09T09:50:20.196Z",
+      "result": {
+        "lead_name": "Williams Brown",
+        "status": "⚪ Probably Not",
+        "description": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Williams Brown. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775728220197_3hlwb3",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+        "name": "Ju",
+        "requested_at": "2026-04-09T09:50:20.197Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:20.197Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775728220197_3hlwb3",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+        "name": "Ju",
+        "requested_at": "2026-04-09T09:50:20.197Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T09:50:20.197Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "completed_at": "2026-04-09T09:50:20.392Z",
+      "result": {
+        "lead_name": "Ju",
+        "status": "🔘 Maybe",
+        "description": "Northborough Zip: 01532\nPeople 120\nEvent Desc: Sweet 15\nEvent Date: 12/12/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Ju. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775728791837_sky99i",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T09:59:51.836Z"
+      },
+      "queued_at": "2026-04-09T09:59:51.837Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775728791837_sky99i",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T09:59:51.836Z"
+      },
+      "queued_at": "2026-04-09T09:59:51.837Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-09T09:59:51.839Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775728791837_sky99i",
+      "type": "prepare_critical_alert_review",
+      "event": "reviewed",
+      "disposition": "approved",
+      "note": "Approved from verification pass",
+      "reviewed_at": "2026-04-09T10:05:35.941Z"
+    },
+    {
+      "id": "act_1775728791837_sky99i",
+      "type": "prepare_critical_alert_review",
+      "event": "reviewed",
+      "disposition": "approved",
+      "note": "Approved for send lane",
+      "reviewed_at": "2026-04-09T10:15:46.528Z"
+    },
+    {
+      "id": "act_1775742699533_r9rdnx",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T13:51:39.529Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:39.533Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775742699533_r9rdnx",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T13:51:39.529Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:39.533Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-09T13:51:40.071Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775742700073_fts7w7",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T13:51:40.072Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:40.073Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775742700073_fts7w7",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T13:51:40.072Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:40.073Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "completed_at": "2026-04-09T13:51:40.326Z",
+      "result": {
+        "lead_name": "Williams Brown",
+        "status": "⚪ Probably Not",
+        "description": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Williams Brown. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775742700328_h4nbq8",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+        "name": "Ju",
+        "requested_at": "2026-04-09T13:51:40.327Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:40.328Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775742700328_h4nbq8",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+        "name": "Ju",
+        "requested_at": "2026-04-09T13:51:40.327Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T13:51:40.328Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "completed_at": "2026-04-09T13:51:40.543Z",
+      "result": {
+        "lead_name": "Ju",
+        "status": "🔘 Maybe",
+        "description": "Northborough Zip: 01532\nPeople 120\nEvent Desc: Sweet 15\nEvent Date: 12/12/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Ju. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775743299540_896t1t",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T14:01:39.538Z"
+      },
+      "queued_at": "2026-04-09T14:01:39.541Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775743299540_896t1t",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T14:01:39.538Z"
+      },
+      "queued_at": "2026-04-09T14:01:39.541Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-09T14:01:39.554Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775752581841_o0gqlf",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-09T16:36:21.841Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T16:36:21.841Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775752581841_o0gqlf",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-09T16:36:21.841Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T16:36:21.841Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "completed_at": "2026-04-09T16:36:22.730Z",
+      "result": {
+        "lead_name": "Alexandra Fruzzetti",
+        "status": "🔘 Maybe",
+        "description": "Quincy Zip: 02169\nPeople 35\nEvent Desc: wedding reception\nEvent Date: August 9th 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Alexandra Fruzzetti. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775758040830_fv91zn",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T18:07:20.829Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T18:07:20.830Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775758040830_fv91zn",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T18:07:20.829Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T18:07:20.830Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-09T18:07:21.401Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775758041403_ynw6il",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T18:07:21.402Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T18:07:21.403Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775758041403_ynw6il",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T18:07:21.402Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T18:07:21.403Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "completed_at": "2026-04-09T18:07:21.643Z",
+      "result": {
+        "lead_name": "Williams Brown",
+        "status": "⚪ Probably Not",
+        "description": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Williams Brown. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775758640849_hfo42w",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T18:17:20.847Z"
+      },
+      "queued_at": "2026-04-09T18:17:20.849Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775758640849_hfo42w",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T18:17:20.847Z"
+      },
+      "queued_at": "2026-04-09T18:17:20.849Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-09T18:17:20.856Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775766058941_usc4k0",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T20:20:58.936Z"
+      },
+      "queued_at": "2026-04-09T20:20:58.941Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1775766058941_usc4k0",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T20:20:58.936Z"
+      },
+      "queued_at": "2026-04-09T20:20:58.941Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-09T20:20:59.419Z",
+      "result": {
+        "lead_name": "Williams Brown",
+        "status": "⚪ Probably Not",
+        "description": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Williams Brown. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775766064971_gkqnu7",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+        "name": "Williams Brown",
+        "requested_at": "2026-04-09T20:21:04.966Z"
+      },
+      "queued_at": "2026-04-09T20:21:04.971Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1775767101130_rqxs9c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-09T20:38:21.128Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T20:38:21.130Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775767101130_rqxs9c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-09T20:38:21.128Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T20:38:21.130Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "completed_at": "2026-04-09T20:38:21.692Z",
+      "result": {
+        "lead_name": "Alexandra Fruzzetti",
+        "status": "🔘 Maybe",
+        "description": "Quincy Zip: 02169\nPeople 35\nEvent Desc: wedding reception\nEvent Date: August 9th 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Alexandra Fruzzetti. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775770726594_zu6y47",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-09T21:38:46.592Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T21:38:46.594Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775770726594_zu6y47",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-09T21:38:46.592Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T21:38:46.594Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "completed_at": "2026-04-09T21:38:47.065Z",
+      "result": {
+        "lead_name": "Gina Gallagher",
+        "status": "⚪ Probably Not",
+        "description": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T20:01:29.418Z\nEvent Date: December 2027\nVenue: \nEmail Permission: Yes\nImport Note: Imported from FormSubmit expo submissions.",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Gina Gallagher. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775772562145_x2dhoc",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T22:09:22.144Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T22:09:22.145Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775772562145_x2dhoc",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-09T22:09:22.144Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-09T22:09:22.145Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-09T22:09:22.390Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775773066691_gprtkp",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T22:17:46.681Z"
+      },
+      "queued_at": "2026-04-09T22:17:46.691Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775773066691_gprtkp",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-09T22:17:46.681Z"
+      },
+      "queued_at": "2026-04-09T22:17:46.691Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-09T22:17:46.714Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775773889355_9ncc7c",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T22:31:29.351Z"
+      },
+      "queued_at": "2026-04-09T22:31:29.355Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1775773889355_9ncc7c",
+      "type": "full_pipeline_sync",
+      "payload": {
+        "requested_at": "2026-04-09T22:31:29.351Z"
+      },
+      "queued_at": "2026-04-09T22:31:29.355Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-09T22:31:30.110Z",
+      "result": {
+        "synced": 688,
+        "timestamp": "2026-04-09T22:31:30.109Z"
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775776955729_o25ja9",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-09T23:22:35.726Z"
+      },
+      "queued_at": "2026-04-09T23:22:35.730Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1775776955729_o25ja9",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-09T23:22:35.726Z"
+      },
+      "queued_at": "2026-04-09T23:22:35.730Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-09T23:22:36.170Z",
+      "result": {
+        "lead_name": "Gina Gallagher",
+        "status": "⚪ Probably Not",
+        "description": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T20:01:29.418Z\nEvent Date: December 2027\nVenue: \nEmail Permission: Yes\nImport Note: Imported from FormSubmit expo submissions.",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Gina Gallagher. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775776970461_b86ij0",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+        "name": "Gabby Garcia Serrano",
+        "requested_at": "2026-04-09T23:22:50.458Z"
+      },
+      "queued_at": "2026-04-09T23:22:50.462Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1775776955729_o25ja9",
+      "type": "draft_close_crm_followup",
+      "event": "reviewed",
+      "disposition": "approved",
+      "note": "Approved in command center for next action.",
+      "reviewed_at": "2026-04-09T23:23:05.944Z"
+    },
+    {
+      "id": "act_1775781621807_kkylry",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-10T00:40:21.804Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T00:40:21.807Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775781621807_kkylry",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-10T00:40:21.804Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T00:40:21.807Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "completed_at": "2026-04-10T00:40:22.285Z",
+      "result": {
+        "lead_name": "Alexandra Fruzzetti",
+        "status": "🔘 Maybe",
+        "description": "Quincy Zip: 02169\nPeople 35\nEvent Desc: wedding reception\nEvent Date: August 9th 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Alexandra Fruzzetti. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775784208546_j3laxy",
+      "type": "generate_morning_brief",
+      "payload": {
+        "date": "Thu Apr 09 2026",
+        "requested_at": "2026-04-10T01:23:28.540Z"
+      },
+      "queued_at": "2026-04-10T01:23:28.546Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1775784208546_j3laxy",
+      "type": "generate_morning_brief",
+      "payload": {
+        "date": "Thu Apr 09 2026",
+        "requested_at": "2026-04-10T01:23:28.540Z"
+      },
+      "queued_at": "2026-04-10T01:23:28.546Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-10T01:23:28.555Z",
+      "result": {
+        "file": "automation_morning_brief.json",
+        "headline": "6 tasks today · 50 need attention · 0 closing this week"
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775787129123_1lcbzq",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-10T02:12:09.122Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T02:12:09.123Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775787129123_1lcbzq",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-10T02:12:09.122Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T02:12:09.123Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-10T02:12:09.620Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775787609137_cf41su",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-10T02:20:09.136Z"
+      },
+      "queued_at": "2026-04-10T02:20:09.137Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775787609137_cf41su",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-10T02:20:09.136Z"
+      },
+      "queued_at": "2026-04-10T02:20:09.137Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-10T02:20:09.139Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      },
+      "event": "completed"
+    }
+  ]
+}

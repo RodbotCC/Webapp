@@ -1,0 +1,1298 @@
+// ═══════════════════════════════════════════════════════
+// COMEKETO SALES COMMAND CENTER — Action Server v2
+// Run: node server.js   →   http://localhost:3141
+// ═══════════════════════════════════════════════════════
+require('dotenv').config();
+const express = require('express');
+const cors    = require('cors');
+const fs      = require('fs');
+const path    = require('path');
+const https   = require('https');
+
+const app  = express();
+const PORT = process.env.PORT || 3141;
+const DATA = process.env.DATA_DIR
+  ? path.resolve(process.env.DATA_DIR)
+  : path.join(__dirname, 'data');
+
+try {
+  fs.mkdirSync(DATA, { recursive: true });
+} catch (e) {
+  console.warn('[DATA] Could not ensure data directory:', e.message);
+}
+const AUTOMATION_STATE_FILE = 'automation_state.json';
+const SETTINGS_FILE = 'settings.json';
+const SETTINGS_LOCAL_FILE = 'settings.local.json';
+
+const CLOSE_API_KEY  = process.env.CLOSE_API_KEY;
+const CLOSE_USER_ID  = process.env.CLOSE_USER_ID;
+const CLOSE_BASE     = 'https://api.close.com/api/v1';
+const CLOSE_AUTH     = Buffer.from(`${CLOSE_API_KEY}:`).toString('base64');
+
+// Allow all origins including null (file:// protocol)
+app.use(cors({
+  origin: (origin, cb) => cb(null, true),
+  credentials: true,
+  methods: ['GET','POST','PUT','DELETE','OPTIONS'],
+  allowedHeaders: ['Content-Type','Authorization']
+}));
+app.options(/(.*)/, cors()); // preflight for all routes (Express 5 regex syntax)
+app.use(express.json());
+app.use(express.static(__dirname));
+
+// ═══════════════════════════════════════════════════
+// FILE WATCHER + SERVER-SENT EVENTS (SSE)
+// The data/ directory is the source of truth.
+// Any tool, AI agent, or CLI that writes a JSON file
+// here triggers an SSE push → the frontend refetches.
+// ═══════════════════════════════════════════════════
+const sseClients = new Set();
+const FILE_TO_SLOT = {
+  'andre_profile.json':    'profile',
+  'andre_kpis.json':       'kpis',
+  'andre_pipeline.json':   'pipeline',
+  'andre_tasks.json':      'tasks',
+  'ops_tracker.json':      'ops',
+  'oracle_templates.json': 'templates',
+  'oracle_cadences.json':  'cadences',
+  'oracle_scenarios.json': 'scenarios',
+  'oracle_doctrine.json':  'doctrine',
+  'live_close_crm.json':   'live',
+  'action_queue.json':     'queue',
+  'settings.json':         'settings',
+  'settings.local.json':   'settings',
+  'activity_log.json':     'activity',
+};
+const PRIVATE_DATA_FILES = new Set([
+  SETTINGS_FILE,
+  SETTINGS_LOCAL_FILE,
+  'oracle_doctrine.json',
+]);
+
+// Debounce per-file — don't flood on rapid writes
+const debounceTimers = {};
+function broadcastChange(filename) {
+  const slot = FILE_TO_SLOT[filename];
+  if (!slot) return; // ignore non-mapped files like .DS_Store
+  clearTimeout(debounceTimers[filename]);
+  debounceTimers[filename] = setTimeout(() => {
+    const payload = JSON.stringify({ file: filename, slot, ts: Date.now() });
+    console.log(`[WATCH] ${filename} changed → pushing to ${sseClients.size} client(s)`);
+    for (const res of sseClients) {
+      res.write(`data: ${payload}\n\n`);
+    }
+  }, 300); // 300ms debounce
+}
+
+// Watch the data directory
+try {
+  fs.watch(DATA, { persistent: true }, (eventType, filename) => {
+    if (filename && filename.endsWith('.json')) {
+      broadcastChange(filename);
+    }
+  });
+  console.log(`[WATCH] Watching ${DATA} for changes`);
+} catch(e) {
+  console.warn('[WATCH] Could not watch data directory:', e.message);
+}
+
+// SSE endpoint — clients connect here for live updates
+app.get('/events', (req, res) => {
+  res.writeHead(200, {
+    'Content-Type': 'text/event-stream',
+    'Cache-Control': 'no-cache',
+    'Connection': 'keep-alive',
+    'Access-Control-Allow-Origin': '*',
+  });
+  res.write(`data: ${JSON.stringify({ type: 'connected', ts: Date.now() })}\n\n`);
+  sseClients.add(res);
+  req.on('close', () => { sseClients.delete(res); });
+});
+
+// ═══════════════════════════════════════════════════
+// ACTIVITY LOG — Records everything for the Timeline
+// ═══════════════════════════════════════════════════
+function logActivity(type, category, summary, details, related) {
+  try {
+    const logFile = path.join(DATA, 'activity_log.json');
+    let data = { log: [] };
+    try { data = JSON.parse(fs.readFileSync(logFile, 'utf8')); } catch(e) {}
+    const event = {
+      ts: new Date().toISOString(),
+      type,        // 'ai', 'sync', 'queue', 'automation', 'system'
+      category,    // 'chat', 'draft_followup', 'analyze_deal', 'crm_sync', etc.
+      summary,
+      details: details || '',
+      related: related || []  // deal names, contact names — for the DAG
+    };
+    data.log.push(event);
+    // Keep last 500 entries to prevent unbounded growth
+    if (data.log.length > 500) data.log = data.log.slice(-500);
+    fs.writeFileSync(logFile, JSON.stringify(data, null, 2));
+    noteOpsActivity(event);
+  } catch(e) { console.warn('[LOG] Failed to write activity:', e.message); }
+}
+
+function defaultOpsTracker() {
+  return {
+    context: {
+      active_project: 'Comeketo',
+      explicitly_not_this_project: ['Story', 'Storie'],
+      note: 'This tracker belongs to the Comeketo Sales Command Center inside /Users/jakeaaron/Documents/Webapp.',
+    },
+    daily: {},
+    _meta: {
+      created_at: new Date().toISOString(),
+      last_updated: null,
+    },
+  };
+}
+
+function ensureOpsTracker() {
+  const target = path.join(DATA, 'ops_tracker.json');
+  if (!fs.existsSync(target)) writeData('ops_tracker.json', defaultOpsTracker());
+}
+
+function readOpsTracker() {
+  ensureOpsTracker();
+  const current = readData('ops_tracker.json');
+  const base = defaultOpsTracker();
+  return {
+    ...base,
+    ...current,
+    context: { ...base.context, ...(current.context || {}) },
+    daily: current.daily || {},
+    _meta: { ...base._meta, ...(current._meta || {}) },
+  };
+}
+
+function writeOpsTracker(data) {
+  const next = {
+    ...readOpsTracker(),
+    ...data,
+    context: { ...readOpsTracker().context, ...(data.context || {}) },
+    daily: data.daily || readOpsTracker().daily,
+    _meta: { ...readOpsTracker()._meta, ...(data._meta || {}), last_updated: new Date().toISOString() },
+  };
+  writeData('ops_tracker.json', next);
+  return next;
+}
+
+function ensureOpsDay(tracker, dayKey) {
+  if (!tracker.daily[dayKey]) {
+    tracker.daily[dayKey] = {
+      summary: '',
+      what_happened: [],
+      what_we_learned: [],
+      what_we_added: [],
+      what_it_affected: [],
+      wins: [],
+      help_signals: [],
+      bottlenecks: [],
+      metrics: {
+        activity_events: 0,
+        automation_events: 0,
+        ai_events: 0,
+        sync_events: 0,
+      }
+    };
+  }
+  return tracker.daily[dayKey];
+}
+
+function noteOpsActivity(event) {
+  try {
+    const tracker = readOpsTracker();
+    const dayKey = (event.ts || new Date().toISOString()).substring(0, 10);
+    const day = ensureOpsDay(tracker, dayKey);
+    day.metrics.activity_events += 1;
+    if (event.type === 'automation') day.metrics.automation_events += 1;
+    if (event.type === 'ai') day.metrics.ai_events += 1;
+    if (event.type === 'sync') day.metrics.sync_events += 1;
+
+    const line = `${event.summary}${event.details ? ` — ${event.details}` : ''}`;
+    day.what_happened.unshift(line);
+    day.what_happened = day.what_happened.slice(0, 20);
+
+    if (event.type === 'sync') {
+      day.help_signals.unshift('Fresh CRM sync ran');
+      day.help_signals = day.help_signals.slice(0, 10);
+    }
+    if (event.type === 'automation') {
+      day.what_it_affected.unshift('Automation engine state / queue');
+      day.what_it_affected = Array.from(new Set(day.what_it_affected)).slice(0, 10);
+    }
+    writeOpsTracker(tracker);
+  } catch(e) {
+    console.warn('[OPS] Failed to update ops tracker from activity:', e.message);
+  }
+}
+
+// ─── Serve activity log ────────────────────────────
+app.get('/activity', (req, res) => {
+  try { res.json(readData('activity_log.json')); }
+  catch(e) { res.json({ log: [] }); }
+});
+
+app.get('/ops', (req, res) => {
+  try { res.json(readOpsTracker()); }
+  catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+app.post('/ops/context', (req, res) => {
+  try {
+    const tracker = readOpsTracker();
+    tracker.context = { ...tracker.context, ...(req.body || {}) };
+    const saved = writeOpsTracker(tracker);
+    res.json({ ok: true, context: saved.context, updated_at: saved._meta.last_updated });
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.post('/ops/note', (req, res) => {
+  try {
+    const tracker = readOpsTracker();
+    const dayKey = req.body.day || new Date().toISOString().substring(0, 10);
+    const day = ensureOpsDay(tracker, dayKey);
+    const pushUnique = (bucket, value) => {
+      if (!value) return;
+      day[bucket].unshift(value);
+      day[bucket] = Array.from(new Set(day[bucket])).slice(0, 20);
+    };
+
+    pushUnique('what_happened', req.body.what_happened);
+    pushUnique('what_we_learned', req.body.what_we_learned);
+    pushUnique('what_we_added', req.body.what_we_added);
+    pushUnique('what_it_affected', req.body.what_it_affected);
+    pushUnique('help_signals', req.body.help_signal);
+    pushUnique('wins', req.body.win);
+    pushUnique('bottlenecks', req.body.bottleneck);
+    if (typeof req.body.summary === 'string') day.summary = req.body.summary;
+
+    const saved = writeOpsTracker(tracker);
+    logActivity('system', 'ops_note', `Ops note saved for ${dayKey}`, req.body.what_happened || req.body.what_we_learned || req.body.what_we_added || 'Manual ops update', []);
+    res.json({ ok: true, day: saved.daily[dayKey], updated_at: saved._meta.last_updated });
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ─── Close CRM API helper ────────────────────────────
+function closeRequest(method, endpoint, body = null) {
+  return new Promise((resolve, reject) => {
+    const url  = new URL(CLOSE_BASE + endpoint);
+    const opts = {
+      hostname: url.hostname,
+      path:     url.pathname + url.search,
+      method,
+      headers: {
+        'Authorization': `Basic ${CLOSE_AUTH}`,
+        'Content-Type':  'application/json',
+        'Accept':        'application/json',
+      }
+    };
+    const req = https.request(opts, res => {
+      let data = '';
+      res.on('data', d => data += d);
+      res.on('end', () => {
+        try { resolve({ status: res.statusCode, body: JSON.parse(data) }); }
+        catch(e) { reject(new Error('Bad JSON: ' + data)); }
+      });
+    });
+    req.on('error', reject);
+    if (body) req.write(JSON.stringify(body));
+    req.end();
+  });
+}
+
+// ─── Load / save JSON data files ────────────────────
+function readData(file)      { return JSON.parse(fs.readFileSync(path.join(DATA, file), 'utf8')); }
+function writeData(file, obj){ fs.writeFileSync(path.join(DATA, file), JSON.stringify(obj, null, 2)); }
+
+function deepMerge(target, source) {
+  if (!source || typeof source !== 'object' || Array.isArray(source)) return target;
+  for (const [key, value] of Object.entries(source)) {
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      target[key] = deepMerge(
+        target[key] && typeof target[key] === 'object' && !Array.isArray(target[key]) ? target[key] : {},
+        value
+      );
+    } else {
+      target[key] = value;
+    }
+  }
+  return target;
+}
+
+function defaultSettings() {
+  return {
+    ai: {
+      provider: 'openai',
+      openai_api_key: '',
+      model: 'gpt-5.4-nano',
+      models_available: ['gpt-5.4-nano', 'gpt-4.1-nano', 'gpt-4.1-mini', 'gpt-4.1', 'gpt-5-mini', 'gpt-5'],
+      enabled: false,
+    },
+    general: {
+      auto_sync_interval_minutes: 15,
+      theme: 'light',
+    },
+    operator: {
+      name: 'Andre Raw',
+      role: 'Sales Representative',
+      email: '',
+      phone: '',
+    },
+    crm: {
+      close_user_id: '',
+      verification_compare_static_pipeline: true,
+    },
+    clickup: {
+      workspace_id: '',
+      list_id: '',
+      assignee_email: '',
+      enabled: false,
+    },
+    messaging: {
+      email_from: '',
+      sms_from: '',
+      enabled: false,
+    },
+    _meta: {
+      version: 2,
+      last_updated: null,
+    },
+  };
+}
+
+function readSettings() {
+  const base = defaultSettings();
+  for (const file of [SETTINGS_FILE, SETTINGS_LOCAL_FILE]) {
+    const target = path.join(DATA, file);
+    if (!fs.existsSync(target)) continue;
+    try {
+      deepMerge(base, JSON.parse(fs.readFileSync(target, 'utf8')));
+    } catch(e) {
+      console.warn(`[SETTINGS] Failed to read ${file}:`, e.message);
+    }
+  }
+  return base;
+}
+
+function writeSettings(updates) {
+  const next = deepMerge(readSettings(), updates || {});
+  next.ai.enabled = Boolean(next.ai.openai_api_key);
+  next._meta = { ...(next._meta || {}), version: 2, last_updated: new Date().toISOString() };
+  writeData(SETTINGS_LOCAL_FILE, next);
+  return next;
+}
+
+function getCloseUserId() {
+  return readSettings().crm?.close_user_id || CLOSE_USER_ID || '';
+}
+
+function normText(value) {
+  return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function defaultAutomationState() {
+  return {
+    _meta: {
+      description: 'Always-on automation engine state for the sales command center',
+      created_at: new Date().toISOString(),
+      last_tick: null,
+    },
+    engine: {
+      active: true,
+      last_tick: null,
+      last_error: null,
+    },
+    automations: [
+      { id: 'close_sync_pulse', name: 'Close Sync Pulse', interval_minutes: 15, last_run: null, last_status: 'idle', last_summary: 'Waiting for first run' },
+      { id: 'critical_exception_watch', name: 'Critical Exception Watch', interval_minutes: 20, last_run: null, last_status: 'idle', last_summary: 'Waiting for first run' },
+      { id: 'attention_followup_sweep', name: 'Attention Follow-up Sweep', interval_minutes: 30, last_run: null, last_status: 'idle', last_summary: 'Waiting for first run' },
+      { id: 'closing_window_sweep', name: 'Closing Window Sweep', interval_minutes: 45, last_run: null, last_status: 'idle', last_summary: 'Waiting for first run' },
+      { id: 'cadence_watch', name: 'Cadence Watch', interval_minutes: 60, last_run: null, last_status: 'idle', last_summary: 'Waiting for first run' },
+      { id: 'brief_refresh', name: 'Brief Refresh', interval_minutes: 120, last_run: null, last_status: 'idle', last_summary: 'Waiting for first run' },
+    ],
+    runs: [],
+  };
+}
+
+function ensureAutomationState() {
+  const target = path.join(DATA, AUTOMATION_STATE_FILE);
+  if (!fs.existsSync(target)) writeData(AUTOMATION_STATE_FILE, defaultAutomationState());
+}
+
+function readAutomationState() {
+  ensureAutomationState();
+  const state = readData(AUTOMATION_STATE_FILE);
+  const defaults = defaultAutomationState();
+  const existing = new Map((state.automations || []).map(a => [a.id, a]));
+  state.automations = defaults.automations.map(def => ({ ...def, ...(existing.get(def.id) || {}) }));
+  state.runs = state.runs || [];
+  state.engine = { ...defaults.engine, ...(state.engine || {}) };
+  state._meta = { ...defaults._meta, ...(state._meta || {}) };
+  return state;
+}
+
+function writeAutomationState(state) {
+  writeData(AUTOMATION_STATE_FILE, state);
+}
+
+function setAutomationRun(id, status, summary, extra = {}) {
+  const state = readAutomationState();
+  const target = state.automations.find(a => a.id === id);
+  const now = new Date().toISOString();
+  if (target) {
+    target.last_run = now;
+    target.last_status = status;
+    target.last_summary = summary;
+  }
+  state.engine.last_tick = now;
+  state.runs.unshift({ id, status, summary, at: now, ...extra });
+  state.runs = state.runs.slice(0, 40);
+  writeAutomationState(state);
+}
+
+function minutesBetween(a, b) {
+  return Math.floor((new Date(b).getTime() - new Date(a).getTime()) / 60000);
+}
+
+function shouldRunAutomation(def, nowIso) {
+  if (!def.last_run) return true;
+  return minutesBetween(def.last_run, nowIso) >= (def.interval_minutes || 60);
+}
+
+function actionTimestamp(action) {
+  return action.completed_at || action.queued_at || action.at || null;
+}
+
+function hasRecentMatchingAction(queue, type, matcher, withinMinutes = 240) {
+  const now = Date.now();
+  const pool = [...(queue.pending || []), ...(queue.completed || []), ...(queue.log || [])];
+  return pool.some(action => {
+    if (action.type !== type) return false;
+    if (!matcher(action.payload || {}, action)) return false;
+    const ts = actionTimestamp(action);
+    if (!ts) return false;
+    return now - new Date(ts).getTime() <= withinMinutes * 60000;
+  });
+}
+
+function queueSignature(action) {
+  const payload = action?.payload || {};
+  if (action?.type === 'create_clickup_task' || action?.type === 'draft_close_crm_followup' || action?.type === 'prepare_critical_alert_review') {
+    return `${action.type}:${payload.lead_id || payload.name || 'unknown'}`;
+  }
+  if (action?.type === 'generate_morning_brief' || action?.type === 'check_cadences_due') {
+    return `${action.type}:${payload.date || 'today'}`;
+  }
+  if (action?.type === 'sync_close_crm_pipeline' || action?.type === 'full_pipeline_sync') {
+    return `${action.type}:global`;
+  }
+  return `${action?.type || 'unknown'}:${JSON.stringify(payload)}`;
+}
+
+function sanitizeActionQueue(queue) {
+  let changed = false;
+  const latestCompleted = new Map();
+  for (const item of queue.completed || []) {
+    const sig = queueSignature(item);
+    const ts = new Date(actionTimestamp(item) || 0).getTime();
+    const existing = latestCompleted.get(sig);
+    if (!existing || ts > existing.ts) latestCompleted.set(sig, { ts, item });
+  }
+
+  const latestPending = new Map();
+  for (const item of queue.pending || []) {
+    const sig = queueSignature(item);
+    const ts = new Date(actionTimestamp(item) || 0).getTime();
+    const existing = latestPending.get(sig);
+    if (!existing || ts > existing.ts) latestPending.set(sig, { ts, item });
+  }
+
+  const normalizedPending = [];
+  for (const item of queue.pending || []) {
+    const sig = queueSignature(item);
+    const itemTs = new Date(actionTimestamp(item) || 0).getTime();
+    const newestPending = latestPending.get(sig);
+    if (newestPending && newestPending.item.id !== item.id) {
+      changed = true;
+      continue;
+    }
+    const completed = latestCompleted.get(sig);
+    if (completed && completed.ts >= itemTs) {
+      changed = true;
+      continue;
+    }
+    normalizedPending.push(item);
+  }
+
+  queue.pending = normalizedPending;
+  return changed;
+}
+
+// ─── Serve data files ───────────────────────────────
+app.get('/data/:file', (req, res) => {
+  if (PRIVATE_DATA_FILES.has(req.params.file)) {
+    return res.status(403).json({ error: 'Private file' });
+  }
+  const p = path.join(DATA, req.params.file);
+  if (!fs.existsSync(p)) return res.status(404).json({ error: 'Not found' });
+  res.json(readData(req.params.file));
+});
+
+// ═══════════════════════════════════════════════════
+// CLOSE CRM DIRECT ROUTES
+// ═══════════════════════════════════════════════════
+
+// ─── GET /close/me — verify API key ─────────────────
+app.get('/close/me', async (req, res) => {
+  try {
+    const r = await closeRequest('GET', '/me/');
+    res.json({ ok: r.status === 200, user: r.body });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// ─── POST /close/sync — full pipeline sync ──────────
+async function refreshLiveCloseSnapshot(syncSource) {
+  const closeUserId = getCloseUserId();
+  if (!closeUserId) throw new Error('Close CRM user ID is not configured. Add it in Settings.');
+  console.log('[SYNC] Starting Close CRM pipeline sync...');
+  logActivity('sync', 'crm_sync', 'Close CRM pipeline sync started', `Pulling active opportunities and attention flags via ${syncSource}`, []);
+  try {
+    const [activeR, attentionR] = await Promise.all([
+      closeRequest('GET', `/opportunity/?user_id=${closeUserId}&lead_status_type=active&_fields=id,lead_id,lead_name,contact_name,status_label,status_type,value,confidence,close_at,updated_at,note&_limit=100&_order_by=-value`),
+      closeRequest('GET', `/opportunity/?user_id=${closeUserId}&_fields=id,lead_id,lead_name,status_label,status_type,value,confidence,close_at,updated_at&needs_attention=true&_limit=50`),
+    ]);
+
+    const allOpps       = activeR.body?.data || [];
+    const attentionOpps = attentionR.body?.data || [];
+
+    const now = new Date();
+    const sevenDays = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+    // Build closing_soon
+    const closingSoon = allOpps
+      .filter(o => o.close_at && new Date(o.close_at) <= sevenDays && new Date(o.close_at) >= now)
+      .map(o => ({
+        id:             o.id,
+        lead_id:        o.lead_id,
+        name:           o.lead_name || 'Unknown',
+        value:          Math.round((o.value || 0) / 100),
+        stage:          o.status_label,
+        confidence:     o.confidence,
+        close_at:       o.close_at,
+        days_until_close: Math.ceil((new Date(o.close_at) - now) / (1000 * 60 * 60 * 24)),
+        urgency:        'urgent',
+        note:           `${o.confidence}% confidence — ${o.status_label}`
+      }));
+
+    // Build needs_attention
+    const needsAttention = attentionOpps.map(o => ({
+      id:         o.id,
+      lead_id:    o.lead_id,
+      name:       o.lead_name || 'Unknown',
+      value:      Math.round((o.value || 0) / 100),
+      stage:      o.status_label,
+      confidence: o.confidence,
+      close_at:   o.close_at,
+      urgency:    'high',
+      reason:     'Flagged by Close CRM — stalled or overdue for contact'
+    }));
+
+    // Build top opportunities
+    const topOpps = allOpps.slice(0, 10).map(o => ({
+      id:         o.id,
+      lead_id:    o.lead_id,
+      name:       o.lead_name || 'Unknown',
+      value:      Math.round((o.value || 0) / 100),
+      stage:      o.status_label,
+      confidence: o.confidence,
+      close_at:   o.close_at
+    }));
+
+    const live = readData('live_close_crm.json');
+    const staticPipeline = readData('andre_pipeline.json');
+    const staticDealNames = new Set((staticPipeline.all_deals || []).map(d => normText(d.name)).filter(Boolean));
+    const liveDealNames = Array.from(new Set(allOpps.map(o => normText(o.lead_name)).filter(Boolean)));
+    const matchedDealCount = liveDealNames.filter(name => staticDealNames.has(name)).length;
+    const coveragePct = liveDealNames.length ? Math.round((matchedDealCount / liveDealNames.length) * 100) : 0;
+    const verificationNotes = [];
+    if (!staticDealNames.size) verificationNotes.push('Static pipeline has no comparable deal names.');
+    if (liveDealNames.length && coveragePct < 80) verificationNotes.push('Live Close data and static pipeline are drifting. Rebuild the pipeline JSON.');
+    if (!allOpps.length) verificationNotes.push('Close returned zero active opportunities for the configured user.');
+
+    live._meta.last_synced      = now.toISOString();
+    live._meta.synced_by        = syncSource;
+    live._meta.close_user_id    = closeUserId;
+    live.pipeline_snapshot      = {
+      total_active_opportunities: activeR.body?.total_results || allOpps.length,
+      needs_attention_count:      attentionOpps.length,
+      closing_this_week:          closingSoon.length,
+      top_deal_value:             topOpps[0]?.value || 0,
+      top_deal_name:              topOpps[0]?.name  || '—'
+    };
+    live.verification = {
+      checked_at: now.toISOString(),
+      status: coveragePct >= 80 ? 'ok' : coveragePct >= 50 ? 'warning' : 'critical',
+      live_opportunity_count: allOpps.length,
+      static_pipeline_count: staticPipeline.summary?.active_deals || staticPipeline.summary?.total_deals || staticDealNames.size,
+      matched_deal_count: matchedDealCount,
+      coverage_pct: coveragePct,
+      notes: verificationNotes,
+    };
+    live.needs_attention  = needsAttention;
+    live.closing_soon     = closingSoon;
+    live.top_opportunities = topOpps;
+    live.alerts           = live.alerts || [];
+
+    writeData('live_close_crm.json', live);
+    console.log(`[SYNC] Done — ${allOpps.length} opps, ${attentionOpps.length} need attention, ${closingSoon.length} closing soon`);
+    return { ok: true, synced_at: now.toISOString(), counts: live.pipeline_snapshot };
+  } catch(e) {
+    console.error('[SYNC] Error:', e.message);
+    throw e;
+  }
+}
+
+app.post('/close/sync', async (req, res) => {
+  try {
+    const result = await refreshLiveCloseSnapshot('server.js direct API');
+    res.json(result);
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ─── GET /close/lead/:id — fetch a single lead ──────
+app.get('/close/lead/:id', async (req, res) => {
+  try {
+    const r = await closeRequest('GET', `/lead/${req.params.id}/`);
+    res.json(r.body);
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// ─── GET /close/lead/:id/activity — recent activity ─
+app.get('/close/lead/:id/activity', async (req, res) => {
+  try {
+    const r = await closeRequest('GET', `/activity/?lead_id=${req.params.id}&_limit=20&_order_by=-date_created`);
+    res.json(r.body);
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// ─── POST /close/lead/:id/note — log a note ─────────
+app.post('/close/lead/:id/note', async (req, res) => {
+  try {
+    const r = await closeRequest('POST', '/activity/note/', {
+      lead_id: req.params.id,
+      note:    req.body.note
+    });
+    res.json({ ok: r.status === 200, activity: r.body });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// ─── POST /close/lead/:id/status — update lead status
+app.post('/close/lead/:id/status', async (req, res) => {
+  try {
+    const r = await closeRequest('PUT', `/lead/${req.params.id}/`, {
+      status_id: req.body.status_id
+    });
+    res.json({ ok: r.status === 200, lead: r.body });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// ─── POST /close/opportunity/:id/status ─────────────
+app.post('/close/opportunity/:id/status', async (req, res) => {
+  try {
+    const r = await closeRequest('PUT', `/opportunity/${req.params.id}/`, {
+      status_id: req.body.status_id,
+      ...(req.body.note ? { note: req.body.note } : {})
+    });
+    res.json({ ok: r.status === 200, opportunity: r.body });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// ═══════════════════════════════════════════════════
+// ACTION QUEUE
+// ═══════════════════════════════════════════════════
+
+app.get('/queue', (req, res) => {
+  const queue = readData('action_queue.json');
+  if (sanitizeActionQueue(queue)) writeData('action_queue.json', queue);
+  res.json(queue);
+});
+
+function buildQueuedAction(type, payload, extra = {}) {
+  return {
+    id:         `act_${Date.now()}_${Math.random().toString(36).slice(2,8)}`,
+    type,
+    payload,
+    queued_at:  new Date().toISOString(),
+    status:     'pending',
+    ...extra,
+  };
+}
+
+async function autoExecuteAction(action) {
+  if (action.type === 'sync_close_crm_pipeline' || action.type === 'full_pipeline_sync') {
+    await executeSync(action.id);
+    return { autoExecuted: true, message: 'Sync started' };
+  }
+  if (action.type === 'draft_close_crm_followup' && action.payload?.lead_id) {
+    await executeFetchLead(action.id, action.payload.lead_id, action.payload.name);
+    return { autoExecuted: true, message: 'Lead fetched and draft packet created' };
+  }
+  if (action.type === 'generate_morning_brief') {
+    await executeMorningBrief(action.id);
+    return { autoExecuted: true, message: 'Morning brief generated' };
+  }
+  if (action.type === 'check_cadences_due') {
+    await executeCadenceReport(action.id);
+    return { autoExecuted: true, message: 'Cadence report generated' };
+  }
+  if (action.type === 'prepare_critical_alert_review') {
+    await executeCriticalAlertReview(action.id, action.payload);
+    return { autoExecuted: true, message: 'Critical alert packet prepared' };
+  }
+  return { autoExecuted: false, message: null };
+}
+
+async function enqueueAction(type, payload, options = {}) {
+  const q = readData('action_queue.json');
+  sanitizeActionQueue(q);
+  const dedupeMinutes = options.dedupe_minutes || 0;
+  if (dedupeMinutes && hasRecentMatchingAction(q, type, options.matcher || ((candidate) => JSON.stringify(candidate) === JSON.stringify(payload)), dedupeMinutes)) {
+    return { ok: true, deduped: true, action: null };
+  }
+  const action = buildQueuedAction(type, payload, {
+    source: options.source || 'manual',
+    dedupe_key: options.dedupe_key || null,
+  });
+  q.pending.push(action);
+  q.log.push({ ...action, event: 'queued' });
+  writeData('action_queue.json', q);
+  console.log(`[QUEUE] ${action.type} → ${JSON.stringify(action.payload)}`);
+  logActivity('queue', action.type, `Queued: ${action.type.replace(/_/g,' ')}`, JSON.stringify(action.payload || {}), [action.payload?.name || ''].filter(Boolean));
+  const exec = await autoExecuteAction(action);
+  return { ok: true, action, ...exec };
+}
+
+app.post('/queue', async (req, res) => {
+  try {
+    const result = await enqueueAction(req.body.type, req.body.payload, { source: 'manual' });
+    res.json(result);
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.post('/queue/:id/complete', (req, res) => {
+  const q   = readData('action_queue.json');
+  const idx = q.pending.findIndex(a => a.id === req.params.id);
+  if (idx === -1) return res.status(404).json({ error: 'Not in pending' });
+  const [action] = q.pending.splice(idx, 1);
+  action.status       = 'completed';
+  action.completed_at = new Date().toISOString();
+  action.result       = req.body.result || null;
+  q.completed.unshift(action);
+  q.log.push({ ...action, event: 'completed' });
+  q._meta.last_processed = new Date().toISOString();
+  writeData('action_queue.json', q);
+  res.json({ ok: true, action });
+});
+
+app.post('/queue/:id/review', (req, res) => {
+  const q = readData('action_queue.json');
+  const target = (q.completed || []).find(a => a.id === req.params.id);
+  if (!target) return res.status(404).json({ error: 'Completed action not found' });
+  const disposition = req.body.disposition || 'reviewed';
+  const note = req.body.note || '';
+  target.next_step = disposition === 'approved'
+    ? (target.type === 'draft_close_crm_followup'
+      ? { kind: 'draft_message', label: 'Ready for message drafting', activated_at: new Date().toISOString() }
+      : { kind: 'resolve_exception', label: 'Ready for exception resolution', activated_at: new Date().toISOString() })
+    : null;
+  target.review = {
+    disposition,
+    note,
+    reviewed_at: new Date().toISOString(),
+    reviewed_by: req.body.reviewed_by || 'Andre Raw',
+  };
+  q._meta.last_processed = new Date().toISOString();
+  q.log.push({
+    id: target.id,
+    type: target.type,
+    event: 'reviewed',
+    disposition,
+    note,
+    reviewed_at: target.review.reviewed_at,
+  });
+  writeData('action_queue.json', q);
+  logActivity('automation', 'review_packet', `Packet ${disposition}`, note || `${target.type} marked ${disposition}`, [target.payload?.name || target.result?.lead_name || ''].filter(Boolean));
+  res.json({ ok: true, action: target });
+});
+
+// ─── Auto-execute helpers ────────────────────────────
+function buildMorningBriefPayload() {
+  const live = readData('live_close_crm.json');
+  const tasks = readData('andre_tasks.json');
+  const pipeline = readData('andre_pipeline.json');
+  return {
+    generated_at: new Date().toISOString(),
+    headline: `${tasks.task_summary?.today || 0} tasks today · ${live.pipeline_snapshot?.needs_attention_count || 0} need attention · ${live.pipeline_snapshot?.closing_this_week || 0} closing this week`,
+    send_today: (tasks.tasks?.today || []).slice(0, 6),
+    needs_attention: (live.needs_attention || []).slice(0, 5),
+    closing_soon: (live.closing_soon || []).slice(0, 5),
+    pipeline_summary: pipeline.summary || {},
+    alerts: live.alerts || [],
+  };
+}
+
+function buildCadenceReportPayload() {
+  const tasks = readData('andre_tasks.json');
+  const live = readData('live_close_crm.json');
+  return {
+    generated_at: new Date().toISOString(),
+    due_now: tasks.tasks?.today || [],
+    within_48h: tasks.tasks?.within_48h || [],
+    bottlenecks: tasks.bottlenecks || [],
+    open_loops: tasks.open_loops || [],
+    needs_attention: live.needs_attention || [],
+  };
+}
+
+async function executeMorningBrief(actionId) {
+  try {
+    const brief = buildMorningBriefPayload();
+    writeData('automation_morning_brief.json', brief);
+    completeAction(actionId, { file: 'automation_morning_brief.json', headline: brief.headline });
+    logActivity('automation', 'generate_morning_brief', 'Morning brief refreshed', brief.headline, []);
+  } catch(e) { console.error('executeMorningBrief error:', e.message); }
+}
+
+async function executeCadenceReport(actionId) {
+  try {
+    const report = buildCadenceReportPayload();
+    writeData('automation_cadence_report.json', report);
+    completeAction(actionId, {
+      file: 'automation_cadence_report.json',
+      due_now: report.due_now.length,
+      within_48h: report.within_48h.length,
+      bottlenecks: report.bottlenecks.length
+    });
+    logActivity('automation', 'check_cadences_due', 'Cadence watch refreshed', `${report.due_now.length} due now · ${report.within_48h.length} within 48h`, []);
+  } catch(e) { console.error('executeCadenceReport error:', e.message); }
+}
+
+async function executeSync(actionId) {
+  try {
+    const result = await refreshLiveCloseSnapshot('server.js auto-execute');
+    completeAction(actionId, { synced: result.counts?.total_active_opportunities || 0, timestamp: result.synced_at });
+  } catch(e) { console.error('executeSync error:', e.message); }
+}
+
+async function executeFetchLead(actionId, leadId, name) {
+  try {
+    const r = await closeRequest('GET', `/lead/${leadId}/`);
+    const lead = r.body;
+    const summaries = lead.summaries || [];
+    const result = {
+      lead_name:    lead.name,
+      status:       lead.status_label,
+      description:  lead.description,
+      last_activity: summaries.find(s => s.includes('Activity History'))?.split('\n')[1] || 'unknown',
+      draft_note:   `REVIEW NEEDED: Automation pulled lead data for ${name}. Review activity in Close CRM and draft appropriate follow-up based on current stage.`,
+      summaries_preview: summaries.slice(0, 2).join(' | ').substring(0, 300)
+    };
+    completeAction(actionId, result);
+    console.log(`[AUTO] Fetched lead ${name} for follow-up review`);
+  } catch(e) { console.error('executeFetchLead error:', e.message); }
+}
+
+function completeAction(actionId, result) {
+  const q   = readData('action_queue.json');
+  sanitizeActionQueue(q);
+  const idx = q.pending.findIndex(a => a.id === actionId);
+  if (idx === -1) return;
+  const [action] = q.pending.splice(idx, 1);
+  action.status       = 'completed';
+  action.completed_at = new Date().toISOString();
+  action.result       = result;
+  q.completed.unshift(action);
+  q.log.push({ ...action, event: 'completed' });
+  q._meta.last_processed = new Date().toISOString();
+  writeData('action_queue.json', q);
+}
+
+async function executeCriticalAlertReview(actionId, payload = {}) {
+  try {
+    const live = readData('live_close_crm.json');
+    const alerts = live.alerts || [];
+    const target = alerts.find(alert =>
+      (payload.lead_id && alert.lead_id === payload.lead_id) ||
+      (payload.name && alert.name === payload.name)
+    );
+    if (!target) {
+      completeAction(actionId, {
+        status: 'NO_ALERT_FOUND',
+        draft_note: 'No current critical alert matched this packet. Refresh Close sync and review manually.',
+      });
+      return;
+    }
+    const relatedDeal =
+      (live.needs_attention || []).find(item => item.lead_id === target.lead_id) ||
+      (live.closing_soon || []).find(item => item.lead_id === target.lead_id) ||
+      null;
+    const result = {
+      packet_type: 'critical_alert_review',
+      status: 'REVIEW_REQUIRED',
+      lead_name: target.name,
+      severity: target.severity || 'critical',
+      message: target.message,
+      action_required: target.action_required,
+      recommended_close_action: target.type === 'deal_lost' ? 'Move opportunity to Lost in Close after human confirmation.' : 'Review in Close and resolve.',
+      lead_id: target.lead_id || payload.lead_id || null,
+      opportunity_id: relatedDeal?.id || null,
+      related_stage: relatedDeal?.stage || null,
+      related_value: relatedDeal?.value || 0,
+      draft_note: `CRITICAL REVIEW: ${target.name} triggered a ${target.type || 'critical'} alert. Confirm in Close, then resolve the opportunity and capture a note.`,
+    };
+    completeAction(actionId, result);
+    logActivity('automation', 'critical_alert_review', `Critical packet prepared for ${target.name}`, target.message, [target.name]);
+  } catch(e) {
+    console.error('executeCriticalAlertReview error:', e.message);
+  }
+}
+
+async function runCloseSyncPulse() {
+  const tempId = `auto_sync_${Date.now()}`;
+  await executeSync(tempId);
+  setAutomationRun('close_sync_pulse', 'ok', 'Live Close snapshot refreshed');
+}
+
+async function runAttentionFollowupSweep() {
+  const live = readData('live_close_crm.json');
+  const targets = (live.needs_attention || [])
+    .filter(d => d.urgency === 'high' || d.urgency === 'urgent')
+    .slice(0, 3);
+  let queued = 0;
+  for (const target of targets) {
+    const result = await enqueueAction('draft_close_crm_followup', {
+      lead_id: target.lead_id,
+      name: target.name,
+      requested_at: new Date().toISOString(),
+      automation_reason: target.reason,
+    }, {
+      source: 'automation_engine',
+      dedupe_key: `attention_followup:${target.lead_id}`,
+      dedupe_minutes: 240,
+      matcher: payload => payload.lead_id === target.lead_id,
+    });
+    if (!result.deduped) queued += 1;
+  }
+  setAutomationRun('attention_followup_sweep', 'ok', queued ? `${queued} follow-up packet(s) queued` : 'No new attention follow-ups needed');
+}
+
+async function runClosingWindowSweep() {
+  const live = readData('live_close_crm.json');
+  const targets = (live.closing_soon || []).slice(0, 3);
+  let queued = 0;
+  for (const target of targets) {
+    const result = await enqueueAction('draft_close_crm_followup', {
+      lead_id: target.lead_id,
+      name: target.name,
+      requested_at: new Date().toISOString(),
+      automation_reason: target.note || 'Closing soon window',
+    }, {
+      source: 'automation_engine',
+      dedupe_key: `closing_window:${target.lead_id}`,
+      dedupe_minutes: 180,
+      matcher: payload => payload.lead_id === target.lead_id,
+    });
+    if (!result.deduped) queued += 1;
+  }
+  setAutomationRun('closing_window_sweep', 'ok', queued ? `${queued} closing-window follow-up packet(s) queued` : 'No new closing-window actions needed');
+}
+
+async function runCadenceWatch() {
+  const actionId = `auto_cadence_${Date.now()}`;
+  await executeCadenceReport(actionId);
+  setAutomationRun('cadence_watch', 'ok', 'Cadence report refreshed');
+}
+
+async function runBriefRefresh() {
+  const actionId = `auto_brief_${Date.now()}`;
+  await executeMorningBrief(actionId);
+  setAutomationRun('brief_refresh', 'ok', 'Morning brief refreshed');
+}
+
+async function runCriticalExceptionWatch() {
+  const live = readData('live_close_crm.json');
+  const alerts = (live.alerts || []).filter(alert => (alert.severity || '').toLowerCase() === 'critical');
+  let queued = 0;
+  for (const alert of alerts.slice(0, 5)) {
+    const result = await enqueueAction('prepare_critical_alert_review', {
+      lead_id: alert.lead_id,
+      name: alert.name,
+      alert_type: alert.type,
+      requested_at: new Date().toISOString(),
+    }, {
+      source: 'automation_engine',
+      dedupe_key: `critical_alert:${alert.lead_id || alert.name}`,
+      dedupe_minutes: 240,
+      matcher: payload => (payload.lead_id && payload.lead_id === alert.lead_id) || (payload.name && payload.name === alert.name),
+    });
+    if (!result.deduped) queued += 1;
+  }
+  setAutomationRun('critical_exception_watch', 'ok', queued ? `${queued} critical review packet(s) prepared` : 'No new critical exceptions detected');
+}
+
+async function runAutomationById(id) {
+  if (id === 'close_sync_pulse') return runCloseSyncPulse();
+  if (id === 'attention_followup_sweep') return runAttentionFollowupSweep();
+  if (id === 'closing_window_sweep') return runClosingWindowSweep();
+  if (id === 'cadence_watch') return runCadenceWatch();
+  if (id === 'brief_refresh') return runBriefRefresh();
+  if (id === 'critical_exception_watch') return runCriticalExceptionWatch();
+  throw new Error(`Unknown automation: ${id}`);
+}
+
+async function automationEngineTick() {
+  const state = readAutomationState();
+  const now = new Date().toISOString();
+  state.engine.last_tick = now;
+  state._meta.last_tick = now;
+  writeAutomationState(state);
+
+  for (const def of state.automations) {
+    const effectiveInterval = def.id === 'close_sync_pulse'
+      ? (readSettings().general?.auto_sync_interval_minutes || def.interval_minutes || 15)
+      : def.interval_minutes;
+    const runtimeDef = { ...def, interval_minutes: effectiveInterval };
+    if (!shouldRunAutomation(runtimeDef, now)) continue;
+    try {
+      await runAutomationById(def.id);
+    } catch(e) {
+      const failed = readAutomationState();
+      failed.engine.last_error = e.message;
+      writeAutomationState(failed);
+      setAutomationRun(def.id, 'error', e.message);
+      console.error(`[AUTO] ${def.id} failed:`, e.message);
+    }
+  }
+}
+
+app.get('/automation/status', (req, res) => {
+  const state = readAutomationState();
+  const settings = readSettings();
+  res.json({
+    ...state,
+    hooks: {
+      close_configured: Boolean(CLOSE_API_KEY && getCloseUserId()),
+      clickup_configured: Boolean(settings.clickup?.enabled && (settings.clickup?.list_id || settings.clickup?.workspace_id)),
+      email_configured: Boolean(settings.messaging?.email_from),
+      sms_configured: Boolean(settings.messaging?.sms_from),
+      sync_interval_minutes: settings.general?.auto_sync_interval_minutes || 15,
+    }
+  });
+});
+
+app.post('/automation/run/:id', async (req, res) => {
+  try {
+    await runAutomationById(req.params.id);
+    res.json({ ok: true, automation: req.params.id });
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ═══════════════════════════════════════════════════
+// SETTINGS
+// ═══════════════════════════════════════════════════
+
+app.get('/settings', (req, res) => {
+  const settings = readSettings();
+  // Never send the full API key to the frontend — mask it
+  const masked = { ...settings };
+  if (masked.ai?.openai_api_key) {
+    const key = masked.ai.openai_api_key;
+    masked.ai.openai_api_key_preview = key.length > 8
+      ? key.slice(0, 5) + '...' + key.slice(-4)
+      : key ? '••••••••' : '';
+    masked.ai.openai_api_key_set = key.length > 0;
+    delete masked.ai.openai_api_key;
+  } else {
+    masked.ai.openai_api_key_preview = '';
+    masked.ai.openai_api_key_set = false;
+  }
+  res.json(masked);
+});
+
+app.post('/settings', (req, res) => {
+  const next = writeSettings(req.body || {});
+  res.json({ ok: true, updated_at: next._meta.last_updated });
+});
+
+// ─── Validate OpenAI key ────────────────────────────
+app.post('/ai/validate-key', async (req, res) => {
+  const key = req.body.key;
+  if (!key) return res.json({ valid: false, error: 'No key provided' });
+  try {
+    const response = await fetch('https://api.openai.com/v1/models', {
+      headers: { 'Authorization': `Bearer ${key}` }
+    });
+    if (response.ok) {
+      res.json({ valid: true });
+    } else {
+      const err = await response.json().catch(() => ({}));
+      res.json({ valid: false, error: err.error?.message || `HTTP ${response.status}` });
+    }
+  } catch(e) {
+    res.json({ valid: false, error: e.message });
+  }
+});
+
+// ─── Build Oracle system instructions from doctrine ──
+function buildOracleInstructions(actionType) {
+  let doctrine;
+  try { doctrine = readData('oracle_doctrine.json'); } catch(e) { doctrine = null; }
+  if (!doctrine) return 'You are an AI sales assistant for Comeketo Catering. Be concise, actionable, and data-driven.';
+
+  const id = doctrine.identity;
+  const seq = doctrine.core_system.sequence.map(s => s.internal_logic).join('\n\n');
+  const mechs = doctrine.conversational_mechanics.behaviors.map(b =>
+    `When ${b.when}: ${b.what} Example: "${b.example || b.example_anxious || ''}" Anti-pattern: ${b.anti_pattern}`
+  ).join('\n\n');
+  const standards = doctrine.comeketo_standards;
+  const energy = Object.entries(doctrine.energy_dynamics)
+    .filter(([k]) => k !== 'description')
+    .map(([k,v]) => `${k}: ${v}`).join('\n');
+
+  // Get action-specific template if applicable
+  const tmpl = actionType ? doctrine.action_templates[actionType] : null;
+  const actionBlock = tmpl
+    ? `\n\n=== CURRENT TASK ===\n${tmpl.instruction}\nOutput format: ${tmpl.output_format || 'Natural prose.'}\n${tmpl.banned_phrases ? 'BANNED PHRASES (never use these): ' + tmpl.banned_phrases.join(', ') : ''}`
+    : '';
+
+  return `${id.role}
+
+VOICE: ${id.voice}
+
+CONTEXT: ${id.context}
+
+=== OPERATING SEQUENCE (apply silently to every interaction) ===
+${seq}
+
+=== CONVERSATIONAL BEHAVIORS (execute naturally, never name or explain) ===
+${mechs}
+
+=== COMEKETO STANDARDS (use for alliance-building when appropriate) ===
+What we refuse: ${standards.what_we_refuse.join(' | ')}
+What makes us different: ${standards.what_makes_comeketo_different.join(' | ')}
+
+=== DEAL ENERGY (internal diagnostic, never mention in output) ===
+${energy}
+${actionBlock}
+
+CRITICAL RULES:
+- Never mention the names of any techniques, frameworks, or mechanics. Just execute them.
+- Never say "As Oracle..." or reference yourself by name unless asked.
+- Never use banned phrases in follow-ups.
+- Every message you draft must end with a specific, time-bound next step.
+- Match the buyer's emotional temperature. Anxious gets calm. Direct gets efficient. Premium gets peer-framed.
+- Be brutally honest in deal analysis. If a deal is dead, say so. If the rep is hesitating, call it.
+- Keep it tight. Short paragraphs. No filler. Every sentence moves something forward.`;
+}
+
+// ─── AI Chat proxy (keeps key server-side) ──────────
+app.post('/ai/chat', async (req, res) => {
+  const settings = readSettings();
+  const apiKey = settings.ai?.openai_api_key;
+  if (!apiKey) return res.status(400).json({ error: 'No OpenAI API key configured. Go to Settings to add one.' });
+
+  const { messages, model, instructions, action_type } = req.body;
+  const useModel = model || settings.ai.model || 'gpt-5.4-nano';
+
+  // Build instructions: use doctrine-powered instructions, allow override
+  const systemInstructions = instructions || buildOracleInstructions(action_type || null);
+
+  try {
+    const response = await fetch('https://api.openai.com/v1/responses', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        model: useModel,
+        instructions: systemInstructions,
+        input: messages
+      })
+    });
+
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      return res.status(response.status).json({ error: err.error?.message || `OpenAI API error: ${response.status}` });
+    }
+
+    const data = await response.json();
+    // Log the AI interaction
+    const userMsg = (messages || []).find(m => m.role === 'user')?.content || '';
+    const dealMatch = userMsg.match(/\[DEAL FOCUS\]\nName: ([^\n]+)/);
+    const related = dealMatch ? [dealMatch[1]] : [];
+    const reply = data.output_text || data.output?.[0]?.content?.[0]?.text || '';
+    logActivity('ai', action_type || 'chat',
+      action_type ? `AI ${action_type.replace(/_/g,' ')}` : 'Oracle chat',
+      reply.substring(0, 200) + (reply.length > 200 ? '...' : ''),
+      related
+    );
+    res.json(data);
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ─── Status ─────────────────────────────────────────
+app.get('/status', (req, res) => {
+  const live = readData('live_close_crm.json');
+  const q    = readData('action_queue.json');
+  const settings = readSettings();
+  const automation = readAutomationState();
+  res.json({
+    server:            'Comeketo Sales Command Center v2',
+    close_api:         CLOSE_API_KEY ? 'configured' : 'MISSING',
+    close_user_id:     getCloseUserId() ? 'configured' : 'MISSING',
+    ai_enabled:        settings.ai?.enabled || false,
+    ai_model:          settings.ai?.model || 'none',
+    uptime:            Math.round(process.uptime()),
+    last_synced:       live._meta?.last_synced,
+    verification_status: live.verification?.status || 'unknown',
+    verification_coverage_pct: live.verification?.coverage_pct ?? null,
+    pending_actions:   q.pending.length,
+    completed_actions: q.completed.length,
+    automations_active: automation.automations.length,
+    automation_last_tick: automation.engine?.last_tick || null,
+  });
+});
+
+app.listen(PORT, async () => {
+  ensureAutomationState();
+  ensureOpsTracker();
+  console.log(`\n🔥 Comeketo Sales Command Center v2`);
+  console.log(`   http://localhost:${PORT}`);
+  console.log(`   Close API: ${CLOSE_API_KEY ? '✅ configured' : '❌ MISSING — check .env'}`);
+  // Verify API key on startup
+  try {
+    const r = await closeRequest('GET', '/me/');
+    console.log(`   Close CRM: ✅ Connected as ${r.body.first_name} ${r.body.last_name} (${r.body.email})`);
+  } catch(e) {
+    console.log(`   Close CRM: ❌ Connection failed — ${e.message}`);
+  }
+  console.log(`   Automation Engine: ✅ armed`);
+  setTimeout(() => automationEngineTick().catch(e => console.error('[AUTO] initial tick failed:', e.message)), 1500);
+  setInterval(() => automationEngineTick().catch(e => console.error('[AUTO] tick failed:', e.message)), 60 * 1000);
+  console.log('');
+});

@@ -1,0 +1,15 @@
+wing: webapp
+rooms:
+- name: memory_lab
+  description: Files from memory_lab/
+  keywords:
+  - memory_lab
+  - memory_lab
+- name: data
+  description: Files from data/
+  keywords:
+  - data
+  - data
+- name: general
+  description: Files that don't fit other rooms
+  keywords: []

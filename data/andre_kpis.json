@@ -1,0 +1,228 @@
+{
+  "scoreboard": {
+    "overall_score": {
+      "andre": 3613,
+      "team_avg": 2295,
+      "ranking": 1,
+      "advantage": 57.4
+    },
+    "bonus_multiplier": {
+      "andre": 1.8,
+      "team_avg": 1.15,
+      "ranking": 1,
+      "advantage": 56.5
+    },
+    "ninety_day_win_rate": {
+      "andre": 640,
+      "team_avg": 640,
+      "ranking": "at_quota",
+      "advantage": 0
+    },
+    "tasting_show_rate": {
+      "andre": 160,
+      "team_avg": 160,
+      "ranking": "at_quota",
+      "advantage": 0
+    },
+    "ninety_day_closed_biz": {
+      "andre": 52910,
+      "team_avg": 31652,
+      "ranking": 1,
+      "advantage": 67.2
+    },
+    "hours_worked": {
+      "andre": 47.4,
+      "team_avg": 30.3,
+      "ranking": 1,
+      "advantage": 56.4
+    },
+    "activity_level": {
+      "andre": 49,
+      "team_avg": 47,
+      "ranking": "above",
+      "advantage": 4.3
+    },
+    "dials_made": {
+      "andre": 134,
+      "team_avg": 86,
+      "ranking": 1,
+      "advantage": 55.8
+    },
+    "tastings_showed_jan": {
+      "andre": 1,
+      "team_avg": 2.75,
+      "ranking": "below",
+      "advantage": -63.6
+    },
+    "deals_closed_jan": {
+      "andre": 7,
+      "team_avg": 5.5,
+      "ranking": 1,
+      "advantage": 27.3
+    },
+    "ninety_day_revenue_pts": {
+      "andre": 1204,
+      "team_avg": 722,
+      "ranking": 1,
+      "advantage": 66.8
+    },
+    "hours_points": {
+      "andre": 100,
+      "team_avg": 13,
+      "ranking": 1,
+      "advantage": 669
+    },
+    "dials_points": {
+      "andre": 458,
+      "team_avg": 294,
+      "ranking": 1,
+      "advantage": 55.8
+    },
+    "sales_velocity_bonus": {
+      "andre": 6700,
+      "team_avg": 3913,
+      "ranking": 1,
+      "advantage": 71.2
+    },
+    "avg_value_per_win_bonus": {
+      "andre": 3700,
+      "team_avg": 2975,
+      "ranking": 1,
+      "advantage": 24.4
+    }
+  },
+  "call_activity": {
+    "total": 111,
+    "february": 16,
+    "march": 95,
+    "growth_rate": 493.8,
+    "outbound": 87,
+    "inbound": 24,
+    "outbound_pct": 78.4,
+    "repeat_contact_rate": 27,
+    "top_contacts": [
+      {
+        "name": "Marcelo",
+        "calls": 3
+      },
+      {
+        "name": "Luciane",
+        "calls": 3
+      },
+      {
+        "name": "Keyla",
+        "calls": 3
+      },
+      {
+        "name": "Lazaro Silva",
+        "calls": 3
+      },
+      {
+        "name": "Alessandra Gaspar",
+        "calls": 3
+      },
+      {
+        "name": "Selene Valenz",
+        "calls": 2
+      },
+      {
+        "name": "Rebecca Almeida",
+        "calls": 2
+      },
+      {
+        "name": "Rohani",
+        "calls": 2
+      },
+      {
+        "name": "Julianna Leiva",
+        "calls": 2
+      },
+      {
+        "name": "Laura Campos",
+        "calls": 2
+      }
+    ]
+  },
+  "leading_indicators": [
+    {
+      "metric": "Outbound calls/week",
+      "current": 22,
+      "target": 25,
+      "gap": 3,
+      "status": "close"
+    },
+    {
+      "metric": "Quote-to-tasting conversion",
+      "current": 33,
+      "target": 40,
+      "gap": 7,
+      "unit": "%",
+      "status": "improve"
+    },
+    {
+      "metric": "Tasting-to-deposit conversion",
+      "current": 50,
+      "target": 65,
+      "gap": 15,
+      "unit": "%",
+      "status": "critical"
+    },
+    {
+      "metric": "Deposit discussion rate",
+      "current": 24,
+      "target": 100,
+      "gap": 76,
+      "unit": "%",
+      "status": "urgent"
+    },
+    {
+      "metric": "Avg response time",
+      "current": null,
+      "target": 24,
+      "gap": null,
+      "unit": "hrs",
+      "status": "monitor"
+    }
+  ],
+  "lagging_indicators": [
+    {
+      "metric": "Won deals/month",
+      "current": 5.5,
+      "target": 8,
+      "gap": 2.5,
+      "status": "improve"
+    },
+    {
+      "metric": "Average deal value",
+      "current": 2973,
+      "target": 3500,
+      "gap": 527,
+      "unit": "$",
+      "status": "close"
+    },
+    {
+      "metric": "Win rate",
+      "current": 29.7,
+      "target": 35,
+      "gap": 5.3,
+      "unit": "%",
+      "status": "improve"
+    },
+    {
+      "metric": "Pipeline value",
+      "current": 109988,
+      "target": 125000,
+      "gap": 15012,
+      "unit": "$",
+      "status": "grow"
+    },
+    {
+      "metric": "Revenue locked",
+      "current": 63691,
+      "target": 75000,
+      "gap": 11309,
+      "unit": "$",
+      "status": "close"
+    }
+  ]
+}
