@@ -2,8 +2,7 @@
 
 Single-page sales dashboard for Andre with live Close CRM sync, Oracle AI drafting, and an action queue.
 
-This repo is the Comeketo app only.
-It is not Story/Storie, and the operations tracker now records that separation explicitly.
+This repo is scoped to the Comeketo Sales Command Center only.
 
 ## Setup
 

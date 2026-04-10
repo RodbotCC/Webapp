@@ -2,11 +2,11 @@
   "_meta": {
     "description": "Always-on automation engine state for the sales command center",
     "created_at": "2026-04-09T09:15:00.000Z",
-    "last_tick": "2026-04-10T03:42:09.305Z"
+    "last_tick": "2026-04-10T06:30:19.460Z"
   },
   "engine": {
     "active": true,
-    "last_tick": "2026-04-10T03:42:09.305Z",
+    "last_tick": "2026-04-10T06:30:19.460Z",
     "last_error": null
   },
   "automations": [
@@ -14,7 +14,7 @@
       "id": "close_sync_pulse",
       "name": "Close Sync Pulse",
       "interval_minutes": 15,
-      "last_run": "2026-04-10T03:38:10.222Z",
+      "last_run": "2026-04-10T06:16:20.253Z",
       "last_status": "ok",
       "last_summary": "Live Close snapshot refreshed"
     },
@@ -22,23 +22,23 @@
       "id": "critical_exception_watch",
       "name": "Critical Exception Watch",
       "interval_minutes": 20,
-      "last_run": "2026-04-10T03:40:09.304Z",
+      "last_run": "2026-04-10T06:23:19.435Z",
       "last_status": "ok",
-      "last_summary": "No new critical exceptions detected"
+      "last_summary": "1 critical review packet(s) prepared"
     },
     {
       "id": "attention_followup_sweep",
       "name": "Attention Follow-up Sweep",
       "interval_minutes": 30,
-      "last_run": "2026-04-10T03:13:09.288Z",
+      "last_run": "2026-04-10T06:20:19.988Z",
       "last_status": "ok",
-      "last_summary": "No new attention follow-ups needed"
+      "last_summary": "1 follow-up packet(s) queued"
     },
     {
       "id": "closing_window_sweep",
       "name": "Closing Window Sweep",
       "interval_minutes": 45,
-      "last_run": "2026-04-10T03:07:09.262Z",
+      "last_run": "2026-04-10T06:09:19.391Z",
       "last_status": "ok",
       "last_summary": "No new closing-window actions needed"
     },
@@ -46,7 +46,7 @@
       "id": "cadence_watch",
       "name": "Cadence Watch",
       "interval_minutes": 60,
-      "last_run": "2026-04-10T02:52:09.241Z",
+      "last_run": "2026-04-10T05:53:19.369Z",
       "last_status": "ok",
       "last_summary": "Cadence report refreshed"
     },
@@ -54,12 +54,204 @@
       "id": "brief_refresh",
       "name": "Brief Refresh",
       "interval_minutes": 120,
-      "last_run": "2026-04-10T02:35:09.180Z",
+      "last_run": "2026-04-10T04:35:19.253Z",
       "last_status": "ok",
       "last_summary": "Morning brief refreshed"
     }
   ],
   "runs": [
+    {
+      "id": "critical_exception_watch",
+      "status": "ok",
+      "summary": "1 critical review packet(s) prepared",
+      "at": "2026-04-10T06:23:19.435Z"
+    },
+    {
+      "id": "attention_followup_sweep",
+      "status": "ok",
+      "summary": "1 follow-up packet(s) queued",
+      "at": "2026-04-10T06:20:19.988Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T06:16:20.253Z"
+    },
+    {
+      "id": "closing_window_sweep",
+      "status": "ok",
+      "summary": "No new closing-window actions needed",
+      "at": "2026-04-10T06:09:19.391Z"
+    },
+    {
+      "id": "critical_exception_watch",
+      "status": "ok",
+      "summary": "No new critical exceptions detected",
+      "at": "2026-04-10T06:03:19.383Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T06:01:18.287Z"
+    },
+    {
+      "id": "cadence_watch",
+      "status": "ok",
+      "summary": "Cadence report refreshed",
+      "at": "2026-04-10T05:53:19.369Z"
+    },
+    {
+      "id": "attention_followup_sweep",
+      "status": "ok",
+      "summary": "No new attention follow-ups needed",
+      "at": "2026-04-10T05:50:19.362Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T05:45:20.109Z"
+    },
+    {
+      "id": "critical_exception_watch",
+      "status": "ok",
+      "summary": "No new critical exceptions detected",
+      "at": "2026-04-10T05:43:19.272Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T05:29:20.144Z"
+    },
+    {
+      "id": "closing_window_sweep",
+      "status": "ok",
+      "summary": "No new closing-window actions needed",
+      "at": "2026-04-10T05:24:19.237Z"
+    },
+    {
+      "id": "critical_exception_watch",
+      "status": "ok",
+      "summary": "No new critical exceptions detected",
+      "at": "2026-04-10T05:23:19.240Z"
+    },
+    {
+      "id": "attention_followup_sweep",
+      "status": "ok",
+      "summary": "No new attention follow-ups needed",
+      "at": "2026-04-10T05:20:19.238Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T05:13:19.997Z"
+    },
+    {
+      "id": "critical_exception_watch",
+      "status": "ok",
+      "summary": "No new critical exceptions detected",
+      "at": "2026-04-10T05:02:19.247Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T04:57:20.061Z"
+    },
+    {
+      "id": "cadence_watch",
+      "status": "ok",
+      "summary": "Cadence report refreshed",
+      "at": "2026-04-10T04:53:19.248Z"
+    },
+    {
+      "id": "attention_followup_sweep",
+      "status": "ok",
+      "summary": "1 follow-up packet(s) queued",
+      "at": "2026-04-10T04:49:19.795Z"
+    },
+    {
+      "id": "critical_exception_watch",
+      "status": "ok",
+      "summary": "No new critical exceptions detected",
+      "at": "2026-04-10T04:41:20.059Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T04:41:20.057Z"
+    },
+    {
+      "id": "closing_window_sweep",
+      "status": "ok",
+      "summary": "No new closing-window actions needed",
+      "at": "2026-04-10T04:38:19.250Z"
+    },
+    {
+      "id": "brief_refresh",
+      "status": "ok",
+      "summary": "Morning brief refreshed",
+      "at": "2026-04-10T04:35:19.253Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T04:25:20.066Z"
+    },
+    {
+      "id": "critical_exception_watch",
+      "status": "ok",
+      "summary": "No new critical exceptions detected",
+      "at": "2026-04-10T04:21:19.240Z"
+    },
+    {
+      "id": "attention_followup_sweep",
+      "status": "ok",
+      "summary": "No new attention follow-ups needed",
+      "at": "2026-04-10T04:19:19.238Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T04:09:19.999Z"
+    },
+    {
+      "id": "critical_exception_watch",
+      "status": "ok",
+      "summary": "No new critical exceptions detected",
+      "at": "2026-04-10T04:00:19.246Z"
+    },
+    {
+      "id": "close_sync_pulse",
+      "status": "ok",
+      "summary": "Live Close snapshot refreshed",
+      "at": "2026-04-10T03:53:20.141Z"
+    },
+    {
+      "id": "cadence_watch",
+      "status": "ok",
+      "summary": "Cadence report refreshed",
+      "at": "2026-04-10T03:52:19.281Z"
+    },
+    {
+      "id": "closing_window_sweep",
+      "status": "ok",
+      "summary": "No new closing-window actions needed",
+      "at": "2026-04-10T03:52:19.278Z"
+    },
+    {
+      "id": "attention_followup_sweep",
+      "status": "ok",
+      "summary": "1 follow-up packet(s) queued",
+      "at": "2026-04-10T03:48:20.993Z"
+    },
     {
       "id": "critical_exception_watch",
       "status": "ok",
@@ -107,198 +299,6 @@
       "status": "ok",
       "summary": "No new critical exceptions detected",
       "at": "2026-04-10T03:00:09.253Z"
-    },
-    {
-      "id": "cadence_watch",
-      "status": "ok",
-      "summary": "Cadence report refreshed",
-      "at": "2026-04-10T02:52:09.241Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T02:50:10.101Z"
-    },
-    {
-      "id": "attention_followup_sweep",
-      "status": "ok",
-      "summary": "No new attention follow-ups needed",
-      "at": "2026-04-10T02:43:09.198Z"
-    },
-    {
-      "id": "critical_exception_watch",
-      "status": "ok",
-      "summary": "No new critical exceptions detected",
-      "at": "2026-04-10T02:40:09.192Z"
-    },
-    {
-      "id": "brief_refresh",
-      "status": "ok",
-      "summary": "Morning brief refreshed",
-      "at": "2026-04-10T02:35:09.180Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T02:34:09.877Z"
-    },
-    {
-      "id": "closing_window_sweep",
-      "status": "ok",
-      "summary": "No new closing-window actions needed",
-      "at": "2026-04-10T02:22:09.139Z"
-    },
-    {
-      "id": "critical_exception_watch",
-      "status": "ok",
-      "summary": "1 critical review packet(s) prepared",
-      "at": "2026-04-10T02:20:09.140Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T02:18:09.989Z"
-    },
-    {
-      "id": "attention_followup_sweep",
-      "status": "ok",
-      "summary": "1 follow-up packet(s) queued",
-      "at": "2026-04-10T02:12:09.621Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T02:02:09.884Z"
-    },
-    {
-      "id": "critical_exception_watch",
-      "status": "ok",
-      "summary": "No new critical exceptions detected",
-      "at": "2026-04-10T02:00:09.103Z"
-    },
-    {
-      "id": "cadence_watch",
-      "status": "ok",
-      "summary": "Cadence report refreshed",
-      "at": "2026-04-10T01:52:09.093Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T01:46:09.970Z"
-    },
-    {
-      "id": "attention_followup_sweep",
-      "status": "ok",
-      "summary": "No new attention follow-ups needed",
-      "at": "2026-04-10T01:42:09.031Z"
-    },
-    {
-      "id": "critical_exception_watch",
-      "status": "ok",
-      "summary": "No new critical exceptions detected",
-      "at": "2026-04-10T01:40:09.026Z"
-    },
-    {
-      "id": "closing_window_sweep",
-      "status": "ok",
-      "summary": "No new closing-window actions needed",
-      "at": "2026-04-10T01:36:22.018Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T01:30:22.649Z"
-    },
-    {
-      "id": "critical_exception_watch",
-      "status": "ok",
-      "summary": "No new critical exceptions detected",
-      "at": "2026-04-10T01:19:13.801Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T01:15:14.850Z"
-    },
-    {
-      "id": "attention_followup_sweep",
-      "status": "ok",
-      "summary": "No new attention follow-ups needed",
-      "at": "2026-04-10T01:11:13.790Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T00:59:22.682Z"
-    },
-    {
-      "id": "critical_exception_watch",
-      "status": "ok",
-      "summary": "No new critical exceptions detected",
-      "at": "2026-04-10T00:59:13.753Z"
-    },
-    {
-      "id": "cadence_watch",
-      "status": "ok",
-      "summary": "Cadence report refreshed",
-      "at": "2026-04-10T00:51:21.821Z"
-    },
-    {
-      "id": "closing_window_sweep",
-      "status": "ok",
-      "summary": "No new closing-window actions needed",
-      "at": "2026-04-10T00:51:21.815Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T00:44:14.679Z"
-    },
-    {
-      "id": "attention_followup_sweep",
-      "status": "ok",
-      "summary": "1 follow-up packet(s) queued",
-      "at": "2026-04-10T00:40:22.287Z"
-    },
-    {
-      "id": "critical_exception_watch",
-      "status": "ok",
-      "summary": "No new critical exceptions detected",
-      "at": "2026-04-10T00:38:21.870Z"
-    },
-    {
-      "id": "brief_refresh",
-      "status": "ok",
-      "summary": "Morning brief refreshed",
-      "at": "2026-04-10T00:34:13.771Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T00:28:22.707Z"
-    },
-    {
-      "id": "critical_exception_watch",
-      "status": "ok",
-      "summary": "No new critical exceptions detected",
-      "at": "2026-04-10T00:18:21.758Z"
-    },
-    {
-      "id": "close_sync_pulse",
-      "status": "ok",
-      "summary": "Live Close snapshot refreshed",
-      "at": "2026-04-10T00:13:14.596Z"
     }
   ]
 }

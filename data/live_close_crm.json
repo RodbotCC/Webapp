@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_synced": "2026-04-10T03:38:10.111Z",
+    "last_synced": "2026-04-10T06:16:20.249Z",
     "synced_by": "server.js auto-execute",
     "source": "Close CRM MCP Connector",
     "org": "Comeketo Catering",
@@ -633,7 +633,7 @@
     }
   },
   "verification": {
-    "checked_at": "2026-04-10T03:38:10.111Z",
+    "checked_at": "2026-04-10T06:16:20.249Z",
     "status": "critical",
     "live_opportunity_count": 100,
     "static_pipeline_count": 26,

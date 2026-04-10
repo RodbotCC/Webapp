@@ -1399,6 +1399,270 @@
       "summary": "Close CRM pipeline sync started",
       "details": "Pulling active opportunities and attention flags via server.js auto-execute",
       "related": []
+    },
+    {
+      "ts": "2026-04-10T03:48:20.775Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo\",\"name\":\"Gina Gallagher\",\"requested_at\":\"2026-04-10T03:48:20.772Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Gina Gallagher"
+      ]
+    },
+    {
+      "ts": "2026-04-10T03:52:19.281Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "6 due now · 6 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T03:53:19.279Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T03:57:59.497Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Hi—thanks for reaching out. What kind of event are you planning, and roughly how many guests?  \n\nNext step: Reply with the event type + guest count, and I’ll tell you the fastest path to a tailored pr...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:06:41.178Z",
+      "type": "ai",
+      "category": "analyze_deal",
+      "summary": "AI analyze deal",
+      "details": "This one is in a good place, not because the CRM says “deposit 35%,” but because you already have hard intent (they put money down) and nothing in the notes screams risk. The real decision they’re fac...",
+      "related": [
+        "Marcelo (Irmao Erlon)"
+      ]
+    },
+    {
+      "ts": "2026-04-10T04:08:10.432Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Andre — I’m here. You’ve got momentum, but the pipeline is getting dragged by the same two things: **no payment signal** and **open loops / waiting on us**.\n\nDo this today, in this order:\n\n**1) Sue Te...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:09:19.254Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:14:10.187Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Hey Andre—what’s the deal you want me to help you push today: Meghan, Sue, Cheryl, Mayara, or Francisca?\n\nIf you want the fastest impact, pick the one that’s closest to “tasting → deposit” or “quote s...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:14:35.319Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Hi Andre — got it.\n\nBased on your pipeline flags, your biggest lever this week isn’t “selling more.” It’s killing the hesitation:\n1) deposit/payment signal (28 deals with no payment),\n2) partner/famil...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:22:04.472Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "### 1) Layza Souza Reis / Matheus — **$14,369 (Fully Paid, 100% conf)**  \n**Priority because:** this is already secure cash + proof point. Your job is to protect the relationship and eliminate any las...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:25:19.246Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:35:19.253Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "6 tasks today · 50 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:41:19.251Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:49:19.252Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt\",\"name\":\"Alexandra Fruzzetti\",\"requested_at\":\"2026-04-10T04:49:19.246Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Alexandra Fruzzetti"
+      ]
+    },
+    {
+      "ts": "2026-04-10T04:53:19.247Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "6 due now · 6 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T04:57:19.247Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T05:13:19.235Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T05:29:19.266Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T05:45:19.273Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T05:53:19.367Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "6 due now · 6 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T06:01:17.432Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T06:15:12.476Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Hi! Are you reaching out for a specific event date and guest count, or are you still in the “compare options” stage?\n\nEither way, tell me which one matters most right now: nailing the food experience,...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T06:16:00.271Z",
+      "type": "queue",
+      "category": "create_clickup_task",
+      "summary": "Queued: create clickup task",
+      "details": "{\"lead_id\":\"lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo\",\"name\":\"Lisandra Lopez\",\"requested_at\":\"2026-04-10T06:16:00.261Z\"}",
+      "related": [
+        "Lisandra Lopez"
+      ]
+    },
+    {
+      "ts": "2026-04-10T06:16:07.348Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo\",\"name\":\"Lisandra Lopez\",\"requested_at\":\"2026-04-10T06:16:07.344Z\"}",
+      "related": [
+        "Lisandra Lopez"
+      ]
+    },
+    {
+      "ts": "2026-04-10T06:16:19.409Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close CRM pipeline sync started",
+      "details": "Pulling active opportunities and attention flags via server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T06:19:44.719Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Andre — here’s what matters right now.\n\nBiggest money\nYour $90-day momentum is strong: **$52,910** in the next 90 days, coming from a stack of high-confidence wins. The biggest individual active wins ...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T06:20:19.420Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz\",\"name\":\"Yuni Colindres\",\"requested_at\":\"2026-04-10T06:20:19.415Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Yuni Colindres"
+      ]
+    },
+    {
+      "ts": "2026-04-10T06:20:22.083Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Subject: Curious About Your Wedding at The Hacienda\n\nHi Layza,\n\nIt was great connecting about your wedding at The Hacienda—thank you again for choosing Comeketo.\n\nQuick check-in, because you’re in gre...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T06:20:32.804Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Subject: Quick confirm for your Hacienda wedding\n\nHey Layza — it’s Andre from Comeketo Catering. I just left you a voicemail but thought text might be easier. Since you’re fully paid for your wedding ...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-10T06:23:19.426Z",
+      "type": "queue",
+      "category": "prepare_critical_alert_review",
+      "summary": "Queued: prepare critical alert review",
+      "details": "{\"lead_id\":\"lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI\",\"name\":\"Mary McGahan\",\"alert_type\":\"deal_lost\",\"requested_at\":\"2026-04-10T06:23:19.420Z\"}",
+      "related": [
+        "Mary McGahan"
+      ]
+    },
+    {
+      "ts": "2026-04-10T06:23:19.434Z",
+      "type": "automation",
+      "category": "critical_alert_review",
+      "summary": "Critical packet prepared for Mary McGahan",
+      "details": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+      "related": [
+        "Mary McGahan"
+      ]
     }
   ]
 }

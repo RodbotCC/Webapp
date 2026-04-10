@@ -227,7 +227,6 @@
 {
   "context": {
     "active_project": "Comeketo",
-    "explicitly_not_this_project": ["Story", "Storie"],
     "note": "string"
   },
   "daily": {

@@ -14,56 +14,57 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="app">
+<div class="app" data-surface="shell-root">
 
   <!-- LEFT SIDEBAR -->
-  <nav class="sidebar" id="sidebar">
-    <div class="sb-logo"><i data-lucide="flame" style="width:1.2rem;height:1.2rem;"></i></div>
+  <nav class="sidebar" id="sidebar" data-surface="shell-sidebar" aria-label="Primary navigation">
+    <div class="sb-logo" data-surface="shell-brand"><i data-lucide="flame" style="width:1.2rem;height:1.2rem;"></i></div>
     <div class="sb-divider"></div>
-    <button class="sb-btn active" data-view="command"><i data-lucide="layout-dashboard" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Command</span></button>
-    <button class="sb-btn" data-view="pipeline"><i data-lucide="funnel" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Pipeline</span></button>
-    <button class="sb-btn" data-view="actions"><i data-lucide="check-circle-2" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Actions</span></button>
-    <button class="sb-btn" data-view="performance"><i data-lucide="bar-chart-3" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Perform</span></button>
-    <button class="sb-btn" data-view="coaching"><i data-lucide="graduation-cap" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Coach</span></button>
-    <button class="sb-btn" data-view="deals"><i data-lucide="handshake" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Deals</span></button>
-    <button class="sb-btn" data-view="automation"><i data-lucide="bot" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Auto</span></button>
-    <button class="sb-btn" data-view="timeline"><i data-lucide="calendar-range" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Timeline</span></button>
-    <button class="sb-btn" data-view="oracle"><i data-lucide="message-square-text" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Oracle</span></button>
+    <button type="button" class="sb-btn active" data-surface="nav-primary" data-view="command" aria-label="Command Center"><i data-lucide="layout-dashboard" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Command</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="pipeline" aria-label="Pipeline"><i data-lucide="funnel" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Pipeline</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="actions" aria-label="Actions"><i data-lucide="check-circle-2" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Actions</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="performance" aria-label="Performance"><i data-lucide="bar-chart-3" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Perform</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="coaching" aria-label="Coaching"><i data-lucide="graduation-cap" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Coach</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="deals" aria-label="Deals"><i data-lucide="handshake" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Deals</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="automation" aria-label="Automation"><i data-lucide="bot" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Auto</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="timeline" aria-label="Timeline"><i data-lucide="calendar-range" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Timeline</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="oracle" aria-label="Oracle AI chat"><i data-lucide="message-square-text" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Oracle</span></button>
     <div class="sb-spacer"></div>
-    <button class="sb-bottom-btn" id="themeToggle"><i data-lucide="moon" style="width:1rem;height:1rem;"></i></button>
-    <button class="sb-bottom-btn"><i data-lucide="settings" style="width:1rem;height:1rem;"></i></button>
+    <button type="button" class="sb-bottom-btn" id="themeToggle" data-surface="theme-toggle" title="Toggle light/dark theme" aria-label="Toggle theme"><i data-lucide="moon" style="width:1rem;height:1rem;"></i></button>
+    <button type="button" class="sb-bottom-btn" id="openSettingsBtn" data-surface="settings-trigger" title="Settings" aria-label="Open settings"><i data-lucide="settings" style="width:1rem;height:1rem;"></i></button>
   </nav>
 
   <!-- MAIN -->
-  <div class="main-area">
-    <div class="content-panel">
-      <div class="topbar">
-        <div class="topbar-left">
+  <div class="main-area" data-surface="shell-main">
+    <div class="content-panel" data-surface="shell-content">
+      <div class="topbar" data-surface="shell-topbar">
+        <div class="topbar-left" data-surface="topbar-branding">
           <div class="topbar-title">Andre Raw</div>
           <div class="topbar-sub">Comeketo Catering · Sales Command Center</div>
         </div>
-        <div class="topbar-right">
-          <div class="topbar-clock" id="topbarClock"></div>
-          <div id="serverStatus" style="font-size:0.62rem;font-weight:600;display:flex;align-items:center;gap:0.3rem;opacity:0.7;">…</div>
-          <div id="dataFreshness" style="font-size:0.62rem;font-weight:600;color:var(--burgundy);opacity:0.55;"></div>
-          <div id="queueStatus" style="font-size:0.62rem;font-weight:600;color:var(--burgundy);opacity:0.5;"></div>
-          <div class="topbar-badge">#1 <i data-lucide="trophy" style="width:0.7rem;height:0.7rem;"></i></div>
+        <div class="topbar-right" data-surface="topbar-status">
+          <button type="button" id="openCommandPaletteBtn" class="topbar-search-btn" data-surface="command-palette-trigger" title="Search & jump (⌘K)" aria-label="Open search and jump menu"><span class="material-symbols-outlined" style="font-size:1rem;">search</span><span class="topbar-search-kbd">⌘K</span></button>
+          <div class="topbar-clock" id="topbarClock" data-surface="topbar-clock"></div>
+          <div id="serverStatus" data-surface="status-server" style="font-size:0.62rem;font-weight:600;display:flex;align-items:center;gap:0.3rem;opacity:0.7;" title="Server connection">…</div>
+          <div id="dataFreshness" data-surface="status-data-freshness" style="font-size:0.62rem;font-weight:600;color:var(--burgundy);opacity:0.55;" title="CRM data freshness"></div>
+          <div id="queueStatus" data-surface="status-queue" style="font-size:0.62rem;font-weight:600;color:var(--burgundy);opacity:0.5;" title="Action queue"></div>
+          <div class="topbar-badge" data-surface="topbar-badge">#1 <i data-lucide="trophy" style="width:0.7rem;height:0.7rem;"></i></div>
         </div>
       </div>
 
-      <div class="stage">
-        <div class="stage-bars"><div class="stage-bar"></div><div class="stage-bar"></div><div class="stage-bar"></div></div>
-        <div class="stage-scroll" id="stageScroll"></div>
+      <div class="stage" data-surface="stage-container">
+        <div class="stage-bars" aria-hidden="true"><div class="stage-bar"></div><div class="stage-bar"></div><div class="stage-bar"></div></div>
+        <div class="stage-scroll" id="stageScroll" data-surface="stage-scroll" role="main" aria-label="Main workspace"></div>
       </div>
     </div>
 
     <!-- PREVIEW PANEL -->
-    <div class="preview-panel" id="previewPanel">
+    <aside class="preview-panel" id="previewPanel" data-surface="preview-panel" aria-label="Detail preview">
       <div class="preview-header">
         <i data-lucide="eye" style="width:0.9rem;height:0.9rem;color:var(--burgundy);opacity:0.4;"></i>
         <span>Detail Preview</span>
       </div>
-      <div class="preview-body" id="previewBody">
+      <div class="preview-body" id="previewBody" data-surface="preview-body">
         <div class="preview-empty">
           <i data-lucide="mouse-pointer-click" style="width:2.5rem;height:2.5rem;color:var(--burgundy);margin-bottom:0.6rem;"></i>
           <p>Hover over any item to preview details</p>

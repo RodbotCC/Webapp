@@ -15,6 +15,10 @@ let AUT = { automations: [], runs: [], engine: {}, hooks: {} };
 let OPS = { context: {}, daily: {}, _meta: {} };
 let DOCS = { voiceSummary: '', voiceReadme: '' };
 let AI_ARTIFACTS = [];
+/** HRMR-style: one-tap choices from guided Oracle steps */
+let ORACLE_CHOICE_LOG = [];
+/** Graded corpus-lite: A+…F per turn for director signal */
+let ORACLE_GRADED_CORPUS = [];
 let currentDealFilter = '';
 let graphState = { nodes: [], selectedId: null };
 
@@ -134,11 +138,21 @@ const IDB = (() => {
 
 async function loadAiPersistence() {
   chatHistory = await IDB.get('oracle_chat_history') || [];
+  ORACLE_CHOICE_LOG = await IDB.get('oracle_choice_log') || [];
+  ORACLE_GRADED_CORPUS = await IDB.get('oracle_graded_corpus') || [];
   AI_ARTIFACTS = await IDB.get('ai_artifacts') || [];
 }
 
 async function persistChatHistory() {
   await IDB.set('oracle_chat_history', chatHistory.slice(-40));
+}
+
+async function persistOracleChoiceLog() {
+  await IDB.set('oracle_choice_log', (ORACLE_CHOICE_LOG || []).slice(0, 120));
+}
+
+async function persistOracleGraded() {
+  await IDB.set('oracle_graded_corpus', (ORACLE_GRADED_CORPUS || []).slice(0, 80));
 }
 
 async function persistAiArtifact(artifact) {
@@ -224,6 +238,17 @@ function findDealByName(name) {
       return normalized && (normalized === target || normalized.includes(target) || target.includes(normalized));
     })
   ) || null;
+}
+
+/** Concatenated normalized text for search (deals + command palette). */
+function dealSearchHaystack(d) {
+  if (!d) return '';
+  const bits = [
+    d.name, d.stage, d.event, d.venue, d.guests, d.priority, d.confidence, d.lead_id, d.status,
+    d.value != null ? String(d.value) : '',
+    ...(Array.isArray(d.risk) ? d.risk : []),
+  ];
+  return normText(bits.filter(Boolean).join(' '));
 }
 
 function relatedMatchesToDeals(related = []) {
@@ -457,6 +482,13 @@ window.openDealWorkspace = function(name, view) {
 window.openDealFilter = function(query) {
   currentDealFilter = query || '';
   navigateTo('deals');
+  setTimeout(() => {
+    const input = $('#dealSearch');
+    if (input) {
+      input.value = query || '';
+      filterDeals(query || '');
+    }
+  }, 40);
 };
 
 window.previewActivity = function(activity, pin) {
@@ -481,6 +513,9 @@ window.previewActivity = function(activity, pin) {
 window.previewCommsPlan = function(deal, pin) {
   const d = typeof deal === 'string' ? JSON.parse(deal.replace(/&quot;/g,'"').replace(/&#39;/g,"'")) : deal;
   const plan = buildDealCommsPlan(d);
+  const leadIdComms = d.lead_id || resolveLeadIdForDeal(d);
+  const emailPreset = JSON.stringify({ subject: plan.email?.subject || '', body_text: plan.email?.body || '' });
+  const smsPreset = JSON.stringify({ text: plan.sms?.body || '' });
   setPreview(`
     <div class="pv-title">${d.name}</div>
     <div class="pv-sub">Communication plan</div>
@@ -493,6 +528,11 @@ window.previewCommsPlan = function(deal, pin) {
     ${plan.email ? `<div class="pv-divider"></div><div class="pv-section-label">Email lane</div><div class="script-block" style="white-space:pre-wrap;font-style:normal;"><strong>Subject:</strong> ${plan.email.subject || 'No subject'}\n\n${plan.email.body}</div>` : ''}
     ${plan.sms ? `<div class="pv-divider"></div><div class="pv-section-label">SMS lane</div><div class="script-block" style="white-space:pre-wrap;font-style:normal;">${plan.sms.body}</div>` : ''}
     ${renderPreviewActionRow([
+      ...(leadIdComms ? [
+        `<button type="button" class="preview-action-btn gold" onclick='openCloseCompose("email","${leadIdComms}",${JSON.stringify(d.name)},${emailPreset})'><span class="material-symbols-outlined">mail</span>Email plan (Close)</button>`,
+        `<button type="button" class="preview-action-btn" onclick='openCloseCompose("sms","${leadIdComms}",${JSON.stringify(d.name)},${smsPreset})'><span class="material-symbols-outlined">sms</span>SMS plan (Close)</button>`,
+        `<button type="button" class="preview-action-btn" onclick='openCloseTask("${leadIdComms}",${JSON.stringify(d.name)},"")'><span class="material-symbols-outlined">add_task</span>Task (Close)</button>`
+      ] : []),
       `<button class="preview-action-btn gold" onclick="aiDraftFollowup(${esc(d)})"><span class="material-symbols-outlined">edit_note</span>AI draft</button>`,
       `<button class="preview-action-btn" onclick="queueFollowUp('${d.lead_id || ''}','${String(d.name).replace(/'/g, '')}')"><span class="material-symbols-outlined">send</span>Queue follow-up</button>`,
       `<button class="preview-action-btn" onclick="openDealWorkspace('${d.name.replace(/'/g, "\\'")}')"><span class="material-symbols-outlined">sell</span>Deal view</button>`
@@ -543,6 +583,211 @@ function timeAgo(isoString) {
   const days = Math.floor(hours / 24);
   return days + 'd ago';
 }
+
+/** UI map for agents / console — same JSON as GET /app/surface */
+async function loadAppSurfaceMap() {
+  try {
+    const r = await fetch(`${SERVER}/app/surface`, { cache: 'no-store' });
+    if (!r.ok) {
+      window.__APP_SURFACE = null;
+      return;
+    }
+    window.__APP_SURFACE = await r.json();
+  } catch (_) {
+    window.__APP_SURFACE = null;
+  }
+}
+
+async function loadCloseInboxSnapshot() {
+  if (!serverOnline) return;
+  try {
+    const r = await fetch(`${SERVER}/close/inbox/snapshot`, { cache: 'no-store' });
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      CLOSE_INBOX = { error: data.error || `HTTP ${r.status}`, fetched_at: new Date().toISOString() };
+      return;
+    }
+    CLOSE_INBOX = data;
+  } catch (e) {
+    CLOSE_INBOX = { error: e.message, fetched_at: new Date().toISOString() };
+  }
+}
+
+window.refreshCloseInboxIntel = async function() {
+  await loadCloseInboxSnapshot();
+  if (currentView === 'command') renderCommand();
+  Toast.success('Close inbox intel refreshed');
+};
+
+function renderCloseInboxIntelPanel() {
+  if (!serverOnline) {
+    return `<div class="panel-block" data-surface="inbox-intel-panel" style="border-color:rgba(201,168,76,0.12);"><p class="panel-note" style="margin:0;">Connect to the server to load Close inbox intel.</p></div>`;
+  }
+  const x = CLOSE_INBOX;
+  if (!x || x.error) {
+    return `
+      <div class="panel-block" data-surface="inbox-intel-panel" style="border-color:rgba(201,168,76,0.15);">
+        <h2 style="margin-bottom:0.35rem;"><span class="material-symbols-outlined" style="font-size:1rem;color:var(--cyan);">inbox</span> Close inbox intel</h2>
+        <p class="panel-note" style="margin-bottom:0.6rem;">Pulls the same class of work you triage in Close (tasks + recent email/SMS/calls) — not a CRM re-skin, a compressed feed for this command center.</p>
+        <p style="font-size:0.72rem;color:var(--coral);margin:0;">${x?.error ? String(x.error) : 'Not loaded yet.'} Configure Close user ID in Settings and refresh.</p>
+        <button type="button" class="preview-action-btn gold" data-surface="inbox-intel-refresh" style="margin-top:0.75rem;" onclick="refreshCloseInboxIntel()"><span class="material-symbols-outlined">sync</span>Load inbox intel</button>
+      </div>`;
+  }
+  const c = x.counts || {};
+  const when = x.fetched_at ? timeAgo(x.fetched_at) : '—';
+  const chip = (n, label) => `<div class="inbox-intel-chip" data-surface="inbox-intel-chip"><span class="inbox-intel-n">${n}</span><span class="inbox-intel-l">${label}</span></div>`;
+  const lidAttr = (id) => (id ? ` data-lead-id="${String(id).replace(/"/g, '&quot;')}"` : '');
+  const taskRows = (x.tasks_inbox || []).slice(0, 5).map(t => `
+    <div class="inbox-intel-row" data-surface="inbox-intel-row" data-inbox-kind="task"${lidAttr(t.lead_id)} onclick="previewCloseInboxTask(${esc({ kind: 'task', view: t.view, text: t.text, date: t.date, lead_id: t.lead_id, lead_name: t.lead_name })})">
+      <span class="material-symbols-outlined inbox-intel-ico">task_alt</span>
+      <div><div class="inbox-intel-row-title">${(t.text || 'Task').replace(/</g, '&lt;')}</div><div class="inbox-intel-row-sub">${(t.lead_name || t.lead_id || 'Lead').replace(/</g, '&lt;')} · ${t.date || ''}</div></div>
+    </div>`).join('');
+  const emailRows = (x.emails_triage || []).slice(0, 4).map(e => `
+    <div class="inbox-intel-row" data-surface="inbox-intel-row" data-inbox-kind="email"${lidAttr(e.lead_id)} onclick="previewCloseInboxTask(${esc({ kind: 'email', subject: e.subject, snippet: e.snippet, lead_id: e.lead_id, lead_name: e.lead_name, status: e.status })})">
+      <span class="material-symbols-outlined inbox-intel-ico">mail</span>
+      <div><div class="inbox-intel-row-title">${(e.subject || '(no subject)').replace(/</g, '&lt;')}</div><div class="inbox-intel-row-sub">${(e.lead_name || '').replace(/</g, '&lt;')} · ${e.status || ''}</div></div>
+    </div>`).join('');
+  return `
+    <div class="panel-block inbox-intel-panel" data-surface="inbox-intel-panel">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:0.75rem;flex-wrap:wrap;margin-bottom:0.75rem;">
+        <div>
+          <h2 style="margin-bottom:0.2rem;"><span class="material-symbols-outlined" style="font-size:1rem;color:var(--cyan);">inbox</span> Close inbox intel</h2>
+          <p class="panel-note" style="margin:0;">Tasks (<code>view=inbox</code> / future) + inbound-style email/SMS + recent calls — prioritized triage surface for automation and AI, not a Close clone.</p>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.45rem;flex-wrap:wrap;">
+          <span style="font-size:0.6rem;color:var(--burgundy);opacity:0.55;">Updated ${when}</span>
+          <button type="button" class="preview-action-btn" data-surface="inbox-intel-refresh" onclick="refreshCloseInboxIntel()"><span class="material-symbols-outlined">sync</span>Refresh</button>
+        </div>
+      </div>
+      <div class="inbox-intel-chips" data-surface="inbox-intel-chips">
+        ${chip(c.tasks_inbox ?? 0, 'Tasks · today')}
+        ${chip(c.tasks_future ?? 0, 'Tasks · future')}
+        ${chip(c.emails_in_queue ?? 0, 'Email triage')}
+        ${chip(c.sms_in_queue ?? 0, 'SMS triage')}
+        ${chip(c.calls_recent ?? 0, 'Recent calls')}
+      </div>
+      <div class="inbox-intel-columns" data-surface="inbox-intel-columns">
+        <div data-surface="inbox-intel-column-tasks">
+          <div class="inbox-intel-col-head">Tasks due (inbox view)</div>
+          ${taskRows || '<p class="panel-note" style="margin:0;">No tasks in this window.</p>'}
+          ${(x.tasks_future || []).length ? `<div class="inbox-intel-col-head inbox-intel-col-head--sub">Upcoming (future)</div>${(x.tasks_future || []).slice(0, 3).map(t => `
+    <div class="inbox-intel-row inbox-intel-row--sub" data-surface="inbox-intel-row" data-inbox-kind="task-future"${lidAttr(t.lead_id)} onclick="previewCloseInboxTask(${esc({ kind: 'task', view: t.view, text: t.text, date: t.date, lead_id: t.lead_id, lead_name: t.lead_name })})">
+      <span class="material-symbols-outlined inbox-intel-ico">event_upcoming</span>
+      <div><div class="inbox-intel-row-title">${(t.text || 'Task').replace(/</g, '&lt;')}</div><div class="inbox-intel-row-sub">${(t.lead_name || t.lead_id || 'Lead').replace(/</g, '&lt;')} · ${t.date || ''}</div></div>
+    </div>`).join('')}` : ''}
+        </div>
+        <div data-surface="inbox-intel-column-comms">
+          <div class="inbox-intel-col-head">Email / SMS needing eyes</div>
+          ${emailRows || ''}
+          ${(x.sms_triage || []).slice(0, 3).map(s => `
+            <div class="inbox-intel-row" data-surface="inbox-intel-row" data-inbox-kind="sms"${lidAttr(s.lead_id)} onclick="previewCloseInboxTask(${esc({ kind: 'sms', text: s.text, lead_id: s.lead_id, lead_name: s.lead_name })})">
+              <span class="material-symbols-outlined inbox-intel-ico">sms</span>
+              <div><div class="inbox-intel-row-title">${(s.text || 'SMS').replace(/</g, '&lt;')}</div><div class="inbox-intel-row-sub">${(s.lead_name || '').replace(/</g, '&lt;')}</div></div>
+            </div>`).join('')}
+          ${!(x.emails_triage || []).length && !(x.sms_triage || []).length ? '<p class="panel-note" style="margin:0;">No triage queue items in this pull.</p>' : ''}
+          ${(x.calls_recent || []).length ? `<div class="inbox-intel-col-head inbox-intel-col-head--sub">Recent calls</div>${(x.calls_recent || []).slice(0, 4).map(c => `
+    <div class="inbox-intel-row inbox-intel-row--sub" data-surface="inbox-intel-row" data-inbox-kind="call"${lidAttr(c.lead_id)} onclick="previewCloseInboxTask(${esc({ kind: 'call', lead_id: c.lead_id, lead_name: c.lead_name, disposition: c.disposition, duration: c.duration, date_created: c.date_created })})">
+      <span class="material-symbols-outlined inbox-intel-ico">call</span>
+      <div><div class="inbox-intel-row-title">${(c.lead_name || c.lead_id || 'Call').replace(/</g, '&lt;')}</div><div class="inbox-intel-row-sub">${(c.disposition || 'call').replace(/</g, '&lt;')} · ${c.duration != null ? c.duration + 's' : ''}</div></div>
+    </div>`).join('')}` : ''}
+        </div>
+      </div>
+    </div>`;
+}
+
+window.previewCloseInboxTask = function(payload) {
+  let p = payload;
+  if (typeof p === 'string') {
+    try { p = JSON.parse(p); } catch (_) { return; }
+  }
+  const leadUrl = p.lead_id ? `https://app.close.com/lead/${p.lead_id}/` : '';
+  const deal = p.lead_name ? findDealByName(p.lead_name) : null;
+  const lid = p.lead_id || '';
+  const labelEsc = (s) => String(s || '').replace(/'/g, "\\'");
+  const taskLabel = labelEsc(p.lead_name || deal?.name || 'Lead');
+  const rows = [];
+  if (leadUrl) rows.push(`<a class="preview-action-btn" href="${leadUrl}" target="_blank" rel="noopener"><span class="material-symbols-outlined">open_in_new</span>Open in Close</a>`);
+  if (lid) rows.push(`<button type="button" class="preview-action-btn gold" onclick="openCloseTask('${lid}', '${taskLabel}', '')"><span class="material-symbols-outlined">add_task</span>Add task</button>`);
+  if (p.lead_name) rows.push(`<button type="button" class="preview-action-btn" onclick="openDealWorkspace('${labelEsc(p.lead_name)}')"><span class="material-symbols-outlined">sell</span>Deal in app</button>`);
+  const body = p.kind === 'task'
+    ? `<p style="font-size:0.75rem;line-height:1.5;color:var(--maroon);">${(p.text || '').replace(/</g, '&lt;')}</p>`
+    : p.kind === 'email'
+      ? `<p style="font-size:0.73rem;line-height:1.5;color:var(--maroon);opacity:0.85;">${(p.snippet || '').replace(/</g, '&lt;')}</p>`
+      : p.kind === 'call'
+        ? `<p style="font-size:0.73rem;line-height:1.5;color:var(--maroon);opacity:0.85;">${[p.disposition, p.duration != null ? `${p.duration}s` : ''].filter(Boolean).join(' · ').replace(/</g, '&lt;')}</p>`
+        : `<p style="font-size:0.73rem;line-height:1.5;color:var(--maroon);">${(p.text || '').replace(/</g, '&lt;')}</p>`;
+  const title = p.kind === 'task' ? 'Close task' : p.kind === 'email' ? (p.subject || 'Email').replace(/</g, '&lt;') : p.kind === 'call' ? 'Call' : 'SMS';
+  setPreview(`
+    <div class="pv-title">${title}</div>
+    <div class="pv-sub">${(p.lead_name || p.lead_id || 'Lead').replace(/</g, '&lt;')}</div>
+    <div class="pv-divider"></div>
+    ${body}
+    <div class="pv-divider"></div>
+    ${renderPreviewActionRow(rows)}
+  `, true);
+};
+
+function ensureCloseTaskModal() {
+  let m = $('#closeTaskModal');
+  if (m) return m;
+  const wrap = document.createElement('div');
+  wrap.innerHTML = `
+    <div id="closeTaskModal" data-surface="close-task-modal" style="display:none;position:fixed;inset:0;z-index:10001;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);backdrop-filter:blur(6px);padding:1rem;">
+      <div style="width:100%;max-width:22rem;background:#141414;border:1.5px solid rgba(201,168,76,0.25);border-radius:1rem;padding:1.1rem 1.2rem 1.2rem;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
+          <span style="font-family:'Fraunces',serif;font-weight:700;font-size:0.95rem;color:var(--maroon-deep);">New Close task</span>
+          <button type="button" onclick="document.getElementById('closeTaskModal').style.display='none'" style="background:none;border:none;color:var(--burgundy);cursor:pointer;opacity:0.5;"><span class="material-symbols-outlined">close</span></button>
+        </div>
+        <p id="closeTaskDealLabel" style="font-size:0.68rem;color:var(--burgundy);margin:0 0 0.75rem;"></p>
+        <label class="composer-field" style="display:block;margin-bottom:0.6rem;">
+          <span class="composer-label">Due date</span>
+          <input type="date" id="closeTaskDate" class="settings-input" style="width:100%;box-sizing:border-box;" />
+        </label>
+        <label class="composer-field" style="display:block;margin-bottom:0.85rem;">
+          <span class="composer-label">Task</span>
+          <textarea id="closeTaskText" rows="4" class="settings-input" placeholder="What needs to happen?" style="width:100%;box-sizing:border-box;resize:vertical;font-family:inherit;"></textarea>
+        </label>
+        <button type="button" class="preview-action-btn gold" style="width:100%;justify-content:center;" onclick="submitCloseTask()"><span class="material-symbols-outlined">check</span>Create in Close</button>
+      </div>
+    </div>`;
+  document.body.appendChild(wrap.firstElementChild);
+  return $('#closeTaskModal');
+}
+
+window.openCloseTask = function(leadId, dealName, suggestedText) {
+  if (!leadId) {
+    Toast.warning('No lead ID — pick a row from live CRM or inbox intel.');
+    return;
+  }
+  const modal = ensureCloseTaskModal();
+  modal.dataset.leadId = leadId;
+  $('#closeTaskDealLabel').textContent = dealName ? `${dealName} · ${leadId}` : leadId;
+  const d = new Date();
+  $('#closeTaskDate').value = d.toISOString().substring(0, 10);
+  $('#closeTaskText').value = suggestedText || '';
+  modal.style.display = 'flex';
+};
+
+window.submitCloseTask = async function() {
+  const modal = $('#closeTaskModal');
+  const leadId = modal?.dataset?.leadId;
+  const text = $('#closeTaskText')?.value?.trim();
+  const date = $('#closeTaskDate')?.value;
+  if (!leadId || !text) {
+    Toast.warning('Add task description.');
+    return;
+  }
+  try {
+    await postCloseOutbound(`/close/lead/${encodeURIComponent(leadId)}/task`, { text, date });
+    Toast.success('Task created in Close');
+    modal.style.display = 'none';
+    await refreshActivityFromServer();
+    await loadCloseInboxSnapshot();
+    if (currentView === 'command') renderCommand();
+  } catch (e) {
+    Toast.error(e.message || 'Failed to create task');
+  }
+};
 
 function renderActivityFeed() {
   const entries = (ACT.log || []).slice(-8).reverse();
@@ -648,6 +893,8 @@ function renderCommand() {
         <div class="status-value">${P.identity?.total_data_sources || 124} files analyzed</div>
       </div>
     </div>
+
+    ${renderCloseInboxIntelPanel()}
 
     <div class="command-war-grid">
       <div class="panel-block panel-accent-gold">
@@ -1065,7 +1312,15 @@ window.previewDeal = function(el, json, pin) {
     `;
   }
 
-  setPreview(`<div class="pv-title">${d.name}</div><div class="pv-sub">${d.stage}</div><div class="pv-divider"></div><div class="pv-field"><span class="pv-field-label">Value</span><span class="pv-field-value">${fmt$(d.value)}</span></div><div class="pv-field"><span class="pv-field-label">Event</span><span class="pv-field-value">${d.event||'—'}</span></div><div class="pv-field"><span class="pv-field-label">Venue</span><span class="pv-field-value">${d.venue||'TBD'}</span></div><div class="pv-field"><span class="pv-field-label">Guests</span><span class="pv-field-value">${d.guests||'TBD'}</span></div><div class="pv-field"><span class="pv-field-label">Confidence</span><span class="pv-field-value">${d.confidence||'—'}%</span></div><div class="pv-field"><span class="pv-field-label">Best channel</span><span class="pv-field-value">${comms.channel}</span></div>${d.risk?.length ? '<div class="pv-divider"></div><div class="pv-section-label">Risk Flags</div><div class="pv-tags">'+d.risk.map(r=>'<span class="pv-tag" style="color:var(--coral)">'+r.replace(/_/g,' ')+'</span>').join('')+'</div>' : ''}${oracleHtml}<div class="pv-divider"></div><div class="pv-section-label">Communication guidance</div><p style="font-size:0.73rem;line-height:1.55;color:var(--maroon);opacity:0.78;">${comms.objective}. Tone should stay ${comms.tone.toLowerCase()}.</p>${renderPreviewActionRow([
+  const leadIdResolved = resolveLeadIdForDeal(d);
+  const closeSendBtns = leadIdResolved ? [
+    `<button type="button" class="preview-action-btn" onclick='openCloseCompose("email","${leadIdResolved}",${JSON.stringify(d.name)})'><span class="material-symbols-outlined">mail</span>Email (Close)</button>`,
+    `<button type="button" class="preview-action-btn" onclick='openCloseCompose("sms","${leadIdResolved}",${JSON.stringify(d.name)})'><span class="material-symbols-outlined">sms</span>SMS (Close)</button>`,
+    `<button type="button" class="preview-action-btn gold" onclick='openCloseTask("${leadIdResolved}",${JSON.stringify(d.name)},"")'><span class="material-symbols-outlined">add_task</span>Task (Close)</button>`
+  ] : [];
+
+  setPreview(`<div class="pv-title">${d.name}</div><div class="pv-sub">${d.stage}</div><div class="pv-divider"></div><div class="pv-field"><span class="pv-field-label">Value</span><span class="pv-field-value">${fmt$(d.value)}</span></div><div class="pv-field"><span class="pv-field-label">Event</span><span class="pv-field-value">${d.event||'—'}</span></div><div class="pv-field"><span class="pv-field-label">Venue</span><span class="pv-field-value">${d.venue||'TBD'}</span></div><div class="pv-field"><span class="pv-field-label">Guests</span><span class="pv-field-value">${d.guests||'TBD'}</span></div><div class="pv-field"><span class="pv-field-label">Confidence</span><span class="pv-field-value">${d.confidence||'—'}%</span></div><div class="pv-field"><span class="pv-field-label">Best channel</span><span class="pv-field-value">${comms.channel}</span></div>${!leadIdResolved ? '<div class="pv-divider"></div><p style="font-size:0.65rem;color:var(--amber);opacity:0.85;">Close send: no <code style="font-size:0.6rem;">lead_id</code> on this deal yet — match it via a CRM sync (Needs Attention / Closing soon) to enable Email/SMS buttons.</p>' : ''}${d.risk?.length ? '<div class="pv-divider"></div><div class="pv-section-label">Risk Flags</div><div class="pv-tags">'+d.risk.map(r=>'<span class="pv-tag" style="color:var(--coral)">'+r.replace(/_/g,' ')+'</span>').join('')+'</div>' : ''}${oracleHtml}<div class="pv-divider"></div><div class="pv-section-label">Communication guidance</div><p style="font-size:0.73rem;line-height:1.55;color:var(--maroon);opacity:0.78;">${comms.objective}. Tone should stay ${comms.tone.toLowerCase()}.</p>${renderPreviewActionRow([
+    ...closeSendBtns,
     `<button class="preview-action-btn gold" onclick="aiAnalyzeDeal(${esc(d)})"><span class="material-symbols-outlined">analytics</span>Analyze</button>`,
     `<button class="preview-action-btn" onclick="aiDraftFollowup(${esc(d)})"><span class="material-symbols-outlined">edit_note</span>Draft</button>`,
     `<button class="preview-action-btn" onclick="previewCommsPlan(${esc(d)}, true)"><span class="material-symbols-outlined">mail</span>Comms plan</button>`,
@@ -1595,7 +1850,7 @@ function renderDeals() {
   const deals = L.all_deals || [];
   stageScroll.innerHTML = `
     <div class="vh"><span class="label"><span class="material-symbols-outlined">handshake</span> Deals</span><h2>Deal Intelligence</h2><p>${deals.length} deals · Click to expand details</p></div>
-    <div class="panel-block"><h2>Search & Filter</h2><input type="text" id="dealSearch" placeholder="Search deals..." style="width:100%;padding:0.5rem 0.8rem;border-radius:9999px;border:1.5px solid rgba(201,168,76,0.1);background:var(--cream-dark);font-family:inherit;font-size:0.75rem;outline:none;" oninput="filterDeals(this.value)"></div>
+    <div class="panel-block"><h2>Search & Filter</h2><input type="text" id="dealSearch" data-surface="deal-search" placeholder="Name, venue, stage, event, value, lead id…" style="width:100%;padding:0.5rem 0.8rem;border-radius:9999px;border:1.5px solid rgba(201,168,76,0.1);background:var(--cream-dark);font-family:inherit;font-size:0.75rem;outline:none;" oninput="filterDeals(this.value)" autocomplete="off"></div>
     <div id="dealList" style="display:grid;gap:0.4rem;">
       ${renderDealList(deals)}
     </div>
@@ -1615,7 +1870,7 @@ function renderDealList(deals) {
     const plan = buildDealCommsPlan(d);
     const aiBadge = oracle ? `<span class="badge gold" style="display:inline-flex;align-items:center;gap:0.15rem;"><span class="material-symbols-outlined" style="font-size:0.7rem;">smart_toy</span> Oracle AI</span>` : '';
     return `
-    <div class="deal-card" data-idx="${i}" onclick="toggleDeal(this);previewDeal(null, ${esc(d)}, true);">
+    <div class="deal-card" data-surface="deal-card" data-idx="${i}" data-deal-name="${String(d.name || '').replace(/"/g, '&quot;')}" ${d.lead_id ? `data-lead-id="${String(d.lead_id).replace(/"/g, '&quot;')}"` : ''} onclick="toggleDeal(this);previewDeal(null, ${esc(d)}, true);">
       <div class="deal-header">
         <div class="deal-name" style="display:flex;align-items:center;gap:0.4rem;">${d.name} ${aiBadge}</div>
         <div style="display:flex;align-items:center;gap:0.4rem;">
@@ -1660,13 +1915,439 @@ function renderDealList(deals) {
 window.toggleDeal = function(el) { el.classList.toggle('expanded'); };
 window.filterDeals = function(q) {
   currentDealFilter = q || '';
-  const deals = (L.all_deals || []).filter(d => d.name.toLowerCase().includes(q.toLowerCase()) || (d.stage||'').toLowerCase().includes(q.toLowerCase()) || (d.event||'').toLowerCase().includes(q.toLowerCase()));
-  $('#dealList').innerHTML = renderDealList(deals);
+  const nq = normText(q);
+  const all = L.all_deals || [];
+  const deals = !nq ? all : all.filter(d => dealSearchHaystack(d).includes(nq));
+  const el = $('#dealList');
+  if (el) el.innerHTML = renderDealList(deals);
 };
 
 // ═══════════════════════════════════════
-// AUTOMATION
+// AUTOMATION BLUEPRINT + COMMAND PALETTE
 // ═══════════════════════════════════════
+const BLUEPRINT_LS = 'automation_blueprint_v1';
+
+function loadAutomationBlueprintFromStorage() {
+  try {
+    const raw = localStorage.getItem(BLUEPRINT_LS);
+    if (!raw) return;
+    const o = JSON.parse(raw);
+    if (Array.isArray(o.steps)) automationBlueprintState.steps = o.steps;
+  } catch (_) { /* ignore */ }
+}
+
+function saveAutomationBlueprintToStorage() {
+  try {
+    localStorage.setItem(BLUEPRINT_LS, JSON.stringify({ steps: automationBlueprintState.steps }));
+  } catch (_) { /* ignore */ }
+}
+
+async function loadAutomationCatalog() {
+  if (automationBlueprintState.catalog?.nodes?.length) return automationBlueprintState.catalog;
+  try {
+    const r = await fetch(`${SERVER}/data/automation_node_catalog.json`, { cache: 'no-store' });
+    automationBlueprintState.catalog = await r.json();
+  } catch (_) {
+    automationBlueprintState.catalog = { nodes: [], platforms: [] };
+  }
+  return automationBlueprintState.catalog;
+}
+
+function renderAutomationBlueprintPanel() {
+  return `
+    <div class="panel-block automation-blueprint-panel" data-surface="automation-blueprint-panel">
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:0.75rem;flex-wrap:wrap;margin-bottom:0.5rem;">
+        <div>
+          <h2 style="margin-bottom:0.2rem;"><span class="material-symbols-outlined" style="font-size:1rem;color:var(--cyan);">account_tree</span> Automation Blueprint</h2>
+          <p class="panel-note" style="margin:0;">Design-only: chain steps across <strong>Close</strong>, <strong>this server</strong>, <strong>OpenAI</strong>, <strong>Codex</strong>, <strong>Claude Code</strong>, <strong>Cursor</strong>, and <strong>human</strong> gates. Export JSON and a markdown implementation packet (per-platform prompts). Execution from this UI comes later.</p>
+        </div>
+      </div>
+      <div class="blueprint-toolbar" data-surface="automation-blueprint-toolbar">
+        <select id="blueprintNodeSelect" data-surface="automation-blueprint-node-select" class="settings-input" style="flex:1;min-width:14rem;font-size:0.72rem;">
+          <option value="">— Pick node type —</option>
+        </select>
+        <button type="button" class="preview-action-btn gold" data-surface="automation-blueprint-add" onclick="blueprintAddStep()"><span class="material-symbols-outlined">add</span>Add step</button>
+        <button type="button" class="preview-action-btn" data-surface="automation-blueprint-clear" onclick="blueprintClearAll()"><span class="material-symbols-outlined">delete_sweep</span>Clear all</button>
+      </div>
+      <div id="blueprintSteps" class="blueprint-steps" data-surface="automation-blueprint-steps"></div>
+      <div class="blueprint-export-row" data-surface="automation-blueprint-export">
+        <button type="button" class="preview-action-btn gold" data-surface="automation-blueprint-copy-json" onclick="blueprintExport('json')"><span class="material-symbols-outlined">data_object</span>Copy JSON</button>
+        <button type="button" class="preview-action-btn" data-surface="automation-blueprint-copy-md" onclick="blueprintExport('md')"><span class="material-symbols-outlined">article</span>Copy markdown packet</button>
+        <button type="button" class="preview-action-btn" data-surface="automation-blueprint-preview-toggle" onclick="blueprintTogglePreview()"><span class="material-symbols-outlined">visibility</span>Toggle preview</button>
+      </div>
+      <pre id="blueprintExportPreview" class="blueprint-export-pre" data-surface="automation-blueprint-export-preview" style="display:none;"></pre>
+    </div>`;
+}
+
+function blueprintHydrateSelectAndSteps() {
+  const sel = $('#blueprintNodeSelect');
+  if (sel) {
+    const nodes = automationBlueprintState.catalog?.nodes || [];
+    sel.innerHTML = '<option value="">— Pick node type —</option>' +
+      nodes.map(n => `<option value="${String(n.id).replace(/"/g, '&quot;')}">${(n.label || n.id).replace(/</g, '&lt;')}</option>`).join('');
+  }
+  renderBlueprintStepsList();
+}
+
+function blueprintStepFieldChanged(e) {
+  const uid = e.target?.dataset?.uid;
+  if (!uid) return;
+  const step = automationBlueprintState.steps.find(s => s.uid === uid);
+  if (!step) return;
+  if (e.target.classList.contains('blueprint-step-title')) step.title = e.target.value;
+  if (e.target.classList.contains('blueprint-step-notes')) step.notes = e.target.value;
+  saveAutomationBlueprintToStorage();
+}
+
+function renderBlueprintStepsList() {
+  const host = $('#blueprintSteps');
+  if (!host) return;
+  const nodes = automationBlueprintState.catalog?.nodes || [];
+  const plats = automationBlueprintState.catalog?.platforms || [];
+  if (!automationBlueprintState.steps.length) {
+    host.innerHTML = '<p class="panel-note" style="margin:0;">No steps yet. Choose a node type and click <strong>Add step</strong>.</p>';
+    return;
+  }
+  host.innerHTML = automationBlueprintState.steps.map((step, idx) => {
+    const nodeDef = nodes.find(n => n.id === step.nodeId) || { label: step.nodeId, platform: 'transform', description: '' };
+    const plat = plats.find(p => p.id === nodeDef.platform);
+    const uid = String(step.uid).replace(/'/g, '');
+    const desc = (nodeDef.description || '').replace(/</g, '&lt;');
+    const descShort = desc.length > 120 ? desc.substring(0, 120) + '…' : desc;
+    return `
+      <div class="blueprint-step" data-surface="blueprint-step" data-node-id="${String(step.nodeId || '').replace(/"/g, '&quot;')}" data-uid="${uid}">
+        <div class="blueprint-step-index">${idx + 1}</div>
+        <div class="blueprint-step-body">
+          <input class="blueprint-step-title" data-uid="${uid}" value="${(step.title || '').replace(/"/g, '&quot;')}" />
+          <textarea class="blueprint-step-notes" data-uid="${uid}" placeholder="Implementation notes, I/O, edge cases…">${(step.notes || '').replace(/</g, '&lt;')}</textarea>
+          <div class="blueprint-step-meta">${(plat?.label || nodeDef.platform || '').replace(/</g, '&lt;')} · ${descShort}</div>
+        </div>
+        <div class="blueprint-step-actions">
+          <button type="button" class="preview-action-btn" title="Up" onclick="blueprintMoveStep('${uid}', -1)"><span class="material-symbols-outlined">arrow_upward</span></button>
+          <button type="button" class="preview-action-btn" title="Down" onclick="blueprintMoveStep('${uid}', 1)"><span class="material-symbols-outlined">arrow_downward</span></button>
+          <button type="button" class="preview-action-btn" title="Remove" onclick="blueprintRemoveStep('${uid}')"><span class="material-symbols-outlined">close</span></button>
+        </div>
+      </div>`;
+  }).join('');
+  host.querySelectorAll('.blueprint-step-title, .blueprint-step-notes').forEach(el => {
+    el.addEventListener('change', blueprintStepFieldChanged);
+    el.addEventListener('blur', blueprintStepFieldChanged);
+  });
+}
+
+window.blueprintAddStep = async function() {
+  await loadAutomationCatalog();
+  const sel = $('#blueprintNodeSelect');
+  const id = sel?.value;
+  if (!id) {
+    Toast.warning('Choose a node type first.');
+    return;
+  }
+  const node = (automationBlueprintState.catalog?.nodes || []).find(n => n.id === id);
+  automationBlueprintState.steps.push({
+    uid: (typeof crypto !== 'undefined' && crypto.randomUUID) ? crypto.randomUUID() : `s_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`,
+    nodeId: id,
+    title: node?.label || id,
+    notes: node?.description || '',
+  });
+  saveAutomationBlueprintToStorage();
+  blueprintHydrateSelectAndSteps();
+};
+
+window.blueprintClearAll = function() {
+  if (!automationBlueprintState.steps.length) return;
+  if (!confirm('Clear all blueprint steps?')) return;
+  automationBlueprintState.steps = [];
+  saveAutomationBlueprintToStorage();
+  renderBlueprintStepsList();
+};
+
+window.blueprintMoveStep = function(uid, delta) {
+  const i = automationBlueprintState.steps.findIndex(s => s.uid === uid);
+  if (i < 0) return;
+  const j = i + delta;
+  if (j < 0 || j >= automationBlueprintState.steps.length) return;
+  const t = automationBlueprintState.steps[i];
+  automationBlueprintState.steps[i] = automationBlueprintState.steps[j];
+  automationBlueprintState.steps[j] = t;
+  saveAutomationBlueprintToStorage();
+  renderBlueprintStepsList();
+};
+
+window.blueprintRemoveStep = function(uid) {
+  automationBlueprintState.steps = automationBlueprintState.steps.filter(s => s.uid !== uid);
+  saveAutomationBlueprintToStorage();
+  renderBlueprintStepsList();
+};
+
+window.blueprintExport = async function(kind) {
+  await loadAutomationCatalog();
+  const nodes = automationBlueprintState.catalog?.nodes || [];
+  const plats = automationBlueprintState.catalog?.platforms || [];
+  const enriched = automationBlueprintState.steps.map((s, i) => {
+    const def = nodes.find(n => n.id === s.nodeId) || {};
+    return { order: i + 1, ...s, node: def, platform_id: def.platform };
+  });
+  if (kind === 'json') {
+    const payload = {
+      version: 1,
+      exported_at: new Date().toISOString(),
+      app: 'Comeketo Sales Command Center',
+      steps: enriched,
+    };
+    const txt = JSON.stringify(payload, null, 2);
+    try {
+      await navigator.clipboard.writeText(txt);
+      Toast.success('Blueprint JSON copied');
+    } catch (_) {
+      blueprintShowPreview(txt);
+      Toast.warning('Clipboard blocked — see preview');
+    }
+    return;
+  }
+  if (kind === 'md') {
+    let md = '# Automation implementation packet\n\n';
+    md += `Generated \`${new Date().toISOString()}\` · **Design-only** — paste into Codex, Claude Code, Cursor, or your runbook.\n\n`;
+    md += '## Discrete steps (ordered)\n\n';
+    enriched.forEach(row => {
+      md += `${row.order}. **${row.title}** (\`${row.nodeId}\`)\n`;
+      md += `   - Platform: **${row.platform_id || '—'}**\n`;
+      if (row.notes) md += `   - Notes: ${row.notes}\n`;
+      md += '\n';
+    });
+    md += '## Per-platform prompt stubs\n\n';
+    const byPlat = {};
+    enriched.forEach(row => {
+      const pid = row.platform_id || 'general';
+      if (!byPlat[pid]) byPlat[pid] = [];
+      byPlat[pid].push(row);
+    });
+    Object.keys(byPlat).sort().forEach(pid => {
+      const pMeta = plats.find(p => p.id === pid);
+      md += `### ${pMeta?.label || pid}\n`;
+      if (pMeta?.hint) md += `_${pMeta.hint}_\n\n`;
+      md += 'Implement the following steps in order, respecting existing auth and safety rules:\n\n';
+      byPlat[pid].forEach(row => {
+        md += `- **${row.title}**: ${(row.notes || row.node?.description || '').trim()}\n`;
+      });
+      md += '\n';
+    });
+    md += '## Acceptance checks\n\n- [ ] Each step has a clear input contract and output.\n- [ ] Secrets stay in env / Settings, not in repo.\n- [ ] Close calls use existing server proxies where possible.\n\n';
+    try {
+      await navigator.clipboard.writeText(md);
+      Toast.success('Markdown packet copied');
+    } catch (_) {
+      blueprintShowPreview(md);
+      Toast.warning('Clipboard blocked — see preview');
+    }
+  }
+};
+
+function blueprintShowPreview(text) {
+  const pre = $('#blueprintExportPreview');
+  if (!pre) return;
+  pre.style.display = 'block';
+  pre.textContent = text;
+}
+
+window.blueprintTogglePreview = function() {
+  const pre = $('#blueprintExportPreview');
+  if (!pre) return;
+  pre.style.display = pre.style.display === 'none' ? 'block' : 'none';
+};
+
+// ─── COMMAND PALETTE (⌘K / Ctrl+K) ───────────────────
+let commandPaletteFiltered = [];
+let commandPaletteActive = 0;
+
+function buildCommandPaletteItems() {
+  const items = [];
+  const nav = (id, label, sub, icon) => {
+    items.push({
+      kind: 'nav',
+      icon: icon || 'dashboard',
+      label,
+      sub: sub || '',
+      hay: normText(`${label} ${sub}`),
+      run() {
+        closeCommandPalette();
+        navigateTo(id);
+      },
+    });
+  };
+  nav('command', 'Command Center', 'KPIs, Close inbox intel, war room', 'hive');
+  nav('pipeline', 'Pipeline', 'Funnel and stages', 'filter_alt');
+  nav('actions', 'Actions', 'Tasks and todos', 'check_circle');
+  nav('performance', 'Performance', 'Metrics', 'bar_chart');
+  nav('coaching', 'Coaching', 'Playbooks', 'school');
+  nav('deals', 'Deals', 'Search and expand deal cards', 'handshake');
+  nav('automation', 'Automation', 'Queue, engine, blueprint designer', 'smart_toy');
+  nav('timeline', 'Timeline', 'Activity calendar', 'calendar_month');
+  nav('oracle', 'Oracle', 'AI chat workspace', 'chat');
+  nav('settings', 'Settings', 'CRM IDs, API keys', 'settings');
+
+  (L.all_deals || []).forEach(d => {
+    items.push({
+      kind: 'deal',
+      icon: 'handshake',
+      label: d.name,
+      sub: `${d.stage || '—'} · ${fmt$(d.value)}${d.venue ? ` · ${d.venue}` : ''}`,
+      hay: dealSearchHaystack(d),
+      run() {
+        closeCommandPalette();
+        openDealWorkspace(d.name);
+      },
+    });
+  });
+
+  (LIVE.needs_attention || []).forEach(x => {
+    const name = x.name || x.lead_name || 'Lead';
+    items.push({
+      kind: 'attention',
+      icon: 'priority_high',
+      label: `Needs attention: ${name}`,
+      sub: (x.reason || x.stage || '').slice(0, 96),
+      hay: normText(`${name} ${x.reason || ''} ${x.lead_id || ''} attention`),
+      run() {
+        closeCommandPalette();
+        navigateTo('automation');
+        previewAttentionDeal(x, true);
+      },
+    });
+  });
+
+  (LIVE.closing_soon || []).forEach(x => {
+    const name = x.name || x.lead_name || 'Deal';
+    items.push({
+      kind: 'closing',
+      icon: 'schedule',
+      label: `Closing soon: ${name}`,
+      sub: x.stage || '',
+      hay: normText(`${name} ${x.close_at || ''} closing soon`),
+      run() {
+        closeCommandPalette();
+        openDealWorkspace(name);
+      },
+    });
+  });
+
+  items.push({
+    kind: 'action',
+    icon: 'sync',
+    label: 'Refresh Close inbox intel',
+    sub: 'Tasks + email/SMS triage snapshot',
+    hay: normText('refresh inbox close intel sync'),
+    run() {
+      closeCommandPalette();
+      refreshCloseInboxIntel();
+    },
+  });
+
+  return items;
+}
+
+function filterCommandPaletteItems(query) {
+  const all = buildCommandPaletteItems();
+  const t = normText(query);
+  if (!t) return all.slice(0, 55);
+  const tokens = t.split(/\s+/).filter(Boolean);
+  return all
+    .filter(it => {
+      const h = normText(`${it.hay || ''} ${it.label} ${it.sub}`);
+      return tokens.every(tok => h.includes(tok));
+    })
+    .slice(0, 45);
+}
+
+function renderCommandPaletteList() {
+  const list = $('#commandPaletteList');
+  const input = $('#commandPaletteInput');
+  if (!list || !input) return;
+  commandPaletteFiltered = filterCommandPaletteItems(input.value || '');
+  if (!commandPaletteFiltered.length) {
+    list.innerHTML = '<div class="command-palette-empty">No matches — try another name, view, or action.</div>';
+    return;
+  }
+  commandPaletteActive = Math.min(commandPaletteActive, commandPaletteFiltered.length - 1);
+  list.innerHTML = commandPaletteFiltered.map((it, i) => `
+    <div class="command-palette-item${i === commandPaletteActive ? ' is-active' : ''}" data-palette-idx="${i}" onclick="runCommandPaletteIndex(${i})">
+      <span class="material-symbols-outlined command-palette-item-ico">${it.icon}</span>
+      <div style="min-width:0;">
+        <div class="command-palette-item-title">${(it.label || '').replace(/</g, '&lt;')}</div>
+        ${it.sub ? `<div class="command-palette-item-sub">${(it.sub).replace(/</g, '&lt;')}</div>` : ''}
+      </div>
+      <span class="command-palette-item-tag">${it.kind}</span>
+    </div>
+  `).join('');
+}
+
+window.runCommandPaletteIndex = function(i) {
+  const it = commandPaletteFiltered[i];
+  if (it?.run) it.run();
+};
+
+function ensureCommandPalette() {
+  let el = $('#commandPalette');
+  if (el) return el;
+  const wrap = document.createElement('div');
+  wrap.innerHTML = `
+    <div id="commandPalette" class="command-palette-backdrop" data-surface="command-palette-backdrop" style="display:none;" onclick="if(event.target===this)closeCommandPalette()">
+      <div class="command-palette" data-surface="command-palette" role="dialog" aria-modal="true" aria-label="Search and jump" onclick="event.stopPropagation()">
+        <div class="command-palette-head">
+          <span class="material-symbols-outlined">search</span>
+          <input id="commandPaletteInput" class="command-palette-input" type="text" placeholder="Deals, views, attention, closing soon, actions…" autocomplete="off" />
+          <span class="command-palette-kbd">esc</span>
+        </div>
+        <div id="commandPaletteList" class="command-palette-list"></div>
+      </div>
+    </div>`;
+  document.body.appendChild(wrap.firstElementChild);
+  el = $('#commandPalette');
+  const inp = $('#commandPaletteInput');
+  inp.addEventListener('input', () => {
+    commandPaletteActive = 0;
+    renderCommandPaletteList();
+  });
+  inp.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      commandPaletteActive = Math.min(commandPaletteActive + 1, Math.max(0, commandPaletteFiltered.length - 1));
+      renderCommandPaletteList();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      commandPaletteActive = Math.max(0, commandPaletteActive - 1);
+      renderCommandPaletteList();
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      runCommandPaletteIndex(commandPaletteActive);
+    }
+  });
+  return el;
+}
+
+window.openCommandPalette = function() {
+  const el = ensureCommandPalette();
+  el.style.display = 'flex';
+  const inp = $('#commandPaletteInput');
+  if (inp) {
+    inp.value = '';
+    commandPaletteActive = 0;
+    renderCommandPaletteList();
+    setTimeout(() => inp.focus(), 30);
+  }
+};
+
+window.closeCommandPalette = function() {
+  const el = $('#commandPalette');
+  if (el) el.style.display = 'none';
+};
+
+window.toggleCommandPalette = function() {
+  const el = $('#commandPalette');
+  if (el && el.style.display === 'flex') closeCommandPalette();
+  else openCommandPalette();
+};
+
 function renderAutomation() {
   const hooks = T.automation_hooks || {};
   const cadences = OC.cadences || [];
@@ -1692,7 +2373,6 @@ function renderAutomation() {
     .slice(0, 4);
   const opsToday = getTodayOps();
   const activeProject = OPS.context?.active_project || 'Comeketo';
-  const notThis = OPS.context?.explicitly_not_this_project || [];
 
   const alerts = live.alerts || [];
   stageScroll.innerHTML = `
@@ -1706,7 +2386,6 @@ function renderAutomation() {
         </div>
         <div style="display:flex;gap:0.35rem;flex-wrap:wrap;justify-content:flex-end;">
           <span class="badge gold">${activeProject}</span>
-          ${notThis.map(name => badge(`not ${name}`)).join('')}
         </div>
       </div>
       <div class="status-strip" style="grid-template-columns:repeat(4,1fr);">
@@ -1783,6 +2462,8 @@ function renderAutomation() {
         <div class="operator-brief-sub">${approvedPackets.length} approved · ${reviewedPackets.length} marked reviewed in the current outbox window</div>
       </div>
     </div>
+
+    ${renderAutomationBlueprintPanel()}
 
     <div class="panel-block" style="border-color:rgba(74,158,104,0.28);background:linear-gradient(180deg, rgba(14,20,15,0.96), rgba(10,12,10,0.98));">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.8rem;">
@@ -2015,6 +2696,7 @@ function renderAutomation() {
       <div class="comms-grid">
         ${communicationTargets.map(d => {
           const plan = buildDealCommsPlan(d);
+          const lid = d.lead_id || resolveLeadIdForDeal(d);
           return `
             <div class="comms-card" onmouseenter="previewCommsPlan(${esc(d)})" onmouseleave="clearPreview()" onclick="previewCommsPlan(${esc(d)}, true)">
               <div class="comms-card-head">
@@ -2036,6 +2718,8 @@ function renderAutomation() {
                 <div class="comms-line"><strong>SMS:</strong> ${plan.sms?.name || 'No SMS template'}</div>
               </div>
               <div class="preview-action-row" onclick="event.stopPropagation()">
+                ${lid ? `<button type="button" class="preview-action-btn" onclick='openCloseCompose("email","${lid}",${JSON.stringify(d.name)})'><span class="material-symbols-outlined">mail</span>Close email</button>` : ''}
+                ${lid ? `<button type="button" class="preview-action-btn" onclick='openCloseCompose("sms","${lid}",${JSON.stringify(d.name)})'><span class="material-symbols-outlined">sms</span>Close SMS</button>` : ''}
                 <button class="preview-action-btn gold" onclick="aiDraftFollowup(${esc(d)})"><span class="material-symbols-outlined">edit_note</span>Draft</button>
                 <button class="preview-action-btn" onclick="previewCommsPlan(${esc(d)}, true)"><span class="material-symbols-outlined">visibility</span>Plan</button>
                 <button class="preview-action-btn" onclick="openDealWorkspace('${d.name.replace(/'/g, "\\'")}')"><span class="material-symbols-outlined">arrow_outward</span>Open</button>
@@ -2090,6 +2774,9 @@ function renderAutomation() {
       </div>
     </div>
   `;
+  loadAutomationCatalog().then(() => {
+    if (currentView === 'automation') blueprintHydrateSelectAndSteps();
+  });
 }
 
 window.previewTemplate = function(type, id) {
@@ -2115,6 +2802,9 @@ window.previewAttentionDeal = function(d, pin) {
     <div class="pv-divider"></div>
     <div style="display:flex;flex-direction:column;gap:0.4rem;">
       <button onclick="queueFollowUp('${d.lead_id}','${d.name.replace(/'/g,'')}')" style="padding:0.4rem;border-radius:0.5rem;border:none;background:#C9A84C;color:#0C0C0C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Draft Follow-up in Close CRM</button>
+      <button type="button" onclick='openCloseCompose("email","${d.lead_id}",${JSON.stringify(d.name)})' style="padding:0.4rem;border-radius:0.5rem;border:1.5px solid rgba(201,168,76,0.45);background:rgba(201,168,76,0.08);color:#C9A84C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Send email (Close)</button>
+      <button type="button" onclick='openCloseCompose("sms","${d.lead_id}",${JSON.stringify(d.name)})' style="padding:0.4rem;border-radius:0.5rem;border:1.5px solid rgba(168,216,234,0.35);background:rgba(168,216,234,0.06);color:var(--cyan);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Send SMS (Close)</button>
+      <button type="button" onclick='openCloseTask("${d.lead_id}",${JSON.stringify(d.name)},"")' style="padding:0.4rem;border-radius:0.5rem;border:1.5px solid rgba(201,168,76,0.35);background:rgba(201,168,76,0.08);color:var(--gold);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Task in Close</button>
       <button onclick="queueTask('${d.lead_id}','${d.name.replace(/'/g,'')}')" style="padding:0.4rem;border-radius:0.5rem;border:1.5px solid var(--purple);background:transparent;color:var(--purple);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Create ClickUp Task</button>
     </div>
   `, pin);
@@ -2133,6 +2823,191 @@ function findDealLike(leadId, name) {
     || findDealByName(name)
     || null;
 }
+
+/** Match static pipeline deal to a live Close lead_id when possible. */
+function resolveLeadIdForDeal(d) {
+  if (!d) return '';
+  if (d.lead_id) return d.lead_id;
+  const hit =
+    (LIVE.needs_attention || []).find(x => x.name === d.name) ||
+    (LIVE.closing_soon || []).find(x => x.name === d.name) ||
+    (LIVE.top_opportunities || []).find(x => x.name === d.name);
+  return hit?.lead_id || '';
+}
+
+async function refreshActivityFromServer() {
+  try {
+    const r = await fetch(`${SERVER}/activity`, { cache: 'no-store' });
+    if (r.ok) ACT = await r.json();
+    if (currentView === 'timeline') renderTimeline();
+  } catch (_) { /* ignore */ }
+}
+
+async function postCloseOutbound(path, payload) {
+  const r = await fetch(`${SERVER}${path}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  const data = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(data.error || `Close request failed (${r.status})`);
+  return data;
+}
+
+function ensureCloseComposeModal() {
+  let modal = $('#closeComposeModal');
+  if (modal) return modal;
+  const wrap = document.createElement('div');
+  wrap.innerHTML = `
+    <div id="closeComposeModal" style="display:none;position:fixed;inset:0;z-index:10000;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);backdrop-filter:blur(6px);padding:1rem;">
+      <div style="width:100%;max-width:26rem;max-height:90vh;overflow:auto;background:#141414;border:1.5px solid rgba(201,168,76,0.25);border-radius:1rem;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+        <div style="padding:1rem 1.2rem;border-bottom:1px solid rgba(201,168,76,0.1);display:flex;justify-content:space-between;align-items:start;gap:0.75rem;">
+          <div>
+            <div id="ccmTitle" style="font-family:'Fraunces',serif;font-weight:700;font-size:0.95rem;color:var(--maroon-deep);">Close</div>
+            <div id="ccmSub" style="font-size:0.68rem;color:var(--burgundy);opacity:0.75;margin-top:0.25rem;"></div>
+          </div>
+          <button type="button" onclick="document.getElementById('closeComposeModal').style.display='none'" style="background:none;border:none;color:var(--burgundy);cursor:pointer;opacity:0.5;padding:0.2rem;"><span class="material-symbols-outlined" style="font-size:1.1rem;">close</span></button>
+        </div>
+        <div style="padding:1rem 1.2rem 1.2rem;">
+          <div id="ccmHint" style="font-size:0.62rem;color:rgba(201,168,76,0.45);margin-bottom:0.75rem;line-height:1.4;"></div>
+          <label class="composer-field" style="display:block;margin-bottom:0.75rem;">
+            <span class="composer-label">Contact</span>
+            <select id="ccmContactSelect" class="composer-select"></select>
+          </label>
+          <div id="ccmEmailForm" style="display:none;">
+            <label class="composer-field" style="display:block;margin-bottom:0.6rem;">
+              <span class="composer-label">To (email)</span>
+              <input id="ccmTo" class="settings-input" type="email" placeholder="buyer@example.com" style="width:100%;box-sizing:border-box;" />
+            </label>
+            <label class="composer-field" style="display:block;margin-bottom:0.6rem;">
+              <span class="composer-label">Subject</span>
+              <input id="ccmSubject" class="settings-input" type="text" placeholder="Subject" style="width:100%;box-sizing:border-box;" />
+            </label>
+            <label class="composer-field" style="display:block;margin-bottom:0.75rem;">
+              <span class="composer-label">Body</span>
+              <textarea id="ccmBody" rows="8" class="settings-input" placeholder="Message…" style="width:100%;box-sizing:border-box;resize:vertical;min-height:7rem;font-family:inherit;"></textarea>
+            </label>
+          </div>
+          <div id="ccmSmsForm" style="display:none;">
+            <label class="composer-field" style="display:block;margin-bottom:0.6rem;">
+              <span class="composer-label">Their mobile (E.164)</span>
+              <input id="ccmRemotePhone" class="settings-input" type="tel" placeholder="+15551234567" style="width:100%;box-sizing:border-box;" />
+            </label>
+            <label class="composer-field" style="display:block;margin-bottom:0.75rem;">
+              <span class="composer-label">Message</span>
+              <textarea id="ccmSmsText" rows="5" class="settings-input" placeholder="SMS text…" style="width:100%;box-sizing:border-box;resize:vertical;font-family:inherit;"></textarea>
+            </label>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:0.45rem;margin-top:0.5rem;">
+            <button type="button" class="preview-action-btn" onclick="submitCloseCompose('draft')"><span class="material-symbols-outlined">drafts</span>Save draft</button>
+            <button type="button" class="preview-action-btn gold" onclick="submitCloseCompose('outbox')"><span class="material-symbols-outlined">send</span>Send now</button>
+          </div>
+          <p style="font-size:0.58rem;color:var(--burgundy);opacity:0.5;margin-top:0.75rem;line-height:1.45;">Creates a Close activity (logged on the lead). Send now uses status outbox per Close API. Configure Messaging “from” addresses in Settings.</p>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(wrap.firstElementChild);
+  return $('#closeComposeModal');
+}
+
+function fillCloseComposeContactOptions(lead, mode) {
+  const sel = $('#ccmContactSelect');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">— Optional: pick contact —</option>';
+  (lead.contacts || []).forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c.id || '';
+    const emails = c.emails || [];
+    const phones = c.phones || [];
+    const email = emails[0]?.email || emails[0] || '';
+    const phone = phones[0]?.phone || phones[0] || '';
+    opt.dataset.email = typeof email === 'string' ? email : (email?.email || '');
+    opt.dataset.phone = typeof phone === 'string' ? phone : (phone?.phone || '');
+    const label = c.name || c.display_name || c.title || 'Contact';
+    opt.textContent = `${label}${opt.dataset.email ? ' · ' + opt.dataset.email : ''}${opt.dataset.phone ? ' · ' + opt.dataset.phone : ''}`;
+    sel.appendChild(opt);
+  });
+  sel.onchange = () => {
+    const o = sel.selectedOptions[0];
+    if (!o) return;
+    if (mode === 'email' && o.dataset.email) $('#ccmTo').value = o.dataset.email;
+    if (mode === 'sms' && o.dataset.phone) $('#ccmRemotePhone').value = o.dataset.phone;
+  };
+}
+
+window.openCloseCompose = async function(mode, leadId, dealName, preset) {
+  preset = preset || {};
+  if (!leadId) {
+    Toast.warning('No Close lead ID on this row. Sync CRM or use a deal from Needs Attention / Closing soon.');
+    return;
+  }
+  const modal = ensureCloseComposeModal();
+  modal.style.display = 'flex';
+  modal.dataset.leadId = leadId;
+  modal.dataset.mode = mode;
+  $('#ccmTitle').textContent = mode === 'email' ? 'Email via Close CRM' : 'SMS via Close CRM';
+  $('#ccmSub').textContent = dealName ? `${dealName} · ${leadId}` : leadId;
+  const hint = $('#ccmHint');
+  const em = SETTINGS.messaging?.email_from || '—';
+  const sms = SETTINGS.messaging?.sms_from || '—';
+  hint.textContent = mode === 'email'
+    ? `Sending as (Settings → Messaging): ${em}`
+    : `Your Close sending number (Settings → Messaging): ${sms}`;
+
+  $('#ccmEmailForm').style.display = mode === 'email' ? 'block' : 'none';
+  $('#ccmSmsForm').style.display = mode === 'sms' ? 'block' : 'none';
+  $('#ccmTo').value = '';
+  $('#ccmSubject').value = preset.subject || '';
+  $('#ccmBody').value = preset.body_text || '';
+  $('#ccmRemotePhone').value = '';
+  $('#ccmSmsText').value = preset.text || '';
+
+  try {
+    const r = await fetch(`${SERVER}/close/lead/${encodeURIComponent(leadId)}`, { cache: 'no-store' });
+    if (!r.ok) throw new Error('Could not load lead from Close');
+    const lead = await r.json();
+    fillCloseComposeContactOptions(lead, mode);
+  } catch (e) {
+    Toast.error(e.message || 'Failed to load Close lead');
+  }
+};
+
+window.submitCloseCompose = async function(status) {
+  const modal = $('#closeComposeModal');
+  const leadId = modal?.dataset?.leadId;
+  const mode = modal?.dataset?.mode;
+  if (!leadId) return;
+  const contact_id = $('#ccmContactSelect')?.value || undefined;
+  try {
+    if (mode === 'email') {
+      const to = ($('#ccmTo')?.value || '').trim();
+      if (!to) throw new Error('Add a recipient email.');
+      await postCloseOutbound(`/close/lead/${encodeURIComponent(leadId)}/email`, {
+        to: [to],
+        subject: $('#ccmSubject')?.value || '',
+        body_text: $('#ccmBody')?.value || '',
+        contact_id,
+        status,
+      });
+    } else {
+      const remote_phone = ($('#ccmRemotePhone')?.value || '').trim();
+      const text = ($('#ccmSmsText')?.value || '').trim();
+      if (!remote_phone) throw new Error('Add the buyer phone number (E.164).');
+      if (!text) throw new Error('Add SMS text.');
+      await postCloseOutbound(`/close/lead/${encodeURIComponent(leadId)}/sms`, {
+        remote_phone,
+        text,
+        contact_id,
+        status,
+      });
+    }
+    Toast.success(status === 'draft' ? 'Saved in Close (draft)' : 'Queued / sent via Close');
+    modal.style.display = 'none';
+    await refreshActivityFromServer();
+  } catch (e) {
+    Toast.error(e.message || 'Close request failed');
+  }
+};
 
 function getAutomationOutboxPackets() {
   return (Q.completed || [])
@@ -2825,81 +3700,22 @@ function renderOracle() {
         <button onclick="showView('settings')" style="margin-top:1rem;padding:0.6rem 1.5rem;border-radius:0.6rem;border:none;background:#C9A84C;color:#0C0C0C;font-family:inherit;font-weight:700;font-size:0.78rem;cursor:pointer;">Go to Settings</button>
       </div>
     ` : `
-      <div id="oracleChatArea" style="display:flex;flex-direction:column;height:calc(100vh - 12rem);">
-        <div class="layout-grid-half" style="margin-bottom:1rem;flex-shrink:0;">
-          <div class="panel-block panel-accent-gold">
-            <h2><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">hub</span> Oracle Control Strip</h2>
-            <div class="status-strip" style="grid-template-columns:repeat(3,1fr);margin-bottom:0.8rem;">
-              <div class="status-card"><div class="status-label">Pipeline</div><div class="status-value">${fmt$(L.summary?.total_pipeline)}</div></div>
-              <div class="status-card"><div class="status-label">Today</div><div class="status-value">${T.task_summary?.today || 0} tasks</div></div>
-              <div class="status-card"><div class="status-label">At Risk</div><div class="status-value">${fmt$(L.summary?.at_risk_revenue)}</div></div>
+      <div class="oracle-layout">
+        <section class="oracle-conversation" aria-label="Oracle conversation">
+          <div class="oracle-thread-header">
+            <div>
+              <h2 class="oracle-thread-title"><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);vertical-align:text-bottom;">forum</span> Conversation</h2>
+              <p class="oracle-thread-sub">Guided mode: each reply ends with sign-off next steps; your taps and A+–F grades train suggestions (local only).</p>
             </div>
-            ${renderPreviewActionRow([
-              topDeal ? `<button class="preview-action-btn gold" onclick="openDealWorkspace('${topDeal.name.replace(/'/g, "\\'")}')"><span class="material-symbols-outlined">sell</span>Open top deal</button>` : '',
-              `<button class="preview-action-btn" onclick="oracleSend('Give me a clean executive summary of everything that matters right now: biggest money, biggest risk, biggest next action.')"><span class="material-symbols-outlined">assistant</span>Exec summary</button>`
-            ].filter(Boolean))}
           </div>
-          <div class="panel-block">
-            <h2><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">markdown</span> Andre Voice Panel</h2>
-            ${renderMiniMarkdownPanel('Call-language operating context', oracleIntelPanel || 'Voice panel not loaded yet.', 'auto_stories', 'var(--gold)')}
-            ${renderPreviewActionRow([
-              `<button class="preview-action-btn gold" onclick="pinMarkdownToPreview('Andre Voice Panel', DOCS.voiceReadme || DOCS.voiceSummary)"><span class="material-symbols-outlined">push_pin</span>Pin panel</button>`,
-              `<button class="preview-action-btn" onclick="navigateTo('timeline')"><span class="material-symbols-outlined">calendar_month</span>Timeline</button>`
-            ])}
-          </div>
-        </div>
-        <div class="panel-block oracle-composer-shell">
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.8rem;">
-            <h2 style="margin-bottom:0;"><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">edit_square</span> Drafting Cockpit</h2>
-            <button class="preview-action-btn gold" onclick="oracleDraftFromComposer()"><span class="material-symbols-outlined">auto_awesome</span>Draft now</button>
-          </div>
-          <p class="panel-note">Choose the deal, channel, and objective first. Oracle will draft with Andre's tone, the deal context, and the best matching message lane.</p>
-          <div class="composer-grid">
-            <label class="composer-field">
-              <span class="composer-label">Deal</span>
-              <select class="composer-select" onchange="updateOracleComposer('dealName', this.value)">
-                ${composerDeals.map(d => `<option value="${d.name.replace(/"/g, '&quot;')}" ${oracleComposerState.dealName === d.name ? 'selected' : ''}>${d.name} · ${fmt$(d.value)} · ${d.stage}</option>`).join('')}
-              </select>
-            </label>
-            <label class="composer-field">
-              <span class="composer-label">Channel</span>
-              <select class="composer-select" onchange="updateOracleComposer('channel', this.value)">
-                <option value="email" ${oracleComposerState.channel === 'email' ? 'selected' : ''}>Email</option>
-                <option value="sms" ${oracleComposerState.channel === 'sms' ? 'selected' : ''}>SMS</option>
-              </select>
-            </label>
-            <label class="composer-field">
-              <span class="composer-label">Objective</span>
-              <select class="composer-select" onchange="updateOracleComposer('objective', this.value)">
-                <option value="follow_up" ${oracleComposerState.objective === 'follow_up' ? 'selected' : ''}>Follow-up</option>
-                <option value="quote_push" ${oracleComposerState.objective === 'quote_push' ? 'selected' : ''}>Quote push</option>
-                <option value="tasting_conversion" ${oracleComposerState.objective === 'tasting_conversion' ? 'selected' : ''}>Tasting conversion</option>
-                <option value="stalled_recovery" ${oracleComposerState.objective === 'stalled_recovery' ? 'selected' : ''}>Stalled recovery</option>
-              </select>
-            </label>
-            <label class="composer-field">
-              <span class="composer-label">Tone</span>
-              <select class="composer-select" onchange="updateOracleComposer('tone', this.value)">
-                <option value="sharp" ${oracleComposerState.tone === 'sharp' ? 'selected' : ''}>Sharp</option>
-                <option value="warm" ${oracleComposerState.tone === 'warm' ? 'selected' : ''}>Warm</option>
-                <option value="urgent" ${oracleComposerState.tone === 'urgent' ? 'selected' : ''}>Urgent</option>
-                <option value="calm" ${oracleComposerState.tone === 'calm' ? 'selected' : ''}>Calm</option>
-              </select>
-            </label>
-          </div>
-          <div class="composer-preview">
-            <div class="composer-preview-label">Prompt preview</div>
-            <div class="composer-preview-body">${buildComposerPrompt().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}</div>
-          </div>
-        </div>
-        <div id="chatMessages" style="flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:0.8rem;padding-bottom:1rem;scrollbar-width:thin;scrollbar-color:rgba(201,168,76,0.2) transparent;">
+          <div id="chatMessages" class="oracle-thread">
           ${chatHistory.length === 0 ? `
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;opacity:0.5;">
-              <span class="material-symbols-outlined" style="font-size:3rem;color:var(--gold);margin-bottom:0.8rem;">auto_awesome</span>
-              <div style="font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;color:var(--maroon-deep);margin-bottom:0.3rem;">What can I help with?</div>
-              <div style="font-size:0.75rem;color:var(--burgundy);max-width:20rem;">Ask about pipeline strategy, draft follow-ups, get coaching tips, or analyze deal risk.</div>
+            <div class="oracle-empty-hint">
+              <span class="material-symbols-outlined" style="font-size:2.5rem;color:var(--gold);">auto_awesome</span>
+              <div class="oracle-empty-title">Start a thread</div>
+              <p>Type below or use a shortcut. Replies appear here — scroll this panel to read the full conversation.</p>
             </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;">
+            <div class="oracle-quick-grid">
               <button class="oracle-quick-btn" onclick="oracleSend('What are my top 3 priority deals and what should I do with each right now?')">
                 <span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">priority_high</span>
                 <span>Top priority deals</span>
@@ -2926,19 +3742,92 @@ function renderOracle() {
               </button>
             </div>
           ` : chatHistory.map(m => renderChatMessage(m)).join('')}
-        </div>
-        <div style="flex-shrink:0;padding-top:0.8rem;border-top:1px solid rgba(201,168,76,0.1);">
-          <div style="display:flex;gap:0.5rem;align-items:flex-end;">
-            <textarea id="oracleInput" rows="1" placeholder="Ask Oracle anything about your pipeline..." style="flex:1;padding:0.7rem 1rem;border-radius:0.75rem;border:1.5px solid rgba(201,168,76,0.15);background:#1A1A1A;color:#F0E8D4;font-family:inherit;font-size:0.78rem;resize:none;outline:none;min-height:2.5rem;max-height:8rem;line-height:1.5;" oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px';" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();oracleSend();}"></textarea>
-            <button id="oracleSendBtn" onclick="oracleSend()" style="padding:0.7rem;border-radius:0.75rem;border:none;background:#C9A84C;color:#0C0C0C;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;width:2.5rem;height:2.5rem;">
-              <span class="material-symbols-outlined" style="font-size:1.1rem;">send</span>
-            </button>
           </div>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.4rem;">
-            <span style="font-size:0.6rem;color:rgba(201,168,76,0.3);">Shift+Enter for new line · Powered by ${SETTINGS.ai?.model || 'OpenAI'}</span>
-            ${chatHistory.length > 0 ? '<button onclick="clearOracleChat()" style="font-size:0.6rem;color:rgba(201,168,76,0.4);background:none;border:none;cursor:pointer;font-family:inherit;text-decoration:underline;">Clear chat</button>' : ''}
+          <div class="oracle-composer-wrap">
+            <div class="oracle-composer-row">
+              <textarea id="oracleInput" data-surface="oracle-composer" rows="1" placeholder="Message Oracle…" oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px';" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();oracleSend();}"></textarea>
+              <button type="button" id="oracleSendBtn" onclick="oracleSend()" title="Send">
+                <span class="material-symbols-outlined" style="font-size:1.1rem;">send</span>
+              </button>
+            </div>
+            <div class="oracle-composer-meta">
+              <span>Shift+Enter new line · ${SETTINGS.ai?.model || 'OpenAI'}</span>
+              ${chatHistory.length > 0 ? '<button type="button" class="oracle-clear-chat" onclick="clearOracleChat()">Clear thread</button>' : ''}
+            </div>
           </div>
-        </div>
+        </section>
+
+        <details class="oracle-tools">
+          <summary>Pipeline tools &amp; drafting cockpit</summary>
+          <div class="oracle-tools-inner">
+            <div class="layout-grid-half">
+              <div class="panel-block panel-accent-gold">
+                <h2><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">hub</span> Oracle Control Strip</h2>
+                <div class="status-strip" style="grid-template-columns:repeat(3,1fr);margin-bottom:0.8rem;">
+                  <div class="status-card"><div class="status-label">Pipeline</div><div class="status-value">${fmt$(L.summary?.total_pipeline)}</div></div>
+                  <div class="status-card"><div class="status-label">Today</div><div class="status-value">${T.task_summary?.today || 0} tasks</div></div>
+                  <div class="status-card"><div class="status-label">At Risk</div><div class="status-value">${fmt$(L.summary?.at_risk_revenue)}</div></div>
+                </div>
+                ${renderPreviewActionRow([
+                  topDeal ? `<button class="preview-action-btn gold" onclick="openDealWorkspace('${topDeal.name.replace(/'/g, "\\'")}')"><span class="material-symbols-outlined">sell</span>Open top deal</button>` : '',
+                  `<button class="preview-action-btn" onclick="oracleSend('Give me a clean executive summary of everything that matters right now: biggest money, biggest risk, biggest next action.')"><span class="material-symbols-outlined">assistant</span>Exec summary</button>`
+                ].filter(Boolean))}
+              </div>
+              <div class="panel-block">
+                <h2><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">markdown</span> Andre Voice Panel</h2>
+                ${renderMiniMarkdownPanel('Call-language operating context', oracleIntelPanel || 'Voice panel not loaded yet.', 'record_voice_over', 'var(--gold)')}
+                ${renderPreviewActionRow([
+                  `<button class="preview-action-btn gold" onclick="pinMarkdownToPreview('Andre Voice Panel', DOCS.voiceReadme || DOCS.voiceSummary)"><span class="material-symbols-outlined">push_pin</span>Pin panel</button>`,
+                  `<button class="preview-action-btn" onclick="navigateTo('timeline')"><span class="material-symbols-outlined">calendar_month</span>Timeline</button>`
+                ])}
+              </div>
+            </div>
+            <div class="panel-block oracle-composer-shell">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.8rem;">
+                <h2 style="margin-bottom:0;"><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">edit_square</span> Drafting Cockpit</h2>
+                <button class="preview-action-btn gold" onclick="oracleDraftFromComposer()"><span class="material-symbols-outlined">auto_awesome</span>Draft now</button>
+              </div>
+              <p class="panel-note">Choose the deal, channel, and objective first. Oracle will draft with Andre's tone, the deal context, and the best matching message lane.</p>
+              <div class="composer-grid">
+                <label class="composer-field">
+                  <span class="composer-label">Deal</span>
+                  <select class="composer-select" onchange="updateOracleComposer('dealName', this.value)">
+                    ${composerDeals.map(d => `<option value="${d.name.replace(/"/g, '&quot;')}" ${oracleComposerState.dealName === d.name ? 'selected' : ''}>${d.name} · ${fmt$(d.value)} · ${d.stage}</option>`).join('')}
+                  </select>
+                </label>
+                <label class="composer-field">
+                  <span class="composer-label">Channel</span>
+                  <select class="composer-select" onchange="updateOracleComposer('channel', this.value)">
+                    <option value="email" ${oracleComposerState.channel === 'email' ? 'selected' : ''}>Email</option>
+                    <option value="sms" ${oracleComposerState.channel === 'sms' ? 'selected' : ''}>SMS</option>
+                  </select>
+                </label>
+                <label class="composer-field">
+                  <span class="composer-label">Objective</span>
+                  <select class="composer-select" onchange="updateOracleComposer('objective', this.value)">
+                    <option value="follow_up" ${oracleComposerState.objective === 'follow_up' ? 'selected' : ''}>Follow-up</option>
+                    <option value="quote_push" ${oracleComposerState.objective === 'quote_push' ? 'selected' : ''}>Quote push</option>
+                    <option value="tasting_conversion" ${oracleComposerState.objective === 'tasting_conversion' ? 'selected' : ''}>Tasting conversion</option>
+                    <option value="stalled_recovery" ${oracleComposerState.objective === 'stalled_recovery' ? 'selected' : ''}>Stalled recovery</option>
+                  </select>
+                </label>
+                <label class="composer-field">
+                  <span class="composer-label">Tone</span>
+                  <select class="composer-select" onchange="updateOracleComposer('tone', this.value)">
+                    <option value="sharp" ${oracleComposerState.tone === 'sharp' ? 'selected' : ''}>Sharp</option>
+                    <option value="warm" ${oracleComposerState.tone === 'warm' ? 'selected' : ''}>Warm</option>
+                    <option value="urgent" ${oracleComposerState.tone === 'urgent' ? 'selected' : ''}>Urgent</option>
+                    <option value="calm" ${oracleComposerState.tone === 'calm' ? 'selected' : ''}>Calm</option>
+                  </select>
+                </label>
+              </div>
+              <div class="composer-preview">
+                <div class="composer-preview-label">Prompt preview</div>
+                <div class="composer-preview-body">${buildComposerPrompt().replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>')}</div>
+              </div>
+            </div>
+          </div>
+        </details>
       </div>
     `}
   `;
@@ -2960,6 +3849,14 @@ function renderMd(text) {
 function renderChatMessage(m) {
   const isUser = m.role === 'user';
   const content = isUser ? m.content.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>') : renderMd(m.content);
+  const steps = (!isUser && m.nextSteps && m.nextSteps.length) ? m.nextSteps : [];
+  const turnIdJs = m.turnId != null ? JSON.stringify(m.turnId) : 'null';
+  const gradesRow = (!isUser && m.turnId && !m.oracleGrade)
+    ? `<div class="oracle-grade-row"><span class="oracle-grade-label">Rate this reply</span><div class="oracle-grade-chips">${['A+','A','B','C','D','F'].map(g => `<button type="button" class="oracle-grade-chip" onclick="oracleGradeTurn(${turnIdJs},${JSON.stringify(g)})">${g}</button>`).join('')}</div></div>`
+    : (!isUser && m.turnId && m.oracleGrade ? `<div class="oracle-grade-done">Graded <strong>${String(m.oracleGrade).replace(/</g,'&lt;')}</strong></div>` : '');
+  const stepsRow = steps.length
+    ? `<div class="oracle-next-steps"><div class="oracle-next-steps-label">Next steps</div><div class="oracle-next-steps-chips">${steps.map((s, i) => `<button type="button" class="oracle-step-chip" onclick="oracleRunGuidedStep(${turnIdJs},${i})"><span class="material-symbols-outlined">arrow_forward</span>${String(s.label).replace(/</g,'&lt;')}</button>`).join('')}</div></div>`
+    : '';
   return `
     <div style="display:flex;gap:0.6rem;align-items:flex-start;${isUser ? 'flex-direction:row-reverse;' : ''}">
       <div style="width:1.8rem;height:1.8rem;border-radius:0.5rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;${isUser ? 'background:rgba(201,168,76,0.15);' : 'background:rgba(74,158,104,0.1);'}">
@@ -2967,6 +3864,8 @@ function renderChatMessage(m) {
       </div>
       <div class="md-content" style="max-width:80%;padding:0.8rem 1rem;border-radius:0.75rem;${isUser ? 'background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.15);' : 'background:#161616;border:1px solid rgba(255,255,255,0.05);'}">
         <div style="font-size:0.78rem;color:#F0E8D4;line-height:1.6;">${content}</div>
+        ${stepsRow}
+        ${gradesRow}
         ${!isUser ? `<div class="chat-message-actions"><button class="preview-action-btn" onclick="pinMarkdownToPreview('Oracle Response', ${esc(m.content)})"><span class="material-symbols-outlined">push_pin</span>Pin</button><button class="preview-action-btn" onclick="navigator.clipboard.writeText(${esc(m.content)});Toast.success('Copied to clipboard')"><span class="material-symbols-outlined">content_copy</span>Copy</button></div>` : ''}
       </div>
     </div>
@@ -2976,21 +3875,51 @@ function renderChatMessage(m) {
 // ═══════════════════════════════════════
 // AI ENGINE — All AI calls go through here
 // ═══════════════════════════════════════
-async function aiCall(userMessage, actionType, dealContext) {
+/** Build API message list for Oracle free chat — pipeline context only on the first user turn. */
+function buildOracleChatPayload(history) {
+  const context = buildOracleContext();
+  const out = [];
+  let firstUser = true;
+  for (const m of history) {
+    if (m.role === 'user') {
+      out.push({
+        role: 'user',
+        content: firstUser ? `${context}\n\n${m.content}` : m.content
+      });
+      firstUser = false;
+    } else if (m.role === 'assistant') {
+      out.push({ role: 'assistant', content: m.content });
+    }
+  }
+  return out;
+}
+
+async function aiCall(userMessage, actionType, dealContext, threadMessages) {
   const context = buildOracleContext();
   const dealInfo = dealContext ? `\n\n[DEAL FOCUS]\nName: ${dealContext.name}\nValue: $${(dealContext.value||0).toLocaleString()}\nStage: ${dealContext.stage}\nEvent: ${dealContext.event || 'Unknown'}\nVenue: ${dealContext.venue || 'TBD'}\nGuests: ${dealContext.guests || 'TBD'}\nConfidence: ${dealContext.confidence || '?'}%\nPriority: ${dealContext.priority || 'medium'}\nRisk Flags: ${(dealContext.risk||[]).join(', ') || 'None'}\n[END DEAL FOCUS]` : '';
+
+  const messages = Array.isArray(threadMessages) && threadMessages.length > 0
+    ? threadMessages
+    : [{ role: 'user', content: context + dealInfo + '\n\n' + userMessage }];
 
   const r = await fetch(`${SERVER}/ai/chat`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       action_type: actionType || null,
-      messages: [
-        { role: 'user', content: context + dealInfo + '\n\n' + userMessage }
-      ]
+      messages,
+      guided_oracle: Array.isArray(threadMessages) && threadMessages.length > 0
     })
   });
-  const data = await r.json();
+  let data = {};
+  try {
+    data = await r.json();
+  } catch (_) {
+    return `Server error (${r.status}). Check that the API is reachable.`;
+  }
+  if (!r.ok) {
+    return data.error || `Request failed (${r.status}). ${data.message || ''}`.trim();
+  }
   return data.output_text || data.output?.[0]?.content?.[0]?.text || data.error || 'No response received.';
 }
 
@@ -3015,13 +3944,21 @@ function showTypingIndicator() {
     </div>`;
 }
 
+let oracleChatLoading = false;
+
 window.oracleSend = async function(quickMessage) {
+  if (oracleChatLoading) return;
   const input = $('#oracleInput');
   const message = quickMessage || (input ? input.value.trim() : '');
   if (!message) return;
 
-  chatHistory.push({ role: 'user', content: message });
+  const turnId = 't_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 9);
+  chatHistory.push({ role: 'user', content: message, turnId });
   persistChatHistory();
+
+  const sendBtn = $('#oracleSendBtn');
+  oracleChatLoading = true;
+  if (sendBtn) { sendBtn.disabled = true; sendBtn.style.opacity = '0.45'; }
 
   const chatArea = $('#chatMessages');
   if (chatArea) {
@@ -3031,21 +3968,106 @@ window.oracleSend = async function(quickMessage) {
   if (input) { input.value = ''; input.style.height = 'auto'; }
 
   try {
-    const reply = await aiCall(message, null, null);
-    chatHistory.push({ role: 'assistant', content: reply });
+    const threadMessages = buildOracleChatPayload(chatHistory);
+    const reply = await aiCall(null, null, null, threadMessages);
+    const { displayText, steps } = parseOracleGuidedReply(reply);
+    chatHistory.push({ role: 'assistant', content: displayText, turnId, nextSteps: steps });
     persistChatHistory();
-    persistAiArtifact({ type: 'oracle_chat', title: 'Oracle Chat', content: reply });
+    persistAiArtifact({ type: 'oracle_chat', title: 'Oracle Chat', content: displayText });
     Toast.success('Oracle responded');
   } catch(e) {
-    chatHistory.push({ role: 'assistant', content: 'Connection error — make sure the server is running and your API key is configured in Settings.' });
+    chatHistory.push({ role: 'assistant', content: 'Connection error — make sure the server is running and your API key is configured in Settings.', turnId, nextSteps: [] });
     persistChatHistory();
     Toast.error('Failed to reach Oracle');
+  } finally {
+    oracleChatLoading = false;
+    if (sendBtn) { sendBtn.disabled = false; sendBtn.style.opacity = '1'; }
   }
 
   if ($('#chatMessages')) {
     $('#chatMessages').innerHTML = chatHistory.map(m => renderChatMessage(m)).join('');
     $('#chatMessages').scrollTop = $('#chatMessages').scrollHeight;
   }
+};
+
+window.oracleRunGuidedStep = async function(turnId, stepIndex) {
+  const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
+  if (!msg || !msg.nextSteps || msg.nextSteps[stepIndex] == null) return;
+  const step = msg.nextSteps[stepIndex];
+  if (step.action === 'oracle_prompt' && oracleChatLoading) {
+    Toast.warning('Oracle is still replying — wait a moment.');
+    return;
+  }
+  ORACLE_CHOICE_LOG.push({
+    ts: new Date().toISOString(),
+    turn_id: turnId,
+    step_index: stepIndex,
+    action: step.action,
+    label: step.label,
+    id: step.id,
+    payload: step.payload || {}
+  });
+  ORACLE_CHOICE_LOG = ORACLE_CHOICE_LOG.slice(-120);
+  await persistOracleChoiceLog();
+
+  const p = step.payload || {};
+  const act = step.action;
+  Toast.success(step.label || 'Done');
+
+  if (act === 'navigate' && p.view) {
+    navigateTo(p.view);
+    return;
+  }
+  if (act === 'oracle_prompt' && p.text) {
+    await oracleSend(p.text);
+    return;
+  }
+  if (act === 'open_deal' && p.dealName) {
+    openDealWorkspace(p.dealName);
+    return;
+  }
+  if (act === 'refresh_inbox') {
+    await refreshCloseInboxIntel();
+    return;
+  }
+  if (act === 'open_palette' || act === 'command_palette') {
+    openCommandPalette();
+    return;
+  }
+  Toast.warning('Unknown or incomplete step: ' + (act || '?'));
+};
+
+window.oracleGradeTurn = async function(turnId, grade) {
+  if (turnId == null) return;
+  const idx = chatHistory.findIndex(m => m.role === 'assistant' && m.turnId === turnId);
+  if (idx === -1) return;
+  const asst = chatHistory[idx];
+  let userQuery = '';
+  for (let i = idx - 1; i >= 0; i--) {
+    if (chatHistory[i].role === 'user') {
+      userQuery = chatHistory[i].content || '';
+      break;
+    }
+  }
+  asst.oracleGrade = grade;
+  ORACLE_GRADED_CORPUS.unshift({
+    ts: new Date().toISOString(),
+    turn_id: turnId,
+    grade,
+    query: userQuery.slice(0, 600),
+    response_snippet: (asst.content || '').slice(0, 900)
+  });
+  ORACLE_GRADED_CORPUS = ORACLE_GRADED_CORPUS.slice(0, 80);
+  await persistOracleGraded();
+  await persistChatHistory();
+  if (currentView === 'oracle') {
+    const el = $('#chatMessages');
+    if (el) {
+      el.innerHTML = chatHistory.map(m => renderChatMessage(m)).join('');
+      el.scrollTop = el.scrollHeight;
+    }
+  }
+  Toast.success('Grade saved — Oracle uses this in context');
 };
 
 window.clearOracleChat = async function() {
@@ -3222,7 +4244,45 @@ Top deals: ${topDeals.map(d => d.name + ' ($' + (d.value||0).toLocaleString() + 
 Today's tasks: ${tasks.map(t => t.lead + ': ' + t.action).join(' | ')}
 Risk flags: ${risks.map(r => r.flag + ' (' + r.count + ' deals)').join(', ')}
 Development areas: ${gaps}
-[END CONTEXT]`;
+[END CONTEXT]${buildOracleDirectorContext()}`;
+}
+
+/** Injected after pipeline context — steers guided steps + tone from local HRMR signals */
+function buildOracleDirectorContext() {
+  const choices = ORACLE_CHOICE_LOG || [];
+  const grades = ORACLE_GRADED_CORPUS || [];
+  const recentC = choices.slice(-18);
+  const recentG = grades.slice(-12);
+  if (!recentC.length && !recentG.length) return '';
+  let s = '\n\n[DIRECTOR SIGNAL — guided Oracle / HRMR]\n';
+  if (recentC.length) {
+    s += 'Recent one-tap actions the rep chose (oldest→newest): ' + recentC.map(c => (c.label || c.id || '?') + ' [' + (c.action || '') + ']').join(' → ') + '\n';
+  }
+  if (recentG.length) {
+    s += 'Recent grades on Oracle replies (oldest→newest): ' + recentG.map(g => g.grade).join(', ') + '\n';
+  }
+  s += 'Bias next-step suggestions toward actions they actually take; match depth/tone to their grade pattern (e.g. more concise if they rate verbosity poorly).\n[END DIRECTOR SIGNAL]';
+  return s;
+}
+
+const ORACLE_NEXT_STEPS_DELIM = '---ORACLE_NEXT_STEPS---';
+
+function parseOracleGuidedReply(raw) {
+  if (!raw || typeof raw !== 'string') return { displayText: String(raw || ''), steps: [] };
+  const idx = raw.indexOf(ORACLE_NEXT_STEPS_DELIM);
+  if (idx === -1) return { displayText: raw.trim(), steps: [] };
+  const displayText = raw.slice(0, idx).trim();
+  let after = raw.slice(idx + ORACLE_NEXT_STEPS_DELIM.length).trim();
+  after = after.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/m, '').trim();
+  try {
+    const obj = JSON.parse(after);
+    const steps = Array.isArray(obj.steps)
+      ? obj.steps.filter(s => s && typeof s.label === 'string' && typeof s.action === 'string')
+      : [];
+    return { displayText, steps };
+  } catch (_) {
+    return { displayText, steps: [] };
+  }
 }
 
 // ═══════════════════════════════════════
@@ -3392,25 +4452,30 @@ function renderSettings() {
           <span class="material-symbols-outlined" style="font-size:1.2rem;color:var(--green);">verified</span>
         </div>
         <div>
-          <h2 style="margin-bottom:0;font-size:1rem;">Freshness + Verification</h2>
-          <p style="font-size:0.68rem;color:var(--burgundy);opacity:0.5;margin-top:0.1rem;">How current the CRM data is, and how well it matches the static pipeline snapshot.</p>
+          <h2 style="margin-bottom:0;font-size:1rem;">Freshness + pipeline overlap</h2>
+          <p style="font-size:0.68rem;color:var(--burgundy);opacity:0.5;margin-top:0.1rem;">Last Close sync time, plus how many <strong>live</strong> opportunity names also appear in the static <code style="font-size:0.6rem;">andre_pipeline.json</code> file — not a “data quality” grade.</p>
         </div>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;">
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.5rem;">
         <div class="settings-connection-row" style="display:block;">
           <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Last sync</div>
           <div style="font-weight:700;font-size:0.82rem;">${lastSyncLabel}</div>
         </div>
         <div class="settings-connection-row" style="display:block;">
-          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Verification</div>
+          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Overlap status</div>
           <div style="font-weight:700;font-size:0.82rem;text-transform:capitalize;">${verification.status || 'unknown'}</div>
         </div>
         <div class="settings-connection-row" style="display:block;">
-          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Coverage</div>
+          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Name match rate</div>
           <div style="font-weight:700;font-size:0.82rem;">${verification.coverage_pct != null ? verification.coverage_pct + '%' : '—'}</div>
         </div>
+        <div class="settings-connection-row" style="display:block;">
+          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Matched names</div>
+          <div style="font-weight:700;font-size:0.82rem;">${verification.matched_deal_count != null && verification.live_unique_lead_names != null ? `${verification.matched_deal_count} / ${verification.live_unique_lead_names}` : verification.matched_deal_count != null ? String(verification.matched_deal_count) : '—'}</div>
+        </div>
       </div>
-      ${verification.notes?.length ? `<div class="settings-hint" style="margin-top:0.8rem;">${verification.notes.join(' ')}</div>` : '<div class="settings-hint" style="margin-top:0.8rem;">No verification warnings right now.</div>'}
+      <div class="settings-hint" style="margin-top:0.65rem;line-height:1.45;">Static file has <strong>${verification.static_pipeline_deal_names != null ? verification.static_pipeline_deal_names : '—'}</strong> deal names · Close returned <strong>${verification.live_opportunity_count != null ? verification.live_opportunity_count : '—'}</strong> active opportunities. Raise overlap by refreshing <code style="font-size:0.6rem;">andre_pipeline.json</code> from CRM or ignore if you only keep a subset in JSON.</div>
+      ${verification.notes?.length ? `<div class="settings-hint" style="margin-top:0.5rem;">${verification.notes.map(n => String(n).replace(/</g, '&lt;')).join(' ')}</div>` : ''}
     </div>
 
     <!-- Connection Status -->
@@ -3632,9 +4697,22 @@ function wireSettingsHandlers() {
 // ═══════════════════════════════════════
 // SERVER + LIVE DATA
 // ═══════════════════════════════════════
-const SERVER = 'http://localhost:3141';
+// Use same-origin URLs when the UI is served by Express (local :3141 or Render).
+// Only pin to :3141 when the static UI is opened from another dev port (e.g. Live Server).
+const SERVER = (() => {
+  if (typeof window === 'undefined') return '';
+  const { hostname, port } = window.location;
+  const local = hostname === 'localhost' || hostname === '127.0.0.1';
+  if (!local) return '';
+  if (port === '3141') return '';
+  return `http://${hostname}:3141`;
+})();
 let LIVE = {}; // live_close_crm.json
 let Q    = {}; // action_queue.json
+/** Aggregated Close “inbox-class” intel (tasks + triage comms) from GET /close/inbox/snapshot */
+let CLOSE_INBOX = null;
+/** Design-only automation flow; persisted in localStorage */
+let automationBlueprintState = { catalog: null, steps: [] };
 let serverOnline = false;
 
 async function loadJSON(path) {
@@ -3664,11 +4742,17 @@ async function refreshAutomationStatus() {
 }
 
 async function checkServer() {
+  const wasOnline = serverOnline;
   try {
     const r = await fetch(`${SERVER}/status`, { signal: AbortSignal.timeout(1500) });
     serverOnline = r.ok;
   } catch(e) { serverOnline = false; }
   updateServerBadge();
+  if (serverOnline && !wasOnline) {
+    loadAppSurfaceMap();
+    loadCloseInboxSnapshot();
+    if (currentView === 'command') renderCommand();
+  }
 }
 
 function updateServerBadge() {
@@ -3690,10 +4774,17 @@ function updateDataFreshness() {
   const verification = LIVE?.verification || {};
   if (!syncedAt) {
     el.textContent = 'No sync yet';
+    el.removeAttribute('title');
     return;
   }
-  const coverage = verification.coverage_pct != null ? `${verification.coverage_pct}% verified` : 'verification pending';
+  const pct = verification.coverage_pct;
+  const matched = verification.matched_deal_count;
+  const unique = verification.live_unique_lead_names;
+  const coverage = pct != null
+    ? `${pct}% pipeline overlap${matched != null && unique != null ? ` (${matched}/${unique} names)` : ''}`
+    : 'overlap pending';
   el.textContent = `${timeAgo(syncedAt)} sync · ${coverage}`;
+  el.title = 'Pipeline overlap: share of live Close opportunity names that also appear in data/andre_pipeline.json (after normalizing text). Low % is normal if the JSON is a curated snapshot, not a full CRM mirror — it is not a score of whether Close data is “valid.”';
   el.style.color = verification.status === 'critical'
     ? 'var(--coral)'
     : verification.status === 'warning'
@@ -3827,10 +4918,14 @@ async function boot() {
   await checkServer();
   await loadSettings();
   await refreshAutomationStatus();
+  await loadAppSurfaceMap();
+  await loadCloseInboxSnapshot();
+  loadAutomationBlueprintFromStorage();
   updateDataFreshness();
   setInterval(checkServer, 15000);
   setInterval(refreshQueue, 30000);
   setInterval(refreshAutomationStatus, 30000);
+  setInterval(loadCloseInboxSnapshot, 120000);
   // Re-cache every 5 minutes
   setInterval(() => IDB.cacheAll(), 5 * 60 * 1000);
   showView('command');
@@ -3918,6 +5013,9 @@ function connectDataStream() {
   };
 }
 
+const openPaletteBtn = $('#openCommandPaletteBtn');
+if (openPaletteBtn) openPaletteBtn.addEventListener('click', () => openCommandPalette());
+
 // Theme toggle (Lucide icons)
 $('#themeToggle').addEventListener('click', () => {
   document.body.classList.toggle('dark');
@@ -3928,21 +5026,31 @@ $('#themeToggle').addEventListener('click', () => {
   }
 });
 
-// Settings button — find the second .sb-bottom-btn (not the theme toggle)
-$$('.sb-bottom-btn').forEach(btn => {
-  if (btn.id !== 'themeToggle') {
-    btn.addEventListener('click', () => {
-      $$('.sb-btn').forEach(b => b.classList.remove('active'));
-      showView('settings');
-    });
-  }
+$('#openSettingsBtn')?.addEventListener('click', () => {
+  $$('.sb-btn').forEach(b => b.classList.remove('active'));
+  showView('settings');
 });
 
 // ═══════════════════════════════════════
 // KEYBOARD SHORTCUTS
 // ═══════════════════════════════════════
 document.addEventListener('keydown', (e) => {
-  // Don't trigger shortcuts when typing in an input/textarea
+  if (e.key === 'Escape') {
+    const pal = $('#commandPalette');
+    if (pal && pal.style.display === 'flex') {
+      e.preventDefault();
+      closeCommandPalette();
+      return;
+    }
+  }
+
+  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+    e.preventDefault();
+    toggleCommandPalette();
+    return;
+  }
+
+  // Don't trigger view shortcuts when typing in an input/textarea
   const tag = document.activeElement?.tagName;
   if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
 
@@ -3973,7 +5081,7 @@ document.addEventListener('keydown', (e) => {
   // ? = show shortcut help
   if (key === '?' || (e.shiftKey && key === '/')) {
     e.preventDefault();
-    Toast.info('Keys: 1-8 = views · S = settings · / = Oracle focus · ? = help', 5000);
+    Toast.info('Keys: ⌘K search · 1-9 views · S = settings · / = Oracle · ? = help', 5000);
     return;
   }
 

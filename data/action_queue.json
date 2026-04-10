@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Action queue processed by Claude / Cowork Automation",
-    "last_processed": "2026-04-10T02:20:09.139Z"
+    "last_processed": "2026-04-10T06:23:19.433Z"
   },
   "pending": [
     {
@@ -83,9 +83,142 @@
       "status": "pending",
       "source": "manual",
       "dedupe_key": null
+    },
+    {
+      "id": "act_1775801760268_xu0oqd",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+        "name": "Lisandra Lopez",
+        "requested_at": "2026-04-10T06:16:00.261Z"
+      },
+      "queued_at": "2026-04-10T06:16:00.268Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null
     }
   ],
   "completed": [
+    {
+      "id": "act_1775802199421_3onu6y",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-10T06:23:19.420Z"
+      },
+      "queued_at": "2026-04-10T06:23:19.421Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-10T06:23:19.433Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      }
+    },
+    {
+      "id": "act_1775802019416_si427d",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-10T06:20:19.415Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T06:20:19.416Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-10T06:20:19.987Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775801767346_p1sdho",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+        "name": "Lisandra Lopez",
+        "requested_at": "2026-04-10T06:16:07.344Z"
+      },
+      "queued_at": "2026-04-10T06:16:07.346Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-10T06:16:07.846Z",
+      "result": {
+        "lead_name": "Lisandra Lopez",
+        "status": "🔘 Maybe",
+        "description": "New Haven Zip: 06513\nPeople 80\nEvent Desc: Bridgerton\nEvent Date: June 17,2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Lisandra Lopez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775796559248_uke8cd",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-10T04:49:19.246Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T04:49:19.248Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "completed_at": "2026-04-10T04:49:19.794Z",
+      "result": {
+        "lead_name": "Alexandra Fruzzetti",
+        "status": "🔘 Maybe",
+        "description": "Quincy Zip: 02169\nPeople 35\nEvent Desc: wedding reception\nEvent Date: August 9th 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Alexandra Fruzzetti. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1775792900773_otngse",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-10T03:48:20.772Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T03:48:20.773Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "completed_at": "2026-04-10T03:48:20.991Z",
+      "result": {
+        "lead_name": "Gina Gallagher",
+        "status": "⚪ Probably Not",
+        "description": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T20:01:29.418Z\nEvent Date: December 2027\nVenue: \nEmail Permission: Yes\nImport Note: Imported from FormSubmit expo submissions.",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Gina Gallagher. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
     {
       "id": "act_1775787609137_cf41su",
       "type": "prepare_critical_alert_review",
@@ -2593,6 +2726,219 @@
       "source": "automation_engine",
       "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
       "completed_at": "2026-04-10T02:20:09.139Z",
+      "result": {
+        "packet_type": "critical_alert_review",
+        "status": "REVIEW_REQUIRED",
+        "lead_name": "Mary McGahan",
+        "severity": "critical",
+        "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+        "action_required": "Move opportunity to Lost status in Close CRM immediately.",
+        "recommended_close_action": "Move opportunity to Lost in Close after human confirmation.",
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "opportunity_id": null,
+        "related_stage": null,
+        "related_value": 0,
+        "draft_note": "CRITICAL REVIEW: Mary McGahan triggered a deal_lost alert. Confirm in Close, then resolve the opportunity and capture a note."
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775792900773_otngse",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-10T03:48:20.772Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T03:48:20.773Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775792900773_otngse",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+        "name": "Gina Gallagher",
+        "requested_at": "2026-04-10T03:48:20.772Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T03:48:20.773Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "completed_at": "2026-04-10T03:48:20.991Z",
+      "result": {
+        "lead_name": "Gina Gallagher",
+        "status": "⚪ Probably Not",
+        "description": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T20:01:29.418Z\nEvent Date: December 2027\nVenue: \nEmail Permission: Yes\nImport Note: Imported from FormSubmit expo submissions.",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Gina Gallagher. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775796559248_uke8cd",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-10T04:49:19.246Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T04:49:19.248Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775796559248_uke8cd",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+        "name": "Alexandra Fruzzetti",
+        "requested_at": "2026-04-10T04:49:19.246Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T04:49:19.248Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
+      "completed_at": "2026-04-10T04:49:19.794Z",
+      "result": {
+        "lead_name": "Alexandra Fruzzetti",
+        "status": "🔘 Maybe",
+        "description": "Quincy Zip: 02169\nPeople 35\nEvent Desc: wedding reception\nEvent Date: August 9th 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Alexandra Fruzzetti. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775801760268_xu0oqd",
+      "type": "create_clickup_task",
+      "payload": {
+        "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+        "name": "Lisandra Lopez",
+        "requested_at": "2026-04-10T06:16:00.261Z"
+      },
+      "queued_at": "2026-04-10T06:16:00.268Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1775801767346_p1sdho",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+        "name": "Lisandra Lopez",
+        "requested_at": "2026-04-10T06:16:07.344Z"
+      },
+      "queued_at": "2026-04-10T06:16:07.346Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1775801767346_p1sdho",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+        "name": "Lisandra Lopez",
+        "requested_at": "2026-04-10T06:16:07.344Z"
+      },
+      "queued_at": "2026-04-10T06:16:07.346Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-10T06:16:07.846Z",
+      "result": {
+        "lead_name": "Lisandra Lopez",
+        "status": "🔘 Maybe",
+        "description": "New Haven Zip: 06513\nPeople 80\nEvent Desc: Bridgerton\nEvent Date: June 17,2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Lisandra Lopez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775802019416_si427d",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-10T06:20:19.415Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T06:20:19.416Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775802019416_si427d",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+        "name": "Yuni Colindres",
+        "requested_at": "2026-04-10T06:20:19.415Z",
+        "automation_reason": "Flagged by Close CRM — stalled or overdue for contact"
+      },
+      "queued_at": "2026-04-10T06:20:19.416Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "completed_at": "2026-04-10T06:20:19.987Z",
+      "result": {
+        "lead_name": "Yuni Colindres",
+        "status": "🔘 Maybe",
+        "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Yuni Colindres. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1775802199421_3onu6y",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-10T06:23:19.420Z"
+      },
+      "queued_at": "2026-04-10T06:23:19.421Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "event": "queued"
+    },
+    {
+      "id": "act_1775802199421_3onu6y",
+      "type": "prepare_critical_alert_review",
+      "payload": {
+        "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+        "name": "Mary McGahan",
+        "alert_type": "deal_lost",
+        "requested_at": "2026-04-10T06:23:19.420Z"
+      },
+      "queued_at": "2026-04-10T06:23:19.421Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "critical_alert:lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "completed_at": "2026-04-10T06:23:19.433Z",
       "result": {
         "packet_type": "critical_alert_review",
         "status": "REVIEW_REQUIRED",

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "purpose": "Node types for the in-app Automation Blueprint designer (design-only; exports prompts + JSON for Claude Code, Cursor, Codex, Close, server).",
+  "platforms": [
+    { "id": "close", "label": "Close CRM", "hint": "REST API, MCP in external runners" },
+    { "id": "server", "label": "This Node server", "hint": "server.js routes, data/*.json, SSE" },
+    { "id": "openai_api", "label": "OpenAI API", "hint": "Chat Completions / Responses from Settings key" },
+    { "id": "codex", "label": "OpenAI Codex CLI", "hint": "Terminal agent; paste implementation packet" },
+    { "id": "claude_code", "label": "Claude Code", "hint": "CLI / IDE extension" },
+    { "id": "cursor", "label": "Cursor", "hint": "Agent + Composer; repo-local" },
+    { "id": "human", "label": "Human approval", "hint": "Rep reviews in UI or Close" },
+    { "id": "transform", "label": "Transform / glue", "hint": "Map fields, filters, schedules" }
+  ],
+  "nodes": [
+    { "id": "trigger_schedule", "label": "Trigger · Schedule", "platform": "server", "description": "Cron or interval (e.g. automation engine loop)." },
+    { "id": "trigger_webhook", "label": "Trigger · Webhook", "platform": "server", "description": "Inbound HTTP (future); document expected payload." },
+    { "id": "trigger_manual", "label": "Trigger · Manual", "platform": "human", "description": "Rep or operator starts the flow from UI." },
+    { "id": "close_read_opportunity", "label": "Close · Read opportunities", "platform": "close", "description": "Pull active / attention flags; maps to sync logic." },
+    { "id": "close_inbox_snapshot", "label": "Close · Inbox intel", "platform": "close", "description": "Tasks + email/SMS/call triage aggregate." },
+    { "id": "close_send_email", "label": "Close · Send / draft email", "platform": "close", "description": "Lead-scoped email via API." },
+    { "id": "close_send_sms", "label": "Close · Send / draft SMS", "platform": "close", "description": "Lead-scoped SMS via API." },
+    { "id": "close_create_task", "label": "Close · Create task", "platform": "close", "description": "Lead task with due date." },
+    { "id": "server_queue_action", "label": "Server · Queue action", "platform": "server", "description": "Push action_queue item for runner." },
+    { "id": "server_mutate_json", "label": "Server · Read/write data file", "platform": "server", "description": "Ops tracker, live JSON, templates—document path." },
+    { "id": "openai_chat", "label": "OpenAI · Model call", "platform": "openai_api", "description": "Oracle-style completion; specify model + role." },
+    { "id": "codex_implement", "label": "Codex · Implement change", "platform": "codex", "description": "Hand off repo task with file scope." },
+    { "id": "claude_code_mcp", "label": "Claude Code · MCP / tools", "platform": "claude_code", "description": "Close MCP, git, tests—define tool allowlist." },
+    { "id": "cursor_agent", "label": "Cursor · Agent task", "platform": "cursor", "description": "Feature or fix with @ files and constraints." },
+    { "id": "transform_map", "label": "Transform · Map / filter", "platform": "transform", "description": "Shape payloads between steps." },
+    { "id": "human_approve", "label": "Human · Approval gate", "platform": "human", "description": "Block until reviewed in app or Close." },
+    { "id": "end", "label": "End", "platform": "transform", "description": "Terminal node; success / failure outcome." }
+  ]
+}

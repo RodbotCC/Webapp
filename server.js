@@ -137,7 +137,6 @@ function defaultOpsTracker() {
   return {
     context: {
       active_project: 'Comeketo',
-      explicitly_not_this_project: ['Story', 'Storie'],
       note: 'This tracker belongs to the Comeketo Sales Command Center inside /Users/jakeaaron/Documents/Webapp.',
     },
     daily: {},
@@ -157,22 +156,27 @@ function readOpsTracker() {
   ensureOpsTracker();
   const current = readData('ops_tracker.json');
   const base = defaultOpsTracker();
+  const context = { ...base.context, ...(current.context || {}) };
+  delete context.explicitly_not_this_project;
   return {
     ...base,
     ...current,
-    context: { ...base.context, ...(current.context || {}) },
+    context,
     daily: current.daily || {},
     _meta: { ...base._meta, ...(current._meta || {}) },
   };
 }
 
 function writeOpsTracker(data) {
+  const prev = readOpsTracker();
+  const mergedContext = { ...prev.context, ...(data.context || {}) };
+  delete mergedContext.explicitly_not_this_project;
   const next = {
-    ...readOpsTracker(),
+    ...prev,
     ...data,
-    context: { ...readOpsTracker().context, ...(data.context || {}) },
-    daily: data.daily || readOpsTracker().daily,
-    _meta: { ...readOpsTracker()._meta, ...(data._meta || {}), last_updated: new Date().toISOString() },
+    context: mergedContext,
+    daily: data.daily || prev.daily,
+    _meta: { ...prev._meta, ...(data._meta || {}), last_updated: new Date().toISOString() },
   };
   writeData('ops_tracker.json', next);
   return next;
@@ -377,6 +381,10 @@ function readSettings() {
       console.warn(`[SETTINGS] Failed to read ${file}:`, e.message);
     }
   }
+  if (!base.ai?.openai_api_key && process.env.OPENAI_API_KEY) {
+    base.ai.openai_api_key = process.env.OPENAI_API_KEY;
+  }
+  base.ai.enabled = Boolean(base.ai.openai_api_key);
   return base;
 }
 
@@ -534,6 +542,19 @@ function sanitizeActionQueue(queue) {
   return changed;
 }
 
+// ─── App surface map (AI / automation selectors) ───
+app.get('/app/surface', (req, res) => {
+  const surfacePath = path.join(__dirname, 'data', 'app_surface.json');
+  try {
+    if (!fs.existsSync(surfacePath)) {
+      return res.status(404).json({ error: 'app_surface.json not found' });
+    }
+    res.type('application/json').send(fs.readFileSync(surfacePath, 'utf8'));
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // ─── Serve data files ───────────────────────────────
 app.get('/data/:file', (req, res) => {
   if (PRIVATE_DATA_FILES.has(req.params.file)) {
@@ -621,8 +642,12 @@ async function refreshLiveCloseSnapshot(syncSource) {
     const matchedDealCount = liveDealNames.filter(name => staticDealNames.has(name)).length;
     const coveragePct = liveDealNames.length ? Math.round((matchedDealCount / liveDealNames.length) * 100) : 0;
     const verificationNotes = [];
-    if (!staticDealNames.size) verificationNotes.push('Static pipeline has no comparable deal names.');
-    if (liveDealNames.length && coveragePct < 80) verificationNotes.push('Live Close data and static pipeline are drifting. Rebuild the pipeline JSON.');
+    if (!staticDealNames.size) verificationNotes.push('Static pipeline (andre_pipeline.json) has no deal names to compare.');
+    if (liveDealNames.length && coveragePct < 80) {
+      verificationNotes.push(
+        `Only ${matchedDealCount} of ${liveDealNames.length} unique live opportunity names match the static pipeline file — often because the JSON is a curated subset, not a full CRM export.`
+      );
+    }
     if (!allOpps.length) verificationNotes.push('Close returned zero active opportunities for the configured user.');
 
     live._meta.last_synced      = now.toISOString();
@@ -638,8 +663,11 @@ async function refreshLiveCloseSnapshot(syncSource) {
     live.verification = {
       checked_at: now.toISOString(),
       status: coveragePct >= 80 ? 'ok' : coveragePct >= 50 ? 'warning' : 'critical',
+      /** What we measure: name overlap between live Close opps and static andre_pipeline.json — not “data correctness.” */
+      metric: 'static_pipeline_name_overlap',
       live_opportunity_count: allOpps.length,
-      static_pipeline_count: staticPipeline.summary?.active_deals || staticPipeline.summary?.total_deals || staticDealNames.size,
+      live_unique_lead_names: liveDealNames.length,
+      static_pipeline_deal_names: staticDealNames.size,
       matched_deal_count: matchedDealCount,
       coverage_pct: coveragePct,
       notes: verificationNotes,
@@ -713,6 +741,269 @@ app.post('/close/opportunity/:id/status', async (req, res) => {
     });
     res.json({ ok: r.status === 200, opportunity: r.body });
   } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+function closeApiErrorMessage(body) {
+  if (!body || typeof body !== 'object') return 'Close API error';
+  if (typeof body.error === 'string') return body.error;
+  if (body.error && typeof body.error === 'object' && body.error.message) return body.error.message;
+  if (body['field-errors']) return JSON.stringify(body['field-errors']);
+  return 'Close API error';
+}
+
+function messagingSenderEmail() {
+  return (readSettings().messaging?.email_from || '').trim();
+}
+
+function messagingSmsFrom() {
+  return (readSettings().messaging?.sms_from || '').trim();
+}
+
+// ─── POST /close/lead/:leadId/email — draft or send via Close (activity/email)
+// https://developer.close.com/api/resources/activities/
+app.post('/close/lead/:leadId/email', async (req, res) => {
+  try {
+    const leadId = req.params.leadId;
+    const userId = getCloseUserId();
+    if (!userId) return res.status(400).json({ error: 'Close CRM user ID is not configured. Add it in Settings.' });
+    if (!CLOSE_API_KEY) return res.status(400).json({ error: 'CLOSE_API_KEY is not configured on the server.' });
+
+    const {
+      subject,
+      body_text,
+      body_html,
+      to,
+      contact_id,
+      status,
+      sender,
+    } = req.body || {};
+
+    const toList = Array.isArray(to) ? to.filter(Boolean) : (to ? [to] : []);
+    if (!toList.length) return res.status(400).json({ error: 'Provide at least one recipient email in `to`.' });
+
+    const sendStatus = status === 'draft' ? 'draft' : 'outbox';
+    const senderAddr = (sender || messagingSenderEmail()).trim();
+    if (sendStatus === 'outbox' && !senderAddr) {
+      return res.status(400).json({
+        error: 'Outbound email needs a `sender` address. Set "Email from" under Messaging in Settings, or pass `sender` in the request.',
+      });
+    }
+
+    const payload = {
+      lead_id: leadId,
+      direction: 'outgoing',
+      status: sendStatus,
+      user_id: userId,
+      to: toList,
+      subject: subject || '(no subject)',
+      body_text: body_text != null ? String(body_text) : '',
+      ...(body_html ? { body_html: String(body_html) } : {}),
+      ...(contact_id ? { contact_id } : {}),
+      ...(senderAddr ? { sender: senderAddr } : {}),
+    };
+
+    const r = await closeRequest('POST', '/activity/email/', payload);
+    if (r.status < 200 || r.status >= 300) {
+      return res.status(r.status >= 400 ? r.status : 502).json({ error: closeApiErrorMessage(r.body) });
+    }
+
+    logActivity(
+      'sync',
+      sendStatus === 'outbox' ? 'close_email_sent' : 'close_email_draft',
+      sendStatus === 'outbox' ? `Email sent via Close` : `Email draft saved in Close`,
+      `${subject || '(no subject)'} → ${toList.join(', ')}`,
+      []
+    );
+    res.json({ ok: true, email: r.body });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ─── POST /close/lead/:leadId/sms — draft or send via Close (activity/sms)
+app.post('/close/lead/:leadId/sms', async (req, res) => {
+  try {
+    const leadId = req.params.leadId;
+    const userId = getCloseUserId();
+    if (!userId) return res.status(400).json({ error: 'Close CRM user ID is not configured. Add it in Settings.' });
+    if (!CLOSE_API_KEY) return res.status(400).json({ error: 'CLOSE_API_KEY is not configured on the server.' });
+
+    const { text, remote_phone, local_phone, contact_id, status } = req.body || {};
+    if (!text || !String(text).trim()) return res.status(400).json({ error: '`text` is required.' });
+    if (!remote_phone || !String(remote_phone).trim()) {
+      return res.status(400).json({ error: '`remote_phone` is required (buyer number, E.164 recommended).' });
+    }
+
+    const sendStatus = status === 'draft' ? 'draft' : 'outbox';
+    const local = (local_phone || messagingSmsFrom()).trim();
+    if (sendStatus === 'outbox' && !local) {
+      return res.status(400).json({
+        error: 'Outbound SMS needs `local_phone` (your Close internal sending number). Set "SMS from" in Settings or pass `local_phone`.',
+      });
+    }
+
+    const payload = {
+      lead_id: leadId,
+      direction: 'outbound',
+      status: sendStatus,
+      user_id: userId,
+      text: String(text).trim(),
+      remote_phone: String(remote_phone).trim(),
+      ...(local ? { local_phone: local } : {}),
+      ...(contact_id ? { contact_id } : {}),
+    };
+
+    const r = await closeRequest('POST', '/activity/sms/', payload);
+    if (r.status < 200 || r.status >= 300) {
+      return res.status(r.status >= 400 ? r.status : 502).json({ error: closeApiErrorMessage(r.body) });
+    }
+
+    logActivity(
+      'sync',
+      sendStatus === 'outbox' ? 'close_sms_sent' : 'close_sms_draft',
+      sendStatus === 'outbox' ? `SMS sent via Close` : `SMS draft saved in Close`,
+      String(text).substring(0, 120) + (String(text).length > 120 ? '…' : ''),
+      []
+    );
+    res.json({ ok: true, sms: r.body });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+function closeListData(resp) {
+  if (!resp || resp.status < 200 || resp.status >= 300 || !resp.body) return [];
+  return Array.isArray(resp.body.data) ? resp.body.data : [];
+}
+
+// ─── GET /close/inbox/snapshot — aggregate “inbox-class” intel (tasks + recent comms)
+// Mirrors what reps triage in Close Inbox: tasks (view=inbox/future) + recent email/SMS/call activity.
+app.get('/close/inbox/snapshot', async (req, res) => {
+  try {
+    const userId = getCloseUserId();
+    if (!userId) return res.status(400).json({ error: 'Close CRM user ID is not configured. Add it in Settings.' });
+    if (!CLOSE_API_KEY) return res.status(400).json({ error: 'CLOSE_API_KEY is not configured on the server.' });
+
+    const uid = encodeURIComponent(userId);
+    const [ti, tf, em, sm, ca] = await Promise.all([
+      closeRequest('GET', `/task/?view=inbox&assigned_to=${uid}&_limit=45&_order_by=date`),
+      closeRequest('GET', `/task/?view=future&assigned_to=${uid}&_limit=35&_order_by=date`),
+      closeRequest('GET', `/activity/email/?user_id=${uid}&_limit=40&_order_by=-date_created`),
+      closeRequest('GET', `/activity/sms/?user_id=${uid}&_limit=30&_order_by=-date_created`),
+      closeRequest('GET', `/activity/call/?user_id=${uid}&_limit=25&_order_by=-date_created`),
+    ]);
+
+    const tasksInbox = closeListData(ti);
+    const tasksFuture = closeListData(tf);
+    const emails = closeListData(em);
+    const sms = closeListData(sm);
+    const calls = closeListData(ca);
+
+    const emailNeedsTriage = emails.filter(e =>
+      e.status === 'inbox' || (e.direction === 'inbound' && !['sent', 'draft', 'scheduled'].includes(e.status))
+    );
+    const smsNeedsTriage = sms.filter(s =>
+      s.direction === 'inbound' || s.status === 'inbox'
+    );
+
+    const slimTask = (t, view) => ({
+      id: t.id,
+      text: t.text,
+      date: t.date,
+      lead_id: t.lead_id,
+      lead_name: t.lead_name,
+      is_complete: t.is_complete,
+      view,
+    });
+
+    res.json({
+      fetched_at: new Date().toISOString(),
+      close_user_id: userId,
+      counts: {
+        tasks_inbox: tasksInbox.length,
+        tasks_future: tasksFuture.length,
+        emails_in_queue: emailNeedsTriage.length,
+        sms_in_queue: smsNeedsTriage.length,
+        calls_recent: calls.length,
+      },
+      tasks_inbox: tasksInbox.slice(0, 14).map(t => slimTask(t, 'inbox')),
+      tasks_future: tasksFuture.slice(0, 10).map(t => slimTask(t, 'future')),
+      emails_triage: emailNeedsTriage.slice(0, 10).map(e => ({
+        id: e.id,
+        subject: e.subject,
+        lead_id: e.lead_id,
+        lead_name: e.lead_name,
+        status: e.status,
+        direction: e.direction,
+        date_created: e.date_created,
+        snippet: (e.body_preview || e.body_text || '').toString().substring(0, 140),
+      })),
+      sms_triage: smsNeedsTriage.slice(0, 8).map(s => ({
+        id: s.id,
+        text: (s.text || '').substring(0, 160),
+        lead_id: s.lead_id,
+        lead_name: s.lead_name,
+        status: s.status,
+        direction: s.direction,
+        date_created: s.date_created,
+      })),
+      calls_recent: calls.slice(0, 8).map(c => ({
+        id: c.id,
+        lead_id: c.lead_id,
+        lead_name: c.lead_name,
+        date_created: c.date_created,
+        duration: c.duration,
+        disposition: c.disposition || c.call_outcome,
+        voicemail_url: c.voicemail_url || null,
+      })),
+    });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ─── POST /close/lead/:leadId/task — create a lead task (shows in Close task / inbox views)
+app.post('/close/lead/:leadId/task', async (req, res) => {
+  try {
+    const leadId = req.params.leadId;
+    const userId = getCloseUserId();
+    if (!userId) return res.status(400).json({ error: 'Close CRM user ID is not configured. Add it in Settings.' });
+    if (!CLOSE_API_KEY) return res.status(400).json({ error: 'CLOSE_API_KEY is not configured on the server.' });
+
+    const { text, date, contact_id, assigned_to } = req.body || {};
+    if (!text || !String(text).trim()) return res.status(400).json({ error: 'Task text is required.' });
+
+    const assignee = String(assigned_to || userId).trim();
+    const due = date && String(date).trim()
+      ? String(date).trim()
+      : new Date().toISOString().substring(0, 10);
+
+    const payload = {
+      _type: 'lead',
+      lead_id: leadId,
+      assigned_to: assignee,
+      text: String(text).trim(),
+      date: due,
+      is_complete: false,
+      ...(contact_id ? { contact_id } : {}),
+    };
+
+    const r = await closeRequest('POST', '/task/', payload);
+    if (r.status < 200 || r.status >= 300) {
+      return res.status(r.status >= 400 ? r.status : 502).json({ error: closeApiErrorMessage(r.body) });
+    }
+
+    logActivity(
+      'sync',
+      'close_task_created',
+      `Close task created`,
+      `${due} · ${String(text).substring(0, 80)}${String(text).length > 80 ? '…' : ''}`,
+      []
+    );
+    res.json({ ok: true, task: r.body });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
 });
 
 // ═══════════════════════════════════════════════════
@@ -1207,17 +1498,54 @@ CRITICAL RULES:
 - Keep it tight. Short paragraphs. No filler. Every sentence moves something forward.`;
 }
 
+/** Appended for Oracle free chat — structured next steps + future HRMR / sign-off loop. */
+function guidedOracleSuffix() {
+  return `
+
+=== GUIDED ORACLE — SIGN-OFF NEXT STEPS (required for this session type) ===
+After your main reply (helpful markdown for the rep), append EXACTLY:
+1) A blank line
+2) The line ---ORACLE_NEXT_STEPS--- (three hyphens each side, no spaces)
+3) A single JSON object on the next lines (valid JSON, no markdown code fences)
+
+Schema:
+{"steps":[{"id":"short_slug","label":"Short button label","action":"navigate|oracle_prompt|open_deal|refresh_inbox|open_palette","payload":{}}]}
+
+Provide 3–6 steps. Each label must be under 8 words. Actions:
+- navigate → payload {"view":"command|pipeline|deals|automation|oracle|timeline|settings|actions|performance|coaching"}
+- oracle_prompt → payload {"text":"The full next user message to send in chat"}
+- open_deal → payload {"dealName":"Exact deal name from context"}
+- refresh_inbox → payload {}
+- open_palette → payload {} (opens search / jump menu)
+
+Do not put ---ORACLE_NEXT_STEPS--- inside the visible answer. The rep sees only the prose above the delimiter; the app strips the JSON.`;
+}
+
+/** Turn chat-style message array into one Responses API input string (multi-turn context). */
+function flattenMessagesForResponses(messages) {
+  if (!Array.isArray(messages) || messages.length === 0) return '';
+  if (messages.length === 1) return messages[0].content || '';
+  return messages.map(m => {
+    const label = m.role === 'assistant' ? 'Assistant' : 'User';
+    return `${label}: ${m.content || ''}`;
+  }).join('\n\n');
+}
+
 // ─── AI Chat proxy (keeps key server-side) ──────────
 app.post('/ai/chat', async (req, res) => {
   const settings = readSettings();
   const apiKey = settings.ai?.openai_api_key;
   if (!apiKey) return res.status(400).json({ error: 'No OpenAI API key configured. Go to Settings to add one.' });
 
-  const { messages, model, instructions, action_type } = req.body;
+  const { messages, model, instructions, action_type, guided_oracle } = req.body;
   const useModel = model || settings.ai.model || 'gpt-5.4-nano';
 
   // Build instructions: use doctrine-powered instructions, allow override
-  const systemInstructions = instructions || buildOracleInstructions(action_type || null);
+  let systemInstructions = instructions || buildOracleInstructions(action_type || null);
+  if (guided_oracle) systemInstructions += guidedOracleSuffix();
+
+  // Responses API: use a single input string. Multi-turn chat = transcript so Oracle remembers context.
+  const inputPayload = flattenMessagesForResponses(messages);
 
   try {
     const response = await fetch('https://api.openai.com/v1/responses', {
@@ -1229,7 +1557,7 @@ app.post('/ai/chat', async (req, res) => {
       body: JSON.stringify({
         model: useModel,
         instructions: systemInstructions,
-        input: messages
+        input: inputPayload
       })
     });
 
@@ -1240,7 +1568,7 @@ app.post('/ai/chat', async (req, res) => {
 
     const data = await response.json();
     // Log the AI interaction
-    const userMsg = (messages || []).find(m => m.role === 'user')?.content || '';
+    const userMsg = (messages || []).filter(m => m.role === 'user').pop()?.content || '';
     const dealMatch = userMsg.match(/\[DEAL FOCUS\]\nName: ([^\n]+)/);
     const related = dealMatch ? [dealMatch[1]] : [];
     const reply = data.output_text || data.output?.[0]?.content?.[0]?.text || '';

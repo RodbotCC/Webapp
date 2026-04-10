@@ -1,0 +1,81 @@
+{
+  "app": "Comeketo Sales Command Center",
+  "version": 3,
+  "description": "Machine-readable map of UI surfaces and server capabilities for AI agents, browser automation, and tooling. Prefer [data-surface] selectors for stable hooks.",
+  "endpoint_self": "GET /app/surface — returns this document (from bundled data/app_surface.json)",
+  "client_runtime": "After boot, window.__APP_SURFACE mirrors GET /app/surface (null if offline or error).",
+  "shell": {
+    "root": "[data-surface=\"shell-root\"]",
+    "main_stage": "#stageScroll",
+    "preview_panel": "#previewPanel",
+    "sidebar_nav": "[data-surface=\"shell-sidebar\"] [data-surface=\"nav-primary\"][data-view]",
+    "views": [
+      { "id": "command", "label": "Command", "hotkey": "1", "summary": "Executive KPIs, Oracle briefing, Close inbox intel, war room" },
+      { "id": "pipeline", "label": "Pipeline", "hotkey": "2", "summary": "Funnel stages and deal cards" },
+      { "id": "actions", "label": "Actions", "hotkey": "3" },
+      { "id": "performance", "label": "Performance", "hotkey": "4" },
+      { "id": "coaching", "label": "Coaching", "hotkey": "5" },
+      { "id": "deals", "label": "Deals", "hotkey": "6", "summary": "#dealSearch filters; .deal-card expandable" },
+      { "id": "automation", "label": "Automation", "hotkey": "7", "summary": "Ops memory, queue, engine, automation blueprint" },
+      { "id": "timeline", "label": "Timeline", "hotkey": "8" },
+      { "id": "oracle", "label": "Oracle", "hotkey": "9", "summary": "AI chat; / focuses composer" },
+      { "id": "settings", "label": "Settings", "hotkey": "S", "note": "No sidebar tab; opened via #openSettingsBtn" }
+    ],
+    "global_commands": [
+      { "id": "command_palette", "keys": ["Meta+K", "Ctrl+K"], "selector": "[data-surface=\"command-palette-trigger\"]", "action": "Open search / jump menu" }
+    ]
+  },
+  "stable_surfaces": [
+    { "id": "shell-root", "selector": "[data-surface=\"shell-root\"]", "purpose": "App root" },
+    { "id": "shell-sidebar", "selector": "[data-surface=\"shell-sidebar\"]", "purpose": "Primary nav rail" },
+    { "id": "nav-primary", "selector": "[data-surface=\"nav-primary\"]", "purpose": "View switcher; use data-view for target id" },
+    { "id": "theme-toggle", "selector": "#themeToggle", "purpose": "Light/dark theme" },
+    { "id": "settings-trigger", "selector": "#openSettingsBtn", "purpose": "Open settings view" },
+    { "id": "shell-main", "selector": "[data-surface=\"shell-main\"]", "purpose": "Content + preview column" },
+    { "id": "shell-topbar", "selector": "[data-surface=\"shell-topbar\"]", "purpose": "Title row" },
+    { "id": "command-palette-trigger", "selector": "#openCommandPaletteBtn", "purpose": "Open ⌘K palette" },
+    { "id": "topbar-clock", "selector": "#topbarClock", "purpose": "Live clock" },
+    { "id": "status-server", "selector": "#serverStatus", "purpose": "Server online/offline" },
+    { "id": "status-data-freshness", "selector": "#dataFreshness", "purpose": "CRM sync freshness" },
+    { "id": "status-queue", "selector": "#queueStatus", "purpose": "Queue pending count" },
+    { "id": "stage-scroll", "selector": "#stageScroll", "purpose": "Mounted view HTML (regenerated per view)" },
+    { "id": "preview-panel", "selector": "#previewPanel", "purpose": "Right detail column" },
+    { "id": "preview-body", "selector": "#previewBody", "purpose": "Preview content mount" }
+  ],
+  "dynamic_surfaces": [
+    { "id": "deal-search", "selector": "[data-surface=\"deal-search\"], #dealSearch", "appears_in": ["deals"], "purpose": "Filter deal list" },
+    { "id": "deal-card", "selector": "[data-surface=\"deal-card\"]", "appears_in": ["deals"], "purpose": "Expandable deal row; data-deal-name, optional data-lead-id" },
+    { "id": "oracle-composer", "selector": "[data-surface=\"oracle-composer\"], #oracleInput", "appears_in": ["oracle"], "purpose": "Oracle chat composer" },
+    { "id": "inbox-intel-panel", "selector": "[data-surface=\"inbox-intel-panel\"]", "appears_in": ["command"], "purpose": "Close inbox intel aggregate" },
+    { "id": "inbox-intel-row", "selector": "[data-surface=\"inbox-intel-row\"]", "appears_in": ["command"], "purpose": "Triage row; data-inbox-kind task|email|sms|call|task-future; optional data-lead-id" },
+    { "id": "inbox-intel-refresh", "selector": "[data-surface=\"inbox-intel-refresh\"]", "appears_in": ["command"], "purpose": "Reload inbox snapshot" },
+    { "id": "command-palette", "selector": "[data-surface=\"command-palette\"]", "purpose": "Search/jump modal; outer backdrop [data-surface=command-palette-backdrop]; created on first openCommandPalette()" },
+    { "id": "automation-blueprint-panel", "selector": "[data-surface=\"automation-blueprint-panel\"]", "appears_in": ["automation"], "purpose": "Blueprint designer root" },
+    { "id": "automation-blueprint-steps", "selector": "[data-surface=\"automation-blueprint-steps\"], #blueprintSteps", "appears_in": ["automation"], "purpose": "Ordered step list" },
+    { "id": "blueprint-step", "selector": "[data-surface=\"blueprint-step\"]", "appears_in": ["automation"], "purpose": "Single blueprint step; data-node-id, data-uid" },
+    { "id": "close-task-modal", "selector": "[data-surface=\"close-task-modal\"], #closeTaskModal", "purpose": "Create Close task modal; created on first openCloseTask()" }
+  ],
+  "client_functions": [
+    "navigateTo(viewId)",
+    "showView(viewId)",
+    "openDealWorkspace(dealName)",
+    "previewDeal(el, dealJson, pin)",
+    "filterDeals(query)",
+    "openCloseCompose(mode, leadId, dealName, preset)",
+    "openCloseTask(leadId, dealName, suggestedText)",
+    "refreshCloseInboxIntel()",
+    "oracleSend(message)",
+    "openCommandPalette()",
+    "closeCommandPalette()"
+  ],
+  "server_api_overview": [
+    "GET /status",
+    "GET /app/surface — this UI map (JSON)",
+    "GET /data/:file — JSON assets under data/ (except private)",
+    "GET /close/inbox/snapshot",
+    "POST /close/lead/:leadId/email | sms | task",
+    "GET /activity",
+    "GET /ops",
+    "POST /queue"
+  ]
+}
