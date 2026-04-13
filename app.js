@@ -3846,14 +3846,38 @@ function renderMd(text) {
   return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
 }
 
+function oracleGradeNoteDomId(turnId) {
+  return 'ogn_' + String(turnId).replace(/[^a-zA-Z0-9_-]/g, '_');
+}
+
+function rerenderOracleChatOnly() {
+  const el = $('#chatMessages');
+  if (el && currentView === 'oracle') {
+    el.innerHTML = chatHistory.map(m => renderChatMessage(m)).join('');
+    el.scrollTop = el.scrollHeight;
+  }
+}
+
 function renderChatMessage(m) {
   const isUser = m.role === 'user';
   const content = isUser ? m.content.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>') : renderMd(m.content);
   const steps = (!isUser && m.nextSteps && m.nextSteps.length) ? m.nextSteps : [];
   const turnIdJs = m.turnId != null ? JSON.stringify(m.turnId) : 'null';
-  const gradesRow = (!isUser && m.turnId && !m.oracleGrade)
-    ? `<div class="oracle-grade-row"><span class="oracle-grade-label">Rate this reply</span><div class="oracle-grade-chips">${['A+','A','B','C','D','F'].map(g => `<button type="button" class="oracle-grade-chip" onclick="oracleGradeTurn(${turnIdJs},${JSON.stringify(g)})">${g}</button>`).join('')}</div></div>`
-    : (!isUser && m.turnId && m.oracleGrade ? `<div class="oracle-grade-done">Graded <strong>${String(m.oracleGrade).replace(/</g,'&lt;')}</strong></div>` : '');
+  const noteId = !isUser && m.turnId ? oracleGradeNoteDomId(m.turnId) : '';
+  const gradesRow = (!isUser && m.turnId && !m.oracleGrade && !m.oracleGradeDraft)
+    ? `<div class="oracle-grade-row"><span class="oracle-grade-label">Rate this reply</span><div class="oracle-grade-chips">${['A+','A','B','C','D','F'].map(g => `<button type="button" class="oracle-grade-chip" onclick="oraclePickGrade(${turnIdJs},${JSON.stringify(g)})">${g}</button>`).join('')}</div></div>`
+    : (!isUser && m.turnId && !m.oracleGrade && m.oracleGradeDraft)
+      ? `<div class="oracle-grade-row oracle-grade-draft">
+          <span class="oracle-grade-label">Grade <strong>${String(m.oracleGradeDraft).replace(/</g,'&lt;')}</strong> — why? (optional, helps Oracle learn)</span>
+          <textarea id="${noteId}" class="oracle-grade-note-input" rows="2" placeholder="e.g. Too wordy / missed deal names / exactly the tone I want…"></textarea>
+          <div class="oracle-grade-draft-actions">
+            <button type="button" class="preview-action-btn gold" onclick="oracleCommitGrade(${turnIdJs})"><span class="material-symbols-outlined">check</span>Save rating</button>
+            <button type="button" class="preview-action-btn" onclick="oracleCancelGrade(${turnIdJs})">Cancel</button>
+          </div>
+        </div>`
+      : (!isUser && m.turnId && m.oracleGrade
+        ? `<div class="oracle-grade-done">Graded <strong>${String(m.oracleGrade).replace(/</g,'&lt;')}</strong>${m.oracleGradeNote ? ` · <span class="oracle-grade-note-preview">${String(m.oracleGradeNote).replace(/</g,'&lt;').replace(/\n/g,' ').slice(0, 160)}${(m.oracleGradeNote||'').length > 160 ? '…' : ''}</span>` : ''}</div>`
+        : '');
   const stepsRow = steps.length
     ? `<div class="oracle-next-steps"><div class="oracle-next-steps-label">Next steps</div><div class="oracle-next-steps-chips">${steps.map((s, i) => `<button type="button" class="oracle-step-chip" onclick="oracleRunGuidedStep(${turnIdJs},${i})"><span class="material-symbols-outlined">arrow_forward</span>${String(s.label).replace(/</g,'&lt;')}</button>`).join('')}</div></div>`
     : '';
@@ -4037,11 +4061,33 @@ window.oracleRunGuidedStep = async function(turnId, stepIndex) {
   Toast.warning('Unknown or incomplete step: ' + (act || '?'));
 };
 
-window.oracleGradeTurn = async function(turnId, grade) {
+window.oraclePickGrade = function(turnId, grade) {
+  if (turnId == null) return;
+  const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
+  if (!msg || msg.oracleGrade) return;
+  msg.oracleGradeDraft = grade;
+  rerenderOracleChatOnly();
+  setTimeout(() => {
+    const ta = document.getElementById(oracleGradeNoteDomId(turnId));
+    if (ta) ta.focus();
+  }, 50);
+};
+
+window.oracleCancelGrade = function(turnId) {
+  const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
+  if (!msg) return;
+  delete msg.oracleGradeDraft;
+  rerenderOracleChatOnly();
+};
+
+window.oracleCommitGrade = async function(turnId) {
   if (turnId == null) return;
   const idx = chatHistory.findIndex(m => m.role === 'assistant' && m.turnId === turnId);
   if (idx === -1) return;
   const asst = chatHistory[idx];
+  const grade = asst.oracleGradeDraft;
+  if (!grade) return;
+
   let userQuery = '';
   for (let i = idx - 1; i >= 0; i--) {
     if (chatHistory[i].role === 'user') {
@@ -4049,25 +4095,39 @@ window.oracleGradeTurn = async function(turnId, grade) {
       break;
     }
   }
+
+  const noteEl = document.getElementById(oracleGradeNoteDomId(turnId));
+  const note = noteEl ? String(noteEl.value || '').trim() : '';
+
+  delete asst.oracleGradeDraft;
   asst.oracleGrade = grade;
+  asst.oracleGradeNote = note || '';
+
   ORACLE_GRADED_CORPUS.unshift({
     ts: new Date().toISOString(),
     turn_id: turnId,
     grade,
+    note: note || null,
     query: userQuery.slice(0, 600),
     response_snippet: (asst.content || '').slice(0, 900)
   });
   ORACLE_GRADED_CORPUS = ORACLE_GRADED_CORPUS.slice(0, 80);
   await persistOracleGraded();
   await persistChatHistory();
-  if (currentView === 'oracle') {
-    const el = $('#chatMessages');
-    if (el) {
-      el.innerHTML = chatHistory.map(m => renderChatMessage(m)).join('');
-      el.scrollTop = el.scrollHeight;
-    }
+
+  try {
+    const ratedBy = (SETTINGS.operator && (SETTINGS.operator.name || SETTINGS.operator.email)) || 'andre';
+    await fetch(`${SERVER}/api/hrmr`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ turn_id: turnId, grade, note: note || null, rated_by: ratedBy })
+    });
+  } catch (e) {
+    console.warn('[HRMR] server persist failed (local copy saved):', e);
   }
-  Toast.success('Grade saved — Oracle uses this in context');
+
+  rerenderOracleChatOnly();
+  Toast.success('Rating saved — Oracle context updated');
 };
 
 window.clearOracleChat = async function() {
@@ -4259,7 +4319,10 @@ function buildOracleDirectorContext() {
     s += 'Recent one-tap actions the rep chose (oldest→newest): ' + recentC.map(c => (c.label || c.id || '?') + ' [' + (c.action || '') + ']').join(' → ') + '\n';
   }
   if (recentG.length) {
-    s += 'Recent grades on Oracle replies (oldest→newest): ' + recentG.map(g => g.grade).join(', ') + '\n';
+    s += 'Recent grades on Oracle replies (oldest→newest), with rep notes where given:\n';
+    recentG.forEach(g => {
+      s += `  • ${g.grade}${g.note ? ': "' + String(g.note).replace(/"/g, "'").slice(0, 220) + (String(g.note).length > 220 ? '…' : '') + '"' : ' (no note)'}\n`;
+    });
   }
   s += 'Bias next-step suggestions toward actions they actually take; match depth/tone to their grade pattern (e.g. more concise if they rate verbosity poorly).\n[END DIRECTOR SIGNAL]';
   return s;
@@ -4452,8 +4515,8 @@ function renderSettings() {
           <span class="material-symbols-outlined" style="font-size:1.2rem;color:var(--green);">verified</span>
         </div>
         <div>
-          <h2 style="margin-bottom:0;font-size:1rem;">Freshness + pipeline overlap</h2>
-          <p style="font-size:0.68rem;color:var(--burgundy);opacity:0.5;margin-top:0.1rem;">Last Close sync time, plus how many <strong>live</strong> opportunity names also appear in the static <code style="font-size:0.6rem;">andre_pipeline.json</code> file — not a “data quality” grade.</p>
+          <h2 style="margin-bottom:0;font-size:1rem;">Freshness + source check</h2>
+          <p style="font-size:0.68rem;color:var(--burgundy);opacity:0.5;margin-top:0.1rem;">Last Close sync time and the current live source status for Andre's file-backed CRM snapshots.</p>
         </div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0.5rem;">
@@ -4462,19 +4525,19 @@ function renderSettings() {
           <div style="font-weight:700;font-size:0.82rem;">${lastSyncLabel}</div>
         </div>
         <div class="settings-connection-row" style="display:block;">
-          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Overlap status</div>
+          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Source status</div>
           <div style="font-weight:700;font-size:0.82rem;text-transform:capitalize;">${verification.status || 'unknown'}</div>
         </div>
         <div class="settings-connection-row" style="display:block;">
-          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Name match rate</div>
+          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Coverage</div>
           <div style="font-weight:700;font-size:0.82rem;">${verification.coverage_pct != null ? verification.coverage_pct + '%' : '—'}</div>
         </div>
         <div class="settings-connection-row" style="display:block;">
-          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Matched names</div>
+          <div style="font-size:0.62rem;color:var(--burgundy);opacity:0.6;">Checked rows</div>
           <div style="font-weight:700;font-size:0.82rem;">${verification.matched_deal_count != null && verification.live_unique_lead_names != null ? `${verification.matched_deal_count} / ${verification.live_unique_lead_names}` : verification.matched_deal_count != null ? String(verification.matched_deal_count) : '—'}</div>
         </div>
       </div>
-      <div class="settings-hint" style="margin-top:0.65rem;line-height:1.45;">Static file has <strong>${verification.static_pipeline_deal_names != null ? verification.static_pipeline_deal_names : '—'}</strong> deal names · Close returned <strong>${verification.live_opportunity_count != null ? verification.live_opportunity_count : '—'}</strong> active opportunities. Raise overlap by refreshing <code style="font-size:0.6rem;">andre_pipeline.json</code> from CRM or ignore if you only keep a subset in JSON.</div>
+      <div class="settings-hint" style="margin-top:0.65rem;line-height:1.45;">Close returned <strong>${verification.live_opportunity_count != null ? verification.live_opportunity_count : (LIVE.pipeline_snapshot?.total_active_opportunities ?? '—')}</strong> active opportunities. Pipeline and task intelligence are refreshed through <code style="font-size:0.6rem;">/api/live/*</code> from the Close-direct file tree.</div>
       ${verification.notes?.length ? `<div class="settings-hint" style="margin-top:0.5rem;">${verification.notes.map(n => String(n).replace(/</g, '&lt;')).join(' ')}</div>` : ''}
     </div>
 
@@ -4781,10 +4844,10 @@ function updateDataFreshness() {
   const matched = verification.matched_deal_count;
   const unique = verification.live_unique_lead_names;
   const coverage = pct != null
-    ? `${pct}% pipeline overlap${matched != null && unique != null ? ` (${matched}/${unique} names)` : ''}`
-    : 'overlap pending';
+    ? `${pct}% source coverage${matched != null && unique != null ? ` (${matched}/${unique} checked)` : ''}`
+    : 'source check ready';
   el.textContent = `${timeAgo(syncedAt)} sync · ${coverage}`;
-  el.title = 'Pipeline overlap: share of live Close opportunity names that also appear in data/andre_pipeline.json (after normalizing text). Low % is normal if the JSON is a curated snapshot, not a full CRM mirror — it is not a score of whether Close data is “valid.”';
+  el.title = 'Live source check: pipeline, task, and snapshot data now come from the Close-direct file tree through /api/live/* endpoints.';
   el.style.color = verification.status === 'critical'
     ? 'var(--coral)'
     : verification.status === 'warning'
@@ -4890,18 +4953,20 @@ async function boot() {
     console.log('[BOOT] Rendered from cache — fetching fresh data in background...');
   }
 
-  // Fetch fresh data from server
+  // Fetch fresh data from server.
+  // Pipeline + tasks + live snapshot are now served through /api/live/*.
+  // Everything else still comes from the data/ JSON files (file-watched).
   try {
     const [profile, kpis, pipeline, tasks, ops, templates, cadences, scenarios, live, queue, activity, voiceSummary, voiceReadme] = await Promise.all([
       loadJSON(`${SERVER}/data/andre_profile.json`),
       loadJSON(`${SERVER}/data/andre_kpis.json`),
-      loadJSON(`${SERVER}/data/andre_pipeline.json`),
-      loadJSON(`${SERVER}/data/andre_tasks.json`),
+      loadJSON(`${SERVER}/api/live/pipeline`),
+      loadJSON(`${SERVER}/api/live/tasks`),
       loadJSON(`${SERVER}/data/ops_tracker.json`),
       loadJSON(`${SERVER}/data/oracle_templates.json`),
       loadJSON(`${SERVER}/data/oracle_cadences.json`),
       loadJSON(`${SERVER}/data/oracle_scenarios.json`),
-      loadJSON(`${SERVER}/data/live_close_crm.json`),
+      loadJSON(`${SERVER}/api/live/snapshot`),
       loadJSON(`${SERVER}/data/action_queue.json`),
       loadJSON(`${SERVER}/data/activity_log.json`),
       loadText(`${SERVER}/data/andre_language_map/ANDRE_STRATEGIC_VOICE_SUMMARY.md`),
@@ -4912,7 +4977,7 @@ async function boot() {
     // Cache to IndexedDB for next load
     await IDB.cacheAll();
   } catch(e) {
-    console.warn('[BOOT] Server fetch failed, using cached data');
+    console.warn('[BOOT] Server fetch failed, using cached data', e);
   }
 
   await checkServer();
@@ -4941,19 +5006,22 @@ async function boot() {
 // specific file and re-render the current view.
 // This makes data/ the source of truth for all tools.
 // ═══════════════════════════════════════
+// Each slot can fetch from either a static data/ file (legacy)
+// or a live API endpoint (Close file-tree backed by default). The `path` field is
+// what gets fetched on refresh, so live slots stay live.
 const SLOT_MAP = {
-  profile:   { var: () => P,    set: v => { P = v; },    file: 'andre_profile.json' },
-  kpis:      { var: () => K,    set: v => { K = v; },    file: 'andre_kpis.json' },
-  pipeline:  { var: () => L,    set: v => { L = v; },    file: 'andre_pipeline.json' },
-  tasks:     { var: () => T,    set: v => { T = v; },    file: 'andre_tasks.json' },
-  ops:       { var: () => OPS,  set: v => { OPS = v; },  file: 'ops_tracker.json' },
-  templates: { var: () => OT,   set: v => { OT = v; },   file: 'oracle_templates.json' },
-  cadences:  { var: () => OC,   set: v => { OC = v; },   file: 'oracle_cadences.json' },
-  scenarios: { var: () => OS,   set: v => { OS = v; },   file: 'oracle_scenarios.json' },
-  live:      { var: () => LIVE, set: v => { LIVE = v; },  file: 'live_close_crm.json' },
-  queue:     { var: () => Q,    set: v => { Q = v; },     file: 'action_queue.json' },
-  settings:  { var: () => SETTINGS, set: v => { SETTINGS = v; }, file: 'settings.json' },
-  activity:  { var: () => ACT, set: v => { ACT = v; }, file: 'activity_log.json' },
+  profile:   { var: () => P,    set: v => { P = v; },    path: '/data/andre_profile.json' },
+  kpis:      { var: () => K,    set: v => { K = v; },    path: '/data/andre_kpis.json' },
+  pipeline:  { var: () => L,    set: v => { L = v; },    path: '/api/live/pipeline' },
+  tasks:     { var: () => T,    set: v => { T = v; },    path: '/api/live/tasks' },
+  ops:       { var: () => OPS,  set: v => { OPS = v; },  path: '/data/ops_tracker.json' },
+  templates: { var: () => OT,   set: v => { OT = v; },   path: '/data/oracle_templates.json' },
+  cadences:  { var: () => OC,   set: v => { OC = v; },   path: '/data/oracle_cadences.json' },
+  scenarios: { var: () => OS,   set: v => { OS = v; },   path: '/data/oracle_scenarios.json' },
+  live:      { var: () => LIVE, set: v => { LIVE = v; }, path: '/api/live/snapshot' },
+  queue:     { var: () => Q,    set: v => { Q = v; },    path: '/data/action_queue.json' },
+  settings:  { var: () => SETTINGS, set: v => { SETTINGS = v; }, path: '/data/settings.json' },
+  activity:  { var: () => ACT,  set: v => { ACT = v; },  path: '/data/activity_log.json' },
 };
 
 function connectDataStream() {
@@ -4969,19 +5037,35 @@ function connectDataStream() {
         reconnectDelay = 1000;
         return;
       }
-      const slot = SLOT_MAP[msg.slot];
-      if (!slot) return;
+      const slotCfg = SLOT_MAP[msg.slot];
+      if (!slotCfg) return;
 
       console.log(`[SSE] ${msg.file} changed — refreshing ${msg.slot}`);
       try {
         const fresh = msg.slot === 'settings'
           ? await fetch(`${SERVER}/settings`, { cache: 'no-store' }).then(r => r.json())
-          : await loadJSON(`${SERVER}/data/${msg.file}`);
-        slot.set(fresh);
+          : await loadJSON(`${SERVER}${slotCfg.path}`);
+        slotCfg.set(fresh);
         await IDB.set(msg.slot, fresh);
-        if (msg.slot === 'live') updateDataFreshness();
 
-        // Re-render current view if it uses this data
+        // Close sync mirrors live_close_crm.json -> SSE slot `live`. Refresh all three
+        // live slots so command/deals/actions stay aligned after each sweep.
+        if (msg.slot === 'live') {
+          const [p, t, snap] = await Promise.all([
+            loadJSON(`${SERVER}/api/live/pipeline`),
+            loadJSON(`${SERVER}/api/live/tasks`),
+            loadJSON(`${SERVER}/api/live/snapshot`),
+          ]);
+          SLOT_MAP.pipeline.set(p);
+          SLOT_MAP.tasks.set(t);
+          SLOT_MAP.live.set(snap);
+          await IDB.set('pipeline', p);
+          await IDB.set('tasks', t);
+          await IDB.set('live', snap);
+        }
+
+        updateDataFreshness();
+
         const viewDataDeps = {
           command: ['profile','kpis','pipeline','tasks','live','ops'],
           pipeline: ['pipeline','scenarios'],
@@ -4995,7 +5079,8 @@ function connectDataStream() {
           timeline: ['activity','pipeline','tasks','ops'],
         };
         const deps = viewDataDeps[currentView] || [];
-        if (deps.includes(msg.slot)) {
+        const touched = msg.slot === 'live' ? ['live', 'pipeline', 'tasks'] : [msg.slot];
+        if (touched.some(s => deps.includes(s))) {
           showView(currentView);
           Toast.info(`Data updated: ${msg.slot}`);
         }

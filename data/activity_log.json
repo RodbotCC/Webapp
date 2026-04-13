@@ -1663,6 +1663,748 @@
       "related": [
         "Mary McGahan"
       ]
+    },
+    {
+      "ts": "2026-04-11T00:01:25.645Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T01:06:17.479Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T01:06:18.208Z",
+      "type": "queue",
+      "category": "prepare_critical_alert_review",
+      "summary": "Queued: prepare critical alert review",
+      "details": "{\"lead_id\":\"lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI\",\"name\":\"Mary McGahan\",\"alert_type\":\"deal_lost\",\"requested_at\":\"2026-04-11T01:06:18.206Z\"}",
+      "related": [
+        "Mary McGahan"
+      ]
+    },
+    {
+      "ts": "2026-04-11T01:06:18.210Z",
+      "type": "automation",
+      "category": "critical_alert_review",
+      "summary": "Critical packet prepared for Mary McGahan",
+      "details": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+      "related": [
+        "Mary McGahan"
+      ]
+    },
+    {
+      "ts": "2026-04-11T01:06:18.213Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo\",\"name\":\"Gina Gallagher\",\"requested_at\":\"2026-04-11T01:06:18.211Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Gina Gallagher"
+      ]
+    },
+    {
+      "ts": "2026-04-11T01:06:18.424Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt\",\"name\":\"Alexandra Fruzzetti\",\"requested_at\":\"2026-04-11T01:06:18.420Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Alexandra Fruzzetti"
+      ]
+    },
+    {
+      "ts": "2026-04-11T01:06:18.618Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz\",\"name\":\"Yuni Colindres\",\"requested_at\":\"2026-04-11T01:06:18.614Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Yuni Colindres"
+      ]
+    },
+    {
+      "ts": "2026-04-11T01:22:16.001Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T01:38:16.070Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T01:54:16.073Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T02:10:16.113Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T02:26:16.134Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T02:42:16.119Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T02:58:16.166Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T03:14:16.213Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T03:30:16.241Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T03:46:16.230Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T04:02:16.213Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T04:18:16.251Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T04:34:16.271Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T04:35:40.682Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Hi—great to meet you. What are you planning: wedding, corporate, or a private celebration, and roughly how many guests?  \n\nNext step: reply with the event type + guest count, and I’ll tell you the fas...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T04:40:16.269Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T04:46:16.277Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T04:52:16.281Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T04:58:16.283Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:04:16.284Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:08:16.303Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo\",\"name\":\"Gina Gallagher\",\"requested_at\":\"2026-04-11T05:08:16.291Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Gina Gallagher"
+      ]
+    },
+    {
+      "ts": "2026-04-11T05:08:16.758Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt\",\"name\":\"Alexandra Fruzzetti\",\"requested_at\":\"2026-04-11T05:08:16.756Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Alexandra Fruzzetti"
+      ]
+    },
+    {
+      "ts": "2026-04-11T05:08:16.961Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz\",\"name\":\"Yuni Colindres\",\"requested_at\":\"2026-04-11T05:08:16.959Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Yuni Colindres"
+      ]
+    },
+    {
+      "ts": "2026-04-11T05:10:16.295Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:11:16.303Z",
+      "type": "queue",
+      "category": "prepare_critical_alert_review",
+      "summary": "Queued: prepare critical alert review",
+      "details": "{\"lead_id\":\"lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI\",\"name\":\"Mary McGahan\",\"alert_type\":\"deal_lost\",\"requested_at\":\"2026-04-11T05:11:16.296Z\"}",
+      "related": [
+        "Mary McGahan"
+      ]
+    },
+    {
+      "ts": "2026-04-11T05:11:16.309Z",
+      "type": "automation",
+      "category": "critical_alert_review",
+      "summary": "Critical packet prepared for Mary McGahan",
+      "details": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+      "related": [
+        "Mary McGahan"
+      ]
+    },
+    {
+      "ts": "2026-04-11T05:16:16.305Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:22:16.346Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:28:16.357Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:34:16.363Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:40:16.404Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:46:16.426Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:52:16.440Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T05:58:16.454Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:04:16.445Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:10:16.454Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:16:16.466Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:22:16.476Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:28:16.500Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:34:16.511Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:40:16.522Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:46:16.546Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:52:16.552Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T06:58:16.563Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T07:04:16.545Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T07:10:16.562Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T07:16:16.563Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-11T07:22:16.568Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:00:22.899Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:00:24.891Z",
+      "type": "queue",
+      "category": "prepare_critical_alert_review",
+      "summary": "Queued: prepare critical alert review",
+      "details": "{\"lead_id\":\"lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI\",\"name\":\"Mary McGahan\",\"alert_type\":\"deal_lost\",\"requested_at\":\"2026-04-13T17:00:24.888Z\"}",
+      "related": [
+        "Mary McGahan"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:00:24.893Z",
+      "type": "automation",
+      "category": "critical_alert_review",
+      "summary": "Critical packet prepared for Mary McGahan",
+      "details": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
+      "related": [
+        "Mary McGahan"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:00:24.895Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo\",\"name\":\"Gina Gallagher\",\"requested_at\":\"2026-04-13T17:00:24.894Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Gina Gallagher"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:00:25.149Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt\",\"name\":\"Alexandra Fruzzetti\",\"requested_at\":\"2026-04-13T17:00:25.148Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Alexandra Fruzzetti"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:00:25.387Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz\",\"name\":\"Yuni Colindres\",\"requested_at\":\"2026-04-13T17:00:25.382Z\",\"automation_reason\":\"Flagged by Close CRM — stalled or overdue for contact\"}",
+      "related": [
+        "Yuni Colindres"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:01:07.620Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Got it. Tell me what stage this is in and what you know about the event (date + guest count + type). Then paste the last message you sent the buyer (or the last email/thread), and I’ll draft the next ...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:01:47.550Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:07:06.116Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:09:35.119Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:14:45.384Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:26:37.150Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:26:38.977Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:27:58.400Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close → Supabase sync started",
+      "details": "Source: server.js direct API",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:27:59.651Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js direct API",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:31:20.491Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw\",\"name\":\"ETS EQUIPMENT\",\"requested_at\":\"2026-04-13T17:31:20.484Z\",\"automation_reason\":\"High-priority active opportunity\"}",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:31:21.138Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI\",\"name\":\"Mary McGahan\",\"requested_at\":\"2026-04-13T17:31:21.129Z\",\"automation_reason\":\"High-priority active opportunity\"}",
+      "related": [
+        "Mary McGahan"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:31:21.455Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY\",\"name\":\"Karla Velazquez\",\"requested_at\":\"2026-04-13T17:31:21.453Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Karla Velazquez"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:32:20.484Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:34:24.000Z",
+      "type": "ai",
+      "category": "analyze_deal",
+      "summary": "AI analyze deal",
+      "details": "ETS EQUIPMENT isn’t a “maybe” deal yet—it’s an early discovery that’s only close to closing because the buyer has heard of you (80% conf). What’s really happening is you’ve cleared awareness, but the ...",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-13T17:38:20.489Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:44:20.498Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:50:20.500Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T17:56:20.497Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T18:01:20.498Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "86 due now · 12 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T18:02:20.494Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T18:20:34.021Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T18:41:07.047Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T19:28:53.497Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T19:28:55.454Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "40 due now · 41 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T19:28:55.465Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "40 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T19:34:17.681Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T19:36:09.929Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js direct API",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T19:39:26.042Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
     }
   ]
 }

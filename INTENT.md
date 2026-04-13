@@ -16,9 +16,9 @@ The primary external signal for “what needs attention now” should track **Cl
 
 The long-term posture is **semi-autonomous**: the **salesperson commits**—sends, schedules, chooses the next move—while AI systems handle **automation, compression, fan-out, and aggregation**, presenting options and pressure in a structured way. “Geometry” here means preferences and constraints expressed as relationships (what contrasts with what, under a chosen comparator), not a black-box autopilot.
 
-## Where it evolves: ratio lattice (north star)
+## Where it evolves: focused automation
 
-A useful mental model for later functionality is a **ratio lattice**: many **oscillators** (deals, tasks, messages, cadences, models, policies), each with a **low-order preference** for interactions that are more relevant relative to a selected **comparator** (e.g. revenue at risk, time to event, relationship strength). Observing under different comparators yields different lattices of preference—this app becomes one **viewport** into that structure, wired for **plug-and-play** with your deeper automation stack as it lands.
+The next layer is practical and rep-facing: stronger Close sweeps, cleaner task intelligence, clearer daily memory, and human-approved outbound actions. The app should stay narrow enough for Andre to trust while still exposing stable hooks for the deeper automation stack as it lands.
 
 ## Why ship this UI now
 

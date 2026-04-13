@@ -1,0 +1,585 @@
+{
+  "summary": {
+    "total_pipeline": 70392,
+    "total_deals": 13,
+    "avg_deal_value": 5415,
+    "locked_in_revenue": 119508,
+    "at_risk_revenue": 49707,
+    "largest_deal": 11685,
+    "won_count": 17,
+    "lost_count": 70
+  },
+  "stages": [
+    {
+      "label": "⬜ 00. Prospect",
+      "count": 9,
+      "value": 40257,
+      "color": "#A8D8EA",
+      "emoji": "🔹"
+    },
+    {
+      "label": "📲 02. Setting Tasting Appointment",
+      "count": 2,
+      "value": 14670,
+      "color": "#A8D8EA",
+      "emoji": "🔹"
+    },
+    {
+      "label": "💼 01. Aware of us",
+      "count": 1,
+      "value": 11685,
+      "color": "#A8D8EA",
+      "emoji": "🔹"
+    },
+    {
+      "label": "🔥 03. Booked for Tasting",
+      "count": 1,
+      "value": 3780,
+      "color": "#A8D8EA",
+      "emoji": "🔹"
+    }
+  ],
+  "priority_distribution": {
+    "high": 5,
+    "medium": 8,
+    "low": 0
+  },
+  "risk_patterns": [
+    {
+      "flag": "Low confidence (<50%)",
+      "count": 11,
+      "severity": "warning"
+    },
+    {
+      "flag": "No event date set",
+      "count": 13,
+      "severity": "info"
+    }
+  ],
+  "high_value_deals": [
+    {
+      "id": "oppo_Ds6lt6sfKZ8cngRKS3IBRu1XqD3VDzfSp3PUjciTLy8",
+      "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "name": "ETS EQUIPMENT",
+      "value": 11685,
+      "stage": "💼 01. Aware of us",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 80,
+      "priority": "high",
+      "urgency": "urgent",
+      "status": "active",
+      "risk": [],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-02-25T16:44:20.500000+00:00",
+      "created_at": "2025-10-30T13:12:55.691000+00:00"
+    },
+    {
+      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
+      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "name": "Mary McGahan",
+      "value": 9000,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 80,
+      "priority": "high",
+      "urgency": "high",
+      "status": "active",
+      "risk": [],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-03-02T16:49:26.502000+00:00",
+      "created_at": "2025-11-17T05:07:54.238000+00:00"
+    },
+    {
+      "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
+      "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "name": "Karla Velazquez",
+      "value": 7245,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "high",
+      "urgency": "high",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-03-30T16:48:15.751000+00:00",
+      "created_at": "2026-03-28T16:23:10.680000+00:00"
+    },
+    {
+      "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
+      "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
+      "name": "Leslie Kearse Smith",
+      "value": 5670,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "high",
+      "urgency": "high",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-02T16:35:46.716000+00:00",
+      "created_at": "2026-03-20T18:16:17.677000+00:00"
+    },
+    {
+      "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
+      "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+      "name": "Ben Todd",
+      "value": 5103,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "high",
+      "urgency": "high",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-01T16:10:22.173000+00:00",
+      "created_at": "2026-04-01T11:37:53.188000+00:00"
+    },
+    {
+      "id": "oppo_FmnFVaiJSHLWUHylKf3K3VKXxJqrJV4NSOOGwMSvaEQ",
+      "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+      "name": "Edwin Portillo",
+      "value": 4914,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-03-20T01:13:37.005000+00:00",
+      "created_at": "2026-03-20T00:21:28.852000+00:00"
+    },
+    {
+      "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
+      "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+      "name": "Ari",
+      "value": 4095,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-02-19T00:38:28.951000+00:00",
+      "created_at": "2026-02-16T21:16:33.079000+00:00"
+    },
+    {
+      "id": "oppo_jQBuH8wJC2dG53iU4E9LIRCUU5ASSltuMwG0Y0NQhEl",
+      "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+      "name": "Rebecca Almeida",
+      "value": 3780,
+      "stage": "🔥 03. Booked for Tasting",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-03-16T15:20:30.077000+00:00",
+      "created_at": "2026-01-14T19:08:55.250000+00:00"
+    },
+    {
+      "id": "oppo_nWf8fup5t0yk5Pa2rDx4TMqcmKa18TghG0ts41Mse5g",
+      "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+      "name": "Jessica Molina",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-06T21:47:41.606000+00:00",
+      "created_at": "2026-04-06T01:43:21.086000+00:00"
+    },
+    {
+      "id": "oppo_ugTLwzSvl1bz2pQnvUT0fM0nfF5hZcparNIH3pl8vhQ",
+      "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+      "name": "Jennifer Jones",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-07T13:00:56.685000+00:00",
+      "created_at": "2026-04-06T22:14:06.741000+00:00"
+    },
+    {
+      "id": "oppo_UWRBCudnXDceSUK9MOlBHrJ7dNV1aOT0FYOCVe9n3NU",
+      "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+      "name": "Carolyn Boumila-Vega",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-09T01:31:06.836000+00:00",
+      "created_at": "2026-04-07T02:32:39.182000+00:00"
+    },
+    {
+      "id": "oppo_nQwFF0ZRSK9nGOn0h3EpduzDFw0Ap94xJYvRL5XcxyL",
+      "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+      "name": "Gabby Garcia Serrano",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-07T15:37:42.847000+00:00",
+      "created_at": "2026-04-07T12:07:37.859000+00:00"
+    }
+  ],
+  "all_deals": [
+    {
+      "id": "oppo_Ds6lt6sfKZ8cngRKS3IBRu1XqD3VDzfSp3PUjciTLy8",
+      "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "name": "ETS EQUIPMENT",
+      "value": 11685,
+      "stage": "💼 01. Aware of us",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 80,
+      "priority": "high",
+      "urgency": "urgent",
+      "status": "active",
+      "risk": [],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-02-25T16:44:20.500000+00:00",
+      "created_at": "2025-10-30T13:12:55.691000+00:00"
+    },
+    {
+      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
+      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "name": "Mary McGahan",
+      "value": 9000,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 80,
+      "priority": "high",
+      "urgency": "high",
+      "status": "active",
+      "risk": [],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-03-02T16:49:26.502000+00:00",
+      "created_at": "2025-11-17T05:07:54.238000+00:00"
+    },
+    {
+      "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
+      "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "name": "Karla Velazquez",
+      "value": 7245,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "high",
+      "urgency": "high",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-03-30T16:48:15.751000+00:00",
+      "created_at": "2026-03-28T16:23:10.680000+00:00"
+    },
+    {
+      "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
+      "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
+      "name": "Leslie Kearse Smith",
+      "value": 5670,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "high",
+      "urgency": "high",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-02T16:35:46.716000+00:00",
+      "created_at": "2026-03-20T18:16:17.677000+00:00"
+    },
+    {
+      "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
+      "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+      "name": "Ben Todd",
+      "value": 5103,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "high",
+      "urgency": "high",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-01T16:10:22.173000+00:00",
+      "created_at": "2026-04-01T11:37:53.188000+00:00"
+    },
+    {
+      "id": "oppo_FmnFVaiJSHLWUHylKf3K3VKXxJqrJV4NSOOGwMSvaEQ",
+      "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+      "name": "Edwin Portillo",
+      "value": 4914,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-03-20T01:13:37.005000+00:00",
+      "created_at": "2026-03-20T00:21:28.852000+00:00"
+    },
+    {
+      "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
+      "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+      "name": "Ari",
+      "value": 4095,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-02-19T00:38:28.951000+00:00",
+      "created_at": "2026-02-16T21:16:33.079000+00:00"
+    },
+    {
+      "id": "oppo_jQBuH8wJC2dG53iU4E9LIRCUU5ASSltuMwG0Y0NQhEl",
+      "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+      "name": "Rebecca Almeida",
+      "value": 3780,
+      "stage": "🔥 03. Booked for Tasting",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-03-16T15:20:30.077000+00:00",
+      "created_at": "2026-01-14T19:08:55.250000+00:00"
+    },
+    {
+      "id": "oppo_nWf8fup5t0yk5Pa2rDx4TMqcmKa18TghG0ts41Mse5g",
+      "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+      "name": "Jessica Molina",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-06T21:47:41.606000+00:00",
+      "created_at": "2026-04-06T01:43:21.086000+00:00"
+    },
+    {
+      "id": "oppo_ugTLwzSvl1bz2pQnvUT0fM0nfF5hZcparNIH3pl8vhQ",
+      "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+      "name": "Jennifer Jones",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-07T13:00:56.685000+00:00",
+      "created_at": "2026-04-06T22:14:06.741000+00:00"
+    },
+    {
+      "id": "oppo_UWRBCudnXDceSUK9MOlBHrJ7dNV1aOT0FYOCVe9n3NU",
+      "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+      "name": "Carolyn Boumila-Vega",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-09T01:31:06.836000+00:00",
+      "created_at": "2026-04-07T02:32:39.182000+00:00"
+    },
+    {
+      "id": "oppo_nQwFF0ZRSK9nGOn0h3EpduzDFw0Ap94xJYvRL5XcxyL",
+      "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+      "name": "Gabby Garcia Serrano",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-07T15:37:42.847000+00:00",
+      "created_at": "2026-04-07T12:07:37.859000+00:00"
+    },
+    {
+      "id": "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW",
+      "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "name": "Ju",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-07T21:07:38.396000+00:00",
+      "created_at": "2026-04-07T20:50:24.337000+00:00"
+    }
+  ],
+  "_meta": {
+    "source": "close-api:file-tree",
+    "generated_at": "2026-04-13T19:39:26.833Z",
+    "note": "Andre-focused file-backed pipeline. Supabase is optional, not required."
+  }
+}

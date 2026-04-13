@@ -1,11 +1,21 @@
 # Comeketo Sales Command Center — Data Directory Schema
 
-> **This directory is the source of truth.**
-> Any tool, AI agent, CLI script, or manual edit that writes valid JSON here
-> will be picked up automatically by the running server and pushed live to
-> Andre's dashboard via Server-Sent Events (SSE).
+## CRM operational truth: Close + focused file tree
 
-## How It Works
+**Current production path for Andre testing:** Close CRM is swept directly by `server.js`, then normalized into focused JSON snapshots in this directory. The app reads those snapshots through **`/api/live/*`**.
+
+Supabase is optional future infrastructure, not required for the Webapp to update pipeline/tasks. Scraped **`andre_pipeline.json`** / **`andre_tasks.json`** are retired (see `data/archive/`).
+
+---
+
+## File-backed data (`data/` JSON)
+
+> **For these rows in the table below**, `data/` remains the source of truth and SSE applies.
+
+Any tool, AI agent, CLI script, or manual edit that writes valid JSON here
+will be picked up by the running server and pushed live via Server-Sent Events (SSE).
+
+### How file watch works
 
 1. A file in `data/` is created or modified
 2. The server's `fs.watch` detects the change
@@ -20,10 +30,13 @@
 | File | Slot ID | Used By Views | Description |
 |------|---------|---------------|-------------|
 | `andre_profile.json` | `profile` | Command, Coaching | Andre's bio, strengths, development areas, conversation insights |
-| `andre_kpis.json` | `kpis` | Command, Performance | Full KPI scoreboard, call activity, leading/lagging indicators |
-| `andre_pipeline.json` | `pipeline` | Command, Pipeline, Deals | All deals, stages, high-value portfolio, risk patterns, priority distribution |
-| `andre_tasks.json` | `tasks` | Command, Actions, Coaching, Automation | Task buckets (today/48h/3-7d/watch), bottlenecks, open loops, coaching plan |
+| `andre_kpis.json` | `kpis` | Command, Performance | KPI scoreboard / transcript analysis baseline (not live CRM metrics) |
+| `andre_pipeline.json` | — | — | **Archived** — use `/api/live/pipeline` |
+| `andre_tasks.json` | — | — | **Archived** — use `/api/live/tasks` |
+| `live_pipeline.json` | `pipeline` | Command, Pipeline, Deals | Close-direct file-backed Andre pipeline snapshot |
+| `live_tasks.json` | `tasks` | Command, Actions, Coaching, Automation | Close-direct file-backed task intelligence snapshot |
 | `ops_tracker.json` | `ops` | Automation, Timeline, Command | Daily operating memory: what happened, what we learned, what we added, what it affected, whether it helped, bottlenecks |
+| `andre_close_focus/snapshot.json` | `andre_focus` | Focused CRM intake | Andre-only focused source pack derived from the Close sidebar folders/views that matter most |
 | `oracle_templates.json` | `templates` | Coaching, Automation | Call scripts, email templates, SMS templates |
 | `oracle_cadences.json` | `cadences` | Coaching, Automation | Cadence protocols, reality packets, voice guide |
 | `oracle_scenarios.json` | `scenarios` | Pipeline, Performance, Deals | Scenario families, objection families, deal-oracle mapping, coaching intel |
@@ -64,7 +77,7 @@
 }
 ```
 
-### andre_pipeline.json
+### live_pipeline.json
 ```json
 {
   "summary": {
@@ -135,7 +148,7 @@
 }
 ```
 
-### andre_tasks.json
+### live_tasks.json
 ```json
 {
   "task_summary": { "total": "number", "today": "number" },
@@ -273,11 +286,11 @@ The file watcher will automatically pick up any `.json` file that's mapped in `F
 To update Andre's dashboard from outside the app:
 
 ```bash
-# Example: Update a deal's confidence
-cat data/andre_pipeline.json | jq '.all_deals[0].confidence = 95' > data/andre_pipeline.json
+# Example: Inspect the current live pipeline snapshot
+jq '.summary' data/live_pipeline.json
 
-# Example: Add a task
-cat data/andre_tasks.json | jq '.tasks.today += [{"lead":"New Corp","action":"Send proposal","urgency":"high","icon":"send"}]' > data/andre_tasks.json
+# Example: Inspect the current live task buckets
+jq '.task_summary' data/live_tasks.json
 
 # Example: Add an action to the queue
 cat data/action_queue.json | jq '.pending += [{"id":"manual-001","type":"follow_up","lead_name":"Big Client","details":"Check in on proposal","created_at":"2026-04-09T12:00:00Z","priority":"high"}]' > data/action_queue.json

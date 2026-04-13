@@ -1,128 +1,159 @@
 {
-  "generated_at": "2026-04-10T04:35:19.252Z",
-  "headline": "6 tasks today · 50 need attention · 0 closing this week",
+  "generated_at": "2026-04-13T19:28:55.461Z",
+  "headline": "40 tasks today · 13 need attention · 0 closing this week",
   "send_today": [
     {
-      "lead": "Meghan Pingeton",
-      "value": 3620.7,
-      "action": "Contract/deposit confirmation — call Matt, walk through contract",
-      "category": "contracting_or_deposit",
-      "urgency": "urgent",
-      "icon": "gavel"
-    },
-    {
-      "lead": "Sue Tetuan Tavares",
+      "id": "task_jlSZo0GLF4GMEWsHBwdIYHeHeuznb14R8NE0f80zHtG",
+      "lead": "Gabrieli Reilly",
+      "lead_id": "lead_2ekODGbXRancziKWgZDb2mb7nm0OwYdE5LaHr7myzOQ",
       "value": null,
-      "action": "Guest count scope + budget rescope — send rescoped quote TODAY",
-      "category": "quote_outstanding",
+      "action": "Facebook Lead Ads: Gabrieli Reilly\nCampaign: DOM'S FACELESS",
+      "category": "other",
+      "task_type": "other",
+      "is_admin": false,
       "urgency": "urgent",
-      "icon": "request_quote"
+      "icon": "check_circle",
+      "due_at": "2026-04-13",
+      "days_until": 0
     },
     {
-      "lead": "Cheryl Rank",
-      "value": 3500,
-      "action": "Tasting decision — same-day follow-up call",
-      "category": "tasting_pending",
+      "id": "task_dKNSzJYhHvMWiZJNBc101SAqz7D5aZ9gdEgJ52Iq4X3",
+      "lead": "Karla Velazquez",
+      "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "value": null,
+      "action": "Get her on the tasting soon",
+      "category": "meeting",
+      "task_type": "meeting",
+      "is_admin": false,
       "urgency": "urgent",
-      "icon": "local_bar"
+      "icon": "event",
+      "due_at": "2026-04-13",
+      "days_until": 0
     },
     {
-      "lead": "Mayara Morgana Silva",
-      "value": 1500,
-      "action": "Event within 7 days — confirm details and logistics",
-      "category": "active_pipeline",
-      "urgency": "high",
-      "icon": "event_upcoming"
+      "id": "task_O2FtMD4bkS8rlLwKY1uwzEMMfqP3fht1WoxoqpzjHzq",
+      "lead": "Ivy Elien",
+      "lead_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+      "value": null,
+      "action": "Facebook Lead Ads: Ivy Elien\nCampaign: 3 STILLS",
+      "category": "other",
+      "task_type": "other",
+      "is_admin": false,
+      "urgency": "urgent",
+      "icon": "check_circle",
+      "due_at": "2026-04-13",
+      "days_until": 0
     },
     {
-      "lead": "Francisca Lopez",
-      "value": 1200,
-      "action": "Event within 7 days — confirm details and logistics",
-      "category": "active_pipeline",
-      "urgency": "high",
-      "icon": "event_upcoming"
+      "id": "task_3VMWWGlvGqwwSrhDb8oKNNtTi0wHf98tMPhQWMpmbdt",
+      "lead": "Anna Julia Duarte",
+      "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+      "value": null,
+      "action": "[OOPS] Please add a task to your most recently updated lead",
+      "category": "other",
+      "task_type": "other",
+      "is_admin": false,
+      "urgency": "urgent",
+      "icon": "check_circle",
+      "due_at": "2026-04-13",
+      "days_until": 0
     },
     {
-      "lead": "Edwin Portillo",
-      "value": 1000,
-      "action": "Event within 7 days — confirm details and logistics",
-      "category": "active_pipeline",
-      "urgency": "high",
-      "icon": "event_upcoming"
+      "id": "task_P9q5e1biaaUlqYDvzwqdYTC8n9WQfSspPnbErW3CSr0",
+      "lead": "Kaitlin Baptista",
+      "lead_id": "lead_roB3DisnPxQPFdwy8LFiJo5SE7BnTTUCn3F7rBHGFAj",
+      "value": null,
+      "action": "[OOPS] Please add a task to your most recently updated lead",
+      "category": "other",
+      "task_type": "other",
+      "is_admin": false,
+      "urgency": "urgent",
+      "icon": "check_circle",
+      "due_at": "2026-04-13",
+      "days_until": 0
+    },
+    {
+      "id": "task_ID8z2VdDEvL2ssvD84rtjEIbMumN3ciHhROftgxGHT0",
+      "lead": "Alex Ayala",
+      "lead_id": "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+      "value": null,
+      "action": "Facebook Lead Ads: Alex Ayala\nCampaign: RODS WEDDING & FACELESS",
+      "category": "other",
+      "task_type": "other",
+      "is_admin": false,
+      "urgency": "urgent",
+      "icon": "check_circle",
+      "due_at": "2026-04-13",
+      "days_until": 0
     }
   ],
   "needs_attention": [
     {
-      "id": "oppo_IKXLeMvHAIR25U7bAW4heyp81kysk4ZDXxp3WEsWJzI",
-      "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
-      "name": "Gina Gallagher",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "id": "oppo_Ds6lt6sfKZ8cngRKS3IBRu1XqD3VDzfSp3PUjciTLy8",
+      "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "name": "ETS EQUIPMENT",
+      "value": 11685,
+      "stage": "💼 01. Aware of us",
+      "confidence": 80,
+      "close_at": null,
+      "urgency": "urgent",
+      "reason": "High-priority active opportunity"
     },
     {
-      "id": "oppo_gVRWGmwXN72UU79DJ8apmPfokgCKnIVrdv7jWE1dsDY",
-      "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
-      "name": "Alexandra Fruzzetti",
-      "value": 1323,
+      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
+      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "name": "Mary McGahan",
+      "value": 9000,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "confidence": 80,
+      "close_at": null,
+      "urgency": "high",
+      "reason": "High-priority active opportunity"
+    },
+    {
+      "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
+      "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "name": "Karla Velazquez",
+      "value": 7245,
       "stage": "⬜ 00. Prospect",
       "confidence": 20,
+      "close_at": null,
       "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "reason": "Low confidence - at risk"
     },
     {
-      "id": "oppo_kv52oYlo7ZQnzgqjlWNBWwlq9A1stSznlBM6UsxaANX",
-      "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
-      "name": "Yuni Colindres",
-      "value": 1575,
+      "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
+      "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
+      "name": "Leslie Kearse Smith",
+      "value": 5670,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "high",
+      "reason": "Low confidence - at risk"
+    },
+    {
+      "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
+      "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+      "name": "Ben Todd",
+      "value": 5103,
       "stage": "⬜ 00. Prospect",
       "confidence": 20,
+      "close_at": null,
       "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_axlG1EJZJK5uKw0u1Crqf0nsmNHkMDsimPaPfbDCLKi",
-      "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
-      "name": "Williams Brown",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW",
-      "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
-      "name": "Ju",
-      "value": 3780,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "reason": "Low confidence - at risk"
     }
   ],
   "closing_soon": [],
   "pipeline_summary": {
-    "total_pipeline": 109987.82,
-    "locked_in_revenue": 63690.82,
-    "at_risk_revenue": 46297,
-    "total_deals": 37,
-    "active_deals": 26,
-    "won_deals": 11,
-    "avg_deal_value": 2972.64,
-    "largest_deal": 14369
+    "total_pipeline": 70392,
+    "total_deals": 13,
+    "avg_deal_value": 5415,
+    "locked_in_revenue": 119508,
+    "at_risk_revenue": 49707,
+    "largest_deal": 11685,
+    "won_count": 17,
+    "lost_count": 70
   },
-  "alerts": [
-    {
-      "type": "deal_lost",
-      "severity": "critical",
-      "name": "Mary McGahan",
-      "value": 9000,
-      "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
-      "action_required": "Move opportunity to Lost status in Close CRM immediately.",
-      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI"
-    }
-  ]
+  "alerts": []
 }

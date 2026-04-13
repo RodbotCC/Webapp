@@ -1,0 +1,22 @@
+{
+  "source": "screenshot-derived-andre-close-focus",
+  "captured_on": "2026-04-13",
+  "group": "ANDRE",
+  "notes": [
+    "This is the focused CRM source pack for Andre.",
+    "Story/Storie are not part of this directory or source contract.",
+    "Labels come from the Close sidebar screenshot and should stay stable even if the derivation logic improves."
+  ],
+  "views": [
+    { "id": "todays_leads", "label": "01. Today's Leads", "kind": "task+opportunity" },
+    { "id": "day_1_5_cadence", "label": "02. Day 1-5 Cadence", "kind": "opportunity" },
+    { "id": "day_6_10_cadence", "label": "03. Day 6-10 Cadence", "kind": "opportunity" },
+    { "id": "opened_email_24h", "label": "04. Opened Email (24hr)", "kind": "activity+opportunity" },
+    { "id": "no_connect_made", "label": "05. No Connect Made", "kind": "opportunity" },
+    { "id": "needs_response", "label": "06. Needs Response", "kind": "activity+opportunity" },
+    { "id": "booked_tastings", "label": "07. Booked Tastings", "kind": "opportunity" },
+    { "id": "long_term_dormant", "label": "08. Long-Term / Dormant", "kind": "opportunity" },
+    { "id": "all_dormant", "label": "09. All Dormant", "kind": "opportunity" },
+    { "id": "all_other_followup", "label": "10. All Other Followup", "kind": "opportunity" }
+  ]
+}

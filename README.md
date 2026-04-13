@@ -18,6 +18,8 @@ This repo is scoped to the Comeketo Sales Command Center only.
 - `data/settings.local.json` is machine-local and ignored by git
 - Browser-side AI chat and AI outputs are cached in IndexedDB
 - `data/ops_tracker.json` is the daily operating memory for this app
+- `data/andre_close_focus/` is the focused Andre-only CRM source pack derived from the Close sidebar views we care about most
+- Live pipeline/task intelligence now defaults to `CRM_SOURCE=file-tree`: the server sweeps Close directly and writes `data/live_pipeline.json`, `data/live_tasks.json`, `data/live_close_crm.json`, and `data/andre_close_focus/snapshot.json`
 
 ## Hosting (team testing & updates)
 

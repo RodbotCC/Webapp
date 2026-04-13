@@ -9,6 +9,11 @@ const fs      = require('fs');
 const path    = require('path');
 const https   = require('https');
 
+// ─── Live data helpers (file-tree first, Supabase optional) ─────────────────────
+const sb         = require('./lib/supabase');
+const liveSync   = require('./lib/liveSync');
+const liveQ      = require('./lib/liveQueries');
+
 const app  = express();
 const PORT = process.env.PORT || 3141;
 const DATA = process.env.DATA_DIR
@@ -28,6 +33,7 @@ const CLOSE_API_KEY  = process.env.CLOSE_API_KEY;
 const CLOSE_USER_ID  = process.env.CLOSE_USER_ID;
 const CLOSE_BASE     = 'https://api.close.com/api/v1';
 const CLOSE_AUTH     = Buffer.from(`${CLOSE_API_KEY}:`).toString('base64');
+const CRM_SOURCE     = (process.env.CRM_SOURCE || 'file-tree').toLowerCase();
 
 // Allow all origins including null (file:// protocol)
 app.use(cors({
@@ -47,11 +53,15 @@ app.use(express.static(__dirname));
 // here triggers an SSE push → the frontend refetches.
 // ═══════════════════════════════════════════════════
 const sseClients = new Set();
+// NOTE: andre_pipeline.json and andre_tasks.json have been retired.
+// Pipeline + tasks now come through /api/live/pipeline and /api/live/tasks.
+// The default source is Close -> data/live_*.json. Supabase remains an
+// optional future mode instead of a requirement for Andre testing.
 const FILE_TO_SLOT = {
   'andre_profile.json':    'profile',
   'andre_kpis.json':       'kpis',
-  'andre_pipeline.json':   'pipeline',
-  'andre_tasks.json':      'tasks',
+  'live_pipeline.json':     'pipeline',
+  'live_tasks.json':        'tasks',
   'ops_tracker.json':      'ops',
   'oracle_templates.json': 'templates',
   'oracle_cadences.json':  'cadences',
@@ -86,10 +96,13 @@ function broadcastChange(filename) {
 
 // Watch the data directory
 try {
-  fs.watch(DATA, { persistent: true }, (eventType, filename) => {
+  const dataWatcher = fs.watch(DATA, { persistent: true }, (eventType, filename) => {
     if (filename && filename.endsWith('.json')) {
       broadcastChange(filename);
     }
+  });
+  dataWatcher.on('error', (e) => {
+    console.warn('[WATCH] Data watcher error (live app continues; refresh manually if needed):', e.message);
   });
   console.log(`[WATCH] Watching ${DATA} for changes`);
 } catch(e) {
@@ -313,6 +326,15 @@ function closeRequest(method, endpoint, body = null) {
 // ─── Load / save JSON data files ────────────────────
 function readData(file)      { return JSON.parse(fs.readFileSync(path.join(DATA, file), 'utf8')); }
 function writeData(file, obj){ fs.writeFileSync(path.join(DATA, file), JSON.stringify(obj, null, 2)); }
+function readDataIfExists(file, fallback) {
+  const target = path.join(DATA, file);
+  if (!fs.existsSync(target)) return fallback;
+  try { return readData(file); }
+  catch(e) {
+    console.warn(`[DATA] Failed to read ${file}:`, e.message);
+    return fallback;
+  }
+}
 
 function deepMerge(target, source) {
   if (!source || typeof source !== 'object' || Array.isArray(source)) return target;
@@ -402,6 +424,52 @@ function getCloseUserId() {
 
 function normText(value) {
   return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+}
+
+function daysUntil(iso) {
+  if (!iso) return null;
+  const ms = new Date(iso).getTime() - Date.now();
+  if (Number.isNaN(ms)) return null;
+  return Math.ceil(ms / (1000 * 60 * 60 * 24));
+}
+
+function fallbackOpportunityUrgency(opp) {
+  const value = Number(opp.value || 0);
+  const confidence = Number(opp.confidence || 0);
+  const days = daysUntil(opp.event_date || opp.close_date || opp.close_at);
+  if (value >= 10000 && (confidence >= 80 || (days != null && days <= 7))) return 'urgent';
+  if (value >= 5000) return 'high';
+  if (confidence > 0 && confidence < 50) return 'medium';
+  return 'low';
+}
+
+function fallbackTaskUrgency(task) {
+  const cls = liveSync.classifyTaskText(task.text || '');
+  if (cls.is_admin || cls.task_type === 'follow_up') return 'low';
+  const days = daysUntil(task.date || task.due_at);
+  if (days == null) return 'low';
+  if (days <= 0) return 'urgent';
+  if (days <= 2) return 'high';
+  if (days <= 7) return 'medium';
+  return 'low';
+}
+
+async function closePaginate(endpoint, { limit = 100, safety = 50 } = {}) {
+  const rows = [];
+  let cursor = null;
+  let remaining = safety;
+  do {
+    const joiner = endpoint.includes('?') ? '&' : '?';
+    const cursorParam = cursor ? `&_cursor=${encodeURIComponent(cursor)}` : '';
+    const r = await closeRequest('GET', `${endpoint}${joiner}_limit=${limit}${cursorParam}`);
+    if (r.status < 200 || r.status >= 300) {
+      throw new Error(`Close ${endpoint} returned ${r.status}`);
+    }
+    rows.push(...(r.body?.data || []));
+    cursor = r.body?.cursor || null;
+    remaining -= 1;
+  } while (cursor && remaining > 0);
+  return rows;
 }
 
 function defaultAutomationState() {
@@ -577,112 +645,383 @@ app.get('/close/me', async (req, res) => {
   } catch(e) { res.status(500).json({ error: e.message }); }
 });
 
+function taskIconForType(type) {
+  return {
+    call: 'call',
+    email: 'mail',
+    sms: 'sms',
+    meeting: 'event',
+    follow_up: 'reply',
+    admin: 'task_alt',
+    other: 'check_circle',
+  }[type] || 'check_circle';
+}
+
+function buildPipelineShapeFromClose(opportunities) {
+  const rows = (opportunities || []).map(o => {
+    const value = o.value != null ? Math.round(Number(o.value || 0) / 100) : 0;
+    const statusType = liveSync.normalizeStatusType(o.status_type, o.status_label);
+    const deal = {
+      id: o.id,
+      lead_id: o.lead_id,
+      name: o.lead_name || 'Unknown',
+      value,
+      stage: o.status_label || '',
+      event: '',
+      venue: '',
+      guests: '',
+      confidence: Number(o.confidence || 0),
+      priority: 'low',
+      urgency: 'low',
+      status: statusType,
+      risk: [],
+      close_at: o.close_at || null,
+      event_date: o.close_at || null,
+      updated_at: o.date_updated || null,
+      created_at: o.date_created || null,
+    };
+    deal.urgency = fallbackOpportunityUrgency(deal);
+    deal.priority = deal.urgency === 'urgent' ? 'high' : deal.urgency;
+    deal.risk = deal.confidence > 0 && deal.confidence < 50 ? ['low confidence'] : [];
+    return deal;
+  });
+
+  const active = rows.filter(d => d.status === 'active');
+  const won = rows.filter(d => d.status === 'won');
+  const lost = rows.filter(d => d.status === 'lost');
+  const sumValue = arr => arr.reduce((sum, d) => sum + Number(d.value || 0), 0);
+  const stageMap = new Map();
+  for (const d of active) {
+    const label = d.stage || 'Unstaged';
+    if (!stageMap.has(label)) stageMap.set(label, { label, count: 0, value: 0, color: '#A8D8EA', emoji: '🔹' });
+    const stage = stageMap.get(label);
+    stage.count += 1;
+    stage.value += d.value || 0;
+  }
+
+  const all_deals = active.sort((a, b) => (b.value || 0) - (a.value || 0));
+  const priority_distribution = { high: 0, medium: 0, low: 0 };
+  for (const d of all_deals) {
+    if (d.urgency === 'urgent' || d.urgency === 'high') priority_distribution.high += 1;
+    else if (d.urgency === 'medium') priority_distribution.medium += 1;
+    else priority_distribution.low += 1;
+  }
+  const lowConf = all_deals.filter(d => d.confidence > 0 && d.confidence < 50).length;
+  const noEventDate = all_deals.filter(d => !d.event_date).length;
+  const risk_patterns = [];
+  if (lowConf) risk_patterns.push({ flag: 'Low confidence (<50%)', count: lowConf, severity: 'warning' });
+  if (noEventDate) risk_patterns.push({ flag: 'No event date set', count: noEventDate, severity: 'info' });
+
+  return {
+    summary: {
+      total_pipeline: sumValue(active),
+      total_deals: active.length,
+      avg_deal_value: active.length ? Math.round(sumValue(active) / active.length) : 0,
+      locked_in_revenue: sumValue(won),
+      at_risk_revenue: sumValue(active.filter(d => d.confidence > 0 && d.confidence < 50)),
+      largest_deal: Math.max(0, ...active.map(d => Number(d.value || 0))),
+      won_count: won.length,
+      lost_count: lost.length,
+    },
+    stages: Array.from(stageMap.values()).sort((a, b) => b.value - a.value),
+    priority_distribution,
+    risk_patterns,
+    high_value_deals: all_deals.slice(0, 12),
+    all_deals,
+    _meta: {
+      source: 'close-api:file-tree',
+      generated_at: new Date().toISOString(),
+      note: 'Andre-focused file-backed pipeline. Supabase is optional, not required.',
+    },
+  };
+}
+
+function buildTasksShapeFromClose(tasks) {
+  const buckets = { today: [], within_48h: [], within_3_7d: [], watch_list: [] };
+  for (const t of (tasks || [])) {
+    if (t.is_complete) continue;
+    const cls = liveSync.classifyTaskText(t.text || '');
+    const days = daysUntil(t.date || t.due_at);
+    const urgency = fallbackTaskUrgency(t);
+    const item = {
+      id: t.id,
+      lead: t.lead_name || 'Unknown',
+      lead_id: t.lead_id || null,
+      value: null,
+      action: t.text || '',
+      category: cls.task_type,
+      task_type: cls.task_type,
+      is_admin: cls.is_admin,
+      urgency,
+      icon: taskIconForType(cls.task_type),
+      due_at: t.date || t.due_at || null,
+      days_until: days,
+    };
+    if (days == null || days > 7) buckets.watch_list.push(item);
+    else if (days <= 0) buckets.today.push(item);
+    else if (days <= 2) buckets.within_48h.push(item);
+    else buckets.within_3_7d.push(item);
+  }
+  const rank = { urgent: 0, high: 1, medium: 2, low: 3 };
+  Object.values(buckets).forEach(bucket => bucket.sort((a, b) =>
+    (rank[a.urgency] ?? 9) - (rank[b.urgency] ?? 9) || ((a.days_until ?? 999) - (b.days_until ?? 999))
+  ));
+  return {
+    task_summary: {
+      total: buckets.today.length + buckets.within_48h.length + buckets.within_3_7d.length + buckets.watch_list.length,
+      today: buckets.today.length,
+      within_48h: buckets.within_48h.length,
+      within_3_7d: buckets.within_3_7d.length,
+      watch_list: buckets.watch_list.length,
+    },
+    tasks: buckets,
+    bottlenecks: [],
+    open_loops: [],
+    coaching_plan: {},
+    automation_hooks: {},
+    _meta: {
+      source: 'close-api:file-tree',
+      generated_at: new Date().toISOString(),
+      note: 'Andre-focused file-backed task intelligence. Supabase is optional, not required.',
+    },
+  };
+}
+
+function buildLiveSnapshotFromPipeline(pipeline, syncSource) {
+  const all = pipeline.all_deals || [];
+  const now = Date.now();
+  const sevenDays = now + 7 * 24 * 60 * 60 * 1000;
+  const closing_soon = all
+    .filter(d => d.close_at && new Date(d.close_at).getTime() >= now && new Date(d.close_at).getTime() <= sevenDays)
+    .slice(0, 50)
+    .map(d => ({
+      id: d.id,
+      lead_id: d.lead_id,
+      name: d.name,
+      value: d.value,
+      stage: d.stage,
+      confidence: d.confidence,
+      close_at: d.close_at,
+      days_until_close: daysUntil(d.close_at),
+      urgency: d.urgency,
+      note: `${d.confidence || 0}% confidence - ${d.stage || ''}`,
+    }));
+  const needs_attention = all
+    .filter(d => d.urgency === 'urgent' || d.urgency === 'high' || (d.confidence > 0 && d.confidence < 50))
+    .slice(0, 50)
+    .map(d => ({
+      id: d.id,
+      lead_id: d.lead_id,
+      name: d.name,
+      value: d.value,
+      stage: d.stage,
+      confidence: d.confidence,
+      close_at: d.close_at,
+      urgency: d.urgency,
+      reason: d.confidence > 0 && d.confidence < 50 ? 'Low confidence - at risk' : 'High-priority active opportunity',
+    }));
+  const top_opportunities = all.slice(0, 10).map(d => ({
+    id: d.id,
+    lead_id: d.lead_id,
+    name: d.name,
+    value: d.value,
+    stage: d.stage,
+    confidence: d.confidence,
+    close_at: d.close_at,
+  }));
+  return {
+    _meta: {
+      last_synced: new Date().toISOString(),
+      synced_by: syncSource,
+      source: 'close-api:file-tree',
+    },
+    pipeline_snapshot: {
+      total_active_opportunities: pipeline.summary?.total_deals || all.length,
+      needs_attention_count: needs_attention.length,
+      closing_this_week: closing_soon.length,
+      top_deal_value: top_opportunities[0]?.value || 0,
+      top_deal_name: top_opportunities[0]?.name || '—',
+    },
+    needs_attention,
+    closing_soon,
+    top_opportunities,
+    alerts: [],
+    verification: {
+      checked_at: new Date().toISOString(),
+      status: 'ok',
+      metric: 'close_api_file_tree',
+      coverage_pct: 100,
+      notes: ['Close direct file-tree source is active. Supabase is not required for this path.'],
+    },
+  };
+}
+
+function buildAndreFocusFromFileShapes(pipeline, tasks, live) {
+  const defs = readDataIfExists('andre_close_focus/view_definitions.json', { views: [] });
+  const all = pipeline.all_deals || [];
+  const taskLeadIdsDueToday = new Set((tasks.tasks?.today || []).map(t => t.lead_id).filter(Boolean));
+  const buckets = {
+    todays_leads: [],
+    day_1_5_cadence: [],
+    day_6_10_cadence: [],
+    opened_email_24h: [],
+    no_connect_made: [],
+    needs_response: [],
+    booked_tastings: [],
+    long_term_dormant: [],
+    all_dormant: [],
+    all_other_followup: [],
+  };
+  const toItem = (d, reason) => ({
+    id: d.id,
+    lead_id: d.lead_id,
+    name: d.name,
+    value: d.value || 0,
+    stage: d.stage || '',
+    confidence: d.confidence || 0,
+    urgency: d.urgency || 'low',
+    close_at: d.close_at || null,
+    updated_at: d.updated_at || null,
+    reason,
+  });
+  for (const d of all) {
+    const stage = normText(d.stage || '');
+    const age = d.created_at ? Math.floor((Date.now() - new Date(d.created_at).getTime()) / (1000 * 60 * 60 * 24)) : null;
+    if (taskLeadIdsDueToday.has(d.lead_id)) buckets.todays_leads.push(toItem(d, 'Open task due today'));
+    if (age != null && age >= 1 && age <= 5) buckets.day_1_5_cadence.push(toItem(d, `Lead age ${age} days`));
+    if (age != null && age >= 6 && age <= 10) buckets.day_6_10_cadence.push(toItem(d, `Lead age ${age} days`));
+    if (stage.includes('booked for tasting') || stage.includes('setting')) buckets.booked_tastings.push(toItem(d, 'Tasting-stage opportunity'));
+    if (stage.includes('dormant')) {
+      buckets.long_term_dormant.push(toItem(d, 'Dormant stage'));
+      buckets.all_dormant.push(toItem(d, 'Explicit dormant stage'));
+    }
+  }
+  for (const d of live.needs_attention || []) buckets.needs_response.push(toItem(d, d.reason || 'Needs attention'));
+  const claimed = new Set(Object.values(buckets).flat().map(item => item.id));
+  buckets.all_other_followup = all
+    .filter(d => !claimed.has(d.id))
+    .map(d => toItem(d, 'Active follow-up not captured by a more specific Andre focus bucket'));
+
+  const labels = Object.fromEntries((defs.views || []).map(v => [v.id, v.label]));
+  const order = (defs.views || []).map(v => v.id).filter(id => buckets[id]);
+  for (const id of Object.keys(buckets)) if (!order.includes(id)) order.push(id);
+  return {
+    _meta: {
+      source: 'close-api:file-tree-andre-focus',
+      generated_at: new Date().toISOString(),
+      note: 'Focused Andre source pack generated from Close direct file-backed pipeline/tasks.',
+    },
+    views: order.map(id => {
+      const items = (buckets[id] || []).sort((a, b) => (b.value || 0) - (a.value || 0)).slice(0, 150);
+      return {
+        id,
+        label: labels[id] || id,
+        count: items.length,
+        total_value: items.reduce((sum, item) => sum + Number(item.value || 0), 0),
+        items,
+      };
+    }),
+  };
+}
+
+async function refreshLiveCloseSnapshotFromCloseFiles(syncSource) {
+  const closeUserId = getCloseUserId();
+  if (!closeUserId) throw new Error('Close CRM user ID is not configured. Add it in Settings.');
+  const uid = encodeURIComponent(closeUserId);
+  console.log('[SYNC] Starting Close direct file-tree sync...');
+  logActivity('sync', 'crm_sync', 'Close direct file-tree sync started', `Source: ${syncSource}`, []);
+
+  const fields = [
+    'id','lead_id','lead_name','status_id','status_label','status_type',
+    'pipeline_id','value','value_period','confidence',
+    'date_won','date_lost','close_at','date_created','date_updated','note',
+  ].join(',');
+  const [opportunities, inboxTasks, futureTasks] = await Promise.all([
+    closePaginate(`/opportunity/?user_id=${uid}&lead_status_type=active&_fields=${fields}&_order_by=-value`, { limit: 100, safety: 50 }),
+    closePaginate(`/task/?view=inbox&assigned_to=${uid}&_order_by=date`, { limit: 100, safety: 10 }),
+    closePaginate(`/task/?view=future&assigned_to=${uid}&_order_by=date`, { limit: 100, safety: 10 }),
+  ]);
+
+  const pipeline = buildPipelineShapeFromClose(opportunities);
+  const tasks = buildTasksShapeFromClose([
+    ...inboxTasks.map(t => ({ ...t, _view: 'inbox' })),
+    ...futureTasks.map(t => ({ ...t, _view: 'future' })),
+  ]);
+  const live = buildLiveSnapshotFromPipeline(pipeline, syncSource);
+  const andreFocus = buildAndreFocusFromFileShapes(pipeline, tasks, live);
+
+  writeData('live_pipeline.json', pipeline);
+  writeData('live_tasks.json', tasks);
+  writeData('live_close_crm.json', live);
+  const focusDir = path.join(DATA, 'andre_close_focus');
+  fs.mkdirSync(focusDir, { recursive: true });
+  fs.writeFileSync(path.join(focusDir, 'snapshot.json'), JSON.stringify(andreFocus, null, 2));
+
+  return {
+    ok: true,
+    mode: 'close-direct-file-tree',
+    synced_at: live._meta.last_synced,
+    counts: live.pipeline_snapshot,
+    details: {
+      opportunities: { ok: true, count: opportunities.length },
+      tasks: { ok: true, count: tasks.task_summary.total },
+      activities: { ok: true, count: 0 },
+    },
+  };
+}
+
 // ─── POST /close/sync — full pipeline sync ──────────
+// Default path: pull from Close and write focused file-tree snapshots.
+// Optional path: when CRM_SOURCE=supabase, sync to Supabase and mirror
+// back to files so SSE + legacy consumers keep working.
 async function refreshLiveCloseSnapshot(syncSource) {
   const closeUserId = getCloseUserId();
   if (!closeUserId) throw new Error('Close CRM user ID is not configured. Add it in Settings.');
-  console.log('[SYNC] Starting Close CRM pipeline sync...');
-  logActivity('sync', 'crm_sync', 'Close CRM pipeline sync started', `Pulling active opportunities and attention flags via ${syncSource}`, []);
+  if (CRM_SOURCE !== 'supabase') {
+    return refreshLiveCloseSnapshotFromCloseFiles(syncSource);
+  }
+  if (!sb.isConfigured()) {
+    return refreshLiveCloseSnapshotFromCloseFiles(`${syncSource} (Supabase not configured)`);
+  }
+  console.log('[SYNC] Starting Close → Supabase sync...');
+  logActivity('sync', 'crm_sync', 'Close → Supabase sync started', `Source: ${syncSource}`, []);
   try {
-    const [activeR, attentionR] = await Promise.all([
-      closeRequest('GET', `/opportunity/?user_id=${closeUserId}&lead_status_type=active&_fields=id,lead_id,lead_name,contact_name,status_label,status_type,value,confidence,close_at,updated_at,note&_limit=100&_order_by=-value`),
-      closeRequest('GET', `/opportunity/?user_id=${closeUserId}&_fields=id,lead_id,lead_name,status_label,status_type,value,confidence,close_at,updated_at&needs_attention=true&_limit=50`),
-    ]);
+    // 1) Pull from Close, write to Supabase
+    const result = await liveSync.runFullLiveSync({
+      closeApiKey: CLOSE_API_KEY,
+      closeUserId,
+    });
 
-    const allOpps       = activeR.body?.data || [];
-    const attentionOpps = attentionR.body?.data || [];
+    // 2) Read the live snapshot shape back from Supabase
+    const live = await liveQ.getLiveSnapshotShape({ operatorKey: 'andre' });
+    const andreFocus = await liveQ.getAndreFocusShape({ operatorKey: 'andre' });
+
+    // 3) Mirror to live_close_crm.json for SSE + legacy consumers
+    try { writeData('live_close_crm.json', live); } catch(e) { console.warn('[SYNC] mirror to live_close_crm.json failed:', e.message); }
+    try {
+      const focusDir = path.join(DATA, 'andre_close_focus');
+      fs.mkdirSync(focusDir, { recursive: true });
+      fs.writeFileSync(path.join(focusDir, 'snapshot.json'), JSON.stringify(andreFocus, null, 2));
+    } catch(e) {
+      console.warn('[SYNC] mirror to andre_close_focus/snapshot.json failed:', e.message);
+    }
 
     const now = new Date();
-    const sevenDays = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
-
-    // Build closing_soon
-    const closingSoon = allOpps
-      .filter(o => o.close_at && new Date(o.close_at) <= sevenDays && new Date(o.close_at) >= now)
-      .map(o => ({
-        id:             o.id,
-        lead_id:        o.lead_id,
-        name:           o.lead_name || 'Unknown',
-        value:          Math.round((o.value || 0) / 100),
-        stage:          o.status_label,
-        confidence:     o.confidence,
-        close_at:       o.close_at,
-        days_until_close: Math.ceil((new Date(o.close_at) - now) / (1000 * 60 * 60 * 24)),
-        urgency:        'urgent',
-        note:           `${o.confidence}% confidence — ${o.status_label}`
-      }));
-
-    // Build needs_attention
-    const needsAttention = attentionOpps.map(o => ({
-      id:         o.id,
-      lead_id:    o.lead_id,
-      name:       o.lead_name || 'Unknown',
-      value:      Math.round((o.value || 0) / 100),
-      stage:      o.status_label,
-      confidence: o.confidence,
-      close_at:   o.close_at,
-      urgency:    'high',
-      reason:     'Flagged by Close CRM — stalled or overdue for contact'
-    }));
-
-    // Build top opportunities
-    const topOpps = allOpps.slice(0, 10).map(o => ({
-      id:         o.id,
-      lead_id:    o.lead_id,
-      name:       o.lead_name || 'Unknown',
-      value:      Math.round((o.value || 0) / 100),
-      stage:      o.status_label,
-      confidence: o.confidence,
-      close_at:   o.close_at
-    }));
-
-    const live = readData('live_close_crm.json');
-    const staticPipeline = readData('andre_pipeline.json');
-    const staticDealNames = new Set((staticPipeline.all_deals || []).map(d => normText(d.name)).filter(Boolean));
-    const liveDealNames = Array.from(new Set(allOpps.map(o => normText(o.lead_name)).filter(Boolean)));
-    const matchedDealCount = liveDealNames.filter(name => staticDealNames.has(name)).length;
-    const coveragePct = liveDealNames.length ? Math.round((matchedDealCount / liveDealNames.length) * 100) : 0;
-    const verificationNotes = [];
-    if (!staticDealNames.size) verificationNotes.push('Static pipeline (andre_pipeline.json) has no deal names to compare.');
-    if (liveDealNames.length && coveragePct < 80) {
-      verificationNotes.push(
-        `Only ${matchedDealCount} of ${liveDealNames.length} unique live opportunity names match the static pipeline file — often because the JSON is a curated subset, not a full CRM export.`
-      );
-    }
-    if (!allOpps.length) verificationNotes.push('Close returned zero active opportunities for the configured user.');
-
-    live._meta.last_synced      = now.toISOString();
-    live._meta.synced_by        = syncSource;
-    live._meta.close_user_id    = closeUserId;
-    live.pipeline_snapshot      = {
-      total_active_opportunities: activeR.body?.total_results || allOpps.length,
-      needs_attention_count:      attentionOpps.length,
-      closing_this_week:          closingSoon.length,
-      top_deal_value:             topOpps[0]?.value || 0,
-      top_deal_name:              topOpps[0]?.name  || '—'
+    console.log(`[SYNC] Done — ${result.results?.opportunities?.count || 0} opps, ${result.results?.tasks?.count || 0} tasks, ${result.results?.activities?.count || 0} activities`);
+    return {
+      ok: true,
+      synced_at: now.toISOString(),
+      counts: live.pipeline_snapshot,
+      details: result.results,
     };
-    live.verification = {
-      checked_at: now.toISOString(),
-      status: coveragePct >= 80 ? 'ok' : coveragePct >= 50 ? 'warning' : 'critical',
-      /** What we measure: name overlap between live Close opps and static andre_pipeline.json — not “data correctness.” */
-      metric: 'static_pipeline_name_overlap',
-      live_opportunity_count: allOpps.length,
-      live_unique_lead_names: liveDealNames.length,
-      static_pipeline_deal_names: staticDealNames.size,
-      matched_deal_count: matchedDealCount,
-      coverage_pct: coveragePct,
-      notes: verificationNotes,
-    };
-    live.needs_attention  = needsAttention;
-    live.closing_soon     = closingSoon;
-    live.top_opportunities = topOpps;
-    live.alerts           = live.alerts || [];
-
-    writeData('live_close_crm.json', live);
-    console.log(`[SYNC] Done — ${allOpps.length} opps, ${attentionOpps.length} need attention, ${closingSoon.length} closing soon`);
-    return { ok: true, synced_at: now.toISOString(), counts: live.pipeline_snapshot };
   } catch(e) {
-    console.error('[SYNC] Error:', e.message);
-    throw e;
+    const canUseFileTreeFallback = /Invalid schema|schema cache|Could not find the table|Supabase/.test(e.message || '');
+    if (!canUseFileTreeFallback) {
+      console.error('[SYNC] Error:', e.message);
+      throw e;
+    }
+    console.warn('[SYNC] Supabase unavailable; switching to Close direct file-tree source:', e.message);
+    return refreshLiveCloseSnapshotFromCloseFiles(syncSource);
   }
 }
 
@@ -1127,10 +1466,19 @@ app.post('/queue/:id/review', (req, res) => {
 });
 
 // ─── Auto-execute helpers ────────────────────────────
-function buildMorningBriefPayload() {
-  const live = readData('live_close_crm.json');
-  const tasks = readData('andre_tasks.json');
-  const pipeline = readData('andre_pipeline.json');
+// These read the current file-tree snapshots first. If a future Supabase mode
+// is enabled and the files are absent, liveQueries can still build the shapes.
+async function buildMorningBriefPayload() {
+  let live = readDataIfExists('live_close_crm.json', null);
+  let tasks = readDataIfExists('live_tasks.json', null);
+  let pipeline = readDataIfExists('live_pipeline.json', null);
+  if (!live || !tasks || !pipeline) {
+    [live, tasks, pipeline] = await Promise.all([
+      liveQ.getLiveSnapshotShape({ operatorKey: 'andre' }),
+      liveQ.getTasksShape({ operatorKey: 'andre' }),
+      liveQ.getPipelineShape({ operatorKey: 'andre' }),
+    ]);
+  }
   return {
     generated_at: new Date().toISOString(),
     headline: `${tasks.task_summary?.today || 0} tasks today · ${live.pipeline_snapshot?.needs_attention_count || 0} need attention · ${live.pipeline_snapshot?.closing_this_week || 0} closing this week`,
@@ -1142,9 +1490,15 @@ function buildMorningBriefPayload() {
   };
 }
 
-function buildCadenceReportPayload() {
-  const tasks = readData('andre_tasks.json');
-  const live = readData('live_close_crm.json');
+async function buildCadenceReportPayload() {
+  let tasks = readDataIfExists('live_tasks.json', null);
+  let live = readDataIfExists('live_close_crm.json', null);
+  if (!tasks || !live) {
+    [tasks, live] = await Promise.all([
+      liveQ.getTasksShape({ operatorKey: 'andre' }),
+      liveQ.getLiveSnapshotShape({ operatorKey: 'andre' }),
+    ]);
+  }
   return {
     generated_at: new Date().toISOString(),
     due_now: tasks.tasks?.today || [],
@@ -1157,7 +1511,7 @@ function buildCadenceReportPayload() {
 
 async function executeMorningBrief(actionId) {
   try {
-    const brief = buildMorningBriefPayload();
+    const brief = await buildMorningBriefPayload();
     writeData('automation_morning_brief.json', brief);
     completeAction(actionId, { file: 'automation_morning_brief.json', headline: brief.headline });
     logActivity('automation', 'generate_morning_brief', 'Morning brief refreshed', brief.headline, []);
@@ -1166,7 +1520,7 @@ async function executeMorningBrief(actionId) {
 
 async function executeCadenceReport(actionId) {
   try {
-    const report = buildCadenceReportPayload();
+    const report = await buildCadenceReportPayload();
     writeData('automation_cadence_report.json', report);
     completeAction(actionId, {
       file: 'automation_cadence_report.json',
@@ -1584,6 +1938,222 @@ app.post('/ai/chat', async (req, res) => {
 });
 
 // ─── Status ─────────────────────────────────────────
+// ═══════════════════════════════════════════════════
+// LIVE DATA ENDPOINTS
+// Primary path for Andre testing is now Close -> file tree.
+// Supabase remains optional; if it is unavailable, these endpoints
+// return the latest file-backed snapshots instead of failing.
+// These replace the static andre_pipeline.json /
+// andre_tasks.json / live_close_crm.json reads.
+// They return shapes that match the existing frontend
+// rendering code, so the views don't need rewriting.
+// ═══════════════════════════════════════════════════
+
+function operatorKeyFrom(req) {
+  return (req.query.operator || req.body?.operator || 'andre').toString();
+}
+
+app.get('/api/live/pipeline', async (req, res) => {
+  const fileData = readDataIfExists('live_pipeline.json', null);
+  if (CRM_SOURCE !== 'supabase' && fileData) return res.json(fileData);
+  try {
+    const data = await liveQ.getPipelineShape({ operatorKey: operatorKeyFrom(req) });
+    res.json(data);
+  } catch (e) {
+    const fallback = readDataIfExists('live_pipeline.json', null);
+    if (fallback) return res.json({ ...fallback, _meta: { ...(fallback._meta || {}), fallback_reason: e.message } });
+    console.warn('[LIVE] pipeline using empty fallback:', e.message);
+    res.json({ ...liveQ.emptyPipelineShape?.() || { summary: {}, stages: [], priority_distribution: {}, risk_patterns: [], high_value_deals: [], all_deals: [] }, _meta: { source: 'empty:file-tree', error: e.message } });
+  }
+});
+
+app.get('/api/live/tasks', async (req, res) => {
+  const fileData = readDataIfExists('live_tasks.json', null);
+  if (CRM_SOURCE !== 'supabase' && fileData) return res.json(fileData);
+  try {
+    const data = await liveQ.getTasksShape({ operatorKey: operatorKeyFrom(req) });
+    res.json(data);
+  } catch (e) {
+    const fallback = readDataIfExists('live_tasks.json', null);
+    if (fallback) return res.json({ ...fallback, _meta: { ...(fallback._meta || {}), fallback_reason: e.message } });
+    console.warn('[LIVE] tasks using empty fallback:', e.message);
+    res.json({ task_summary: { total: 0, today: 0, within_48h: 0, within_3_7d: 0, watch_list: 0 }, tasks: { today: [], within_48h: [], within_3_7d: [], watch_list: [] }, bottlenecks: [], open_loops: [], coaching_plan: {}, automation_hooks: {}, _meta: { source: 'empty:file-tree', error: e.message } });
+  }
+});
+
+app.get('/api/live/snapshot', async (req, res) => {
+  const fileData = readDataIfExists('live_close_crm.json', null);
+  if (CRM_SOURCE !== 'supabase' && fileData) return res.json(fileData);
+  try {
+    const data = await liveQ.getLiveSnapshotShape({ operatorKey: operatorKeyFrom(req) });
+    res.json(data);
+  } catch (e) {
+    const fallback = readDataIfExists('live_close_crm.json', null);
+    if (fallback) return res.json({ ...fallback, _meta: { ...(fallback._meta || {}), fallback_reason: e.message } });
+    console.warn('[LIVE] snapshot using empty fallback:', e.message);
+    res.json({ _meta: { source: 'empty:file-tree', last_synced: null, error: e.message }, pipeline_snapshot: { total_active_opportunities: 0, needs_attention_count: 0, closing_this_week: 0, top_deal_value: 0, top_deal_name: '—' }, needs_attention: [], closing_soon: [], top_opportunities: [], alerts: [], verification: { status: 'unknown', notes: ['No file-backed snapshot exists yet. Run Sync Now.'] } });
+  }
+});
+
+app.get('/api/live/wins', async (req, res) => {
+  try {
+    const data = await liveQ.getWinsShape({ operatorKey: operatorKeyFrom(req) });
+    res.json(data);
+  } catch (e) {
+    console.error('[LIVE] wins failed:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+/** Indexed lead rows from Close (comeketo.leads) — search / tooling / future joins */
+app.get('/api/live/leads', async (req, res) => {
+  try {
+    const lim = Math.min(parseInt(req.query.limit || '500', 10) || 500, 2000);
+    const data = await liveQ.getLeadsShape({ limit: lim });
+    res.json(data);
+  } catch (e) {
+    console.error('[LIVE] leads failed:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/live/andre-focus', async (req, res) => {
+  const fileData = readDataIfExists('andre_close_focus/snapshot.json', null);
+  if (CRM_SOURCE !== 'supabase' && fileData) return res.json(fileData);
+  try {
+    const data = await liveQ.getAndreFocusShape({ operatorKey: operatorKeyFrom(req) });
+    res.json(data);
+  } catch (e) {
+    const fallback = readDataIfExists('andre_close_focus/snapshot.json', null);
+    if (fallback) return res.json({ ...fallback, _meta: { ...(fallback._meta || {}), fallback_reason: e.message } });
+    console.warn('[LIVE] andre-focus using empty fallback:', e.message);
+    res.json({ _meta: { source: 'empty:file-tree', generated_at: new Date().toISOString(), error: e.message }, views: [] });
+  }
+});
+
+app.get('/api/live/sync-meta', async (req, res) => {
+  try {
+    const data = await liveQ.getSyncMeta();
+    res.json({ sources: data });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ─── Urgency rules (operator-tunable) ───────────────
+app.get('/api/urgency-rules', async (req, res) => {
+  try {
+    const rules = await liveQ.getUrgencyRules(operatorKeyFrom(req));
+    res.json(rules);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.put('/api/urgency-rules', async (req, res) => {
+  try {
+    const operator = operatorKeyFrom(req);
+    const updates  = req.body || {};
+    delete updates.operator_key;
+    delete updates.operator;
+    const saved = await liveQ.setUrgencyRules(operator, updates);
+    res.json(saved);
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ─── HRMR ratings (with notes!) ─────────────────────
+// This is the new piece: a place to persist a NOTE
+// alongside each grade so Oracle can learn the WHY.
+app.post('/api/oracle/turn', async (req, res) => {
+  try {
+    if (!sb.isConfigured()) return res.status(503).json({ error: 'Supabase not configured' });
+    const { id, operator_key, prompt, response, action_type, model, context } = req.body || {};
+    if (!id) return res.status(400).json({ error: 'id is required (turn id)' });
+    const client = sb.client();
+    const row = {
+      id,
+      operator_key: operator_key || 'andre',
+      prompt:       prompt || null,
+      response:     response || null,
+      action_type:  action_type || null,
+      model:        model || null,
+      context:      context || null,
+      created_at:   new Date().toISOString(),
+    };
+    const { data, error } = await client
+      .from('oracle_turns')
+      .upsert(row, { onConflict: 'id' })
+      .select()
+      .maybeSingle();
+    if (error) throw new Error(error.message);
+    res.json({ ok: true, turn: data });
+  } catch (e) {
+    console.error('[HRMR] log turn failed:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/hrmr', async (req, res) => {
+  try {
+    if (!sb.isConfigured()) return res.json({ ratings: [] });
+    const client = sb.client();
+    const turnId = req.query.turn_id;
+    let q = client.from('hrmr_ratings').select('*').order('created_at', { ascending: false }).limit(200);
+    if (turnId) q = q.eq('turn_id', turnId);
+    const { data, error } = await q;
+    if (error) throw new Error(error.message);
+    res.json({ ratings: data || [] });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.post('/api/hrmr', async (req, res) => {
+  try {
+    if (!sb.isConfigured()) return res.status(503).json({ error: 'Supabase not configured' });
+    const { turn_id, grade, note, rated_by } = req.body || {};
+    if (!turn_id) return res.status(400).json({ error: 'turn_id is required' });
+    if (!grade)   return res.status(400).json({ error: 'grade is required (A+, A, B, C, D, F, etc.)' });
+    const client = sb.client();
+    const row = {
+      turn_id,
+      grade,
+      note:       note || null,
+      rated_by:   rated_by || 'andre',
+      created_at: new Date().toISOString(),
+    };
+    const { data, error } = await client
+      .from('hrmr_ratings')
+      .insert(row)
+      .select()
+      .maybeSingle();
+    if (error) throw new Error(error.message);
+    res.json({ ok: true, rating: data });
+  } catch (e) {
+    console.error('[HRMR] post rating failed:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// ─── Manual sync trigger ────────────────────────────
+app.post('/api/sync/run', async (req, res) => {
+  try {
+    if (!CLOSE_API_KEY || !getCloseUserId()) {
+      return res.status(400).json({ error: 'Close API key or user_id missing' });
+    }
+    const result = await refreshLiveCloseSnapshot('manual /api/sync/run');
+    // Notify SSE clients to refetch live slots
+    const payload = JSON.stringify({ file: 'live_sync', slot: 'live', ts: Date.now() });
+    for (const r of sseClients) r.write(`data: ${payload}\n\n`);
+    res.json(result);
+  } catch (e) {
+    console.error('[SYNC] full sync failed:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
 app.get('/status', (req, res) => {
   const live = readData('live_close_crm.json');
   const q    = readData('action_queue.json');

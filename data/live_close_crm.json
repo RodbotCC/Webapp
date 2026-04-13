@@ -1,300 +1,38 @@
 {
   "_meta": {
-    "last_synced": "2026-04-10T06:16:20.249Z",
+    "last_synced": "2026-04-13T19:39:26.835Z",
     "synced_by": "server.js auto-execute",
-    "source": "Close CRM MCP Connector",
-    "org": "Comeketo Catering",
-    "user": "Andre Raw",
-    "close_user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt"
+    "source": "close-api:file-tree"
   },
   "pipeline_snapshot": {
-    "total_active_opportunities": 688,
-    "needs_attention_count": 50,
+    "total_active_opportunities": 13,
+    "needs_attention_count": 13,
     "closing_this_week": 0,
-    "top_deal_value": 25371,
-    "top_deal_name": "Zilah conserve"
+    "top_deal_value": 11685,
+    "top_deal_name": "ETS EQUIPMENT"
   },
-  "alerts": [
-    {
-      "type": "deal_lost",
-      "severity": "critical",
-      "name": "Mary McGahan",
-      "value": 9000,
-      "message": "Wedding cancelled — replied Apr 8: 'No. The wedding is off. Thank you.'",
-      "action_required": "Move opportunity to Lost status in Close CRM immediately.",
-      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI"
-    }
-  ],
   "needs_attention": [
     {
-      "id": "oppo_IKXLeMvHAIR25U7bAW4heyp81kysk4ZDXxp3WEsWJzI",
-      "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
-      "name": "Gina Gallagher",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "id": "oppo_Ds6lt6sfKZ8cngRKS3IBRu1XqD3VDzfSp3PUjciTLy8",
+      "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "name": "ETS EQUIPMENT",
+      "value": 11685,
+      "stage": "💼 01. Aware of us",
+      "confidence": 80,
+      "close_at": null,
+      "urgency": "urgent",
+      "reason": "High-priority active opportunity"
     },
     {
-      "id": "oppo_gVRWGmwXN72UU79DJ8apmPfokgCKnIVrdv7jWE1dsDY",
-      "lead_id": "lead_YJ7o1H5XimCOMys0rfXhu8V1srBsCLZyj7N6saossrt",
-      "name": "Alexandra Fruzzetti",
-      "value": 1323,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
+      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
+      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "name": "Mary McGahan",
+      "value": 9000,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "confidence": 80,
+      "close_at": null,
       "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_kv52oYlo7ZQnzgqjlWNBWwlq9A1stSznlBM6UsxaANX",
-      "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
-      "name": "Yuni Colindres",
-      "value": 1575,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_axlG1EJZJK5uKw0u1Crqf0nsmNHkMDsimPaPfbDCLKi",
-      "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
-      "name": "Williams Brown",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW",
-      "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
-      "name": "Ju",
-      "value": 3780,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_nQwFF0ZRSK9nGOn0h3EpduzDFw0Ap94xJYvRL5XcxyL",
-      "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
-      "name": "Gabby Garcia Serrano",
-      "value": 3780,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_UWRBCudnXDceSUK9MOlBHrJ7dNV1aOT0FYOCVe9n3NU",
-      "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
-      "name": "Carolyn Boumila-Vega",
-      "value": 3780,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_xPpQ7maIa1PYGghNKKWc0qGNoIl0vjkD6YOkfhFRwgj",
-      "lead_id": "lead_6nVRC2yHC24iPPjgm5WphWmXgHwupzTLaGlLEvU8Wnl",
-      "name": "Kimberly Adkins",
-      "value": 0,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_nert95ewmnr1pLubJLfZb4DBgCUJLJnDBi9nZjUyNEB",
-      "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
-      "name": "Coreen Miranda",
-      "value": 1575,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_Bi0yDS2UQ6XOC3tTxRPPuD8LzB5jh2ROeCo7p7Pd8mT",
-      "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
-      "name": "Jennifer Jones",
-      "value": 3326,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 75,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_5AzEmzT3gAhursXdcolDAHfJTCm3H4X2ZpEN6QxsnTc",
-      "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
-      "name": "Jennifer Jones",
-      "value": 5,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_ugTLwzSvl1bz2pQnvUT0fM0nfF5hZcparNIH3pl8vhQ",
-      "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
-      "name": "Jennifer Jones",
-      "value": 3780,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_qgN8zVLxXOMi8WEFDZZx8BATvvK2f41A2BdZL2nxxvN",
-      "lead_id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
-      "name": "Cadence Fell",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_WS14ljD8gSjyOqozbuZcFOebl3bobjejZnzaxuzk9IQ",
-      "lead_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
-      "name": "Raddison7902",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_nWf8fup5t0yk5Pa2rDx4TMqcmKa18TghG0ts41Mse5g",
-      "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
-      "name": "Jessica Molina",
-      "value": 3780,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_uTzlSqY6ixOmZ4crRZV0r4J8kgJ5F0IThgeA5wBSzOI",
-      "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
-      "name": "Camille Griffin",
-      "value": 1733,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_frOM83Q5CJtjbiclcX5g7gt6BR46xgONCYaft9pbS0q",
-      "lead_id": "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
-      "name": "Sirena Ivette Ramos",
-      "value": 2520,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_TZJJIy2J6dapvqprVhoCtxt2GDl7Z0T78xxvag7gMwJ",
-      "lead_id": "lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
-      "name": "Ana Paula- BEZ GROUP",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_0B1Tjf8uMx6MeZ4nE3fTHf2wUIJjOF2YIHKb9cEf5oL",
-      "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
-      "name": "Jose Quefau",
-      "value": 3150,
-      "stage": "🔥 03. Booked for Tasting",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_RhX1LyKBE9punocyPyUJsK8U0EDrT23qoyYJWvE8kMR",
-      "lead_id": "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
-      "name": "Megan Szwarckop",
-      "value": 624,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_NwMc4nMH0VvedVh6Dik3QYPRAtUO6wgqYZZbzXyQTUH",
-      "lead_id": "lead_sKYrxuMmf7xuu5ULTNDAuHCZHt5mJVrfqNOIkdCfuQJ",
-      "name": "Julia Soares",
-      "value": 1691,
-      "stage": "💲 06. Booked / Deposit 35%",
-      "confidence": 100,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_tUQyumoODvyZ9kLCIu3JV0Y7z3tGFww2dVA1KHdfQ6Y",
-      "lead_id": "lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
-      "name": "Elciane Gomes",
-      "value": 5,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
-      "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
-      "name": "Ben Todd",
-      "value": 5103,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_xVoly3tUDvQrA7jykqBcr33J50R8u2Exm0QBAY6HFAa",
-      "lead_id": "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
-      "name": "Neri Nogueira",
-      "value": 3465,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_V8nomy7DaKegssl07xVNnlVTEqP92tYea0jGzfEnLWq",
-      "lead_id": "lead_SBuwi0aZQM2Vefko4PqaFyBcIYTsA07TbDp3ed92zRR",
-      "name": "Diane Maillet Cotterly",
-      "value": 3780,
-      "stage": "⬜ - 00. Dormant (30 Days F/U)",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_xeVEL6ZoVk64Q76F9bOM7tNnYLFPqks0bM04cwBOQMd",
-      "lead_id": "lead_BEMtmAl04qLIIJdAeBATYlemyCavPhwPSGgDlW7IvWq",
-      "name": "Lais",
-      "value": 5,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_kMlfadVQinSWydrKxKJlgEPsNVu5btU8Zwee8ITQVEB",
-      "lead_id": "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
-      "name": "Samantha Machie",
-      "value": 1512,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "reason": "High-priority active opportunity"
     },
     {
       "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
@@ -303,98 +41,9 @@
       "value": 7245,
       "stage": "⬜ 00. Prospect",
       "confidence": 20,
+      "close_at": null,
       "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_fa8QZr6Vqex5m1f6eGkWmvjrusIoD9SnsQkAnHssl51",
-      "lead_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
-      "name": "Ivy Elien",
-      "value": 3150,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_6Xkl3CJfDWJ3rTZBr9bR5WDI6POApNoDZkp8SO7DIEr",
-      "lead_id": "lead_roB3DisnPxQPFdwy8LFiJo5SE7BnTTUCn3F7rBHGFAj",
-      "name": "Kaitlin Baptista",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_6LQlT0QDOw8fpLFf1TnJMKeED34dXpbt5Vxr7JKGJFg",
-      "lead_id": "lead_ohr3tNSC1E8zEY5XbRRHqRJflqQ2vuayH4GM2hS9DOh",
-      "name": "Isabel Fernandez",
-      "value": 455,
-      "stage": "💲 09. Fully Paid",
-      "confidence": 100,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_mXS74JKEEYlWb0t9Re4KJX2eAATrW8k0qLxaj9LSXSG",
-      "lead_id": "lead_w5q7MmtPIUv49Mp34kxVfWJfsXrHjHTTIkC1dFF9BAR",
-      "name": "Staciaxbaby21",
-      "value": 0,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_PbkdHFYcxL7vyseXIbLlB7uHCaj6TBYH3sWvbKqPFgL",
-      "lead_id": "lead_HlVr8YAkrrFMyNnnRaJ0PCIhvYQnpucxPXz3Xqpn1z0",
-      "name": "Francisca Lopez",
-      "value": 473,
-      "stage": "👤🔴🚫 Lost Catering Customer 🚫🔴👤",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_fEXcvKun6Dz8bSRCmWkuRGk7yHklfk7k0HvHzkyinN0",
-      "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
-      "name": "Lisandra Lopez",
-      "value": 2400,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_6hQBG98lG9XbrX4ZINBy5D3OfZJOKZ33WXr7x64Mvbi",
-      "lead_id": "lead_PdT3GTaJqFNErVjOVfQSonY1RdtGdvf3FIv9DrACUDJ",
-      "name": "Amanda Costa",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_cD9O4ZN59ibJChDrSc0smWWvRYKWYeJc51A7tRk4IXd",
-      "lead_id": "lead_2Zg6DA6ZmcEyxhgoLfUrCaYmYmpAZB235IC4UslALBS",
-      "name": "DadaPau DP",
-      "value": 3150,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_HPkSgHCGgQ3ql4lg4B9xit0VdnmiqewW1l9QKwaPGPV",
-      "lead_id": "lead_ZfLFNbG8NQzY9yLOSSw2JnUofjb6mzRwxPbhcHpY2ms",
-      "name": "Carlos Albelo",
-      "value": 582,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "reason": "Low confidence - at risk"
     },
     {
       "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
@@ -403,8 +52,20 @@
       "value": 5670,
       "stage": "📲 02. Setting Tasting Appointment",
       "confidence": 20,
+      "close_at": null,
       "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "reason": "Low confidence - at risk"
+    },
+    {
+      "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
+      "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+      "name": "Ben Todd",
+      "value": 5103,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "high",
+      "reason": "Low confidence - at risk"
     },
     {
       "id": "oppo_FmnFVaiJSHLWUHylKf3K3VKXxJqrJV4NSOOGwMSvaEQ",
@@ -413,234 +74,189 @@
       "value": 4914,
       "stage": "⬜ 00. Prospect",
       "confidence": 20,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
     },
     {
-      "id": "oppo_MI7LNhndkDWycxoxyVss6oWCG9LAtYUTeI4cFqDh3RF",
-      "lead_id": "lead_PrNbATd6IygH5UEXgM8oXmKG7sqMHHivGttS6cm8WXS",
-      "name": "P",
-      "value": 5198,
-      "stage": "👤🔴🚫 Lost Catering Customer 🚫🔴👤",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_ASxaleKlw9XSxv1TqcqlXXIUrmZq8zaoRth2q8Mhi1y",
-      "lead_id": "lead_sIFCElu0TtulyUXdzmUUDVm0pxTuujdSrVh8HV9udET",
-      "name": "Mew & Justin",
-      "value": 0,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_nkjwZbL1Rf98aw4wpTAetJ3w1DmKhYpc60fgKakchU4",
-      "lead_id": "lead_l5IAlTEgU6ZFjhycPXtl5YyNzLqQFvUgeD8ARazKxUT",
-      "name": "Yvonne Apicella",
-      "value": 0,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_k4de5xshjJS4OaTQVE3RDRWGlv1f38nY7s2TJgplFfH",
-      "lead_id": "lead_CsTB9tfN7V6YTzlKxfi1zDfepDvT31Xwf3a1BzMWXcR",
-      "name": "Tyrell Sullivan",
-      "value": 0,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_EaYY1Jt18iTNxPSnYe2vsEHQVKiNhzH6Sdn4di5OjYG",
-      "lead_id": "lead_GIUnOfmy8GGbXTSlcyUh48ox5xJm8X4FkLlgtqV43Fy",
-      "name": "Ariel Ford",
-      "value": 0,
+      "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
+      "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+      "name": "Ari",
+      "value": 4095,
       "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
     },
     {
-      "id": "oppo_1ee3ilBF8KDCAhG6eGtWtp0ScBSpj1eN9mjREJgJNt0",
-      "lead_id": "lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA",
-      "name": "Heli Parekh",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_QoEjIItZpEdKAsznDQIkrBoWg0a6KBpjCvACud49unG",
-      "lead_id": "lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd",
-      "name": "Ashley Wood",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_TmCtCDQgZp0Cpy51ltOaeW7sJp9chQWpPzJyVBZR0yE",
-      "lead_id": "lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f",
-      "name": "Corliss Lau",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_sSaJABFj1ppwU6NGpgE8tym1wgq7cu5i1aC6ak10ggr",
-      "lead_id": "lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT",
-      "name": "Andraya Blair",
-      "value": 0,
-      "stage": "⬜ 00. Prospect",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
-    },
-    {
-      "id": "oppo_4VJemEjgNy2sPqrv8WvsnivNYZZ64yCHQ5XyyzIAcdW",
-      "lead_id": "lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
-      "name": "Jenn Smiley",
-      "value": 0,
+      "id": "oppo_jQBuH8wJC2dG53iU4E9LIRCUU5ASSltuMwG0Y0NQhEl",
+      "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+      "name": "Rebecca Almeida",
+      "value": 3780,
       "stage": "🔥 03. Booked for Tasting",
-      "confidence": 50,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
     },
     {
-      "id": "oppo_wCeTbFt71Xc6U1SD4x9JkIJkGCOHuwfyzTmKYrDkQF7",
-      "lead_id": "lead_7UKna9hsiI44bdJSMZwF5A3MFilirco8gqYi7BEYlqF",
-      "name": "Nikki & Taylor",
-      "value": 0,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0,
-      "urgency": "high",
-      "reason": "Flagged by Close CRM — stalled or overdue for contact"
+      "id": "oppo_nWf8fup5t0yk5Pa2rDx4TMqcmKa18TghG0ts41Mse5g",
+      "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+      "name": "Jessica Molina",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
+    },
+    {
+      "id": "oppo_ugTLwzSvl1bz2pQnvUT0fM0nfF5hZcparNIH3pl8vhQ",
+      "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+      "name": "Jennifer Jones",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
+    },
+    {
+      "id": "oppo_UWRBCudnXDceSUK9MOlBHrJ7dNV1aOT0FYOCVe9n3NU",
+      "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+      "name": "Carolyn Boumila-Vega",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
+    },
+    {
+      "id": "oppo_nQwFF0ZRSK9nGOn0h3EpduzDFw0Ap94xJYvRL5XcxyL",
+      "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+      "name": "Gabby Garcia Serrano",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
+    },
+    {
+      "id": "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW",
+      "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "name": "Ju",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
     }
   ],
   "closing_soon": [],
   "top_opportunities": [
     {
-      "id": "oppo_xS1BQKdw9jXk8w4uva62dwwlnC5TejDQqD2UzBtbV2w",
-      "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
-      "name": "Zilah conserve",
-      "value": 25371,
-      "stage": "⬜ - 00. Dormant (30 Days F/U)",
-      "confidence": 0
-    },
-    {
-      "id": "oppo_XTlOjv00wMeQcH29JHVlQOAWKHakUwa13yc04aW1KWF",
-      "lead_id": "lead_UldgCY4QXjNsavss9N4yjssZItq2ouHlFXEpa9u5bjj",
-      "name": "Dalcione Reis",
-      "value": 17060,
-      "stage": "💲 06. Booked / Deposit 35%",
-      "confidence": 100
-    },
-    {
-      "id": "oppo_5xaxhxOXqXgeWEEYgLAhQHaco61qXFfrwplQL12rduG",
-      "lead_id": "lead_Mtp20FYgApinh21JkyWdapyFP5BZ2BkaXamvNY69Jik",
-      "name": "Iris Nieves",
-      "value": 16289,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0
-    },
-    {
-      "id": "oppo_xzzWB73UGK2c9FwUo42BTlAiBOqaebJzfzt183Gnhxg",
-      "lead_id": "lead_qWMwRmUu7mYhGMtUtVOjsE03FTvEXgXh2GBuxCyVq4h",
-      "name": "Layza Souza Reis / Matheus",
-      "value": 14369,
-      "stage": "💲 09. Fully Paid",
-      "confidence": 100
-    },
-    {
-      "id": "oppo_Sib8zXkLLmrgOXiL0E9i1bpeOYKYhxwmQony9OlEb8Z",
-      "lead_id": "lead_oF5E3DHbzmF93syj4T3j8QkUhlTauq1ZLNl3oh1Ktyg",
-      "name": "Annabelle Moises-Salazar",
-      "value": 13860,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0
-    },
-    {
-      "id": "oppo_b6mRxeLjT5KxH49raPo2kEfmHw08Evqf8KIz1i31SHb",
-      "lead_id": "lead_5gnhQAkyP2dmYvGSblBxKaeYy4JRU91UTKCtwOuaycj",
-      "name": "Karla Lemos",
-      "value": 12521,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0
-    },
-    {
-      "id": "oppo_1gaKbHa7rFsJjJcHgIoluae2xHF2g6o2jQFVZTXMmxe",
-      "lead_id": "lead_IwS6IPjkvUWIZ5XrrpsKMPkjJswOda5eH3jnEktCIMe",
-      "name": "Luciana Cotrim Caixeta",
-      "value": 12000,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0
-    },
-    {
-      "id": "oppo_MoaCgNC77NXQJSOENMpJNgMF7sxTmF4p2Te5AbNQhVk",
-      "lead_id": "lead_b3M7LlEuMj35CNclBnXy45TlSLtSHBALIJHlSfHyAgZ",
-      "name": "Andreia Campos 🔥",
-      "value": 12000,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0
-    },
-    {
-      "id": "oppo_3B2q87afmIKRGH6afLaqp5uVDKxrVxOhPy8amH2HTFK",
-      "lead_id": "lead_SKrS2UPFdJIeOkBtjUaVP4tEYa00CRli0hmuCPzPDKq",
-      "name": "Patricia Ferraz",
-      "value": 12000,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0
-    },
-    {
-      "id": "oppo_IAXbOqtIUL3EzdHi7SRCdRsx3alhORPC492dkPh9eZA",
-      "lead_id": "lead_5zUxZIGRr4v6koW526bk4bO2CmF1WM95f7PB9ebis38",
-      "name": "Isabella- Planner",
+      "id": "oppo_Ds6lt6sfKZ8cngRKS3IBRu1XqD3VDzfSp3PUjciTLy8",
+      "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "name": "ETS EQUIPMENT",
       "value": 11685,
-      "stage": "🔲🔲 Archived Catering Customer 🔲🔲",
-      "confidence": 0
+      "stage": "💼 01. Aware of us",
+      "confidence": 80,
+      "close_at": null
+    },
+    {
+      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
+      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
+      "name": "Mary McGahan",
+      "value": 9000,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "confidence": 80,
+      "close_at": null
+    },
+    {
+      "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
+      "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "name": "Karla Velazquez",
+      "value": 7245,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null
+    },
+    {
+      "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
+      "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
+      "name": "Leslie Kearse Smith",
+      "value": 5670,
+      "stage": "📲 02. Setting Tasting Appointment",
+      "confidence": 20,
+      "close_at": null
+    },
+    {
+      "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
+      "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+      "name": "Ben Todd",
+      "value": 5103,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null
+    },
+    {
+      "id": "oppo_FmnFVaiJSHLWUHylKf3K3VKXxJqrJV4NSOOGwMSvaEQ",
+      "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+      "name": "Edwin Portillo",
+      "value": 4914,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null
+    },
+    {
+      "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
+      "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+      "name": "Ari",
+      "value": 4095,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null
+    },
+    {
+      "id": "oppo_jQBuH8wJC2dG53iU4E9LIRCUU5ASSltuMwG0Y0NQhEl",
+      "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+      "name": "Rebecca Almeida",
+      "value": 3780,
+      "stage": "🔥 03. Booked for Tasting",
+      "confidence": 20,
+      "close_at": null
+    },
+    {
+      "id": "oppo_nWf8fup5t0yk5Pa2rDx4TMqcmKa18TghG0ts41Mse5g",
+      "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+      "name": "Jessica Molina",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null
+    },
+    {
+      "id": "oppo_ugTLwzSvl1bz2pQnvUT0fM0nfF5hZcparNIH3pl8vhQ",
+      "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+      "name": "Jennifer Jones",
+      "value": 3780,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null
     }
   ],
-  "stage_counts": {
-    "prospect": {
-      "label": "⬜ 00. Prospect",
-      "count": 0,
-      "note": "See Close CRM for full breakdown"
-    },
-    "setting_tasting": {
-      "label": "📲 02. Setting Tasting Appointment",
-      "count": 2,
-      "value": 14670
-    },
-    "booked_tasting": {
-      "label": "🔥 03. Booked for Tasting",
-      "count": 4,
-      "value": 7644
-    },
-    "attended_tasting": {
-      "label": "🔥 04. Attended Tasting",
-      "count": 1,
-      "value": 3326
-    }
-  },
+  "alerts": [],
   "verification": {
-    "checked_at": "2026-04-10T06:16:20.249Z",
-    "status": "critical",
-    "live_opportunity_count": 100,
-    "static_pipeline_count": 26,
-    "matched_deal_count": 11,
-    "coverage_pct": 11,
+    "checked_at": "2026-04-13T19:39:26.835Z",
+    "status": "ok",
+    "metric": "close_api_file_tree",
+    "coverage_pct": 100,
     "notes": [
-      "Live Close data and static pipeline are drifting. Rebuild the pipeline JSON."
+      "Close direct file-tree source is active. Supabase is not required for this path."
     ]
   }
 }
