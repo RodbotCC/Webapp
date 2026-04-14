@@ -158,6 +158,9 @@
       "summary": "",
       "what_happened": [
         "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
         "Morning brief refreshed — 46 tasks today · 13 need attention · 0 closing this week",
         "Cadence watch refreshed — 46 due now · 28 within 48h",
         "Close direct file-tree sync started — Source: server.js auto-execute",
@@ -173,10 +176,7 @@
         "Oracle chat — Good. Then the next best move is **Laine Martins — $9,450 — Prospect**.\n\nNot because it’s prettier. Because it’s the next biggest check you can still pull forward today.\n\nLaine is still early, so the ...",
         "AI draft followup — Hey — since you’re still in the early stage, I want to make sure we’re comparing the right things before you get buried in options. For a $11.7k catering decision, the real question usually isn’t just...",
         "Close direct file-tree sync started — Source: server.js auto-execute",
-        "Oracle chat — Yes. Move off Rebecca.\n\nShe was the cleanest near-term conversion. If she’s actually done, the next best move is not another polite follow-up. It’s the next highest-money deal with real motion.\n\n### N...",
-        "AI lattice action decision — ### Sign-off packet: Approved\n\nRebecca Almeida is the right next move.\n\nShe’s already past curiosity and into real event motion. That means the job now is not persuasion. It’s removing ambiguity and m...",
-        "AI lattice action decision — ## Sign-off packet: Approved\n\n### 1) Exactly what to do next\nCall **Rebecca Almeida** **now** and confirm the tasting details.  \nDon’t “check in.” Confirm the logistics, who’s attending, and what stil...",
-        "AI lattice action decision — ## Certify: Yes — this is the right next move\n\nRebecca Almeida is the cleanest money-move on the board right now.\n\nShe’s not a cold prospect. She’s not a vague nurture lead. She’s already in tasting t..."
+        "Oracle chat — Yes. Move off Rebecca.\n\nShe was the cleanest near-term conversion. If she’s actually done, the next best move is not another polite follow-up. It’s the next highest-money deal with real motion.\n\n### N..."
       ],
       "what_we_learned": [],
       "what_we_added": [],
@@ -198,15 +198,15 @@
       ],
       "bottlenecks": [],
       "metrics": {
-        "activity_events": 131,
+        "activity_events": 134,
         "automation_events": 17,
         "ai_events": 17,
-        "sync_events": 88
+        "sync_events": 91
       }
     }
   },
   "_meta": {
     "created_at": "2026-04-09T00:00:00.000Z",
-    "last_updated": "2026-04-14T20:28:49.502Z"
+    "last_updated": "2026-04-14T20:45:59.378Z"
   }
 }

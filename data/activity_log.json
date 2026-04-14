@@ -3788,6 +3788,30 @@
       "summary": "Close direct file-tree sync started",
       "details": "Source: server.js auto-execute",
       "related": []
+    },
+    {
+      "ts": "2026-04-14T20:34:49.512Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:39:59.369Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:45:59.375Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
     }
   ]
 }

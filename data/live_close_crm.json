@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_synced": "2026-04-14T20:28:50.469Z",
+    "last_synced": "2026-04-14T20:46:00.220Z",
     "synced_by": "server.js auto-execute",
     "source": "close-api:file-tree"
   },
@@ -251,7 +251,7 @@
   ],
   "alerts": [],
   "verification": {
-    "checked_at": "2026-04-14T20:28:50.469Z",
+    "checked_at": "2026-04-14T20:46:00.220Z",
     "status": "ok",
     "metric": "close_api_file_tree",
     "coverage_pct": 100,

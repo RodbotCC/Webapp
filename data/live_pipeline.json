@@ -576,7 +576,7 @@
   ],
   "_meta": {
     "source": "close-api:file-tree",
-    "generated_at": "2026-04-14T20:28:50.464Z",
+    "generated_at": "2026-04-14T20:46:00.217Z",
     "note": "Andre-focused file-backed pipeline. Supabase is optional, not required."
   }
 }
