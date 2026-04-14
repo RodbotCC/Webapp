@@ -1,0 +1,1851 @@
+[
+  {
+    "id": "save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr",
+    "url": "https://app.close.com/leads/save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr/",
+    "name": "A: 🔷 02. Day 1-5 Cadence",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "before": {
+                        "type": "now"
+                      },
+                      "on_or_after": {
+                        "direction": "past",
+                        "moment": {
+                          "type": "now"
+                        },
+                        "offset": {
+                          "days": 7,
+                          "hours": 0,
+                          "minutes": 0,
+                          "months": 0,
+                          "seconds": 0,
+                          "weeks": 0,
+                          "years": 0
+                        },
+                        "type": "offset",
+                        "which_day_end": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "date_created",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "or"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "negate": true,
+                        "saved_search_ids": [
+                          "save_dtB5xHLEYTWG0FNvsZlodQyrG9xHXzDFh0eLlL2hCW8"
+                        ],
+                        "type": "any_of_saved_search"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "object_ids": [
+                            "stat_X4X2dIPrVwMZDbSGxo1xCbkokk0mjPwaqpF5PjK80F3",
+                            "stat_bklEUrvZENevA6DXNlfjkaMdRI9e4k5Gp0WIez1Bg13",
+                            "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                          ],
+                          "reference_type": "status.lead",
+                          "type": "reference"
+                        },
+                        "field": {
+                          "field_name": "status_id",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_P1wq4LXQlbeOdi4dbikgXHzPTZtBypP4BA5fnK0GLWd",
+                              "stat_XlK8WSBgI3iNiqqb5dGUxoDGfZN4QUvetFI8IM9YAS8",
+                              "stat_jPXypkYupOtL2e3S27WAmINSS5Wi4kRKeoXDG4CsesG",
+                              "stat_lFepKqyuTpPICkaKbld2JzXpXt3BHxO1bR4ctWYJRq0",
+                              "stat_uVWdjD12s4KhTwpOaNVgEYZX0ZRB75fKH2LCICzBYjT",
+                              "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+                              "stat_xIEnKeIS7IYyfj8O8IwZxvcBa52QbXJ6zwlkbXTQ00x",
+                              "stat_yJptDkplCTNffmd56XgEOzD7NOQc96IkTWJccPzBnH5"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": false,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": [
+        {
+          "direction": "asc",
+          "field": {
+            "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+            "type": "custom_field"
+          }
+        }
+      ]
+    },
+    "lead_count": 1,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz"
+    ]
+  },
+  {
+    "id": "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+    "url": "https://app.close.com/leads/save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok/",
+    "name": "A: 🔷 03. Day 6-10 Cadence",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "before": {
+                        "type": "now"
+                      },
+                      "on_or_after": {
+                        "direction": "past",
+                        "moment": {
+                          "type": "now"
+                        },
+                        "offset": {
+                          "days": 10,
+                          "hours": 0,
+                          "minutes": 0,
+                          "months": 0,
+                          "seconds": 0,
+                          "weeks": 0,
+                          "years": 0
+                        },
+                        "type": "offset",
+                        "which_day_end": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "date_created",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "or"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "negate": true,
+                        "saved_search_ids": [
+                          "save_9EsYYOkeKs1nFjkx2IMwSU6VAmDdyWwzvyFYAW89tyM",
+                          "save_dtB5xHLEYTWG0FNvsZlodQyrG9xHXzDFh0eLlL2hCW8"
+                        ],
+                        "type": "any_of_saved_search"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "object_ids": [
+                            "stat_X4X2dIPrVwMZDbSGxo1xCbkokk0mjPwaqpF5PjK80F3",
+                            "stat_bklEUrvZENevA6DXNlfjkaMdRI9e4k5Gp0WIez1Bg13",
+                            "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                          ],
+                          "reference_type": "status.lead",
+                          "type": "reference"
+                        },
+                        "field": {
+                          "field_name": "status_id",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_P1wq4LXQlbeOdi4dbikgXHzPTZtBypP4BA5fnK0GLWd",
+                              "stat_XlK8WSBgI3iNiqqb5dGUxoDGfZN4QUvetFI8IM9YAS8",
+                              "stat_jPXypkYupOtL2e3S27WAmINSS5Wi4kRKeoXDG4CsesG",
+                              "stat_lFepKqyuTpPICkaKbld2JzXpXt3BHxO1bR4ctWYJRq0",
+                              "stat_uVWdjD12s4KhTwpOaNVgEYZX0ZRB75fKH2LCICzBYjT",
+                              "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+                              "stat_xIEnKeIS7IYyfj8O8IwZxvcBa52QbXJ6zwlkbXTQ00x",
+                              "stat_yJptDkplCTNffmd56XgEOzD7NOQc96IkTWJccPzBnH5"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": false,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 12,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+      "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+      "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+      "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+      "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+      "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+      "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+      "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+      "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+      "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q"
+    ]
+  },
+  {
+    "id": "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC",
+    "url": "https://app.close.com/leads/save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC/",
+    "name": "A: 🔷 01. Today's Leads",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "before": {
+                        "range": "today",
+                        "type": "start_end_of_predefined_relative_period",
+                        "which": "end"
+                      },
+                      "on_or_after": {
+                        "range": "today",
+                        "type": "start_end_of_predefined_relative_period",
+                        "which": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "date_created",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  },
+                  {
+                    "condition": {
+                      "before": {
+                        "type": "now"
+                      },
+                      "on_or_after": {
+                        "direction": "past",
+                        "moment": {
+                          "type": "now"
+                        },
+                        "offset": {
+                          "days": 0,
+                          "hours": 24,
+                          "minutes": 0,
+                          "months": 0,
+                          "seconds": 0,
+                          "weeks": 0,
+                          "years": 0
+                        },
+                        "type": "offset",
+                        "which_day_end": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "date_created",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "or"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "object_ids": [
+                            "stat_X4X2dIPrVwMZDbSGxo1xCbkokk0mjPwaqpF5PjK80F3",
+                            "stat_bklEUrvZENevA6DXNlfjkaMdRI9e4k5Gp0WIez1Bg13",
+                            "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                          ],
+                          "reference_type": "status.lead",
+                          "type": "reference"
+                        },
+                        "field": {
+                          "field_name": "status_id",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 3,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+      "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ"
+    ]
+  },
+  {
+    "id": "save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD",
+    "url": "https://app.close.com/leads/save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD/",
+    "name": "A: 🔷 04. Opened Email (24hr) (Copy)",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "before": {
+                            "type": "now"
+                          },
+                          "on_or_after": {
+                            "direction": "past",
+                            "moment": {
+                              "type": "now"
+                            },
+                            "offset": {
+                              "days": 0,
+                              "hours": 24,
+                              "minutes": 0,
+                              "months": 0,
+                              "seconds": 0,
+                              "weeks": 0,
+                              "years": 0
+                            },
+                            "type": "offset",
+                            "which_day_end": "start"
+                          },
+                          "type": "moment_range"
+                        },
+                        "field": {
+                          "field_name": "last_email_last_open_date",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "object_ids": [
+                            "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                          ],
+                          "reference_type": "status.lead",
+                          "type": "reference"
+                        },
+                        "field": {
+                          "field_name": "status_id",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_JsVAn7jtb6qbyxc0j77Kh6SkONCIC6gpsTF21WUkFvs"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": true,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 0,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": []
+  },
+  {
+    "id": "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+    "url": "https://app.close.com/leads/save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT/",
+    "name": "A: 🔷 05. No Connect Made",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "object_ids": [
+                            "stat_X4X2dIPrVwMZDbSGxo1xCbkokk0mjPwaqpF5PjK80F3",
+                            "stat_bklEUrvZENevA6DXNlfjkaMdRI9e4k5Gp0WIez1Bg13",
+                            "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                          ],
+                          "reference_type": "status.lead",
+                          "type": "reference"
+                        },
+                        "field": {
+                          "field_name": "status_id",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_XlK8WSBgI3iNiqqb5dGUxoDGfZN4QUvetFI8IM9YAS8",
+                              "stat_jPXypkYupOtL2e3S27WAmINSS5Wi4kRKeoXDG4CsesG",
+                              "stat_lFepKqyuTpPICkaKbld2JzXpXt3BHxO1bR4ctWYJRq0",
+                              "stat_uVWdjD12s4KhTwpOaNVgEYZX0ZRB75fKH2LCICzBYjT",
+                              "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+                              "stat_xIEnKeIS7IYyfj8O8IwZxvcBa52QbXJ6zwlkbXTQ00x",
+                              "stat_yJptDkplCTNffmd56XgEOzD7NOQc96IkTWJccPzBnH5"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": false,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  },
+                  {
+                    "negate": true,
+                    "related_object_type": "activity.call",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "gt": {
+                              "days": 0,
+                              "hours": 0,
+                              "minutes": 2,
+                              "months": 0,
+                              "seconds": 0,
+                              "weeks": 0,
+                              "years": 0
+                            },
+                            "type": "duration_range"
+                          },
+                          "field": {
+                            "field_name": "duration",
+                            "object_type": "activity.call",
+                            "type": "regular_field"
+                          },
+                          "negate": false,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "type": "term",
+                      "values": [
+                        "incoming"
+                      ]
+                    },
+                    "field": {
+                      "field_name": "last_communication_direction",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": true,
+                    "type": "field_condition"
+                  },
+                  {
+                    "condition": {
+                      "before": {
+                        "range": "today",
+                        "type": "start_end_of_predefined_relative_period",
+                        "which": "end"
+                      },
+                      "on_or_after": {
+                        "range": "today",
+                        "type": "start_end_of_predefined_relative_period",
+                        "which": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "last_outgoing_call_date",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": true,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": true,
+                    "saved_search_ids": [
+                      "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC",
+                      "save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr",
+                      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+                      "save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD"
+                    ],
+                    "type": "any_of_saved_search"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 51,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+      "lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+      "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+      "lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+      "lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+      "lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+      "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+      "lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA",
+      "lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+      "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+      "lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+      "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+      "lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+      "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+      "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+      "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+      "lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+      "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+      "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+      "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+      "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+      "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+      "lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+      "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+      "lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+      "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+      "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+      "lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
+      "lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN",
+      "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+      "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+      "lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+      "lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA",
+      "lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G",
+      "lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT",
+      "lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+      "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+      "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+      "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+      "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+      "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+      "lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f",
+      "lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+      "lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+      "lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz",
+      "lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd",
+      "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+      "lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn"
+    ]
+  },
+  {
+    "id": "save_6TaDxEvv3m4y1DI83zmSwEAGg8NJvmskbPVsMJd5Ybh",
+    "url": "https://app.close.com/leads/save_6TaDxEvv3m4y1DI83zmSwEAGg8NJvmskbPVsMJd5Ybh/",
+    "name": "A: 🔷 06. Needs Response",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "before": {
+                            "type": "now"
+                          },
+                          "on_or_after": {
+                            "direction": "past",
+                            "moment": {
+                              "type": "now"
+                            },
+                            "offset": {
+                              "days": 0,
+                              "hours": 75,
+                              "minutes": 0,
+                              "months": 0,
+                              "seconds": 0,
+                              "weeks": 0,
+                              "years": 0
+                            },
+                            "type": "offset",
+                            "which_day_end": "start"
+                          },
+                          "type": "moment_range"
+                        },
+                        "field": {
+                          "field_name": "last_communication_date",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "0"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_rmV7IfUJeD0mmcr9dEnC0ELO1s8gxcTcuXzkbDa2iHf",
+                          "type": "custom_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "incoming"
+                          ]
+                        },
+                        "field": {
+                          "field_name": "last_communication_direction",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_XlK8WSBgI3iNiqqb5dGUxoDGfZN4QUvetFI8IM9YAS8",
+                              "stat_iT5xvidBJs8amQrSj5HFDkZW8wmzdnVAKEr5IH2RmjV",
+                              "stat_jPXypkYupOtL2e3S27WAmINSS5Wi4kRKeoXDG4CsesG",
+                              "stat_lFepKqyuTpPICkaKbld2JzXpXt3BHxO1bR4ctWYJRq0",
+                              "stat_uVWdjD12s4KhTwpOaNVgEYZX0ZRB75fKH2LCICzBYjT",
+                              "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+                              "stat_xIEnKeIS7IYyfj8O8IwZxvcBa52QbXJ6zwlkbXTQ00x",
+                              "stat_yJptDkplCTNffmd56XgEOzD7NOQc96IkTWJccPzBnH5"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": false,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": [
+        {
+          "direction": "desc",
+          "field": {
+            "field_name": "next_task_text",
+            "object_type": "lead",
+            "type": "regular_field"
+          }
+        }
+      ]
+    },
+    "lead_count": 0,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": []
+  },
+  {
+    "id": "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO",
+    "url": "https://app.close.com/leads/save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO/",
+    "name": "A: 🔷 07. Booked Tastings",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_pwsRX35x1yQARZ5o0oBmSZyt69uoROzrI4NofjCcpyp",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_iT5xvidBJs8amQrSj5HFDkZW8wmzdnVAKEr5IH2RmjV"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": false,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "type": "term",
+                      "values": [
+                        "01. 😎 Andre"
+                      ]
+                    },
+                    "field": {
+                      "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                      "type": "custom_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": [
+        {
+          "direction": "asc",
+          "field": {
+            "custom_field_id": "cf_pwsRX35x1yQARZ5o0oBmSZyt69uoROzrI4NofjCcpyp",
+            "type": "custom_field"
+          }
+        }
+      ]
+    },
+    "lead_count": 5,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+      "lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+      "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+      "lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+      "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t"
+    ]
+  },
+  {
+    "id": "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM",
+    "url": "https://app.close.com/leads/save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM/",
+    "name": "A: 🔷 08. Long-Term / Dormant Followup",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "type": "term",
+                      "values": [
+                        "01. 😎 Andre"
+                      ]
+                    },
+                    "field": {
+                      "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                      "type": "custom_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "related_object_type": "opportunity",
+                "related_query": {
+                  "negate": false,
+                  "queries": [
+                    {
+                      "condition": {
+                        "object_ids": [
+                          "stat_P1wq4LXQlbeOdi4dbikgXHzPTZtBypP4BA5fnK0GLWd",
+                          "stat_WwdLVYybpd3l1KXTy8CJat1RzFgT7LbeuxU4A8jVdA6"
+                        ],
+                        "reference_type": "status.opportunity",
+                        "type": "reference"
+                      },
+                      "field": {
+                        "field_name": "status_id",
+                        "object_type": "opportunity",
+                        "type": "regular_field"
+                      },
+                      "negate": false,
+                      "type": "field_condition"
+                    }
+                  ],
+                  "type": "and"
+                },
+                "this_object_type": "lead",
+                "type": "has_related"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": true,
+                    "saved_search_ids": [
+                      "save_aBQ9IHiCfxRMNzMslenIQADx3EK1ksd7h0vPVyF3Url",
+                      "save_wM3wZhcYyzXcz9nE6MZEA0vfGq5XEruPAJw1bBIyWOV",
+                      "save_LbRFyoJcwG3APWsgjhY9IF8uin7NOvqvQjPOqsaZpnt",
+                      "save_6pbQJt7x1gGwB0mtfJSsKVZdlE8vKIqTWBtkaaB8Vfi",
+                      "save_vmHn1IcyY1QchXjcK0yuu22WR7MKqhwu2J3o7BnhTCl",
+                      "save_XERwbdarFFGoJb8gS72TXqF33orlG0OSzlRJlOgQlOy",
+                      "save_wSbaNp8D12i9zpFG94AqOjQY4Oz1823QnvdtKIl9jA2",
+                      "save_9EsYYOkeKs1nFjkx2IMwSU6VAmDdyWwzvyFYAW89tyM",
+                      "save_58D7WTVN6yThHZvufU9Keq2oe5qdLEHtXtK9vNzY4zh"
+                    ],
+                    "type": "any_of_saved_search"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "before": {
+                        "type": "now"
+                      },
+                      "on_or_after": {
+                        "direction": "past",
+                        "moment": {
+                          "type": "now"
+                        },
+                        "offset": {
+                          "days": 28,
+                          "hours": 0,
+                          "minutes": 0,
+                          "months": 0,
+                          "seconds": 0,
+                          "weeks": 0,
+                          "years": 0
+                        },
+                        "type": "offset",
+                        "which_day_end": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "last_communication_date",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": true,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 5,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+      "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+      "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+      "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+      "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr"
+    ]
+  },
+  {
+    "id": "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ",
+    "url": "https://app.close.com/leads/save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ/",
+    "name": "A: 🔷 10. All Other Followup (Copy)",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "type": "term",
+                      "values": [
+                        "01. 😎 Andre"
+                      ]
+                    },
+                    "field": {
+                      "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                      "type": "custom_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "related_object_type": "opportunity",
+                "related_query": {
+                  "negate": false,
+                  "queries": [
+                    {
+                      "condition": {
+                        "object_ids": [
+                          "stat_XlK8WSBgI3iNiqqb5dGUxoDGfZN4QUvetFI8IM9YAS8",
+                          "stat_jPXypkYupOtL2e3S27WAmINSS5Wi4kRKeoXDG4CsesG",
+                          "stat_lFepKqyuTpPICkaKbld2JzXpXt3BHxO1bR4ctWYJRq0",
+                          "stat_uVWdjD12s4KhTwpOaNVgEYZX0ZRB75fKH2LCICzBYjT",
+                          "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+                          "stat_xIEnKeIS7IYyfj8O8IwZxvcBa52QbXJ6zwlkbXTQ00x",
+                          "stat_yJptDkplCTNffmd56XgEOzD7NOQc96IkTWJccPzBnH5"
+                        ],
+                        "reference_type": "status.opportunity",
+                        "type": "reference"
+                      },
+                      "field": {
+                        "field_name": "status_id",
+                        "object_type": "opportunity",
+                        "type": "regular_field"
+                      },
+                      "negate": false,
+                      "type": "field_condition"
+                    }
+                  ],
+                  "type": "and"
+                },
+                "this_object_type": "lead",
+                "type": "has_related"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": true,
+                    "saved_search_ids": [
+                      "save_irFoYhL19Dv5vzpSOX815wuViD1hw5QMbrM50hODQkf",
+                      "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM",
+                      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO",
+                      "save_6TaDxEvv3m4y1DI83zmSwEAGg8NJvmskbPVsMJd5Ybh",
+                      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+                      "save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD",
+                      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+                      "save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr",
+                      "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC",
+                      "save_gksxTfqIbT5a4sck3S3P1SzjBBmIhHYjI8kPCc0Jr0B"
+                    ],
+                    "type": "any_of_saved_search"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "before": {
+                        "type": "now"
+                      },
+                      "on_or_after": {
+                        "direction": "past",
+                        "moment": {
+                          "type": "now"
+                        },
+                        "offset": {
+                          "days": 0,
+                          "hours": 72,
+                          "minutes": 0,
+                          "months": 0,
+                          "seconds": 0,
+                          "weeks": 0,
+                          "years": 0
+                        },
+                        "type": "offset",
+                        "which_day_end": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "last_communication_date",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": true,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "object_ids": [
+                        "stat_X4X2dIPrVwMZDbSGxo1xCbkokk0mjPwaqpF5PjK80F3",
+                        "stat_bklEUrvZENevA6DXNlfjkaMdRI9e4k5Gp0WIez1Bg13",
+                        "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                      ],
+                      "reference_type": "status.lead",
+                      "type": "reference"
+                    },
+                    "field": {
+                      "field_name": "status_id",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": true,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 10,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+      "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+      "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+      "lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+      "lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+      "lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+      "lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz",
+      "lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd",
+      "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+      "lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn"
+    ]
+  }
+]

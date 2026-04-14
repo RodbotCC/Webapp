@@ -1,0 +1,88 @@
+{
+  "_meta": {
+    "generated_at": "2026-04-13T21:58:11.654Z",
+    "source": "close-api:local-reconstructed-saved-views",
+    "saved_view_count": 9,
+    "unique_lead_count": 65,
+    "contact_count": 107,
+    "contacts_with_email": 70,
+    "contacts_with_phone": 102,
+    "contacts_with_both_email_and_phone": 65,
+    "leads_with_any_activity_or_task": 65,
+    "activity_counts": {
+      "general": 1785,
+      "emails": 570,
+      "sms": 594,
+      "calls": 369,
+      "notes": 121,
+      "tasks": 126
+    },
+    "views": [
+      {
+        "id": "save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr",
+        "name": "A: 🔷 02. Day 1-5 Cadence",
+        "url": "https://app.close.com/leads/save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr/",
+        "lead_count": 1
+      },
+      {
+        "id": "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+        "name": "A: 🔷 03. Day 6-10 Cadence",
+        "url": "https://app.close.com/leads/save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok/",
+        "lead_count": 12
+      },
+      {
+        "id": "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC",
+        "name": "A: 🔷 01. Today's Leads",
+        "url": "https://app.close.com/leads/save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC/",
+        "lead_count": 3
+      },
+      {
+        "id": "save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD",
+        "name": "A: 🔷 04. Opened Email (24hr) (Copy)",
+        "url": "https://app.close.com/leads/save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD/",
+        "lead_count": 0
+      },
+      {
+        "id": "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+        "name": "A: 🔷 05. No Connect Made",
+        "url": "https://app.close.com/leads/save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT/",
+        "lead_count": 51
+      },
+      {
+        "id": "save_6TaDxEvv3m4y1DI83zmSwEAGg8NJvmskbPVsMJd5Ybh",
+        "name": "A: 🔷 06. Needs Response",
+        "url": "https://app.close.com/leads/save_6TaDxEvv3m4y1DI83zmSwEAGg8NJvmskbPVsMJd5Ybh/",
+        "lead_count": 0
+      },
+      {
+        "id": "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO",
+        "name": "A: 🔷 07. Booked Tastings",
+        "url": "https://app.close.com/leads/save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO/",
+        "lead_count": 5
+      },
+      {
+        "id": "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM",
+        "name": "A: 🔷 08. Long-Term / Dormant Followup",
+        "url": "https://app.close.com/leads/save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM/",
+        "lead_count": 5
+      },
+      {
+        "id": "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ",
+        "name": "A: 🔷 10. All Other Followup (Copy)",
+        "url": "https://app.close.com/leads/save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ/",
+        "lead_count": 10
+      }
+    ]
+  },
+  "files": {
+    "summary": "summary.json",
+    "report": "report.md",
+    "leads": "leads.json",
+    "contacts": "contacts.json",
+    "activities_by_lead": "activities_by_lead.json",
+    "saved_views": "saved_views.json",
+    "raw_view_exports": "views/*.json",
+    "contacts_csv": "contacts.csv",
+    "outbound_ready": "outbound_ready.json"
+  }
+}

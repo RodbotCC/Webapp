@@ -1,0 +1,2992 @@
+[
+  {
+    "next_best_action_id": "nba_lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Alex Ayala\nCampaign: RODS WEDDING & FACELESS",
+    "description": "Facebook Lead Ads: Alex Ayala\nCampaign: RODS WEDDING & FACELESS for Alex Ayala",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu_saved_view_membership",
+      "sig_lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu_contact_indexed",
+      "sig_lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 40,
+      "action_now_score": 49,
+      "expected_impact": 74,
+      "saveability_score": 54,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=49; priority=40",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+    "action_type": "schedule_follow_up",
+    "title": "🐇🐇🐇Remind Rod to call her",
+    "description": "🐇🐇🐇Remind Rod to call her for Ana Paula- BEZ GROUP",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-13T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT_saved_view_membership",
+      "sig_lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [
+      "email_missing"
+    ],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 18,
+      "action_now_score": 23,
+      "expected_impact": 0,
+      "saveability_score": 25,
+      "confidence": 72,
+      "attention_cost": 54
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=23; priority=18",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT",
+    "action_type": "schedule_follow_up",
+    "title": "Andraya Blair — EXPO Day 3: Check reply. If no response, send ballpark + tasting invite.",
+    "description": "Andraya Blair — EXPO Day 3: Check reply. If no response, send ballpark + tasting invite. for Andraya Blair",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-17T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT_saved_view_membership",
+      "sig_lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 45,
+      "expected_impact": 58,
+      "saveability_score": 50,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=45; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub_confirm_event_details",
+    "target_object_type": "lead",
+    "target_object_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "action_type": "confirm_event_details",
+    "title": "Confirm tasting details and next step",
+    "description": "Confirm tasting details and next step for Andreia DePina Moore",
+    "recommended_channel": "sms",
+    "recommended_due_at": "2026-03-16",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub_saved_view_membership",
+      "sig_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub_contact_indexed",
+      "sig_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 50,
+      "action_now_score": 54,
+      "expected_impact": 100,
+      "saveability_score": 73,
+      "confidence": 72,
+      "attention_cost": 38
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 07. Booked Tastings; action_now=54; priority=50",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN",
+    "action_type": "schedule_follow_up",
+    "title": "01. ➡️ Engage with website lead \"Anna",
+    "description": "01. ➡️ Engage with website lead \"Anna for Anna",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-01T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN_saved_view_membership",
+      "sig_lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 37,
+      "action_now_score": 45,
+      "expected_impact": 60,
+      "saveability_score": 50,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=45; priority=37",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "action_type": "schedule_follow_up",
+    "title": "[OOPS] Please add a task to your most recently updated lead",
+    "description": "[OOPS] Please add a task to your most recently updated lead for Anna Julia Duarte",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-04T14:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E_saved_view_membership",
+      "sig_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E_contact_indexed",
+      "sig_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 49,
+      "action_now_score": 55,
+      "expected_impact": 100,
+      "saveability_score": 71,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=55; priority=49",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "action_type": "schedule_follow_up",
+    "title": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get them on the phone soon",
+    "description": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get them on the phone soon for Ari",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-02-18T14:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK_saved_view_membership",
+      "sig_lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK_contact_indexed",
+      "sig_lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 47,
+      "action_now_score": 56,
+      "expected_impact": 100,
+      "saveability_score": 64,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=56; priority=47",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd",
+    "action_type": "schedule_follow_up",
+    "title": "[OOPS] Please add a task to your most recently updated lead",
+    "description": "[OOPS] Please add a task to your most recently updated lead for Ashley Wood",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-24",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd_saved_view_membership",
+      "sig_lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 29,
+      "action_now_score": 35,
+      "expected_impact": 30,
+      "saveability_score": 40,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=35; priority=29",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "action_type": "schedule_follow_up",
+    "title": "Get him on the phone Friday",
+    "description": "Get him on the phone Friday for Ben Todd",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C_saved_view_membership",
+      "sig_lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C_contact_indexed",
+      "sig_lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 43,
+      "action_now_score": 49,
+      "expected_impact": 70,
+      "saveability_score": 57,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=49; priority=43",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "action_type": "schedule_follow_up",
+    "title": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get her on the phone",
+    "description": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get her on the phone for BriAnna Nixie",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-02-19",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5_saved_view_membership",
+      "sig_lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5_contact_indexed",
+      "sig_lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 44,
+      "action_now_score": 53,
+      "expected_impact": 90,
+      "saveability_score": 60,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=53; priority=44",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+    "action_type": "schedule_follow_up",
+    "title": "[OOPS] Please add a task to your most recently updated lead",
+    "description": "[OOPS] Please add a task to your most recently updated lead for Cadence Fell",
+    "recommended_channel": "email",
+    "recommended_due_at": "2026-04-13T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX_saved_view_membership",
+      "sig_lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [
+      "phone_missing"
+    ],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 31,
+      "action_now_score": 41,
+      "expected_impact": 50,
+      "saveability_score": 39,
+      "confidence": 72,
+      "attention_cost": 56
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=41; priority=31",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: camille Griffin\nCampaign: 3 STILLS",
+    "description": "Facebook Lead Ads: camille Griffin\nCampaign: 3 STILLS for Camille Griffin",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS_saved_view_membership",
+      "sig_lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 36,
+      "action_now_score": 45,
+      "expected_impact": 60,
+      "saveability_score": 49,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=45; priority=36",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Carolyn Boumila-Vega\nCampaign: RODS WEDDING & FACELESS",
+    "description": "Facebook Lead Ads: Carolyn Boumila-Vega\nCampaign: RODS WEDDING & FACELESS for Carolyn Boumila-Vega",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9_saved_view_membership",
+      "sig_lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 39,
+      "action_now_score": 45,
+      "expected_impact": 56,
+      "saveability_score": 53,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=45; priority=39",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Coreen Miranda\nCampaign: 3 STILLS",
+    "description": "Facebook Lead Ads: Coreen Miranda\nCampaign: 3 STILLS for Coreen Miranda",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-13T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q_saved_view_membership",
+      "sig_lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q_contact_indexed",
+      "sig_lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 45,
+      "action_now_score": 51,
+      "expected_impact": 81,
+      "saveability_score": 64,
+      "confidence": 72,
+      "attention_cost": 38
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence; action_now=51; priority=45",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f",
+    "action_type": "schedule_follow_up",
+    "title": "[OOPS] Please add a task to your most recently updated lead",
+    "description": "[OOPS] Please add a task to your most recently updated lead for Corliss Lau",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-24",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f_saved_view_membership",
+      "sig_lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 37,
+      "action_now_score": 44,
+      "expected_impact": 54,
+      "saveability_score": 49,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=44; priority=37",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Darlene Scott\nCampaign: RODS WEDDING & FACELESS",
+    "description": "Facebook Lead Ads: Darlene Scott\nCampaign: RODS WEDDING & FACELESS for Darlene Scott",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI_saved_view_membership",
+      "sig_lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI_contact_indexed",
+      "sig_lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 37,
+      "action_now_score": 47,
+      "expected_impact": 72,
+      "saveability_score": 52,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=47; priority=37",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Darnika Joseph\nCampaign: 3 STILLS",
+    "description": "Facebook Lead Ads: Darnika Joseph\nCampaign: 3 STILLS for Darnika Joseph",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV_saved_view_membership",
+      "sig_lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV_contact_indexed",
+      "sig_lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 47,
+      "expected_impact": 72,
+      "saveability_score": 53,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=47; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+    "action_type": "schedule_follow_up",
+    "title": "Call and get her on the phone",
+    "description": "Call and get her on the phone for Diana Medrano",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW_saved_view_membership",
+      "sig_lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW_contact_indexed",
+      "sig_lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 42,
+      "action_now_score": 51,
+      "expected_impact": 88,
+      "saveability_score": 58,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=51; priority=42",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "action_type": "schedule_follow_up",
+    "title": "Get him on the phone and into tasting",
+    "description": "Get him on the phone and into tasting for Edwin Portillo",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e_saved_view_membership",
+      "sig_lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 43,
+      "expected_impact": 54,
+      "saveability_score": 53,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=43; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
+    "action_type": "schedule_follow_up",
+    "title": "Engage & Sell a tasting",
+    "description": "Engage & Sell a tasting for Elciane Gomes",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z_saved_view_membership",
+      "sig_lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 35,
+      "action_now_score": 44,
+      "expected_impact": 60,
+      "saveability_score": 48,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=44; priority=35",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "action_type": "schedule_follow_up",
+    "title": "Get her on the phone soon",
+    "description": "Get her on the phone soon for Gabby Garcia Serrano",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-13T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof_saved_view_membership",
+      "sig_lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 44,
+      "expected_impact": 52,
+      "saveability_score": 51,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=44; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+    "action_type": "schedule_follow_up",
+    "title": "[OOPS] Please add a task to your most recently updated lead",
+    "description": "[OOPS] Please add a task to your most recently updated lead for Gina Gallagher",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo_saved_view_membership",
+      "sig_lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 35,
+      "action_now_score": 42,
+      "expected_impact": 46,
+      "saveability_score": 46,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=42; priority=35",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn_call_now",
+    "target_object_type": "lead",
+    "target_object_id": "lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "action_type": "call_now",
+    "title": "Make first real connection attempt",
+    "description": "Make first real connection attempt for Gisele Chartrand Elgart",
+    "recommended_channel": "call",
+    "recommended_due_at": "2025-07-24",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn_saved_view_membership",
+      "sig_lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 15,
+      "action_now_score": 14,
+      "expected_impact": 0,
+      "saveability_score": 28,
+      "confidence": 72,
+      "attention_cost": 39
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": false,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=14; priority=15",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA",
+    "action_type": "schedule_follow_up",
+    "title": "Heli Parekh — EXPO Day 3: Check reply. If no response, send ballpark + venue help.",
+    "description": "Heli Parekh — EXPO Day 3: Check reply. If no response, send ballpark + venue help. for Heli Parekh",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-17T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA_saved_view_membership",
+      "sig_lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 36,
+      "action_now_score": 45,
+      "expected_impact": 56,
+      "saveability_score": 47,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=45; priority=36",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+    "action_type": "schedule_follow_up",
+    "title": "Follow up",
+    "description": "Follow up for Igreja Evangelica Avivamento Da Fe Na Revere",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-01-29T14:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK_saved_view_membership",
+      "sig_lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [
+      "email_missing"
+    ],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 10,
+      "action_now_score": 13,
+      "expected_impact": 0,
+      "saveability_score": 22,
+      "confidence": 72,
+      "attention_cost": 57
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 08. Long-Term / Dormant Followup; action_now=13; priority=10",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "action_type": "schedule_follow_up",
+    "title": "Follow up",
+    "description": "Follow up for Inna Shvetsova",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-09T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O_saved_view_membership",
+      "sig_lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O_contact_indexed",
+      "sig_lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 42,
+      "action_now_score": 48,
+      "expected_impact": 72,
+      "saveability_score": 58,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=48; priority=42",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO_confirm_event_details",
+    "target_object_type": "lead",
+    "target_object_id": "lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "action_type": "confirm_event_details",
+    "title": "Confirm tasting details and next step",
+    "description": "Confirm tasting details and next step for Isabella Mathis",
+    "recommended_channel": "sms",
+    "recommended_due_at": "2026-04-01",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO_saved_view_membership",
+      "sig_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO_contact_indexed",
+      "sig_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 50,
+      "action_now_score": 54,
+      "expected_impact": 100,
+      "saveability_score": 71,
+      "confidence": 72,
+      "attention_cost": 38
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 07. Booked Tastings; action_now=54; priority=50",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Ivy Elien\nCampaign: 3 STILLS",
+    "description": "Facebook Lead Ads: Ivy Elien\nCampaign: 3 STILLS for Ivy Elien",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3_saved_view_membership",
+      "sig_lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 37,
+      "action_now_score": 45,
+      "expected_impact": 56,
+      "saveability_score": 49,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=45; priority=37",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "action_type": "schedule_follow_up",
+    "title": "Get her on the phone soon",
+    "description": "Get her on the phone soon for Jeanette Comire",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK_saved_view_membership",
+      "sig_lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK_contact_indexed",
+      "sig_lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 50,
+      "action_now_score": 55,
+      "expected_impact": 100,
+      "saveability_score": 74,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=55; priority=50",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv_confirm_event_details",
+    "target_object_type": "lead",
+    "target_object_id": "lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "action_type": "confirm_event_details",
+    "title": "Confirm tasting details and next step",
+    "description": "Confirm tasting details and next step for Jenn Smiley",
+    "recommended_channel": "sms",
+    "recommended_due_at": "2026-03-19",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv_saved_view_membership",
+      "sig_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv_contact_indexed",
+      "sig_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 52,
+      "action_now_score": 55,
+      "expected_impact": 100,
+      "saveability_score": 74,
+      "confidence": 72,
+      "attention_cost": 38
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 07. Booked Tastings; action_now=55; priority=52",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "action_type": "schedule_follow_up",
+    "title": "Engage & Sell a tasting",
+    "description": "Engage & Sell a tasting for Jennifer Jones",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-06T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp_saved_view_membership",
+      "sig_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp_contact_indexed",
+      "sig_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 46,
+      "action_now_score": 52,
+      "expected_impact": 76,
+      "saveability_score": 60,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=52; priority=46",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps_reactivate_lead",
+    "target_object_type": "lead",
+    "target_object_id": "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+    "action_type": "reactivate_lead",
+    "title": "Send reactivation follow-up",
+    "description": "Send reactivation follow-up for Jessica McGory",
+    "recommended_channel": "email",
+    "recommended_due_at": "2026-03-13T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps_saved_view_membership",
+      "sig_lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": false,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 10,
+      "action_now_score": 9,
+      "expected_impact": 0,
+      "saveability_score": 18,
+      "confidence": 72,
+      "attention_cost": 42
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": false,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 08. Long-Term / Dormant Followup; action_now=9; priority=10",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "action_type": "schedule_follow_up",
+    "title": "Get her on the phone",
+    "description": "Get her on the phone for Jessica Molina",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR_saved_view_membership",
+      "sig_lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR_contact_indexed",
+      "sig_lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 43,
+      "action_now_score": 51,
+      "expected_impact": 80,
+      "saveability_score": 57,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=51; priority=43",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t_confirm_event_details",
+    "target_object_type": "lead",
+    "target_object_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "action_type": "confirm_event_details",
+    "title": "Confirm tasting details and next step",
+    "description": "Confirm tasting details and next step for Jose Quefau",
+    "recommended_channel": "sms",
+    "recommended_due_at": "2026-04-08",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t_saved_view_membership",
+      "sig_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t_contact_indexed",
+      "sig_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 53,
+      "action_now_score": 57,
+      "expected_impact": 100,
+      "saveability_score": 75,
+      "confidence": 72,
+      "attention_cost": 38
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 07. Booked Tastings; action_now=57; priority=53",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "action_type": "schedule_follow_up",
+    "title": "Get her on the phone",
+    "description": "Get her on the phone for Ju",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-07T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr_saved_view_membership",
+      "sig_lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 40,
+      "action_now_score": 46,
+      "expected_impact": 60,
+      "saveability_score": 54,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=46; priority=40",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA",
+    "action_type": "schedule_follow_up",
+    "title": "Follow up",
+    "description": "Follow up for Kaitlyn Nichols",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-16",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA_saved_view_membership",
+      "sig_lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 44,
+      "expected_impact": 54,
+      "saveability_score": 51,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=44; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+    "action_type": "schedule_follow_up",
+    "title": "Follow up",
+    "description": "Follow up for Katerina St. Angelo",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-09T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS_saved_view_membership",
+      "sig_lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 13,
+      "action_now_score": 15,
+      "expected_impact": 0,
+      "saveability_score": 26,
+      "confidence": 72,
+      "attention_cost": 50
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 08. Long-Term / Dormant Followup; action_now=15; priority=13",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz",
+    "action_type": "schedule_follow_up",
+    "title": "Follow up",
+    "description": "Follow up for Kenia Valdivia",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-16",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz_saved_view_membership",
+      "sig_lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 15,
+      "action_now_score": 15,
+      "expected_impact": 0,
+      "saveability_score": 30,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=15; priority=15",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS",
+    "description": "Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS for Laine Martins",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_saved_view_membership",
+      "sig_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_contact_indexed",
+      "sig_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 63,
+      "action_now_score": 67,
+      "expected_impact": 68,
+      "saveability_score": 78,
+      "confidence": 72,
+      "attention_cost": 38
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": true,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": true
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 01. Today's Leads; action_now=67; priority=63",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 01. Today's Leads"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+    "action_type": "schedule_follow_up",
+    "title": "[OOPS] Please add a task to your most recently updated lead",
+    "description": "[OOPS] Please add a task to your most recently updated lead for LeaAnthony",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-10T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM_saved_view_membership",
+      "sig_lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 34,
+      "action_now_score": 41,
+      "expected_impact": 42,
+      "saveability_score": 45,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=41; priority=34",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "action_type": "schedule_follow_up",
+    "title": "Send message Mid April",
+    "description": "Send message Mid April for Leigh",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-02",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i_saved_view_membership",
+      "sig_lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 22,
+      "action_now_score": 23,
+      "expected_impact": 34,
+      "saveability_score": 43,
+      "confidence": 72,
+      "attention_cost": 50
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 08. Long-Term / Dormant Followup; action_now=23; priority=22",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "action_type": "schedule_follow_up",
+    "title": "[OOPS] Please add a task to your most recently updated lead",
+    "description": "[OOPS] Please add a task to your most recently updated lead for Lisandra Lopez",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-24",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo_saved_view_membership",
+      "sig_lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 46,
+      "expected_impact": 62,
+      "saveability_score": 53,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=46; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "action_type": "schedule_follow_up",
+    "title": "get her on the phone",
+    "description": "get her on the phone for Maria A. Cutler",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-06T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q_saved_view_membership",
+      "sig_lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q_contact_indexed",
+      "sig_lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 46,
+      "expected_impact": 66,
+      "saveability_score": 53,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=46; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "action_type": "schedule_follow_up",
+    "title": "[OOPS] Please add a task to your most recently updated lead",
+    "description": "[OOPS] Please add a task to your most recently updated lead for Maria Barros",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-21T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc_saved_view_membership",
+      "sig_lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc_contact_indexed",
+      "sig_lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 58,
+      "action_now_score": 60,
+      "expected_impact": 86,
+      "saveability_score": 75,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=60; priority=58",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "action_type": "schedule_follow_up",
+    "title": "Get them on the phone soon",
+    "description": "Get them on the phone soon for Marni Wheeler",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-02-12T14:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD_saved_view_membership",
+      "sig_lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD_contact_indexed",
+      "sig_lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 44,
+      "action_now_score": 53,
+      "expected_impact": 94,
+      "saveability_score": 60,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=53; priority=44",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i_call_now",
+    "target_object_type": "lead",
+    "target_object_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "action_type": "call_now",
+    "title": "Make first real connection attempt",
+    "description": "Make first real connection attempt for Mary Ann Hughes",
+    "recommended_channel": "call",
+    "recommended_due_at": "2025-08-07T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i_saved_view_membership",
+      "sig_lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 13,
+      "action_now_score": 14,
+      "expected_impact": 0,
+      "saveability_score": 23,
+      "confidence": 72,
+      "attention_cost": 39
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": false,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=14; priority=13",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Megan Szwarckop\nCampaign: 3 STILLS",
+    "description": "Facebook Lead Ads: Megan Szwarckop\nCampaign: 3 STILLS for Megan Szwarckop",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a_saved_view_membership",
+      "sig_lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 36,
+      "action_now_score": 45,
+      "expected_impact": 62,
+      "saveability_score": 50,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=45; priority=36",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+    "action_type": "schedule_follow_up",
+    "title": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Facebook Lead Ads: Mika Pierre\nCampaign:",
+    "description": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Facebook Lead Ads: Mika Pierre\nCampaign: for Mika Pierre",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe_saved_view_membership",
+      "sig_lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe_contact_indexed",
+      "sig_lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 47,
+      "expected_impact": 72,
+      "saveability_score": 53,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=47; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Neri Nogueira\nCampaign: 3 STILLS",
+    "description": "Facebook Lead Ads: Neri Nogueira\nCampaign: 3 STILLS for Neri Nogueira",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku_saved_view_membership",
+      "sig_lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku_contact_indexed",
+      "sig_lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 44,
+      "action_now_score": 52,
+      "expected_impact": 84,
+      "saveability_score": 62,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=52; priority=44",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+    "action_type": "schedule_follow_up",
+    "title": "Follow up",
+    "description": "Follow up for Precious Montgomery",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-02-04T14:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx_saved_view_membership",
+      "sig_lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 16,
+      "action_now_score": 15,
+      "expected_impact": 0,
+      "saveability_score": 32,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy); action_now=15; priority=16",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made",
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Rachel Sawyer\nCampaign: $19 GALLERY",
+    "description": "Facebook Lead Ads: Rachel Sawyer\nCampaign: $19 GALLERY for Rachel Sawyer",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-20",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB_saved_view_membership",
+      "sig_lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 44,
+      "action_now_score": 46,
+      "expected_impact": 64,
+      "saveability_score": 61,
+      "confidence": 72,
+      "attention_cost": 38
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 10. All Other Followup (Copy); action_now=46; priority=44",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "action_type": "schedule_follow_up",
+    "title": "Change the name of the lead once you find it what it is (both lead record and contact name)",
+    "description": "Change the name of the lead once you find it what it is (both lead record and contact name) for Raddison7902",
+    "recommended_channel": "email",
+    "recommended_due_at": "2026-04-10",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH_saved_view_membership",
+      "sig_lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [
+      "phone_missing"
+    ],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 30,
+      "action_now_score": 39,
+      "expected_impact": 42,
+      "saveability_score": 37,
+      "confidence": 72,
+      "attention_cost": 56
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made; action_now=39; priority=30",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 03. Day 6-10 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN_confirm_event_details",
+    "target_object_type": "lead",
+    "target_object_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "action_type": "confirm_event_details",
+    "title": "Confirm tasting details and next step",
+    "description": "Confirm tasting details and next step for Rebecca Almeida",
+    "recommended_channel": "sms",
+    "recommended_due_at": "2026-02-16T14:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN_saved_view_membership",
+      "sig_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN_contact_indexed",
+      "sig_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 52,
+      "action_now_score": 54,
+      "expected_impact": 100,
+      "saveability_score": 76,
+      "confidence": 72,
+      "attention_cost": 38
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 07. Booked Tastings; action_now=54; priority=52",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Samantha Machie\nCampaign: RODS WEDDING & FACELESS",
+    "description": "Facebook Lead Ads: Samantha Machie\nCampaign: RODS WEDDING & FACELESS for Samantha Machie",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv_saved_view_membership",
+      "sig_lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv_contact_indexed",
+      "sig_lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 38,
+      "action_now_score": 46,
+      "expected_impact": 66,
+      "saveability_score": 52,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=46; priority=38",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "action_type": "schedule_follow_up",
+    "title": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Andre contact her",
+    "description": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Andre contact her for Sierra Harken & Zachariah",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-02-12T14:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF_saved_view_membership",
+      "sig_lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF_contact_indexed",
+      "sig_lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 45,
+      "action_now_score": 54,
+      "expected_impact": 94,
+      "saveability_score": 61,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=54; priority=45",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "action_type": "schedule_follow_up",
+    "title": "Get her on the phone",
+    "description": "Get her on the phone for Sirena Ivette Ramos",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE_saved_view_membership",
+      "sig_lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 37,
+      "action_now_score": 45,
+      "expected_impact": 60,
+      "saveability_score": 50,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=45; priority=37",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "action_type": "schedule_follow_up",
+    "title": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get them on the phone and into Tasting s",
+    "description": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get them on the phone and into Tasting s for Suzi & Chris",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB_saved_view_membership",
+      "sig_lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB_contact_indexed",
+      "sig_lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 46,
+      "action_now_score": 55,
+      "expected_impact": 98,
+      "saveability_score": 62,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=55; priority=46",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G",
+    "action_type": "schedule_follow_up",
+    "title": "Terry Heinrich — Day 3: Check reply. If no response, send ballpark + tasting invite.",
+    "description": "Terry Heinrich — Day 3: Check reply. If no response, send ballpark + tasting invite. for Terry Heinrich",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-03-19",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G_saved_view_membership",
+      "sig_lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G_contact_indexed",
+      "sig_lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 42,
+      "action_now_score": 49,
+      "expected_impact": 76,
+      "saveability_score": 57,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=49; priority=42",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Traci Troy\nCampaign: 3 STILLS",
+    "description": "Facebook Lead Ads: Traci Troy\nCampaign: 3 STILLS for Traci Troy",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS_saved_view_membership",
+      "sig_lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS_contact_indexed",
+      "sig_lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 42,
+      "action_now_score": 51,
+      "expected_impact": 82,
+      "saveability_score": 58,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=51; priority=42",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "action_type": "schedule_follow_up",
+    "title": "Change the name of the lead once you find it what it is (both lead record and contact name)",
+    "description": "Change the name of the lead once you find it what it is (both lead record and contact name) for Urisha Joshi",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu_saved_view_membership",
+      "sig_lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 47,
+      "action_now_score": 57,
+      "expected_impact": 52,
+      "saveability_score": 54,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": true
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 01. Today's Leads, A: 🔷 05. No Connect Made; action_now=57; priority=47",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 01. Today's Leads",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "action_type": "schedule_follow_up",
+    "title": "Facebook Lead Ads: Veronica Houck\nCampaign: 3 STILLS",
+    "description": "Facebook Lead Ads: Veronica Houck\nCampaign: 3 STILLS for Veronica Houck",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ_saved_view_membership",
+      "sig_lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ_contact_indexed",
+      "sig_lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 43,
+      "action_now_score": 50,
+      "expected_impact": 80,
+      "saveability_score": 60,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=50; priority=43",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "action_type": "schedule_follow_up",
+    "title": "Follow up",
+    "description": "Follow up for Williams Brown",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB_saved_view_membership",
+      "sig_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB_contact_indexed",
+      "sig_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 47,
+      "action_now_score": 55,
+      "expected_impact": 100,
+      "saveability_score": 67,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 05. No Connect Made; action_now=55; priority=47",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ",
+    "action_type": "schedule_follow_up",
+    "title": "Contact yessenia at 11",
+    "description": "Contact yessenia at 11 for Yesenia Salazar",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ_saved_view_membership",
+      "sig_lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ_contact_indexed"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [
+      "email_missing"
+    ],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 45,
+      "action_now_score": 55,
+      "expected_impact": 46,
+      "saveability_score": 54,
+      "confidence": 72,
+      "attention_cost": 45
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": true
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 01. Today's Leads; action_now=55; priority=45",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 01. Today's Leads"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz_schedule_follow_up",
+    "target_object_type": "lead",
+    "target_object_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "action_type": "schedule_follow_up",
+    "title": "Get her on the phone and into testing",
+    "description": "Get her on the phone and into testing for Yuni Colindres",
+    "recommended_channel": "call",
+    "recommended_due_at": "2026-04-14",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz_saved_view_membership",
+      "sig_lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz_contact_indexed",
+      "sig_lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": true,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 39,
+      "action_now_score": 48,
+      "expected_impact": 72,
+      "saveability_score": 55,
+      "confidence": 72,
+      "attention_cost": 47
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": true,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 02. Day 1-5 Cadence, A: 🔷 05. No Connect Made; action_now=48; priority=39",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 02. Day 1-5 Cadence",
+        "🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "next_best_action_id": "nba_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr_reactivate_lead",
+    "target_object_type": "lead",
+    "target_object_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "action_type": "reactivate_lead",
+    "title": "Send reactivation follow-up",
+    "description": "Send reactivation follow-up for Zilah conserve",
+    "recommended_channel": "email",
+    "recommended_due_at": "2025-07-21T13:00:00+00:00",
+    "recommended_owner_user_id": "andre",
+    "source_model": "deterministic_andre_lattice_v0",
+    "generated_at": "2026-04-13T22:27:50.320Z",
+    "expires_at": null,
+    "superseded_at": null,
+    "supporting_signals": [
+      "sig_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr_saved_view_membership",
+      "sig_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr_contact_indexed",
+      "sig_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr_momentum"
+    ],
+    "blocking_signals": [],
+    "required_inputs": [],
+    "automation_eligible": false,
+    "human_review_required": true,
+    "sales_scoring": {
+      "priority_score": 47,
+      "action_now_score": 41,
+      "expected_impact": 100,
+      "saveability_score": 73,
+      "confidence": 72,
+      "attention_cost": 42
+    },
+    "derived_flags": {
+      "is_top_recommendation": false,
+      "is_fast_win": false,
+      "is_rescue_action": false,
+      "is_automation_candidate": false,
+      "is_time_sensitive": false
+    },
+    "recommended_outputs": {
+      "reasoning_summary": "A: 🔷 08. Long-Term / Dormant Followup; action_now=41; priority=47",
+      "counterfactual_if_ignored": "Momentum may decay if no follow-up happens.",
+      "reasoning_tags": [
+        "🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  }
+]

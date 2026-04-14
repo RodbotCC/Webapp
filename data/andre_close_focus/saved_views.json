@@ -1,0 +1,47 @@
+{
+  "source": "andre-provided-close-saved-views",
+  "captured_on": "2026-04-13",
+  "notes": [
+    "These saved Close lead views are Andre's current focused client universe.",
+    "Use this list as the narrow source for outbound indexing and focused reports.",
+    "Do not mix Story/Storie or unrelated CRM exports into this source pack."
+  ],
+  "views": [
+    {
+      "id": "save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr",
+      "url": "https://app.close.com/leads/save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr/"
+    },
+    {
+      "id": "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "url": "https://app.close.com/leads/save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok/"
+    },
+    {
+      "id": "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC",
+      "url": "https://app.close.com/leads/save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC/"
+    },
+    {
+      "id": "save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD",
+      "url": "https://app.close.com/leads/save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD/"
+    },
+    {
+      "id": "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "url": "https://app.close.com/leads/save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT/"
+    },
+    {
+      "id": "save_6TaDxEvv3m4y1DI83zmSwEAGg8NJvmskbPVsMJd5Ybh",
+      "url": "https://app.close.com/leads/save_6TaDxEvv3m4y1DI83zmSwEAGg8NJvmskbPVsMJd5Ybh/"
+    },
+    {
+      "id": "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO",
+      "url": "https://app.close.com/leads/save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO/"
+    },
+    {
+      "id": "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM",
+      "url": "https://app.close.com/leads/save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM/"
+    },
+    {
+      "id": "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ",
+      "url": "https://app.close.com/leads/save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ/"
+    }
+  ]
+}

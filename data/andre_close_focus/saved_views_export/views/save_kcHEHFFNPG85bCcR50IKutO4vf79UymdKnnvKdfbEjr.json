@@ -1,0 +1,397 @@
+{
+  "view": {
+    "id": "save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr",
+    "url": "https://app.close.com/leads/save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr/",
+    "name": "A: 🔷 02. Day 1-5 Cadence",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "before": {
+                        "type": "now"
+                      },
+                      "on_or_after": {
+                        "direction": "past",
+                        "moment": {
+                          "type": "now"
+                        },
+                        "offset": {
+                          "days": 7,
+                          "hours": 0,
+                          "minutes": 0,
+                          "months": 0,
+                          "seconds": 0,
+                          "weeks": 0,
+                          "years": 0
+                        },
+                        "type": "offset",
+                        "which_day_end": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "date_created",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "or"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "negate": true,
+                        "saved_search_ids": [
+                          "save_dtB5xHLEYTWG0FNvsZlodQyrG9xHXzDFh0eLlL2hCW8"
+                        ],
+                        "type": "any_of_saved_search"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "object_ids": [
+                            "stat_X4X2dIPrVwMZDbSGxo1xCbkokk0mjPwaqpF5PjK80F3",
+                            "stat_bklEUrvZENevA6DXNlfjkaMdRI9e4k5Gp0WIez1Bg13",
+                            "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                          ],
+                          "reference_type": "status.lead",
+                          "type": "reference"
+                        },
+                        "field": {
+                          "field_name": "status_id",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_P1wq4LXQlbeOdi4dbikgXHzPTZtBypP4BA5fnK0GLWd",
+                              "stat_XlK8WSBgI3iNiqqb5dGUxoDGfZN4QUvetFI8IM9YAS8",
+                              "stat_jPXypkYupOtL2e3S27WAmINSS5Wi4kRKeoXDG4CsesG",
+                              "stat_lFepKqyuTpPICkaKbld2JzXpXt3BHxO1bR4ctWYJRq0",
+                              "stat_uVWdjD12s4KhTwpOaNVgEYZX0ZRB75fKH2LCICzBYjT",
+                              "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+                              "stat_xIEnKeIS7IYyfj8O8IwZxvcBa52QbXJ6zwlkbXTQ00x",
+                              "stat_yJptDkplCTNffmd56XgEOzD7NOQc96IkTWJccPzBnH5"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": false,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": [
+        {
+          "direction": "asc",
+          "field": {
+            "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+            "type": "custom_field"
+          }
+        }
+      ]
+    },
+    "lead_count": 1,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz"
+    ]
+  },
+  "leads": [
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-08T16:53:20.795000+00:00",
+          "date_updated": "2026-04-08T16:53:20.795000+00:00",
+          "display_name": "Yuni Colindres",
+          "emails": [
+            {
+              "email": "cordonada3@gmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_lGJ3shwTxKN79RbCJW3k30vJCNhCgadsDila2gJXXQr",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Yuni%20Colindres"
+            }
+          ],
+          "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+          "name": "Yuni Colindres",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+14013013498",
+              "phone_formatted": "+1 401-301-3498",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-08T16:53:39.720000+00:00",
+          "date_updated": "2026-04-08T16:53:39.720000+00:00",
+          "display_name": "Yuni Colindres",
+          "emails": [],
+          "id": "cont_xmf1JvDktzcI5zv00txEg3kLvFBkuwSZPR4pAWkMcJM",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Yuni%20Colindres"
+            }
+          ],
+          "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+          "name": "Yuni Colindres",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+14013013498",
+              "phone_formatted": "+1 401-301-3498",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/5c94f221-638b-4f81-80c3-b7a0f9101c45",
+        "Date of Event": "2026-05-31T15:00:00+00:00",
+        "FB_AD": "STILLS  GALLERY  $19 PACKAGE",
+        "FB_ADSET": "3 STILLS",
+        "FB_CAMPAIGN": "01. [CATER[ LF EVERGREEN - QUOTE",
+        "🏠 Zip Code": "02860"
+      },
+      "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-05-31T15:00:00+00:00",
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_NN0HOiT2V7VR8vY0mdaesirgzN0FvEumQoJy6luhMBZ": "3 STILLS",
+      "custom.cf_XUgJtr1fW0TOSr4qtiiu1c4MDSZeYeYkkgi4wjriVBE": "STILLS  GALLERY  $19 PACKAGE",
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "custom.cf_nzUyCovAbOCJxIG6j5TXccpBmdWlRAFuMLDTAxJ2Y9p": "01. [CATER[ LF EVERGREEN - QUOTE",
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "02860",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/5c94f221-638b-4f81-80c3-b7a0f9101c45",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-08T16:53:20.768000+00:00",
+      "date_updated": "2026-04-13T18:00:30.246000+00:00",
+      "description": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+      "display_name": "Yuni Colindres",
+      "html_url": "https://app.close.com/lead/lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz/",
+      "id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+      "last_communication_date": "2026-04-13T18:00:30.376000+00:00",
+      "last_outgoing_call_date": "2026-04-08T23:32:40.937000+00:00",
+      "name": "Yuni Colindres",
+      "opportunities": [
+        {
+          "annualized_expected_value": 31500,
+          "annualized_value": 157500,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_lGJ3shwTxKN79RbCJW3k30vJCNhCgadsDila2gJXXQr",
+          "contact_name": "Yuni Colindres",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-05-31T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "baby shower",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "50",
+          "date_created": "2026-04-08T16:53:26.407000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-08T16:57:40.071000+00:00",
+          "date_won": "2026-05-31",
+          "expected_value": 31500,
+          "id": "oppo_kv52oYlo7ZQnzgqjlWNBWwlq9A1stSznlBM6UsxaANX",
+          "integration_links": [],
+          "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+          "lead_name": "Yuni Colindres",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 157500,
+          "value_currency": "USD",
+          "value_formatted": "$1,575",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "cordonada3@gmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+14013013498",
+        "phone_formatted": "+1 401-301-3498",
+        "type": "direct"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    }
+  ]
+}

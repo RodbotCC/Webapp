@@ -108,25 +108,25 @@
       "summary": "",
       "what_happened": [
         "Close direct file-tree sync started — Source: server.js auto-execute",
-        "Close direct file-tree sync started — Source: server.js direct API",
         "Close direct file-tree sync started — Source: server.js auto-execute",
-        "Morning brief refreshed — 40 tasks today · 13 need attention · 0 closing this week",
-        "Cadence watch refreshed — 40 due now · 41 within 48h",
+        "Cadence watch refreshed — 13 due now · 70 within 48h",
         "Close direct file-tree sync started — Source: server.js auto-execute",
         "Close direct file-tree sync started — Source: server.js auto-execute",
-        "Close direct file-tree sync started — Source: server.js auto-execute",
-        "Close direct file-tree sync started — Source: server.js auto-execute",
-        "Cadence watch refreshed — 86 due now · 12 within 48h",
+        "AI lattice next best action — ## Single next move\n\n**Call Laine Martins now.**  \nLead: **Laine Martins**  \nLead ID: **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**  \nChannel: **call**  \nDeal: **Facebook Lead Ads: Laine Martin...",
+        "Oracle chat — Your money is sitting in three places today: fast-moving warm deals, stalled tasting conversions, and anything with a real reply already in motion. Ignore the cold noise until the high-intent stuff is...",
+        "Oracle conversation archived — 8 messages · 0 grade(s) · Give me my game plan for today. Prioritize by what moves the most money the fastest. Be sp",
         "Close direct file-tree sync started — Source: server.js auto-execute",
         "Close direct file-tree sync started — Source: server.js auto-execute",
         "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close lead swept: Laine Martins — 3 emails · 7 SMS · 2 calls · 1 tasks",
+        "Oracle chat — Subject: Curious About Your Catering Plans\n\nHi Laine,\n\nThanks for reaching out. Sounds like you care about getting this right, but you also don’t want the process to turn into a second job.\n\nMost peop...",
+        "AI lattice next best action — ## Single next move\n\n**Call Laine Martins now** on **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**.\n\nThis is the best move because it’s the highest-action lead in the lattice and it has the faste...",
         "Close direct file-tree sync started — Source: server.js auto-execute",
-        "AI analyze deal — ETS EQUIPMENT isn’t a “maybe” deal yet—it’s an early discovery that’s only close to closing because the buyer has heard of you (80% conf). What’s really happening is you’ve cleared awareness, but the ...",
+        "AI lattice next best action — ## Single next move\n\n**Call Laine Martins now** on **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**.\n\nThis is the best move because it has the highest immediate action score in the lattice and the...",
         "Close direct file-tree sync started — Source: server.js auto-execute",
-        "Queued: draft close crm followup — {\"lead_id\":\"lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY\",\"name\":\"Karla Velazquez\",\"requested_at\":\"2026-04-13T17:31:21.453Z\",\"automation_reason\":\"Low confidence - at risk\"}",
-        "Queued: draft close crm followup — {\"lead_id\":\"lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI\",\"name\":\"Mary McGahan\",\"requested_at\":\"2026-04-13T17:31:21.129Z\",\"automation_reason\":\"High-priority active opportunity\"}",
-        "Queued: draft close crm followup — {\"lead_id\":\"lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw\",\"name\":\"ETS EQUIPMENT\",\"requested_at\":\"2026-04-13T17:31:20.484Z\",\"automation_reason\":\"High-priority active opportunity\"}",
-        "Close direct file-tree sync started — Source: server.js direct API"
+        "Oracle chat — You’re not in a volume problem. You’re in a leverage problem.\n\nToday’s money is sitting in three places: the big open deals that can move with one good conversation, the tastings that are close enough...",
+        "Oracle conversation archived — 4 messages · 0 grade(s) · What are my top 3 priority deals and what should I do with each right now?",
+        "Oracle conversation archived — 2 messages · 1 grade(s) · Smoke archive delete me"
       ],
       "what_we_learned": [],
       "what_we_added": [],
@@ -148,15 +148,65 @@
       ],
       "bottlenecks": [],
       "metrics": {
-        "activity_events": 34,
-        "automation_events": 4,
-        "ai_events": 2,
-        "sync_events": 21
+        "activity_events": 70,
+        "automation_events": 7,
+        "ai_events": 17,
+        "sync_events": 35
+      }
+    },
+    "2026-04-14": {
+      "summary": "",
+      "what_happened": [
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Morning brief refreshed — 46 tasks today · 13 need attention · 0 closing this week",
+        "Cadence watch refreshed — 46 due now · 28 within 48h",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Oracle chat — Yes. In your app, **“active” should mean leads that still have a live sales motion attached to them**.\n\nSo if you have 130 total leads, only 13 “active” means only 13 are currently in a state where so...",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Oracle chat — “Active” means the deal is still live in the pipeline — not won, not lost, not archived, not fully dead.\n\nIn practice here, it usually means there’s still a realistic path to revenue, even if the buye...",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Close lead swept: Laine Martins — 3 emails · 7 SMS · 2 calls · 1 tasks",
+        "Oracle chat — Good. Then the next best move is **Laine Martins — $9,450 — Prospect**.\n\nNot because it’s prettier. Because it’s the next biggest check you can still pull forward today.\n\nLaine is still early, so the ...",
+        "AI draft followup — Hey — since you’re still in the early stage, I want to make sure we’re comparing the right things before you get buried in options. For a $11.7k catering decision, the real question usually isn’t just...",
+        "Close direct file-tree sync started — Source: server.js auto-execute",
+        "Oracle chat — Yes. Move off Rebecca.\n\nShe was the cleanest near-term conversion. If she’s actually done, the next best move is not another polite follow-up. It’s the next highest-money deal with real motion.\n\n### N...",
+        "AI lattice action decision — ### Sign-off packet: Approved\n\nRebecca Almeida is the right next move.\n\nShe’s already past curiosity and into real event motion. That means the job now is not persuasion. It’s removing ambiguity and m...",
+        "AI lattice action decision — ## Sign-off packet: Approved\n\n### 1) Exactly what to do next\nCall **Rebecca Almeida** **now** and confirm the tasting details.  \nDon’t “check in.” Confirm the logistics, who’s attending, and what stil...",
+        "AI lattice action decision — ## Certify: Yes — this is the right next move\n\nRebecca Almeida is the cleanest money-move on the board right now.\n\nShe’s not a cold prospect. She’s not a vague nurture lead. She’s already in tasting t..."
+      ],
+      "what_we_learned": [],
+      "what_we_added": [],
+      "what_it_affected": [
+        "Automation engine state / queue"
+      ],
+      "wins": [],
+      "help_signals": [
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran",
+        "Fresh CRM sync ran"
+      ],
+      "bottlenecks": [],
+      "metrics": {
+        "activity_events": 131,
+        "automation_events": 17,
+        "ai_events": 17,
+        "sync_events": 88
       }
     }
   },
   "_meta": {
     "created_at": "2026-04-09T00:00:00.000Z",
-    "last_updated": "2026-04-13T19:39:26.043Z"
+    "last_updated": "2026-04-14T20:28:49.502Z"
   }
 }

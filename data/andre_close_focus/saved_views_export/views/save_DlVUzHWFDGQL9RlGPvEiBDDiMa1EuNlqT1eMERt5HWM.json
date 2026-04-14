@@ -1,0 +1,979 @@
+{
+  "view": {
+    "id": "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM",
+    "url": "https://app.close.com/leads/save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM/",
+    "name": "A: 🔷 08. Long-Term / Dormant Followup",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "type": "term",
+                      "values": [
+                        "01. 😎 Andre"
+                      ]
+                    },
+                    "field": {
+                      "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                      "type": "custom_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "related_object_type": "opportunity",
+                "related_query": {
+                  "negate": false,
+                  "queries": [
+                    {
+                      "condition": {
+                        "object_ids": [
+                          "stat_P1wq4LXQlbeOdi4dbikgXHzPTZtBypP4BA5fnK0GLWd",
+                          "stat_WwdLVYybpd3l1KXTy8CJat1RzFgT7LbeuxU4A8jVdA6"
+                        ],
+                        "reference_type": "status.opportunity",
+                        "type": "reference"
+                      },
+                      "field": {
+                        "field_name": "status_id",
+                        "object_type": "opportunity",
+                        "type": "regular_field"
+                      },
+                      "negate": false,
+                      "type": "field_condition"
+                    }
+                  ],
+                  "type": "and"
+                },
+                "this_object_type": "lead",
+                "type": "has_related"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": true,
+                    "saved_search_ids": [
+                      "save_aBQ9IHiCfxRMNzMslenIQADx3EK1ksd7h0vPVyF3Url",
+                      "save_wM3wZhcYyzXcz9nE6MZEA0vfGq5XEruPAJw1bBIyWOV",
+                      "save_LbRFyoJcwG3APWsgjhY9IF8uin7NOvqvQjPOqsaZpnt",
+                      "save_6pbQJt7x1gGwB0mtfJSsKVZdlE8vKIqTWBtkaaB8Vfi",
+                      "save_vmHn1IcyY1QchXjcK0yuu22WR7MKqhwu2J3o7BnhTCl",
+                      "save_XERwbdarFFGoJb8gS72TXqF33orlG0OSzlRJlOgQlOy",
+                      "save_wSbaNp8D12i9zpFG94AqOjQY4Oz1823QnvdtKIl9jA2",
+                      "save_9EsYYOkeKs1nFjkx2IMwSU6VAmDdyWwzvyFYAW89tyM",
+                      "save_58D7WTVN6yThHZvufU9Keq2oe5qdLEHtXtK9vNzY4zh"
+                    ],
+                    "type": "any_of_saved_search"
+                  }
+                ],
+                "type": "and"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "before": {
+                        "type": "now"
+                      },
+                      "on_or_after": {
+                        "direction": "past",
+                        "moment": {
+                          "type": "now"
+                        },
+                        "offset": {
+                          "days": 28,
+                          "hours": 0,
+                          "minutes": 0,
+                          "months": 0,
+                          "seconds": 0,
+                          "weeks": 0,
+                          "years": 0
+                        },
+                        "type": "offset",
+                        "which_day_end": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "last_communication_date",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": true,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 5,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+      "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+      "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+      "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+      "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr"
+    ]
+  },
+  "leads": [
+    {
+      "contacts": [
+        {
+          "created_by": "user_sUwnLj9mIjPMVRTjMFaCHsc5rP2JoHInSkatOq1HJvN",
+          "date_created": "2026-01-22T23:58:10.489000+00:00",
+          "date_updated": "2026-01-29T23:57:31.097000+00:00",
+          "display_name": "Igreja Evangelica Avivamento Da Fe Na Revere",
+          "emails": [],
+          "id": "cont_H8A6g0tcB8EyuFJvETM8XnyA6NoA0cU3O0T7oPu28l5",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Igreja%20Evangelica%20Avivamento%20Da%20Fe%20Na%20Revere"
+            }
+          ],
+          "lead_id": "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+          "name": "Igreja Evangelica Avivamento Da Fe Na Revere",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+19149162938",
+              "phone_formatted": "+1 914-916-2938",
+              "type": "office"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": [
+            {
+              "type": "url",
+              "url": "https://www.instagram.com/avivamentodafe1/"
+            }
+          ]
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "Dormant 12 Email Nurture"
+        ],
+        "Address": "106 Squire Rd #4, Revere, MA 02151, Estados Unidos",
+        "Brazillian Churches Valentines Project": [
+          "Not yet Connected"
+        ]
+      },
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "Dormant 12 Email Nurture"
+      ],
+      "custom.cf_l7gEKQsPZLqjEw35V4WB6ewUuc84dS3nohisc0BeCdy": "106 Squire Rd #4, Revere, MA 02151, Estados Unidos",
+      "custom.cf_nBtj2sEsOGqa75pmN0esTlhxDHgi97W1qiE5cpuCAWW": [
+        "Not yet Connected"
+      ],
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-01-22T23:58:10.480000+00:00",
+      "date_updated": "2026-04-13T20:21:49.707000+00:00",
+      "description": "From Camila church list\nhttps://www.instagram.com/avivamentodafe1/",
+      "display_name": "Igreja Evangelica Avivamento Da Fe Na Revere",
+      "html_url": "https://app.close.com/lead/lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK/",
+      "id": "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+      "last_communication_date": "2026-03-16T21:53:21.657000+00:00",
+      "last_outgoing_call_date": "2026-02-18T14:25:48.407000+00:00",
+      "name": "Igreja Evangelica Avivamento Da Fe Na Revere",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 0,
+          "contact_id": "cont_H8A6g0tcB8EyuFJvETM8XnyA6NoA0cU3O0T7oPu28l5",
+          "contact_name": "Igreja Evangelica Avivamento Da Fe Na Revere",
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "created_by_name": "Rhonna Ricafort",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Venue",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Church"
+          ],
+          "date_created": "2026-02-06T22:36:37.076000+00:00",
+          "date_lost": "2026-04-11T02:16:09.541000+00:00",
+          "date_updated": "2026-04-11T02:16:09.541000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_Dj02nBKvxq8pSjKIRMIbld9CDWnzYwpwyAxIaJhj7Yt",
+          "integration_links": [],
+          "lead_id": "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+          "lead_name": "Igreja Evangelica Avivamento Da Fe Na Revere",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ - 00. Dormant (30 Days F/U)",
+          "status_id": "stat_WwdLVYybpd3l1KXTy8CJat1RzFgT7LbeuxU4A8jVdA6",
+          "status_label": "⬜ - 00. Dormant (30 Days F/U)",
+          "status_type": "lost",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "updated_by_name": "Andre Raw",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": null,
+      "primary_phone": {
+        "country": "US",
+        "phone": "+19149162938",
+        "phone_formatted": "+1 914-916-2938",
+        "type": "office"
+      },
+      "status_id": "stat_0mrkXTQzZ3wd5F0ZPLfXEE8FF4CKGQGsYqHWQvYXHVD",
+      "status_label": "⚪ Probably Not",
+      "url": "https://www.instagram.com/avivamentodafe1/"
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "custom.cf_EM78k11f5WXSqVtZrI9XT8Qpt9DmUHB51ZkBLICtueu": "Bride",
+          "custom.cf_yFpWqyKKzzoB2jkigCxLauSWAyWgglAXyK6mTIeX37w": "Bridal Party",
+          "date_created": "2026-03-05T12:03:35.678000+00:00",
+          "date_updated": "2026-03-05T23:55:55.920000+00:00",
+          "display_name": "Katerina St. Angelo",
+          "emails": [
+            {
+              "email": "kstangelo0@gmail.com",
+              "is_unsubscribed": false,
+              "type": "office"
+            }
+          ],
+          "id": "cont_txdy5GgHOV9gQAS0IzsuKg1xVemKqYosmmGEYQO2arQ",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Katerina%20St.%20Angelo"
+            }
+          ],
+          "lead_id": "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+          "name": "Katerina St. Angelo",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+14015366119",
+              "phone_formatted": "+1 401-536-6119",
+              "type": "office"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Engaged Person",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "LEads From Paper form-expo": "2026-03-01",
+        "Leads from Happily EXPO": "2026-03-01",
+        "Venue Name": "Cranston",
+        "Wedding Budget": "$30,000 or less"
+      },
+      "custom.cf_Gro2aLhw5RwDVJM8zFLDPUhPKCqFhyuEY2q3YvnYztj": "2026-03-01",
+      "custom.cf_bMmcNeKx2ltaIMgNPLXg3cQCVcKguZe28ilBnOilnO5": "Cranston",
+      "custom.cf_haQjXe50SRRIgJY0uV0COUgMHzTnGmfV4c9oROCdp8K": "2026-03-01",
+      "custom.cf_imMCu3Pod85W2K5ZkVUjBD7m3E5iZxbSf3mueeNpibM": "$30,000 or less",
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-03-05T12:01:53.994000+00:00",
+      "date_updated": "2026-04-10T00:33:19.962000+00:00",
+      "description": "Sept 2027 o r Nov 2027\nLucia Achilli Bridal Party",
+      "display_name": "Katerina St. Angelo",
+      "html_url": "https://app.close.com/lead/lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS/",
+      "id": "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+      "last_communication_date": "2026-03-10T17:18:04.934000+00:00",
+      "last_outgoing_call_date": "2026-03-10T17:18:04.934000+00:00",
+      "name": "Katerina St. Angelo",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 0,
+          "contact_id": "cont_txdy5GgHOV9gQAS0IzsuKg1xVemKqYosmmGEYQO2arQ",
+          "contact_name": "Katerina St. Angelo",
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "created_by_name": "Rhonna Ricafort",
+          "custom.cf_86jKmbNFKbB4jQ2KKT0Cg7WqTeTG0Ux6MfnLGOac6si": "25",
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2027-09-25T15:00:00+00:00",
+          "custom.cf_fSz0KVR77bTdo74KTG6CTw250qQrPGJqcuShwSaeXdW": "Checked In",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Happily Ever EXPO"
+          ],
+          "date_created": "2026-03-05T18:58:06.894000+00:00",
+          "date_lost": "2026-03-05T18:58:06.893000+00:00",
+          "date_updated": "2026-03-05T23:52:45.591000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_56BlJtHwk7uXaiB9MCcnXj6anMukcx0Lx2w4twzYhmV",
+          "integration_links": [],
+          "lead_id": "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+          "lead_name": "Katerina St. Angelo",
+          "note": "Venue | Photo Booth | Caterer | Florist | Wedding Makeup/Hair",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ - 00. Dormant (30 Days F/U)",
+          "status_id": "stat_WwdLVYybpd3l1KXTy8CJat1RzFgT7LbeuxU4A8jVdA6",
+          "status_label": "⬜ - 00. Dormant (30 Days F/U)",
+          "status_type": "lost",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "kstangelo0@gmail.com",
+        "is_unsubscribed": false,
+        "type": "office"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+14015366119",
+        "phone_formatted": "+1 401-536-6119",
+        "type": "office"
+      },
+      "status_id": "stat_0mrkXTQzZ3wd5F0ZPLfXEE8FF4CKGQGsYqHWQvYXHVD",
+      "status_label": "⚪ Probably Not",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "custom.cf_EM78k11f5WXSqVtZrI9XT8Qpt9DmUHB51ZkBLICtueu": "Bride",
+          "custom.cf_yFpWqyKKzzoB2jkigCxLauSWAyWgglAXyK6mTIeX37w": "Engaged Person",
+          "date_created": "2026-03-05T10:27:02.302000+00:00",
+          "date_updated": "2026-03-05T18:59:32.449000+00:00",
+          "display_name": "Jessica McGory",
+          "emails": [
+            {
+              "email": "jess.aaron.lipp@gmail.com",
+              "is_unsubscribed": false,
+              "type": "office"
+            },
+            {
+              "email": "jmcgory8@gmail.com",
+              "is_unsubscribed": false,
+              "type": "office"
+            },
+            {
+              "email": "jmcgory80@gmail.com",
+              "is_unsubscribed": false,
+              "type": "office"
+            }
+          ],
+          "id": "cont_vbMPXEI80XXanjEjxydRU1joGP4MEzMaz8hgj46X47S",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Jessica%20McGory"
+            }
+          ],
+          "lead_id": "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+          "name": "Jessica McGory",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+16077458195",
+              "phone_formatted": "+1 607-745-8195",
+              "type": "office"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Jessica McGory",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Date of Event": "2026-07-26T15:00:00+00:00",
+        "LEads From Paper form-expo": "2026-03-01",
+        "Leads from Happily EXPO": "2026-03-01",
+        "Venue Name": "Blithewold Manor",
+        "Wedding Budget": "$70,000-$79,000"
+      },
+      "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-07-26T15:00:00+00:00",
+      "custom.cf_Gro2aLhw5RwDVJM8zFLDPUhPKCqFhyuEY2q3YvnYztj": "2026-03-01",
+      "custom.cf_bMmcNeKx2ltaIMgNPLXg3cQCVcKguZe28ilBnOilnO5": "Blithewold Manor",
+      "custom.cf_haQjXe50SRRIgJY0uV0COUgMHzTnGmfV4c9oROCdp8K": "2026-03-01",
+      "custom.cf_imMCu3Pod85W2K5ZkVUjBD7m3E5iZxbSf3mueeNpibM": "$70,000-$79,000",
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-03-05T10:23:48.440000+00:00",
+      "date_updated": "2026-04-05T00:28:03.240000+00:00",
+      "description": "07/26/2026\n\nAaron Lipp is the groom",
+      "display_name": "Jessica McGory",
+      "html_url": "https://app.close.com/lead/lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps/",
+      "id": "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+      "last_communication_date": "2026-03-13T18:36:34.817000+00:00",
+      "last_outgoing_call_date": "2026-03-05T21:53:26.718000+00:00",
+      "name": "Jessica McGory",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 0,
+          "contact_id": "cont_vbMPXEI80XXanjEjxydRU1joGP4MEzMaz8hgj46X47S",
+          "contact_name": "Jessica McGory",
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "created_by_name": "Rhonna Ricafort",
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-07-26T16:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Happily Ever EXPO"
+          ],
+          "date_created": "2026-03-05T10:25:53.780000+00:00",
+          "date_lost": "2026-03-13T18:04:30.802000+00:00",
+          "date_updated": "2026-03-13T18:04:30.802000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_VwEiXqK29gVyYum2D3n9YMISlfulKIhI3KCYpNis1lL",
+          "integration_links": [],
+          "lead_id": "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+          "lead_name": "Jessica McGory",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: 🔲🔲 Archived Catering Customer 🔲🔲",
+          "status_id": "stat_JsVAn7jtb6qbyxc0j77Kh6SkONCIC6gpsTF21WUkFvs",
+          "status_label": "🔲🔲 Archived Catering Customer 🔲🔲",
+          "status_type": "lost",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "updated_by_name": "Andre Raw",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        },
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 0,
+          "contact_id": null,
+          "contact_name": null,
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "created_by_name": "Rhonna Ricafort",
+          "custom.cf_86jKmbNFKbB4jQ2KKT0Cg7WqTeTG0Ux6MfnLGOac6si": "30",
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-07-26T15:00:00+00:00",
+          "custom.cf_fSz0KVR77bTdo74KTG6CTw250qQrPGJqcuShwSaeXdW": "Checked In",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Happily Ever EXPO"
+          ],
+          "date_created": "2026-03-05T18:59:32.144000+00:00",
+          "date_lost": "2026-03-05T18:59:32.144000+00:00",
+          "date_updated": "2026-03-07T01:15:30.688000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_xNP1yDxyKDRLrKM0SLJ2HlzH3sfyTrw81wn0mRwOhYA",
+          "integration_links": [],
+          "lead_id": "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+          "lead_name": "Jessica McGory",
+          "note": "Photo Booth | Wedding Cake/Dessert/Bakery | Honeymoon | Transportation/Limo | Signage | Decor | Photo Booth",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ - 00. Dormant (30 Days F/U)",
+          "status_id": "stat_WwdLVYybpd3l1KXTy8CJat1RzFgT7LbeuxU4A8jVdA6",
+          "status_label": "⬜ - 00. Dormant (30 Days F/U)",
+          "status_type": "lost",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "user_name": "Rhonna Ricafort",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "jess.aaron.lipp@gmail.com",
+        "is_unsubscribed": false,
+        "type": "office"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+16077458195",
+        "phone_formatted": "+1 607-745-8195",
+        "type": "office"
+      },
+      "status_id": "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA",
+      "status_label": "🔴 Lost",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "date_created": "2026-02-13T17:48:41.337000+00:00",
+          "date_updated": "2026-03-09T13:11:15.803000+00:00",
+          "display_name": "Leigh",
+          "emails": [
+            {
+              "email": "ldoherty@litnetsb.org",
+              "is_unsubscribed": true,
+              "type": "office"
+            }
+          ],
+          "id": "cont_n1jKJnE3WjJgQRa0uhBioNUXzhIEmwP9bK4tYorh0ge",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Leigh"
+            }
+          ],
+          "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+          "name": "Leigh",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+14152333453",
+              "phone_formatted": "+1 415-233-3453",
+              "type": "office"
+            }
+          ],
+          "timezone": "America/Los_Angeles",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": [
+            {
+              "type": "url",
+              "url": "https://www.barringtonhallgb.com/"
+            }
+          ]
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-02-13T17:35:25.212000+00:00",
+          "date_updated": "2026-03-09T13:11:15.776000+00:00",
+          "display_name": "ldoherty@litnetsb.org",
+          "emails": [
+            {
+              "email": "ldoherty@litnetsb.org",
+              "is_unsubscribed": true,
+              "type": "office"
+            }
+          ],
+          "id": "cont_bzsly8zfK3pr0gPWH2HYS69bSFTbk0icGCERPqwOGlu",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=ldoherty%40litnetsb.org"
+            }
+          ],
+          "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+          "name": "ldoherty@litnetsb.org",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [],
+          "timezone": null,
+          "timezone_source": null,
+          "title": "From crisp.chat",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Account Manager": "André",
+        "Address": "535 Barrington Dr, Roswell, GA 30075, Estados Unidos",
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/22e1d5f9-d6ea-4327-88e9-3f530ee9aa8b",
+        "Date of Event": "2026-10-03T15:00:00+00:00",
+        "System": "-",
+        "Venue Name": "Barrington Hall"
+      },
+      "custom.cf_6kaYlRe93iSlo9MvRiUFezWureS7o0u9nOO6L5qGXd7": "André",
+      "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-10-03T15:00:00+00:00",
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_bMmcNeKx2ltaIMgNPLXg3cQCVcKguZe28ilBnOilnO5": "Barrington Hall",
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l7gEKQsPZLqjEw35V4WB6ewUuc84dS3nohisc0BeCdy": "535 Barrington Dr, Roswell, GA 30075, Estados Unidos",
+      "custom.cf_rmV7IfUJeD0mmcr9dEnC0ELO1s8gxcTcuXzkbDa2iHf": "-",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/22e1d5f9-d6ea-4327-88e9-3f530ee9aa8b",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-02-13T17:35:25.183000+00:00",
+      "date_updated": "2026-03-23T17:28:13.257000+00:00",
+      "description": "Venue\nhttps://www.barringtonhallgb.com/\nevents@barringtonhallgb.com\n(413) 645-3116",
+      "display_name": "Leigh",
+      "html_url": "https://app.close.com/lead/lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i/",
+      "id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+      "last_communication_date": "2026-03-13T22:48:24.421000+00:00",
+      "last_outgoing_call_date": "2026-02-13T17:50:15.853000+00:00",
+      "name": "",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 0,
+          "contact_id": null,
+          "contact_name": null,
+          "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "created_by_name": "Andre Raw",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "Barrington Hall"
+          ],
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-10-03T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Crisp Chat"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "annual fundraiser",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "200",
+          "date_created": "2026-02-13T17:50:04.608000+00:00",
+          "date_lost": "2026-03-13T22:48:16.883000+00:00",
+          "date_updated": "2026-03-13T22:48:16.883000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_5HYdIoO4GgRQbPcftc4r44O3YKFT62f6OYtaNEsRuqZ",
+          "integration_links": [],
+          "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+          "lead_name": "Leigh",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ - 00. Dormant (30 Days F/U)",
+          "status_id": "stat_WwdLVYybpd3l1KXTy8CJat1RzFgT7LbeuxU4A8jVdA6",
+          "status_label": "⬜ - 00. Dormant (30 Days F/U)",
+          "status_type": "lost",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "updated_by_name": "Andre Raw",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "ldoherty@litnetsb.org",
+        "is_unsubscribed": true,
+        "type": "office"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+14152333453",
+        "phone_formatted": "+1 415-233-3453",
+        "type": "office"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": "http://www.litnetsb.org"
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2025-07-21T15:35:12.839000+00:00",
+          "date_updated": "2025-09-17T15:49:08.294000+00:00",
+          "display_name": "Zilah conserve",
+          "emails": [
+            {
+              "email": "zi.conserve@gmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_iUf4YJ67ruTPmzCNTJA9ExzgqqVXY8T8LBBbVrUE9Sj",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Zilah%20conserve"
+            }
+          ],
+          "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+          "name": "Zilah conserve",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+14015007458",
+              "phone_formatted": "+1 401-500-7458",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "urls": []
+        },
+        {
+          "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "date_created": "2025-09-24T18:46:03.819000+00:00",
+          "date_updated": "2025-12-30T16:57:29.803000+00:00",
+          "display_name": "Jerel",
+          "emails": [
+            {
+              "email": "jerel.lopes@gmail.com",
+              "is_unsubscribed": false,
+              "type": "office"
+            }
+          ],
+          "id": "cont_hDKxS7fDnAJGihpVJcKjhzptwTQQM3ZDzgD7mO3xMue",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Jerel"
+            }
+          ],
+          "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+          "name": "Jerel",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15082875359",
+              "phone_formatted": "+1 508-287-5359",
+              "type": "office"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Fiancée",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "01. 🟢 SCORE": [
+          "05. ➡️ Visited high-intent web pages / website",
+          "05. 💵 Big Event / Budget"
+        ],
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1SMS 1EMAIL",
+          "🚫 Lost - Win back"
+        ],
+        "7 TP Cadence Follow up": [
+          "02. 📞 DAY 2 CALL",
+          "03. 💌 DAY 3 EMAIL ONLY"
+        ],
+        "IP": "2600:4040:5a00:3000:e566:d83f:9e9c:3a38",
+        "Sent Rodrigo's Attended Tasting Video": "Yes",
+        "Sent Rodrigo's Video": "Yes",
+        "System": "-",
+        "🏠 City": "Pawtucket",
+        "🏠 Distance": "49",
+        "🏠 Zip Code": "02860"
+      },
+      "custom.cf_8o3Z64OzuKkpnM3JEMx7rLMqyUdBslk5p5KQP40HEfO": "Yes",
+      "custom.cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj": [
+        "05. ➡️ Visited high-intent web pages / website",
+        "05. 💵 Big Event / Budget"
+      ],
+      "custom.cf_QLOto1FCGWfqGcO9fHc0z4isb8hZ0fAR6F4DO8T9l3P": "Yes",
+      "custom.cf_SlkXLWVM3sUYtnY1AqDAEbiXj13a0HQRXzvbGAXxp22": "2600:4040:5a00:3000:e566:d83f:9e9c:3a38",
+      "custom.cf_jTUqt7xP9Pv2UrBiqPnmPpg49KPZIPW9pjAlbtXQ5iL": "49",
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "02. 📞 DAY 2 CALL",
+        "03. 💌 DAY 3 EMAIL ONLY"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1SMS 1EMAIL",
+        "🚫 Lost - Win back"
+      ],
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "02860",
+      "custom.cf_rmV7IfUJeD0mmcr9dEnC0ELO1s8gxcTcuXzkbDa2iHf": "-",
+      "custom.cf_xD3AKAnhwHeZy3OAUrZvbbFYiDPFwtFfTrSLAbDbmA2": "Pawtucket",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2025-07-21T15:35:12.812000+00:00",
+      "date_updated": "2026-03-19T00:32:01.190000+00:00",
+      "description": "101-200\n🥂 Bar & Beverage Service; 🚚 Dropoff Style Catering; 🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering\nWedding\n8/1322027\nFrom comeketocatering.com",
+      "display_name": "Zilah conserve",
+      "html_url": "https://app.close.com/lead/lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr/",
+      "id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+      "last_communication_date": "2026-03-05T01:29:35.382000+00:00",
+      "last_outgoing_call_date": "2026-02-16T13:44:59.475000+00:00",
+      "name": "",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 2537100,
+          "attachments": [],
+          "confidence": 0,
+          "contact_id": "cont_iUf4YJ67ruTPmzCNTJA9ExzgqqVXY8T8LBBbVrUE9Sj",
+          "contact_name": "Zilah conserve",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2027-08-13T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Instagram"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "WEDDING",
+          "custom.cf_i7gLf8PXvEXlODQFq6frI93qCeuDm9UzvdUQuzuiTnO": "[NEEDS TO BE SET]",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "101-200",
+          "date_created": "2025-07-21T15:35:47.722000+00:00",
+          "date_lost": "2026-02-16T13:46:23.978000+00:00",
+          "date_updated": "2026-02-23T12:29:01.857000+00:00",
+          "date_won": "2025-09-10",
+          "expected_value": 0,
+          "id": "oppo_xS1BQKdw9jXk8w4uva62dwwlnC5TejDQqD2UzBtbV2w",
+          "integration_links": [],
+          "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+          "lead_name": "Zilah conserve",
+          "note": "From comeketocatering.com",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ - 00. Dormant (30 Days F/U)",
+          "status_id": "stat_WwdLVYybpd3l1KXTy8CJat1RzFgT7LbeuxU4A8jVdA6",
+          "status_label": "⬜ - 00. Dormant (30 Days F/U)",
+          "status_type": "lost",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "updated_by_name": "Andre Raw",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 2537100,
+          "value_currency": "USD",
+          "value_formatted": "$25,371",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "zi.conserve@gmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+14015007458",
+        "phone_formatted": "+1 401-500-7458",
+        "type": "direct"
+      },
+      "status_id": "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA",
+      "status_label": "🔴 Lost",
+      "url": null
+    }
+  ]
+}

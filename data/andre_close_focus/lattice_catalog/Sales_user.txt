@@ -1,0 +1,19 @@
+[
+  {
+    "sales_user_id": "andre",
+    "crm_user_id": "andre_close_owner",
+    "full_name": "Andre Raw",
+    "email": "team@comeketocatering.com",
+    "role": "sales",
+    "team_name": "Comeketo",
+    "active": true,
+    "timezone": "America/New_York",
+    "channel_preferences": [
+      "call",
+      "sms",
+      "email"
+    ],
+    "created_at": "2026-04-13T22:27:50.320Z",
+    "updated_at": "2026-04-13T22:27:50.320Z"
+  }
+]

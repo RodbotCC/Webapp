@@ -1,0 +1,50 @@
+{
+  "schema_name": "andre_canonical_definitions",
+  "description": "Andre-focused normalized sales catalog vocabulary derived from the Ratio Lattice bundle pattern.",
+  "generated_at": "2026-04-13T22:27:50.320Z",
+  "normalized_enums": {
+    "channel_enum": [
+      "email",
+      "call",
+      "sms",
+      "task",
+      "note"
+    ],
+    "direction_enum": [
+      "inbound",
+      "outbound",
+      "internal"
+    ],
+    "object_type_enum": [
+      "lead",
+      "contact",
+      "conversation",
+      "call",
+      "email",
+      "sms",
+      "opportunity",
+      "task_promise",
+      "signal_event",
+      "next_best_action"
+    ],
+    "next_best_action_type_enum": [
+      "call_now",
+      "send_email",
+      "send_sms",
+      "schedule_follow_up",
+      "confirm_event_details",
+      "reactivate_lead",
+      "review_manually"
+    ]
+  },
+  "base_score_definitions": {
+    "urgency": "How costly delay is right now.",
+    "momentum": "How alive and advancing the lead currently is.",
+    "friction": "How much resistance or missing data is present.",
+    "relationship_strength": "How strong the communication bond appears.",
+    "close_probability": "Practical likelihood of progress under current conditions.",
+    "revenue_value": "Commercial importance based on opportunity value.",
+    "attention_cost": "How much rep effort is needed.",
+    "next_action_clarity": "How obvious the next move is."
+  }
+}

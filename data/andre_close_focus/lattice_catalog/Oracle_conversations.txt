@@ -1,0 +1,629 @@
+[
+  {
+    "id": "conv_mnyzx60g_m3xzix",
+    "title": "Give me my game plan for today. Prioritize by what moves the most money the fastest. Be sp",
+    "archived_at": "2026-04-14T19:09:47.841Z",
+    "operator_key": "andre",
+    "source": "browser_oracle_thread",
+    "message_count": 8,
+    "user_message_count": 4,
+    "assistant_message_count": 4,
+    "grade_count": 0,
+    "lattice_action_ids": [
+      "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up",
+      "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN:doctrine:confirm_tasting_details"
+    ],
+    "lead_ids": [
+      "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN"
+    ],
+    "grades": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "Give me my game plan for today. Prioritize by what moves the most money the fastest. Be specific — deal names, dollar amounts, exact actions.",
+        "turnId": "t_mnxtvi8p_oe71ery",
+        "oracleMeta": {}
+      },
+      {
+        "role": "assistant",
+        "content": "Your money is sitting in three places today: fast-moving warm deals, stalled tasting conversions, and anything with a real reply already in motion. Ignore the cold noise until the high-intent stuff is moving.\n\nStart here: **ETS EQUIPMENT — $11,685**. This is your biggest current swing with the highest confidence. If this deal has a real next step, your job is to remove friction and lock it. Call first. If you miss, send a short follow-up that forces a concrete yes/no on timing. Don’t “check in.” Get the decision point.\n\nNext: **Laine Martins — $9,450**. The lattice says this is a live Facebook lead campaign, and that’s the kind of deal that dies if it sits. Call now. If no answer, leave one clear message: you want to confirm what they’re solving for — ease, customization, or budget — and book the next step today. This is a speed deal, not a nurture deal.\n\nThen: **Karla Velazquez — $7,245**. Still prospect stage, but enough size that it deserves a direct qualification push. Your goal is not a full pitch. Your goal is to find out whether this is an intimate/private event or a larger premium celebration, and whether they’re comparing price or trust. If they’re just shopping numbers, don’t burn time. If they’re serious, move them to tasting or a planning call immediately.\n\nAfter that: **Leslie Kearse Smith — $5,670**. This one is already at tasting appointment setting. That means the deal is in a conversion window. Confirm the tasting details and next step today. This is one of the highest-leverage actions on your board because tastings are where hesitation turns into momentum.\n\nThen: **Rebecca Almeida — $3,780**. Booked for tasting, which means the next move is simple: protect the appointment and make sure it doesn’t drift. Confirm date, time, and who needs to be there. If there’s any chance this is a family or partner decision, get the other stakeholder named now.\n\nHere’s the sequence I’d run in the next 90 minutes:\n\n1. **Call ETS EQUIPMENT** and push for the next step.\n2. **Call Laine Martins** immediately after.\n3. **Call Karla Velazquez** to qualify the real buying frame.\n4. **SMS Jose Quefau** if that tasting detail/next-step confirm is still open — this is already marked as a high-value action.\n5. **Handle Leslie Kearse Smith** to lock tasting conversion.\n6. **Protect Rebecca Almeida’s tasting** so it doesn’t slip.\n\nWhat I would not do first: low-confidence cold deals, admin cleanup, or anything with no event date and no payment signal. Those are useful later. They are not where today’s money is.\n\nIf you want the cleanest revenue move, spend the first block on **the two biggest live deals plus the two tasting-stage conversions**. That’s where you can create the fastest path to deposits and real pipeline movement.\n\nIf you want, I can turn this into a **minute-by-minute call block** or write the exact SMS/call opener for each top deal. End with a specific next step by **sending me the top 3 deals you want scripted first**.",
+        "turnId": "t_mnxtvi8p_oe71ery",
+        "nextSteps": [
+          {
+            "id": "open_ets",
+            "label": "Open ETS deal",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "ETS EQUIPMENT"
+            }
+          },
+          {
+            "id": "open_laine",
+            "label": "Open Laine deal",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Laine Martins"
+            }
+          },
+          {
+            "id": "open_leslie",
+            "label": "Open Leslie deal",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Leslie Kearse Smith"
+            }
+          },
+          {
+            "id": "open_rebecca",
+            "label": "Open Rebecca deal",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Rebecca Almeida"
+            }
+          },
+          {
+            "id": "open_ari",
+            "label": "Open Ari deal",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Ari"
+            }
+          },
+          {
+            "id": "refresh",
+            "label": "Refresh inbox",
+            "action": "refresh_inbox",
+            "payload": {}
+          }
+        ],
+        "oracleMeta": {}
+      },
+      {
+        "role": "user",
+        "content": "Use the Andre Ratio Lattice catalog to build the single next most important action Andre should take right now.\n\nPrimary lattice candidate:\n- Lead: Laine Martins\n- Lead ID: lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\n- Recommended channel: call\n- Title: Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS\n- Action-now score: 67\n- Priority score: 63\n- Reasoning tags: none\n- Current lattice reasoning: A: 🔷 01. Today's Leads; action_now=67; priority=63\n- Counterfactual: none\n\nBuild a sign-off packet Andre can approve or reject:\n1. The exact next action.\n2. Why this is the best move now, and what it beats.\n3. The risk if Andre does nothing today.\n4. The customer-facing draft if the next action is email or SMS.\n5. A verification checklist before sending.\n6. A simple approval line: \"Approve / Revise / Reject\" with what Andre should grade afterward.\n\nMake it operational. No vague advice. Use the lattice as truth and keep the customer-facing action human-approved.",
+        "turnId": "t_mnxtw4gm_pwxlpsh",
+        "oracleMeta": {
+          "action_type": "lattice_next_best_action",
+          "lattice_action_id": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "lead_name": "Laine Martins",
+          "source": "oracle_next_best_action_button"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "## Single next move\n\n**Call Laine Martins now.**  \nLead: **Laine Martins**  \nLead ID: **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**  \nChannel: **call**  \nDeal: **Facebook Lead Ads: Laine Martins**  \nCampaign: **RODS WEDDING & FACELESS**\n\nThis is the best move because it’s the highest-action lead in the lattice with real momentum behind it. It beats email and SMS because this is still a live conversion moment, not a nurture problem. A call can uncover whether this is about timing, budget, guest count, or just a trust check — and that decides the next step fast.\n\nIf you do nothing today, this cools off. Facebook leads decay fast. The longer it sits, the more likely it becomes another low-confidence, no-date deal with no payment signal. That’s how money leaks.\n\nNo customer-facing draft needed unless the call misses. If it goes to voicemail, send a short follow-up that does one thing: gets a reply on what they’re solving for and whether they want to move forward this week.\n\n### Before you call\nMake sure you have:\n- the lead open and assigned correctly\n- the phone number confirmed\n- the campaign context visible\n- a clear next step ready if they answer\n- a voicemail fallback ready if they don’t\n\n### If they answer, your job\nDon’t pitch the whole company. Get to the buying frame fast:\n- what kind of event this is\n- whether they want something more custom or more straightforward\n- whether they’re comparing price, trust, or overall fit\n- who else is involved in the decision\n\n### Approval\n**Approve / Revise / Reject**\n\nAfter you act, grade this with a short note: **A+, A, B, C, D, or F** and why. If you reject it, tell me what made this feel weaker than the nearest alternative, and I’ll tighten the recommendation.",
+        "turnId": "t_mnxtw4gm_pwxlpsh",
+        "nextSteps": [
+          {
+            "id": "open_laine",
+            "label": "Open Laine Deal",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Facebook Lead Ads: Laine Martins"
+            }
+          },
+          {
+            "id": "call_laine",
+            "label": "Call Now",
+            "action": "oracle_prompt",
+            "payload": {
+              "text": "Call Laine Martins now on lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv. Goal: identify the event type, whether they’re comparing price, trust, or fit, and book the next step today. If they miss, leave a voicemail and send a short follow-up asking what they’re solving for and whether they want to move forward this week."
+            }
+          },
+          {
+            "id": "open_compose_sms",
+            "label": "Draft SMS",
+            "action": "open_compose",
+            "payload": {
+              "mode": "sms",
+              "leadId": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+              "dealName": "Facebook Lead Ads: Laine Martins"
+            }
+          },
+          {
+            "id": "refresh",
+            "label": "Refresh Inbox",
+            "action": "refresh_inbox",
+            "payload": {}
+          },
+          {
+            "id": "open_pipeline",
+            "label": "View Pipeline",
+            "action": "navigate",
+            "payload": {
+              "view": "pipeline"
+            }
+          },
+          {
+            "id": "show_why",
+            "label": "Why this?",
+            "action": "preview_lattice_action",
+            "payload": {
+              "actionId": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up"
+            }
+          }
+        ],
+        "oracleMeta": {
+          "action_type": "lattice_next_best_action",
+          "lattice_action_id": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "lead_name": "Laine Martins",
+          "source": "oracle_next_best_action_button"
+        }
+      },
+      {
+        "role": "user",
+        "content": "Call Laine Martins now on lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv. Goal: identify the event type, whether they’re comparing price, trust, or fit, and book the next step today. If they miss, leave a voicemail and send a short follow-up asking what they’re solving for and whether they want to move forward this week.",
+        "turnId": "t_mny4rogr_xp2zin8",
+        "oracleMeta": {}
+      },
+      {
+        "role": "assistant",
+        "content": "Approved. Call Laine Martins now.\n\nOpen with a clean frame: you’re following up because the event looks important and you want to make the next step simple. Then quickly sort the deal into the right lane: event type, what they’re comparing, and whether they want something custom or straightforward.\n\nIf they answer, don’t pitch. Get the three facts that decide the deal:\n- what the event is\n- what they’re comparing\n- who else has a say\n\nIf they say “still deciding” or “still comparing,” force the comparison frame: price, trust, or fit. That tells you whether this is a real buying conversation or just browsing.\n\nIf they miss, leave a voicemail that sounds like a person, not a sequence:\n“You probably have a few options in front of you. I just wanted to see whether you’re mainly sorting through price, trust, or overall fit, and whether it makes sense to move this forward this week.”\n\nThen send a short SMS. Keep it tight:\n“Hi Laine, just reaching out to see what you’re solving for with your event — price, trust, or fit — and whether you’d like to move forward this week. Happy to help either way.”\n\nThe risk of waiting is simple: this turns into another dead Facebook lead with no date, no signal, and no momentum. Today is the day to convert attention into a next step.\n\nGrading guidance afterward:  \n- **A+** if the call produces a clear buying frame and a booked next step.  \n- **A/B** if you get live information but no booking.  \n- **C or below** if it stalls or you don’t make the call.\n\nMake the call now, then send the follow-up within 10 minutes if it goes to voicemail.",
+        "turnId": "t_mny4rogr_xp2zin8",
+        "nextSteps": [
+          {
+            "id": "laine_call",
+            "label": "Call Laine",
+            "action": "oracle_prompt",
+            "payload": {
+              "text": "Call Laine Martins now on lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv. Goal: identify the event type, whether they’re comparing price, trust, or fit, and book the next step today. If they miss, leave a voicemail and send a short follow-up asking what they’re solving for and whether they want to move forward this week."
+            }
+          },
+          {
+            "id": "open_laine",
+            "label": "Open Lead",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Facebook Lead Ads: Laine Martins",
+              "leadName": "Facebook Lead Ads: Laine Martins",
+              "leadId": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+            }
+          },
+          {
+            "id": "refresh",
+            "label": "Refresh Inbox",
+            "action": "refresh_inbox",
+            "payload": {}
+          },
+          {
+            "id": "pipeline_view",
+            "label": "See Pipeline",
+            "action": "navigate",
+            "payload": {
+              "view": "pipeline"
+            }
+          },
+          {
+            "id": "show_why",
+            "label": "Why this?",
+            "action": "preview_lattice_action",
+            "payload": {
+              "actionId": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up"
+            }
+          }
+        ],
+        "oracleMeta": {}
+      },
+      {
+        "role": "user",
+        "content": "Certify this Ratio Lattice next-action decision for Andre.\n\nDecision:\n- Lead: Rebecca Almeida\n- Lead ID: lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN\n- Action: Confirm Tasting Details\n- Channel: call\n- Score: 129.4\n- Intent: tasting\n- Comparator triad: relationship_strength, venue_commitment, contactability\n\nDecision algebra contributions:\n- tasting_readiness: +23.4 (90 × 0.26)\n- relationship_strength: +18.7 (85 × 0.22)\n- relationship_strength: +15.3 (85 × 0.18)\n- action_now_score: +11.1 (69.3 × 0.16)\n- contactability: +10 (100 × 0.1)\n- next_action_clarity: +9 (90 × 0.1)\n- doctrine_fit: +8.8 (73 × 0.12)\n- close_probability: +8.6 (72 × 0.12)\n\nEvidence:\n- Why now: Rebecca Almeida scores 129.4 because tasting readiness +23.4, relationship strength +18.7, relationship strength +15.3, action now score +11.1.\n- Why this action: Tasting is booked/imminent. Confirm details and prepare for the experience.\n- What it beats: This action beats lower-ranked moves because it has the stronger combined action score after intent weights, selected comparators, contactability, and doctrine penalties.\n\nVerification questions before action:\n- Verify latest Close activity before executing, then keep Andre as final human approver.\n\nGive Andre a sign-off packet:\n1. Exactly what to do next.\n2. Why this is the best action under the selected comparators.\n3. What could make this recommendation wrong.\n4. If the action is email/SMS, draft the message, but clearly mark it as requiring approval.\n5. Ask Andre to grade the recommendation A+ through F and leave a note so HRMR can learn.",
+        "turnId": "t_mny9wkbm_nrqrz9q",
+        "oracleMeta": {
+          "action_type": "lattice_action_decision",
+          "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+          "lead_name": "Rebecca Almeida",
+          "lattice_action_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN:doctrine:confirm_tasting_details",
+          "source": "lattice_decision_panel"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "## Certification: Approved\n\n**Exact next move:**  \n**Call Rebecca Almeida now** on **lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN** to **confirm tasting details and the next step**.\n\nThis is the right move because the deal is already in tasting motion. At that stage, the money is not won by adding more information. It’s won by removing uncertainty. A live call protects the tasting, locks the logistics, and surfaces any hidden decision friction before it turns into drift.\n\nIt beats lower-ranked moves because those would either slow the deal down or leave the key variables untested. Email is too soft here. SMS is fine as backup, but not as the primary move when contactability is strong and the tasting is already set. The highest-value question now is whether this tasting converts into a deposit path or slips into passive interest.\n\nWhat could make this wrong: if the tasting is already fully confirmed, already internally aligned, and there is no remaining decision pressure, then the call may be less urgent than a targeted confirmation text. But based on the score and the intent, that’s not the likeliest case. The likeliest case is that this is the moment to keep momentum alive.\n\n### Human-approved customer-facing draft if needed after the call misses\n**SMS draft:**  \n“Hi Rebecca — just confirming the tasting details and the next step so everything is smooth on our side. If anything has changed, send it over and we’ll adjust. What’s the best way to keep this moving for you?”\n\nThis draft should only go out if the call doesn’t connect. It’s clean, low-friction, and it asks for the real thing: confirmation plus the next step.\n\n### Verification before action\n- Confirm the latest Close activity on Rebecca.\n- Verify the tasting date/time is still open or not already locked.\n- Check who needs to be present for the tasting or decision.\n- Make sure Andre remains the final approver before any outbound text.\n- Be ready to define the next step immediately if she answers.\n\n### Grade request\nAfter you execute, grade this **A+ / A / B / C / D / F** and leave a short note on why. That note should say whether the call clarified the deal, advanced the tasting, or exposed a better next move.\n\nApprove / Revise / Reject. If you want, I can also draft the exact call opener next.",
+        "turnId": "t_mny9wkbm_nrqrz9q",
+        "nextSteps": [
+          {
+            "id": "open_rebecca",
+            "label": "Open Rebecca Deal",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Rebecca Almeida",
+              "leadName": "Rebecca Almeida"
+            }
+          },
+          {
+            "id": "call_rebecca",
+            "label": "Call Rebecca Now",
+            "action": "oracle_prompt",
+            "payload": {
+              "text": "Call Rebecca Almeida now on lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN to confirm tasting details and the next step. If she misses, leave a voicemail and send the approved SMS draft after human review."
+            }
+          },
+          {
+            "id": "open_compose_sms",
+            "label": "Draft Backup SMS",
+            "action": "open_compose",
+            "payload": {
+              "mode": "sms",
+              "leadId": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+              "dealName": "Rebecca Almeida"
+            }
+          },
+          {
+            "id": "refresh_inbox",
+            "label": "Refresh Inbox",
+            "action": "refresh_inbox",
+            "payload": {}
+          },
+          {
+            "id": "open_pipeline",
+            "label": "See Pipeline",
+            "action": "navigate",
+            "payload": {
+              "view": "pipeline"
+            }
+          },
+          {
+            "id": "show_why",
+            "label": "Why this?",
+            "action": "preview_lattice_action",
+            "payload": {
+              "actionId": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN:doctrine:confirm_tasting_details"
+            }
+          }
+        ],
+        "oracleMeta": {
+          "action_type": "lattice_action_decision",
+          "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+          "lead_name": "Rebecca Almeida",
+          "lattice_action_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN:doctrine:confirm_tasting_details",
+          "source": "lattice_decision_panel"
+        }
+      }
+    ]
+  },
+  {
+    "id": "conv_mnxtv2g6_k9m2dl",
+    "title": "Give me my game plan for today. Prioritize by what moves the most money the fastest. Be sp",
+    "archived_at": "2026-04-13T23:32:26.039Z",
+    "operator_key": "andre",
+    "source": "browser_oracle_thread",
+    "message_count": 8,
+    "user_message_count": 4,
+    "assistant_message_count": 4,
+    "grade_count": 0,
+    "lattice_action_ids": [
+      "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up"
+    ],
+    "lead_ids": [
+      "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+    ],
+    "grades": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "Give me my game plan for today. Prioritize by what moves the most money the fastest. Be specific — deal names, dollar amounts, exact actions.",
+        "turnId": "t_mnxszdtq_qcrrgg1",
+        "oracleMeta": {}
+      },
+      {
+        "role": "assistant",
+        "content": "You’re not in a volume problem. You’re in a leverage problem.\n\nToday’s money is sitting in three places: the big open deals that can move with one good conversation, the tastings that are close enough to convert, and the stalled leads that need a clean next step before they go cold.\n\nStart here.\n\n1) **ETS EQUIPMENT — $11,685 — 80% confidence**  \nThis is the fastest path to cash. At this stage, the only thing that should matter is whether the decision is already real or just being delayed. Your move is a direct call today. Don’t re-pitch the whole deal. Confirm the remaining concern, whether that’s final approval, deposit timing, or scope. If they’re close, ask for the commitment step on the call. If they’re not, you need to know why now, not later.\n\n2) **Laine Martins — $9,450 — 20% confidence**  \nThis is your biggest upside swing, but it’s still early. The goal is not to “sell” this yet. The goal is to find out whether this is a real event or just interest. Use the campaign/call thread to force clarity: event date, guest count, decision-maker, and whether they’re comparing price or trust. If they won’t engage, this is likely soft pipeline. If they do, you may have a real deal worth pushing hard.\n\n3) **Karla Velazquez — $7,245 — 20% confidence**  \nSame logic. This is not a proposal-pushing situation. It’s a qualification situation. Call or send a tight message that gets them off vague interest and onto specifics: timing, decision process, and whether they’re looking for a premium certainty option or just shopping. You want to know if this can move this week or if it’s noise.\n\n4) **Leslie Kearse Smith — $5,670 — 02. Setting Tasting Appointment**  \nThis is one of the fastest conversion levers in your pipeline. The move is to lock the tasting, not “keep the conversation going.” If the tasting is already in motion, push for a hard time today. If they haven’t confirmed, send a short SMS with two options and a deadline. The goal is a booked tasting with a calendar hold, not a maybe.\n\n5) **Rebecca Almeida — $3,780 — 03. Booked for Tasting**  \nBooked tasting means this is where momentum either turns into deposit or dies in follow-up. Your job is to confirm attendance, remove friction, and set the expectation that the tasting is part of the decision path. If there’s any chance of no-show or drift, send a reminder today and make the next step explicit.\n\n6) **Jose Quefau — confirm tasting details and next step via SMS**  \nThis is already telling you what to do. Do it now. Fast, clean, and specific. Confirm the tasting details, then attach the next decision point so this doesn’t become another warm lead with no movement.\n\n7) **Ari — NEPQ sent 3/13, March 29 tasting push, get on the phone**  \nThis is a stale-but-valuable follow-up. The right play is phone first, not another passive message. If they answer, you’re trying to reopen momentum around the tasting. If they don’t, send one tight follow-up that frames the reason for the call: you want to make sure the tasting date and fit are actually aligned.\n\n8) **Jenn Smiley — confirm tasting details and next step via SMS**  \nSame deal: turn ambiguity into a schedule. If the tasting is real, the next step should already be clear. If it isn’t, this flushes that out fast.\n\nHere’s the order I’d run it in today:\n\n**First hour:** ETS EQUIPMENT, then Laine Martins, then Karla Velazquez. Those are your highest dollar conversations.  \n**Second block:** Leslie Kearse Smith, Rebecca Almeida, Jose Quefau. These are your fastest conversion moves.  \n**Later block:** Ari and Jenn Smiley. These are follow-up and momentum repair.\n\nWhat I would not do: spend the morning on low-confidence admin or soft leads that won’t produce a real next step today. Your pipeline is already telling you the bottleneck is not lead count. It’s conversion speed and deposit movement.\n\nIf you want, I can turn this into a literal hour-by-hour call and text sequence for today, with exact message drafts for each priority deal.",
+        "turnId": "t_mnxszdtq_qcrrgg1",
+        "nextSteps": [
+          {
+            "id": "open_ets",
+            "label": "Open ETS",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "ETS EQUIPMENT"
+            }
+          },
+          {
+            "id": "open_laine",
+            "label": "Open Laine",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Laine Martins"
+            }
+          },
+          {
+            "id": "open_karla",
+            "label": "Open Karla",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Karla Velazquez"
+            }
+          },
+          {
+            "id": "open_leslie",
+            "label": "Open Leslie",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Leslie Kearse Smith"
+            }
+          },
+          {
+            "id": "open_rebecca",
+            "label": "Open Rebecca",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Rebecca Almeida"
+            }
+          },
+          {
+            "id": "open_actions",
+            "label": "See actions",
+            "action": "navigate",
+            "payload": {
+              "view": "actions"
+            }
+          }
+        ],
+        "oracleMeta": {}
+      },
+      {
+        "role": "user",
+        "content": "Use the Andre Ratio Lattice catalog to build the single next most important action Andre should take right now.\n\nPrimary lattice candidate:\n- Lead: Laine Martins\n- Lead ID: lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\n- Recommended channel: call\n- Title: Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS\n- Action-now score: 67\n- Priority score: 63\n- Reasoning tags: none\n- Current lattice reasoning: A: 🔷 01. Today's Leads; action_now=67; priority=63\n- Counterfactual: none\n\nBuild a sign-off packet Andre can approve or reject:\n1. The exact next action.\n2. Why this is the best move now, and what it beats.\n3. The risk if Andre does nothing today.\n4. The customer-facing draft if the next action is email or SMS.\n5. A verification checklist before sending.\n6. A simple approval line: \"Approve / Revise / Reject\" with what Andre should grade afterward.\n\nMake it operational. No vague advice. Use the lattice as truth and keep the customer-facing action human-approved.",
+        "turnId": "t_mnxt79wi_ky5fv6i",
+        "oracleMeta": {
+          "action_type": "lattice_next_best_action",
+          "lattice_action_id": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "lead_name": "Laine Martins",
+          "source": "oracle_next_best_action_button"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "## Single next move\n\n**Call Laine Martins now** on **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**.\n\nThis is the best move because it has the highest immediate action score in the lattice and the cleanest path to money. It beats the other top candidates because those are either lower leverage tasks, admin cleanup, or follow-up that doesn’t create new revenue as fast. This one can still turn into a real deal today if you get live contact and define the real situation.\n\nWhat you’re looking for on the call is simple: whether this is an active event, who’s deciding, and what’s actually blocking movement. If it’s real, you move it. If it’s soft, you find out fast and stop wasting heat.\n\n## Why this beats the nearest alternative\n\nThe nearest alternative is any other top lead in the queue. Those are useful, but they’re not as efficient right now. This one is already flagged as a top “today’s leads” action with the strongest current score. That means the system is telling you there’s still oxygen in it. A live call can create clarity in one touch. A task update or passive follow-up cannot.\n\n## Risk if you do nothing today\n\nIf you let this sit, it stays in the dead zone: interested enough to linger, not engaged enough to convert. That’s where money leaks. The longer you wait, the more likely this becomes another low-confidence lead that never reaches a tasting, never reaches deposit, and never becomes revenue.\n\n## Customer-facing draft\n\nNot needed yet, because the recommended action is a **call**. If the call goes to voicemail or they don’t answer, use this tight SMS:\n\n“Hi Laine — it’s Andre with Comeketo. I’m reaching out to make sure I have the right next step for your event. Is this more about locking in the right experience, or are you still comparing options? If easier, reply with the best time for a quick call today.”\n\n## Verification checklist before sending / calling\n\nConfirm the lead name is correct: **Laine Martins**.  \nConfirm the lead is tied to the right campaign: **RODS WEDDING & FACELESS**.  \nCheck whether there’s any recent note, reply, or missed call that changes the framing.  \nMake sure the call is placed from the right outbound number.  \nIf they answer, stay focused on event status, decision-maker, and next honest step.  \nIf they don’t answer, send the SMS above within 10 minutes.  \nDo not send anything more elaborate until you know whether this is a real active buying conversation.\n\n## Approval line\n\n**Approve / Revise / Reject**\n\nAfter you act, grade it **A+/A/B/C/D/F** and give one short why.",
+        "turnId": "t_mnxt79wi_ky5fv6i",
+        "nextSteps": [
+          {
+            "id": "open_deal",
+            "label": "Open Laine Deal",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Laine Martins"
+            }
+          },
+          {
+            "id": "open_compose",
+            "label": "Draft SMS",
+            "action": "open_compose",
+            "payload": {
+              "mode": "sms",
+              "leadId": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+              "dealName": "Laine Martins"
+            }
+          },
+          {
+            "id": "navigate_calls",
+            "label": "Go to Calls",
+            "action": "navigate",
+            "payload": {
+              "view": "actions"
+            }
+          },
+          {
+            "id": "refresh_inbox",
+            "label": "Refresh Inbox",
+            "action": "refresh_inbox",
+            "payload": {}
+          },
+          {
+            "id": "open_palette",
+            "label": "Quick Jump",
+            "action": "open_palette",
+            "payload": {}
+          },
+          {
+            "id": "show_why",
+            "label": "Why this?",
+            "action": "preview_lattice_action",
+            "payload": {
+              "actionId": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up"
+            }
+          }
+        ],
+        "oracleMeta": {
+          "action_type": "lattice_next_best_action",
+          "lattice_action_id": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "lead_name": "Laine Martins",
+          "source": "oracle_next_best_action_button"
+        }
+      },
+      {
+        "role": "user",
+        "content": "Use the Andre Ratio Lattice catalog to build the single next most important action Andre should take right now.\n\nPrimary lattice candidate:\n- Lead: Laine Martins\n- Lead ID: lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\n- Recommended channel: call\n- Title: Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS\n- Action-now score: 67\n- Priority score: 63\n- Reasoning tags: none\n- Current lattice reasoning: A: 🔷 01. Today's Leads; action_now=67; priority=63\n- Counterfactual: none\n\nBuild a sign-off packet Andre can approve or reject:\n1. The exact next action.\n2. Why this is the best move now, and what it beats.\n3. The risk if Andre does nothing today.\n4. The customer-facing draft if the next action is email or SMS.\n5. A verification checklist before sending.\n6. A simple approval line: \"Approve / Revise / Reject\" with what Andre should grade afterward.\n\nMake it operational. No vague advice. Use the lattice as truth and keep the customer-facing action human-approved.",
+        "turnId": "t_mnxt8a8l_0fjwnu6",
+        "oracleMeta": {
+          "action_type": "lattice_next_best_action",
+          "lattice_action_id": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "lead_name": "Laine Martins",
+          "source": "oracle_next_best_action_button"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "## Single next move\n\n**Call Laine Martins now** on **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**.\n\nThis is the best move because it’s the highest-action lead in the lattice and it has the fastest path to revenue. It beats the other options because those are either admin, lower-priority follow-up, or softer touches that won’t create clarity as fast. This call can still surface a real event, a decision-maker, or a buying timeline today. That’s the money.\n\n## Why this is the best move now\n\nLaine is the strongest live opportunity in the queue. It’s tagged as a today lead with the highest action-now score. That means the system is telling you this is where the most leverage sits right now.\n\nA call beats email here because the deal is still early and ambiguous. You need to find out if this is a real buying conversation or just interest. A live call gets you that answer in one move. Everything else adds delay.\n\n## What it beats\n\nIt beats task cleanup, note updates, and passive follow-up.  \nIt beats waiting for the lead to “come back around.”  \nIt beats sending a generic message before you know whether the buyer is serious.\n\nThe nearest alternative is another top lead or a softer follow-up. This one is cleaner because it can create immediate friction reduction and reveal whether there’s real deal energy behind the lead.\n\n## Risk if Andre does nothing today\n\nIf this sits, it cools off fast. Then it becomes another low-confidence lead with no event date, no decision pressure, and no clear next step. That’s how pipeline gets bloated without producing money.\n\nThe real risk is heat loss. Not objection. Not price. Delay.\n\n## Customer-facing draft\n\nNot needed yet, because the next action is a **call**. If there’s no answer, use this SMS immediately after:\n\n“Hi Laine — it’s Andre with Comeketo. I’m reaching out to make sure I have the right next step for your event. Is this more about locking in the right experience, or are you still comparing options? If easier, reply with a good time for a quick call today.”\n\n## Verification checklist before sending/calling\n\nConfirm the lead name is correct: **Laine Martins**.  \nConfirm the lead ID matches: **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**.  \nConfirm the campaign is correct: **RODS WEDDING & FACELESS**.  \nCheck recent notes, missed calls, or replies before dialing.  \nIf they answer, keep the call focused on event timing, decision-maker, and next step.  \nIf they don’t answer, send the SMS within 10 minutes.  \nDo not expand the message until you know whether this is real or soft.\n\n## Approval line\n\n**Approve / Revise / Reject**\n\nAfter you act, grade it **A+/A/B/C/D/F** and add one short reason.",
+        "turnId": "t_mnxt8a8l_0fjwnu6",
+        "nextSteps": [
+          {
+            "id": "build_next_action",
+            "label": "Build next action",
+            "action": "oracle_prompt",
+            "payload": {
+              "text": "Use the Andre Ratio Lattice catalog to build the single next most important action Andre should take right now.\n\nPrimary lattice candidate:\n- Lead: Laine Martins\n- Lead ID: lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\n- Recommended channel: call\n- Title: Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS\n- Action-now score: 67\n- Priority score: 63\n- Reasoning tags: none\n- Current lattice reasoning: A: 🔷 01. Today's Leads; action_now=67; priority=63\n- Counterfactual: none\n\nBuild a sign-off packet Andre can approve or reject:\n1. The exact next action.\n2. Why this is the best move now, and what it beats.\n3. The risk if Andre does nothing today.\n4. The customer-facing draft if the next action is email or SMS.\n5. A verification checklist before sending.\n6. A simple approval line: \"Approve / Revise / Reject\" with what Andre should grade afterward.\n\nMake it operational. No vague advice. Use the lattice as truth and keep the customer-facing action human-approved."
+            }
+          },
+          {
+            "id": "show_why",
+            "label": "Why this?",
+            "action": "preview_lattice_action",
+            "payload": {
+              "actionId": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up"
+            }
+          },
+          {
+            "id": "open_compose",
+            "label": "Open email",
+            "action": "open_compose",
+            "payload": {
+              "mode": "email",
+              "leadId": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+              "dealName": "Laine Martins"
+            }
+          },
+          {
+            "id": "open_timeline",
+            "label": "Open timeline",
+            "action": "navigate",
+            "payload": {
+              "view": "timeline"
+            }
+          }
+        ],
+        "oracleMeta": {
+          "action_type": "lattice_next_best_action",
+          "lattice_action_id": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "lead_name": "Laine Martins",
+          "source": "oracle_next_best_action_button"
+        }
+      },
+      {
+        "role": "user",
+        "content": "Draft a EMAIL for Laine Martins.\n\nObjective: follow up.\n\nTone: warm, aligned with Andre's voice: Direct, calm, confidence-restoring.\n\nDeal stage: ⬜ 00. Prospect.\n\nEvent: Unknown at TBD.\n\nValue: $9,450. Confidence: 20%.\n\nUse this template as a structural starting point, but personalize it hard:\nSubject: Curious About Your [Event Type]\nHi [Name],\n\nI noticed you recently reached out to us about catering for your [event type] on [date].\n\nWhat's the most important detail you're focusing on right now?\n\nOutput cleanly with subject line first if this is email, then the final message only.",
+        "turnId": "t_mnxt8zcj_2pswzpp",
+        "oracleMeta": {}
+      },
+      {
+        "role": "assistant",
+        "content": "Subject: Curious About Your Catering Plans\n\nHi Laine,\n\nThanks for reaching out. Sounds like you care about getting this right, but you also don’t want the process to turn into a second job.\n\nMost people at this stage are usually sorting through one of three things: price, trust in the team, or what the event should actually feel like. If you’re still early, that’s completely normal.\n\nWhat matters most right now — the budget, the guest experience, or just making sure you’re working with a team that won’t create extra stress?\n\nIf it helps, reply with whichever one is most important and I’ll point you in the right direction.\n\nBest,  \nAndre",
+        "turnId": "t_mnxt8zcj_2pswzpp",
+        "nextSteps": [
+          {
+            "id": "build_next_action",
+            "label": "Build next action",
+            "action": "oracle_prompt",
+            "payload": {
+              "text": "Use the Andre Ratio Lattice catalog to build the single next most important action Andre should take right now.\n\nPrimary lattice candidate:\n- Lead: Laine Martins\n- Lead ID: lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\n- Recommended channel: call\n- Title: Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS\n- Action-now score: 67\n- Priority score: 63\n- Reasoning tags: none\n- Current lattice reasoning: A: 🔷 01. Today's Leads; action_now=67; priority=63\n- Counterfactual: none\n\nBuild a sign-off packet Andre can approve or reject:\n1. The exact next action.\n2. Why this is the best move now, and what it beats.\n3. The risk if Andre does nothing today.\n4. The customer-facing draft if the next action is email or SMS.\n5. A verification checklist before sending.\n6. A simple approval line: \"Approve / Revise / Reject\" with what Andre should grade afterward.\n\nMake it operational. No vague advice. Use the lattice as truth and keep the customer-facing action human-approved."
+            }
+          },
+          {
+            "id": "show_why",
+            "label": "Why this?",
+            "action": "preview_lattice_action",
+            "payload": {
+              "actionId": "nba_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv_schedule_follow_up"
+            }
+          },
+          {
+            "id": "open_compose",
+            "label": "Open email",
+            "action": "open_compose",
+            "payload": {
+              "mode": "email",
+              "leadId": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+              "dealName": "Laine Martins"
+            }
+          },
+          {
+            "id": "open_timeline",
+            "label": "Open timeline",
+            "action": "navigate",
+            "payload": {
+              "view": "timeline"
+            }
+          }
+        ],
+        "oracleMeta": {}
+      }
+    ]
+  },
+  {
+    "id": "conv_mnxsyr30_15tr8j",
+    "title": "What are my top 3 priority deals and what should I do with each right now?",
+    "archived_at": "2026-04-13T23:07:18.303Z",
+    "operator_key": "andre",
+    "source": "browser_oracle_thread",
+    "message_count": 4,
+    "user_message_count": 2,
+    "assistant_message_count": 2,
+    "grade_count": 0,
+    "lattice_action_ids": [],
+    "lead_ids": [],
+    "grades": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "What are my top 3 priority deals and what should I do with each right now?"
+      },
+      {
+        "role": "assistant",
+        "content": "### 1) Layza Souza Reis / Matheus — **$14,369 (Fully Paid, 100% conf)**  \n**Priority because:** this is already secure cash + proof point. Your job is to protect the relationship and eliminate any last-minute execution risk that could trigger buyer remorse or a refund/chargeback.  \n**Do right now:** call/message Matt today and get a **single confirmation**: date, headcount, venue access time, and “who is the day-of contact.” Then lock the walkthrough plan with ops.  \n**Next step (today by 3pm):** send a short “final details confirmation” message + schedule the walkthrough time.\n\n---\n\n### 2) Sue Tetuan Tavares — **Guest count scope + budget rescope (send rescoped quote TODAY)**  \n**Priority because:** this is active pipeline friction tied to scope/budget clarity. If you don’t reset the numbers fast, this becomes partner/family review delay and you’ll bleed time.  \n**Do right now:** tighten the quote to **their actual guest range** and give **two options only** (base + enhanced). One clean price range, no add-on surprises. Then explicitly ask for the decision that unlocks deposit (not “feedback”).  \n**Next step (by EOD today):** send the rescoped quote and book a **15-minute decision call** for tomorrow with a deposit close target.\n\n---\n\n### 3) Cheryl Rank — **Tasting decision (same-day follow-up call)**  \n**Priority because:** tasting conversion is where $5K–$25K deals either turn into signed contracts or stall. If they’re wavering, it’s almost always unresolved “fit/trust” or unclear next step—not food.  \n**Do right now:** call today and frame it clean: “Based on your goals, here’s the exact menu/format I recommend—want to lock it in with the deposit today or schedule a quick final alignment call?” Don’t debate price; confirm what matters and move to commitment.  \n**Next step (within 2 hours):** complete the call and get either (a) verbal yes + next steps for contract/deposit, or (b) the exact unresolved item so you can fix it immediately.\n\nIf you want, paste the other 2–3 active deals with the highest risk flags (no payment signal / open loops / partner review) and I’ll tell you which one is most likely to turn into a loss next—and what to do in that specific case."
+      },
+      {
+        "role": "user",
+        "content": "WHats the best moves today?",
+        "turnId": "t_mnxsvmib_rd1p567",
+        "oracleMeta": {}
+      },
+      {
+        "role": "assistant",
+        "content": "Best moves today: stop working the whole pipeline and attack the stalls that can still be moved.\n\nFirst, **Laine Martins**. This is the highest-action lead in the lattice right now, and it’s still early enough to create momentum. Don’t overthink it. Call her today and push for one clear outcome: either a tasting date, a hard objection, or a no. The worst move is letting it sit in “prospect” while you guess.  \n**Do this now:** call within the next 30 minutes and leave a message only if she doesn’t pick up. If she answers, anchor on what matters most to her — speed, trust, or custom fit — and get the next step on the calendar today.\n\nSecond, **Jose Quefau**. He’s already sitting in tasting coordination, which means the deal is fragile but alive. This is not the time for a broad check-in. Confirm the tasting details and force the next move.  \n**Do this now:** send the SMS today asking for one of three things: confirmation, a reschedule, or the decision point blocking the tasting. End it with a specific ask for a reply by end of day.\n\nThird, **Ari**. The note says the tasting push is already warm and he needs a phone call soon. That’s a good sign — but only if you act before the energy drops.  \n**Do this now:** call today and keep it tight: confirm where they are in the decision, what’s still being compared, and what would make them ready to book. Don’t let this stay in email limbo.\n\nIf you want the smartest version of today, the order is: **Laine first, Jose second, Ari third**. That’s the best mix of fresh momentum, active process, and a warm follow-up that can still turn into a booking.\n\nIf you want, I can turn these into exact call and SMS scripts right now. End goal for today: **book one tasting, confirm one next step, and force one stalled deal to reveal whether it’s real or dead.**",
+        "turnId": "t_mnxsvmib_rd1p567",
+        "nextSteps": [
+          {
+            "id": "laine",
+            "label": "Open Laine",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Laine Martins"
+            }
+          },
+          {
+            "id": "jose",
+            "label": "Open Jose",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Jose Quefau"
+            }
+          },
+          {
+            "id": "ari",
+            "label": "Open Ari",
+            "action": "open_deal",
+            "payload": {
+              "dealName": "Ari"
+            }
+          },
+          {
+            "id": "sms_jose",
+            "label": "Draft Jose SMS",
+            "action": "open_compose",
+            "payload": {
+              "mode": "sms",
+              "leadId": "Jose Quefau",
+              "dealName": "Jose Quefau"
+            }
+          },
+          {
+            "id": "call_prompt",
+            "label": "Write call script",
+            "action": "oracle_prompt",
+            "payload": {
+              "text": "Draft tight call scripts for Laine Martins, Jose Quefau, and Ari. Keep each one short, direct, and built to get a specific next step today."
+            }
+          }
+        ],
+        "oracleMeta": {}
+      }
+    ]
+  }
+]

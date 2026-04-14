@@ -1,0 +1,2845 @@
+[
+  {
+    "contact_id": "cont_I7SLQascEG3TX05uFPxstBiZ37oDKSH1AXTnfb2kn9F",
+    "lead_id": "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "full_name": "Alex Ayala",
+    "first_name": "Alex",
+    "last_name": "Ayala",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "milfordbullyz2020@gmail.com"
+    ],
+    "phone_numbers": [
+      "+14134598087"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:07.815Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_sqN0ql0DNGl8FaLHOHzrj9I2tqBlHRJ18ZfNGdPuKC9",
+    "lead_id": "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "full_name": "Alex Ayala",
+    "first_name": "Alex",
+    "last_name": "Ayala",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+14134598087"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:07.815Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_0aT46OE9DWDaE9dbheJQjBWThtlRhgwztge8j4bIKSg",
+    "lead_id": "lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+    "full_name": "Ana Paula",
+    "first_name": "Ana",
+    "last_name": "Paula",
+    "role_title": "BEZ GROUP",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+17745356311"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": null,
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_YNRakslQDOjGVxe4CIWp37S8ZjJJritn3zLJSDx4JW4",
+    "lead_id": "lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT",
+    "full_name": "Andraya Blair",
+    "first_name": "Andraya",
+    "last_name": "Blair",
+    "role_title": null,
+    "email_addresses": [
+      "jishawnandraya2026@gmail.com"
+    ],
+    "phone_numbers": [
+      "+16176396309"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T18:00:25.034Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_afbd58FcenieIJefNT05CJZuLD6gmnChigoqnuNaO9c",
+    "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "full_name": "Andreia DePina Moore",
+    "first_name": "Andreia",
+    "last_name": "DePina Moore",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "depina1993@gmail.com"
+    ],
+    "phone_numbers": [
+      "+16177125769"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-06T15:41:29.725Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_3FRVCubpEbIH03tIgXEWs6iVrtNILTjx7r12rVqGc81",
+    "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "full_name": "Andreia DePina Moore",
+    "first_name": "Andreia",
+    "last_name": "DePina Moore",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+16177125769"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-06T15:41:29.725Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_xGG2A01VPCZFSjOUOttwnJNhiCBe8vXsoAHPgyecKHN",
+    "lead_id": "lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN",
+    "full_name": "Anna",
+    "first_name": "Anna",
+    "last_name": null,
+    "role_title": null,
+    "email_addresses": [
+      "annaocampo.ao@gmail.com"
+    ],
+    "phone_numbers": [
+      "+19256968242"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Los_Angeles",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:52.334Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_hVyeoB7NidAPLDlQhmIAyY5u9iLd9mskqnYWlhSPpYa",
+    "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "full_name": "Anna Julia Duarte",
+    "first_name": "Anna",
+    "last_name": "Julia Duarte",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "duarteannajulia5@gmail.com"
+    ],
+    "phone_numbers": [
+      "+17744869078"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:13:57.999Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_iziAcAk9w8NIyX2YVacDrsN1DJz7IT3klgZvyU6nDFU",
+    "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "full_name": "Anna Julia Duarte",
+    "first_name": "Anna",
+    "last_name": "Julia Duarte",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+17744869078"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:13:57.999Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_nKRR3sNCmu9u0Orh1Lw7VjsE8vTA9j1uN5YoDMD1FJm",
+    "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "full_name": "Ari",
+    "first_name": "Ari",
+    "last_name": null,
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "ilovencmw@gmail.com"
+    ],
+    "phone_numbers": [
+      "+16035197950"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:42:36.659Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_fPQu3U6bWdvIx3VTI6tx8J76WcI0h6vjDuT8szYQPO1",
+    "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "full_name": "Ari",
+    "first_name": "Ari",
+    "last_name": null,
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+16035197950"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:42:36.659Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_WLCTc1CcZ0JneLAjrqW3vJumBQFzNAr9PEr1jp8jNnD",
+    "lead_id": "lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd",
+    "full_name": "Ashley Wood",
+    "first_name": "Ashley",
+    "last_name": "Wood",
+    "role_title": null,
+    "email_addresses": [
+      "ashwedding@gmail.com"
+    ],
+    "phone_numbers": [
+      "+17814920066"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-07T03:20:18.655Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_UY8ueFgUXefRbDYRVK3XrgJJJNLHz85yDEqgH6dvO6v",
+    "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "full_name": "Ben Todd",
+    "first_name": "Ben",
+    "last_name": "Todd",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "benjaminhtodd@gmail.com"
+    ],
+    "phone_numbers": [
+      "+14133136385"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:10:01.053Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_NWoAryZXaSxRHitQGMwBT0TkLnYtUbIuzI9GhClWGEM",
+    "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "full_name": "Ben Todd",
+    "first_name": "Ben",
+    "last_name": "Todd",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+14133136385"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:10:01.053Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_hyP1dtkfUfzIxuXHnNbaZJRdnMXXG1wsVxVBfvqJLc1",
+    "lead_id": "lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "full_name": "BriAnna Nixie",
+    "first_name": "BriAnna",
+    "last_name": "Nixie",
+    "role_title": "From crisp.chat",
+    "email_addresses": [
+      "briannaandtimothy@gmail.com"
+    ],
+    "phone_numbers": [
+      "+18608401030"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:42:15.666Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_1YqwTPLXZJ4Q0jLxCVo5f9YVTivTFPWZaz9RoJa6F3D",
+    "lead_id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+    "full_name": "Cadence Fell",
+    "first_name": "Cadence",
+    "last_name": "Fell",
+    "role_title": null,
+    "email_addresses": [
+      "cadencenoelf@gmail.com"
+    ],
+    "phone_numbers": [],
+    "preferred_channel": "email",
+    "timezone": null,
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T13:00:36.538Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_P6LPjliqPcoNVhxgZhBVxT0DeJPrGJW5GOreJM6EYC7",
+    "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "full_name": "camille Griffin",
+    "first_name": "camille",
+    "last_name": "Griffin",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "mrscgriffin@gmail.com"
+    ],
+    "phone_numbers": [
+      "+15083080596"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:29.200Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_nJjbArIaZo0eIo8nZNykM0Pf7lQrbt7Cb8zc5EbMe7k",
+    "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "full_name": "camille Griffin",
+    "first_name": "camille",
+    "last_name": "Griffin",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+15083080596"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:29.200Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_b7CAS53EeSsEyxGvixrB0LkFOgTjmfqGPP3iLA4EUZC",
+    "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "full_name": "Carolyn Boumila-Vega",
+    "first_name": "Carolyn",
+    "last_name": "Boumila-Vega",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "cpbvega@gmail.com"
+    ],
+    "phone_numbers": [
+      "+16174070989"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:14.618Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_XjGZZpzQOAd7zpNiuKCuWwUif81DamKxfOumk7pOJ4z",
+    "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "full_name": "Carolyn Boumila-Vega",
+    "first_name": "Carolyn",
+    "last_name": "Boumila-Vega",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+16174070989"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:14.618Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_2k0tyfnTtZuejjabUpWs5tRoEQw9GE3EkP5SeQUVLCA",
+    "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "full_name": "Coreen Miranda",
+    "first_name": "Coreen",
+    "last_name": "Miranda",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "coreenmiranda2@gmail.com"
+    ],
+    "phone_numbers": [
+      "+18572057619"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-12T00:38:15.522Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok"
+    ]
+  },
+  {
+    "contact_id": "cont_1HJCuZKP2pkEfSKoRS1vGSEWgDiwoU4BRSe2MAH8gEu",
+    "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "full_name": "Coreen Miranda",
+    "first_name": "Coreen",
+    "last_name": "Miranda",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+18572057619"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-12T00:38:15.522Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok"
+    ]
+  },
+  {
+    "contact_id": "cont_wUDrnrbwcc2Mtn3fA7BTVxBs30XBNqbkG2R85hOR69W",
+    "lead_id": "lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f",
+    "full_name": "Corliss Lau",
+    "first_name": "Corliss",
+    "last_name": "Lau",
+    "role_title": null,
+    "email_addresses": [
+      "corls.lau@gmail.com"
+    ],
+    "phone_numbers": [
+      "+16172991171"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T06:34:52.141Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_vw84cqZ6x0LJE4qNgBTrwFfFfchzi6a9xwu4QPTONpa",
+    "lead_id": "lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+    "full_name": "Darlene Scott",
+    "first_name": "Darlene",
+    "last_name": "Scott",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "dscott631@gmail.com"
+    ],
+    "phone_numbers": [
+      "+13093635709"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Chicago",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:13.486Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_iRDUdEDQQ5rxQ6OU0fXmk88ckNSX2BjXdg7QbyCk4yF",
+    "lead_id": "lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+    "full_name": "Darlene Scott",
+    "first_name": "Darlene",
+    "last_name": "Scott",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+13093635709"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Chicago",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:13.486Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_koczATn1xYYm1TeGyonRJMtPVVKRCrenaiw31ixmhds",
+    "lead_id": "lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+    "full_name": "Darnika Joseph",
+    "first_name": "Darnika",
+    "last_name": "Joseph",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "darnika26@gmail.com"
+    ],
+    "phone_numbers": [
+      "+17748102730"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:10:14.359Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_FDPZ5XATuao9yUx7L29SoEK1WmYUYC1nCK990xIGPjG",
+    "lead_id": "lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+    "full_name": "Darnika Joseph",
+    "first_name": "Darnika",
+    "last_name": "Joseph",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+17748102730"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:10:14.359Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_nRwuB7XPY0yGT0GMsHwnFWIyBNdkrZFDNyGv2a6CkNl",
+    "lead_id": "lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+    "full_name": "Diana Medrano",
+    "first_name": "Diana",
+    "last_name": "Medrano",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "disnabatista26@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+19783824060"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:15:16.292Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_JnLlx9udCI7U7WOGbxb2WAuPy62GsHAtayqMx9KCuIF",
+    "lead_id": "lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+    "full_name": "Diana Medrano",
+    "first_name": "Diana",
+    "last_name": "Medrano",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+19783824060"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:15:16.292Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_1s0QMLJLkPu8zJV8EpngdYEFFMp2CYAf4AbYNGpX4tY",
+    "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "full_name": "Edwin Portillo",
+    "first_name": "Edwin",
+    "last_name": "Portillo",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "portilloedwin41@gmail.com"
+    ],
+    "phone_numbers": [
+      "+12078066694"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-09T01:34:01.133Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_uxHbdCQhcmXYRtMu3ZwkjthGdA8Sajf2CYWsx8HXPTs",
+    "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "full_name": "Edwin Portillo",
+    "first_name": "Edwin",
+    "last_name": "Portillo",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+12078066694"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-09T01:34:01.133Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_MofdNTzVTWwPixNAGNDIpAeiFOHSZzZG9fxBc31G1zS",
+    "lead_id": "lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
+    "full_name": "Elciane gomes",
+    "first_name": "Elciane",
+    "last_name": "gomes",
+    "role_title": "Free Tasting Interested",
+    "email_addresses": [
+      "fabioelcicarol79@gmail.com"
+    ],
+    "phone_numbers": [
+      "+17813331073"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:56.483Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_joHwxOghHODoITsHyQL09X8pxYvVdruy9XMH8g7MnpQ",
+    "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "full_name": "Gabby Garcia Serrano",
+    "first_name": "Gabby",
+    "last_name": "Garcia Serrano",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "velaspabella@gmail.com"
+    ],
+    "phone_numbers": [
+      "+12108484373"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Chicago",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T20:33:04.297Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_1etTNbjciM2h7RBf9MR97ZsDWlqhbC2Vt73Y3A12Sd3",
+    "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "full_name": "Gabby Garcia Serrano",
+    "first_name": "Gabby",
+    "last_name": "Garcia Serrano",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+12108484373"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Chicago",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T20:33:04.297Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_4SZ7rFKn3whhVldxJjg1QmOYrqWcDBqe70ONRtrEtxF",
+    "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+    "full_name": "Gina Gallagher",
+    "first_name": "Gina",
+    "last_name": "Gallagher",
+    "role_title": null,
+    "email_addresses": [
+      "ggallagher15@gmail.com"
+    ],
+    "phone_numbers": [
+      "+17744874001"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T18:00:28.086Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_37COWtKNQyo36sB5RaJF5WTcgbFesCdV5hSGSTo2RPa",
+    "lead_id": "lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "full_name": "Gisele Chartrand Elgart",
+    "first_name": "Gisele",
+    "last_name": "Chartrand Elgart",
+    "role_title": null,
+    "email_addresses": [
+      "gisele@elgart.com"
+    ],
+    "phone_numbers": [
+      "+16173206805"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2025-11-13T13:30:06.409Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_mH1O0oIrTqsM3TlW9VfnPhavJEktIDrmACBmFDVXRVV",
+    "lead_id": "lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA",
+    "full_name": "Heli Parekh",
+    "first_name": "Heli",
+    "last_name": "Parekh",
+    "role_title": null,
+    "email_addresses": [
+      "heliparekh0619@gmail.com"
+    ],
+    "phone_numbers": [
+      "+17743436303"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:15:06.108Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_H8A6g0tcB8EyuFJvETM8XnyA6NoA0cU3O0T7oPu28l5",
+    "lead_id": "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+    "full_name": "Igreja Evangelica Avivamento Da Fe Na Revere",
+    "first_name": "Igreja",
+    "last_name": "Evangelica Avivamento Da Fe Na Revere",
+    "role_title": null,
+    "email_addresses": [],
+    "phone_numbers": [
+      "+19149162938"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-03-16T21:53:21.657Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM"
+    ]
+  },
+  {
+    "contact_id": "cont_rLYDLmM9vYMBgIShDxuTKE4q58OH7iIzRQzq4yKwrDF",
+    "lead_id": "lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "full_name": "Inna Shvetsova",
+    "first_name": "Inna",
+    "last_name": "Shvetsova",
+    "role_title": null,
+    "email_addresses": [
+      "innaedward84@gmail.com"
+    ],
+    "phone_numbers": [
+      "+14134545211"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:11.065Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_BBY9VFA0PeoGC712L040kLXOWNo1wvyumyfjtzeOAGT",
+    "lead_id": "lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "full_name": "Isabella Mathis",
+    "first_name": "Isabella",
+    "last_name": "Mathis",
+    "role_title": "Free Tasting Interested",
+    "email_addresses": [
+      "williamsmathisfamily@gmail.com"
+    ],
+    "phone_numbers": [
+      "+19783539881"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-04T16:35:53.236Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_wxmS3cOVwwKqcCHPQOy64KwAOi9GtWhyO101heBnZXv",
+    "lead_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "full_name": "Ivy Elien",
+    "first_name": "Ivy",
+    "last_name": "Elien",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "ivyelien2000@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+18577196289"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:13:49.736Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_bBDjbyfDJIehC47GinQJBIsTIAor7XsHgz7YDxiW5IY",
+    "lead_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "full_name": "Ivy Elien",
+    "first_name": "Ivy",
+    "last_name": "Elien",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+18577196289"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:13:49.736Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_PDJRWBrG0wLzZu9TP1D3YHgGtJRhcaGPdDqAvDCi4qB",
+    "lead_id": "lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "full_name": "Jeanette Comire",
+    "first_name": "Jeanette",
+    "last_name": "Comire",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "jacab922@comcast.net"
+    ],
+    "phone_numbers": [
+      "+16037697710"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:41:47.777Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_aCPjCbhlNIbE2C5CvCcvY22TyI80e52DrMntJiHW9O1",
+    "lead_id": "lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "full_name": "Jeanette Comire",
+    "first_name": "Jeanette",
+    "last_name": "Comire",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+16037697710"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:41:47.777Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_WEAfc01G5d5bI0GJr4koeEY1llzozLK1RgRVXTIRRsN",
+    "lead_id": "lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "full_name": "Jenn Smiley",
+    "first_name": "Jenn",
+    "last_name": "Smiley",
+    "role_title": "From crisp.chat",
+    "email_addresses": [
+      "j_foucher@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+14136575400"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-06T15:55:13.862Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_6Rujl1txLaavj51n4nRWqCvaMNXvcpeP2GThCTclUwM",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "full_name": "Jen",
+    "first_name": "Jen",
+    "last_name": null,
+    "role_title": "Free Tasting Interested",
+    "email_addresses": [
+      "jenn.jones07@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+15084417237"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:25:58.434Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_1jWppCMAy05XAbpzj5yXgxmD8qHwcrsmGFmGifE1n9z",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "full_name": "Jennifer Jones",
+    "first_name": "Jennifer",
+    "last_name": "Jones",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+15084417237"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:25:58.434Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_G9GY69YphC25h8sRkoPjging994hHVi5fKx9UpuAAUd",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "full_name": "Jennifer Jones",
+    "first_name": "Jennifer",
+    "last_name": "Jones",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "jenn.jones07@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+15084417237"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:25:58.434Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_WbzBlk7bSjelai66AZHXKNOVSsN4aaUJB9rfcuqLY7I",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "full_name": "Jennifer Jones",
+    "first_name": "Jennifer",
+    "last_name": "Jones",
+    "role_title": null,
+    "email_addresses": [
+      "jenn.jones07@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+15084417237"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:25:58.434Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_qsuZXNCDzOSJCZfyuK8rloklWbM8Z2IwUBFr8XRezU1",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "full_name": "jenn.jones07@yahoo.com",
+    "first_name": "jenn.jones07@yahoo.com",
+    "last_name": null,
+    "role_title": "From crisp.chat",
+    "email_addresses": [
+      "jenn.jones07@yahoo.com"
+    ],
+    "phone_numbers": [],
+    "preferred_channel": "email",
+    "timezone": null,
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:25:58.434Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_vbMPXEI80XXanjEjxydRU1joGP4MEzMaz8hgj46X47S",
+    "lead_id": "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+    "full_name": "Jessica McGory",
+    "first_name": "Jessica",
+    "last_name": "McGory",
+    "role_title": "Jessica McGory",
+    "email_addresses": [
+      "jess.aaron.lipp@gmail.com",
+      "jmcgory8@gmail.com",
+      "jmcgory80@gmail.com"
+    ],
+    "phone_numbers": [
+      "+16077458195"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-03-13T18:36:34.817Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM"
+    ]
+  },
+  {
+    "contact_id": "cont_5AsyMNiDrTT8UZrlsj3ZJvRVCn0Kl5ge1MiJjqC3R7R",
+    "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "full_name": "Jessica Molina",
+    "first_name": "Jessica",
+    "last_name": "Molina",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "jessicapleitez@hotmail.com"
+    ],
+    "phone_numbers": [
+      "+18573345604"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T20:21:16.162Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_BQXcdeKDVIEmDEddty2kYzor5wpSSVglgdtXcWYV07D",
+    "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "full_name": "Jessica Molina",
+    "first_name": "Jessica",
+    "last_name": "Molina",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+18573345604"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T20:21:16.162Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_5egvkfFDhIiCMpakSJiW2p0MjN8yoS30S8DxxXsd1sX",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "full_name": "Jose Quefau",
+    "first_name": "Jose",
+    "last_name": "Quefau",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "josequefau@icloud.com"
+    ],
+    "phone_numbers": [
+      "+19787883506"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-08T20:37:49.869Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_fVwpV2IZHkPCemxV0Jyr9K9RELoGVwBiDkIXsvOMi1T",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "full_name": "Jose Quefau",
+    "first_name": "Jose",
+    "last_name": "Quefau",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+19787883506"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-08T20:37:49.869Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_TyvW783SOp5pymjSgeFbcFeU4QTGej1OngdkK6cL6Kw",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "full_name": "josequefau@icloud.com",
+    "first_name": "josequefau@icloud.com",
+    "last_name": null,
+    "role_title": "From crisp.chat",
+    "email_addresses": [
+      "josequefau@icloud.com"
+    ],
+    "phone_numbers": [],
+    "preferred_channel": "email",
+    "timezone": null,
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-08T20:37:49.869Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_bZ2VHgYSqlCAiCXa74EmHGk3uH2OdJkNdnGZuPPTi82",
+    "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "full_name": "Ju",
+    "first_name": "Ju",
+    "last_name": null,
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "j_marte7@icloud.com"
+    ],
+    "phone_numbers": [
+      "+15088253001"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:51:18.765Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_M5YURc2QHud7V01eSZgd3u8UVs6EzATGtBLkBsrcCKx",
+    "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "full_name": "Ju",
+    "first_name": "Ju",
+    "last_name": null,
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+15088253001"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:51:18.765Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_bXfTODDp7RgNDplYbF8COxHneUl36zK3NW1Wlvky8Yz",
+    "lead_id": "lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA",
+    "full_name": "kaitlynnichols22@gmail.com",
+    "first_name": "kaitlynnichols22@gmail.com",
+    "last_name": null,
+    "role_title": "Kaitlyn Nichols",
+    "email_addresses": [
+      "kaitlynnichols22@gmail.com"
+    ],
+    "phone_numbers": [
+      "+1860287122"
+    ],
+    "preferred_channel": "sms",
+    "timezone": null,
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:08:53.601Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_txdy5GgHOV9gQAS0IzsuKg1xVemKqYosmmGEYQO2arQ",
+    "lead_id": "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+    "full_name": "Katerina St. Angelo",
+    "first_name": "Katerina",
+    "last_name": "St. Angelo",
+    "role_title": "Engaged Person",
+    "email_addresses": [
+      "kstangelo0@gmail.com"
+    ],
+    "phone_numbers": [
+      "+14015366119"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-03-10T17:18:04.934Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM"
+    ]
+  },
+  {
+    "contact_id": "cont_dKxpxmB4nQd1KJ3uNsrLHxw6q2DotZwsGdWNDRJiDz3",
+    "lead_id": "lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz",
+    "full_name": "Kenia Valdivia",
+    "first_name": "Kenia",
+    "last_name": "Valdivia",
+    "role_title": null,
+    "email_addresses": [
+      "salamone.boda@gmail.com"
+    ],
+    "phone_numbers": [
+      "+1508569428",
+      "+15085679425"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-03-16T17:13:14.547Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+    "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "full_name": "Laine Martins",
+    "first_name": "Laine",
+    "last_name": "Martins",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "laine_demoura@hotmail.com"
+    ],
+    "phone_numbers": [
+      "+17814857940"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T20:31:10.636Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC"
+    ]
+  },
+  {
+    "contact_id": "cont_tn5SVG3y1DD5xn7MbElwuhbQpG8MNNoyBpmpDd5A521",
+    "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "full_name": "Laine Martins",
+    "first_name": "Laine",
+    "last_name": "Martins",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+17814857940"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T20:31:10.636Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC"
+    ]
+  },
+  {
+    "contact_id": "cont_h8RXrkLOVWGfJO7nB6VGTmGiU8chX6idodFYWjXpwqj",
+    "lead_id": "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+    "full_name": "LeaAnthony",
+    "first_name": "LeaAnthony",
+    "last_name": null,
+    "role_title": null,
+    "email_addresses": [
+      "lanth246@gmail.com"
+    ],
+    "phone_numbers": [
+      "+15082072713"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T20:46:36.255Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_n1jKJnE3WjJgQRa0uhBioNUXzhIEmwP9bK4tYorh0ge",
+    "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "full_name": "Leigh",
+    "first_name": "Leigh",
+    "last_name": null,
+    "role_title": null,
+    "email_addresses": [
+      "ldoherty@litnetsb.org"
+    ],
+    "phone_numbers": [
+      "+14152333453"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Los_Angeles",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-03-13T22:48:24.421Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM"
+    ]
+  },
+  {
+    "contact_id": "cont_bzsly8zfK3pr0gPWH2HYS69bSFTbk0icGCERPqwOGlu",
+    "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "full_name": "ldoherty@litnetsb.org",
+    "first_name": "ldoherty@litnetsb.org",
+    "last_name": null,
+    "role_title": "From crisp.chat",
+    "email_addresses": [
+      "ldoherty@litnetsb.org"
+    ],
+    "phone_numbers": [],
+    "preferred_channel": null,
+    "timezone": null,
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-03-13T22:48:24.421Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM"
+    ]
+  },
+  {
+    "contact_id": "cont_lFXkcwyhBqXHGUQMzQbdjLlfywM4BdXMynbeTZMkFNd",
+    "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "full_name": "Lisandra Lopez",
+    "first_name": "Lisandra",
+    "last_name": "Lopez",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "lloez8740@gmail.com"
+    ],
+    "phone_numbers": [
+      "+12038872857"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:24.870Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_UzDgSmFtKwG4SgZDgd1jlyNluXRj7ZtvmuULj8aGlSX",
+    "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "full_name": "Lisandra Lopez",
+    "first_name": "Lisandra",
+    "last_name": "Lopez",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+2038872857"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "Africa/Cairo",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:24.870Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_DVg25gUjE9oxGOC9VmwUeJNhI63wAiOcyjoEWTDZFG0",
+    "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "full_name": "Maria A. Cutler",
+    "first_name": "Maria",
+    "last_name": "A. Cutler",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "mnm777cut@msn.com"
+    ],
+    "phone_numbers": [
+      "+16177788910"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T17:03:07.582Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_ZaXNzXGpyvdvQKImdyisUqeRTasxoyQBlSJRDTIxluz",
+    "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "full_name": "Maria A. Cutler",
+    "first_name": "Maria",
+    "last_name": "A. Cutler",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+16177788910"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T17:03:07.582Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_t6AFlLnseZvov0AZbwLMHDY9yP8GqGXOoG5lWm1n6iJ",
+    "lead_id": "lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "full_name": "Maria Barros",
+    "first_name": "Maria",
+    "last_name": "Barros",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "mariabarros1959@icloud.com"
+    ],
+    "phone_numbers": [
+      "+16177498560"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:31.335Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_X8ItupBRFONuPGoB3lKVh4q03UAB8bqilAMMj2dz5Gz",
+    "lead_id": "lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "full_name": "Maria Barros",
+    "first_name": "Maria",
+    "last_name": "Barros",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+16177498560"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:31.335Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_HXoT7hKvOrmbKaUZoxcoU3W8JFfrzMejpPjT89LPcN8",
+    "lead_id": "lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "full_name": "Marni Wheeler",
+    "first_name": "Marni",
+    "last_name": "Wheeler",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "marni867@gmail.com"
+    ],
+    "phone_numbers": [
+      "+16179433363"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:06.874Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_VyEbUz2LlF8ntPoIwddQHJXugY68bHV6Zou6O77negx",
+    "lead_id": "lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "full_name": "Marni Wheeler",
+    "first_name": "Marni",
+    "last_name": "Wheeler",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+16179433363"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:06.874Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_0pqCr42PP9VpxKk6KPJwtkvGncoxnsJ3U3C6bEIDjcd",
+    "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "full_name": "Mary Ann Hughes",
+    "first_name": "Mary",
+    "last_name": "Ann Hughes",
+    "role_title": null,
+    "email_addresses": [
+      "mahughes123@verizon.net"
+    ],
+    "phone_numbers": [
+      "+15083304614"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2025-11-11T21:16:51.816Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_NFCYfzxSwoJKj49fJ2ta6tJxvrftOyO9xiSF758tjep",
+    "lead_id": "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "full_name": "Megan Szwarckop",
+    "first_name": "Megan",
+    "last_name": "Szwarckop",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "mszwartz413@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+14138961478"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:47.959Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_Vhq7urEOePpnaaqv5JTwDGC7TWjgtfRF6FQ0RWsiHGB",
+    "lead_id": "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "full_name": "Megan Szwarckop",
+    "first_name": "Megan",
+    "last_name": "Szwarckop",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+14138961478"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:09:47.959Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_Y72ZMUjjsIPF86bZsJBCESyj7eFHIYxTqqYZ23eXExI",
+    "lead_id": "lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+    "full_name": "Mika Pierre",
+    "first_name": "Mika",
+    "last_name": "Pierre",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "mikapierre3@gmail.com"
+    ],
+    "phone_numbers": [
+      "+14013277489"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:41:38.882Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_fihPbwTtSqHKAYDDBrQcxRSInBmRklS99L2hbfsFNaW",
+    "lead_id": "lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+    "full_name": "Mika Pierre",
+    "first_name": "Mika",
+    "last_name": "Pierre",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+14013277489"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:41:38.882Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_ot7qFSrcSb6fEWgiDkVQ5HOqOUxuvtn0L0z7z7AWur4",
+    "lead_id": "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "full_name": "Neri Nogueira",
+    "first_name": "Neri",
+    "last_name": "Nogueira",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "nerinogu@outlook.com"
+    ],
+    "phone_numbers": [
+      "+15082804400"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:10:06.742Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_P11cM3CSr8LjpBwS17NqgK11fjLDPreZseQhvTKxyP3",
+    "lead_id": "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "full_name": "Neri Nogueira",
+    "first_name": "Neri",
+    "last_name": "Nogueira",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+15082804400"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:10:06.742Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_ou2YqSjcFmIL3r9hrRPkt2F41AyV22uag6U4oQb3Ax0",
+    "lead_id": "lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+    "full_name": "Precious Montgomery",
+    "first_name": "Precious",
+    "last_name": "Montgomery",
+    "role_title": null,
+    "email_addresses": [
+      "preciousmontgomery77@gmail.com"
+    ],
+    "phone_numbers": [
+      "+14133093291"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-02-12T17:38:54.165Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT",
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_SiHyyUGAJNzLDLYHQYShwny6txtyjLmzMxlmmRhbex6",
+    "lead_id": "lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "full_name": "Rachel Sawyer",
+    "first_name": "Rachel",
+    "last_name": "Sawyer",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "rsawyer2016@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+19789444177"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-03T21:00:48.577Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_6jRnhsOqZyqpbv8lmWPW8xS8rsbb49WEkkduiCDWZxN",
+    "lead_id": "lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "full_name": "Rachel Sawyer",
+    "first_name": "Rachel",
+    "last_name": "Sawyer",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+19789444177"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-03T21:00:48.577Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_NKol1zbjLRYggEOutX1VQkhPPc01B7CnidojbHutEMJ"
+    ]
+  },
+  {
+    "contact_id": "cont_cDzaEVQf4DBOENIN2S5H7N2cc643i1YvJXa6LncbdUL",
+    "lead_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "full_name": "Raddison7902",
+    "first_name": "Raddison7902",
+    "last_name": null,
+    "role_title": "From crisp.chat",
+    "email_addresses": [
+      "raddison7902@yahoo.com"
+    ],
+    "phone_numbers": [],
+    "preferred_channel": "email",
+    "timezone": null,
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T13:34:12.943Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_ZOTXTa1CYHlt9HlGKO6GRyEhnGM6aPAzWdm3qgfvdrb",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "full_name": "Rebecca Almeida",
+    "first_name": "Rebecca",
+    "last_name": "Almeida",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "beckiealmeida@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+17742184088"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-03T20:53:19.872Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_yNPfGhebnnd7yXGnXcqKTieHQKFbZPDKcXtglka5bKd",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "full_name": "Rebecca Almeida",
+    "first_name": "Rebecca",
+    "last_name": "Almeida",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+17742184088"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-03T20:53:19.872Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_rhgufapVbtd5ZeeHJOiPGBenWefVboxdFY53iRXXYkO"
+    ]
+  },
+  {
+    "contact_id": "cont_h90nRaUucRA5T4aMYJuVWJBTKgZq1ybs5554dDZ7ZQG",
+    "lead_id": "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "full_name": "Samantha Machie",
+    "first_name": "Samantha",
+    "last_name": "Machie",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "smachie21@yahoo.com"
+    ],
+    "phone_numbers": [
+      "+18574069790"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:10:18.809Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_IgA1kWDr1lJNKGfJo1ODVay2Vwc0pes4ube7pyCKIhC",
+    "lead_id": "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "full_name": "Samantha Machie",
+    "first_name": "Samantha",
+    "last_name": "Machie",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+18574069790"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:10:18.809Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_oHZOprsuwoQ2wLW5VkPkyc9m6ceWcFUgu2GfdBWWkKC",
+    "lead_id": "lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "full_name": "Sierra & Zachariah",
+    "first_name": "Sierra",
+    "last_name": "& Zachariah",
+    "role_title": null,
+    "email_addresses": [
+      "sierra.l.harken@gmail.com"
+    ],
+    "phone_numbers": [
+      "+12088180998"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Los_Angeles",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:42:50.159Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_QA4RzcuEWEHufT2OT2q9J5o472sYzptp8PjcbwLeWmK",
+    "lead_id": "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "full_name": "Sirena Ivette Ramos",
+    "first_name": "Sirena",
+    "last_name": "Ivette Ramos",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "ramossirena28@gmail.com"
+    ],
+    "phone_numbers": [
+      "+17745020678"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:28:45.160Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_cvm2YBqa5wUaLyQe8lkBcuEr2CqYxMXjTMqdYczI56C",
+    "lead_id": "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "full_name": "Sirena Ivette Ramos",
+    "first_name": "Sirena",
+    "last_name": "Ivette Ramos",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+17745020678"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:28:45.160Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_SH0obDB9hQTYybm0Ik6MxsXVYrgyDE8ABUyorGIqNh3",
+    "lead_id": "lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "full_name": "Suzi & Chris",
+    "first_name": "Suzi",
+    "last_name": "& Chris",
+    "role_title": null,
+    "email_addresses": [
+      "xn2fkhsbw2@privaterelay.appleid.com"
+    ],
+    "phone_numbers": [
+      "+14013001301"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:42:43.580Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_HJRCKkamwpdC3lSFGoHu2F38BSIiQLXRBMPRi3tWDR0",
+    "lead_id": "lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G",
+    "full_name": "Terry Heinrich",
+    "first_name": "Terry",
+    "last_name": "Heinrich",
+    "role_title": "From crisp.chat",
+    "email_addresses": [
+      "terry-heinrich@hotmail.com"
+    ],
+    "phone_numbers": [
+      "+15087172815"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T15:40:33.973Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_6mguFnGr2L5plPbLBkQY97323hkgb3JSZLs0OxItf6p",
+    "lead_id": "lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "full_name": "Traci Troy",
+    "first_name": "Traci",
+    "last_name": "Troy",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "bugsabean@aol.com"
+    ],
+    "phone_numbers": [
+      "+14137178740"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T18:00:31.435Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_gRf1TXmROH7jfSn0t8HfzX2Qyhr2P4lKa4b5UwhTODl",
+    "lead_id": "lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "full_name": "Traci Troy",
+    "first_name": "Traci",
+    "last_name": "Troy",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+14137178740"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T18:00:31.435Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_ELfC1xn534ACCMNc767UGRAMset0r2oXfQ5qu9oOv6c",
+    "lead_id": "lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "full_name": "Urisha Joshi",
+    "first_name": "Urisha",
+    "last_name": "Joshi",
+    "role_title": "From crisp.chat",
+    "email_addresses": [
+      "urishajoshi@gmail.com"
+    ],
+    "phone_numbers": [
+      "+18574988489"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T20:49:24.905Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_3UdWgI6AxdP1yQzdfB0mryYIfLjud0LsmlTxUc4ovZA",
+    "lead_id": "lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "full_name": "Veronica Houck",
+    "first_name": "Veronica",
+    "last_name": "Houck",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "veronica.houck22@gmail.com"
+    ],
+    "phone_numbers": [
+      "+17749224757"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T18:00:27.016Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_ZNFwlL7Gv9E1Oty4Zf6Yme3umnYvbiUxHkMOQqSJBG6",
+    "lead_id": "lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "full_name": "Veronica Houck",
+    "first_name": "Veronica",
+    "last_name": "Houck",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+17749224757"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T18:00:27.016Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_1T5JLlVu2DDHs7gNco8E0ZW6ZRtTPvDWeKbmQru07TK",
+    "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "full_name": "Nino Benny",
+    "first_name": "Nino",
+    "last_name": "Benny",
+    "role_title": "Mira Vera Partner's Name",
+    "email_addresses": [
+      "whoss@outlook.com"
+    ],
+    "phone_numbers": [
+      "+19015702993"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Chicago",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:53.412Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_kvi2OThpkAbG5iM5sBFu6VAGkRQVkbCH3qutFxql0yM",
+    "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "full_name": "David Anthony",
+    "first_name": "David",
+    "last_name": "Anthony",
+    "role_title": null,
+    "email_addresses": [
+      "faxfurbar@pngk.uk"
+    ],
+    "phone_numbers": [
+      "+19015702993"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Chicago",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:53.412Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_YwhXL2w0IrHZtmj84zPILSPXtw5awDZ2SotaQlHhNw4",
+    "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "full_name": "Williams Brown",
+    "first_name": "Williams",
+    "last_name": "Brown",
+    "role_title": "Partner's Name: Garcia Olivia",
+    "email_addresses": [
+      "oh478@pngk.uk"
+    ],
+    "phone_numbers": [
+      "+19015702993"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/Chicago",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T21:14:53.412Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_cqpMxQ8cqUpc46ajM1D4xGajBAOH7mW1B1O16oVysc1",
+    "lead_id": "lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ",
+    "full_name": "Yesenia Salazar",
+    "first_name": "Yesenia",
+    "last_name": "Salazar",
+    "role_title": null,
+    "email_addresses": [],
+    "phone_numbers": [
+      "+19789968481"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T19:49:17.294Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_tHDjl33nch7aJbAkwCHV8dSBDWpxhTk6S8dknMiVksC"
+    ]
+  },
+  {
+    "contact_id": "cont_lGJ3shwTxKN79RbCJW3k30vJCNhCgadsDila2gJXXQr",
+    "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "full_name": "Yuni Colindres",
+    "first_name": "Yuni",
+    "last_name": "Colindres",
+    "role_title": "Plain Old Phone (best for SMS)",
+    "email_addresses": [
+      "cordonada3@gmail.com"
+    ],
+    "phone_numbers": [
+      "+14013013498"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T18:00:30.376Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_xmf1JvDktzcI5zv00txEg3kLvFBkuwSZPR4pAWkMcJM",
+    "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "full_name": "Yuni Colindres",
+    "first_name": "Yuni",
+    "last_name": "Colindres",
+    "role_title": "Facebook # (Best For Calls)",
+    "email_addresses": [],
+    "phone_numbers": [
+      "+14013013498"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-04-13T18:00:30.376Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_kcHEHFFNPG85bCcR50IKutO4vf79UymdKnnvKdfbEjr",
+      "save_cr31JWmH2RcVAC1KnNQ0zeEnQEcJQkckhcIEUX9n5xT"
+    ]
+  },
+  {
+    "contact_id": "cont_iUf4YJ67ruTPmzCNTJA9ExzgqqVXY8T8LBBbVrUE9Sj",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "full_name": "Zilah conserve",
+    "first_name": "Zilah",
+    "last_name": "conserve",
+    "role_title": null,
+    "email_addresses": [
+      "zi.conserve@gmail.com"
+    ],
+    "phone_numbers": [
+      "+14015007458"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": true,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-03-05T01:29:35.382Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM"
+    ]
+  },
+  {
+    "contact_id": "cont_hDKxS7fDnAJGihpVJcKjhzptwTQQM3ZDzgD7mO3xMue",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "full_name": "Jerel",
+    "first_name": "Jerel",
+    "last_name": null,
+    "role_title": "Fiancée",
+    "email_addresses": [
+      "jerel.lopes@gmail.com"
+    ],
+    "phone_numbers": [
+      "+15082875359"
+    ],
+    "preferred_channel": "sms",
+    "timezone": "America/New_York",
+    "is_primary_contact": false,
+    "is_decision_maker": null,
+    "is_planner": null,
+    "engagement_level": null,
+    "last_contacted_at": "2026-03-05T01:29:35.382Z",
+    "created_at": null,
+    "updated_at": null,
+    "notes_summary": null,
+    "tags": [
+      "save_DlVUzHWFDGQL9RlGPvEiBDDiMa1EuNlqT1eMERt5HWM"
+    ]
+  }
+]

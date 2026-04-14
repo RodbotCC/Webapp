@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "updated_at": "2026-04-14T20:03:49.657Z",
+    "source": "file-tree:andre_close_focus/hrmr"
+  },
+  "counts": {
+    "turns": 17,
+    "ratings": 0,
+    "conversations": 3,
+    "notes": 0,
+    "graded_lattice_actions": 0
+  },
+  "grades": {},
+  "action_types": {},
+  "recent_signal": []
+}

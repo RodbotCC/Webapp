@@ -1,7 +1,7 @@
 {
   "_meta": {
     "description": "Action queue processed by Claude / Cowork Automation",
-    "last_processed": "2026-04-13T17:31:21.786Z"
+    "last_processed": "2026-04-14T18:09:52.437Z"
   },
   "pending": [
     {
@@ -99,6 +99,304 @@
     }
   ],
   "completed": [
+    {
+      "id": "act_1776190192086_ixxu0k",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T18:09:52.085Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T18:09:52.086Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "completed_at": "2026-04-14T18:09:52.437Z",
+      "result": {
+        "lead_name": "Karla Velazquez",
+        "status": "🟢 Probably",
+        "description": "Pawtucket Zip: 02860\nPeople 230\nEvent Desc: Sweet 15\nEvent Date: 04/3/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Karla Velazquez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776190191829_c49v1h",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T18:09:51.828Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T18:09:51.829Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "completed_at": "2026-04-14T18:09:52.084Z",
+      "result": {
+        "lead_name": "Laine Martins",
+        "status": "🔘 Maybe",
+        "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Laine Martins. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776190191565_u6jhh0",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T18:09:51.563Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T18:09:51.565Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "completed_at": "2026-04-14T18:09:51.826Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776149923849_d5zqe5",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T06:58:43.846Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T06:58:43.849Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "completed_at": "2026-04-14T06:58:44.071Z",
+      "result": {
+        "lead_name": "Karla Velazquez",
+        "status": "🟢 Probably",
+        "description": "Pawtucket Zip: 02860\nPeople 230\nEvent Desc: Sweet 15\nEvent Date: 04/3/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Karla Velazquez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776149923618_2o3clq",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T06:58:43.616Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T06:58:43.618Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "completed_at": "2026-04-14T06:58:43.834Z",
+      "result": {
+        "lead_name": "Laine Martins",
+        "status": "🔘 Maybe",
+        "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Laine Martins. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776149923364_ynmu5n",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T06:58:43.362Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T06:58:43.364Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "completed_at": "2026-04-14T06:58:43.615Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776135040068_h20emg",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T02:50:40.065Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T02:50:40.068Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "completed_at": "2026-04-14T02:50:40.305Z",
+      "result": {
+        "lead_name": "Karla Velazquez",
+        "status": "🟢 Probably",
+        "description": "Pawtucket Zip: 02860\nPeople 230\nEvent Desc: Sweet 15\nEvent Date: 04/3/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Karla Velazquez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776135039831_s6cn7w",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T02:50:39.828Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T02:50:39.831Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "completed_at": "2026-04-14T02:50:40.062Z",
+      "result": {
+        "lead_name": "Laine Martins",
+        "status": "🔘 Maybe",
+        "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Laine Martins. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776135039238_7p3uod",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T02:50:39.229Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T02:50:39.239Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "completed_at": "2026-04-14T02:50:39.822Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776120568516_p1dsez",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-13T22:49:28.479Z"
+      },
+      "queued_at": "2026-04-13T22:49:28.516Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-13T22:49:29.102Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776120377214_vib69c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-13T22:46:17.213Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-13T22:46:17.214Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "completed_at": "2026-04-13T22:46:17.422Z",
+      "result": {
+        "lead_name": "Karla Velazquez",
+        "status": "🟢 Probably",
+        "description": "Pawtucket Zip: 02860\nPeople 230\nEvent Desc: Sweet 15\nEvent Date: 04/3/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Karla Velazquez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776120376993_dkae4i",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-13T22:46:16.992Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-13T22:46:16.993Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "completed_at": "2026-04-13T22:46:17.211Z",
+      "result": {
+        "lead_name": "Laine Martins",
+        "status": "🔘 Maybe",
+        "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Laine Martins. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
+    {
+      "id": "act_1776120376781_j3oa1c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-13T22:46:16.779Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-13T22:46:16.781Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "completed_at": "2026-04-13T22:46:16.991Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      }
+    },
     {
       "id": "act_1776101481454_09d6za",
       "type": "draft_close_crm_followup",
@@ -3911,6 +4209,511 @@
       "source": "automation_engine",
       "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
       "completed_at": "2026-04-13T17:31:21.786Z",
+      "result": {
+        "lead_name": "Karla Velazquez",
+        "status": "🟢 Probably",
+        "description": "Pawtucket Zip: 02860\nPeople 230\nEvent Desc: Sweet 15\nEvent Date: 04/3/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Karla Velazquez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776120376781_j3oa1c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-13T22:46:16.779Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-13T22:46:16.781Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776120376781_j3oa1c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-13T22:46:16.779Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-13T22:46:16.781Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "completed_at": "2026-04-13T22:46:16.991Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776120376993_dkae4i",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-13T22:46:16.992Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-13T22:46:16.993Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776120376993_dkae4i",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-13T22:46:16.992Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-13T22:46:16.993Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "completed_at": "2026-04-13T22:46:17.211Z",
+      "result": {
+        "lead_name": "Laine Martins",
+        "status": "🔘 Maybe",
+        "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Laine Martins. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776120377214_vib69c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-13T22:46:17.213Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-13T22:46:17.214Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776120377214_vib69c",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-13T22:46:17.213Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-13T22:46:17.214Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "completed_at": "2026-04-13T22:46:17.422Z",
+      "result": {
+        "lead_name": "Karla Velazquez",
+        "status": "🟢 Probably",
+        "description": "Pawtucket Zip: 02860\nPeople 230\nEvent Desc: Sweet 15\nEvent Date: 04/3/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Karla Velazquez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776120568516_p1dsez",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-13T22:49:28.479Z"
+      },
+      "queued_at": "2026-04-13T22:49:28.516Z",
+      "status": "pending",
+      "source": "manual",
+      "dedupe_key": null,
+      "event": "queued"
+    },
+    {
+      "id": "act_1776120568516_p1dsez",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-13T22:49:28.479Z"
+      },
+      "queued_at": "2026-04-13T22:49:28.516Z",
+      "status": "completed",
+      "source": "manual",
+      "dedupe_key": null,
+      "completed_at": "2026-04-13T22:49:29.102Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776135039238_7p3uod",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T02:50:39.229Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T02:50:39.239Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776135039238_7p3uod",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T02:50:39.229Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T02:50:39.239Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "completed_at": "2026-04-14T02:50:39.822Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776135039831_s6cn7w",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T02:50:39.828Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T02:50:39.831Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776135039831_s6cn7w",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T02:50:39.828Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T02:50:39.831Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "completed_at": "2026-04-14T02:50:40.062Z",
+      "result": {
+        "lead_name": "Laine Martins",
+        "status": "🔘 Maybe",
+        "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Laine Martins. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776135040068_h20emg",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T02:50:40.065Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T02:50:40.068Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776135040068_h20emg",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T02:50:40.065Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T02:50:40.068Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "completed_at": "2026-04-14T02:50:40.305Z",
+      "result": {
+        "lead_name": "Karla Velazquez",
+        "status": "🟢 Probably",
+        "description": "Pawtucket Zip: 02860\nPeople 230\nEvent Desc: Sweet 15\nEvent Date: 04/3/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Karla Velazquez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776149923364_ynmu5n",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T06:58:43.362Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T06:58:43.364Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776149923364_ynmu5n",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T06:58:43.362Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T06:58:43.364Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "completed_at": "2026-04-14T06:58:43.615Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776149923618_2o3clq",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T06:58:43.616Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T06:58:43.618Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776149923618_2o3clq",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T06:58:43.616Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T06:58:43.618Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "completed_at": "2026-04-14T06:58:43.834Z",
+      "result": {
+        "lead_name": "Laine Martins",
+        "status": "🔘 Maybe",
+        "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Laine Martins. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776149923849_d5zqe5",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T06:58:43.846Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T06:58:43.849Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776149923849_d5zqe5",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T06:58:43.846Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T06:58:43.849Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "completed_at": "2026-04-14T06:58:44.071Z",
+      "result": {
+        "lead_name": "Karla Velazquez",
+        "status": "🟢 Probably",
+        "description": "Pawtucket Zip: 02860\nPeople 230\nEvent Desc: Sweet 15\nEvent Date: 04/3/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Karla Velazquez. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776190191565_u6jhh0",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T18:09:51.563Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T18:09:51.565Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776190191565_u6jhh0",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+        "name": "ETS EQUIPMENT",
+        "requested_at": "2026-04-14T18:09:51.563Z",
+        "automation_reason": "High-priority active opportunity"
+      },
+      "queued_at": "2026-04-14T18:09:51.565Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw",
+      "completed_at": "2026-04-14T18:09:51.826Z",
+      "result": {
+        "lead_name": "ETS EQUIPMENT",
+        "status": "🔘 Maybe",
+        "description": "this lead came thru Rodrigo - close friend and ex employee of restaurant",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for ETS EQUIPMENT. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776190191829_c49v1h",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T18:09:51.828Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T18:09:51.829Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776190191829_c49v1h",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "requested_at": "2026-04-14T18:09:51.828Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T18:09:51.829Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "completed_at": "2026-04-14T18:09:52.084Z",
+      "result": {
+        "lead_name": "Laine Martins",
+        "status": "🔘 Maybe",
+        "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+        "last_activity": "unknown",
+        "draft_note": "REVIEW NEEDED: Automation pulled lead data for Laine Martins. Review activity in Close CRM and draft appropriate follow-up based on current stage.",
+        "summaries_preview": ""
+      },
+      "event": "completed"
+    },
+    {
+      "id": "act_1776190192086_ixxu0k",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T18:09:52.085Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T18:09:52.086Z",
+      "status": "pending",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "event": "queued"
+    },
+    {
+      "id": "act_1776190192086_ixxu0k",
+      "type": "draft_close_crm_followup",
+      "payload": {
+        "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+        "name": "Karla Velazquez",
+        "requested_at": "2026-04-14T18:09:52.085Z",
+        "automation_reason": "Low confidence - at risk"
+      },
+      "queued_at": "2026-04-14T18:09:52.086Z",
+      "status": "completed",
+      "source": "automation_engine",
+      "dedupe_key": "attention_followup:lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "completed_at": "2026-04-14T18:09:52.437Z",
       "result": {
         "lead_name": "Karla Velazquez",
         "status": "🟢 Probably",

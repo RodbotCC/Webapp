@@ -1,0 +1,2299 @@
+{
+  "view": {
+    "id": "save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok",
+    "url": "https://app.close.com/leads/save_9NOOd8EC1ljG0n6Pq1J1aryvsjYrGoFfSpu2mLBPvok/",
+    "name": "A: 🔷 03. Day 6-10 Cadence",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "condition": {
+                      "before": {
+                        "type": "now"
+                      },
+                      "on_or_after": {
+                        "direction": "past",
+                        "moment": {
+                          "type": "now"
+                        },
+                        "offset": {
+                          "days": 10,
+                          "hours": 0,
+                          "minutes": 0,
+                          "months": 0,
+                          "seconds": 0,
+                          "weeks": 0,
+                          "years": 0
+                        },
+                        "type": "offset",
+                        "which_day_end": "start"
+                      },
+                      "type": "moment_range"
+                    },
+                    "field": {
+                      "field_name": "date_created",
+                      "object_type": "lead",
+                      "type": "regular_field"
+                    },
+                    "negate": false,
+                    "type": "field_condition"
+                  }
+                ],
+                "type": "or"
+              },
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "negate": true,
+                        "saved_search_ids": [
+                          "save_9EsYYOkeKs1nFjkx2IMwSU6VAmDdyWwzvyFYAW89tyM",
+                          "save_dtB5xHLEYTWG0FNvsZlodQyrG9xHXzDFh0eLlL2hCW8"
+                        ],
+                        "type": "any_of_saved_search"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "object_ids": [
+                            "stat_X4X2dIPrVwMZDbSGxo1xCbkokk0mjPwaqpF5PjK80F3",
+                            "stat_bklEUrvZENevA6DXNlfjkaMdRI9e4k5Gp0WIez1Bg13",
+                            "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                          ],
+                          "reference_type": "status.lead",
+                          "type": "reference"
+                        },
+                        "field": {
+                          "field_name": "status_id",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_P1wq4LXQlbeOdi4dbikgXHzPTZtBypP4BA5fnK0GLWd",
+                              "stat_XlK8WSBgI3iNiqqb5dGUxoDGfZN4QUvetFI8IM9YAS8",
+                              "stat_jPXypkYupOtL2e3S27WAmINSS5Wi4kRKeoXDG4CsesG",
+                              "stat_lFepKqyuTpPICkaKbld2JzXpXt3BHxO1bR4ctWYJRq0",
+                              "stat_uVWdjD12s4KhTwpOaNVgEYZX0ZRB75fKH2LCICzBYjT",
+                              "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+                              "stat_xIEnKeIS7IYyfj8O8IwZxvcBa52QbXJ6zwlkbXTQ00x",
+                              "stat_yJptDkplCTNffmd56XgEOzD7NOQc96IkTWJccPzBnH5"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": false,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 12,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": [
+      "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+      "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+      "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+      "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+      "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+      "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+      "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+      "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+      "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+      "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q"
+    ]
+  },
+  "leads": [
+    {
+      "contacts": [
+        {
+          "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "date_created": "2026-04-05T03:45:30.171000+00:00",
+          "date_updated": "2026-04-05T03:45:30.171000+00:00",
+          "display_name": "LeaAnthony",
+          "emails": [
+            {
+              "email": "lanth246@gmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_h8RXrkLOVWGfJO7nB6VGTmGiU8chX6idodFYWjXpwqj",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=LeaAnthony"
+            }
+          ],
+          "lead_id": "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+          "name": "LeaAnthony",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15082072713",
+              "phone_formatted": "+1 508-207-2713",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": null,
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre"
+      },
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-05T03:45:30.149000+00:00",
+      "date_updated": "2026-04-13T20:46:36.368000+00:00",
+      "description": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T19:21:16.894Z\nEvent Date: Venue\nVenue: \nEmail Permission: No\nImport Note: Imported from FormSubmit expo submissions.",
+      "display_name": "LeaAnthony",
+      "html_url": "https://app.close.com/lead/lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM/",
+      "id": "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+      "last_communication_date": "2026-04-09T22:56:18.981000+00:00",
+      "last_outgoing_call_date": "2026-04-09T22:56:18.981000+00:00",
+      "name": "LeaAnthony",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 0,
+          "contact_id": "cont_h8RXrkLOVWGfJO7nB6VGTmGiU8chX6idodFYWjXpwqj",
+          "contact_name": "LeaAnthony",
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "created_by_name": "Rhonna Ricafort",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "EXPO",
+            "Expo- April 5th"
+          ],
+          "date_created": "2026-04-10T16:22:31.269000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-10T16:22:38.284000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_VjZPu3mwcIM2ZCXcrRJLf3XqS6OQCHgpGQDRBBX8O3b",
+          "integration_links": [],
+          "lead_id": "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+          "lead_name": "LeaAnthony",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "lanth246@gmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+15082072713",
+        "phone_formatted": "+1 508-207-2713",
+        "type": "direct"
+      },
+      "status_id": "stat_0mrkXTQzZ3wd5F0ZPLfXEE8FF4CKGQGsYqHWQvYXHVD",
+      "status_label": "⚪ Probably Not",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-07T12:07:33.258000+00:00",
+          "date_updated": "2026-04-07T12:07:33.258000+00:00",
+          "display_name": "Gabby Garcia Serrano",
+          "emails": [
+            {
+              "email": "velaspabella@gmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_joHwxOghHODoITsHyQL09X8pxYvVdruy9XMH8g7MnpQ",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Gabby%20Garcia%20Serrano"
+            }
+          ],
+          "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+          "name": "Gabby Garcia Serrano",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+12108484373",
+              "phone_formatted": "+1 210-848-4373",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/Chicago",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-07T12:07:46.334000+00:00",
+          "date_updated": "2026-04-07T12:07:46.334000+00:00",
+          "display_name": "Gabby Garcia Serrano",
+          "emails": [],
+          "id": "cont_1etTNbjciM2h7RBf9MR97ZsDWlqhbC2Vt73Y3A12Sd3",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Gabby%20Garcia%20Serrano"
+            }
+          ],
+          "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+          "name": "Gabby Garcia Serrano",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+12108484373",
+              "phone_formatted": "+1 210-848-4373",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/Chicago",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "01. 🟢 SCORE": [
+          "05. 📍 Within immediate area"
+        ],
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/808861f9-ee35-43b7-a072-aae5c4271bb6",
+        "FB_AD": "DOM'S FACELESS",
+        "FB_ADSET": "DOM'S FACELESS",
+        "FB_CAMPAIGN": "01. [CATER[ LF EVERGREEN - QUOTE",
+        "🏠 Zip Code": "78217"
+      },
+      "custom.cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj": [
+        "05. 📍 Within immediate area"
+      ],
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_NN0HOiT2V7VR8vY0mdaesirgzN0FvEumQoJy6luhMBZ": "DOM'S FACELESS",
+      "custom.cf_XUgJtr1fW0TOSr4qtiiu1c4MDSZeYeYkkgi4wjriVBE": "DOM'S FACELESS",
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "custom.cf_nzUyCovAbOCJxIG6j5TXccpBmdWlRAFuMLDTAxJ2Y9p": "01. [CATER[ LF EVERGREEN - QUOTE",
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "78217",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/808861f9-ee35-43b7-a072-aae5c4271bb6",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-07T12:07:33.228000+00:00",
+      "date_updated": "2026-04-13T20:33:04.430000+00:00",
+      "description": "Zip: 78217\nPeople 100\nEvent Desc: Wedding\nEvent Date: 8/08/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+      "display_name": "Gabby Garcia Serrano",
+      "html_url": "https://app.close.com/lead/lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof/",
+      "id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+      "last_communication_date": "2026-04-09T16:01:49.310000+00:00",
+      "last_outgoing_call_date": "2026-04-09T16:01:49.310000+00:00",
+      "name": "Gabby Garcia Serrano",
+      "opportunities": [
+        {
+          "annualized_expected_value": 75600,
+          "annualized_value": 378000,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_joHwxOghHODoITsHyQL09X8pxYvVdruy9XMH8g7MnpQ",
+          "contact_name": "Gabby Garcia Serrano",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Wedding",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "100",
+          "date_created": "2026-04-07T12:07:37.859000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-07T15:37:42.847000+00:00",
+          "date_won": "2026-08-08",
+          "expected_value": 75600,
+          "id": "oppo_nQwFF0ZRSK9nGOn0h3EpduzDFw0Ap94xJYvRL5XcxyL",
+          "integration_links": [],
+          "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+          "lead_name": "Gabby Garcia Serrano",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 378000,
+          "value_currency": "USD",
+          "value_formatted": "$3,780",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "velaspabella@gmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+12108484373",
+        "phone_formatted": "+1 210-848-4373",
+        "type": "direct"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T01:43:16.223000+00:00",
+          "date_updated": "2026-04-06T01:43:16.223000+00:00",
+          "display_name": "Jessica Molina",
+          "emails": [
+            {
+              "email": "jessicapleitez@hotmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_5AsyMNiDrTT8UZrlsj3ZJvRVCn0Kl5ge1MiJjqC3R7R",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Jessica%20Molina"
+            }
+          ],
+          "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+          "name": "Jessica Molina",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+18573345604",
+              "phone_formatted": "+1 857-334-5604",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T01:43:27.993000+00:00",
+          "date_updated": "2026-04-06T01:43:27.993000+00:00",
+          "display_name": "Jessica Molina",
+          "emails": [],
+          "id": "cont_BQXcdeKDVIEmDEddty2kYzor5wpSSVglgdtXcWYV07D",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Jessica%20Molina"
+            }
+          ],
+          "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+          "name": "Jessica Molina",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+18573345604",
+              "phone_formatted": "+1 857-334-5604",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "01. 🟢 SCORE": [
+          "-05. 📅 Event is far away (12mo+)"
+        ],
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/c716a7c4-baeb-4371-ac19-c880e612e496",
+        "Date of Event": "2027-06-04T15:00:00+00:00",
+        "🏠 Zip Code": "02145"
+      },
+      "custom.cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj": [
+        "-05. 📅 Event is far away (12mo+)"
+      ],
+      "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2027-06-04T15:00:00+00:00",
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "02145",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/c716a7c4-baeb-4371-ac19-c880e612e496",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-06T01:43:16.202000+00:00",
+      "date_updated": "2026-04-13T20:21:16.272000+00:00",
+      "description": "Somerville Zip: 02145\nPeople 100\nEvent Desc: Wedding\nEvent Date: 6/4/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+      "display_name": "Jessica Molina",
+      "html_url": "https://app.close.com/lead/lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR/",
+      "id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+      "last_communication_date": "2026-04-13T19:09:25.279000+00:00",
+      "last_outgoing_call_date": null,
+      "name": "Jessica Molina",
+      "opportunities": [
+        {
+          "annualized_expected_value": 75600,
+          "annualized_value": 378000,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_5AsyMNiDrTT8UZrlsj3ZJvRVCn0Kl5ge1MiJjqC3R7R",
+          "contact_name": "Jessica Molina",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2027-06-04T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Wedding",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "100",
+          "date_created": "2026-04-06T01:43:21.086000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-06T21:47:41.606000+00:00",
+          "date_won": "2027-06-04",
+          "expected_value": 75600,
+          "id": "oppo_nWf8fup5t0yk5Pa2rDx4TMqcmKa18TghG0ts41Mse5g",
+          "integration_links": [],
+          "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+          "lead_name": "Jessica Molina",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 378000,
+          "value_currency": "USD",
+          "value_formatted": "$3,780",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "jessicapleitez@hotmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+18573345604",
+        "phone_formatted": "+1 857-334-5604",
+        "type": "direct"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-07T20:50:20.618000+00:00",
+          "date_updated": "2026-04-07T20:50:20.618000+00:00",
+          "display_name": "Ju",
+          "emails": [
+            {
+              "email": "j_marte7@icloud.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_bZ2VHgYSqlCAiCXa74EmHGk3uH2OdJkNdnGZuPPTi82",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Ju"
+            }
+          ],
+          "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+          "name": "Ju",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15088253001",
+              "phone_formatted": "+1 508-825-3001",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-07T20:50:32.240000+00:00",
+          "date_updated": "2026-04-07T20:50:32.240000+00:00",
+          "display_name": "Ju",
+          "emails": [],
+          "id": "cont_M5YURc2QHud7V01eSZgd3u8UVs6EzATGtBLkBsrcCKx",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Ju"
+            }
+          ],
+          "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+          "name": "Ju",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15088253001",
+              "phone_formatted": "+1 508-825-3001",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "01. 🟢 SCORE": [
+          "05. 📍 Within immediate area"
+        ],
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/83858d6d-f20f-4113-abfb-a10a0e4e719b",
+        "Date of Event": "2026-12-12T15:00:00+00:00",
+        "FB_AD": "VIDEO  RODS WEDDING & FACELESS",
+        "FB_ADSET": "RODS WEDDING & FACELESS",
+        "FB_CAMPAIGN": "01. [CATER[ LF EVERGREEN - QUOTE",
+        "🏠 Zip Code": "01532"
+      },
+      "custom.cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj": [
+        "05. 📍 Within immediate area"
+      ],
+      "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-12-12T15:00:00+00:00",
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_NN0HOiT2V7VR8vY0mdaesirgzN0FvEumQoJy6luhMBZ": "RODS WEDDING & FACELESS",
+      "custom.cf_XUgJtr1fW0TOSr4qtiiu1c4MDSZeYeYkkgi4wjriVBE": "VIDEO  RODS WEDDING & FACELESS",
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "custom.cf_nzUyCovAbOCJxIG6j5TXccpBmdWlRAFuMLDTAxJ2Y9p": "01. [CATER[ LF EVERGREEN - QUOTE",
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "01532",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/83858d6d-f20f-4113-abfb-a10a0e4e719b",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-07T20:50:20.599000+00:00",
+      "date_updated": "2026-04-13T19:51:18.898000+00:00",
+      "description": "Northborough Zip: 01532\nPeople 120\nEvent Desc: Sweet 15\nEvent Date: 12/12/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+      "display_name": "Ju",
+      "html_url": "https://app.close.com/lead/lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr/",
+      "id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+      "last_communication_date": "2026-04-13T18:00:29.550000+00:00",
+      "last_outgoing_call_date": "2026-04-09T15:01:52.449000+00:00",
+      "name": "Ju",
+      "opportunities": [
+        {
+          "annualized_expected_value": 75600,
+          "annualized_value": 378000,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_bZ2VHgYSqlCAiCXa74EmHGk3uH2OdJkNdnGZuPPTi82",
+          "contact_name": "Ju",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-12-12T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Sweet 15",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "120",
+          "date_created": "2026-04-07T20:50:24.337000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-07T21:07:38.396000+00:00",
+          "date_won": "2026-12-12",
+          "expected_value": 75600,
+          "id": "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW",
+          "integration_links": [],
+          "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+          "lead_name": "Ju",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 378000,
+          "value_currency": "USD",
+          "value_formatted": "$3,780",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "j_marte7@icloud.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+15088253001",
+        "phone_formatted": "+1 508-825-3001",
+        "type": "direct"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-07T02:32:35.409000+00:00",
+          "date_updated": "2026-04-07T02:32:35.409000+00:00",
+          "display_name": "Carolyn Boumila-Vega",
+          "emails": [
+            {
+              "email": "cpbvega@gmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_b7CAS53EeSsEyxGvixrB0LkFOgTjmfqGPP3iLA4EUZC",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Carolyn%20Boumila-Vega"
+            }
+          ],
+          "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+          "name": "Carolyn Boumila-Vega",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+16174070989",
+              "phone_formatted": "+1 617-407-0989",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-07T02:32:46.172000+00:00",
+          "date_updated": "2026-04-07T02:32:46.172000+00:00",
+          "display_name": "Carolyn Boumila-Vega",
+          "emails": [],
+          "id": "cont_XjGZZpzQOAd7zpNiuKCuWwUif81DamKxfOumk7pOJ4z",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Carolyn%20Boumila-Vega"
+            }
+          ],
+          "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+          "name": "Carolyn Boumila-Vega",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+16174070989",
+              "phone_formatted": "+1 617-407-0989",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/ef4b0d26-9c93-42d7-8359-0f8fe9cc516c",
+        "FB_AD": "VIDEO  RODS WEDDING & FACELESS",
+        "FB_ADSET": "RODS WEDDING & FACELESS",
+        "FB_CAMPAIGN": "01. [CATER[ LF EVERGREEN - QUOTE",
+        "🏠 Zip Code": "02150"
+      },
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_NN0HOiT2V7VR8vY0mdaesirgzN0FvEumQoJy6luhMBZ": "RODS WEDDING & FACELESS",
+      "custom.cf_XUgJtr1fW0TOSr4qtiiu1c4MDSZeYeYkkgi4wjriVBE": "VIDEO  RODS WEDDING & FACELESS",
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "custom.cf_nzUyCovAbOCJxIG6j5TXccpBmdWlRAFuMLDTAxJ2Y9p": "01. [CATER[ LF EVERGREEN - QUOTE",
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "02150",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/ef4b0d26-9c93-42d7-8359-0f8fe9cc516c",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-07T02:32:35.386000+00:00",
+      "date_updated": "2026-04-13T19:36:21.499000+00:00",
+      "description": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+      "display_name": "Carolyn Boumila-Vega",
+      "html_url": "https://app.close.com/lead/lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9/",
+      "id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+      "last_communication_date": "2026-04-13T19:09:14.618000+00:00",
+      "last_outgoing_call_date": "2026-04-09T22:51:58.514000+00:00",
+      "name": "Carolyn Boumila-Vega",
+      "opportunities": [
+        {
+          "annualized_expected_value": 75600,
+          "annualized_value": 378000,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_b7CAS53EeSsEyxGvixrB0LkFOgTjmfqGPP3iLA4EUZC",
+          "contact_name": "Carolyn Boumila-Vega",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Wedding reception",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "100",
+          "date_created": "2026-04-07T02:32:39.182000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-09T01:31:06.836000+00:00",
+          "date_won": null,
+          "expected_value": 75600,
+          "id": "oppo_UWRBCudnXDceSUK9MOlBHrJ7dNV1aOT0FYOCVe9n3NU",
+          "integration_links": [],
+          "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+          "lead_name": "Carolyn Boumila-Vega",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "updated_by_name": "Andre Raw",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 378000,
+          "value_currency": "USD",
+          "value_formatted": "$3,780",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "cpbvega@gmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+16174070989",
+        "phone_formatted": "+1 617-407-0989",
+        "type": "direct"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T22:14:40.182000+00:00",
+          "date_updated": "2026-04-06T22:14:40.182000+00:00",
+          "display_name": "Jen",
+          "emails": [
+            {
+              "email": "jenn.jones07@yahoo.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_6Rujl1txLaavj51n4nRWqCvaMNXvcpeP2GThCTclUwM",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Jen"
+            }
+          ],
+          "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+          "name": "Jen",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15084417237",
+              "phone_formatted": "+1 508-441-7237",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Free Tasting Interested",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T22:14:26.419000+00:00",
+          "date_updated": "2026-04-06T23:03:46.268000+00:00",
+          "display_name": "Jennifer Jones",
+          "emails": [],
+          "id": "cont_1jWppCMAy05XAbpzj5yXgxmD8qHwcrsmGFmGifE1n9z",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Jennifer%20Jones"
+            }
+          ],
+          "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+          "name": "Jennifer Jones",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15084417237",
+              "phone_formatted": "+1 508-441-7237",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T22:13:56.610000+00:00",
+          "date_updated": "2026-04-06T23:03:46.293000+00:00",
+          "display_name": "Jennifer Jones",
+          "emails": [
+            {
+              "email": "jenn.jones07@yahoo.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_G9GY69YphC25h8sRkoPjging994hHVi5fKx9UpuAAUd",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Jennifer%20Jones"
+            }
+          ],
+          "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+          "name": "Jennifer Jones",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15084417237",
+              "phone_formatted": "+1 508-441-7237",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T22:17:48.237000+00:00",
+          "date_updated": "2026-04-06T23:03:46.309000+00:00",
+          "display_name": "Jennifer Jones",
+          "emails": [
+            {
+              "email": "jenn.jones07@yahoo.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_WbzBlk7bSjelai66AZHXKNOVSsN4aaUJB9rfcuqLY7I",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Jennifer%20Jones"
+            }
+          ],
+          "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+          "name": "Jennifer Jones",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15084417237",
+              "phone_formatted": "+1 508-441-7237",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T22:14:52.153000+00:00",
+          "date_updated": "2026-04-06T23:03:46.321000+00:00",
+          "display_name": "jenn.jones07@yahoo.com",
+          "emails": [
+            {
+              "email": "jenn.jones07@yahoo.com",
+              "is_unsubscribed": false,
+              "type": "office"
+            }
+          ],
+          "id": "cont_qsuZXNCDzOSJCZfyuK8rloklWbM8Z2IwUBFr8XRezU1",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=jenn.jones07%40yahoo.com"
+            }
+          ],
+          "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+          "name": "jenn.jones07@yahoo.com",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [],
+          "timezone": null,
+          "timezone_source": null,
+          "title": "From crisp.chat",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "01. 🟢 SCORE": [
+          "05. ➡️ Visited high-intent web pages / website",
+          "05. 📍 Within immediate area"
+        ],
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL",
+          "🍽️ Free Tasting Opt-In Form"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/1c9a370d-12df-4db8-96c2-dda399271331",
+        "Date of Event": "2026-08-15T15:00:00+00:00",
+        "FB_AD": "STILLS  GALLERY  $19 PACKAGE",
+        "FB_ADSET": "3 STILLS",
+        "FB_CAMPAIGN": "01. [CATER[ LF EVERGREEN - QUOTE",
+        "IP": "172.56.112.153",
+        "🏠 Zip Code": "02779"
+      },
+      "custom.cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj": [
+        "05. ➡️ Visited high-intent web pages / website",
+        "05. 📍 Within immediate area"
+      ],
+      "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-08-15T15:00:00+00:00",
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_NN0HOiT2V7VR8vY0mdaesirgzN0FvEumQoJy6luhMBZ": "3 STILLS",
+      "custom.cf_SlkXLWVM3sUYtnY1AqDAEbiXj13a0HQRXzvbGAXxp22": "172.56.112.153",
+      "custom.cf_XUgJtr1fW0TOSr4qtiiu1c4MDSZeYeYkkgi4wjriVBE": "STILLS  GALLERY  $19 PACKAGE",
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL",
+        "🍽️ Free Tasting Opt-In Form"
+      ],
+      "custom.cf_nzUyCovAbOCJxIG6j5TXccpBmdWlRAFuMLDTAxJ2Y9p": "01. [CATER[ LF EVERGREEN - QUOTE",
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "02779",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/1c9a370d-12df-4db8-96c2-dda399271331",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-06T22:13:56.586000+00:00",
+      "date_updated": "2026-04-13T19:25:58.571000+00:00",
+      "description": "76-100\n🛎️ Full-Service Catering\nWedding\nAugust 15 2026\nFrom comeketocatering.com",
+      "display_name": "Jennifer Jones",
+      "html_url": "https://app.close.com/lead/lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp/",
+      "id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+      "last_communication_date": "2026-04-13T19:09:20.388000+00:00",
+      "last_outgoing_call_date": "2026-04-07T15:56:03.355000+00:00",
+      "name": "Jennifer Jones",
+      "opportunities": [
+        {
+          "annualized_expected_value": 250,
+          "annualized_value": 500,
+          "attachments": [],
+          "confidence": 50,
+          "contact_id": "cont_6Rujl1txLaavj51n4nRWqCvaMNXvcpeP2GThCTclUwM",
+          "contact_name": "Jen",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_3ZTlyNiBtb3r23773M0RFQguHGcHOg279zeWa2HQE7q": "🟦 01. SETTING",
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-08-15T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "ComeketoCatering.com",
+            "Free Tasting"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Wedding",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "100",
+          "date_created": "2026-04-06T22:14:40.430000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-06T23:17:50.680000+00:00",
+          "date_won": null,
+          "expected_value": 250,
+          "id": "oppo_5AzEmzT3gAhursXdcolDAHfJTCm3H4X2ZpEN6QxsnTc",
+          "integration_links": [],
+          "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+          "lead_name": "Jennifer Jones",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 500,
+          "value_currency": "USD",
+          "value_formatted": "$5",
+          "value_period": "one_time"
+        },
+        {
+          "annualized_expected_value": 249450,
+          "annualized_value": 332600,
+          "attachments": [],
+          "confidence": 75,
+          "contact_id": "cont_1jWppCMAy05XAbpzj5yXgxmD8qHwcrsmGFmGifE1n9z",
+          "contact_name": "Jennifer Jones",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-08-15T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Wedding",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "100",
+          "date_created": "2026-04-06T22:19:07.940000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-07T13:00:48.961000+00:00",
+          "date_won": "2026-05-06",
+          "expected_value": 249450,
+          "id": "oppo_Bi0yDS2UQ6XOC3tTxRPPuD8LzB5jh2ROeCo7p7Pd8mT",
+          "integration_links": [],
+          "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+          "lead_name": "Jennifer Jones",
+          "note": "From comeketocatering.com",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "updated_by_name": "Sales Team Event Consultant Team",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 332600,
+          "value_currency": "USD",
+          "value_formatted": "$3,326",
+          "value_period": "one_time"
+        },
+        {
+          "annualized_expected_value": 75600,
+          "annualized_value": 378000,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_G9GY69YphC25h8sRkoPjging994hHVi5fKx9UpuAAUd",
+          "contact_name": "Jennifer Jones",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2026-08-15T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Wedding",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "100",
+          "date_created": "2026-04-06T22:14:06.741000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-07T13:00:56.685000+00:00",
+          "date_won": "2026-08-15",
+          "expected_value": 75600,
+          "id": "oppo_ugTLwzSvl1bz2pQnvUT0fM0nfF5hZcparNIH3pl8vhQ",
+          "integration_links": [],
+          "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+          "lead_name": "Jennifer Jones",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "updated_by_name": "Sales Team Event Consultant Team",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 378000,
+          "value_currency": "USD",
+          "value_formatted": "$3,780",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "jenn.jones07@yahoo.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+15084417237",
+        "phone_formatted": "+1 508-441-7237",
+        "type": "direct"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-05T23:35:51.804000+00:00",
+          "date_updated": "2026-04-05T23:35:51.804000+00:00",
+          "display_name": "camille Griffin",
+          "emails": [
+            {
+              "email": "mrscgriffin@gmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_P6LPjliqPcoNVhxgZhBVxT0DeJPrGJW5GOreJM6EYC7",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=camille%20Griffin"
+            }
+          ],
+          "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+          "name": "camille Griffin",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15083080596",
+              "phone_formatted": "+1 508-308-0596",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-05T23:36:03.075000+00:00",
+          "date_updated": "2026-04-05T23:36:03.075000+00:00",
+          "display_name": "camille Griffin",
+          "emails": [],
+          "id": "cont_nJjbArIaZo0eIo8nZNykM0Pf7lQrbt7Cb8zc5EbMe7k",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=camille%20Griffin"
+            }
+          ],
+          "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+          "name": "camille Griffin",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+15083080596",
+              "phone_formatted": "+1 508-308-0596",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "01. 🟢 SCORE": [
+          "05. ⏰ Immediate need (within 3 months)"
+        ],
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/e4e87320-edea-4f21-9212-70d3ccba81d5",
+        "🏠 Zip Code": "02703"
+      },
+      "custom.cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj": [
+        "05. ⏰ Immediate need (within 3 months)"
+      ],
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "02703",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/e4e87320-edea-4f21-9212-70d3ccba81d5",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-05T23:35:51.782000+00:00",
+      "date_updated": "2026-04-13T19:09:28.572000+00:00",
+      "description": "Attleboro Zip: 02703\nPeople 50\nEvent Desc: birthday\nEvent Date: 5/2/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+      "display_name": "Camille Griffin",
+      "html_url": "https://app.close.com/lead/lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS/",
+      "id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+      "last_communication_date": "2026-04-13T19:09:29.200000+00:00",
+      "last_outgoing_call_date": "2026-04-06T21:16:38.123000+00:00",
+      "name": "Camille Griffin",
+      "opportunities": [
+        {
+          "annualized_expected_value": 34660,
+          "annualized_value": 173300,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_P6LPjliqPcoNVhxgZhBVxT0DeJPrGJW5GOreJM6EYC7",
+          "contact_name": "camille Griffin",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "birthday",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "50",
+          "date_created": "2026-04-05T23:35:56.242000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-06T15:36:39.595000+00:00",
+          "date_won": "2026-05-02",
+          "expected_value": 34660,
+          "id": "oppo_uTzlSqY6ixOmZ4crRZV0r4J8kgJ5F0IThgeA5wBSzOI",
+          "integration_links": [],
+          "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+          "lead_name": "Camille Griffin",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 173300,
+          "value_currency": "USD",
+          "value_formatted": "$1,733",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "mrscgriffin@gmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+15083080596",
+        "phone_formatted": "+1 508-308-0596",
+        "type": "direct"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "date_created": "2026-04-05T03:45:28.962000+00:00",
+          "date_updated": "2026-04-05T03:45:28.962000+00:00",
+          "display_name": "Gina Gallagher",
+          "emails": [
+            {
+              "email": "ggallagher15@gmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_4SZ7rFKn3whhVldxJjg1QmOYrqWcDBqe70ONRtrEtxF",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Gina%20Gallagher"
+            }
+          ],
+          "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+          "name": "Gina Gallagher",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+17744874001",
+              "phone_formatted": "+1 774-487-4001",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": null,
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre"
+      },
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-05T03:45:28.936000+00:00",
+      "date_updated": "2026-04-13T18:00:27.432000+00:00",
+      "description": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T20:01:29.418Z\nEvent Date: December 2027\nVenue: \nEmail Permission: Yes\nImport Note: Imported from FormSubmit expo submissions.",
+      "display_name": "Gina Gallagher",
+      "html_url": "https://app.close.com/lead/lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo/",
+      "id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+      "last_communication_date": "2026-04-13T18:00:28.086000+00:00",
+      "last_outgoing_call_date": "2026-04-09T22:13:11.597000+00:00",
+      "name": "Gina Gallagher",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 0,
+          "contact_id": "cont_4SZ7rFKn3whhVldxJjg1QmOYrqWcDBqe70ONRtrEtxF",
+          "contact_name": "Gina Gallagher",
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "created_by_name": "Rhonna Ricafort",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "EXPO"
+          ],
+          "date_created": "2026-04-09T21:08:31.721000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-09T21:35:37.442000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_IKXLeMvHAIR25U7bAW4heyp81kysk4ZDXxp3WEsWJzI",
+          "integration_links": [],
+          "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+          "lead_name": "Gina Gallagher",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "ggallagher15@gmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+17744874001",
+        "phone_formatted": "+1 774-487-4001",
+        "type": "direct"
+      },
+      "status_id": "stat_0mrkXTQzZ3wd5F0ZPLfXEE8FF4CKGQGsYqHWQvYXHVD",
+      "status_label": "⚪ Probably Not",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T17:11:30.343000+00:00",
+          "date_updated": "2026-04-06T17:11:30.343000+00:00",
+          "display_name": "Maria A. Cutler",
+          "emails": [
+            {
+              "email": "mnm777cut@msn.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_DVg25gUjE9oxGOC9VmwUeJNhI63wAiOcyjoEWTDZFG0",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Maria%20A.%20Cutler"
+            }
+          ],
+          "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+          "name": "Maria A. Cutler",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+16177788910",
+              "phone_formatted": "+1 617-778-8910",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T17:11:41.575000+00:00",
+          "date_updated": "2026-04-06T17:11:41.575000+00:00",
+          "display_name": "Maria A. Cutler",
+          "emails": [],
+          "id": "cont_ZaXNzXGpyvdvQKImdyisUqeRTasxoyQBlSJRDTIxluz",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Maria%20A.%20Cutler"
+            }
+          ],
+          "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+          "name": "Maria A. Cutler",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+16177788910",
+              "phone_formatted": "+1 617-778-8910",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/119406ed-171f-4c8c-953e-98248942a74a",
+        "🏠 Zip Code": "02151"
+      },
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "02151",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/119406ed-171f-4c8c-953e-98248942a74a",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-06T17:11:30.316000+00:00",
+      "date_updated": "2026-04-13T17:03:07.962000+00:00",
+      "description": "Revere Zip: 02151\nPeople 30\nEvent Desc: Graduation\nEvent Date: June\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+      "display_name": "Maria A. Cutler",
+      "html_url": "https://app.close.com/lead/lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q/",
+      "id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+      "last_communication_date": "2026-04-13T17:03:07.582000+00:00",
+      "last_outgoing_call_date": "2026-04-09T16:32:32.477000+00:00",
+      "name": "Maria A. Cutler",
+      "opportunities": [
+        {
+          "annualized_expected_value": 18900,
+          "annualized_value": 94500,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_DVg25gUjE9oxGOC9VmwUeJNhI63wAiOcyjoEWTDZFG0",
+          "contact_name": "Maria A. Cutler",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Graduation",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "30",
+          "date_created": "2026-04-06T17:11:34.341000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-06T17:11:34.341000+00:00",
+          "date_won": "2026-06-06",
+          "expected_value": 18900,
+          "id": "oppo_VuJ6QCyItI8FDgkRIQYUD1PBMaDDUCW8KddAdjOYENh",
+          "integration_links": [],
+          "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+          "lead_name": "Maria A. Cutler",
+          "note": null,
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "updated_by_name": "Sales Team Event Consultant Team",
+          "user_id": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "user_name": "Sales Team Event Consultant Team",
+          "value": 94500,
+          "value_currency": "USD",
+          "value_formatted": "$945",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "mnm777cut@msn.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+16177788910",
+        "phone_formatted": "+1 617-778-8910",
+        "type": "direct"
+      },
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "date_created": "2026-04-06T16:58:09.241000+00:00",
+          "date_updated": "2026-04-06T16:58:26.723000+00:00",
+          "display_name": "Cadence Fell",
+          "emails": [
+            {
+              "email": "cadencenoelf@gmail.com",
+              "is_unsubscribed": false,
+              "type": "office"
+            }
+          ],
+          "id": "cont_1YqwTPLXZJ4Q0jLxCVo5f9YVTivTFPWZaz9RoJa6F3D",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Cadence%20Fell"
+            }
+          ],
+          "lead_id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+          "name": "Cadence Fell",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [],
+          "timezone": null,
+          "timezone_source": null,
+          "title": "",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "7 TP Cadence Follow up": [
+          "02. 📞 DAY 2 CALL"
+        ],
+        "Date of Event": "2028-08-18T15:00:00+00:00"
+      },
+      "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2028-08-18T15:00:00+00:00",
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "02. 📞 DAY 2 CALL"
+      ],
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-06T16:58:09.228000+00:00",
+      "date_updated": "2026-04-13T16:11:36.959000+00:00",
+      "description": "Wedding Date\nFri, Aug 18, 2028\nWedding Location\nJohnson City, TN\nNumber of Guests\n51 - 100",
+      "display_name": "Cadence Fell",
+      "html_url": "https://app.close.com/lead/lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX/",
+      "id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+      "last_communication_date": "2026-04-13T10:31:27.335000+00:00",
+      "last_outgoing_call_date": null,
+      "name": "",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 50,
+          "contact_id": "cont_1YqwTPLXZJ4Q0jLxCVo5f9YVTivTFPWZaz9RoJa6F3D",
+          "contact_name": "Cadence Fell",
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "created_by_name": "Rhonna Ricafort",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_FV2xBkviv7BAQZkkjUf8NUOc3fOpPTObMy5lVxZbyiP": "2028-08-18T15:00:00+00:00",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "The Knot"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Wedding",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "51-100",
+          "date_created": "2026-04-06T16:59:00.229000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-06T22:46:19.225000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_qgN8zVLxXOMi8WEFDZZx8BATvvK2f41A2BdZL2nxxvN",
+          "integration_links": [],
+          "lead_id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+          "lead_name": "Cadence Fell",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "cadencenoelf@gmail.com",
+        "is_unsubscribed": false,
+        "type": "office"
+      },
+      "primary_phone": null,
+      "status_id": "stat_0mrkXTQzZ3wd5F0ZPLfXEE8FF4CKGQGsYqHWQvYXHVD",
+      "status_label": "⚪ Probably Not",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-04T12:15:06.549000+00:00",
+          "date_updated": "2026-04-06T15:57:44.148000+00:00",
+          "display_name": "Raddison7902",
+          "emails": [
+            {
+              "email": "raddison7902@yahoo.com",
+              "is_unsubscribed": false,
+              "type": "office"
+            }
+          ],
+          "id": "cont_cDzaEVQf4DBOENIN2S5H7N2cc643i1YvJXa6LncbdUL",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Raddison7902"
+            }
+          ],
+          "lead_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+          "name": "Raddison7902",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [],
+          "timezone": null,
+          "timezone_source": null,
+          "title": "From crisp.chat",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/91ae3883-915b-44ef-97c0-af3776200da4"
+      },
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/91ae3883-915b-44ef-97c0-af3776200da4",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-04T12:15:06.523000+00:00",
+      "date_updated": "2026-04-13T13:34:13.221000+00:00",
+      "description": "",
+      "display_name": "Raddison7902",
+      "html_url": "https://app.close.com/lead/lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH/",
+      "id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+      "last_communication_date": "2026-04-13T13:34:12.943000+00:00",
+      "last_outgoing_call_date": null,
+      "name": "Raddison7902",
+      "opportunities": [
+        {
+          "annualized_expected_value": 0,
+          "annualized_value": 0,
+          "attachments": [],
+          "confidence": 50,
+          "contact_id": "cont_cDzaEVQf4DBOENIN2S5H7N2cc643i1YvJXa6LncbdUL",
+          "contact_name": "Raddison7902",
+          "created_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "created_by_name": "Rhonna Ricafort",
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Crisp Chat"
+          ],
+          "date_created": "2026-04-06T15:59:12.788000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-06T15:59:12.788000+00:00",
+          "date_won": null,
+          "expected_value": 0,
+          "id": "oppo_WS14ljD8gSjyOqozbuZcFOebl3bobjejZnzaxuzk9IQ",
+          "integration_links": [],
+          "lead_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+          "lead_name": "Raddison7902",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+          "updated_by_name": "Rhonna Ricafort",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 0,
+          "value_currency": "USD",
+          "value_formatted": "",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "raddison7902@yahoo.com",
+        "is_unsubscribed": false,
+        "type": "office"
+      },
+      "primary_phone": null,
+      "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+      "status_label": "🔘 Maybe",
+      "url": null
+    },
+    {
+      "contacts": [
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T23:34:11.343000+00:00",
+          "date_updated": "2026-04-06T23:34:11.343000+00:00",
+          "display_name": "Coreen Miranda",
+          "emails": [
+            {
+              "email": "coreenmiranda2@gmail.com",
+              "is_unsubscribed": false,
+              "type": "direct"
+            }
+          ],
+          "id": "cont_2k0tyfnTtZuejjabUpWs5tRoEQw9GE3EkP5SeQUVLCA",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Coreen%20Miranda"
+            }
+          ],
+          "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+          "name": "Coreen Miranda",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+18572057619",
+              "phone_formatted": "+1 857-205-7619",
+              "type": "direct"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Plain Old Phone (best for SMS)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        },
+        {
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "date_created": "2026-04-06T23:34:22.916000+00:00",
+          "date_updated": "2026-04-06T23:34:22.916000+00:00",
+          "display_name": "Coreen Miranda",
+          "emails": [],
+          "id": "cont_1HJCuZKP2pkEfSKoRS1vGSEWgDiwoU4BRSe2MAH8gEu",
+          "integration_links": [
+            {
+              "name": "LinkedIn Search",
+              "url": "https://www.linkedin.com/search/results/people/?keywords=Coreen%20Miranda"
+            }
+          ],
+          "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+          "name": "Coreen Miranda",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "phones": [
+            {
+              "country": "US",
+              "phone": "+18572057619",
+              "phone_formatted": "+1 857-205-7619",
+              "type": "mobile"
+            }
+          ],
+          "timezone": "America/New_York",
+          "timezone_source": "inferred_from_phone_number",
+          "title": "Facebook # (Best For Calls)",
+          "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "urls": []
+        }
+      ],
+      "custom": {
+        "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+        "02. ⚔︎ WORKFLOW WEAPONS": [
+          "5x5",
+          "✉️ FB Lead Form 1EMAIL"
+        ],
+        "05. 👥 Franchise": "Comeketo",
+        "7 TP Cadence Follow up": [
+          "01. 📞 DAY 1 CALL"
+        ],
+        "Crisp": [
+          "Created"
+        ],
+        "Crisp ID": 0,
+        "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/5215eb12-0ce1-45d2-b406-5f5a5c7a5dcf",
+        "FB_AD": "STILLS  GALLERY  $19 PACKAGE",
+        "FB_ADSET": "3 STILLS",
+        "FB_CAMPAIGN": "01. [CATER[ LF EVERGREEN - QUOTE",
+        "🏠 Zip Code": "02149"
+      },
+      "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+      "custom.cf_NN0HOiT2V7VR8vY0mdaesirgzN0FvEumQoJy6luhMBZ": "3 STILLS",
+      "custom.cf_XUgJtr1fW0TOSr4qtiiu1c4MDSZeYeYkkgi4wjriVBE": "STILLS  GALLERY  $19 PACKAGE",
+      "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+        "Created"
+      ],
+      "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "custom.cf_nzUyCovAbOCJxIG6j5TXccpBmdWlRAFuMLDTAxJ2Y9p": "01. [CATER[ LF EVERGREEN - QUOTE",
+      "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "02149",
+      "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/5215eb12-0ce1-45d2-b406-5f5a5c7a5dcf",
+      "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+      "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+      "date_created": "2026-04-06T23:34:11.320000+00:00",
+      "date_updated": "2026-04-12T00:38:15.534000+00:00",
+      "description": "Everett Zip: 02149\nPeople 50\nEvent Desc: Graduation party\nEvent Date: June 13\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+      "display_name": "Coreen Miranda",
+      "html_url": "https://app.close.com/lead/lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q/",
+      "id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+      "last_communication_date": "2026-04-12T00:38:15.522000+00:00",
+      "last_outgoing_call_date": "2026-04-06T23:59:06.131000+00:00",
+      "name": "Coreen Miranda",
+      "opportunities": [
+        {
+          "annualized_expected_value": 31500,
+          "annualized_value": 157500,
+          "attachments": [],
+          "confidence": 20,
+          "contact_id": "cont_2k0tyfnTtZuejjabUpWs5tRoEQw9GE3EkP5SeQUVLCA",
+          "contact_name": "Coreen Miranda",
+          "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+          "created_by_name": "Sales Team Event Consultant Team",
+          "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+            "NEEDS VENUE NAME"
+          ],
+          "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+          "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+            "Facebook, Paid"
+          ],
+          "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Graduation party",
+          "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "50",
+          "date_created": "2026-04-06T23:34:16.029000+00:00",
+          "date_lost": null,
+          "date_updated": "2026-04-07T00:01:16.306000+00:00",
+          "date_won": "2026-06-13",
+          "expected_value": 31500,
+          "id": "oppo_nert95ewmnr1pLubJLfZb4DBgCUJLJnDBi9nZjUyNEB",
+          "integration_links": [],
+          "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+          "lead_name": "Coreen Miranda",
+          "note": "",
+          "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+          "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+          "pipeline_name": "Sales",
+          "status_display_name": "Sales: ⬜ 00. Prospect",
+          "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+          "status_label": "⬜ 00. Prospect",
+          "status_type": "active",
+          "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "updated_by_name": "Andre Raw",
+          "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+          "user_name": "Andre Raw",
+          "value": 157500,
+          "value_currency": "USD",
+          "value_formatted": "$1,575",
+          "value_period": "one_time"
+        }
+      ],
+      "primary_email": {
+        "email": "coreenmiranda2@gmail.com",
+        "is_unsubscribed": false,
+        "type": "direct"
+      },
+      "primary_phone": {
+        "country": "US",
+        "phone": "+18572057619",
+        "phone_formatted": "+1 857-205-7619",
+        "type": "direct"
+      },
+      "status_id": "stat_wqP1rmQTDYHHdkeCtZxsTky3PIicS3rjM1AKzCu91Qn",
+      "status_label": "🟢 Probably",
+      "url": null
+    }
+  ]
+}

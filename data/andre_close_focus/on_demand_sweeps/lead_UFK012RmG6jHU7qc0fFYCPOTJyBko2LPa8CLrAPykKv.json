@@ -1,0 +1,1201 @@
+{
+  "_meta": {
+    "source": "side-panel-sweep",
+    "generated_at": "2026-04-14T19:44:52.820Z",
+    "query": null,
+    "resolved_lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+  },
+  "lead": {
+    "addresses": [
+      {
+        "address_1": "",
+        "address_2": "",
+        "city": "Peabody",
+        "country": "US",
+        "label": "business",
+        "state": "",
+        "zipcode": "01960"
+      }
+    ],
+    "contacts": [
+      {
+        "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "date_created": "2026-04-13T19:14:57.364000+00:00",
+        "date_updated": "2026-04-13T19:56:47.921000+00:00",
+        "display_name": "Laine Martins",
+        "emails": [
+          {
+            "email": "laine_demoura@hotmail.com",
+            "is_unsubscribed": false,
+            "type": "direct"
+          }
+        ],
+        "id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "integration_links": [
+          {
+            "name": "LinkedIn Search",
+            "url": "https://www.linkedin.com/search/results/people/?keywords=Laine%20Martins"
+          }
+        ],
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "phones": [
+          {
+            "country": "US",
+            "phone": "+17814857940",
+            "phone_formatted": "+1 781-485-7940",
+            "type": "direct"
+          }
+        ],
+        "timezone": "America/New_York",
+        "timezone_source": "inferred_from_phone_number",
+        "title": "Plain Old Phone (best for SMS)",
+        "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "urls": []
+      },
+      {
+        "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "date_created": "2026-04-13T19:15:11.023000+00:00",
+        "date_updated": "2026-04-13T19:15:11.023000+00:00",
+        "display_name": "Laine Martins",
+        "emails": [],
+        "id": "cont_tn5SVG3y1DD5xn7MbElwuhbQpG8MNNoyBpmpDd5A521",
+        "integration_links": [
+          {
+            "name": "LinkedIn Search",
+            "url": "https://www.linkedin.com/search/results/people/?keywords=Laine%20Martins"
+          }
+        ],
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "name": "Laine Martins",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "phones": [
+          {
+            "country": "US",
+            "phone": "+17814857940",
+            "phone_formatted": "+1 781-485-7940",
+            "type": "mobile"
+          }
+        ],
+        "timezone": "America/New_York",
+        "timezone_source": "inferred_from_phone_number",
+        "title": "Facebook # (Best For Calls)",
+        "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "urls": []
+      }
+    ],
+    "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+    "created_by_name": "Sales Team Event Consultant Team",
+    "custom": {
+      "00. 🪖 LEAD OWNER": "01. 😎 Andre",
+      "02. ⚔︎ WORKFLOW WEAPONS": [
+        "5x5",
+        "✉️ FB Lead Form 1EMAIL"
+      ],
+      "05. 👥 Franchise": "Comeketo",
+      "7 TP Cadence Follow up": [
+        "01. 📞 DAY 1 CALL"
+      ],
+      "Crisp": [
+        "Created"
+      ],
+      "Crisp ID": 0,
+      "Crisp Link": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/2e8a7e78-5e93-44da-9e55-9ec1d96750dd",
+      "FB_AD": "VIDEO  RODS WEDDING & FACELESS",
+      "FB_ADSET": "RODS WEDDING & FACELESS",
+      "FB_CAMPAIGN": "01. [CATER[ LF EVERGREEN - QUOTE",
+      "🏠 Zip Code": "01960"
+    },
+    "custom.cf_JlnAQRNnjtHxBcHcZL57YpdSZq6W9YlOv3zXG64pLNv": 0,
+    "custom.cf_NN0HOiT2V7VR8vY0mdaesirgzN0FvEumQoJy6luhMBZ": "RODS WEDDING & FACELESS",
+    "custom.cf_XUgJtr1fW0TOSr4qtiiu1c4MDSZeYeYkkgi4wjriVBE": "VIDEO  RODS WEDDING & FACELESS",
+    "custom.cf_f6hxPXViYgPbzJu8x7XB1nQIxyJHP47eOI6nCuGpc01": [
+      "Created"
+    ],
+    "custom.cf_ka2oCzzw0j2k9T0zlxpQ0udWHP1wUW8fP0LAieNjzXl": [
+      "01. 📞 DAY 1 CALL"
+    ],
+    "custom.cf_l37qDcsFYbEZQJhRRrImt3cwFPY23IbG4kjLBJRN3GZ": [
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL"
+    ],
+    "custom.cf_nzUyCovAbOCJxIG6j5TXccpBmdWlRAFuMLDTAxJ2Y9p": "01. [CATER[ LF EVERGREEN - QUOTE",
+    "custom.cf_pXTVEI1DdERiT91NKuWAndlV6WuS4n6ZG2334fBR4b8": "01960",
+    "custom.cf_smf4xXJPUNlJQ2QiG6lgzOhQEuEMQibqZL5WZaL0GHe": "https://app.crisp.chat/website/6e2ee3ba-8402-4f3a-8240-aace16ee1bac/contacts/profile/2e8a7e78-5e93-44da-9e55-9ec1d96750dd",
+    "custom.cf_vfo9P74IUYaftU7nCUQBxaSmGf69YCC1Bdwbz9w20lU": "Comeketo",
+    "custom.cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT": "01. 😎 Andre",
+    "date_created": "2026-04-13T19:14:57.338000+00:00",
+    "date_updated": "2026-04-14T16:50:37.137000+00:00",
+    "description": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "display_name": "Laine Martins",
+    "html_url": "https://app.close.com/lead/lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv/",
+    "id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "integration_links": [
+      {
+        "name": "Google Search",
+        "url": "https://google.com/search?q=Laine%20Martins"
+      }
+    ],
+    "name": "Laine Martins",
+    "opportunities": [
+      {
+        "annualized_expected_value": 189000,
+        "annualized_value": 945000,
+        "attachments": [],
+        "confidence": 20,
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "contact_name": "Laine Martins",
+        "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "created_by_name": "Sales Team Event Consultant Team",
+        "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+          "NEEDS VENUE NAME"
+        ],
+        "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+        "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+          "Facebook, Paid"
+        ],
+        "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Church gatherings",
+        "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "300",
+        "date_created": "2026-04-13T19:15:01.500000+00:00",
+        "date_lost": null,
+        "date_updated": "2026-04-13T19:53:50.704000+00:00",
+        "date_won": "2026-07-13",
+        "expected_value": 189000,
+        "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+        "integration_links": [],
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "lead_name": "Laine Martins",
+        "note": "",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+        "pipeline_name": "Sales",
+        "status_display_name": "Sales: ⬜ 00. Prospect",
+        "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+        "status_label": "⬜ 00. Prospect",
+        "status_type": "active",
+        "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+        "updated_by_name": "Rhonna Ricafort",
+        "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "user_name": "Andre Raw",
+        "value": 945000,
+        "value_currency": "USD",
+        "value_formatted": "$9,450",
+        "value_period": "one_time"
+      }
+    ],
+    "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+    "status_id": "stat_qGpMKenDu31cIY56uTpvo8evqhcNnK4KDWtz4y9NPz3",
+    "status_label": "🔘 Maybe",
+    "tasks": [
+      {
+        "_type": "lead",
+        "agent_config_id": null,
+        "assigned_to": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "assigned_to_name": "Andre Raw",
+        "contact_id": null,
+        "contact_name": null,
+        "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "created_by_name": "Sales Team Event Consultant Team",
+        "date": "2026-04-14T13:00:00+00:00",
+        "date_created": "2026-04-13T19:15:03.018000+00:00",
+        "date_updated": "2026-04-13T19:37:39.262000+00:00",
+        "deduplication_key": null,
+        "due_date": "2026-04-14T13:00:00+00:00",
+        "id": "task_3trlSbejjgw2pGBYYvpvtb6kxEUHiFCOgO01b53BQnb",
+        "is_complete": false,
+        "is_dateless": false,
+        "is_primary_lead_notification": true,
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "lead_name": "Laine Martins",
+        "object_id": null,
+        "object_type": null,
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "priority": "medium",
+        "resolution": null,
+        "sequence_id": null,
+        "sequence_subscription_id": null,
+        "text": "Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS",
+        "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "updated_by_name": "Andre Raw",
+        "view": "inbox"
+      }
+    ],
+    "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+    "updated_by_name": "Rhonna Ricafort",
+    "url": null
+  },
+  "search_results": [],
+  "contacts": [
+    {
+      "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+      "date_created": "2026-04-13T19:14:57.364000+00:00",
+      "date_updated": "2026-04-13T19:56:47.921000+00:00",
+      "display_name": "Laine Martins",
+      "emails": [
+        {
+          "email": "laine_demoura@hotmail.com",
+          "is_unsubscribed": false,
+          "type": "direct"
+        }
+      ],
+      "id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+      "integration_links": [
+        {
+          "name": "LinkedIn Search",
+          "url": "https://www.linkedin.com/search/results/people/?keywords=Laine%20Martins"
+        }
+      ],
+      "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "name": "Laine Martins",
+      "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+      "phones": [
+        {
+          "country": "US",
+          "phone": "+17814857940",
+          "phone_formatted": "+1 781-485-7940",
+          "type": "direct"
+        }
+      ],
+      "timezone": "America/New_York",
+      "timezone_source": "inferred_from_phone_number",
+      "title": "Plain Old Phone (best for SMS)",
+      "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+      "urls": []
+    },
+    {
+      "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+      "date_created": "2026-04-13T19:15:11.023000+00:00",
+      "date_updated": "2026-04-13T19:15:11.023000+00:00",
+      "display_name": "Laine Martins",
+      "emails": [],
+      "id": "cont_tn5SVG3y1DD5xn7MbElwuhbQpG8MNNoyBpmpDd5A521",
+      "integration_links": [
+        {
+          "name": "LinkedIn Search",
+          "url": "https://www.linkedin.com/search/results/people/?keywords=Laine%20Martins"
+        }
+      ],
+      "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "name": "Laine Martins",
+      "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+      "phones": [
+        {
+          "country": "US",
+          "phone": "+17814857940",
+          "phone_formatted": "+1 781-485-7940",
+          "type": "mobile"
+        }
+      ],
+      "timezone": "America/New_York",
+      "timezone_source": "inferred_from_phone_number",
+      "title": "Facebook # (Best For Calls)",
+      "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+      "urls": []
+    }
+  ],
+  "opportunities": [
+    {
+      "annualized_expected_value": 189000,
+      "annualized_value": 945000,
+      "attachments": [],
+      "confidence": 20,
+      "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+      "contact_name": "Laine Martins",
+      "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+      "created_by_name": "Sales Team Event Consultant Team",
+      "custom.cf_3LZk8uGw0lIvPpNzOMvFn4WwiCXbI91X66Ujvt8UJPx": [
+        "NEEDS VENUE NAME"
+      ],
+      "custom.cf_fs7mrfN5x0M20CyoltczyVg8t0Xul5GFvkC4FNUKvY6": "Customer",
+      "custom.cf_ge7qOebiWpyPvuv7xkzNaYpM8PsmOeNvXasXFOtPXRt": [
+        "Facebook, Paid"
+      ],
+      "custom.cf_goMfyKkS7pFUhmo0xvrl1JvQv1KLaQkfoVo0j93dvhe": "Church gatherings",
+      "custom.cf_nQLULOLLmtUAh9OwcpJibPc5pQKIqpFOjdGSTwC9ePO": "300",
+      "date_created": "2026-04-13T19:15:01.500000+00:00",
+      "date_lost": null,
+      "date_updated": "2026-04-13T19:53:50.704000+00:00",
+      "date_won": "2026-07-13",
+      "expected_value": 189000,
+      "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+      "integration_links": [],
+      "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "lead_name": "Laine Martins",
+      "note": "",
+      "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+      "pipeline_id": "pipe_4s7zfmoJhbc6jcU1aPvIDT",
+      "pipeline_name": "Sales",
+      "status_display_name": "Sales: ⬜ 00. Prospect",
+      "status_id": "stat_wVjlEhuB44DBwtfg0AG5LidEKPJOVMfLTyVgMUxWKmI",
+      "status_label": "⬜ 00. Prospect",
+      "status_type": "active",
+      "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+      "updated_by_name": "Rhonna Ricafort",
+      "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+      "user_name": "Andre Raw",
+      "value": 945000,
+      "value_currency": "USD",
+      "value_formatted": "$9,450",
+      "value_period": "one_time"
+    }
+  ],
+  "tasks": [
+    {
+      "_type": "lead",
+      "agent_config_id": null,
+      "assigned_to": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+      "assigned_to_name": "Andre Raw",
+      "contact_id": null,
+      "contact_name": null,
+      "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+      "created_by_name": "Sales Team Event Consultant Team",
+      "date": "2026-04-14T13:00:00+00:00",
+      "date_created": "2026-04-13T19:15:03.018000+00:00",
+      "date_updated": "2026-04-13T19:37:39.262000+00:00",
+      "deduplication_key": null,
+      "due_date": "2026-04-14T13:00:00+00:00",
+      "id": "task_3trlSbejjgw2pGBYYvpvtb6kxEUHiFCOgO01b53BQnb",
+      "is_complete": false,
+      "is_dateless": false,
+      "is_primary_lead_notification": true,
+      "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "lead_name": "Laine Martins",
+      "object_id": null,
+      "object_type": null,
+      "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+      "priority": "medium",
+      "resolution": null,
+      "sequence_id": null,
+      "sequence_subscription_id": null,
+      "text": "Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS",
+      "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+      "updated_by_name": "Andre Raw",
+      "view": "inbox"
+    }
+  ],
+  "activities": {
+    "emails": [
+      {
+        "status": "sent",
+        "sequence_subscription_id": "sub_4mvk5J3bpVZbbJ6CQHqyfd",
+        "followup_sequence_id": null,
+        "body_text_quoted": [
+          {
+            "expand": true,
+            "text": "![Comeketo Catering Logo](https://comeketocatering.com/wp-\ncontent/uploads/2025/01/LOGO_WEB.png)\n\n![Catering Types](https://comeketocatering.com/wp-\ncontent/uploads/2025/06/Header_cateringTypes.jpg)\n\n# Understanding Our Catering Services 🍽️\n\nWhich Style Is Right for Your Event?\n\nOne of the most frequent questions we receive at Comeketo is about the\ndistinctions between our various catering styles. Each service is thoughtfully\ndesigned to create a unique dining experience that matches your event's\natmosphere, budget, and guest preferences.\n\n## 💼 Drop-off Catering\n\nPerfect for casual gatherings and budget-conscious events, our drop-off\nservice delivers restaurant-quality food directly to your venue. Choose from\nour economical tray presentation for intimate gatherings, or elevate the\nexperience with elegant wire chafers and warming sternos that keep your food\nat the perfect temperature throughout your event.\n\n## 🍴 Buffet Service\n\nMOST POPULAR\n\nOur most popular catering style transforms your venue into a welcoming feast\nwhere guests can explore our diverse menu at their own pace. Our experienced\nteam arrives early to create an attractive buffet display, then remains\nthroughout your meal service to ensure chafers stay fully stocked with fresh,\nhot food. We handle all breakdown and cleaning, leaving you free to enjoy your\nguests.\n\n## 👨‍👩‍👧‍👦 Family Style Service\n\nExperience the warmth of a traditional family dinner with our family style\nservice. We present generous, shareable platters at each table, encouraging\nconversation and connection as guests pass dishes and serve one another. This\ncommunal dining approach creates a cozy, home-like atmosphere that's\nparticularly wonderful for celebrations, corporate dinners, and intimate\ngatherings.\n\n## 🍽️ Plated Service\n\nFor those seeking an upscale, restaurant-quality dining experience, our plated\nservice delivers individually crafted meals directly to each guest. Every\nplate is artfully prepared and customized to dietary preferences, creating an\nelegant presentation that's perfect for formal events, wedding receptions, and\nbusiness dinners.\n\n## 🔥 Churrasco Experience\n\nChurrasco, meaning \"Brazilian Barbecue,\" elevates our traditional buffet\nservice with the excitement of live grilling. Our skilled chefs prepare fresh\nmeats and vegetables on-site, filling the air with the intoxicating aroma of\nauthentic Brazilian spices and seasonings. This popular upgrade transforms\nyour event into a sensory experience that guests will remember.\n\n## ⭐ Rodizio Service\n\nOUR SIGNATURE\n\nOur signature Rodizio service is what Comeketo is truly known for – an\nauthentic Brazilian steakhouse experience brought directly to your event.\nCombined with our churrasco grilling, our Gauchos circulate throughout your\nvenue carrying impressive skewers of perfectly grilled meats. They carve fresh\nportions tableside, ensuring each guest receives meat cooked to their exact\npreference.\n\n### Ready to Create Something Special? ✨\n\nContact Comeketo today to discuss which catering style will make your\ncelebration truly unforgettable.\n\n#### Comeketo Catering\n\n199 Main Street  \nFitchburg, MA\n\nThis is an unmonitored inbox, for help, questions, or more details, please\ncontact your catering consultant\n\n[Unsubscribe](%unsubscribe_url%)\n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\nLove & Confetti,\n\n  \n\n**🌺 Rhonna C. Ricafort**  \nCatering Sales Manager  \n  \n**🔥 Eufy/Camila/ Cath**  \nCatering Support  \n**Comeketo Catering**  \n📘[Facebook](https://www.facebook.com/comeketocatering) | 📸 [Instagram](https://instagram.com/comeketocatering) | 🌐 [Website](https://comeketocatering.com/)\n\n📲 My Direct: (978) 678 3739\n\n📲 Catering Main: [(978) 381-1212](tel:9783811212)  \n  \n  \n\nTo stop receiving these emails, click\n[here](https://app.close.com/go/unsubscribe/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/laine_demoura%40hotmail.com/8VH-0yENuEL3jW48HWq9qWQ8j_HiKPxED-11cpSbuUY=/)"
+          }
+        ],
+        "user_id": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+        "date_updated": "2026-04-14T16:50:38.423000+00:00",
+        "date_sent": "2026-04-14T16:50:36.731000+00:00",
+        "sequence_name": "Inbound Lead - 5 x 5 Email Drip (Copy)",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "to": [
+          "Laine Martins <laine_demoura@hotmail.com>"
+        ],
+        "thread_id": "acti_9JDWH6idFhMpXoPuQ6UBRY7SRojpeosiYmwAsOeP4Zf",
+        "activity_at": "2026-04-14T16:50:36.731000+00:00",
+        "users": [],
+        "ai_draft": null,
+        "in_reply_to_id": null,
+        "message_ids": [
+          "<177618543694.7.7075307694184154049@smtpgw.close.com>",
+          "<177618543694.7.12647424023285324265@smtpgw.close.com>"
+        ],
+        "updated_by_name": "Rhonna Ricafort",
+        "attachments": [],
+        "subject": "Understanding Our Catering Service Types",
+        "has_reply": false,
+        "envelope": {
+          "date": "Tue, 14 Apr 2026 16:50:37 +0000",
+          "subject": "Understanding Our Catering Service Types",
+          "from": [
+            {
+              "email": "contact@comeketocatering.com",
+              "name": "Rhonna Ricafort"
+            }
+          ],
+          "sender": [
+            {
+              "email": "contact@comeketocatering.com",
+              "name": "Rhonna Ricafort"
+            }
+          ],
+          "reply_to": [],
+          "to": [
+            {
+              "email": "laine_demoura@hotmail.com",
+              "name": "Laine Martins"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "in_reply_to": null,
+          "message_id": "<177618543694.7.12647424023285324265@smtpgw.close.com>",
+          "is_autoreply": false
+        },
+        "body_preview": "![Comeketo Catering Logo](https://comeketocatering.com/wp-\ncontent/uploads/2025/01/LOGO_WEB.png) ![Catering Types](https://comeketocatering.com/wp-\ncontent/uploads/2025/06/Header_cateringTypes.jpg) # ",
+        "email_account_id": "emailacct_tkNb5HhoInChNHgmXEcAnZfoZQ51R6wPh1bgWSQ6gwm",
+        "bcc": [],
+        "created_by": null,
+        "id": "acti_NPoqhrIq96rAmvJpWLVZDVReiP9pKEjbecYnbDbcsG4",
+        "created_by_name": null,
+        "body_text": "![Comeketo Catering Logo](https://comeketocatering.com/wp-\ncontent/uploads/2025/01/LOGO_WEB.png)\n\n![Catering Types](https://comeketocatering.com/wp-\ncontent/uploads/2025/06/Header_cateringTypes.jpg)\n\n# Understanding Our Catering Services 🍽️\n\nWhich Style Is Right for Your Event?\n\nOne of the most frequent questions we receive at Comeketo is about the\ndistinctions between our various catering styles. Each service is thoughtfully\ndesigned to create a unique dining experience that matches your event's\natmosphere, budget, and guest preferences.\n\n## 💼 Drop-off Catering\n\nPerfect for casual gatherings and budget-conscious events, our drop-off\nservice delivers restaurant-quality food directly to your venue. Choose from\nour economical tray presentation for intimate gatherings, or elevate the\nexperience with elegant wire chafers and warming sternos that keep your food\nat the perfect temperature throughout your event.\n\n## 🍴 Buffet Service\n\nMOST POPULAR\n\nOur most popular catering style transforms your venue into a welcoming feast\nwhere guests can explore our diverse menu at their own pace. Our experienced\nteam arrives early to create an attractive buffet display, then remains\nthroughout your meal service to ensure chafers stay fully stocked with fresh,\nhot food. We handle all breakdown and cleaning, leaving you free to enjoy your\nguests.\n\n## 👨‍👩‍👧‍👦 Family Style Service\n\nExperience the warmth of a traditional family dinner with our family style\nservice. We present generous, shareable platters at each table, encouraging\nconversation and connection as guests pass dishes and serve one another. This\ncommunal dining approach creates a cozy, home-like atmosphere that's\nparticularly wonderful for celebrations, corporate dinners, and intimate\ngatherings.\n\n## 🍽️ Plated Service\n\nFor those seeking an upscale, restaurant-quality dining experience, our plated\nservice delivers individually crafted meals directly to each guest. Every\nplate is artfully prepared and customized to dietary preferences, creating an\nelegant presentation that's perfect for formal events, wedding receptions, and\nbusiness dinners.\n\n## 🔥 Churrasco Experience\n\nChurrasco, meaning \"Brazilian Barbecue,\" elevates our traditional buffet\nservice with the excitement of live grilling. Our skilled chefs prepare fresh\nmeats and vegetables on-site, filling the air with the intoxicating aroma of\nauthentic Brazilian spices and seasonings. This popular upgrade transforms\nyour event into a sensory experience that guests will remember.\n\n## ⭐ Rodizio Service\n\nOUR SIGNATURE\n\nOur signature Rodizio service is what Comeketo is truly known for – an\nauthentic Brazilian steakhouse experience brought directly to your event.\nCombined with our churrasco grilling, our Gauchos circulate throughout your\nvenue carrying impressive skewers of perfectly grilled meats. They carve fresh\nportions tableside, ensuring each guest receives meat cooked to their exact\npreference.\n\n### Ready to Create Something Special? ✨\n\nContact Comeketo today to discuss which catering style will make your\ncelebration truly unforgettable.\n\n#### Comeketo Catering\n\n199 Main Street  \nFitchburg, MA\n\nThis is an unmonitored inbox, for help, questions, or more details, please\ncontact your catering consultant\n\n[Unsubscribe](%unsubscribe_url%)\n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\nLove & Confetti,\n\n  \n\n**🌺 Rhonna C. Ricafort**  \nCatering Sales Manager  \n  \n**🔥 Eufy/Camila/ Cath**  \nCatering Support  \n**Comeketo Catering**  \n📘[Facebook](https://www.facebook.com/comeketocatering) | 📸 [Instagram](https://instagram.com/comeketocatering) | 🌐 [Website](https://comeketocatering.com/)\n\n📲 My Direct: (978) 678 3739\n\n📲 Catering Main: [(978) 381-1212](tel:9783811212)  \n  \n  \n\nTo stop receiving these emails, click\n[here](https://app.close.com/go/unsubscribe/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/laine_demoura%40hotmail.com/8VH-0yENuEL3jW48HWq9qWQ8j_HiKPxED-11cpSbuUY=/)",
+        "sequence_id": "seq_22A6YQEt0UCZbArKaeSKig",
+        "template_name": "01. drip_Catering Description",
+        "agent_action_reason": null,
+        "send_attempts": [],
+        "opens_summary": null,
+        "bulk_email_action_id": null,
+        "_type": "Email",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "cc": [],
+        "direction": "outgoing",
+        "followup_sequence_delay": null,
+        "body_html_quoted": [
+          {
+            "expand": true,
+            "html": "<div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\">\n    \n    \n    <div style=\"text-align: center; padding: 30px 20px; background: linear-gradient(135deg, #d4a574 0%, #c9955e 100%);\">\n      <img style=\"max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto;\" alt=\"Comeketo Catering Logo\" src=\"https://comeketocatering.com/wp-content/uploads/2025/01/LOGO_WEB.png\">\n    </div>\n\n    \n    <div style=\"text-align: center;\">\n      <img style=\"width: 100%; height: auto; display: block;\" alt=\"Catering Types\" src=\"https://comeketocatering.com/wp-content/uploads/2025/06/Header_cateringTypes.jpg\">\n    </div>\n\n    \n    <div style=\"padding: 40px 30px;\">\n      \n      \n      <div style=\"text-align: center; margin-bottom: 40px;\">\n        <h1 style=\"font-size: 28px; font-weight: 700; color: #2c3e50; margin: 0 0 15px 0; line-height: 1.3;\">Understanding Our Catering Services 🍽️</h1>\n        <div style=\"width: 60px; height: 3px; background: linear-gradient(90deg, #d4a574, #c9955e); margin: 0 auto 20px auto; border-radius: 2px;\"></div>\n        <p style=\"font-size: 18px; color: #7f8c8d; margin: 0; font-weight: 300;\">Which Style Is Right for Your Event?</p>\n      </div>\n\n      \n      <div style=\"background-color: #f8f9fa; padding: 25px; border-radius: 12px; margin-bottom: 40px; border-left: 4px solid #d4a574;\">\n        <p style=\"margin: 0; font-size: 16px; color: #5a6c7d; line-height: 1.7;\">One of the most frequent questions we receive at Comeketo is about the distinctions between our various catering styles. Each service is thoughtfully designed to create a unique dining experience that matches your event's atmosphere, budget, and guest preferences.</p>\n      </div>\n\n      \n      \n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #3498db, #2980b9); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">💼 Drop-off Catering</h2>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Perfect for casual gatherings and budget-conscious events, our drop-off service delivers restaurant-quality food directly to your venue. Choose from our economical tray presentation for intimate gatherings, or elevate the experience with elegant wire chafers and warming sternos that keep your food at the perfect temperature throughout your event.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #e74c3c, #c0392b); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">🍴 Buffet Service</h2>\n          <div style=\"font-size: 12px; background-color: rgba(255,255,255,0.2); display: inline-block; padding: 4px 12px; border-radius: 20px; margin-top: 8px; font-weight: 500;\">MOST POPULAR</div>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Our most popular catering style transforms your venue into a welcoming feast where guests can explore our diverse menu at their own pace. Our experienced team arrives early to create an attractive buffet display, then remains throughout your meal service to ensure chafers stay fully stocked with fresh, hot food. We handle all breakdown and cleaning, leaving you free to enjoy your guests.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #f39c12, #e67e22); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">👨‍👩‍👧‍👦 Family Style Service</h2>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Experience the warmth of a traditional family dinner with our family style service. We present generous, shareable platters at each table, encouraging conversation and connection as guests pass dishes and serve one another. This communal dining approach creates a cozy, home-like atmosphere that's particularly wonderful for celebrations, corporate dinners, and intimate gatherings.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #9b59b6, #8e44ad); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">🍽️ Plated Service</h2>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">For those seeking an upscale, restaurant-quality dining experience, our plated service delivers individually crafted meals directly to each guest. Every plate is artfully prepared and customized to dietary preferences, creating an elegant presentation that's perfect for formal events, wedding receptions, and business dinners.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #27ae60, #229954); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">🔥 Churrasco Experience</h2>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Churrasco, meaning \"Brazilian Barbecue,\" elevates our traditional buffet service with the excitement of live grilling. Our skilled chefs prepare fresh meats and vegetables on-site, filling the air with the intoxicating aroma of authentic Brazilian spices and seasonings. This popular upgrade transforms your event into a sensory experience that guests will remember.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 40px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 2px solid #d4a574;\">\n        <div style=\"background: linear-gradient(135deg, #d4a574, #c9955e); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">⭐ Rodizio Service</h2>\n          <div style=\"font-size: 12px; background-color: rgba(255,255,255,0.2); display: inline-block; padding: 4px 12px; border-radius: 20px; margin-top: 8px; font-weight: 500;\">OUR SIGNATURE</div>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Our signature Rodizio service is what Comeketo is truly known for – an authentic Brazilian steakhouse experience brought directly to your event. Combined with our churrasco grilling, our Gauchos circulate throughout your venue carrying impressive skewers of perfectly grilled meats. They carve fresh portions tableside, ensuring each guest receives meat cooked to their exact preference.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"text-align: center; background: linear-gradient(135deg, #2c3e50, #34495e); padding: 35px 25px; border-radius: 12px; margin-bottom: 40px;\">\n        <h3 style=\"color: white; font-size: 24px; margin: 0 0 15px 0; font-weight: 600;\">Ready to Create Something Special? ✨</h3>\n        <p style=\"color: #bdc3c7; margin: 0; font-size: 16px;\">Contact Comeketo today to discuss which catering style will make your celebration truly unforgettable.</p>\n      </div>\n\n    </div>\n\n    \n    <div style=\"background-color: #2c3e50; padding: 30px; text-align: center; color: #bdc3c7;\">\n      <div style=\"margin-bottom: 20px;\">\n        <h4 style=\"color: #d4a574; margin: 0 0 10px 0; font-size: 18px; font-weight: 600;\">Comeketo Catering</h4>\n        <p style=\"margin: 0; font-size: 14px; line-height: 1.6;\">199 Main Street<br>Fitchburg, MA</p>\n      </div>\n      \n      <div style=\"margin-bottom: 20px;\">\n        <p style=\"margin: 0; font-size: 14px; line-height: 1.5; color: #95a5a6; font-style: italic;\">This is an unmonitored inbox, for help, questions, or more details, please contact your catering consultant</p>\n      </div>\n      \n      <div style=\"border-top: 1px solid #34495e; padding-top: 20px;\">\n        <a style=\"color: #95a5a6; text-decoration: none; font-size: 12px; padding: 8px 16px; border: 1px solid #34495e; border-radius: 20px; display: inline-block;\" href=\"%unsubscribe_url%\" target=\"_blank\" rel=\"noopener noreferrer\">Unsubscribe</a>\n      </div>\n    </div>\n\n  </div>\n\n\n<span data-system-generated=\"signature\"><br><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div>Love &amp; Confetti,</div><div><br></div><div><strong><span style=\"font-size: 1.3em; background-color: rgb(250, 229, 157);\">🌺 Rhonna C. Ricafort </span></strong><br>Catering Sales Manager<br><br><strong>🔥 Eufy/Camila/ Cath</strong><br>Catering Support <br><strong>Comeketo Catering</strong><br>📘<a href=\"https://www.facebook.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Facebook</a> | 📸 <a href=\"https://instagram.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Instagram</a> | 🌐 <a href=\"https://comeketocatering.com/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Website</a></div><div>📲 My Direct: (978) 678 3739</div><div><div>📲 Catering Main: <a href=\"tel:9783811212\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">(978) 381-1212</a><br><br><br></div></div></span><span data-system-generated=\"unsubscribe-footer\"><p></p><div style=\"font-size: 11px; color: gray\">To stop receiving these emails, click <a href=\"https://app.close.com/go/unsubscribe/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/laine_demoura%40hotmail.com/8VH-0yENuEL3jW48HWq9qWQ8j_HiKPxED-11cpSbuUY=/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">here</a></div></span>"
+          }
+        ],
+        "date_scheduled": null,
+        "references": [],
+        "need_smtp_credentials": false,
+        "sender": "Rhonna Ricafort <contact@comeketocatering.com>",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "opens": [],
+        "template_id": "tmpl_c9MFeqCXFU5eEHS23zZS5rhjNienj6Go2dz0MAH4Psk",
+        "send_as_id": null,
+        "agent_config_id": null,
+        "body_html": "\n  \n  \n  <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\">\n    \n    \n    <div style=\"text-align: center; padding: 30px 20px; background: linear-gradient(135deg, #d4a574 0%, #c9955e 100%);\">\n      <img style=\"max-width: 300px; width: 100%; height: auto; display: block; margin: 0 auto;\" alt=\"Comeketo Catering Logo\" src=\"https://comeketocatering.com/wp-content/uploads/2025/01/LOGO_WEB.png\">\n    </div>\n\n    \n    <div style=\"text-align: center;\">\n      <img style=\"width: 100%; height: auto; display: block;\" alt=\"Catering Types\" src=\"https://comeketocatering.com/wp-content/uploads/2025/06/Header_cateringTypes.jpg\">\n    </div>\n\n    \n    <div style=\"padding: 40px 30px;\">\n      \n      \n      <div style=\"text-align: center; margin-bottom: 40px;\">\n        <h1 style=\"font-size: 28px; font-weight: 700; color: #2c3e50; margin: 0 0 15px 0; line-height: 1.3;\">Understanding Our Catering Services 🍽️</h1>\n        <div style=\"width: 60px; height: 3px; background: linear-gradient(90deg, #d4a574, #c9955e); margin: 0 auto 20px auto; border-radius: 2px;\"></div>\n        <p style=\"font-size: 18px; color: #7f8c8d; margin: 0; font-weight: 300;\">Which Style Is Right for Your Event?</p>\n      </div>\n\n      \n      <div style=\"background-color: #f8f9fa; padding: 25px; border-radius: 12px; margin-bottom: 40px; border-left: 4px solid #d4a574;\">\n        <p style=\"margin: 0; font-size: 16px; color: #5a6c7d; line-height: 1.7;\">One of the most frequent questions we receive at Comeketo is about the distinctions between our various catering styles. Each service is thoughtfully designed to create a unique dining experience that matches your event's atmosphere, budget, and guest preferences.</p>\n      </div>\n\n      \n      \n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #3498db, #2980b9); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">💼 Drop-off Catering</h2>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Perfect for casual gatherings and budget-conscious events, our drop-off service delivers restaurant-quality food directly to your venue. Choose from our economical tray presentation for intimate gatherings, or elevate the experience with elegant wire chafers and warming sternos that keep your food at the perfect temperature throughout your event.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #e74c3c, #c0392b); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">🍴 Buffet Service</h2>\n          <div style=\"font-size: 12px; background-color: rgba(255,255,255,0.2); display: inline-block; padding: 4px 12px; border-radius: 20px; margin-top: 8px; font-weight: 500;\">MOST POPULAR</div>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Our most popular catering style transforms your venue into a welcoming feast where guests can explore our diverse menu at their own pace. Our experienced team arrives early to create an attractive buffet display, then remains throughout your meal service to ensure chafers stay fully stocked with fresh, hot food. We handle all breakdown and cleaning, leaving you free to enjoy your guests.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #f39c12, #e67e22); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">👨‍👩‍👧‍👦 Family Style Service</h2>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Experience the warmth of a traditional family dinner with our family style service. We present generous, shareable platters at each table, encouraging conversation and connection as guests pass dishes and serve one another. This communal dining approach creates a cozy, home-like atmosphere that's particularly wonderful for celebrations, corporate dinners, and intimate gatherings.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #9b59b6, #8e44ad); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">🍽️ Plated Service</h2>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">For those seeking an upscale, restaurant-quality dining experience, our plated service delivers individually crafted meals directly to each guest. Every plate is artfully prepared and customized to dietary preferences, creating an elegant presentation that's perfect for formal events, wedding receptions, and business dinners.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 35px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);\">\n        <div style=\"background: linear-gradient(135deg, #27ae60, #229954); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">🔥 Churrasco Experience</h2>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Churrasco, meaning \"Brazilian Barbecue,\" elevates our traditional buffet service with the excitement of live grilling. Our skilled chefs prepare fresh meats and vegetables on-site, filling the air with the intoxicating aroma of authentic Brazilian spices and seasonings. This popular upgrade transforms your event into a sensory experience that guests will remember.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"margin-bottom: 40px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 2px solid #d4a574;\">\n        <div style=\"background: linear-gradient(135deg, #d4a574, #c9955e); padding: 20px; color: white;\">\n          <h2 style=\"margin: 0; font-size: 22px; font-weight: 600;\">⭐ Rodizio Service</h2>\n          <div style=\"font-size: 12px; background-color: rgba(255,255,255,0.2); display: inline-block; padding: 4px 12px; border-radius: 20px; margin-top: 8px; font-weight: 500;\">OUR SIGNATURE</div>\n        </div>\n        <div style=\"padding: 25px; background-color: #ffffff;\">\n          <p style=\"margin: 0; font-size: 15px; line-height: 1.7; color: #5a6c7d;\">Our signature Rodizio service is what Comeketo is truly known for – an authentic Brazilian steakhouse experience brought directly to your event. Combined with our churrasco grilling, our Gauchos circulate throughout your venue carrying impressive skewers of perfectly grilled meats. They carve fresh portions tableside, ensuring each guest receives meat cooked to their exact preference.</p>\n        </div>\n      </div>\n\n      \n      <div style=\"text-align: center; background: linear-gradient(135deg, #2c3e50, #34495e); padding: 35px 25px; border-radius: 12px; margin-bottom: 40px;\">\n        <h3 style=\"color: white; font-size: 24px; margin: 0 0 15px 0; font-weight: 600;\">Ready to Create Something Special? ✨</h3>\n        <p style=\"color: #bdc3c7; margin: 0; font-size: 16px;\">Contact Comeketo today to discuss which catering style will make your celebration truly unforgettable.</p>\n      </div>\n\n    </div>\n\n    \n    <div style=\"background-color: #2c3e50; padding: 30px; text-align: center; color: #bdc3c7;\">\n      <div style=\"margin-bottom: 20px;\">\n        <h4 style=\"color: #d4a574; margin: 0 0 10px 0; font-size: 18px; font-weight: 600;\">Comeketo Catering</h4>\n        <p style=\"margin: 0; font-size: 14px; line-height: 1.6;\">199 Main Street<br>Fitchburg, MA</p>\n      </div>\n      \n      <div style=\"margin-bottom: 20px;\">\n        <p style=\"margin: 0; font-size: 14px; line-height: 1.5; color: #95a5a6; font-style: italic;\">This is an unmonitored inbox, for help, questions, or more details, please contact your catering consultant</p>\n      </div>\n      \n      <div style=\"border-top: 1px solid #34495e; padding-top: 20px;\">\n        <a style=\"color: #95a5a6; text-decoration: none; font-size: 12px; padding: 8px 16px; border: 1px solid #34495e; border-radius: 20px; display: inline-block;\" href=\"%unsubscribe_url%\" target=\"_blank\" rel=\"noopener noreferrer\">Unsubscribe</a>\n      </div>\n    </div>\n\n  </div>\n\n\n<span data-system-generated=\"signature\"><br><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div>Love &amp; Confetti,</div><div><br></div><div><strong><span style=\"font-size: 1.3em; background-color: rgb(250, 229, 157);\">🌺 Rhonna C. Ricafort </span></strong><br>Catering Sales Manager<br><br><strong>🔥 Eufy/Camila/ Cath</strong><br>Catering Support <br><strong>Comeketo Catering</strong><br>📘<a href=\"https://www.facebook.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Facebook</a> | 📸 <a href=\"https://instagram.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Instagram</a> | 🌐 <a href=\"https://comeketocatering.com/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Website</a></div><div>📲&nbsp;My Direct:&nbsp;(978) 678 3739</div><div><div>📲&nbsp;Catering Main:&nbsp;<a href=\"tel:9783811212\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">(978) 381-1212</a><br><br><br></div></div></span><span data-system-generated=\"unsubscribe-footer\"><p><div style=\"font-size: 11px; color: gray\">To stop receiving these emails, click <a href=\"https://app.close.com/go/unsubscribe/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/laine_demoura%40hotmail.com/8VH-0yENuEL3jW48HWq9qWQ8j_HiKPxED-11cpSbuUY=/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">here</a></div></p></span>",
+        "date_created": "2026-04-13T20:31:10.636000+00:00",
+        "user_name": "Rhonna Ricafort",
+        "followup_sequence_add_cc_bcc": false,
+        "updated_by": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo"
+      },
+      {
+        "status": "sent",
+        "sequence_subscription_id": null,
+        "followup_sequence_id": null,
+        "body_text_quoted": [
+          {
+            "expand": true,
+            "text": "Laine take a look at the quote I built for you just now!\n\n  \n\nEu coloquei tudo que poderia pra que ficasse um pouco acima de 10 e um pouco\nabaixo de 15 pra te dar room to play with it.  \n  \n![image.png](cid:fc68-e4f7-e70f)  \n  \n\n![image.png](cid:a3ef-7e8c-130e)\n\nYour Comeketo Catering Quote is Attached!  \n  \nTo move forward, secure your date,  \n  \n\nand lock in pricing, just reply with any changes\n\n  \n\nor let us know if it’s approved,\n\n  \n\nand we’ll send the catering agreement.  \n  \n\n  \n\n  \n\nNot sure about final details?\n\n  \n\nThat's totally fine!\n\n  \n\nMany customers secure their date\n\n  \n\nand pricing with a smaller package,\n\n  \n\nadding services as plans are finalized.  \n  \n  \n\n**Here are the next steps,**  \n✅ Approve or modify the attached quote within 14 days  \n✅ We’ll send a Catering Agreement and Deposit Request  \n✅ For new (1st time) venues, we’ll connect with them as well\n\n  \n\n  \n\nEither way,  \nExcited to work together, and let me know what modifications (if any) you'd\nlike to make!  \n  \n  \n  \n**P.S.** The second half of your quote lists optional services that may be\nhelpful for events like yours.  \n  \n\n🔒 Secure your date now: our spots fill up fast, especially on weekends!\n\n  \n\n**P.S.S.** Even if your event is a year or two away, many customers appreciate\nthe peace of mind in locking in today's prices with a small package you can\nalways add more later! 🔒 Price lock is valid for **up to 2 years**.\n\n  \n\n  \n  \n  \n  \n\\-----  \nRegards,\n\n**Andre Raw**  \n _​​_ Catering Event Coordinator\n\n📲 C: [(978) 235-3791](tel:19782353791)\n\n📲 W: [(978) 381-1212](tel:9783811212)  \n[Facebook](https://www.facebook.com/comeketocatering) | [Instagram](https://instagram.com/comeketocatering) | [Website](https://comeketocatering.com/)"
+          }
+        ],
+        "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "date_updated": "2026-04-13T19:54:20.076000+00:00",
+        "date_sent": "2026-04-13T19:49:12.671000+00:00",
+        "sequence_name": null,
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "to": [
+          "laine_demoura@hotmail.com"
+        ],
+        "thread_id": "acti_xM7iHH6VCgo3f4Hh8jQxf7YjStw0bQHlYyFqKNvRGEQ",
+        "activity_at": "2026-04-13T19:49:12.671000+00:00",
+        "users": [],
+        "ai_draft": null,
+        "in_reply_to_id": null,
+        "message_ids": [
+          "<177610975333.7.4804583569460740529@smtpgw.close.com>",
+          "<177610975333.7.5828515662883143221@smtpgw.close.com>"
+        ],
+        "updated_by_name": "Andre Raw",
+        "attachments": [
+          {
+            "size": 783953,
+            "content_type": "application/pdf",
+            "filename": "Laine Martins - Google Sheets.pdf",
+            "content_id": null,
+            "inline_only": false,
+            "url": "https://app.close.com/go/file/persisted/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/activity.email/acti_hSfO8sCFsnzCZxLqaEYvpf8KvyxQONRoVzEDq15TdZn/2db5e4OxOqbIqgGJfQfyYK/LaineMartins-GoogleSheets.pdf/"
+          },
+          {
+            "size": 43979,
+            "content_type": "image/png",
+            "filename": "image.png",
+            "content_id": "fc68-e4f7-e70f",
+            "inline_only": true,
+            "url": "https://app.close.com/go/file/persisted/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/activity.email/acti_hSfO8sCFsnzCZxLqaEYvpf8KvyxQONRoVzEDq15TdZn/7jAnhwSAJ6pcxDvuGKqQyx/image.png/",
+            "thumbnail_url": "https://app.close.com/go/file/persisted/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/activity.email/acti_hSfO8sCFsnzCZxLqaEYvpf8KvyxQONRoVzEDq15TdZn/7jAnhwSAJ6pcxDvuGKqQyx/image.png/thumbnail/"
+          },
+          {
+            "size": 57023,
+            "content_type": "image/png",
+            "filename": "image.png",
+            "content_id": "a3ef-7e8c-130e",
+            "inline_only": true,
+            "url": "https://app.close.com/go/file/persisted/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/activity.email/acti_hSfO8sCFsnzCZxLqaEYvpf8KvyxQONRoVzEDq15TdZn/0WMZDaef4Rb8te4IGrsGV2/image.png/",
+            "thumbnail_url": "https://app.close.com/go/file/persisted/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/activity.email/acti_hSfO8sCFsnzCZxLqaEYvpf8KvyxQONRoVzEDq15TdZn/0WMZDaef4Rb8te4IGrsGV2/image.png/thumbnail/"
+          }
+        ],
+        "subject": "🔒 Quote Laine",
+        "has_reply": false,
+        "envelope": {
+          "date": "Mon, 13 Apr 2026 19:49:13 +0000",
+          "subject": "🔒 Quote Laine",
+          "from": [
+            {
+              "email": "team@comeketocatering.com",
+              "name": "Andre Raw"
+            }
+          ],
+          "sender": [
+            {
+              "email": "team@comeketocatering.com",
+              "name": "Andre Raw"
+            }
+          ],
+          "reply_to": [],
+          "to": [
+            {
+              "email": "laine_demoura@hotmail.com",
+              "name": ""
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "in_reply_to": null,
+          "message_id": "<177610975333.7.5828515662883143221@smtpgw.close.com>",
+          "is_autoreply": false
+        },
+        "body_preview": "Laine take a look at the quote I built for you just now! Eu coloquei tudo que poderia pra que ficasse um pouco acima de 10 e um pouco\nabaixo de 15 pra te dar room to play with it. ![image.png](cid:fc6",
+        "email_account_id": "emailacct_V698oi1uFg2nnhvbdLhaItEGsTdNCmlQUEla8QF32rZ",
+        "bcc": [],
+        "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "id": "acti_hSfO8sCFsnzCZxLqaEYvpf8KvyxQONRoVzEDq15TdZn",
+        "created_by_name": "Andre Raw",
+        "body_text": "Laine take a look at the quote I built for you just now!\n\n  \n\nEu coloquei tudo que poderia pra que ficasse um pouco acima de 10 e um pouco\nabaixo de 15 pra te dar room to play with it.  \n  \n![image.png](cid:fc68-e4f7-e70f)  \n  \n\n![image.png](cid:a3ef-7e8c-130e)\n\nYour Comeketo Catering Quote is Attached!  \n  \nTo move forward, secure your date,  \n  \n\nand lock in pricing, just reply with any changes\n\n  \n\nor let us know if it’s approved,\n\n  \n\nand we’ll send the catering agreement.  \n  \n\n  \n\n  \n\nNot sure about final details?\n\n  \n\nThat's totally fine!\n\n  \n\nMany customers secure their date\n\n  \n\nand pricing with a smaller package,\n\n  \n\nadding services as plans are finalized.  \n  \n  \n\n**Here are the next steps,**  \n✅ Approve or modify the attached quote within 14 days  \n✅ We’ll send a Catering Agreement and Deposit Request  \n✅ For new (1st time) venues, we’ll connect with them as well\n\n  \n\n  \n\nEither way,  \nExcited to work together, and let me know what modifications (if any) you'd\nlike to make!  \n  \n  \n  \n**P.S.** The second half of your quote lists optional services that may be\nhelpful for events like yours.  \n  \n\n🔒 Secure your date now: our spots fill up fast, especially on weekends!\n\n  \n\n**P.S.S.** Even if your event is a year or two away, many customers appreciate\nthe peace of mind in locking in today's prices with a small package you can\nalways add more later! 🔒 Price lock is valid for **up to 2 years**.\n\n  \n\n  \n  \n  \n  \n\\-----  \nRegards,\n\n**Andre Raw**  \n _​​_ Catering Event Coordinator\n\n📲 C: [(978) 235-3791](tel:19782353791)\n\n📲 W: [(978) 381-1212](tel:9783811212)  \n[Facebook](https://www.facebook.com/comeketocatering) | [Instagram](https://instagram.com/comeketocatering) | [Website](https://comeketocatering.com/)",
+        "sequence_id": null,
+        "template_name": "🔒 Quote",
+        "agent_action_reason": null,
+        "send_attempts": [],
+        "opens_summary": "Opened by laine_demoura@hotmail.com (2026-04-13)",
+        "bulk_email_action_id": null,
+        "_type": "Email",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "cc": [],
+        "direction": "outgoing",
+        "followup_sequence_delay": null,
+        "body_html_quoted": [
+          {
+            "expand": true,
+            "html": "<div>Laine take a look at the quote I built for you just now! </div><div><br></div><div>Eu coloquei tudo que poderia pra que ficasse um pouco acima de 10 e um pouco abaixo de 15 pra te dar room to play with it. <br><br><img src=\"cid:fc68-e4f7-e70f\" alt=\"image.png\" style=\"width: 726px; height: 422.793px;\"><br><br></div><div><img src=\"cid:a3ef-7e8c-130e\" alt=\"image.png\" style=\"width: 728px; height: 249.109px;\"></div><div>Your Comeketo Catering Quote is Attached!<br><br>To move forward, secure your date, <br><br></div><div>and lock in pricing, just reply with any changes</div><div><br></div><div>or let us know if it’s approved,</div><div><br></div><div>and we’ll send the catering agreement.<br><br></div><div><br></div><div><br></div><div>Not sure about final details?</div><div><br></div><div>That's totally fine!</div><div><br></div><div>Many customers secure their date</div><div><br></div><div>and pricing with a smaller package,</div><div><br></div><div>adding services as plans are finalized.<br><br><br></div><div><strong>Here are the next steps, </strong><br>✅ Approve or modify the attached quote within 14 days<br>✅ We’ll send a Catering Agreement and Deposit Request<br>✅ For new (1st time) venues, we’ll connect with them as well</div><div><br></div><div><br></div><div>Either way, <br>Excited to work together, and let me know what modifications (if any) you'd like to make!<br><br><br><br><strong>P.S.</strong> The second half of your quote lists optional services that may be helpful for events like yours. <br><br></div><div><div><div><div>🔒 Secure your date now: our spots fill up fast, especially on weekends!</div><div><br></div></div></div></div><div><strong>P.S.S. </strong>Even if your event is a year or two away, many customers appreciate the peace of mind in locking in today's prices with a small package you can always add more later! 🔒 Price lock is valid for <strong>up to 2 years</strong>.</div><div><br></div><div dir=\"ltr\"><div style=\"color: rgb(34, 34, 34);\"><div style='margin: 8px 0px 0px; padding: 0px; overflow-x: hidden; font-family: \"Google Sans\", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;'><div><div dir=\"ltr\"><div dir=\"ltr\"><div dir=\"ltr\"><div><div><div><span data-system-generated=\"signature\"><br><br><br><br>-----<br>Regards,</span></div></div><div><div><strong><span data-system-generated=\"signature\">Andre Raw</span></strong><span data-system-generated=\"signature\"><br></span><em><span style=\"font-size: large;\"><span data-system-generated=\"signature\">​​</span></span></em><span data-system-generated=\"signature\">Catering Event Coordinator</span></div></div><div><div><span style=\"color: rgb(34, 34, 34);\"><span data-system-generated=\"signature\">📲 </span></span><span data-system-generated=\"signature\">C: </span><a href=\"tel:19782353791\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">(978) 235-3791</span></a></div></div><div><div><span data-system-generated=\"signature\">📲 W: </span><a href=\"tel:9783811212\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">(978) 381-1212</span></a><span data-system-generated=\"signature\"><br></span><a href=\"https://www.facebook.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">Facebook</span></a><span data-system-generated=\"signature\"> | </span><a href=\"https://instagram.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">Instagram</span></a><span data-system-generated=\"signature\"> | </span><a href=\"https://comeketocatering.com/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">Website</span></a></div></div></div></div></div></div><div><br></div><div><br></div></div></div><div style='font-family: \"Google Sans\", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;'><br></div></div></div>"
+          }
+        ],
+        "date_scheduled": null,
+        "references": [],
+        "need_smtp_credentials": false,
+        "sender": "Andre Raw <team@comeketocatering.com>",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "opens": [
+          {
+            "opened_at": "2026-04-13T19:54:20.076000+00:00",
+            "opened_by": "laine_demoura@hotmail.com",
+            "ip_address": "146.75.252.0",
+            "user_agent": "Mozilla/5.0"
+          }
+        ],
+        "template_id": "tmpl_snenlhJ5C7NDQGWG6megMDwnFknkzV4BZNmmRqZHKLn",
+        "send_as_id": null,
+        "agent_config_id": null,
+        "body_html": "<div>Laine take a look at the quote I built for you just now! </div><div><br></div><div>Eu coloquei tudo que poderia pra que ficasse um pouco acima de 10 e um pouco abaixo de 15 pra te dar room to play with it. <br><br><img src=\"cid:fc68-e4f7-e70f\" alt=\"image.png\" style=\"width: 726px; height: 422.793px;\"><br><br></div><div><img src=\"cid:a3ef-7e8c-130e\" alt=\"image.png\" style=\"width: 728px; height: 249.109px;\"></div><div>Your Comeketo Catering Quote is Attached!<br><br>To move forward, secure your date, <br><br></div><div>and lock in pricing, just reply with any changes</div><div><br></div><div>or let us know if it’s approved,</div><div><br></div><div>and we’ll send the catering agreement.<br><br></div><div><br></div><div><br></div><div>Not sure about final details?</div><div><br></div><div>That's totally fine!</div><div><br></div><div>Many customers secure their date</div><div><br></div><div>and pricing with a smaller package,</div><div><br></div><div>adding services as plans are finalized.<br><br><br></div><div><strong>Here are the next steps, </strong><br>✅ Approve or modify the attached quote within 14 days<br>✅ We’ll send a Catering Agreement and Deposit Request<br>✅ For new (1st time) venues, we’ll connect with them as well</div><div><br></div><div><br></div><div>Either way, <br>Excited to work together, and let me know what modifications (if any) you'd like to make!<br><br><br><br><strong>P.S.</strong> The second half of your quote lists optional services that may be helpful for events like yours. <br><br></div><div><div><div><div>🔒 Secure your date now: our spots fill up fast, especially on weekends!</div><div><br></div></div></div></div><div><strong>P.S.S. </strong>Even if your event is a year or two away, many customers appreciate the peace of mind in locking in today's prices with a small package you can always add more later! 🔒 Price lock is valid for <strong>up to 2 years</strong>.</div><div><br></div><div dir=\"ltr\"><div style=\"color: rgb(34, 34, 34);\"><div style=\"margin: 8px 0px 0px; padding: 0px; overflow-x: hidden; font-family: &quot;Google Sans&quot;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;\"><div><div dir=\"ltr\"><div dir=\"ltr\"><div dir=\"ltr\"><div><div><div><span data-system-generated=\"signature\"><br><br><br><br>-----<br>Regards,</span></div></div><div><div><strong><span data-system-generated=\"signature\">Andre Raw</span></strong><span data-system-generated=\"signature\"><br></span><em><span style=\"font-size: large;\"><span data-system-generated=\"signature\">​​</span></span></em><span data-system-generated=\"signature\">Catering Event Coordinator</span></div></div><div><div><span style=\"color: rgb(34, 34, 34);\"><span data-system-generated=\"signature\">📲&nbsp;</span></span><span data-system-generated=\"signature\">C:&nbsp;</span><a href=\"tel:19782353791\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">(978) 235-3791</span></a></div></div><div><div><span data-system-generated=\"signature\">📲&nbsp;W:&nbsp;</span><a href=\"tel:9783811212\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">(978) 381-1212</span></a><span data-system-generated=\"signature\"><br></span><a href=\"https://www.facebook.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">Facebook</span></a><span data-system-generated=\"signature\">&nbsp;|&nbsp;</span><a href=\"https://instagram.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">Instagram</span></a><span data-system-generated=\"signature\">&nbsp;|&nbsp;</span><a href=\"https://comeketocatering.com/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\" style=\"color: rgb(17, 85, 204);\"><span data-system-generated=\"signature\">Website</span></a></div></div></div></div></div></div><div><br></div><div><br></div></div></div><div style=\"font-family: &quot;Google Sans&quot;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;\"><br></div></div></div>",
+        "date_created": "2026-04-13T19:45:32.123000+00:00",
+        "user_name": "Andre Raw",
+        "followup_sequence_add_cc_bcc": false,
+        "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt"
+      },
+      {
+        "status": "outbox",
+        "sequence_subscription_id": "sub_0PmQz68a1wMC9xRlPQwfq4",
+        "followup_sequence_id": null,
+        "body_text_quoted": [
+          {
+            "expand": true,
+            "text": "Hey Laine,  \n  \nJust shooting you this quick email,  \nwe got your request for more catering info,  \nand our event planner will connect shortly.\n\n  \n❤️ - Comeketo Catering\n\n  \n\n  \n\n  \n\np.s. check out [this quick video](https://dom-12.wistia.com/medias/bu7v9ttoaa)\nto see what's in store when you select our Brazilian BBQ Option\n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n[![email_photo.jpeg](cid:2c29-00e4-b267)](https://dom-12.wistia.com/medias/bu7v9ttoaa)\n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\nLove & Confetti,\n\n  \n\n**🌺 Rhonna C. Ricafort**  \nCatering Sales Manager  \n  \n**🔥 Eufy/Camila/ Cath**  \nCatering Support  \n**Comeketo Catering**  \n📘[Facebook](https://www.facebook.com/comeketocatering) | 📸 [Instagram](https://instagram.com/comeketocatering) | 🌐 [Website](https://comeketocatering.com/)\n\n📲 My Direct: (978) 678 3739\n\n📲 Catering Main: [(978) 381-1212](tel:9783811212)  \n  \n  \n\nTo stop receiving these emails, click\n[here](https://app.close.com/go/unsubscribe/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/laine_demoura%40hotmail.com/8VH-0yENuEL3jW48HWq9qWQ8j_HiKPxED-11cpSbuUY=/)"
+          }
+        ],
+        "user_id": "user_CUH7ddlLe50fkckpnBqndk8HYyEfGpa0ldxggccxqPo",
+        "date_updated": "2026-04-13T19:15:08.268000+00:00",
+        "date_sent": null,
+        "sequence_name": "FB Ads - Standard Generic Hello EMail & SMS (Email Only)",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "to": [
+          "Laine Martins <laine_demoura@hotmail.com>"
+        ],
+        "thread_id": "acti_7VEpzaECHrZm89qdvc89H2vglyTQXiwpfmHVMqpTxRB",
+        "activity_at": "2026-04-13T19:15:08.214000+00:00",
+        "users": [],
+        "ai_draft": null,
+        "in_reply_to_id": null,
+        "message_ids": [],
+        "updated_by_name": null,
+        "attachments": [
+          {
+            "size": 226836,
+            "content_type": "image/jpeg",
+            "filename": "email_photo.jpeg",
+            "content_id": "2c29-00e4-b267",
+            "inline_only": true,
+            "url": "https://app.close.com/go/file/persisted/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/activity.email/acti_NGcRYZ2xtbkLTnnzdwUaG41tFK4oNoCX6B0zQigalID/5JESTXXB4Gy0fV6BJA9YSw/email_photo.jpeg/",
+            "thumbnail_url": "https://app.close.com/go/file/persisted/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/activity.email/acti_NGcRYZ2xtbkLTnnzdwUaG41tFK4oNoCX6B0zQigalID/5JESTXXB4Gy0fV6BJA9YSw/email_photo.jpeg/thumbnail/"
+          }
+        ],
+        "subject": "[✅ CATERING] You're in Laine! ",
+        "has_reply": false,
+        "envelope": {
+          "date": null,
+          "subject": "[✅ CATERING] You're in Laine! ",
+          "from": [
+            {
+              "email": "contact@comeketocatering.com",
+              "name": "Rhonna Ricafort"
+            }
+          ],
+          "sender": [
+            {
+              "email": "contact@comeketocatering.com",
+              "name": "Rhonna Ricafort"
+            }
+          ],
+          "reply_to": [],
+          "to": [
+            {
+              "email": "laine_demoura@hotmail.com",
+              "name": "Laine Martins"
+            }
+          ],
+          "cc": [],
+          "bcc": [],
+          "in_reply_to": null,
+          "message_id": null,
+          "is_autoreply": false
+        },
+        "body_preview": "Hey Laine, Just shooting you this quick email, we got your request for more catering info, and our event planner will connect shortly. ❤️ - Comeketo Catering p.s. check out [this quick video](https://",
+        "email_account_id": "emailacct_tkNb5HhoInChNHgmXEcAnZfoZQ51R6wPh1bgWSQ6gwm",
+        "bcc": [],
+        "created_by": null,
+        "id": "acti_NGcRYZ2xtbkLTnnzdwUaG41tFK4oNoCX6B0zQigalID",
+        "created_by_name": null,
+        "body_text": "Hey Laine,  \n  \nJust shooting you this quick email,  \nwe got your request for more catering info,  \nand our event planner will connect shortly.\n\n  \n❤️ - Comeketo Catering\n\n  \n\n  \n\n  \n\np.s. check out [this quick video](https://dom-12.wistia.com/medias/bu7v9ttoaa)\nto see what's in store when you select our Brazilian BBQ Option\n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\n[![email_photo.jpeg](cid:2c29-00e4-b267)](https://dom-12.wistia.com/medias/bu7v9ttoaa)\n\n  \n\n  \n\n  \n\n  \n\n  \n\n  \n\nLove & Confetti,\n\n  \n\n**🌺 Rhonna C. Ricafort**  \nCatering Sales Manager  \n  \n**🔥 Eufy/Camila/ Cath**  \nCatering Support  \n**Comeketo Catering**  \n📘[Facebook](https://www.facebook.com/comeketocatering) | 📸 [Instagram](https://instagram.com/comeketocatering) | 🌐 [Website](https://comeketocatering.com/)\n\n📲 My Direct: (978) 678 3739\n\n📲 Catering Main: [(978) 381-1212](tel:9783811212)  \n  \n  \n\nTo stop receiving these emails, click\n[here](https://app.close.com/go/unsubscribe/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/laine_demoura%40hotmail.com/8VH-0yENuEL3jW48HWq9qWQ8j_HiKPxED-11cpSbuUY=/)",
+        "sequence_id": "seq_2PIwHuOX5YpGgAbh4vKiGW",
+        "template_name": "[IMPORTANT] We got your request",
+        "agent_action_reason": null,
+        "send_attempts": [],
+        "opens_summary": null,
+        "bulk_email_action_id": null,
+        "_type": "Email",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "cc": [],
+        "direction": "outgoing",
+        "followup_sequence_delay": null,
+        "body_html_quoted": [
+          {
+            "expand": true,
+            "html": "<div>Hey Laine, <br><br>Just shooting you this quick email,<br>we got your request for more catering info,<br>and our event planner will connect shortly.</div><div><br>❤️ - Comeketo Catering</div><div><br></div><div><br></div><div><br></div><div>p.s. check out <a href=\"https://dom-12.wistia.com/medias/bu7v9ttoaa\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this quick video</a> to see what's in store when you select our Brazilian BBQ Option</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><a href=\"https://dom-12.wistia.com/medias/bu7v9ttoaa\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><img src=\"cid:2c29-00e4-b267\" alt=\"email_photo.jpeg\"></a></div><span data-system-generated=\"signature\"><br><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div>Love &amp; Confetti,</div><div><br></div><div><strong><span style=\"font-size: 1.3em; background-color: rgb(250, 229, 157);\">🌺 Rhonna C. Ricafort </span></strong><br>Catering Sales Manager<br><br><strong>🔥 Eufy/Camila/ Cath</strong><br>Catering Support <br><strong>Comeketo Catering</strong><br>📘<a href=\"https://www.facebook.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Facebook</a> | 📸 <a href=\"https://instagram.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Instagram</a> | 🌐 <a href=\"https://comeketocatering.com/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Website</a></div><div>📲 My Direct: (978) 678 3739</div><div><div>📲 Catering Main: <a href=\"tel:9783811212\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">(978) 381-1212</a><br><br><br></div></div></span><span data-system-generated=\"unsubscribe-footer\"><p></p><div style=\"font-size: 11px; color: gray\">To stop receiving these emails, click <a href=\"https://app.close.com/go/unsubscribe/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/laine_demoura%40hotmail.com/8VH-0yENuEL3jW48HWq9qWQ8j_HiKPxED-11cpSbuUY=/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">here</a></div></span>"
+          }
+        ],
+        "date_scheduled": null,
+        "references": [],
+        "need_smtp_credentials": false,
+        "sender": "Rhonna Ricafort <contact@comeketocatering.com>",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "opens": [],
+        "template_id": "tmpl_00Fz0b76VVa1s0513kjupplycwaQxUVrxihO1mvnzlW",
+        "send_as_id": null,
+        "agent_config_id": null,
+        "body_html": "<div>Hey Laine, <br><br>Just shooting you this quick email,<br>we got your request for more catering info,<br>and our event planner will connect shortly.</div><div><br>❤️ - Comeketo Catering</div><div><br></div><div><br></div><div><br></div><div>p.s. check out <a href=\"https://dom-12.wistia.com/medias/bu7v9ttoaa\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">this quick video</a> to see what's in store when you select our Brazilian BBQ Option</div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div><a href=\"https://dom-12.wistia.com/medias/bu7v9ttoaa\" target=\"_blank\" rel=\"noopener noreferrer nofollow\"><img src=\"cid:2c29-00e4-b267\" alt=\"email_photo.jpeg\"></a></div><span data-system-generated=\"signature\"><br><div><br></div><div><br></div><div><br></div><div><br></div><div><br></div><div>Love &amp; Confetti,</div><div><br></div><div><strong><span style=\"font-size: 1.3em; background-color: rgb(250, 229, 157);\">🌺 Rhonna C. Ricafort </span></strong><br>Catering Sales Manager<br><br><strong>🔥 Eufy/Camila/ Cath</strong><br>Catering Support <br><strong>Comeketo Catering</strong><br>📘<a href=\"https://www.facebook.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Facebook</a> | 📸 <a href=\"https://instagram.com/comeketocatering\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Instagram</a> | 🌐 <a href=\"https://comeketocatering.com/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Website</a></div><div>📲&nbsp;My Direct:&nbsp;(978) 678 3739</div><div><div>📲&nbsp;Catering Main:&nbsp;<a href=\"tel:9783811212\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">(978) 381-1212</a><br><br><br></div></div></span><span data-system-generated=\"unsubscribe-footer\"><p><div style=\"font-size: 11px; color: gray\">To stop receiving these emails, click <a href=\"https://app.close.com/go/unsubscribe/orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq/laine_demoura%40hotmail.com/8VH-0yENuEL3jW48HWq9qWQ8j_HiKPxED-11cpSbuUY=/\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">here</a></div></p></span>",
+        "date_created": "2026-04-13T19:15:08.214000+00:00",
+        "user_name": "Rhonna Ricafort",
+        "followup_sequence_add_cc_bcc": false,
+        "updated_by": null
+      }
+    ],
+    "sms": [
+      {
+        "cost": "1",
+        "error_message": null,
+        "user_id": null,
+        "local_country_iso": "US",
+        "user_name": null,
+        "source": "Close.io",
+        "remote_phone": "+17814857940",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "status": "inbox",
+        "updated_by": null,
+        "date_scheduled": null,
+        "agent_action_reason": null,
+        "_type": "SMS",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "direction": "inbound",
+        "created_by_name": null,
+        "attachments": [],
+        "agent_config_id": null,
+        "id": "acti_uAdQtphms97xMBIgucN3AzZzKJFumLSD5K27lgXCc2x",
+        "sequence_subscription_id": null,
+        "text": "acabei de encaminhar o email e tambem mandei uma mensagem privada pra ela. \nCreio q ela te respondera ate amanha",
+        "local_phone": "+19783811212",
+        "template_id": null,
+        "date_updated": "2026-04-13T19:59:13.913000+00:00",
+        "local_phone_formatted": "+1 978-381-1212",
+        "activity_at": "2026-04-13T19:59:13.271000+00:00",
+        "sequence_id": null,
+        "created_by": null,
+        "updated_by_name": null,
+        "date_sent": null,
+        "remote_country_iso": "US",
+        "sequence_name": null,
+        "remote_phone_formatted": "+1 781-485-7940",
+        "date_created": "2026-04-13T19:59:13.271000+00:00",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+      },
+      {
+        "cost": "1",
+        "error_message": null,
+        "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "local_country_iso": "US",
+        "user_name": "Andre Raw",
+        "source": "Close.io",
+        "remote_phone": "+17814857940",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "status": "sent",
+        "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "date_scheduled": null,
+        "agent_action_reason": null,
+        "_type": "SMS",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "direction": "outbound",
+        "created_by_name": "Andre Raw",
+        "attachments": [],
+        "agent_config_id": null,
+        "id": "acti_CJQwHvl41TeewIId2gQIdunDPmC8pHm7JCwiSTzmTTG",
+        "sequence_subscription_id": null,
+        "text": "Alguma ideia de quanto tempo pra entrar em contato?",
+        "local_phone": "+19783811212",
+        "template_id": "",
+        "date_updated": "2026-04-13T19:57:28.476000+00:00",
+        "local_phone_formatted": "+1 978-381-1212",
+        "activity_at": "2026-04-13T19:57:28.476000+00:00",
+        "sequence_id": null,
+        "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "updated_by_name": "Andre Raw",
+        "date_sent": "2026-04-13T19:57:28.476000+00:00",
+        "remote_country_iso": "US",
+        "sequence_name": null,
+        "remote_phone_formatted": "+1 781-485-7940",
+        "date_created": "2026-04-13T19:56:58.308000+00:00",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+      },
+      {
+        "cost": "1",
+        "error_message": null,
+        "user_id": null,
+        "local_country_iso": "US",
+        "user_name": null,
+        "source": "Close.io",
+        "remote_phone": "+17814857940",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "status": "inbox",
+        "updated_by": null,
+        "date_scheduled": null,
+        "agent_action_reason": null,
+        "_type": "SMS",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "direction": "inbound",
+        "created_by_name": null,
+        "attachments": [],
+        "agent_config_id": null,
+        "id": "acti_8X2fTKrR72AJvkZjRm1zooay7pAOQvh1oanDZZtndkc",
+        "sequence_subscription_id": null,
+        "text": "Thank you, I'll send this to the person that will take over and she will get in touch with you moving forward.",
+        "local_phone": "+19783811212",
+        "template_id": null,
+        "date_updated": "2026-04-13T19:55:31.977000+00:00",
+        "local_phone_formatted": "+1 978-381-1212",
+        "activity_at": "2026-04-13T19:55:31.424000+00:00",
+        "sequence_id": null,
+        "created_by": null,
+        "updated_by_name": null,
+        "date_sent": null,
+        "remote_country_iso": "US",
+        "sequence_name": null,
+        "remote_phone_formatted": "+1 781-485-7940",
+        "date_created": "2026-04-13T19:55:31.424000+00:00",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+      },
+      {
+        "cost": "2",
+        "error_message": null,
+        "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "local_country_iso": "US",
+        "user_name": "Andre Raw",
+        "source": "Close.io",
+        "remote_phone": "+17814857940",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "status": "sent",
+        "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "date_scheduled": null,
+        "agent_action_reason": null,
+        "_type": "SMS",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "direction": "outbound",
+        "created_by_name": "Andre Raw",
+        "attachments": [],
+        "agent_config_id": null,
+        "id": "acti_vhOsHkgXcKovcBnht9dPudZ8WXdEh4JiTJ18pJEXBxd",
+        "sequence_subscription_id": null,
+        "text": "Take a look at the Quote I sent you just now. \n\nLet me know the best time for us to talk to the person who will be in charge so I can get some info about TAX EXEMPT FORM.\n\nThat way we could reduce even more the quote and add other things to enhance the experience Laine :)",
+        "local_phone": "+19783811212",
+        "template_id": "",
+        "date_updated": "2026-04-13T19:50:25.706000+00:00",
+        "local_phone_formatted": "+1 978-381-1212",
+        "activity_at": "2026-04-13T19:50:25.706000+00:00",
+        "sequence_id": null,
+        "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "updated_by_name": "Andre Raw",
+        "date_sent": "2026-04-13T19:50:25.706000+00:00",
+        "remote_country_iso": "US",
+        "sequence_name": null,
+        "remote_phone_formatted": "+1 781-485-7940",
+        "date_created": "2026-04-13T19:49:02.582000+00:00",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+      },
+      {
+        "cost": "1",
+        "error_message": null,
+        "user_id": null,
+        "local_country_iso": "US",
+        "user_name": null,
+        "source": "Close.io",
+        "remote_phone": "+17814857940",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "status": "inbox",
+        "updated_by": null,
+        "date_scheduled": null,
+        "agent_action_reason": null,
+        "_type": "SMS",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "direction": "inbound",
+        "created_by_name": null,
+        "attachments": [],
+        "agent_config_id": null,
+        "id": "acti_AUPD53zlaDos2FVpaS8joNC99SpiLCAthdk3hCzPmVc",
+        "sequence_subscription_id": null,
+        "text": "right now",
+        "local_phone": "+19783811212",
+        "template_id": null,
+        "date_updated": "2026-04-13T19:17:52.119000+00:00",
+        "local_phone_formatted": "+1 978-381-1212",
+        "activity_at": "2026-04-13T19:17:51.799000+00:00",
+        "sequence_id": null,
+        "created_by": null,
+        "updated_by_name": null,
+        "date_sent": null,
+        "remote_country_iso": "US",
+        "sequence_name": null,
+        "remote_phone_formatted": "+1 781-485-7940",
+        "date_created": "2026-04-13T19:17:51.799000+00:00",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+      },
+      {
+        "cost": "1",
+        "error_message": null,
+        "user_id": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "local_country_iso": "US",
+        "user_name": "Sales Team Event Consultant Team",
+        "source": "Close.io",
+        "remote_phone": "+17814857940",
+        "contact_id": null,
+        "status": "sent",
+        "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "date_scheduled": null,
+        "agent_action_reason": null,
+        "_type": "SMS",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "direction": "outbound",
+        "created_by_name": "Sales Team Event Consultant Team",
+        "attachments": [],
+        "agent_config_id": null,
+        "id": "acti_rrR0DcNNdVNjnXuHO0VdD0veUR3vcJqGgbSxDRvCbVe",
+        "sequence_subscription_id": null,
+        "text": "What's the best time of day to give you a call?",
+        "local_phone": "+19783811212",
+        "template_id": "",
+        "date_updated": "2026-04-13T19:16:15.854000+00:00",
+        "local_phone_formatted": "+1 978-381-1212",
+        "activity_at": "2026-04-13T19:16:15.854000+00:00",
+        "sequence_id": null,
+        "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "updated_by_name": "Sales Team Event Consultant Team",
+        "date_sent": "2026-04-13T19:16:15.854000+00:00",
+        "remote_country_iso": "US",
+        "sequence_name": null,
+        "remote_phone_formatted": "+1 781-485-7940",
+        "date_created": "2026-04-13T19:16:14.259000+00:00",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+      },
+      {
+        "cost": "2",
+        "error_message": null,
+        "user_id": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "local_country_iso": "US",
+        "user_name": "Sales Team Event Consultant Team",
+        "source": "Close.io",
+        "remote_phone": "+17814857940",
+        "contact_id": null,
+        "status": "sent",
+        "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "date_scheduled": null,
+        "agent_action_reason": null,
+        "_type": "SMS",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "direction": "outbound",
+        "created_by_name": "Sales Team Event Consultant Team",
+        "attachments": [],
+        "agent_config_id": null,
+        "id": "acti_RHdG0fyIaxB08qh88HS5k46s0YD03VwFVvF6YMDG6ZZ",
+        "sequence_subscription_id": null,
+        "text": "Got your catering request Laine! We'll connect shortly. -❤️ Comeketo Catering",
+        "local_phone": "+19783811212",
+        "template_id": "",
+        "date_updated": "2026-04-13T19:15:09.420000+00:00",
+        "local_phone_formatted": "+1 978-381-1212",
+        "activity_at": "2026-04-13T19:15:09.419000+00:00",
+        "sequence_id": null,
+        "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "updated_by_name": "Sales Team Event Consultant Team",
+        "date_sent": "2026-04-13T19:15:09.419000+00:00",
+        "remote_country_iso": "US",
+        "sequence_name": null,
+        "remote_phone_formatted": "+1 781-485-7940",
+        "date_created": "2026-04-13T19:15:07.075000+00:00",
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+      }
+    ],
+    "calls": [
+      {
+        "remote_phone_formatted": "+1 781-485-7940",
+        "forwarded_to": null,
+        "user_name": "Andre Raw",
+        "outcome_autofill_reasoning": null,
+        "direction": "outbound",
+        "source": "Close.io",
+        "outcome_reason": "user-selected",
+        "id": "acti_CZ2ncixVz2VwhuRZNzoN1sxyFl9Hc9jIuwbMqmosH5M",
+        "date_answered": "2026-04-13T19:34:20.099000+00:00",
+        "playbook_reason": null,
+        "is_joinable": false,
+        "sequence_subscription_id": null,
+        "dialer_saved_search_id": null,
+        "recording_url": "https://api.close.com/call/acti_CZ2ncixVz2VwhuRZNzoN1sxyFl9Hc9jIuwbMqmosH5M/recording/",
+        "agent_config_id": null,
+        "note_mentions": [],
+        "note_html": "<body><p>yearly church gathering 300 ppl </p><p>15K </p></body>",
+        "local_phone": "+19783811212",
+        "note_date_updated": "2026-04-13T19:35:23.311000+00:00",
+        "is_to_group_number": false,
+        "users": [],
+        "cost": "7",
+        "sequence_id": null,
+        "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "is_forwarded": false,
+        "call_method": "regular",
+        "created_by_name": "Andre Raw",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "remote_country_iso": "US",
+        "transferred_from": null,
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "local_country_iso": "US",
+        "dialer_id": null,
+        "date_created": "2026-04-13T19:34:14.647000+00:00",
+        "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "notetaker_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "disposition": "answered",
+        "coach_legs": [],
+        "sequence_name": null,
+        "local_phone_formatted": "+1 978-381-1212",
+        "date_updated": "2026-04-13T19:39:49.660000+00:00",
+        "remote_phone": "+17814857940",
+        "activity_at": "2026-04-13T19:34:14.647000+00:00",
+        "outcome_id": "outcome_032ywLO9o3m7eiz43B1FdO",
+        "transferred_from_user_id": null,
+        "recording_expires_at": "2026-05-13T19:34:14.647000+00:00",
+        "status": "completed",
+        "_type": "Call",
+        "voicemail_url": null,
+        "conversation_type_reason": null,
+        "playbook_id": null,
+        "outcome_autofill_confidence": null,
+        "duration": 287,
+        "has_recording": true,
+        "voicemail_duration": 0,
+        "conversation_type_id": null,
+        "parent_meeting_id": null,
+        "updated_by_name": "Andre Raw",
+        "recording_history": [
+          {
+            "action": "auto-start-initializing",
+            "timestamp": "2026-04-13T19:34:15.814000+00:00"
+          },
+          {
+            "action": "auto-started",
+            "timestamp": "2026-04-13T19:34:19+00:00"
+          }
+        ],
+        "transferred_to": null,
+        "phone": "+17814857940",
+        "recording_duration": 284,
+        "transferred_to_user_id": null,
+        "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "note": "yearly church gathering 300 ppl\n\n15K"
+      },
+      {
+        "remote_phone_formatted": "+1 781-485-7940",
+        "forwarded_to": null,
+        "user_name": "Andre Raw",
+        "outcome_autofill_reasoning": null,
+        "direction": "outbound",
+        "source": "Close.io",
+        "outcome_reason": null,
+        "id": "acti_Og9E4OxpbYVJFrHTLTPSBMBv9xARSJOr2T28WldfWqc",
+        "date_answered": null,
+        "playbook_reason": null,
+        "is_joinable": false,
+        "sequence_subscription_id": null,
+        "dialer_saved_search_id": null,
+        "recording_url": null,
+        "agent_config_id": null,
+        "note_mentions": [],
+        "note_html": "<body><p></p></body>",
+        "local_phone": "+19783811212",
+        "note_date_updated": "2026-04-13T19:34:12.252000+00:00",
+        "is_to_group_number": false,
+        "users": [],
+        "cost": null,
+        "sequence_id": null,
+        "created_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "is_forwarded": false,
+        "call_method": "regular",
+        "created_by_name": "Andre Raw",
+        "contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+        "remote_country_iso": "US",
+        "transferred_from": null,
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "local_country_iso": "US",
+        "dialer_id": null,
+        "date_created": "2026-04-13T19:34:12.252000+00:00",
+        "updated_by": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "notetaker_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "disposition": "no-answer",
+        "coach_legs": [],
+        "sequence_name": null,
+        "local_phone_formatted": "+1 978-381-1212",
+        "date_updated": "2026-04-13T19:34:14.297000+00:00",
+        "remote_phone": "+17814857940",
+        "activity_at": "2026-04-13T19:34:12.252000+00:00",
+        "outcome_id": null,
+        "transferred_from_user_id": null,
+        "recording_expires_at": null,
+        "status": "no-answer",
+        "_type": "Call",
+        "voicemail_url": null,
+        "conversation_type_reason": null,
+        "playbook_id": null,
+        "outcome_autofill_confidence": null,
+        "duration": 0,
+        "has_recording": false,
+        "voicemail_duration": 0,
+        "conversation_type_id": null,
+        "parent_meeting_id": null,
+        "updated_by_name": "Andre Raw",
+        "recording_history": [
+          {
+            "action": "auto-start-initializing",
+            "timestamp": "2026-04-13T19:34:13.592000+00:00"
+          }
+        ],
+        "transferred_to": null,
+        "phone": "+17814857940",
+        "recording_duration": null,
+        "transferred_to_user_id": null,
+        "user_id": "user_bnfoZDGbTqBZ4wcDGqRqTwjRKiwLnQ4mpV3i2enPkMt",
+        "note": ""
+      }
+    ],
+    "notes": [
+      {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "date_created": "2026-04-13T19:25:40.662000+00:00",
+        "pinned": false,
+        "note_html": "<body><p>LIVE CHAT STARTED 04/13/26 03:25PM</p></body>",
+        "_type": "Note",
+        "user_id": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "created_by_name": "Sales Team Event Consultant Team",
+        "note_mentions": [],
+        "attachments": [],
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "activity_at": "2026-04-13T19:25:40.662000+00:00",
+        "users": [],
+        "date_updated": "2026-04-13T19:25:40.662000+00:00",
+        "title": null,
+        "contact_id": null,
+        "source": "api",
+        "user_name": "Sales Team Event Consultant Team",
+        "updated_by_name": "Sales Team Event Consultant Team",
+        "note": "LIVE CHAT STARTED 04/13/26 03:25PM",
+        "pinned_at": null,
+        "id": "acti_dnxSxOPvRRHDbHcL1i2wmUqoQuRTpRUnTQ2P7pzTloA"
+      },
+      {
+        "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "date_created": "2026-04-13T19:14:58.866000+00:00",
+        "pinned": false,
+        "note_html": "<body><p>Peabody Zip: 01960<br/>PLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI<br/><br/><br/>From Facebook Ads<br/>People 300<br/>Event Desc: Church gatherings<br/>Event Date: July<br/>Campaign Name:<br/>01. [CATER[ LF EVERGREEN - QUOTE<br/>Ad Name:<br/>[MASTER CATERING] -QUOTE-FINAL-1-14-25<br/>Form ID:<br/>1022871299837568</p></body>",
+        "_type": "Note",
+        "user_id": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "created_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "updated_by": "user_Qe4EQmudsDGv0qezgctuAWKkPHR2s0Kj5x6SgiZiHlb",
+        "created_by_name": "Sales Team Event Consultant Team",
+        "note_mentions": [],
+        "attachments": [],
+        "organization_id": "orga_pOyYOigKEELdmODukgjigCD5pTRewtmBW1yq6YXkskq",
+        "activity_at": "2026-04-13T19:14:58.866000+00:00",
+        "users": [],
+        "date_updated": "2026-04-13T19:14:58.866000+00:00",
+        "title": null,
+        "contact_id": null,
+        "source": "api",
+        "user_name": "Sales Team Event Consultant Team",
+        "updated_by_name": "Sales Team Event Consultant Team",
+        "note": "Peabody Zip: 01960\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+        "pinned_at": null,
+        "id": "acti_OBXvnhYwv6JiynEB5vV6a7fnkai5vCj7yXPWoZe61zR"
+      }
+    ]
+  },
+  "counts": {
+    "contacts": 2,
+    "opportunities": 1,
+    "tasks": 1,
+    "emails": 3,
+    "sms": 7,
+    "calls": 2,
+    "notes": 2
+  },
+  "summary": {
+    "name": "Laine Martins",
+    "status": "🔘 Maybe",
+    "primary_email": "laine_demoura@hotmail.com",
+    "primary_phone": "+17814857940",
+    "latest_email": "Understanding Our Catering Service Types",
+    "latest_sms": "acabei de encaminhar o email e tambem mandei uma mensagem privada pra ela. \nCreio q ela te respondera ate amanha",
+    "latest_call": "2026-04-13T19:34:14.647000+00:00",
+    "latest_note": "LIVE CHAT STARTED 04/13/26 03:25PM",
+    "next_task": "Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS"
+  }
+}

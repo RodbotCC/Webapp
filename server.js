@@ -34,6 +34,12 @@ const CLOSE_USER_ID  = process.env.CLOSE_USER_ID;
 const CLOSE_BASE     = 'https://api.close.com/api/v1';
 const CLOSE_AUTH     = Buffer.from(`${CLOSE_API_KEY}:`).toString('base64');
 const CRM_SOURCE     = (process.env.CRM_SOURCE || 'file-tree').toLowerCase();
+const LATTICE_EXPERIMENT_FILE = process.env.LATTICE_EXPERIMENT_FILE
+  ? path.resolve(process.env.LATTICE_EXPERIMENT_FILE)
+  : '/Users/jakeaaron/Desktop/ComeketoClose/ratio_lattice_indexed.json';
+const LATTICE_DOCTRINE_FILE = process.env.LATTICE_DOCTRINE_FILE
+  ? path.resolve(process.env.LATTICE_DOCTRINE_FILE)
+  : '/Users/jakeaaron/Downloads/ratio_lattice_v2.1_comeketo_doctrine_hardened.json';
 
 // Allow all origins including null (file:// protocol)
 app.use(cors({
@@ -299,26 +305,34 @@ app.post('/ops/note', (req, res) => {
 function closeRequest(method, endpoint, body = null) {
   return new Promise((resolve, reject) => {
     const url  = new URL(CLOSE_BASE + endpoint);
+    const hasBody = body !== null && body !== undefined;
+    const bodyJson = hasBody ? JSON.stringify(body) : '';
+    const headers = {
+      'Authorization': `Basic ${CLOSE_AUTH}`,
+      'Accept':        'application/json',
+    };
+    if (hasBody) {
+      headers['Content-Type'] = 'application/json';
+      // Close rejects chunked uploads on some write endpoints. Supplying a
+      // length makes Node send a normal buffered request body.
+      headers['Content-Length'] = Buffer.byteLength(bodyJson);
+    }
     const opts = {
       hostname: url.hostname,
       path:     url.pathname + url.search,
       method,
-      headers: {
-        'Authorization': `Basic ${CLOSE_AUTH}`,
-        'Content-Type':  'application/json',
-        'Accept':        'application/json',
-      }
+      headers,
     };
     const req = https.request(opts, res => {
       let data = '';
       res.on('data', d => data += d);
       res.on('end', () => {
-        try { resolve({ status: res.statusCode, body: JSON.parse(data) }); }
+        try { resolve({ status: res.statusCode, body: JSON.parse(data || '{}') }); }
         catch(e) { reject(new Error('Bad JSON: ' + data)); }
       });
     });
     req.on('error', reject);
-    if (body) req.write(JSON.stringify(body));
+    if (hasBody) req.write(bodyJson);
     req.end();
   });
 }
@@ -352,12 +366,13 @@ function deepMerge(target, source) {
 }
 
 function defaultSettings() {
+  const models = ['gpt-5.4-nano', 'gpt-5.4-mini', 'gpt-5.4', 'gpt-4.1-nano', 'gpt-4.1-mini', 'gpt-4.1', 'gpt-5-mini', 'gpt-5'];
   return {
     ai: {
       provider: 'openai',
       openai_api_key: '',
       model: 'gpt-5.4-nano',
-      models_available: ['gpt-5.4-nano', 'gpt-4.1-nano', 'gpt-4.1-mini', 'gpt-4.1', 'gpt-5-mini', 'gpt-5'],
+      models_available: models,
       enabled: false,
     },
     general: {
@@ -390,6 +405,585 @@ function defaultSettings() {
       last_updated: null,
     },
   };
+}
+
+const LATTICE_DIR = path.join(DATA, 'andre_close_focus', 'lattice_catalog');
+const HRMR_DIR = path.join(DATA, 'andre_close_focus', 'hrmr');
+
+function readLatticeFile(file, fallback = null) {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(LATTICE_DIR, file), 'utf8'));
+  } catch (e) {
+    return fallback;
+  }
+}
+
+function getLatticeBundle() {
+  const index = readLatticeFile('INDEX.txt', {});
+  return {
+    index,
+    leads: readLatticeFile('Leads.txt', []),
+    contacts: readLatticeFile('Contacts.txt', []),
+    opportunities: readLatticeFile('Opportunity.txt', []),
+    conversations: readLatticeFile('Conversations.txt', []),
+    tasks: readLatticeFile('Tasks:Promise.txt', []),
+    signals: readLatticeFile('Signal_event.txt', []),
+    next_best_actions: readLatticeFile('Next_best_action.txt', []),
+  };
+}
+
+function getLatticeLead(leadId) {
+  if (!leadId) return null;
+  const b = getLatticeBundle();
+  const lead = b.leads.find(l => l.lead_id === leadId);
+  if (!lead) return null;
+  return {
+    lead,
+    contacts: b.contacts.filter(c => c.lead_id === leadId),
+    opportunities: b.opportunities.filter(o => o.lead_id === leadId),
+    tasks: b.tasks.filter(t => t.lead_id === leadId),
+    signals: b.signals.filter(s => s.lead_id === leadId),
+    next_best_actions: b.next_best_actions.filter(a => a.target_object_id === leadId),
+  };
+}
+
+function getExperimentLatticeGraph() {
+  if (!fs.existsSync(LATTICE_EXPERIMENT_FILE)) {
+    throw new Error(`Experiment lattice file not found: ${LATTICE_EXPERIMENT_FILE}`);
+  }
+  const experiment = JSON.parse(fs.readFileSync(LATTICE_EXPERIMENT_FILE, 'utf8'));
+  const contacts = experiment.contacts || [];
+  const opportunities = experiment.opportunities || [];
+  const queueItems = Object.values(experiment.queues || {}).flat();
+
+  const contactsByLead = new Map();
+  for (const c of contacts) {
+    if (!contactsByLead.has(c.lead_id)) contactsByLead.set(c.lead_id, []);
+    contactsByLead.get(c.lead_id).push(c);
+  }
+  const oppsByLead = new Map();
+  for (const o of opportunities) {
+    if (!oppsByLead.has(o.lead_id)) oppsByLead.set(o.lead_id, []);
+    oppsByLead.get(o.lead_id).push(o);
+  }
+  const queueByLead = new Map();
+  for (const q of queueItems) {
+    const prev = queueByLead.get(q.lead_id);
+    if (!prev || Number(q.action_now_score || 0) > Number(prev.action_now_score || 0)) {
+      queueByLead.set(q.lead_id, q);
+    }
+  }
+
+  const rows = (experiment.leads || []).map(lead => {
+    const leadContacts = contactsByLead.get(lead.lead_id) || [];
+    const leadOpps = oppsByLead.get(lead.lead_id) || [];
+    const queue = queueByLead.get(lead.lead_id) || null;
+    const score = lead.sales_scoring || {};
+    const hasEmail = leadContacts.some(c => (c.email_addresses || []).length);
+    const hasPhone = leadContacts.some(c => (c.phone_numbers || []).length);
+    const contactability = (hasEmail ? 50 : 0) + (hasPhone ? 50 : 0);
+    const value = leadOpps.reduce((sum, o) => sum + Number(o.estimated_value || o.value || 0), 0);
+    const balanced = Math.round(
+      (Number(score.priority_score || 0) * 0.26) +
+      (Number(score.action_now_score || 0) * 0.24) +
+      (Number(score.saveability_score || 0) * 0.18) +
+      (Number(score.revenue_value || 0) * 0.12) +
+      (Number(score.close_probability || 0) * 0.10) +
+      (contactability * 0.10) -
+      (Number(score.decay_risk_score || 0) * 0.08)
+    );
+    const action = lead.next_best_action || {};
+    const reasoningTags = [
+      ...(lead.recommended_outputs?.reasoning_tags || []),
+      ...(queue?.reasoning_tags || []),
+    ];
+
+    return {
+      lead_id: lead.lead_id,
+      name: lead.display_name || lead.company_name || lead.lead_id,
+      status_label: lead.lead_status || '',
+      url: lead.url || null,
+      value,
+      contacts: leadContacts.length,
+      has_email: hasEmail,
+      has_phone: hasPhone,
+      contactability,
+      activity_volume: leadContacts.length + leadOpps.length + (lead.task_ids || []).length + (reasoningTags.length || 0),
+      tasks_open: (lead.task_ids || []).length,
+      opportunities: leadOpps.length,
+      signals: reasoningTags.slice(0, 8).map((tag, i) => ({
+        id: `${lead.lead_id}:reason:${i}`,
+        event_type: 'reasoning_tag',
+        summary: tag.replace(/_/g, ' '),
+        urgency_impact: 0,
+        momentum_impact: 0,
+        friction_impact: 0,
+        relationship_impact: 0,
+      })),
+      signal_totals: {
+        urgency: Number(score.urgency || 0),
+        momentum: Number(score.momentum || 0),
+        friction: Number(score.friction || 0),
+        relationship: Number(score.relationship_strength || 0),
+      },
+      action: {
+        next_best_action_id: queue?.queue_item_id || `${lead.lead_id}:experiment_nba`,
+        target_object_id: lead.lead_id,
+        action_type: action.action_type || queue?.recommended_next_action || lead.recommended_outputs?.recommended_next_action || 'review',
+        title: action.title || queue?.nba_title || 'Review next best action',
+        recommended_channel: action.channel || queue?.recommended_channel || lead.recommended_outputs?.recommended_channel || 'review',
+        human_review_required: Boolean(lead.derived_flags?.needs_human_review || queue?.needs_human_review),
+        reasoning: action.reasoning || queue?.nba_reasoning || '',
+        sales_scoring: score,
+      },
+      scores: {
+        balanced_lattice: balanced,
+        action_now_score: Number(score.action_now_score || 0),
+        priority_score: Number(score.priority_score || 0),
+        saveability_score: Number(score.saveability_score || 0),
+        decay_risk_score: Number(score.decay_risk_score || 0),
+        urgency: Number(score.urgency || 0),
+        momentum: Number(score.momentum || 0),
+        friction: Number(score.friction || 0),
+        relationship_strength: Number(score.relationship_strength || 0),
+        close_probability: Number(score.close_probability || 0),
+        revenue_value: Number(score.revenue_value || 0),
+        attention_cost: Number(score.attention_cost || 0),
+        next_action_clarity: Number(score.next_action_clarity || 0),
+        contactability,
+        activity_volume: leadContacts.length + leadOpps.length + (lead.task_ids || []).length + (reasoningTags.length || 0),
+      },
+    };
+  });
+
+  return {
+    _meta: {
+      generated_at: new Date().toISOString(),
+      source: 'external-experiment:ratio_lattice_indexed',
+      file: LATTICE_EXPERIMENT_FILE,
+      experiment_generated_at: experiment._meta?.generated_at || null,
+      lattice_version: experiment._meta?.lattice_version || null,
+      scoring_profile: experiment._meta?.scoring_profile || null,
+      formulas: experiment._meta?.composite_formulas || {},
+      invariants_checked: experiment._meta?.invariants_checked || [],
+    },
+    counts: {
+      leads: experiment._meta?.leads_indexed || rows.length,
+      contacts: experiment._meta?.contacts_indexed || contacts.length,
+      opportunities: experiment._meta?.opportunities_indexed || opportunities.length,
+      queues: Object.values(experiment.queues || {}).reduce((sum, q) => sum + (q?.length || 0), 0),
+    },
+    source_summary: {
+      source_data: experiment._meta?.source_data || 'external ratio lattice experiment',
+      queues: Object.fromEntries(Object.entries(experiment.queues || {}).map(([k, v]) => [k, v.length])),
+    },
+    comparators: [
+      { id: 'balanced_lattice', label: 'Balanced Lattice', description: 'Hybrid blend derived from the experiment scores plus contactability.' },
+      { id: 'action_now_score', label: 'Action Now', description: experiment._meta?.composite_formulas?.action_now_score || 'Who should move first right now.' },
+      { id: 'priority_score', label: 'Priority', description: experiment._meta?.composite_formulas?.priority_score || 'Overall priority score from the experiment.' },
+      { id: 'saveability_score', label: 'Saveability', description: experiment._meta?.composite_formulas?.saveability_score || 'How recoverable or worth saving this lead appears.' },
+      { id: 'decay_risk_score', label: 'Decay Risk', description: experiment._meta?.composite_formulas?.decay_risk_score || 'Risk that this lead decays if not handled.' },
+      { id: 'revenue_value', label: 'Revenue Value', description: 'Revenue weight in the experiment scoring model.' },
+      { id: 'close_probability', label: 'Close Probability', description: 'Likelihood this lead can close.' },
+      { id: 'urgency', label: 'Urgency', description: 'Time sensitivity from the experiment base score.' },
+      { id: 'momentum', label: 'Momentum', description: 'Current movement and engagement strength.' },
+      { id: 'relationship_strength', label: 'Relationship Strength', description: 'Relationship warmth and trust signal.' },
+      { id: 'next_action_clarity', label: 'Next Action Clarity', description: 'How obvious the next sales move is.' },
+      { id: 'attention_cost', label: 'Attention Cost', description: 'How expensive this lead is to work.' },
+      { id: 'contactability', label: 'Contactability', description: 'Whether usable email/phone coordinates exist.' },
+    ],
+    rows,
+  };
+}
+
+function normalizeQueueEntries(queues = {}) {
+  return Object.entries(queues).flatMap(([queueId, queue]) => {
+    const items = Array.isArray(queue) ? queue : (queue?.items || []);
+    return items.map(item => ({
+      ...item,
+      queue_id: queueId,
+      queue_label: queue?.label || queueId,
+      queue_purpose: queue?.doctrine_purpose || '',
+    }));
+  });
+}
+
+function getDoctrineLatticeGraph() {
+  if (!fs.existsSync(LATTICE_DOCTRINE_FILE)) {
+    throw new Error(`Doctrine lattice file not found: ${LATTICE_DOCTRINE_FILE}`);
+  }
+  const doctrine = JSON.parse(fs.readFileSync(LATTICE_DOCTRINE_FILE, 'utf8'));
+  const contacts = doctrine.contacts || [];
+  const opportunities = doctrine.opportunities || [];
+  const queueItems = normalizeQueueEntries(doctrine.queues || {});
+
+  const contactsByLead = new Map();
+  for (const c of contacts) {
+    if (!contactsByLead.has(c.lead_id)) contactsByLead.set(c.lead_id, []);
+    contactsByLead.get(c.lead_id).push(c);
+  }
+  const oppsByLead = new Map();
+  for (const o of opportunities) {
+    if (!oppsByLead.has(o.lead_id)) oppsByLead.set(o.lead_id, []);
+    oppsByLead.get(o.lead_id).push(o);
+  }
+  const queuesByLead = new Map();
+  for (const item of queueItems) {
+    if (!queuesByLead.has(item.lead_id)) queuesByLead.set(item.lead_id, []);
+    queuesByLead.get(item.lead_id).push(item);
+  }
+
+  const rows = (doctrine.leads || []).map(lead => {
+    const leadContacts = contactsByLead.get(lead.lead_id) || [];
+    const leadOpps = oppsByLead.get(lead.lead_id) || [];
+    const leadQueues = queuesByLead.get(lead.lead_id) || [];
+    const score = lead.sales_scoring || {};
+    const action = lead.next_best_action || {};
+    const hasEmail = leadContacts.some(c => (c.email_addresses || []).length);
+    const hasPhone = leadContacts.some(c => (c.phone_numbers || []).length);
+    const contactability = (hasEmail ? 50 : 0) + (hasPhone ? 50 : 0);
+    const value = leadOpps.reduce((sum, o) => sum + Number(o.estimated_value || o.value || 0), 0)
+      || Number(lead.revenue_doctrine?.estimated_deal_value || 0);
+    const tastingReadiness = Number(lead.tasting_readiness?.tasting_readiness_score || 0);
+    const venueCommitment = lead.venue_signal?.has_venue_locked ? 100
+      : lead.venue_signal?.has_location ? 55
+        : 15;
+    const sourceTrust = ({ high_trust: 100, warm_contact: 78, digital_inbound: 45, unclassified: 20 })[lead.source_intelligence?.source_quality] || 25;
+    const timelineUrgency = ({
+      immediate: 100,
+      urgent: 92,
+      near_term: 78,
+      planning_window: 62,
+      long_horizon: 28,
+      no_date: 20,
+    })[lead.event_timeline?.event_urgency_tier] || 25;
+    const todayTask = lead.andre_action_context?.andre_tasks_today?.length ? 100 : 0;
+    const exceptionPenalty = lead.has_exceptions ? Math.min(25, (lead.exception_states || []).length * 9) : 0;
+    const doctrineFit = Math.round(
+      (tastingReadiness * 0.22) +
+      (sourceTrust * 0.14) +
+      (venueCommitment * 0.12) +
+      (timelineUrgency * 0.12) +
+      (Number(score.relationship_strength || 0) * 0.14) +
+      (Number(score.next_action_clarity || 0) * 0.14) +
+      (todayTask * 0.12) -
+      exceptionPenalty
+    );
+    const balanced = Math.round(
+      (Number(score.action_now_score || 0) * 0.24) +
+      (Number(score.priority_score || 0) * 0.18) +
+      (Number(score.saveability_score || 0) * 0.14) +
+      (Number(score.close_probability || 0) * 0.10) +
+      (Number(score.revenue_value || 0) * 0.08) +
+      (doctrineFit * 0.18) +
+      (contactability * 0.08) -
+      (Number(score.attention_cost || 0) * 0.06)
+    );
+    const doctrineSignals = [
+      lead.event_doctrine?.classification_source && `event: ${lead.event_doctrine.event_category} (${lead.event_doctrine.emotional_weight || 'unknown'} weight)`,
+      lead.tasting_readiness?.doctrine_note,
+      lead.source_intelligence?.source_doctrine_note,
+      lead.venue_signal?.venue_doctrine_note,
+      lead.event_timeline?.timeline_doctrine_note,
+      lead.revenue_doctrine?.cash_forecast_note,
+      lead.andre_action_context?.action_doctrine_note,
+      lead.relationship_doctrine?.relationship_doctrine_note,
+      lead.decay_doctrine?.decay_doctrine_note,
+      (lead.exception_states || []).length ? `exceptions: ${lead.exception_states.join(', ')}` : '',
+    ].filter(Boolean);
+
+    return {
+      lead_id: lead.lead_id,
+      name: lead.display_name || lead.company_name || lead.lead_id,
+      status_label: lead.lead_status || '',
+      url: lead.url || null,
+      value,
+      contacts: leadContacts.length,
+      has_email: hasEmail,
+      has_phone: hasPhone,
+      contactability,
+      activity_volume: leadContacts.length + leadOpps.length + (lead.task_ids || []).length + leadQueues.length + doctrineSignals.length,
+      tasks_open: (lead.task_ids || []).length,
+      opportunities: leadOpps.length,
+      queues: leadQueues.map(q => ({ id: q.queue_id, label: q.queue_label, purpose: q.queue_purpose })),
+      doctrine: {
+        event: lead.event_doctrine || {},
+        tasting: lead.tasting_readiness || {},
+        source: lead.source_intelligence || {},
+        venue: lead.venue_signal || {},
+        timeline: lead.event_timeline || {},
+        revenue: lead.revenue_doctrine || {},
+        andre_action: lead.andre_action_context || {},
+        relationship: lead.relationship_doctrine || {},
+        decay: lead.decay_doctrine || {},
+        exceptions: lead.exception_states || [],
+        contact_structure: lead.contact_structure || '',
+      },
+      signals: doctrineSignals.slice(0, 10).map((summary, i) => ({
+        id: `${lead.lead_id}:doctrine:${i}`,
+        event_type: 'doctrine_layer',
+        summary,
+        urgency_impact: 0,
+        momentum_impact: 0,
+        friction_impact: 0,
+        relationship_impact: 0,
+      })),
+      signal_totals: {
+        urgency: Number(score.urgency || 0),
+        momentum: Number(score.momentum || 0),
+        friction: Number(score.friction || 0),
+        relationship: Number(score.relationship_strength || 0),
+      },
+      action: {
+        next_best_action_id: `${lead.lead_id}:doctrine:${action.action_type || 'review'}`,
+        target_object_id: lead.lead_id,
+        action_type: action.action_type || lead.recommended_outputs?.recommended_next_action || 'review',
+        title: action.title || 'Review doctrine next action',
+        recommended_channel: action.channel || lead.recommended_outputs?.recommended_channel || 'review',
+        human_review_required: Boolean(lead.derived_flags?.needs_human_review || lead.has_exceptions),
+        reasoning: action.reasoning || '',
+        sales_scoring: score,
+      },
+      scores: {
+        balanced_lattice: balanced,
+        doctrine_fit: Math.max(0, doctrineFit),
+        action_now_score: Number(score.action_now_score || 0),
+        priority_score: Number(score.priority_score || 0),
+        saveability_score: Number(score.saveability_score || 0),
+        decay_risk_score: Number(score.decay_risk_score || 0),
+        urgency: Number(score.urgency || 0),
+        momentum: Number(score.momentum || 0),
+        friction: Number(score.friction || 0),
+        relationship_strength: Number(score.relationship_strength || 0),
+        close_probability: Number(score.close_probability || 0),
+        revenue_value: Number(score.revenue_value || 0),
+        attention_cost: Number(score.attention_cost || 0),
+        next_action_clarity: Number(score.next_action_clarity || 0),
+        tasting_readiness: tastingReadiness,
+        venue_commitment: venueCommitment,
+        source_trust: sourceTrust,
+        timeline_urgency: timelineUrgency,
+        today_task: todayTask,
+        contactability,
+        activity_volume: leadContacts.length + leadOpps.length + (lead.task_ids || []).length + leadQueues.length + doctrineSignals.length,
+      },
+    };
+  });
+
+  return {
+    _meta: {
+      generated_at: new Date().toISOString(),
+      source: 'doctrine:comeketo_v2_1',
+      file: LATTICE_DOCTRINE_FILE,
+      doctrine_generated_at: doctrine._meta?.generated_at || null,
+      lattice_version: doctrine._meta?.lattice_version || null,
+      scoring_profile: doctrine._meta?.scoring_profile || null,
+      business_identity: doctrine._meta?.business_identity || {},
+      formulas: doctrine._meta?.composite_formulas || {},
+      doctrine_layers_added: doctrine._meta?.doctrine_layers_added || [],
+      invariants_checked: doctrine._meta?.invariants_checked || [],
+      fixes_applied: doctrine._meta?.fixes_applied || [],
+    },
+    counts: {
+      leads: doctrine._meta?.leads_indexed || rows.length,
+      contacts: doctrine._meta?.contacts_indexed || contacts.length,
+      opportunities: doctrine._meta?.opportunities_indexed || opportunities.length,
+      active_pipeline_deals: doctrine._meta?.active_pipeline_deals || 0,
+      active_pipeline_value: doctrine._meta?.active_pipeline_value || 0,
+      queues: queueItems.length,
+    },
+    source_summary: {
+      source_data: doctrine._meta?.source_data || {},
+      weekly_briefing: doctrine.weekly_briefing || {},
+      queues: Object.fromEntries(Object.entries(doctrine.queues || {}).map(([k, q]) => [k, q.count ?? q.items?.length ?? 0])),
+    },
+    comparators: [
+      { id: 'balanced_lattice', label: 'Balanced Lattice', description: 'Action score blended with Comeketo doctrine fit and contactability.' },
+      { id: 'doctrine_fit', label: 'Doctrine Fit', description: 'How strongly this lead matches Comeketo operating doctrine: tasting, trust, venue, timeline, source, and Andre task context.' },
+      { id: 'action_now_score', label: 'Action Now', description: doctrine._meta?.composite_formulas?.action_now_score || 'Who should move first right now.' },
+      { id: 'priority_score', label: 'Priority', description: doctrine._meta?.composite_formulas?.priority_score || 'Overall priority score.' },
+      { id: 'tasting_readiness', label: 'Tasting Readiness', description: 'How close this is to Comeketo’s primary conversion engine.' },
+      { id: 'decay_risk_score', label: 'Decay Risk', description: doctrine._meta?.composite_formulas?.decay_risk_score || 'Risk that this lead decays if ignored.' },
+      { id: 'revenue_value', label: 'Revenue Value', description: 'Revenue weight in the scoring model.' },
+      { id: 'close_probability', label: 'Close Probability', description: 'Likelihood this lead can close.' },
+      { id: 'source_trust', label: 'Source Trust', description: 'Referral, expo, and partner source quality.' },
+      { id: 'venue_commitment', label: 'Venue Commitment', description: 'Whether the lead has operational planning coordinates.' },
+      { id: 'timeline_urgency', label: 'Timeline Urgency', description: 'Event date pressure and forward visibility.' },
+      { id: 'relationship_strength', label: 'Relationship Strength', description: 'Relationship warmth and trust signal.' },
+      { id: 'next_action_clarity', label: 'Next Action Clarity', description: 'How obvious the next move is.' },
+      { id: 'attention_cost', label: 'Attention Cost', description: 'How expensive this lead is to work.' },
+      { id: 'contactability', label: 'Contactability', description: 'Whether usable email/phone coordinates exist.' },
+    ],
+    rows,
+  };
+}
+
+function latticeContactDefaults(leadId) {
+  const row = getLatticeLead(leadId);
+  const contacts = row?.contacts || [];
+  const contact = contacts.find(c => c.email_addresses?.length || c.phone_numbers?.length) || contacts[0] || null;
+  const rawSms = readLatticeFile('Raw_close_sms.txt', []);
+  const localSms = (rawSms.find(s => s.lead_id === leadId && s.local_phone)?.local_phone)
+    || (rawSms.find(s => s.local_phone)?.local_phone)
+    || '';
+  return {
+    contact_id: contact?.contact_id || '',
+    email: contact?.email_addresses?.[0] || '',
+    phone: contact?.phone_numbers?.[0] || '',
+    local_sms: localSms,
+  };
+}
+
+function ensureHrmrStore() {
+  fs.mkdirSync(HRMR_DIR, { recursive: true });
+  for (const [file, fallback] of [
+    ['oracle_turns.json', { turns: [] }],
+    ['ratings.json', { ratings: [] }],
+    ['conversation_archive.json', { conversations: [] }],
+    ['index.json', { _meta: { created_at: new Date().toISOString() }, counts: {}, recent_signal: [] }],
+  ]) {
+    const target = path.join(HRMR_DIR, file);
+    if (!fs.existsSync(target)) fs.writeFileSync(target, JSON.stringify(fallback, null, 2));
+  }
+}
+
+function readHrmrFile(file, fallback) {
+  try {
+    ensureHrmrStore();
+    return JSON.parse(fs.readFileSync(path.join(HRMR_DIR, file), 'utf8'));
+  } catch (_) {
+    return fallback;
+  }
+}
+
+function writeHrmrFile(file, value) {
+  ensureHrmrStore();
+  fs.writeFileSync(path.join(HRMR_DIR, file), JSON.stringify(value, null, 2));
+}
+
+function rebuildHrmrIndex() {
+  const turns = readHrmrFile('oracle_turns.json', { turns: [] }).turns || [];
+  const ratings = readHrmrFile('ratings.json', { ratings: [] }).ratings || [];
+  const conversations = readHrmrFile('conversation_archive.json', { conversations: [] }).conversations || [];
+  const gradeCounts = ratings.reduce((acc, r) => {
+    acc[r.grade] = (acc[r.grade] || 0) + 1;
+    return acc;
+  }, {});
+  const actionCounts = ratings.reduce((acc, r) => {
+    const key = r.action_type || 'oracle_chat';
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
+  const noteSignals = ratings
+    .filter(r => r.note)
+    .slice(0, 40)
+    .map(r => ({
+      ts: r.created_at,
+      grade: r.grade,
+      note: r.note,
+      action_type: r.action_type || null,
+      lattice_action_id: r.lattice_action_id || null,
+      lead_id: r.lead_id || null,
+    }));
+  const index = {
+    _meta: {
+      updated_at: new Date().toISOString(),
+      source: 'file-tree:andre_close_focus/hrmr',
+    },
+    counts: {
+      turns: turns.length,
+      ratings: ratings.length,
+      conversations: conversations.length,
+      notes: ratings.filter(r => r.note).length,
+      graded_lattice_actions: ratings.filter(r => r.lattice_action_id).length,
+    },
+    grades: gradeCounts,
+    action_types: actionCounts,
+    recent_signal: noteSignals,
+  };
+  writeHrmrFile('index.json', index);
+  return index;
+}
+
+function getHrmrSummary(limit = 12) {
+  const index = rebuildHrmrIndex();
+  const ratings = readHrmrFile('ratings.json', { ratings: [] }).ratings || [];
+  return {
+    ...index,
+    recent_ratings: ratings.slice(0, limit),
+  };
+}
+
+function saveOracleTurnFile(row) {
+  const store = readHrmrFile('oracle_turns.json', { turns: [] });
+  const turns = store.turns || [];
+  const idx = turns.findIndex(t => t.id === row.id);
+  if (idx >= 0) turns[idx] = { ...turns[idx], ...row, updated_at: new Date().toISOString() };
+  else turns.unshift(row);
+  store.turns = turns.slice(0, 1000);
+  store._meta = { updated_at: new Date().toISOString(), source: 'file-tree' };
+  writeHrmrFile('oracle_turns.json', store);
+  rebuildHrmrIndex();
+  return row;
+}
+
+function writeLatticeConversationArchive(conversations) {
+  try {
+    fs.mkdirSync(LATTICE_DIR, { recursive: true });
+    fs.writeFileSync(
+      path.join(LATTICE_DIR, 'Oracle_conversations.txt'),
+      JSON.stringify(conversations, null, 2)
+    );
+  } catch (e) {
+    console.warn('[HRMR] Could not mirror Oracle conversations into lattice catalog:', e.message);
+  }
+}
+
+function archiveOracleConversationFile(payload) {
+  const store = readHrmrFile('conversation_archive.json', { conversations: [] });
+  const messages = Array.isArray(payload.messages) ? payload.messages : [];
+  const assistantMessages = messages.filter(m => m.role === 'assistant');
+  const userMessages = messages.filter(m => m.role === 'user');
+  const grades = assistantMessages
+    .filter(m => m.oracleGrade)
+    .map(m => ({
+      turn_id: m.turnId || null,
+      grade: m.oracleGrade,
+      note: m.oracleGradeNote || null,
+      action_type: m.oracleMeta?.action_type || null,
+      lattice_action_id: m.oracleMeta?.lattice_action_id || null,
+      lead_id: m.oracleMeta?.lead_id || null,
+    }));
+  const row = {
+    id: payload.id || `conv_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
+    title: payload.title || userMessages[0]?.content?.slice(0, 90) || 'Oracle conversation',
+    archived_at: new Date().toISOString(),
+    operator_key: payload.operator_key || 'andre',
+    source: payload.source || 'oracle_thread_archive',
+    message_count: messages.length,
+    user_message_count: userMessages.length,
+    assistant_message_count: assistantMessages.length,
+    grade_count: grades.length,
+    lattice_action_ids: Array.from(new Set(messages.map(m => m.oracleMeta?.lattice_action_id).filter(Boolean))),
+    lead_ids: Array.from(new Set(messages.map(m => m.oracleMeta?.lead_id).filter(Boolean))),
+    grades,
+    messages,
+  };
+  store.conversations = [row, ...(store.conversations || [])].slice(0, 500);
+  store._meta = { updated_at: row.archived_at, source: 'file-tree' };
+  writeHrmrFile('conversation_archive.json', store);
+  writeLatticeConversationArchive(store.conversations);
+  rebuildHrmrIndex();
+  return row;
+}
+
+function saveHrmrRatingFile(row) {
+  const store = readHrmrFile('ratings.json', { ratings: [] });
+  store.ratings = [row, ...(store.ratings || [])].slice(0, 2000);
+  store._meta = { updated_at: new Date().toISOString(), source: 'file-tree' };
+  writeHrmrFile('ratings.json', store);
+  rebuildHrmrIndex();
+  return row;
 }
 
 function readSettings() {
@@ -1090,8 +1684,16 @@ function closeApiErrorMessage(body) {
   return 'Close API error';
 }
 
-function messagingSenderEmail() {
-  return (readSettings().messaging?.email_from || '').trim();
+async function messagingSenderEmail() {
+  const settings = readSettings();
+  const configured = (settings.messaging?.email_from || settings.operator?.email || '').trim();
+  if (configured) return configured;
+  try {
+    const r = await closeRequest('GET', '/me/');
+    return (r.body?.email || '').trim();
+  } catch (_) {
+    return '';
+  }
 }
 
 function messagingSmsFrom() {
@@ -1117,11 +1719,12 @@ app.post('/close/lead/:leadId/email', async (req, res) => {
       sender,
     } = req.body || {};
 
-    const toList = Array.isArray(to) ? to.filter(Boolean) : (to ? [to] : []);
+    const defaults = latticeContactDefaults(leadId);
+    const toList = Array.isArray(to) ? to.filter(Boolean) : (to ? [to] : (defaults.email ? [defaults.email] : []));
     if (!toList.length) return res.status(400).json({ error: 'Provide at least one recipient email in `to`.' });
 
     const sendStatus = status === 'draft' ? 'draft' : 'outbox';
-    const senderAddr = (sender || messagingSenderEmail()).trim();
+    const senderAddr = (sender || await messagingSenderEmail()).trim();
     if (sendStatus === 'outbox' && !senderAddr) {
       return res.status(400).json({
         error: 'Outbound email needs a `sender` address. Set "Email from" under Messaging in Settings, or pass `sender` in the request.',
@@ -1137,7 +1740,7 @@ app.post('/close/lead/:leadId/email', async (req, res) => {
       subject: subject || '(no subject)',
       body_text: body_text != null ? String(body_text) : '',
       ...(body_html ? { body_html: String(body_html) } : {}),
-      ...(contact_id ? { contact_id } : {}),
+      ...(contact_id || defaults.contact_id ? { contact_id: contact_id || defaults.contact_id } : {}),
       ...(senderAddr ? { sender: senderAddr } : {}),
     };
 
@@ -1169,12 +1772,14 @@ app.post('/close/lead/:leadId/sms', async (req, res) => {
 
     const { text, remote_phone, local_phone, contact_id, status } = req.body || {};
     if (!text || !String(text).trim()) return res.status(400).json({ error: '`text` is required.' });
-    if (!remote_phone || !String(remote_phone).trim()) {
+    const defaults = latticeContactDefaults(leadId);
+    const remote = (remote_phone || defaults.phone || '').trim();
+    if (!remote) {
       return res.status(400).json({ error: '`remote_phone` is required (buyer number, E.164 recommended).' });
     }
 
     const sendStatus = status === 'draft' ? 'draft' : 'outbox';
-    const local = (local_phone || messagingSmsFrom()).trim();
+    const local = (local_phone || messagingSmsFrom() || defaults.local_sms).trim();
     if (sendStatus === 'outbox' && !local) {
       return res.status(400).json({
         error: 'Outbound SMS needs `local_phone` (your Close internal sending number). Set "SMS from" in Settings or pass `local_phone`.',
@@ -1187,9 +1792,9 @@ app.post('/close/lead/:leadId/sms', async (req, res) => {
       status: sendStatus,
       user_id: userId,
       text: String(text).trim(),
-      remote_phone: String(remote_phone).trim(),
+      remote_phone: remote,
       ...(local ? { local_phone: local } : {}),
-      ...(contact_id ? { contact_id } : {}),
+      ...(contact_id || defaults.contact_id ? { contact_id: contact_id || defaults.contact_id } : {}),
     };
 
     const r = await closeRequest('POST', '/activity/sms/', payload);
@@ -1214,6 +1819,121 @@ function closeListData(resp) {
   if (!resp || resp.status < 200 || resp.status >= 300 || !resp.body) return [];
   return Array.isArray(resp.body.data) ? resp.body.data : [];
 }
+
+async function sweepCloseLeadIntel({ leadId, query, source }) {
+  if (!CLOSE_API_KEY) throw new Error('CLOSE_API_KEY is not configured on the server.');
+  let resolvedLeadId = leadId;
+  let searchResults = [];
+
+  if (!resolvedLeadId && query) {
+    const q = encodeURIComponent(String(query).trim());
+    const sr = await closeRequest('GET', `/lead/?query=${q}&_limit=8`);
+    searchResults = closeListData(sr);
+    resolvedLeadId = searchResults[0]?.id || '';
+  }
+  if (!resolvedLeadId) throw new Error('No Close lead id found. Pass lead_id or a searchable lead name.');
+
+  const encoded = encodeURIComponent(resolvedLeadId);
+  const [leadResp, oppResp, taskResp, emailResp, smsResp, callResp, noteResp] = await Promise.all([
+    closeRequest('GET', `/lead/${encoded}/`),
+    closeRequest('GET', `/opportunity/?lead_id=${encoded}&_limit=30&_order_by=-date_updated`),
+    closeRequest('GET', `/task/?lead_id=${encoded}&_limit=40&_order_by=date`),
+    closeRequest('GET', `/activity/email/?lead_id=${encoded}&_limit=25&_order_by=-date_created`),
+    closeRequest('GET', `/activity/sms/?lead_id=${encoded}&_limit=25&_order_by=-date_created`),
+    closeRequest('GET', `/activity/call/?lead_id=${encoded}&_limit=25&_order_by=-date_created`),
+    closeRequest('GET', `/activity/note/?lead_id=${encoded}&_limit=25&_order_by=-date_created`),
+  ]);
+
+  const lead = leadResp.body || {};
+  const contacts = Array.isArray(lead.contacts) ? lead.contacts : [];
+  const emails = closeListData(emailResp);
+  const sms = closeListData(smsResp);
+  const calls = closeListData(callResp);
+  const notes = closeListData(noteResp);
+  const tasks = closeListData(taskResp);
+  const opportunities = closeListData(oppResp);
+
+  const packet = {
+    _meta: {
+      source: source || 'on-demand-close-sweep',
+      generated_at: new Date().toISOString(),
+      query: query || null,
+      resolved_lead_id: resolvedLeadId,
+    },
+    lead,
+    search_results: searchResults.map(l => ({ id: l.id, name: l.name, display_name: l.display_name, status_label: l.status_label })),
+    contacts,
+    opportunities,
+    tasks,
+    activities: {
+      emails,
+      sms,
+      calls,
+      notes,
+    },
+    counts: {
+      contacts: contacts.length,
+      opportunities: opportunities.length,
+      tasks: tasks.length,
+      emails: emails.length,
+      sms: sms.length,
+      calls: calls.length,
+      notes: notes.length,
+    },
+    summary: {
+      name: lead.display_name || lead.name || searchResults[0]?.display_name || query || resolvedLeadId,
+      status: lead.status_label || lead.status_id || 'unknown',
+      primary_email: contacts.flatMap(c => c.emails || []).map(e => e.email).filter(Boolean)[0] || '',
+      primary_phone: contacts.flatMap(c => c.phones || []).map(p => p.phone).filter(Boolean)[0] || '',
+      latest_email: emails[0]?.subject || emails[0]?.body_preview || '',
+      latest_sms: sms[0]?.text || '',
+      latest_call: calls[0]?.date_created || calls[0]?.activity_at || '',
+      latest_note: notes[0]?.note || '',
+      next_task: tasks.find(t => !t.is_complete)?.text || '',
+    },
+  };
+
+  const sweepDir = path.join(DATA, 'andre_close_focus', 'on_demand_sweeps');
+  fs.mkdirSync(sweepDir, { recursive: true });
+  fs.writeFileSync(path.join(sweepDir, `${resolvedLeadId}.json`), JSON.stringify(packet, null, 2));
+  try {
+    fs.mkdirSync(LATTICE_DIR, { recursive: true });
+    const sweepIndexPath = path.join(LATTICE_DIR, 'On_demand_close_sweeps.txt');
+    const previous = fs.existsSync(sweepIndexPath) ? JSON.parse(fs.readFileSync(sweepIndexPath, 'utf8')) : [];
+    const slim = {
+      lead_id: resolvedLeadId,
+      name: packet.summary.name,
+      generated_at: packet._meta.generated_at,
+      counts: packet.counts,
+      summary: packet.summary,
+      file: `data/andre_close_focus/on_demand_sweeps/${resolvedLeadId}.json`,
+    };
+    const next = [slim, ...previous.filter(x => x.lead_id !== resolvedLeadId)].slice(0, 200);
+    fs.writeFileSync(sweepIndexPath, JSON.stringify(next, null, 2));
+  } catch (e) {
+    console.warn('[CLOSE SWEEP] Could not mirror sweep index into lattice catalog:', e.message);
+  }
+  logActivity('sync', 'close_lead_sweep', `Close lead swept: ${packet.summary.name}`, `${packet.counts.emails} emails · ${packet.counts.sms} SMS · ${packet.counts.calls} calls · ${packet.counts.tasks} tasks`, [packet.summary.name]);
+  return packet;
+}
+
+app.post('/close/lead/:id/sweep', async (req, res) => {
+  try {
+    const packet = await sweepCloseLeadIntel({ leadId: req.params.id, source: req.body?.source || 'manual-lead-panel' });
+    res.json({ ok: true, packet });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.post('/close/lead/sweep', async (req, res) => {
+  try {
+    const packet = await sweepCloseLeadIntel({ query: req.body?.query, source: req.body?.source || 'manual-name-search' });
+    res.json({ ok: true, packet });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
 
 // ─── GET /close/inbox/snapshot — aggregate “inbox-class” intel (tasks + recent comms)
 // Mirrors what reps triage in Close Inbox: tasks (view=inbox/future) + recent email/SMS/call activity.
@@ -1821,6 +2541,21 @@ function buildOracleInstructions(actionType) {
   const actionBlock = tmpl
     ? `\n\n=== CURRENT TASK ===\n${tmpl.instruction}\nOutput format: ${tmpl.output_format || 'Natural prose.'}\n${tmpl.banned_phrases ? 'BANNED PHRASES (never use these): ' + tmpl.banned_phrases.join(', ') : ''}`
     : '';
+  const lattice = getLatticeBundle();
+  const counts = lattice.index?.counts || {};
+  const topActions = [...lattice.next_best_actions]
+    .sort((a, b) => (b.sales_scoring?.action_now_score || 0) - (a.sales_scoring?.action_now_score || 0))
+    .slice(0, 8)
+    .map(a => {
+      const lead = lattice.leads.find(l => l.lead_id === a.target_object_id);
+      return `${lead?.display_name || a.target_object_id}: ${a.title} via ${a.recommended_channel || 'review'} (action_now ${a.sales_scoring?.action_now_score ?? '?'})`;
+    })
+    .join('\n');
+  const h = getHrmrSummary(8);
+  const hrmrLines = (h.recent_signal || [])
+    .slice(0, 8)
+    .map(r => `${r.grade}: ${String(r.note || '').replace(/\s+/g, ' ').slice(0, 220)}${r.action_type ? ` (${r.action_type})` : ''}`)
+    .join('\n');
 
   return `${id.role}
 
@@ -1840,6 +2575,21 @@ What makes us different: ${standards.what_makes_comeketo_different.join(' | ')}
 
 === DEAL ENERGY (internal diagnostic, never mention in output) ===
 ${energy}
+
+=== ANDRE RATIO LATTICE CATALOG (current operational truth) ===
+Use this catalog above stale static briefings when judging priorities.
+Indexed scope: ${counts.leads || 0} focused Andre leads, ${counts.contacts || 0} contacts, ${counts.emails || 0} emails, ${counts.sms || 0} SMS, ${counts.calls || 0} calls, ${counts.tasks || 0} tasks, ${counts.next_best_actions || 0} next-best-actions.
+Top current next-best-actions:
+${topActions || 'No lattice actions loaded.'}
+
+When drafting email/SMS, assume contact coordinates are indexed in the Andre lattice catalog and Close compose can use them. Still require human approval before customer-facing send.
+
+=== HRMR CERTIFICATION MEMORY (Andre feedback loop) ===
+Stored ratings: ${h.counts?.ratings || 0}; notes: ${h.counts?.notes || 0}; graded lattice actions: ${h.counts?.graded_lattice_actions || 0}.
+Recent Andre grading notes:
+${hrmrLines || 'No HRMR notes stored yet. Ask for a grade and a short why after important recommendations.'}
+
+Use A+/A notes as positive exemplars. Treat D/F notes as anti-template constraints. When recommending a next action, explain why this action beats the nearest alternative and make it easy for Andre to approve, reject, or revise.
 ${actionBlock}
 
 CRITICAL RULES:
@@ -1863,12 +2613,13 @@ After your main reply (helpful markdown for the rep), append EXACTLY:
 3) A single JSON object on the next lines (valid JSON, no markdown code fences)
 
 Schema:
-{"steps":[{"id":"short_slug","label":"Short button label","action":"navigate|oracle_prompt|open_deal|refresh_inbox|open_palette","payload":{}}]}
+{"steps":[{"id":"short_slug","label":"Short button label","action":"navigate|oracle_prompt|open_deal|open_compose|refresh_inbox|open_palette","payload":{}}]}
 
 Provide 3–6 steps. Each label must be under 8 words. Actions:
 - navigate → payload {"view":"command|pipeline|deals|automation|oracle|timeline|settings|actions|performance|coaching"}
 - oracle_prompt → payload {"text":"The full next user message to send in chat"}
 - open_deal → payload {"dealName":"Exact deal name from context"}
+- open_compose → payload {"mode":"email|sms","leadId":"Close lead id","dealName":"Lead or deal name"}
 - refresh_inbox → payload {}
 - open_palette → payload {} (opens search / jump menu)
 
@@ -2040,6 +2791,367 @@ app.get('/api/live/sync-meta', async (req, res) => {
   }
 });
 
+app.get('/api/lattice/summary', (req, res) => {
+  const b = getLatticeBundle();
+  const topActions = [...b.next_best_actions]
+    .sort((a, c) => (c.sales_scoring?.action_now_score || 0) - (a.sales_scoring?.action_now_score || 0))
+    .slice(0, 10);
+  const leadById = new Map(b.leads.map(l => [l.lead_id, l]));
+  res.json({
+    index: b.index,
+    counts: b.index?.counts || {},
+    top_actions: topActions.map(a => ({
+      ...a,
+      lead: leadById.get(a.target_object_id) || null,
+    })),
+  });
+});
+
+app.get('/api/lattice/lead/:id', (req, res) => {
+  const row = getLatticeLead(req.params.id);
+  if (!row) return res.status(404).json({ error: 'Lead not found in Andre lattice catalog' });
+  res.json(row);
+});
+
+app.get('/api/lattice/graph', (req, res) => {
+  try {
+    const source = String(req.query.source || 'current').toLowerCase();
+    if (source === 'experiment') {
+      return res.json(getExperimentLatticeGraph());
+    }
+    if (source === 'doctrine') {
+      return res.json(getDoctrineLatticeGraph());
+    }
+
+    const b = getLatticeBundle();
+    const contactsByLead = new Map();
+    for (const c of b.contacts || []) {
+      if (!contactsByLead.has(c.lead_id)) contactsByLead.set(c.lead_id, []);
+      contactsByLead.get(c.lead_id).push(c);
+    }
+    const signalsByLead = new Map();
+    for (const s of b.signals || []) {
+      if (!signalsByLead.has(s.lead_id)) signalsByLead.set(s.lead_id, []);
+      signalsByLead.get(s.lead_id).push(s);
+    }
+    const tasksByLead = new Map();
+    for (const t of b.tasks || []) {
+      if (!tasksByLead.has(t.lead_id)) tasksByLead.set(t.lead_id, []);
+      tasksByLead.get(t.lead_id).push(t);
+    }
+    const oppsByLead = new Map();
+    for (const o of b.opportunities || []) {
+      if (!oppsByLead.has(o.lead_id)) oppsByLead.set(o.lead_id, []);
+      oppsByLead.get(o.lead_id).push(o);
+    }
+
+    const actionByLead = new Map();
+    for (const a of b.next_best_actions || []) actionByLead.set(a.target_object_id, a);
+
+    const rows = (b.leads || []).map(lead => {
+      const action = actionByLead.get(lead.lead_id) || null;
+      const signals = signalsByLead.get(lead.lead_id) || [];
+      const contacts = contactsByLead.get(lead.lead_id) || [];
+      const tasks = tasksByLead.get(lead.lead_id) || [];
+      const opportunities = oppsByLead.get(lead.lead_id) || [];
+      const score = action?.sales_scoring || {};
+      const hasEmail = contacts.some(c => (c.email_addresses || []).length);
+      const hasPhone = contacts.some(c => (c.phone_numbers || []).length);
+      const contactability = (hasEmail ? 50 : 0) + (hasPhone ? 50 : 0);
+      const signalTotals = signals.reduce((acc, s) => {
+        acc.urgency += Number(s.urgency_impact || 0);
+        acc.momentum += Number(s.momentum_impact || 0);
+        acc.friction += Number(s.friction_impact || 0);
+        acc.relationship += Number(s.relationship_impact || 0);
+        return acc;
+      }, { urgency: 0, momentum: 0, friction: 0, relationship: 0 });
+      const activityVolume = Number(lead.activity_count || 0)
+        || signals.length + tasks.length + contacts.length + opportunities.length;
+      const value = opportunities.reduce((sum, o) => sum + Number(o.value || o.value_cents || 0), 0);
+      const balanced = Math.round(
+        (Number(score.action_now_score || 0) * 0.34) +
+        (Number(score.priority_score || 0) * 0.24) +
+        (Number(score.expected_impact || 0) * 0.18) +
+        (Number(score.saveability_score || 0) * 0.14) +
+        (contactability * 0.10)
+      );
+      return {
+        lead_id: lead.lead_id,
+        name: lead.display_name || lead.name || lead.lead_id,
+        status_label: lead.status_label || lead.status_id || '',
+        url: lead.url || null,
+        value,
+        contacts: contacts.length,
+        has_email: hasEmail,
+        has_phone: hasPhone,
+        contactability,
+        activity_volume: activityVolume,
+        tasks_open: tasks.filter(t => !t.is_complete).length,
+        opportunities: opportunities.length,
+        signals: signals.slice(0, 8).map(s => ({
+          id: s.signal_event_id,
+          event_type: s.event_type,
+          summary: s.payload_summary,
+          urgency_impact: s.urgency_impact,
+          momentum_impact: s.momentum_impact,
+          friction_impact: s.friction_impact,
+          relationship_impact: s.relationship_impact,
+        })),
+        signal_totals: signalTotals,
+        action,
+        scores: {
+          action_now_score: Number(score.action_now_score || 0),
+          priority_score: Number(score.priority_score || 0),
+          expected_impact: Number(score.expected_impact || 0),
+          saveability_score: Number(score.saveability_score || 0),
+          confidence: Number(score.confidence || 0),
+          attention_cost: Number(score.attention_cost || 0),
+          balanced_lattice: balanced,
+          contactability,
+          activity_volume: activityVolume,
+          urgency_signal: signalTotals.urgency,
+          momentum_signal: signalTotals.momentum,
+          relationship_signal: signalTotals.relationship,
+        },
+      };
+    });
+
+    res.json({
+      _meta: {
+        generated_at: new Date().toISOString(),
+        source: 'file-tree:lattice_catalog',
+        catalog_generated_at: b.index?.generated_at || null,
+      },
+      counts: b.index?.counts || {},
+      source_summary: b.index?.source_summary || {},
+      comparators: [
+        { id: 'balanced_lattice', label: 'Balanced Lattice', description: 'Weighted blend of action-now, priority, impact, saveability, and contactability.' },
+        { id: 'action_now_score', label: 'Action Now', description: 'Who should move first if Andre has limited time right now.' },
+        { id: 'priority_score', label: 'Priority', description: 'Strategic importance from the saved-view and opportunity context.' },
+        { id: 'expected_impact', label: 'Expected Impact', description: 'Revenue/momentum upside if this move works.' },
+        { id: 'saveability_score', label: 'Saveability', description: 'How recoverable the lead appears from current signals.' },
+        { id: 'confidence', label: 'Confidence', description: 'Confidence in the recommendation from available evidence.' },
+        { id: 'contactability', label: 'Contactability', description: 'Whether usable email/phone coordinates exist.' },
+        { id: 'activity_volume', label: 'Activity Volume', description: 'How much Close history exists for the lead.' },
+        { id: 'urgency_signal', label: 'Urgency Signal', description: 'Sum of urgency impacts from signal events.' },
+        { id: 'momentum_signal', label: 'Momentum Signal', description: 'Sum of momentum impacts from signal events.' },
+      ],
+      rows,
+    });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+function latticeGraphForSource(source = 'doctrine') {
+  const key = String(source || 'doctrine').toLowerCase();
+  if (key === 'experiment') return getExperimentLatticeGraph();
+  if (key === 'doctrine') return getDoctrineLatticeGraph();
+  return getDoctrineLatticeGraph();
+}
+
+function clampScore(n) {
+  return Math.max(0, Math.round(Number(n || 0) * 10) / 10);
+}
+
+function intentWeights(intent = 'today') {
+  const presets = {
+    today: {
+      action_now_score: 0.24,
+      doctrine_fit: 0.18,
+      next_action_clarity: 0.15,
+      contactability: 0.12,
+      decay_risk_score: 0.10,
+      tasting_readiness: 0.09,
+      priority_score: 0.07,
+      relationship_strength: 0.05,
+      attention_cost: -0.10,
+    },
+    fastest_money: {
+      revenue_value: 0.24,
+      close_probability: 0.18,
+      action_now_score: 0.16,
+      priority_score: 0.15,
+      tasting_readiness: 0.10,
+      contactability: 0.08,
+      doctrine_fit: 0.06,
+      attention_cost: -0.08,
+    },
+    save_risk: {
+      decay_risk_score: 0.26,
+      saveability_score: 0.18,
+      action_now_score: 0.16,
+      urgency: 0.12,
+      contactability: 0.10,
+      relationship_strength: 0.08,
+      next_action_clarity: 0.08,
+      attention_cost: -0.08,
+    },
+    tasting: {
+      tasting_readiness: 0.26,
+      relationship_strength: 0.18,
+      action_now_score: 0.16,
+      close_probability: 0.12,
+      doctrine_fit: 0.12,
+      next_action_clarity: 0.10,
+      contactability: 0.08,
+      attention_cost: -0.08,
+    },
+    trust_source: {
+      source_trust: 0.25,
+      relationship_strength: 0.18,
+      doctrine_fit: 0.16,
+      action_now_score: 0.14,
+      next_action_clarity: 0.10,
+      contactability: 0.10,
+      revenue_value: 0.06,
+      attention_cost: -0.06,
+    },
+  };
+  return presets[intent] || presets.today;
+}
+
+function scoreLatticeDecision(row, options = {}) {
+  const scores = row.scores || {};
+  const primary = options.primary || 'action_now_score';
+  const secondary = options.secondary || 'doctrine_fit';
+  const tertiary = options.tertiary || 'contactability';
+  const weights = intentWeights(options.intent);
+  let score = 0;
+  const contributions = [];
+
+  for (const [key, weight] of Object.entries(weights)) {
+    const value = Number(scores[key] || 0);
+    const contribution = value * weight;
+    score += contribution;
+    contributions.push({ key, value, weight, contribution: Math.round(contribution * 10) / 10 });
+  }
+
+  const selected = [
+    { key: primary, weight: 0.22 },
+    { key: secondary, weight: 0.14 },
+    { key: tertiary, weight: 0.10 },
+  ];
+  for (const item of selected) {
+    const value = Number(scores[item.key] || 0);
+    const contribution = value * item.weight;
+    score += contribution;
+    contributions.push({ key: item.key, value, weight: item.weight, contribution: Math.round(contribution * 10) / 10, selected: true });
+  }
+
+  const action = row.action || {};
+  const actionType = action.action_type || 'review';
+  const channel = action.recommended_channel || 'review';
+  if (row.doctrine?.andre_action?.andre_tasks_today?.length) {
+    score += 8;
+    contributions.push({ key: 'andre_task_today_bonus', value: 100, weight: 0.08, contribution: 8 });
+  }
+  if (/call|tasting|consultation/i.test(actionType)) {
+    score += 4;
+    contributions.push({ key: 'human_trust_action_bonus', value: 100, weight: 0.04, contribution: 4 });
+  }
+  if ((channel === 'sms' || channel === 'email') && row.contactability < 50) {
+    score -= 18;
+    contributions.push({ key: 'missing_contact_penalty', value: row.contactability, weight: -0.18, contribution: -18 });
+  }
+  if (row.doctrine?.exceptions?.length) {
+    const penalty = Math.min(16, row.doctrine.exceptions.length * 8);
+    score -= penalty;
+    contributions.push({ key: 'exception_penalty', value: row.doctrine.exceptions.length, weight: -8, contribution: -penalty });
+  }
+
+  const sortedContributions = contributions
+    .filter(c => Math.abs(c.contribution) > 0.1)
+    .sort((a, b) => Math.abs(b.contribution) - Math.abs(a.contribution))
+    .slice(0, 8);
+  return { score: clampScore(score), contributions: sortedContributions };
+}
+
+function decisionVerificationQuestions(row) {
+  const questions = [];
+  const action = row.action || {};
+  if (!row.has_email && !row.has_phone) questions.push('No indexed email or phone. Sweep Close/contact record before drafting or sending.');
+  if ((action.recommended_channel === 'sms' || action.recommended_channel === 'email') && row.contactability < 50) questions.push(`Recommended channel is ${action.recommended_channel}, but contactability is weak. Verify usable contact coordinates first.`);
+  if (row.doctrine?.timeline?.event_urgency_tier === 'no_date') questions.push('Event date is missing, so cash/timeline urgency may be under-informed.');
+  if (row.doctrine?.venue?.commitment_signal === 'actively_shopping') questions.push('Venue is not locked; ask a planning-status question before assuming operational commitment.');
+  if (row.doctrine?.exceptions?.length) questions.push(`Exception state present: ${row.doctrine.exceptions.join(', ')}. Fix/verify this before trusting automation.`);
+  if (!questions.length) questions.push('Verify latest Close activity before executing, then keep Andre as final human approver.');
+  return questions.slice(0, 4);
+}
+
+function explainDecision(row, decision) {
+  const action = row.action || {};
+  const top = decision.contributions.slice(0, 4).map(c => `${c.key.replace(/_/g, ' ')} ${c.contribution >= 0 ? '+' : ''}${c.contribution}`).join(', ');
+  const doctrineNotes = [
+    row.doctrine?.tasting?.doctrine_note,
+    row.doctrine?.revenue?.revenue_doctrine_note,
+    row.doctrine?.decay?.decay_doctrine_note,
+    row.doctrine?.andre_action?.action_doctrine_note,
+  ].filter(Boolean);
+  return {
+    why_now: `${row.name} scores ${decision.score} because ${top || 'the selected comparators point here'}.`,
+    why_this_action: action.reasoning || `Recommended action is ${action.title || action.action_type || 'review'} via ${action.recommended_channel || 'review'}.`,
+    doctrine_read: doctrineNotes.slice(0, 3),
+    beats: 'This action beats lower-ranked moves because it has the stronger combined action score after intent weights, selected comparators, contactability, and doctrine penalties.',
+  };
+}
+
+app.get('/api/lattice/decide', (req, res) => {
+  try {
+    const source = String(req.query.source || 'doctrine').toLowerCase();
+    const intent = String(req.query.intent || 'today').toLowerCase();
+    const primary = String(req.query.primary || 'action_now_score');
+    const secondary = String(req.query.secondary || (source === 'doctrine' ? 'doctrine_fit' : 'priority_score'));
+    const tertiary = String(req.query.tertiary || 'contactability');
+    const limit = Math.min(Math.max(parseInt(req.query.limit || '8', 10) || 8, 1), 20);
+    const graph = latticeGraphForSource(source);
+    const rows = graph.rows || [];
+    const candidates = rows.map(row => {
+      const decision = scoreLatticeDecision(row, { intent, primary, secondary, tertiary });
+      return {
+        decision_id: `${row.lead_id}:${row.action?.action_type || 'review'}:${intent}`,
+        lead_id: row.lead_id,
+        lead_name: row.name,
+        score: decision.score,
+        action: row.action || {},
+        value: row.value || 0,
+        contactability: row.contactability || 0,
+        comparators: {
+          intent,
+          primary: { id: primary, value: Number(row.scores?.[primary] || 0) },
+          secondary: { id: secondary, value: Number(row.scores?.[secondary] || 0) },
+          tertiary: { id: tertiary, value: Number(row.scores?.[tertiary] || 0) },
+        },
+        contributions: decision.contributions,
+        evidence: explainDecision(row, decision),
+        verification_questions: decisionVerificationQuestions(row),
+        doctrine: row.doctrine || null,
+        scores: row.scores || {},
+      };
+    }).sort((a, b) => b.score - a.score).slice(0, limit);
+
+    const winner = candidates[0] || null;
+    res.json({
+      _meta: {
+        generated_at: new Date().toISOString(),
+        source,
+        graph_source: graph._meta?.source || null,
+        intent,
+        primary,
+        secondary,
+        tertiary,
+        algebra: 'intent weights + selected comparator boosts + task/action bonuses - contact/exception penalties',
+      },
+      graph_meta: graph._meta || {},
+      comparators: graph.comparators || [],
+      winner,
+      candidates,
+    });
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // ─── Urgency rules (operator-tunable) ───────────────
 app.get('/api/urgency-rules', async (req, res) => {
   try {
@@ -2068,10 +3180,8 @@ app.put('/api/urgency-rules', async (req, res) => {
 // alongside each grade so Oracle can learn the WHY.
 app.post('/api/oracle/turn', async (req, res) => {
   try {
-    if (!sb.isConfigured()) return res.status(503).json({ error: 'Supabase not configured' });
-    const { id, operator_key, prompt, response, action_type, model, context } = req.body || {};
+    const { id, operator_key, prompt, response, action_type, model, context, lattice_action_id, lead_id, source } = req.body || {};
     if (!id) return res.status(400).json({ error: 'id is required (turn id)' });
-    const client = sb.client();
     const row = {
       id,
       operator_key: operator_key || 'andre',
@@ -2080,15 +3190,23 @@ app.post('/api/oracle/turn', async (req, res) => {
       action_type:  action_type || null,
       model:        model || null,
       context:      context || null,
+      lattice_action_id: lattice_action_id || null,
+      lead_id:      lead_id || null,
+      source:       source || 'oracle',
       created_at:   new Date().toISOString(),
     };
-    const { data, error } = await client
-      .from('oracle_turns')
-      .upsert(row, { onConflict: 'id' })
-      .select()
-      .maybeSingle();
-    if (error) throw new Error(error.message);
-    res.json({ ok: true, turn: data });
+    saveOracleTurnFile(row);
+
+    if (sb.isConfigured()) {
+      try {
+        const client = sb.client();
+        await client.from('oracle_turns').upsert(row, { onConflict: 'id' });
+      } catch (e) {
+        console.warn('[HRMR] Supabase turn mirror skipped:', e.message);
+      }
+    }
+
+    res.json({ ok: true, turn: row, storage: 'file-tree' });
   } catch (e) {
     console.error('[HRMR] log turn failed:', e.message);
     res.status(500).json({ error: e.message });
@@ -2097,14 +3215,10 @@ app.post('/api/oracle/turn', async (req, res) => {
 
 app.get('/api/hrmr', async (req, res) => {
   try {
-    if (!sb.isConfigured()) return res.json({ ratings: [] });
-    const client = sb.client();
     const turnId = req.query.turn_id;
-    let q = client.from('hrmr_ratings').select('*').order('created_at', { ascending: false }).limit(200);
-    if (turnId) q = q.eq('turn_id', turnId);
-    const { data, error } = await q;
-    if (error) throw new Error(error.message);
-    res.json({ ratings: data || [] });
+    const all = readHrmrFile('ratings.json', { ratings: [] }).ratings || [];
+    const ratings = turnId ? all.filter(r => r.turn_id === turnId) : all.slice(0, 200);
+    res.json({ ratings, source: 'file-tree' });
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
@@ -2112,27 +3226,77 @@ app.get('/api/hrmr', async (req, res) => {
 
 app.post('/api/hrmr', async (req, res) => {
   try {
-    if (!sb.isConfigured()) return res.status(503).json({ error: 'Supabase not configured' });
-    const { turn_id, grade, note, rated_by } = req.body || {};
+    const {
+      turn_id,
+      grade,
+      note,
+      rated_by,
+      query,
+      response_snippet,
+      action_type,
+      lattice_action_id,
+      lead_id,
+      model,
+      source,
+    } = req.body || {};
     if (!turn_id) return res.status(400).json({ error: 'turn_id is required' });
     if (!grade)   return res.status(400).json({ error: 'grade is required (A+, A, B, C, D, F, etc.)' });
-    const client = sb.client();
     const row = {
+      id: `hrmr_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`,
       turn_id,
       grade,
       note:       note || null,
       rated_by:   rated_by || 'andre',
+      query:      query || null,
+      response_snippet: response_snippet || null,
+      action_type: action_type || null,
+      lattice_action_id: lattice_action_id || null,
+      lead_id:    lead_id || null,
+      model:      model || null,
+      source:     source || 'oracle_grade',
       created_at: new Date().toISOString(),
     };
-    const { data, error } = await client
-      .from('hrmr_ratings')
-      .insert(row)
-      .select()
-      .maybeSingle();
-    if (error) throw new Error(error.message);
-    res.json({ ok: true, rating: data });
+    saveHrmrRatingFile(row);
+
+    if (sb.isConfigured()) {
+      try {
+        const client = sb.client();
+        await client.from('hrmr_ratings').insert(row);
+      } catch (e) {
+        console.warn('[HRMR] Supabase rating mirror skipped:', e.message);
+      }
+    }
+
+    logActivity('ai', 'hrmr_rating', `Oracle reply graded ${grade}`, note || 'No note provided', []);
+    res.json({ ok: true, rating: row, storage: 'file-tree' });
   } catch (e) {
     console.error('[HRMR] post rating failed:', e.message);
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.get('/api/hrmr/summary', (req, res) => {
+  try {
+    const limit = Math.min(parseInt(req.query.limit || '12', 10) || 12, 50);
+    res.json(getHrmrSummary(limit));
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+app.post('/api/oracle/archive', (req, res) => {
+  try {
+    const archived = archiveOracleConversationFile(req.body || {});
+    logActivity(
+      'ai',
+      'oracle_conversation_archived',
+      `Oracle conversation archived`,
+      `${archived.message_count} messages · ${archived.grade_count} grade(s) · ${archived.title}`,
+      archived.lead_ids || []
+    );
+    res.json({ ok: true, conversation: archived, storage: 'file-tree+lattice' });
+  } catch (e) {
+    console.error('[HRMR] archive conversation failed:', e.message);
     res.status(500).json({ error: e.message });
   }
 });

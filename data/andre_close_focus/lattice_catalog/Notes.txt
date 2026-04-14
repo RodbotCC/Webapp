@@ -1,0 +1,1212 @@
+[
+  {
+    "note_id": "acti_PNGFrF3Jis1IjGPw6D5EnGEzEdlvbZMvSLJjpbkFYRb",
+    "lead_id": "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "contact_id": null,
+    "conversation_id": "conv_lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/24/26 07:03PM",
+    "created_at": "2026-03-24T23:03:15.343000+00:00",
+    "updated_at": "2026-03-24T23:03:15.343000+00:00"
+  },
+  {
+    "note_id": "acti_aMYCR40jZuSwvVquvPZDqza1oXYwm4nfPmQJj25jxjf",
+    "lead_id": "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "contact_id": null,
+    "conversation_id": "conv_lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "title": null,
+    "body_text": "Zip: 32724\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 60\nEvent Desc: Wedding\nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-24T22:51:56.344000+00:00",
+    "updated_at": "2026-03-24T22:51:56.344000+00:00"
+  },
+  {
+    "note_id": "acti_uDcyjO1EuHeHWGUWazj32HOQ9XSYxmVWhDtOfmANwEt",
+    "lead_id": "lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+    "contact_id": null,
+    "conversation_id": "conv_lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "Ana Paula  \nMay 31st  \nbiz conference  \nPortuguese speaker ...  \njust sent her a 1st  msg",
+    "created_at": "2026-04-02T14:56:50.087000+00:00",
+    "updated_at": "2026-04-02T14:57:03.216000+00:00"
+  },
+  {
+    "note_id": "acti_nEtpm8hwZlViIgImznuQcChg1nM8SjFQdRx0PadAmCa",
+    "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "contact_id": null,
+    "conversation_id": "conv_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "title": null,
+    "body_text": "💰 Payment Received!\nAmount: 70\n\n👤 Customer Name: Andreia depina \n✉️ Email: depina1993@gmail.com\n\n🔗 Receipt Link: https://pay.stripe.com/receipts/payment/CAcQARoXChVhY2N0XzE5cTR5TEpkZ3U0UGtYOGEok9WIzQYyBsMk2-r_GDosFqhfnSUaTYF6hlE6DicDzTld5wdnTE-H7Djl08gVF6bgn2Dli_GF2UtyKXw\n🌍 Card Country:",
+    "created_at": "2026-02-27T23:36:56.484000+00:00",
+    "updated_at": "2026-02-27T23:36:56.484000+00:00"
+  },
+  {
+    "note_id": "acti_MoRg8wlnhKkAGJtOMDCU5IWyUtiNzTwE9K2QTLwruU2",
+    "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "contact_id": null,
+    "conversation_id": "conv_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "title": null,
+    "body_text": "📞 CALL PREP for Andreia DePina Moore\n\nLead Status: 🔘 Maybe\nOpportunity: Sales: ⬜ 00. Prospect\n\nRecent conversation:\nSMS (inbound, 2026-02-25): Okay, call me tomorrow after 5\nSMS (outbound, 2026-02-24): Oi Andreia! É o André da Comeketo 🍽️ Queria te convidar pra nossa degustação especial dia 15 de março! Lugares limitados. Se inscreve aqui: https://fo\nEmail (outgoing, 2026-02-24): Convite Especial — Degustação Comeketo 🍽️\nEmail (outgoing, 2026-02-23): Understanding Our Catering Service Types\n\nTask: Ligar de noite\n\nTalking points:\n- Reference their event/needs\n- Ask about timeline\n- Offer tasting if not done\n- NEPQ: curious questions, no pressure",
+    "created_at": "2026-02-27T15:32:31.920000+00:00",
+    "updated_at": "2026-02-27T15:32:31.920000+00:00"
+  },
+  {
+    "note_id": "acti_GBZyy7jiv0gdVuglaISXTUk40LRe9VCdfyOafKJ4jMM",
+    "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "contact_id": null,
+    "conversation_id": "conv_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 02/23/26 10:20AM",
+    "created_at": "2026-02-23T15:20:47.422000+00:00",
+    "updated_at": "2026-02-23T15:20:47.422000+00:00"
+  },
+  {
+    "note_id": "acti_SZ4z9CuDACvoHINZhClMxFBMdgen1e7rNH7ZAno6spm",
+    "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "contact_id": null,
+    "conversation_id": "conv_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "title": null,
+    "body_text": "Boston Zip: 02119\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 25\nEvent Desc: Anniversary\nEvent Date: August 1\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-02-22T23:03:07.047000+00:00",
+    "updated_at": "2026-02-22T23:03:07.047000+00:00"
+  },
+  {
+    "note_id": "acti_JHYshaetmj40s0N9EXuVUDYYOM7YC3etD3CUD2b0DPM",
+    "lead_id": "lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN",
+    "contact_id": null,
+    "conversation_id": "conv_lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN",
+    "title": null,
+    "body_text": "✉️ Email: annaocampo.ao@gmail.com\n📍 ZIP: 95376\n👥 Number of Guests: 51-75\n📍 Distance: \n\n👤 Name: Instagram Anna\n✉️ Email: annaocampo.ao@gmail.com\n📲 Phone: (925) 696-8242\n🎤 Event Type: Birthday\n🍽️ Catering Type: 🔥 Grilling On Site (Churrasco)",
+    "created_at": "2026-04-01T19:19:38.959000+00:00",
+    "updated_at": "2026-04-01T19:19:38.959000+00:00"
+  },
+  {
+    "note_id": "acti_YiGHQPgq92k9sG88gqyM0FfREulMUwL175JIM40mHcn",
+    "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "contact_id": null,
+    "conversation_id": "conv_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "title": null,
+    "body_text": "🌐 NON-ENGLISH LEAD (Portuguese) — needs manual follow-up\nNot enough message history to auto-send (need 3+ SMS and 3+ emails in Portuguese).\nSuggested follow-up: NEPQ style in Portuguese.",
+    "created_at": "2026-02-27T15:32:39.821000+00:00",
+    "updated_at": "2026-02-27T15:32:39.821000+00:00"
+  },
+  {
+    "note_id": "acti_WOanSyQw3xxW7WPg4BUomNtsvsIPin8LsLdaRfH8PS5",
+    "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "contact_id": null,
+    "conversation_id": "conv_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "title": null,
+    "body_text": "02/26/26 11:04PM Quote: https://docs.google.com/spreadsheets/d/1orokAelQdAfTDf5oRLgQmUF3JSnSZv6dZ-WnYhqI9VU/edit#gid=597074661\n\nduarteannajulia5@gmail.com\n981.12\nFull Buffet + \nSelf-Serve Attended Buffet\n2 main course + 3 sides + 1 Salad\nAttended: Setup + Breakdown + Refreshing Buffet\nBudget Option: Switch to drop off & save $3/pp",
+    "created_at": "2026-02-27T04:04:15.105000+00:00",
+    "updated_at": "2026-02-27T04:04:15.105000+00:00"
+  },
+  {
+    "note_id": "acti_ksMNQ3eUXB6cjEW0tyvdshmp7lp6URqGtdfI0ZijDs5",
+    "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "contact_id": null,
+    "conversation_id": "conv_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "title": null,
+    "body_text": "02/23/26 08:17AM Quote: https://docs.google.com/spreadsheets/d/1orokAelQdAfTDf5oRLgQmUF3JSnSZv6dZ-WnYhqI9VU/edit#gid=597074661\n\nduarteannajulia5@gmail.com\n981.12\nFull Buffet + \nSelf-Serve Attended Buffet\n2 main course + 3 sides + 1 Salad\nAttended: Setup + Breakdown + Refreshing Buffet\nBudget Option: Switch to drop off & save $3/pp",
+    "created_at": "2026-02-23T13:17:26.573000+00:00",
+    "updated_at": "2026-02-23T13:17:26.573000+00:00"
+  },
+  {
+    "note_id": "acti_eT18MnxwWzN33ETYgr2vgjoGeqyiEiVxBKyZtIk2mC7",
+    "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "contact_id": null,
+    "conversation_id": "conv_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "title": null,
+    "body_text": "Marlborough Zip: 01752\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 70\nEvent Desc: Wedding\nEvent Date: 08/22/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-02-22T18:53:15.783000+00:00",
+    "updated_at": "2026-02-22T18:53:15.783000+00:00"
+  },
+  {
+    "note_id": "acti_ig5RtB6cqWXw0Vrlz6XQRz6oFl67aq6dsYWvSk4rwdm",
+    "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "contact_id": null,
+    "conversation_id": "conv_lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "title": null,
+    "body_text": "📞 CALL PREP for Ari\n\nLead Status: 🔘 Maybe\nOpportunity: Sales: ⬜ 00. Prospect\n\nRecent conversation:\nSMS (outbound, 2026-02-20): Hi Ari! This is Andre from Come Keto Catering. I'd love to connect with you - please let me know the best time for a quick call!\nSMS (outbound, 2026-02-19): How can I help book your catering? Price? Food?\nEmail (outgoing, 2026-02-23): Raise a Glass to Perfect Events! 🍹\nEmail (outgoing, 2026-02-23): Explore What Comeketo Catering Has to Offer! ✨\n\nTask: Get them on the phone soon\n\nTalking points:\n- Reference their event/needs\n- Ask about timeline\n- Offer tasting if not done\n- NEPQ: curious questions, no pressure",
+    "created_at": "2026-02-27T15:32:07.173000+00:00",
+    "updated_at": "2026-02-27T15:32:07.173000+00:00"
+  },
+  {
+    "note_id": "acti_x6cGWmxTK3lL9hKYkmxaxGDgeWoZ7mHc0ZUWZXeKFlS",
+    "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "contact_id": null,
+    "conversation_id": "conv_lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "title": null,
+    "body_text": "Suncook Zip: 03275\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 130\nEvent Desc: Party\nEvent Date: 8/21/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-02-16T21:16:30.811000+00:00",
+    "updated_at": "2026-02-16T21:16:30.811000+00:00"
+  },
+  {
+    "note_id": "acti_TOEyTH3h2Yw0hFppFRR0z7TYjXjUyj8C85JcFHnBji2",
+    "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "contact_id": null,
+    "conversation_id": "conv_lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/01/26 09:29AM",
+    "created_at": "2026-04-01T13:29:47.028000+00:00",
+    "updated_at": "2026-04-01T13:29:47.028000+00:00"
+  },
+  {
+    "note_id": "acti_RFprhZZAIFatVkRIgRzDj2UYTSBjMUqFkRv3HBRN4JC",
+    "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "contact_id": null,
+    "conversation_id": "conv_lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "title": null,
+    "body_text": "Chicopee Zip: 01020\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 135\nEvent Desc: Wedding\nEvent Date: 6/12/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-01T11:37:50.945000+00:00",
+    "updated_at": "2026-04-01T11:37:50.945000+00:00"
+  },
+  {
+    "note_id": "acti_gAnxtCVEf0XZ3pvNirgZlz6zkl2kUkfuVO8jHH8Lsy4",
+    "lead_id": "lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "contact_id": null,
+    "conversation_id": "conv_lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "title": null,
+    "body_text": "📞 CALL PREP for BriAnna Nixie\n\nLead Status: 🔘 Maybe\nOpportunity: Sales: ⬜ 00. Prospect\n\nRecent conversation:\nSMS (outbound, 2026-02-24): Hey BriAnna! Its André from Comeketo 🍽️ Wanted to invite you to our special tasting on March 15th! Limited spots. Register here: https://form.jotform.\nSMS (outbound, 2026-02-23): Hey BriAnna \n\nIt's André From Comeketo Catering.\n\nLet me know the best time to call you back please.\nEmail (outgoing, 2026-02-25): Raise a Glass to Perfect Events! 🍹\nEmail (outgoing, 2026-02-24): You're Invited — Comeketo Tasting Experience 🍽️\n\nTask: Get her on the phone\n\nTalking points:\n- Reference their event/needs\n- Ask about timeline\n- Offer tasting if not done\n- NEPQ: curious questions, no pressure",
+    "created_at": "2026-02-27T15:31:58.906000+00:00",
+    "updated_at": "2026-02-27T15:31:58.906000+00:00"
+  },
+  {
+    "note_id": "acti_miy8a9KUJWcWQPr47tOza773Pi2Ty2DZm8Tpr1VLXXu",
+    "lead_id": "lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "contact_id": null,
+    "conversation_id": "conv_lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 02/19/26 05:33PM",
+    "created_at": "2026-02-19T22:33:43.066000+00:00",
+    "updated_at": "2026-02-19T22:33:43.066000+00:00"
+  },
+  {
+    "note_id": "acti_QouFLQLI3EQvWlgplfPDN6CyRha4mvnfYnoqQYrtwmd",
+    "lead_id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+    "contact_id": null,
+    "conversation_id": "conv_lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "Hi there, my name is Cadence Fell. We’d love to schedule a consultation with\nyou. Our wedding date is August 18, 2028 with between 51 and 100 guests.  \nI'm available Fridays in the evening (5:00 PM-8:00 PM). Do you have any\nupcoming openings during that time? Thank you!\n\n**Wedding Details**\n\nWedding Date\n\nFri, Aug 18, 2028\n\nWedding Location\n\nJohnson City, TN\n\nNumber of Guests\n\n51 - 100\n\nPartner's Name\n\nVincent Lanius",
+    "created_at": "2026-04-06T16:59:18.031000+00:00",
+    "updated_at": "2026-04-06T16:59:27.637000+00:00"
+  },
+  {
+    "note_id": "acti_MVFbrOMCuaWqOtpTSPoPskKv4MjqsyV6Pij7vteQCUt",
+    "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "contact_id": null,
+    "conversation_id": "conv_lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/06/26 11:35AM",
+    "created_at": "2026-04-06T15:35:50.660000+00:00",
+    "updated_at": "2026-04-06T15:35:50.660000+00:00"
+  },
+  {
+    "note_id": "acti_UkXbvR2c0qasIoyjEra13FPYKamclo92Aq4hYsCmvM1",
+    "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "contact_id": null,
+    "conversation_id": "conv_lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "title": null,
+    "body_text": "Attleboro Zip: 02703\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 50\nEvent Desc: birthday\nEvent Date: 5/2/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-05T23:35:53.876000+00:00",
+    "updated_at": "2026-04-05T23:35:53.876000+00:00"
+  },
+  {
+    "note_id": "acti_TVZDNFbX7CQi8uRGqmWxG0lxWCGuB6rqTxdTIxarWCj",
+    "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "contact_id": null,
+    "conversation_id": "conv_lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/07/26 10:38AM",
+    "created_at": "2026-04-07T14:38:03.807000+00:00",
+    "updated_at": "2026-04-07T14:38:03.807000+00:00"
+  },
+  {
+    "note_id": "acti_3EcKmG2SwSJSwAFA89sYpcTST7o7LoVzP5PjETeR6Kv",
+    "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "contact_id": null,
+    "conversation_id": "conv_lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "title": null,
+    "body_text": "Chelsea Zip: 02150\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-07T02:32:36.822000+00:00",
+    "updated_at": "2026-04-07T02:32:36.822000+00:00"
+  },
+  {
+    "note_id": "acti_DBLzhY9COH3K1nHGLZGrhNZPQnDmMGMna4xwABiWtxM",
+    "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "contact_id": null,
+    "conversation_id": "conv_lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/06/26 07:34PM",
+    "created_at": "2026-04-06T23:35:00.222000+00:00",
+    "updated_at": "2026-04-06T23:35:00.222000+00:00"
+  },
+  {
+    "note_id": "acti_1xZMlFx3nESRIAlktwkSHHj3o32WpkANPAJz2yRL5yK",
+    "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "contact_id": null,
+    "conversation_id": "conv_lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "title": null,
+    "body_text": "Everett Zip: 02149\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 50\nEvent Desc: Graduation party\nEvent Date: June 13\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-06T23:34:13.520000+00:00",
+    "updated_at": "2026-04-06T23:34:13.520000+00:00"
+  },
+  {
+    "note_id": "acti_ifjeGWE6PktGxsuMGCNJzdXhi56wAMs1jxiKakfHM6v",
+    "lead_id": "lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+    "contact_id": null,
+    "conversation_id": "conv_lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+    "title": null,
+    "body_text": "Zip: 76502\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 5o\nEvent Desc: birthday\nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-24T21:20:02.184000+00:00",
+    "updated_at": "2026-03-24T21:20:02.184000+00:00"
+  },
+  {
+    "note_id": "acti_1kLqCugIo8PgDViTFA0Sp4HR6G0icGlt8csiQUFOaeu",
+    "lead_id": "lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+    "contact_id": null,
+    "conversation_id": "conv_lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+    "title": null,
+    "body_text": "Zip: 02631\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 25\nEvent Desc: Wedding\nEvent Date: 6/3/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-28T21:43:07.735000+00:00",
+    "updated_at": "2026-03-28T21:43:07.735000+00:00"
+  },
+  {
+    "note_id": "acti_OBbyZeEpD61Fl57UFoE70Mtd366nHpfkbWaMkY87Lsw",
+    "lead_id": "lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+    "contact_id": null,
+    "conversation_id": "conv_lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+    "title": null,
+    "body_text": "Lawrence Zip: 01841\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 30\nEvent Desc: Wedding intimate\nEvent Date: June 2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-12T17:56:30.568000+00:00",
+    "updated_at": "2026-03-12T17:56:30.568000+00:00"
+  },
+  {
+    "note_id": "acti_av25vJAGRe5fwrCHrZHSDRITF8PS9P0m4mi3YCU324o",
+    "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "contact_id": null,
+    "conversation_id": "conv_lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/19/26 08:21PM",
+    "created_at": "2026-03-20T00:21:45.228000+00:00",
+    "updated_at": "2026-03-20T00:21:45.228000+00:00"
+  },
+  {
+    "note_id": "acti_ZQIz0C6A8DhsuHF7I7LHRDw1sP8BrMrnZtXu0ktjZ4v",
+    "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "contact_id": null,
+    "conversation_id": "conv_lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "title": null,
+    "body_text": "Everett Zip: 02149\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 130\nEvent Desc: Wedding\nEvent Date: 04/182026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-20T00:21:26.373000+00:00",
+    "updated_at": "2026-03-20T00:21:26.373000+00:00"
+  },
+  {
+    "note_id": "acti_I5CWLyFVQkmS5yf6gTYVcBBvBnTA0bt78IuK9Nc8KN5",
+    "lead_id": "lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
+    "contact_id": null,
+    "conversation_id": "conv_lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
+    "title": null,
+    "body_text": "Requested a free tasting from website",
+    "created_at": "2026-04-01T17:14:22.653000+00:00",
+    "updated_at": "2026-04-01T17:14:22.653000+00:00"
+  },
+  {
+    "note_id": "acti_p2DZHwuDjq03As5D5GvW1zluTbVDQv9i9LQPe38Vjtj",
+    "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "contact_id": null,
+    "conversation_id": "conv_lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/07/26 10:37AM",
+    "created_at": "2026-04-07T14:37:53.776000+00:00",
+    "updated_at": "2026-04-07T14:37:53.776000+00:00"
+  },
+  {
+    "note_id": "acti_IUki1cEdOUvIA1ANvQgjEx0uvWV4IHZIFOM1wib2Mne",
+    "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "contact_id": null,
+    "conversation_id": "conv_lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "title": null,
+    "body_text": "Zip: 78217\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 100\nEvent Desc: Wedding\nEvent Date: 8/08/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-07T12:07:34.833000+00:00",
+    "updated_at": "2026-04-07T12:07:34.833000+00:00"
+  },
+  {
+    "note_id": "acti_vgacgFLChLE1MsAj6xQw8FsOt0SK0K5X4BF6YD2gvnU",
+    "lead_id": "lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "title": null,
+    "body_text": "Remember to add an opportunity for every lead",
+    "created_at": "2025-07-10T17:10:53.624000+00:00",
+    "updated_at": "2025-07-10T17:10:53.624000+00:00"
+  },
+  {
+    "note_id": "acti_Cm5boJQAPWJW1ZIWnqKRNho7HLGJmhAMJVSBWVH80oZ",
+    "lead_id": "lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "title": null,
+    "body_text": "**Gisele's Memorial Service**\n\n  * 100 Guests\n\n  * Sat, Sep 13, 2025  \n(date flexible)\n\n  * 6:00 PM (4.0 Hours)\n\n  * Flexible Budget\n\n**Gisele Chartrand Elgart**\n\n  * [gisele@elgart.com](mailto:gisele@elgart.com)\n\n  * [617-320-6805](tel:617-320-6805)\n\n**Prospect | Lead**\n\n  * EGFQNDIT\n\n  * Harvard, MA 01451\n\n  * Received 1d ago (Jul 8, 2025)\n\n**Services Requested**\n\nVenues, Caterers\n\n**Food Considerations**\n\nProvided by the venue  \n  \n**Jul 8, 2025**\n\n**Gisele Initial Inquiry  **4:40 PM EDT\n\nCelebration of life\n\n**Gisele Requested Services  **4:40 PM EDT\n\nVenues, Caterers\n\n**Jul 9, 2025**\n\n3:32 PM EDT\n\n**Comeketo Catering Company viewed the lead**\n\n**Jul 10, 2025**\n\n1:06 PM EDT\n\n**Comeketo Catering Company viewed the email address**\n\n1:06 PM EDT\n\n**You responded in 45 hours. You were the first business to respond to\nGisele.**\n\n1:06 PM EDT\n\n**Comeketo Catering Company viewed the phone number**",
+    "created_at": "2025-07-10T17:10:36.543000+00:00",
+    "updated_at": "2025-07-10T17:11:06.170000+00:00"
+  },
+  {
+    "note_id": "acti_F7Vb8rLhgIxIlalWpMsSj6l0Ep9Ru06TzHl6SuBNXtt",
+    "lead_id": "lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "contact_id": null,
+    "conversation_id": "conv_lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "@Andre Raw next step here? I didn't see any task created",
+    "created_at": "2026-03-11T02:10:36.234000+00:00",
+    "updated_at": "2026-03-11T02:11:06.123000+00:00"
+  },
+  {
+    "note_id": "acti_8MRalNqm5fnEaWc4huze5g1RQyQWHv0j8A7dTXDke4g",
+    "lead_id": "lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "contact_id": null,
+    "conversation_id": "conv_lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "Don't leave Inna Shvetsova hanging! Check out their message:\n\n**Actively InquiringMessaged You First**\n\nWe're getting married on 08/23/2026. We were excited to find you on\nWeddingWire and would love to learn more! Could you send over more info about\nthe products and services you offer?For: Comeketo Catering - Wedding Caterers\nBoston\n\nBy replying, you agree that your messages may be monitored for quality,\nsafety, and security according to our [Acceptable Content\nPolicy](https://www.theknotww.com/legalhub/content-moderation-policy/)\n\n[**Reply**](mailto:user-88978504x3a2322b336bfb4fc35fc03a@reply.weddingwire.com?subject=RE%3A%20%F0%9F%93%A9%20Inna%20Shvetsova%20%20sent%20you%20a%20new%20message)\n\nReply directly to this email or [view on\nWeddingPro.](https://www.weddingwire.com/emp-mail-\nTraceClick.php?tipo=ADMIN_SOLICITUDES_VALIDAR&durl=%2F%2Fwww.weddingwire.com%2Fpreq.php%3Fauthsolic%3D88978504x4f2ef411a231ac144c324eb&utm_source=admin_solicitudes_validar&utm_medium=email&utm_campaign=admin_solicitudes_validar&utm_idTrackE=111140456)\n\nInna Shvetsova 's wedding details\n\nEvent date:  \nSun 08/23/2026Guest count:  \n175+Email:  \ninnaedward84@gmail.comPhone number:  \n413-454-5211",
+    "created_at": "2026-03-05T21:00:22.326000+00:00",
+    "updated_at": "2026-03-09T19:49:51.640000+00:00"
+  },
+  {
+    "note_id": "acti_nrteJZZiTeUjEURHJsn3pq5BRpMJMFw5ZnoCW2tlCoY",
+    "lead_id": "lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "contact_id": null,
+    "conversation_id": "conv_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "title": null,
+    "body_text": "💰 Payment Received!\nAmount: 70\n\n👤 Customer Name: Isabella Mathis\n✉️ Email: williamsmathisfamily@gmail.com\n\n🔗 Receipt Link: https://pay.stripe.com/receipts/payment/CAcQARoXChVhY2N0XzE5cTR5TEpkZ3U0UGtYOGEoh_bEzgYyBtxQdK9KpzosFn0ZwB0_OQIWSpPmhD6kSZnjWkHUSF0GFXdurOtG-XJ6rM6H7wd9YH8gc-8\n🌍 Card Country:",
+    "created_at": "2026-04-04T16:23:39.992000+00:00",
+    "updated_at": "2026-04-04T16:23:39.992000+00:00"
+  },
+  {
+    "note_id": "acti_owqlJK2ceo4hcP3y7tuLohd2ZuoKn2ADC9VYu96BKMh",
+    "lead_id": "lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "contact_id": null,
+    "conversation_id": "conv_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "title": null,
+    "body_text": "✉️ Email: williamsmathisfamily@gmail.com\n📍 ZIP: 01473\n👥 Number of Guests: 76-100\n📍 Distance: \n\n👤 Name: Zola Isabella Mathis\n✉️ Email: williamsmathisfamily@gmail.com\n📲 Phone: (978) 353-9881\n🎤 Event Type: Wedding\n🍽️ Catering Type: 🥂 Bar & Beverage Service; 🚚 Dropoff Style Catering; 🔥 Grilling On Site (Churrasco); 🌱 Special Dietary Catering (e.g., vegetarian, vegan, gluten-friendly); 💭 Unsure, Open to Suggestions",
+    "created_at": "2026-04-01T10:44:49.109000+00:00",
+    "updated_at": "2026-04-01T10:44:49.109000+00:00"
+  },
+  {
+    "note_id": "acti_igDeuFrzVqO4sH3hEghSGO32mBfolBlvujUKZTLBxJV",
+    "lead_id": "lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "contact_id": null,
+    "conversation_id": "conv_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "title": null,
+    "body_text": "Requested a free tasting from website",
+    "created_at": "2026-04-01T10:41:12.731000+00:00",
+    "updated_at": "2026-04-01T10:41:12.731000+00:00"
+  },
+  {
+    "note_id": "acti_tN4Y7PwaG4JCCo2JnvOYKZj4MVVhIiN0TXHB8ppL6Zw",
+    "lead_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "contact_id": null,
+    "conversation_id": "conv_lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/28/26 02:44PM",
+    "created_at": "2026-03-28T18:44:40.774000+00:00",
+    "updated_at": "2026-03-28T18:44:40.774000+00:00"
+  },
+  {
+    "note_id": "acti_Z4AYXPbiZgyGjPatecoBRjoFDtJ24UD5brzjnJVB31k",
+    "lead_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "contact_id": null,
+    "conversation_id": "conv_lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "title": null,
+    "body_text": "Zip: 02343\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 100\nEvent Desc: birthday\nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-28T01:06:26.240000+00:00",
+    "updated_at": "2026-03-28T01:06:26.240000+00:00"
+  },
+  {
+    "note_id": "acti_S2VPA5cDhpCCN1hRquOp3UVp4xfD74CCRH8TuUgmNae",
+    "lead_id": "lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "contact_id": null,
+    "conversation_id": "conv_lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 02/27/26 01:22PM",
+    "created_at": "2026-02-27T18:22:59.725000+00:00",
+    "updated_at": "2026-02-27T18:22:59.725000+00:00"
+  },
+  {
+    "note_id": "acti_WfJTIG1QIJfful3ln9Q82diwodYTa3c9gj3vq2cQtrI",
+    "lead_id": "lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "contact_id": null,
+    "conversation_id": "conv_lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "title": null,
+    "body_text": "Milford Zip: 03055\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 90\nEvent Desc: Wedding\nEvent Date: 10/ 326\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-02-27T17:44:05.791000+00:00",
+    "updated_at": "2026-02-27T17:44:05.791000+00:00"
+  },
+  {
+    "note_id": "acti_dEy4lD4rZeUgHHegTHdd0BeL1CMQ3yksK2AfNqGbq09",
+    "lead_id": "lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "contact_id": null,
+    "conversation_id": "conv_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "title": null,
+    "body_text": "💰 Payment Received!\nAmount: 70\n\n👤 Customer Name: Jennifer Foucher\n✉️ Email: j_foucher@yahoo.com\n\n🔗 Receipt Link: https://pay.stripe.com/receipts/payment/CAcQARoXChVhY2N0XzE5cTR5TEpkZ3U0UGtYOGEo7Nv0zQYyBqvBkd_VazosFqxYGLh8FLqYNNNXKvIoRH_FBjmit0gdIK-8Q314NhInh8aNoHcABwGoIt8\n🌍 Card Country: US",
+    "created_at": "2026-03-20T11:22:24.446000+00:00",
+    "updated_at": "2026-03-20T11:22:24.446000+00:00"
+  },
+  {
+    "note_id": "acti_HTF8lHtInLZvWOgXX3wxVBTM9nbotTzGmjwnF2xqZmR",
+    "lead_id": "lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "contact_id": null,
+    "conversation_id": "conv_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/16/26 07:18PM",
+    "created_at": "2026-03-16T23:18:17.295000+00:00",
+    "updated_at": "2026-03-16T23:18:17.295000+00:00"
+  },
+  {
+    "note_id": "acti_EBMESdUbOO4UGVhro6Mrm0imTRkZBMKDB36p5BIS6qx",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "contact_id": null,
+    "conversation_id": "conv_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "title": null,
+    "body_text": "Claude sweep 2026-04-11: Lead is in a \"ghosted after full-court press\" state, not neglect. Timeline: FB ad + website tasting form 04-06 → 3 Andre calls 04-06/07 (first answered but dodged/wrong-person, rest unreached) → tasting invite SMS for 04-19 Fitchburg 04-07 → clarifier email 04-08 offering 5 call times OR 2 tasting dates. No reply in 3 days. Status downgraded 🟢→🔘 Maybe.\n\nContext: Aug 15 wedding, 100 guests, full-service. $3,326 primary opp at 75% closes 05-06. Task \"Engage & Sell a tasting\" due 04-13.\n\nRisk: she's gone quiet *after* the clarifier, not before. A standard check-in will feel like touch #5 in a week. Consider pattern-interrupt (value-first, e.g. 2-min video of a recent 100-guest wedding) over another ask. Or hand to Rhonna for a softer reconnect — Rhonna sent earliest emails and may read as less salesy.\n\nNext action should land by 04-13 (task due date) or she slides to Dormant.",
+    "created_at": "2026-04-11T10:17:59.982000+00:00",
+    "updated_at": "2026-04-11T10:17:59.982000+00:00"
+  },
+  {
+    "note_id": "acti_gK0xICmCRvLGUOxquOs92erIcuapYJsEb5bC2NR5BoM",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "contact_id": null,
+    "conversation_id": "conv_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "title": null,
+    "body_text": "Requested a free tasting from website",
+    "created_at": "2026-04-07T15:39:36.505000+00:00",
+    "updated_at": "2026-04-07T15:39:36.505000+00:00"
+  },
+  {
+    "note_id": "acti_CQ1jDwzFldck4wAKlggH0dR3j2oDr53XttlgcgZDS3P",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "contact_id": null,
+    "conversation_id": "conv_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "title": null,
+    "body_text": "✉️ Email: jenn.jones07@yahoo.com\n📍 ZIP: 02779\n👥 Number of Guests: 76-100\n📍 Distance: \n\n👤 Name: Facebook Jennifer jones\n✉️ Email: jenn.jones07@yahoo.com\n📲 Phone: (508) 441-7237\n🎤 Event Type: Wedding\n🍽️ Catering Type: 🛎️ Full-Service Catering",
+    "created_at": "2026-04-06T22:17:55.840000+00:00",
+    "updated_at": "2026-04-06T23:03:47.992000+00:00"
+  },
+  {
+    "note_id": "acti_VjdXKtwiyy8kjJMsQfaZ3zvklRsibKRE2X7ofTM33mL",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "contact_id": null,
+    "conversation_id": "conv_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/06/26 06:14PM",
+    "created_at": "2026-04-06T22:14:57.040000+00:00",
+    "updated_at": "2026-04-06T23:03:48.017000+00:00"
+  },
+  {
+    "note_id": "acti_p90dry3OP0hjXr7fu6XVoyNDGyZolDp009YCFjTyp26",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "contact_id": null,
+    "conversation_id": "conv_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "title": null,
+    "body_text": "Requested a free tasting from website",
+    "created_at": "2026-04-06T22:14:44.798000+00:00",
+    "updated_at": "2026-04-06T22:14:44.798000+00:00"
+  },
+  {
+    "note_id": "acti_E4PQLBT3I5q6Ds8l16wY6hAXsdkFTFfMxjTdP3DMxgy",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "contact_id": null,
+    "conversation_id": "conv_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "title": null,
+    "body_text": "Zip: 02779\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 100\nEvent Desc: Wedding\nEvent Date: August 15\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-06T22:14:01.677000+00:00",
+    "updated_at": "2026-04-06T23:03:48.040000+00:00"
+  },
+  {
+    "note_id": "acti_cUlR0GpQF4VMYMgePVuH7MNZbMc9H0Kptts7zTJVJud",
+    "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "contact_id": null,
+    "conversation_id": "conv_lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/06/26 11:45AM",
+    "created_at": "2026-04-06T15:45:08.914000+00:00",
+    "updated_at": "2026-04-06T15:45:08.914000+00:00"
+  },
+  {
+    "note_id": "acti_CLb58prtXJjjgRieXptf9XPJ6TOpe8M4jp93wN3kLrI",
+    "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "contact_id": null,
+    "conversation_id": "conv_lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "title": null,
+    "body_text": "Somerville Zip: 02145\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 100\nEvent Desc: Wedding\nEvent Date: 6/4/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-06T01:43:18.632000+00:00",
+    "updated_at": "2026-04-06T01:43:18.632000+00:00"
+  },
+  {
+    "note_id": "acti_GEOG4iW5RZgbDVKzCTXoYoKLOJaJIP6yucW1y2IfkJ2",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "contact_id": null,
+    "conversation_id": "conv_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "title": "Andre Raw created a note",
+    "body_text": "Tasting Payment",
+    "created_at": "2026-04-02T17:44:25.926000+00:00",
+    "updated_at": "2026-04-02T17:44:34.846000+00:00"
+  },
+  {
+    "note_id": "acti_ofpc8bvt5yzy0uY2C3DPmCh8Ier0EMIABFVcm1mcN0B",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "contact_id": null,
+    "conversation_id": "conv_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "title": null,
+    "body_text": "💰 Payment Received!\nAmount: 210\n\n👤 Customer Name: Maria dutra\n✉️ Email: josequefau@icloud.com\n\n🔗 Receipt Link: https://pay.stripe.com/receipts/payment/CAcQARoXChVhY2N0XzE5cTR5TEpkZ3U0UGtYOGEo1M-6zgYyBpUMHAz1FzosFilbMCVFEJFwjRZzn2Mb7GxTi4J_JKVYFP_iWn4R9zke36lVOGkhl-ibMrU\n🌍 Card Country: US",
+    "created_at": "2026-04-02T17:31:06.742000+00:00",
+    "updated_at": "2026-04-06T19:03:23.564000+00:00"
+  },
+  {
+    "note_id": "acti_uF5EsEAVwpAvuT1vhIu2xGF7L14ZpK06ZKPDmgYtGXn",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "contact_id": null,
+    "conversation_id": "conv_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "title": null,
+    "body_text": "04/02/26 01:14PM Quote: https://docs.google.com/spreadsheets/d/1A-bU12LHXWCrIQLf1yKO7KzxUiO753d1gIAVVGykK6w/edit#gid=597074661\n\njosequefau@jhotmail.com\n981.5999999999999\nDeluxe Buffet + \nSelf-Serve Attended Buffet\n3 main course + 3 sides + 1 Salad\nAttended: Setup + Breakdown + Refreshing Buffet\nBudget Option: Switch to drop off & save $3/pp",
+    "created_at": "2026-04-02T17:14:32.095000+00:00",
+    "updated_at": "2026-04-02T17:14:32.095000+00:00"
+  },
+  {
+    "note_id": "acti_4ts9qcb3zlLG09iwqdcvqCLCOpUa11uU2oeuQhwkEUB",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "contact_id": null,
+    "conversation_id": "conv_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/02/26 09:52AM",
+    "created_at": "2026-04-02T13:52:07.503000+00:00",
+    "updated_at": "2026-04-02T13:52:07.503000+00:00"
+  },
+  {
+    "note_id": "acti_syFz3DUMgYWlwTBfYETHIOfzJEe8foBVfWBjMVbH16O",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "contact_id": null,
+    "conversation_id": "conv_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/01/26 09:17PM",
+    "created_at": "2026-04-02T01:17:12.240000+00:00",
+    "updated_at": "2026-04-06T19:03:23.590000+00:00"
+  },
+  {
+    "note_id": "acti_3q3ggyo1XvnVPOAbRliK0zt37MLEKh48CxEf77XtMwF",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "contact_id": null,
+    "conversation_id": "conv_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "title": null,
+    "body_text": "Fitchburg Zip: 01420\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 100 personas\nEvent Desc: 15 años\nEvent Date: 13-11-2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-02T01:03:01.292000+00:00",
+    "updated_at": "2026-04-02T01:03:01.292000+00:00"
+  },
+  {
+    "note_id": "acti_nBFQNBqSb82Y3YmTDWtzBQfQGtOWpXx06HvFiMMqbdO",
+    "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "contact_id": null,
+    "conversation_id": "conv_lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/07/26 04:52PM",
+    "created_at": "2026-04-07T20:52:26.200000+00:00",
+    "updated_at": "2026-04-07T20:52:26.201000+00:00"
+  },
+  {
+    "note_id": "acti_pFdIijPNDBGGsFPyfm9oP2ch7tb5ye3hNTI7f2e4M4C",
+    "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "contact_id": null,
+    "conversation_id": "conv_lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "title": null,
+    "body_text": "Northborough Zip: 01532\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 120\nEvent Desc: Sweet 15\nEvent Date: 12/12/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-07T20:50:21.992000+00:00",
+    "updated_at": "2026-04-07T20:50:21.992000+00:00"
+  },
+  {
+    "note_id": "acti_dnxSxOPvRRHDbHcL1i2wmUqoQuRTpRUnTQ2P7pzTloA",
+    "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "contact_id": null,
+    "conversation_id": "conv_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/13/26 03:25PM",
+    "created_at": "2026-04-13T19:25:40.662000+00:00",
+    "updated_at": "2026-04-13T19:25:40.662000+00:00"
+  },
+  {
+    "note_id": "acti_OBXvnhYwv6JiynEB5vV6a7fnkai5vCj7yXPWoZe61zR",
+    "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "contact_id": null,
+    "conversation_id": "conv_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "title": null,
+    "body_text": "Peabody Zip: 01960\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-13T19:14:58.866000+00:00",
+    "updated_at": "2026-04-13T19:14:58.866000+00:00"
+  },
+  {
+    "note_id": "acti_LYY7jr9r4RJxZHpski3zuDbzNGFOvhOkCAOwB2Hf8sM",
+    "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "contact_id": null,
+    "conversation_id": "conv_lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "title": "Andre Raw created a note",
+    "body_text": "Don´t send any messages for a bit. Get back in Mid April",
+    "created_at": "2026-03-13T22:48:26.742000+00:00",
+    "updated_at": "2026-03-13T22:48:45.504000+00:00"
+  },
+  {
+    "note_id": "acti_Iwt5JmWZ4c7K3O7VZaZ15v41fix1TDrgoPyiJz619mx",
+    "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "contact_id": null,
+    "conversation_id": "conv_lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "title": null,
+    "body_text": "02/13/26 01:16PM Quote: https://docs.google.com/spreadsheets/d/1lYrnKV8N5Gy5BR9qgratF8fJNLJ3iXIPfZM-UYz88Gg/edit#gid=597074661\n\nldoherty@litnetsb.org\n3254.4\nDeluxe Churrasco + \nChurrasco Self-Serve Attended Buffet\n3 meats + 3 sides + 1 salad\nAttended: Setup + Breakdown + Refreshing Buffet\nBring the Brazilian grill to your event with our Churrasco service, featuring onsite grilling and an optional Rodizio upgrade (+$20/pp) for continuous tableside service.",
+    "created_at": "2026-02-13T18:16:01.051000+00:00",
+    "updated_at": "2026-02-13T18:16:01.051000+00:00"
+  },
+  {
+    "note_id": "acti_nfZmeQp3VZYfeT6cnA1dK8T5UFLDYb85RmkzZznWNj1",
+    "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "contact_id": null,
+    "conversation_id": "conv_lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 02/13/26 12:35PM",
+    "created_at": "2026-02-13T17:35:27.585000+00:00",
+    "updated_at": "2026-02-17T13:16:32.682000+00:00"
+  },
+  {
+    "note_id": "acti_VeitEm7VgFskvZCFxduMid7huiCtc4gpKstxpN4f4Q4",
+    "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "contact_id": null,
+    "conversation_id": "conv_lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/21/26 09:54PM",
+    "created_at": "2026-03-22T01:54:32.987000+00:00",
+    "updated_at": "2026-03-22T01:54:32.987000+00:00"
+  },
+  {
+    "note_id": "acti_kUqj7FBBZao4kA2Us33LZuKboZx8ibh8nyyrdGx8DtM",
+    "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "contact_id": null,
+    "conversation_id": "conv_lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "title": null,
+    "body_text": "New Haven Zip: 06513\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 80\nEvent Desc: Bridgerton\nEvent Date: June 17,2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-21T21:02:36.512000+00:00",
+    "updated_at": "2026-03-21T21:02:36.512000+00:00"
+  },
+  {
+    "note_id": "acti_Y8uio5bSF6R91h7I2IJdmRg0uLcxnhtKjnPqJWC8gF1",
+    "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "contact_id": null,
+    "conversation_id": "conv_lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/06/26 01:11PM",
+    "created_at": "2026-04-06T17:11:42.764000+00:00",
+    "updated_at": "2026-04-06T17:11:42.764000+00:00"
+  },
+  {
+    "note_id": "acti_TKPJivtCYdfDL6u3A1ehS04oRoZPXlN3caIBCFWilLJ",
+    "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "contact_id": null,
+    "conversation_id": "conv_lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "title": null,
+    "body_text": "Revere Zip: 02151\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 30\nEvent Desc: Graduation\nEvent Date: June\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-06T17:11:31.801000+00:00",
+    "updated_at": "2026-04-06T17:11:31.801000+00:00"
+  },
+  {
+    "note_id": "acti_5DrAdElINMNvo0JHCxReI2WdjieligKrH1tzgAFBMxT",
+    "lead_id": "lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "contact_id": null,
+    "conversation_id": "conv_lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/21/26 09:55PM",
+    "created_at": "2026-03-22T01:55:13.071000+00:00",
+    "updated_at": "2026-03-22T01:55:13.071000+00:00"
+  },
+  {
+    "note_id": "acti_NjKtANMJ1QTQDnR9jbynIDWiQFg8ZCIHhV0iqINZzLZ",
+    "lead_id": "lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "contact_id": null,
+    "conversation_id": "conv_lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "title": null,
+    "body_text": "Boston Zip: 02125\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 02125\nEvent Desc: \nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-21T18:51:12.637000+00:00",
+    "updated_at": "2026-03-21T18:51:12.637000+00:00"
+  },
+  {
+    "note_id": "acti_I2zSVvkAIwXhSbsomZM5GgW7x04WTG1zSzOkY15vl2i",
+    "lead_id": "lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "contact_id": null,
+    "conversation_id": "conv_lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 01/24/26 12:52PM",
+    "created_at": "2026-01-24T17:52:27.364000+00:00",
+    "updated_at": "2026-01-24T17:52:27.364000+00:00"
+  },
+  {
+    "note_id": "acti_ahrhG9WzrMQKfnTIm9Ibd5ch0eJPa8kukz8KnmwBEFo",
+    "lead_id": "lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "contact_id": null,
+    "conversation_id": "conv_lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "title": null,
+    "body_text": "Zip: 03052\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 50\nEvent Desc: Confirmation\nEvent Date: April 18\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-01-24T13:27:21.532000+00:00",
+    "updated_at": "2026-01-24T13:27:21.532000+00:00"
+  },
+  {
+    "note_id": "acti_6k42F8fggblK9u0ZbEt326vWkWWRU6GgWDDiwmt8o9a",
+    "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "contact_id": null,
+    "conversation_id": "conv_lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "title": null,
+    "body_text": "**Mary's Party**\n\n  * 80 Guests\n\n  * Sat, Oct 4, 2025  \n(date flexible)\n\n  * 1:00 PM (3.0 Hours)\n\n  * $15 - $25 / person Budget\n\n**Mary Ann Hughes**\n\n  * [mahughes123@verizon.net](mailto:mahughes123@verizon.net)\n\n  * [508-330-4614](tel:508-330-4614)\n\n**Prospect | Lead**\n\n  * EGI5L41T\n\n  * Bedford, NH 03110\n\n  * Received 13h ago (Aug 6, 2025)\n\n**Services Requested**\n\nVenues, Caterers\n\n**Food Considerations**\n\nProvided by venue OR  \nProvided by a catering company OR  \nProvided by the customer\n\n  \n**Aug 6, 2025**\n\n**Mary InitialInquiry  **10:100 PM EDT\n\nJack & Jill Baby Shower in the afternoon for about 3 hours.\n\n**Mary RequesteServices  **10:1010 PM EDT\n\nVenues, Caterers\n\n10:11 PM EDT\n\n**Mary changed the number of attendees coming to their event**\n\n10:11 PM EDT\n\n**Mary changed the date of their event to 'flexible'**\n\n10:24 PM EDT\n\n**Mary changed the number of attendees coming to their event**\n\n10:30 PM EDT\n\n**Mary changed the number of attendees coming to their event**\n\n10:41 PM EDT\n\n**Mary changed the number of attendees coming to their event**\n\n**Aug 7, 2025**\n\n10:48 AM EDT\n\n**Comeketo Catering Company view the lead**\n\nNOON EDT\n\n**You viewed the Email address**\n\nNOON EDT\n\n**You viewed the Phone number**",
+    "created_at": "2025-08-07T16:03:01.693000+00:00",
+    "updated_at": "2025-08-07T16:03:23.894000+00:00"
+  },
+  {
+    "note_id": "acti_Yi6eQSuS9O07xTmJ45N043jvM0ZVfln5V8bj7Ew5T4v",
+    "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "contact_id": null,
+    "conversation_id": "conv_lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "title": null,
+    "body_text": "Remember to add an opportunity for every lead",
+    "created_at": "2025-08-07T16:02:08.136000+00:00",
+    "updated_at": "2025-08-07T16:02:08.136000+00:00"
+  },
+  {
+    "note_id": "acti_qHEH5JlFB1c2tfCWMrkoXXmAVfYfMbNCHc24jrm1HVt",
+    "lead_id": "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/01/26 07:24PM",
+    "created_at": "2026-04-01T23:24:30.786000+00:00",
+    "updated_at": "2026-04-01T23:24:30.786000+00:00"
+  },
+  {
+    "note_id": "acti_4QMA27T3oq6rXkuBaBbVKUhZVWXy9FWIOC5b5dgvFwu",
+    "lead_id": "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "title": null,
+    "body_text": "Zip: 01082\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 15\nEvent Desc: Wedding\nEvent Date: June 27,2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-01T22:38:59.591000+00:00",
+    "updated_at": "2026-04-01T22:38:59.591000+00:00"
+  },
+  {
+    "note_id": "acti_1pTUBMuGkkgEJVDhCYGoIkPk51MZIpM9DZMJH460DSA",
+    "lead_id": "lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+    "contact_id": null,
+    "conversation_id": "conv_lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+    "title": null,
+    "body_text": "Zip: 02919\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 30\nEvent Desc: Graduation party\nEvent Date: June 6th\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-05T11:32:45.664000+00:00",
+    "updated_at": "2026-03-05T11:32:45.664000+00:00"
+  },
+  {
+    "note_id": "acti_mY6RiUTZcaVwMJXxwNfyYN7msI4OiuKLa1ARyjzTXHE",
+    "lead_id": "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/30/26 08:37PM",
+    "created_at": "2026-03-31T00:37:40.961000+00:00",
+    "updated_at": "2026-03-31T00:37:40.961000+00:00"
+  },
+  {
+    "note_id": "acti_wnsq0RWDfvynwrWYtRGpDWQ3adeJOTN1cGY9xfJtoK4",
+    "lead_id": "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "title": null,
+    "body_text": "Zip: 02655\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 100\nEvent Desc: Graduation celebration\nEvent Date: 06/14/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-31T00:32:21.737000+00:00",
+    "updated_at": "2026-03-31T00:32:21.737000+00:00"
+  },
+  {
+    "note_id": "acti_DCyxooUO4D1vKLBie0WJfZtBJcMte8nvmhxt6bwQvyo",
+    "lead_id": "lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+    "contact_id": null,
+    "conversation_id": "conv_lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "**Precious Montgomery** wants to learn more about your offerings!  \n  \nWe want a buffet style, wanna be able to just enjoy our float with friends and\nfamily, and be able to feed them properly  \nFor: Comeketo Catering — Caterers Boston, Watertown, Waltham\n\nBy replying, you agree that your messages may be monitored for quality,\nsafety, and security according to our [Acceptable Content\nPolicy](http://email.partner.theknot.com/c/eJw0jUFuwyAQAF8Dl4oIlnWAA4eqkk899QewrGMUByKXxu3vq1TqeWY0JS6ocZIcjXPaOO_AyDUWk8ADZOs0J0A4T8jJODaocVmoyBqN1pycIxXCxAq9DSosaFU2-CxM5nMQ7i2jPduJQVH2i0JLViUMXiWvndaFpmycQF1b7t-nsfK19XGifpNbXMe4fwr7KmAWMB_H8c-P42kImDe-\npG39ygJm6m1wG-rWC-9p1N7UvW-VfgTMco-\nUBu-1XQRq6je-8uh_lxHfOZWXDyauDy7yEeE3AAD__35KU_8).\n\n[**Reply**](http://email.partner.theknot.com/c/eJyMzk1uwyAQQOHTwKYigpnBwIJF1cqrrnqBip8hsdyYyEFxj181J-j-\nPemrsZEmKzka57Rx3oGRlxgCtkI6JHSW0aQMwVuP1WIyZFuWSzRac3KuqBAsK_IYVGiEKhtKQGAyT0G4t0w4oWVQJfumCAuqRMGr5LXTuhabjROkly33n9O48Lr1cSr9Kr_jZYzbXeCrgFnAfBzH6eBal-182_tfImB-\nbgLmsQqYqXAtTk9Kt2lS1BhUmgIoDblZYiyIIHC-j75z2_s2vpYq8P0_QrnHkgbvy3YWpEu_8srjiZAjfnCqL59ceHlwlY8IvwEAAP__5QxjEQ)\n\nReply directly to this email or [view on\nWeddingPro](http://email.partner.theknot.com/c/eJyMzk1uwyAQQOHTwKYigpnBwIJF1cqrrnqBip8hsdyYyEFxj181J-j-\nPemrsZEmKzka57Rx3oGRlxgCtkI6JHSW0aQMwVuP1WIyZFuWSzRac3KuqBAsK_IYVGiEKhtKQGAyT0G4t0w4oWVQJfumCAuqRMGr5LXTuhabjROkly33n9O48Lr1cSr9Kr_jZYzbXeCrgFnAfBzH6eBal-182_tfImB-\nbgLmsQqYqXAtTk9Kt2lS1BhUmgIoDblZYiyIIHC-j75z2_s2vpYq8P0_QrnHkgbvy3YWpEu_8srjiZAjfnCqL59ceHlwlY8IvwEAAP__5QxjEQ)\n\nPrecious Montgomery's wedding details\n\nWedding date:  \nWed 9/2/2026\n\nGuest count:  \n101 - 150\n\nPrimary email:  \n[precious.montgomery.1070384@member.theknot.com](mailto:precious.montgomery.1070384@member.theknot.com)\n\nOther email:  \n[preciousmontgomery77@gmail.com](mailto:preciousmontgomery77@gmail.com)\n\nPhone:  \n[413-309-3291](tel:413-309-3291)\n\nReception venue:  \nBarney Carriage House, Springfield, MA",
+    "created_at": "2026-02-04T14:31:59.908000+00:00",
+    "updated_at": "2026-02-04T14:32:37.094000+00:00"
+  },
+  {
+    "note_id": "acti_XUi01jOm6otPTusNTzdjZarnM50HDvWsWGiyXshLVjA",
+    "lead_id": "lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "contact_id": null,
+    "conversation_id": "conv_lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/12/26 09:18AM",
+    "created_at": "2026-03-12T13:18:28.343000+00:00",
+    "updated_at": "2026-03-12T13:18:28.343000+00:00"
+  },
+  {
+    "note_id": "acti_0ww9LjtKcHI3qVZmoPM0NDDD7AvEwSBwKfDIhS5mdBa",
+    "lead_id": "lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "contact_id": null,
+    "conversation_id": "conv_lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "title": null,
+    "body_text": "Salem Zip: 01970\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 60\nEvent Desc: Wedding\nEvent Date: May 20, 2028\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-12T06:41:33.775000+00:00",
+    "updated_at": "2026-03-12T06:41:33.775000+00:00"
+  },
+  {
+    "note_id": "acti_ltElVjlzefSvuRExhILQVJyOZnrszW1GAJk6Rh0wBsy",
+    "lead_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "contact_id": null,
+    "conversation_id": "conv_lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "",
+    "created_at": "2026-04-06T15:58:50.042000+00:00",
+    "updated_at": "2026-04-06T15:58:51.448000+00:00"
+  },
+  {
+    "note_id": "acti_XsxH1BbWxag9Xf5XgRfAzUXTkVPRQzNgkGdlipCWek5",
+    "lead_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "contact_id": null,
+    "conversation_id": "conv_lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/04/26 08:15AM",
+    "created_at": "2026-04-04T12:15:08.450000+00:00",
+    "updated_at": "2026-04-04T12:15:08.450000+00:00"
+  },
+  {
+    "note_id": "acti_reWBsLqPmTeeTlW8H1mHrOkY3Zey35eknSatraSTpCL",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "title": "Andre Raw created a note",
+    "body_text": "she asked to get in touch again mid April since she is tryiing to get things\ndone with the Venue",
+    "created_at": "2026-03-23T04:08:58.318000+00:00",
+    "updated_at": "2026-03-23T04:09:19.015000+00:00"
+  },
+  {
+    "note_id": "acti_m5BivkRfXLHT2t9ixULxq8lU6W5yt4FPppdWPYDT9Ea",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "I approved the 1 ticket for 2 approval.  \n-Spyros",
+    "created_at": "2026-03-15T00:43:14.736000+00:00",
+    "updated_at": "2026-03-15T00:43:33.645000+00:00"
+  },
+  {
+    "note_id": "acti_UEe64pbnsgtEukRTi3rjrkBSIjOX2zF83nde2oCggip",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "title": null,
+    "body_text": "💰 Payment Received!\nAmount: 35\n\n👤 Customer Name: Rebecca Almeida\n✉️ Email: beckiealmeida@yahoo.com\n\n🔗 Receipt Link: https://pay.stripe.com/receipts/payment/CAcQARoXChVhY2N0XzE5cTR5TEpkZ3U0UGtYOGEo1YDYzQYyBqtvDeBBWjosFmXtbhjZTmfp4Wgr4x7c3aDDiiqXonvg91QtOmvmjR4HrZhXlyZTN7_ek-4\n🌍 Card Country:",
+    "created_at": "2026-03-15T00:42:01.987000+00:00",
+    "updated_at": "2026-03-15T00:42:01.987000+00:00"
+  },
+  {
+    "note_id": "acti_nRUFSJtkc49qn3OZEI0kLQs6WuGmcZYx9v7gXCdNUZS",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "Spyros texting",
+    "created_at": "2026-03-15T00:25:07.194000+00:00",
+    "updated_at": "2026-03-15T00:25:13.905000+00:00"
+  },
+  {
+    "note_id": "acti_gazbEjW0w4f9aJNRaFBEJWUWJJ5cBMO1C2jRYBxa0BS",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "title": null,
+    "body_text": "📞 CALL PREP for Rebecca Almeida\n\nLead Status: 🔘 Maybe\nOpportunity: Sales: 📲 02. Setting Tasting Appointment\n\nRecent conversation:\nSMS (outbound, 2026-02-25): Oi Rebecca! Aqui é o André da Comeketo Catering 😊 Adoraria bater um papo rápido sobre o que vocês estão planejando pro evento. Qual seria o melhor hor\nSMS (outbound, 2026-02-24): when you finish this process let me know so I can reserve the table on my end ok :)\nEmail (outgoing, 2026-02-25): Sobre o seu evento — Comeketo Catering 😊\nEmail (outgoing, 2026-02-04): Explore What Comeketo Catering Has to Offer! ✨\n\nTask: Get her on the phone and sell\n\nTalking points:\n- Reference their event/needs\n- Ask about timeline\n- Offer tasting if not done\n- NEPQ: curious questions, no pressure",
+    "created_at": "2026-02-27T15:32:54.499000+00:00",
+    "updated_at": "2026-02-27T15:32:54.499000+00:00"
+  },
+  {
+    "note_id": "acti_WTrn59bTdLc6onNLpXk71S0dEyGQYlnCZdUFBuNcKZC",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 01/14/26 02:43PM",
+    "created_at": "2026-01-14T19:43:44.937000+00:00",
+    "updated_at": "2026-01-14T19:43:44.937000+00:00"
+  },
+  {
+    "note_id": "acti_pqEP5NYZeHQUCuTYt0aFokPb1fPv2bEAV2wjBkJl4wn",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "title": null,
+    "body_text": "Brockton Zip: 02301\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 100\nEvent Desc: wedding\nEvent Date: 10/10/2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-01-14T19:08:51.880000+00:00",
+    "updated_at": "2026-01-14T19:08:51.880000+00:00"
+  },
+  {
+    "note_id": "acti_PoI4nNk5u6S6ZrFCQ8YbSyFE879JPOEoWYz0RHCVaxU",
+    "lead_id": "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "contact_id": null,
+    "conversation_id": "conv_lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/28/26 04:38PM",
+    "created_at": "2026-03-28T20:38:41.163000+00:00",
+    "updated_at": "2026-03-28T20:38:41.163000+00:00"
+  },
+  {
+    "note_id": "acti_RWpFFJTCEWElqMnxjPMRoI5d8KgTtoYkOXCDwf27ws4",
+    "lead_id": "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "contact_id": null,
+    "conversation_id": "conv_lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "title": null,
+    "body_text": "Malden Zip: 02148\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 40\nEvent Desc: Wedding\nEvent Date: 4/2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-28T18:54:32.220000+00:00",
+    "updated_at": "2026-03-28T18:54:32.220000+00:00"
+  },
+  {
+    "note_id": "acti_Hd5Fa5tfDSGrc8QpkUaifvqhKfwLTJrDnzOPJN0WynX",
+    "lead_id": "lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "title": null,
+    "body_text": "Lead Ownership Changed by: Sales Team Event Consultant Team\nTo: 02. 🫡 Toni",
+    "created_at": "2026-02-12T16:51:44.720000+00:00",
+    "updated_at": "2026-02-16T16:14:01.569000+00:00"
+  },
+  {
+    "note_id": "acti_q0QLWeBPKdSicFKmSifalFCGnqStO6tFD7jLN2rAlHN",
+    "lead_id": "lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "Hello! We are interested in potentially having you cater our wedding. We will\nbe getting married in Westmoreland, NH at the Stone Garden. The venue has a\ntented area for food preparation available. We are both foodies and really\nenjoy a range of things. Most of our guests aren’t picky, but we have ~4 that\nare vegan and gluten free out of ~100 people or so. We would love to see what\nyou might propose! Thank you!\n\n**Wedding details**\n\n**Location**\n\n  * Westmoreland, NH\n\n  * Within your serviced market of Merrimack Valley\n\n  * Venue: Stone Garden\n\n**Wedding date**\n\n  * They request: Oct 4, 2026\n\n**Budget**\n\n  * Wedding budget: Up to $9,500 (this is flexible)\n\n  * Their budget exceeds your starting price of $500\n\n**Guest count**\n\n  * 100 guests\n\n  * They’re flexible\n\n**Menu formats**\n\n  * Buffet\n\n  * Food Stations\n\n  * Passed Appetizers\n\n  * Stationary Appetizers\n\n**Dietary accommodations**\n\n  * Vegan\n\n  * Gluten-Free",
+    "created_at": "2026-02-12T14:03:16.726000+00:00",
+    "updated_at": "2026-02-12T14:03:25.088000+00:00"
+  },
+  {
+    "note_id": "acti_Fhv1JVDWSEIDKOzYKRZPN1g3aQYrs7zoet4tZ12V8qq",
+    "lead_id": "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/02/26 11:42AM",
+    "created_at": "2026-04-02T15:42:32.691000+00:00",
+    "updated_at": "2026-04-02T15:42:32.691000+00:00"
+  },
+  {
+    "note_id": "acti_HwAbLZdUFzJL4hRmpd4O2USEvnRHZzucqAdvNkIKRrJ",
+    "lead_id": "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "contact_id": null,
+    "conversation_id": "conv_lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "title": null,
+    "body_text": "Worcester Zip: 01610\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 80\nEvent Desc: Sweet sixteen\nEvent Date: 08/15/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-02T15:36:57.060000+00:00",
+    "updated_at": "2026-04-02T15:36:57.060000+00:00"
+  },
+  {
+    "note_id": "acti_dLYdls2C1khhadcYsIfL5gGf7q9E4eEIJnjkh9vvzGc",
+    "lead_id": "lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "contact_id": null,
+    "conversation_id": "conv_lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "title": null,
+    "body_text": "📞 CALL PREP for Suzi & Chris\n\nLead Status: ⚪ Probably Not\nOpportunity: Sales: ⬜ 00. Prospect\n\nRecent conversation:\nSMS (outbound, 2026-02-25): Hey Suzi! André here from Comeketo Catering 😊 I'd love to chat about your event and maybe set up a tasting. When works best for a quick call? - André\nSMS (outbound, 2026-02-23): Hey Suzi! Quick question - are you and Chris still thinking about doing a tasting together? Would love to hear what flavors you're leaning toward 😊\n\nA\nEmail (outgoing, 2026-02-25): Comeketo Tasting — let's set it up! 😊\nEmail (outgoing, 2026-02-16): Understanding Our Catering Service Types\n\nTask: Get them on the phone and into Tasting soon\n\nTalking points:\n- Reference their event/needs\n- Ask about timeline\n- Offer tasting if not done\n- NEPQ: curious questions, no pressure",
+    "created_at": "2026-02-27T15:33:22.281000+00:00",
+    "updated_at": "2026-02-27T15:33:22.281000+00:00"
+  },
+  {
+    "note_id": "acti_XJxaUMlvJ6f8h1aYUTyCuIMoYdIycFqQREz8jBoshuk",
+    "lead_id": "lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "contact_id": null,
+    "conversation_id": "conv_lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "**Suzi & Chris**\n\n**Connection**\n\n**Contact information**\n\n[(401) 300-1301](tel:4013001301)\n\n[xn2fkhsbw2@privaterelay.appleid.com](mailto:xn2fkhsbw2@privaterelay.appleid.com)\n\n**Wedding details**\n\n**Location**\n\n  * Dayville, CT\n\n  * Within your serviced market of Eastern Connecticut\n\n  * Venue: Evergreen Farms\n\n**Wedding date**\n\n  * They request: Jun 26, 2026\n\n**Budget**\n\n  * Wedding budget: Up to $25,000\n\n  * Their budget exceeds your starting price of $500\n\n**Guest count**\n\n  * Up to 150 guests\n\n[**Edit lead preferences**](https://www.zola.com/inspire/vendors/lead-\npreferences)\n\n**Other vendors they’ve booked**\n\n[**Venues**](https://www.zola.com/wedding-vendors/wedding-venues/evergreen-\nfarms)\n\n[**Evergreen Farms**](https://www.zola.com/wedding-vendors/wedding-\nvenues/evergreen-farms)\n\n[**Dayville, CT**](https://www.zola.com/wedding-vendors/wedding-\nvenues/evergreen-farms)\n\n[**Beauty**](https://www.zola.com/wedding-vendors/wedding-hair-makeup/the-\nstately-rose-beauty-studio)\n\n[**The Stately Rose Beauty Studio**](https://www.zola.com/wedding-\nvendors/wedding-hair-makeup/the-stately-rose-beauty-studio)\n\n[**Avon, CT**](https://www.zola.com/wedding-vendors/wedding-hair-makeup/the-\nstately-rose-beauty-studio)",
+    "created_at": "2026-02-16T18:40:38.298000+00:00",
+    "updated_at": "2026-02-16T18:40:38.298000+00:00"
+  },
+  {
+    "note_id": "acti_jy8k1nmaQLIZfPUHAsIS5SCW0ENXbXSa0ccRFYjc50a",
+    "lead_id": "lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G",
+    "contact_id": null,
+    "conversation_id": "conv_lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/12/26 07:55PM",
+    "created_at": "2026-03-12T23:55:27.524000+00:00",
+    "updated_at": "2026-03-12T23:55:27.524000+00:00"
+  },
+  {
+    "note_id": "acti_mVKI6tS5k7FtK3WKUuyUi4ewBJQWJnxc177SavfV0Il",
+    "lead_id": "lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "contact_id": null,
+    "conversation_id": "conv_lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/23/26 11:31AM",
+    "created_at": "2026-03-23T15:31:33.025000+00:00",
+    "updated_at": "2026-03-23T15:31:33.025000+00:00"
+  },
+  {
+    "note_id": "acti_QceSekSncLYu4vGSIZZF4JJZ91OHigoYXFbX8wvX3g9",
+    "lead_id": "lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "contact_id": null,
+    "conversation_id": "conv_lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "title": null,
+    "body_text": "Housatonic Zip: 01230\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 60-70\nEvent Desc: Wedding\nEvent Date: July 18 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-22T21:50:02.552000+00:00",
+    "updated_at": "2026-03-22T21:50:02.552000+00:00"
+  },
+  {
+    "note_id": "acti_PfsP2XafMaVhLi3bG40erGSyTElgxry7BIe5Awd7b05",
+    "lead_id": "lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "Crisp lead from Instagram.",
+    "created_at": "2026-04-13T20:01:51.346000+00:00",
+    "updated_at": "2026-04-13T20:02:23.517000+00:00"
+  },
+  {
+    "note_id": "acti_5hqrm5uKYNcr8n50p9U4qfkJFEmT4x77RhIVKrcBPm7",
+    "lead_id": "lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/13/26 03:48PM",
+    "created_at": "2026-04-13T19:48:20.206000+00:00",
+    "updated_at": "2026-04-13T19:48:20.206000+00:00"
+  },
+  {
+    "note_id": "acti_L6artBqsroxYCUVDFjuaChjGeWOvkhAHWmZIixdqrnA",
+    "lead_id": "lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 03/13/26 07:01PM",
+    "created_at": "2026-03-13T23:01:54.047000+00:00",
+    "updated_at": "2026-03-13T23:01:54.047000+00:00"
+  },
+  {
+    "note_id": "acti_jtQFCIZAOY7jVhS5ol5ZwbXk3cQgcbRklmREmViRbE1",
+    "lead_id": "lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "title": null,
+    "body_text": "Zip: 01570\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 75\nEvent Desc: Wedding\nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-03-13T23:01:52.768000+00:00",
+    "updated_at": "2026-03-13T23:01:52.768000+00:00"
+  },
+  {
+    "note_id": "acti_QnmtTThK4D4TDU17tJaWlkpGph8rlcFo9tgCRgHYzAk",
+    "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "contact_id": null,
+    "conversation_id": "conv_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "**From:**[williams.brown.49.1070384=member.theknot.com@partner.theknot.com](mailto:williams.brown.49.1070384=member.theknot.com@partner.theknot.com)\n<[williams.brown.49.1070384=member.theknot.com@partner.theknot.com](mailto:williams.brown.49.1070384=member.theknot.com@partner.theknot.com)>On\nBehalf OfWilliams Brown\n<[williams.brown.49.1070384@member.theknot.com](mailto:williams.brown.49.1070384@member.theknot.com)>  \n**Sent:** Wednesday, April 8, 2026 10:57:29 AM (UTC-05:00) Eastern Time (US &\nCanada)  \n**To:** Come Keto <[catering@comeketo.com](mailto:catering@comeketo.com)>  \n**Subject:** 📩 Williams Brown sent you a new message  \n  \n\n**Williams Brown** wants to learn more about your offerings!Hi — are you\navailable around 2026-04-15 and what packages do you offer? Thanks!For:\nComeketo Catering — Caterers Fitchburg, MA\n\nBy replying, you agree that your messages may be monitored for quality,\nsafety, and security according to our [Acceptable Content\nPolicy](http://email.partner.theknot.com/c/eJw0zU1qLCEUQOHVWJOHjV7_Bw4egRpllB3o9dolXa1NxXQluw8JZHwOfCVWLbRZKErnjLUCdFi2KIJwZK1JRWklIVlBxruKxSQ0lfTSIkItRQbi0hri2tvKg4HMSQQpbUHwhZh7yVpZZQg4Zl-5Vqh40sHz5IUToqDJ0jEtWs_j8zI3uvUxLzjuyx63OR_vTP1nsDJYz_P86-f5czBYd7qmffvIDFYcfVKf_D4KHWm20flj7A2_GKzLETFNOlq_Mi1w3OlGc_wqM75SKv_eCKk9qSzPCN8BAAD__y-\nRVN8).\n\n[**Reply**](http://email.partner.theknot.com/c/eJyMzkFu6yAQgOHTwOaJiBnA4AWLp_fkVVe9QAUzQ2KlMZGD4h6_ak7Q_f9LH-\nfmrQ9aMsQYpsmin_UlMyRmG5goFVehlNIYRYSZwSYb9ZoJGzPMYmAKYnyampkDViN2BpiYMLGo-K96N7kgaKimZrwjZ4qfkynJRmuZQoWovF232r9O4yLXrY8T9Zv-\nzJcx7g_l_ipcFC7HcZwOYV63833vP4nC5bUpXMZV4YKABV2tpgBZ44N3JhFWQw0hNrEw-6Dc8hh9l7b3bXysrNz_3wj1nqkM2dftrLylfpOrjBdCj_wmhf-8C8n6FNbPjN8BAAD__3WhZSg)\n\nReply directly to this email or [view on\nWeddingPro](http://email.partner.theknot.com/c/eJyMzkFu6yAQgOHTwOaJiBnA4AWLp_fkVVe9QAUzQ2KlMZGD4h6_ak7Q_f9LH-\nfmrQ9aMsQYpsmin_UlMyRmG5goFVehlNIYRYSZwSYb9ZoJGzPMYmAKYnyampkDViN2BpiYMLGo-K96N7kgaKimZrwjZ4qfkynJRmuZQoWovF232r9O4yLXrY8T9Zv-\nzJcx7g_l_ipcFC7HcZwOYV63833vP4nC5bUpXMZV4YKABV2tpgBZ44N3JhFWQw0hNrEw-6Dc8hh9l7b3bXysrNz_3wj1nqkM2dftrLylfpOrjBdCj_wmhf-8C8n6FNbPjN8BAAD__3WhZSg)\n\nWilliams Brown's wedding details\n\nWedding date:  \nWed 4/15/2026\n\nGuest count:  \n151 - 200\n\nThe Knot inbox:  \n[williams.brown.49.1070384@member.theknot.com](mailto:williams.brown.49.1070384@member.theknot.com)\n\nPersonal email:  \n[oh478@pngk.uk](mailto:oh478@pngk.uk)\n\nWedding location:  \nHampden, MA\n\nPhone:  \n[901-570-2993](tel:901-570-2993)",
+    "created_at": "2026-04-08T15:42:07.410000+00:00",
+    "updated_at": "2026-04-08T15:42:07.410000+00:00"
+  },
+  {
+    "note_id": "acti_GZFFh8q4v9hh4X37A7m5cLAHqvD9IKdbiQ8p4rcJR0g",
+    "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "contact_id": null,
+    "conversation_id": "conv_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "Interested in\n\nComeketo Catering\n\nCaterers\n\nFitchburg, MA\n\n**Wedding Details**\n\nWedding Date\n\nSun, Apr 5, 2026\n\nWedding Location\n\nHaverhill, MA\n\nNumber of Guests\n\n151 - 200\n\nPartner's Name\n\nMira Vera\n\n**More Info**\n\nThe Knot inbox\n\n[nino.benny.180.1070384@member.theknot.com](mailto:nino.benny.180.1070384@member.theknot.com)\n\nPersonal email\n\n[whoss@outlook.com](mailto:whoss@outlook.com)\n\nPhone\n\n901-570-2993\n\nN\n\n**Nino Benny**\n\nYesterday at 22:46\n\nM\n\nN\n\n**Nino Benny**\n\nYesterday at 22:48\n\nHi, please, I’m not fully active on here right now. Kindly text me at\n901-570-2993 when you can. Please mention my name, Nino, when you message.\nThank you\n\n**You**\n\nToday at 20:07\n\nHi Nino, I prefer to keep communication here for now. Could you please share\nmore details about your event?  \n  \n\n**You**\n\nToday at 20:13\n\nHi Nino,\n\nI’ll send you an SMS shortly. What would be the best time to reach you?",
+    "created_at": "2026-03-26T23:11:02.034000+00:00",
+    "updated_at": "2026-03-26T23:14:04.430000+00:00"
+  },
+  {
+    "note_id": "acti_hg2X9QMdtGWod9FVfWJJV7hEX29vvc6388G8YlZKLrO",
+    "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "contact_id": null,
+    "conversation_id": "conv_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "**From:**\n[david.anthony.10.1070384=member.theknot.com@partner.theknot.com](mailto:david.anthony.10.1070384=member.theknot.com@partner.theknot.com)\n<[david.anthony.10.1070384=member.theknot.com@partner.theknot.com](mailto:david.anthony.10.1070384=member.theknot.com@partner.theknot.com)>On\nBehalf OfDavid Anthony\n<[david.anthony.10.1070384@member.theknot.com](mailto:david.anthony.10.1070384@member.theknot.com)>  \n**Sent:** Saturday, March 21, 2026 11:29:28 AM (UTC-05:00) Eastern Time (US &\nCanada)  \n**To:** Come Keto <[catering@comeketo.com](mailto:catering@comeketo.com)>  \n**Subject:** 📩 David Anthony sent you a new message  \n  \n\n**David Anthony** wants to learn more about your offerings!  \nHi — are you available around 2027-05-21 and what packages do you offer?\nThanks!  \n  \nFor: Comeketo Catering — Caterers Fitchburg, MA\n\nBy replying, you agree that your messages may be monitored for quality,\nsafety, and security according to our [Acceptable Content\nPolicy](http://email.partner.theknot.com/c/eJw0zTFurDAQgOHTmObJK-\nMZsClcPEWiSpUbzIyHBS1rr4izJLePEin1_0tfTgs6HDpNfQjYu3EaY7cmcCwLA0KEKfISuecoIVDM6haGodsSc0QhHa0yg8VxcXZCIZuBsqCPBEQmvDDCCIN6KxwXiyBgCadoKbrgXJaB-2DQbYXr56Wteiu1XaTeuz2trT3eDfw3fjZ-\nPs_zr5_nz2H8vOuV9vWDjZ-\nllqal2XvNelDbarGPum_yZfzcHUmo6bGVq0En9a43bfVXaelVKf97U9Htqbl7Jv8dAAD__zj-Vhc).\n\n[**Reply**](http://email.partner.theknot.com/c/eJyMzj1u4zAQQOHTUM2CxpAc8adgsdiFqlS5QDBDDm3BsWjIhJXjB_EJ0r8HfDU3BJwnySYENOCTj9Ml-4YeOUUvzAQ-\nNVONwGzBSwiphWnNzBELidfC7DT6BjphIV0d1YI2kiNS4R-j824WqwvHptEVpwlT1BQhANQyswkKYd24f53GRa5bH6fSb9Nnvoxxfyj3V9lF2eU4jtMhta7b-b73n0TZ5bUpu4yrskul5OwcZm3IeY2QqmZ2SRsmTsAEBr1yy2P0Xdret_GxVuX-_0Y47bnQkH3dzgqh9JtcZbwQ08hvQvXPuxRZn1KnZ7bfAQAA__-7MGSr)\n\nReply directly to this email or [view on\nWeddingPro](http://email.partner.theknot.com/c/eJyMzj1u4zAQQOHTUM2CxpAc8adgsdiFqlS5QDBDDm3BsWjIhJXjB_EJ0r8HfDU3BJwnySYENOCTj9Ml-4YeOUUvzAQ-\nNVONwGzBSwiphWnNzBELidfC7DT6BjphIV0d1YI2kiNS4R-j824WqwvHptEVpwlT1BQhANQyswkKYd24f53GRa5bH6fSb9Nnvoxxfyj3V9lF2eU4jtMhta7b-b73n0TZ5bUpu4yrskul5OwcZm3IeY2QqmZ2SRsmTsAEBr1yy2P0Xdret_GxVuX-_0Y47bnQkH3dzgqh9JtcZbwQ08hvQvXPuxRZn1KnZ7bfAQAA__-7MGSr)\n\nDavid Anthony's wedding details\n\nWedding date:  \nFri 5/21/2027\n\nGuest count:  \n101 - 150\n\nThe Knot inbox:  \n[david.anthony.10.1070384@member.theknot.com](mailto:david.anthony.10.1070384@member.theknot.com)\n\nPersonal email:  \n[faxfurbar@pngk.uk](mailto:faxfurbar@pngk.uk)\n\nWedding location:  \nNewton, MA\n\nPhone:  \n[901-570-2993](tel:901-570-2993)",
+    "created_at": "2026-03-23T19:30:29.813000+00:00",
+    "updated_at": "2026-04-08T15:40:56.750000+00:00"
+  },
+  {
+    "note_id": "acti_k2W50EW391u4iTp0QcnvXLBNVoEIehAxHyuQfTRfh04",
+    "lead_id": "lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ",
+    "contact_id": null,
+    "conversation_id": "conv_lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ",
+    "title": "Rhonna Ricafort created a note",
+    "body_text": "",
+    "created_at": "2026-04-13T13:00:07.438000+00:00",
+    "updated_at": "2026-04-13T13:00:08.088000+00:00"
+  },
+  {
+    "note_id": "acti_bIQyEaJDFvbCObQRaK6nmXeqzAvjXAJPqYGOws6SVK2",
+    "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "title": null,
+    "body_text": "LIVE CHAT STARTED 04/08/26 12:53PM",
+    "created_at": "2026-04-08T16:53:41.379000+00:00",
+    "updated_at": "2026-04-08T16:53:41.379000+00:00"
+  },
+  {
+    "note_id": "acti_BmJ7HMFI48EX4bNMYO4vXKDqza4B8w4Bc5iBahMhEg1",
+    "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "contact_id": null,
+    "conversation_id": "conv_lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "title": null,
+    "body_text": "Pawtucket Zip: 02860\nPLEASE REMEMBER TO ASSIGN LEAD OWNER IN ACCORDANCE TO SLACK EMOJI\n\n\nFrom Facebook Ads\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE\nAd Name:\n[MASTER CATERING] -QUOTE-FINAL-1-14-25\nForm ID:\n1022871299837568",
+    "created_at": "2026-04-08T16:53:22.829000+00:00",
+    "updated_at": "2026-04-08T16:53:22.829000+00:00"
+  },
+  {
+    "note_id": "acti_5MAUCccZe0OC0IaB9j5H9EY8V6w187iyLozjEkqBPbg",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "contact_id": null,
+    "conversation_id": "conv_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "title": null,
+    "body_text": "💰 Payment Received!\nAmount: 70\n\n👤 Customer Name: Zilah Conserve\n✉️ Email: zi.conserve@gmail.com\n\n🔗 Receipt Link: https://pay.stripe.com/receipts/invoices/CAcQARoXChVhY2N0XzE5cTR5TEpkZ3U0UGtYOGEok--hxQYyBgC-0RpEuzosFgzFchsA_TVOnRoKwJ7Av5Dl6dJ_L5PJcr4wyKBlkDPunz3EsNCRrAOtscU?s=ap\n🌍 Card Country: US",
+    "created_at": "2025-08-22T13:59:04.007000+00:00",
+    "updated_at": "2025-08-22T13:59:04.007000+00:00"
+  },
+  {
+    "note_id": "acti_cpFOVfLzu0Y9bk7usTkqmpu7CO0JNruHtrkEY4brsW1",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "contact_id": null,
+    "conversation_id": "conv_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "title": null,
+    "body_text": "New Invoice",
+    "created_at": "2025-08-20T19:11:54.462000+00:00",
+    "updated_at": "2025-08-20T19:11:54.462000+00:00"
+  },
+  {
+    "note_id": "acti_iPokGd4R6EIgWPr08sApYo2ZyEZ5hcodylUBOJqcDeJ",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "contact_id": null,
+    "conversation_id": "conv_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "title": null,
+    "body_text": "New Invoice",
+    "created_at": "2025-07-28T21:45:25.946000+00:00",
+    "updated_at": "2025-07-28T21:45:25.946000+00:00"
+  },
+  {
+    "note_id": "acti_hM5tSHEJoJ6SGxAHurHBbT6hch0ZYf1ghsKmbm5CDcg",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "contact_id": null,
+    "conversation_id": "conv_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "title": null,
+    "body_text": "New Invoice",
+    "created_at": "2025-07-24T18:55:39.839000+00:00",
+    "updated_at": "2025-07-24T18:55:39.839000+00:00"
+  },
+  {
+    "note_id": "acti_bVFeBZ1h5NHlXyvg8FUMPIxbD9GENFGsff1Pau7j7S2",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "contact_id": null,
+    "conversation_id": "conv_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "title": null,
+    "body_text": "Remember to add an opportunity for every lead",
+    "created_at": "2025-07-21T15:36:53.450000+00:00",
+    "updated_at": "2025-07-21T15:36:53.450000+00:00"
+  },
+  {
+    "note_id": "acti_QIDO4GJmV1HOAhQMttJJcCH5kldcIMwtMX5L6r5fIIL",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "contact_id": null,
+    "conversation_id": "conv_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "title": null,
+    "body_text": "✉️ Email: zi.conserve@gmail.com\n📍 ZIP: 02860\n👥 Number of Guests: 101-200\n📍 Distance: 49\n\n👤 Name: Instagram Zilah conserve\n✉️ Email: zi.conserve@gmail.com\n📲 Phone: (401) 500-7458\n🎤 Event Type: Wedding\n🍽️ Catering Type: 🥂 Bar & Beverage Service; 🚚 Dropoff Style Catering; 🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering",
+    "created_at": "2025-07-21T15:35:31.287000+00:00",
+    "updated_at": "2025-07-21T15:35:31.287000+00:00"
+  }
+]

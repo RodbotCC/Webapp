@@ -4,6 +4,23 @@
 // ═══════════════════════════════════════
 const $ = s => document.querySelector(s);
 const $$ = s => document.querySelectorAll(s);
+const THEME_KEY = 'comeketo-theme';
+
+function syncThemeToggleIcon() {
+  const lucideEl = $('#themeToggle')?.querySelector('[data-lucide]');
+  if (!lucideEl) return;
+  lucideEl.setAttribute('data-lucide', document.body.classList.contains('theme-light') ? 'sun' : 'moon');
+  if (window.lucide) lucide.createIcons();
+}
+
+function setTheme(mode) {
+  const light = mode === 'light';
+  document.body.classList.toggle('theme-light', light);
+  try {
+    localStorage.setItem(THEME_KEY, light ? 'light' : 'dark');
+  } catch (e) { /* ignore */ }
+  syncThemeToggleIcon();
+}
 const stageScroll = $('#stageScroll');
 const previewBody = $('#previewBody');
 let currentView = 'command';
@@ -11,6 +28,10 @@ let P = {}, K = {}, L = {}, T = {}; // profile, kpis, pipeline, tasks
 let OT = {}, OC = {}, OS = {}; // oracle templates, oracle cadences, oracle scenarios
 let SETTINGS = {}; // app settings (BYOK, model, etc.)
 let ACT = { log: [] }; // activity log for timeline/calendar
+let LATTICE = { index: {}, counts: {}, top_actions: [] };
+let LATTICE_GRAPH = { rows: [], comparators: [], counts: {}, source_summary: {}, _meta: {} };
+let LATTICE_DECISION = { winner: null, candidates: [], _meta: {} };
+let latticeLabState = { source: 'doctrine', intent: 'today', comparator: 'balanced_lattice', secondary: 'doctrine_fit', tertiary: 'contactability', limit: 20 };
 let AUT = { automations: [], runs: [], engine: {}, hooks: {} };
 let OPS = { context: {}, daily: {}, _meta: {} };
 let DOCS = { voiceSummary: '', voiceReadme: '' };
@@ -19,6 +40,7 @@ let AI_ARTIFACTS = [];
 let ORACLE_CHOICE_LOG = [];
 /** Graded corpus-lite: A+…F per turn for director signal */
 let ORACLE_GRADED_CORPUS = [];
+let HRMR = { ratings: [], recent_ratings: [], recent_signal: [], counts: {}, grades: {} };
 let currentDealFilter = '';
 let graphState = { nodes: [], selectedId: null };
 
@@ -109,6 +131,8 @@ const IDB = (() => {
       set('oracle_scenarios', OS),
       set('live_crm', LIVE),
       set('queue', Q),
+      set('lattice', LATTICE),
+      set('hrmr', HRMR),
       set('settings', SETTINGS),
       set('last_cached', new Date().toISOString()),
     ]);
@@ -119,16 +143,16 @@ const IDB = (() => {
   async function loadFromCache() {
     const cached = await get('last_cached');
     if (!cached) return false;
-    const [p, k, l, t, ops, ot, oc, os, live, q, s] = await Promise.all([
+    const [p, k, l, t, ops, ot, oc, os, live, q, lattice, hrmr, s] = await Promise.all([
       get('profile'), get('kpis'), get('pipeline'), get('tasks'),
       get('ops'),
       get('oracle_templates'), get('oracle_cadences'), get('oracle_scenarios'),
-      get('live_crm'), get('queue'), get('settings'),
+      get('live_crm'), get('queue'), get('lattice'), get('hrmr'), get('settings'),
     ]);
     if (p) P = p; if (k) K = k; if (l) L = l; if (t) T = t;
     if (ops) OPS = ops;
     if (ot) OT = ot; if (oc) OC = oc; if (os) OS = os;
-    if (live) LIVE = live; if (q) Q = q; if (s) SETTINGS = s;
+    if (live) LIVE = live; if (q) Q = q; if (lattice) LATTICE = lattice; if (hrmr) HRMR = hrmr; if (s) SETTINGS = s;
     console.log(`[IDB] Loaded from cache (cached ${cached})`);
     return true;
   }
@@ -153,6 +177,19 @@ async function persistOracleChoiceLog() {
 
 async function persistOracleGraded() {
   await IDB.set('oracle_graded_corpus', (ORACLE_GRADED_CORPUS || []).slice(0, 80));
+}
+
+async function refreshHrmrSignals() {
+  try {
+    const r = await fetch(`${SERVER}/api/hrmr/summary?limit=20`, { cache: 'no-store' });
+    if (!r.ok) throw new Error(`HRMR summary ${r.status}`);
+    HRMR = await r.json();
+    await IDB.set('hrmr', HRMR);
+    return HRMR;
+  } catch (e) {
+    console.warn('[HRMR] summary unavailable:', e.message || e);
+    return HRMR;
+  }
 }
 
 async function persistAiArtifact(artifact) {
@@ -182,7 +219,7 @@ const Toast = (() => {
     const toast = document.createElement('div');
     const colors = { success:'#5CBF80', error:'#E87A5A', warning:'#C9A84C', info:'#5BA8C8' };
     const icons = { success:'check_circle', error:'error', warning:'warning', info:'info' };
-    toast.style.cssText = `pointer-events:auto;display:flex;align-items:center;gap:0.6rem;padding:0.8rem 1.2rem;border-radius:0.75rem;background:#1A1A1A;border:1px solid ${colors[type]}30;box-shadow:0 8px 32px rgba(0,0,0,0.4);color:#F0E8D4;font-family:'DM Sans',sans-serif;font-size:0.78rem;max-width:24rem;transform:translateX(120%);transition:all 350ms cubic-bezier(0.4,0,0.2,1);`;
+    toast.style.cssText = `pointer-events:auto;display:flex;align-items:center;gap:0.6rem;padding:0.8rem 1.2rem;border-radius:0.75rem;background:var(--surface-raised);border:1px solid ${colors[type]}30;box-shadow:var(--shadow-soft);color:var(--msg-text);font-family:'DM Sans',sans-serif;font-size:0.78rem;max-width:24rem;transform:translateX(120%);transition:all 350ms cubic-bezier(0.4,0,0.2,1);`;
     toast.innerHTML = `<span class="material-symbols-outlined" style="font-size:1.1rem;color:${colors[type]};">${icons[type]}</span><span style="flex:1;">${message}</span>`;
     container.appendChild(toast);
     requestAnimationFrame(() => { toast.style.transform = 'translateX(0)'; toast.style.opacity = '1'; });
@@ -258,6 +295,26 @@ function relatedMatchesToDeals(related = []) {
 function renderPreviewActionRow(actions = []) {
   if (!actions.length) return '';
   return `<div class="preview-action-row">${actions.join('')}</div>`;
+}
+
+function getPreviousUserPromptForTurn(turnId) {
+  const idx = chatHistory.findIndex(m => m.role === 'assistant' && m.turnId === turnId);
+  for (let i = idx - 1; i >= 0; i--) {
+    if (chatHistory[i].role === 'user') return chatHistory[i].content || '';
+  }
+  return '';
+}
+
+function oracleStepWhy(step = {}) {
+  const action = step.action || '';
+  const p = step.payload || {};
+  if (action === 'open_deal') return 'This opens the deal context first so Andre can verify the situation before taking action.';
+  if (action === 'open_compose') return `This prepares a ${p.mode === 'sms' ? 'text message' : 'Close email'} path, but still keeps the final customer-facing send human-approved.`;
+  if (action === 'oracle_prompt') return 'This pushes Oracle one layer deeper instead of leaving the recommendation vague.';
+  if (action === 'preview_lattice_action') return 'This shows the lattice evidence behind the recommendation before Andre acts.';
+  if (action === 'navigate') return 'This jumps to the app surface where the next work should happen.';
+  if (action === 'refresh_inbox') return 'This refreshes Close communication intelligence before deciding.';
+  return 'This is a guided next step generated by Oracle from the current thread and lattice context.';
 }
 
 function getTemplateCatalog() {
@@ -562,7 +619,7 @@ function showView(id) {
   currentView = id;
   clearPreview();
   stageScroll.scrollTop = 0;
-  const views = { command: renderCommand, pipeline: renderPipeline, actions: renderActions, performance: renderPerformance, coaching: renderCoaching, deals: renderDeals, automation: renderAutomation, oracle: renderOracle, timeline: renderTimeline, settings: renderSettings };
+  const views = { command: renderCommand, pipeline: renderPipeline, actions: renderActions, performance: renderPerformance, coaching: renderCoaching, deals: renderDeals, automation: renderAutomation, lattice: renderLatticeLab, oracle: renderOracle, timeline: renderTimeline, settings: renderSettings };
   if (views[id]) views[id]();
   setTimeout(() => { if(window.lucide) lucide.createIcons(); }, 20);
 }
@@ -733,7 +790,7 @@ function ensureCloseTaskModal() {
   const wrap = document.createElement('div');
   wrap.innerHTML = `
     <div id="closeTaskModal" data-surface="close-task-modal" style="display:none;position:fixed;inset:0;z-index:10001;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);backdrop-filter:blur(6px);padding:1rem;">
-      <div style="width:100%;max-width:22rem;background:#141414;border:1.5px solid rgba(201,168,76,0.25);border-radius:1rem;padding:1.1rem 1.2rem 1.2rem;">
+      <div style="width:100%;max-width:22rem;background:var(--surface-modal);border:1.5px solid rgba(201,168,76,0.25);border-radius:1rem;padding:1.1rem 1.2rem 1.2rem;">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
           <span style="font-family:'Fraunces',serif;font-weight:700;font-size:0.95rem;color:var(--maroon-deep);">New Close task</span>
           <button type="button" onclick="document.getElementById('closeTaskModal').style.display='none'" style="background:none;border:none;color:var(--burgundy);cursor:pointer;opacity:0.5;"><span class="material-symbols-outlined">close</span></button>
@@ -814,28 +871,59 @@ function renderCommand() {
   const e = P.executive_summary || {};
   const execBoard = getExecutiveActionBoard();
   const morningBrief = getMorningBriefData();
+  const brief = OS.oracle_briefing || { top_priority: '...', action_required: '...', manager_message: '...', cadence_dues: 0 };
+  const liveMeta = LIVE._meta || {};
+  const liveSnap = LIVE.pipeline_snapshot || {};
+  const pipelineSummary = L.summary || {};
+  const taskSummary = T.task_summary || {};
+  const topAction = (LATTICE.top_actions || [])[0] || null;
+  const topLead = topAction?.lead || null;
+  const latticeCounts = LATTICE.counts || LATTICE.index?.counts || {};
+  const latticeGenerated = LATTICE.index?.generated_at;
+  const topPriorityName = topLead?.display_name || brief.top_priority;
+  const topActionTitle = topAction?.title || topLead?.recommended_outputs?.recommended_next_action || brief.action_required;
+  const topDirective = topAction?.recommended_outputs?.reasoning_summary
+    || `Use lattice action-now ranking across ${latticeCounts.leads || 0} focused Andre leads.`;
+  const topCadencesDue = (LATTICE.index?.source_summary?.views || [])
+    .filter(v => /Cadence|Today|Followup|No Connect|Tasting/i.test(v.name || ''))
+    .reduce((sum, v) => sum + Number(v.lead_count || 0), 0);
+  const totalResolvedDeals = Number(pipelineSummary.won_count || 0) + Number(pipelineSummary.lost_count || 0);
+  const livePipelineValue = Number(pipelineSummary.total_pipeline || e.pipeline_value || 0);
+  const liveLockedRevenue = Number(pipelineSummary.locked_in_revenue || 0);
+  const liveWinRate = totalResolvedDeals
+    ? (Number(pipelineSummary.won_count || 0) / totalResolvedDeals) * 100
+    : Number(e.win_rate || 0);
+  const liveActiveDeals = Number(liveSnap.total_active_opportunities || e.active_deals || 0);
+  const liveNeedsAttention = Number(liveSnap.needs_attention_count || 0);
+  const liveTasksToday = Number(taskSummary.today || 0);
+  const currentTopDealValue = Number(liveSnap.top_deal_value || 0);
+  const currentTopDealName = liveSnap.top_deal_name || topPriorityName || 'the top deal';
+  const liveUpdatedLabel = liveMeta.last_synced ? timeAgo(liveMeta.last_synced) : 'just now';
+  const liveSourceLabel = String(liveMeta.source || 'close-api:file-tree').replace(/:/g, ' · ');
   const cards = [
-    { label:'Overall Score', value:'3,613', color:'var(--rose)', foot:'#1 on team', pct:100, sparkData:[3200, 3280, 3350, 3410, 3480, 3550, 3613] },
-    { label:'Bonus Multiplier', value:'1.80x', color:'var(--gold)', foot:'+56.5% vs avg', pct:100, sparkData:[1.45, 1.52, 1.59, 1.66, 1.72, 1.76, 1.80] },
-    { label:'90-Day Revenue', value:fmt$(52910), color:'var(--green)', foot:'+67.2% vs avg', pct:84, sparkData:[38500, 41200, 44100, 46800, 49200, 51100, 52910] },
-    { label:'Pipeline Value', value:fmt$(e.pipeline_value), color:'var(--purple)', foot: e.total_deals+' deals', pct:88, sparkData:[280000, 298000, 315000, 335000, 355000, 378000, 392500] },
-    { label:'Win Rate', value: fmtPct(e.win_rate), color:'var(--amber)', foot:'Target: 35%', pct:85, sparkData:[28, 29, 30, 31, 30, 32, 30] },
-    { label:'Active Deals', value: e.active_deals, color:'var(--cyan)', foot: e.won_deals+' won', pct:70, sparkData:[18, 19, 20, 21, 22, 23, 24] },
+    { label:'Needs Attention', value:String(liveNeedsAttention), color:'var(--rose)', foot:'Live Close snapshot', pct:Math.min(100, liveNeedsAttention * 8), sparkData:[7, 9, 8, 10, 12, 11, liveNeedsAttention] },
+    { label:'Tasks Today', value:String(liveTasksToday), color:'var(--gold)', foot:'Due now in Close', pct:Math.min(100, liveTasksToday), sparkData:[18, 24, 31, 39, 46, 54, liveTasksToday] },
+    { label:'Locked Revenue', value:fmt$(liveLockedRevenue), color:'var(--green)', foot:'Current locked-in revenue', pct:Math.min(100, liveLockedRevenue ? (liveLockedRevenue / Math.max(livePipelineValue, liveLockedRevenue)) * 100 : 0), sparkData:[42000, 48000, 51000, 62000, 76000, 92000, liveLockedRevenue] },
+    { label:'Pipeline Value', value:fmt$(livePipelineValue), color:'var(--purple)', foot:`${liveActiveDeals} active deals`, pct:Math.min(100, livePipelineValue ? (livePipelineValue / 125000) * 100 : 0), sparkData:[42000, 48000, 53000, 59000, 61000, 65000, livePipelineValue] },
+    { label:'Win Rate', value: fmtPct(liveWinRate), color:'var(--amber)', foot:`${pipelineSummary.won_count || 0} won · ${pipelineSummary.lost_count || 0} lost`, pct:Math.min(100, liveWinRate), sparkData:[18, 20, 19, 22, 21, 23, liveWinRate] },
+    { label:'Top Deal', value: currentTopDealValue ? fmt$(currentTopDealValue) : '—', color:'var(--cyan)', foot:currentTopDealName, pct:Math.min(100, currentTopDealValue ? (currentTopDealValue / Math.max(livePipelineValue, currentTopDealValue)) * 100 : 0), sparkData:[3800, 4200, 5100, 7200, 8800, 9450, currentTopDealValue || 0] },
   ];
   const urgentTasks = (T.tasks?.today || []).slice(0, 3);
-  const brief = OS.oracle_briefing || { top_priority: '...', action_required: '...', manager_message: '...', cadence_dues: 0 };
 
   stageScroll.innerHTML = `
     <div class="hero-block gold">
       <div class="hero-eyebrow"><span class="material-symbols-outlined" style="font-size:0.7rem;">emoji_events</span> #1 Sales Representative</div>
       <div class="hero-title"><span class="hero-title-accent">Andre Raw</span></div>
-      <p class="hero-desc">Comeketo Catering's top performer. 3,613 points, 1.80x bonus multiplier, $52,910 in 90-day closed business — 67.2% above team average. ${e.total_calls || 111} calls, ${e.total_deals || 37} deals, bilingual market leader.</p>
+      <p class="hero-desc">Live Close view: ${liveActiveDeals} active deals, ${liveNeedsAttention} needing attention, ${liveTasksToday} tasks due today, and ${currentTopDealName} leading at ${currentTopDealValue ? fmt$(currentTopDealValue) : '—'}. Snapshot refreshed ${liveUpdatedLabel} from ${liveSourceLabel}.</p>
       <div class="hero-pills">
-        ${(P.key_strengths || []).map(s => `<span class="hero-pill">${s.split('—')[0].trim()}</span>`).join('')}
+        ${(P.key_strengths || []).slice(0, 3).map(s => `<span class="hero-pill">${s.split('—')[0].trim()}</span>`).join('')}
+        <span class="hero-pill">${liveNeedsAttention} deals need attention</span>
+        <span class="hero-pill">${liveTasksToday} tasks due today</span>
+        <span class="hero-pill">${currentTopDealName}</span>
       </div>
     </div>
     
-    <div style="background:linear-gradient(135deg, #161410, rgba(201,168,76,0.06)); border:1px solid rgba(201,168,76,0.25); border-radius:10px; padding:1.2rem; margin-bottom:1.8rem; display:flex; gap:1.5rem; align-items:flex-start; box-shadow:0 8px 24px rgba(0,0,0,0.02);">
+    <div style="background:linear-gradient(135deg, var(--surface-raised), rgba(201,168,76,0.06)); border:1px solid rgba(201,168,76,0.25); border-radius:10px; padding:1.2rem; margin-bottom:1.8rem; display:flex; gap:1.5rem; align-items:flex-start; box-shadow:var(--shadow-card);">
       <div style="color:var(--gold); padding-top:0.2rem;">
         <span class="material-symbols-outlined" style="font-size:3rem; filter:drop-shadow(0 2px 4px rgba(232,168,56,0.2));">smart_toy</span>
       </div>
@@ -843,7 +931,7 @@ function renderCommand() {
         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.8rem;">
           <div>
             <h2 style="font-size:1.1rem; color:var(--maroon-deep); margin-bottom:0.2rem; font-family:'Fraunces', serif;">Oracle Daily Briefing</h2>
-            <p style="font-size:0.75rem; color:rgba(201,168,76,0.5);">Live execution guidance generated from doctrine and current pipeline state.</p>
+            <p style="font-size:0.75rem; color:rgba(201,168,76,0.5);">Live execution guidance generated from the Andre lattice catalog and current Close source pack.</p>
           </div>
           <span class="badge gold">Live Analysis Active</span>
         </div>
@@ -851,19 +939,21 @@ function renderCommand() {
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
            <div style="background:rgba(30,28,24,0.8); border-radius:6px; padding:0.8rem; border-left:3px solid var(--coral); box-shadow:0 1px 3px rgba(0,0,0,0.02);">
               <div style="font-size:0.65rem; text-transform:uppercase; font-weight:700; color:var(--coral); margin-bottom:0.3rem;">Top Priority Deal</div>
-              <div style="font-weight:700; color:var(--maroon); font-size:0.9rem;">${brief.top_priority}</div>
-              <div style="font-size:0.75rem; color:rgba(201,168,76,0.5); margin-top:0.2rem;"><span class="material-symbols-outlined" style="font-size:0.8rem; vertical-align:text-bottom; margin-right:2px;">bolt</span>${brief.action_required}</div>
+              <div style="font-weight:700; color:var(--maroon); font-size:0.9rem;">${topPriorityName}</div>
+              <div style="font-size:0.75rem; color:rgba(201,168,76,0.5); margin-top:0.2rem;"><span class="material-symbols-outlined" style="font-size:0.8rem; vertical-align:text-bottom; margin-right:2px;">bolt</span>${topActionTitle}</div>
+              ${topAction ? `<button class="preview-action-btn" style="margin-top:0.55rem;" onclick="previewLatticeAction('${topAction.next_best_action_id}')"><span class="material-symbols-outlined">hub</span>Why this?</button>` : ''}
            </div>
            
            <div style="background:rgba(30,28,24,0.8); border-radius:6px; padding:0.8rem; border-left:3px solid var(--rose); box-shadow:0 1px 3px rgba(0,0,0,0.02);">
               <div style="font-size:0.65rem; text-transform:uppercase; font-weight:700; color:var(--rose); margin-bottom:0.3rem;">Manager Directive</div>
-              <div style="font-size:0.75rem; color:var(--maroon); line-height:1.4; font-weight:500;">"${brief.manager_message}"</div>
+              <div style="font-size:0.75rem; color:var(--maroon); line-height:1.4; font-weight:500;">"${topDirective}"</div>
            </div>
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:0.5rem; align-items:center; justify-content:center; padding-left:1.5rem; border-left:1px dashed rgba(201,168,76,0.2); height:100%;">
          <button class="btn" style="width:100%; white-space:nowrap; background:#C9A84C; color:#0C0C0C; border:none; padding:0.5rem 1rem; border-radius:0.5rem; font-family:inherit; font-weight:700; font-size:0.72rem; cursor:pointer;" onclick="showView('automation');">Draft Strategy</button>
-         <div style="font-size:0.75rem; color:rgba(201,168,76,0.5); margin-top:0.3rem;"><span style="color:var(--coral); font-weight:700;">${brief.cadence_dues}</span> Cadences Due</div>
+         <div style="font-size:0.75rem; color:rgba(201,168,76,0.5); margin-top:0.3rem;"><span style="color:var(--coral); font-weight:700;">${topCadencesDue}</span> Lattice actions</div>
+         <div style="font-size:0.58rem;color:rgba(201,168,76,0.38);">Updated ${latticeGenerated ? timeAgo(latticeGenerated) : 'from catalog'}</div>
       </div>
     </div>
 
@@ -881,16 +971,16 @@ function renderCommand() {
 
     <div class="status-strip">
       <div class="status-card">
-        <div class="status-label">Data Period</div>
-        <div class="status-value">${P.identity?.data_period || 'Feb – Mar 2026'}</div>
+        <div class="status-label">Last Sync</div>
+        <div class="status-value">${liveMeta.last_synced ? new Date(liveMeta.last_synced).toLocaleString([], { month:'short', day:'numeric', hour:'numeric', minute:'2-digit' }) : 'Refreshing now'}</div>
       </div>
       <div class="status-card">
-        <div class="status-label">Languages</div>
-        <div class="status-value">EN English · PT Portuguese</div>
+        <div class="status-label">Source</div>
+        <div class="status-value">${liveSourceLabel}</div>
       </div>
       <div class="status-card">
-        <div class="status-label">Data Sources</div>
-        <div class="status-value">${P.identity?.total_data_sources || 124} files analyzed</div>
+        <div class="status-label">Focused Scope</div>
+        <div class="status-value">${latticeCounts.leads || liveActiveDeals || 0} leads · ${latticeCounts.next_best_actions || topCadencesDue || 0} actions</div>
       </div>
     </div>
 
@@ -1110,6 +1200,33 @@ function renderCommand() {
   setTimeout(() => { renderCommandCharts(); renderSparklines(); }, 50);
 }
 
+window.previewLatticeAction = function(actionId) {
+  const action = (LATTICE.top_actions || []).find(a => a.next_best_action_id === actionId);
+  if (!action) return Toast.warning('Lattice action not found in current catalog.');
+  const lead = action.lead || {};
+  const tags = action.recommended_outputs?.reasoning_tags || [];
+  setPreview(`
+    <div class="pv-title">${lead.display_name || action.title}</div>
+    <div class="pv-sub">Lattice next-best-action</div>
+    <div class="pv-divider"></div>
+    <div class="pv-field"><span class="pv-field-label">Action</span><span class="pv-field-value">${String(action.title || '').replace(/</g,'&lt;')}</span></div>
+    <div class="pv-field"><span class="pv-field-label">Channel</span><span class="pv-field-value">${action.recommended_channel || 'review'}</span></div>
+    <div class="pv-field"><span class="pv-field-label">Action-now</span><span class="pv-field-value">${action.sales_scoring?.action_now_score ?? '—'}</span></div>
+    <div class="pv-field"><span class="pv-field-label">Priority</span><span class="pv-field-value">${action.sales_scoring?.priority_score ?? '—'}</span></div>
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Why this surfaced</div>
+    <p style="font-size:0.72rem;line-height:1.55;color:var(--maroon);opacity:0.78;">${String(action.recommended_outputs?.reasoning_summary || 'Ranked by Andre lattice catalog.').replace(/</g,'&lt;')}</p>
+    <div style="display:flex;flex-wrap:wrap;gap:0.35rem;margin-top:0.55rem;">${tags.map(t => `<span class="badge gold">${String(t).replace(/</g,'&lt;')}</span>`).join('')}</div>
+    <div class="pv-section-label" style="margin-top:0.8rem;">If ignored</div>
+    <p style="font-size:0.72rem;line-height:1.55;color:var(--maroon);opacity:0.78;">${String(action.recommended_outputs?.counterfactual_if_ignored || 'Momentum may decay.').replace(/</g,'&lt;')}</p>
+    ${renderPreviewActionRow([
+      lead.lead_id ? `<button class="preview-action-btn gold" onclick='openCloseCompose(${JSON.stringify(action.recommended_channel === 'sms' ? 'sms' : 'email')},${JSON.stringify(lead.lead_id)},${JSON.stringify(lead.display_name || action.title)})'><span class="material-symbols-outlined">send</span>Open compose</button>` : '',
+      lead.lead_id ? `<button class="preview-action-btn" onclick='openCloseCompose("sms",${JSON.stringify(lead.lead_id)},${JSON.stringify(lead.display_name || action.title)})'><span class="material-symbols-outlined">sms</span>SMS</button>` : '',
+      lead.lead_id ? `<button class="preview-action-btn" onclick='openCloseCompose("email",${JSON.stringify(lead.lead_id)},${JSON.stringify(lead.display_name || action.title)})'><span class="material-symbols-outlined">mail</span>Email</button>` : '',
+    ].filter(Boolean))}
+  `, true);
+};
+
 function renderCommandCharts() {
   // ─── Pipeline Donut ───
   const donut = document.getElementById('cmdDonut');
@@ -1190,9 +1307,11 @@ function renderSparklines() {
     const ys = values.map(v => padding + graphH - ((v - minVal) / range) * graphH);
     ctx.clearRect(0, 0, w, h);
     const gradient = ctx.createLinearGradient(0, padding, 0, padding + graphH);
-    const rgbColor = colorStr.match(/--\w+/) ? getComputedStyle(document.documentElement).getPropertyValue(colorStr).trim() : colorStr;
-    gradient.addColorStop(0, rgbColor + '33');
-    gradient.addColorStop(1, rgbColor + '00');
+    const cssVar = String(colorStr || '').match(/var\((--[^)]+)\)|(--[\w-]+)/);
+    const resolved = cssVar ? getComputedStyle(document.documentElement).getPropertyValue(cssVar[1] || cssVar[2]).trim() : colorStr;
+    const rgbColor = resolved || '#C9A84C';
+    gradient.addColorStop(0, colorWithAlpha(rgbColor, 0.20));
+    gradient.addColorStop(1, colorWithAlpha(rgbColor, 0));
     ctx.beginPath();
     ctx.moveTo(xs[0], ys[0]);
     for (let i = 1; i < values.length; i++) {
@@ -1220,6 +1339,24 @@ function renderSparklines() {
     ctx.lineWidth = 1.5;
     ctx.stroke();
   });
+}
+
+function colorWithAlpha(color, alpha) {
+  const c = String(color || '').trim();
+  const hex = c.match(/^#([0-9a-f]{3}|[0-9a-f]{6})$/i);
+  if (hex) {
+    const raw = hex[1].length === 3 ? hex[1].split('').map(ch => ch + ch).join('') : hex[1];
+    const r = parseInt(raw.slice(0, 2), 16);
+    const g = parseInt(raw.slice(2, 4), 16);
+    const b = parseInt(raw.slice(4, 6), 16);
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
+  const rgb = c.match(/^rgba?\(([^)]+)\)$/i);
+  if (rgb) {
+    const parts = rgb[1].split(',').slice(0, 3).map(x => x.trim());
+    return `rgba(${parts.join(',')},${alpha})`;
+  }
+  return alpha ? c : 'rgba(201,168,76,0)';
 }
 
 
@@ -1314,10 +1451,13 @@ window.previewDeal = function(el, json, pin) {
 
   const leadIdResolved = resolveLeadIdForDeal(d);
   const closeSendBtns = leadIdResolved ? [
+    `<button type="button" class="preview-action-btn gold" onclick='sweepCloseLead("${leadIdResolved}",${JSON.stringify(d.name)})'><span class="material-symbols-outlined">travel_explore</span>Sweep Close</button>`,
     `<button type="button" class="preview-action-btn" onclick='openCloseCompose("email","${leadIdResolved}",${JSON.stringify(d.name)})'><span class="material-symbols-outlined">mail</span>Email (Close)</button>`,
     `<button type="button" class="preview-action-btn" onclick='openCloseCompose("sms","${leadIdResolved}",${JSON.stringify(d.name)})'><span class="material-symbols-outlined">sms</span>SMS (Close)</button>`,
     `<button type="button" class="preview-action-btn gold" onclick='openCloseTask("${leadIdResolved}",${JSON.stringify(d.name)},"")'><span class="material-symbols-outlined">add_task</span>Task (Close)</button>`
-  ] : [];
+  ] : [
+    `<button type="button" class="preview-action-btn gold" onclick='sweepCloseLead("",${JSON.stringify(d.name)})'><span class="material-symbols-outlined">travel_explore</span>Sweep Close by name</button>`
+  ];
 
   setPreview(`<div class="pv-title">${d.name}</div><div class="pv-sub">${d.stage}</div><div class="pv-divider"></div><div class="pv-field"><span class="pv-field-label">Value</span><span class="pv-field-value">${fmt$(d.value)}</span></div><div class="pv-field"><span class="pv-field-label">Event</span><span class="pv-field-value">${d.event||'—'}</span></div><div class="pv-field"><span class="pv-field-label">Venue</span><span class="pv-field-value">${d.venue||'TBD'}</span></div><div class="pv-field"><span class="pv-field-label">Guests</span><span class="pv-field-value">${d.guests||'TBD'}</span></div><div class="pv-field"><span class="pv-field-label">Confidence</span><span class="pv-field-value">${d.confidence||'—'}%</span></div><div class="pv-field"><span class="pv-field-label">Best channel</span><span class="pv-field-value">${comms.channel}</span></div>${!leadIdResolved ? '<div class="pv-divider"></div><p style="font-size:0.65rem;color:var(--amber);opacity:0.85;">Close send: no <code style="font-size:0.6rem;">lead_id</code> on this deal yet — match it via a CRM sync (Needs Attention / Closing soon) to enable Email/SMS buttons.</p>' : ''}${d.risk?.length ? '<div class="pv-divider"></div><div class="pv-section-label">Risk Flags</div><div class="pv-tags">'+d.risk.map(r=>'<span class="pv-tag" style="color:var(--coral)">'+r.replace(/_/g,' ')+'</span>').join('')+'</div>' : ''}${oracleHtml}<div class="pv-divider"></div><div class="pv-section-label">Communication guidance</div><p style="font-size:0.73rem;line-height:1.55;color:var(--maroon);opacity:0.78;">${comms.objective}. Tone should stay ${comms.tone.toLowerCase()}.</p>${renderPreviewActionRow([
     ...closeSendBtns,
@@ -1441,7 +1581,7 @@ function renderPerformance() {
     </div>
 
     <div class="layout-grid-half">
-      <div class="panel-block" style="border-color:var(--gold);background:linear-gradient(to bottom, #161410, rgba(201,168,76,0.04));">
+      <div class="panel-block" style="border-color:var(--gold);background:linear-gradient(to bottom, var(--surface-raised), rgba(201,168,76,0.04));">
         <h2><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);vertical-align:text-bottom;margin-right:0.2rem;">smart_toy</span> Oracle Team Pressure Board</h2>
         <p class="panel-note" style="margin-bottom:0.8rem;">Real-time coaching pressure calculated by Oracle based on pipeline stall and playbook drift.</p>
         <div class="script-block" style="border-left-color:var(--gold);margin-bottom:1rem;font-size:0.72rem;">
@@ -1784,7 +1924,7 @@ function renderCoaching() {
   const vg = OC.voice_guide || {};
   stageScroll.innerHTML = `
     <div class="vh"><span class="label"><span class="material-symbols-outlined">school</span> Coaching</span><h2>Development Intelligence</h2><p>3 skill gaps with playbook-based fixes · Oracle scripts · 30-day roadmap</p></div>
-    <div class="panel-block" style="border-color:var(--gold);background:linear-gradient(to bottom, #161410, rgba(201,168,76,0.04));margin-bottom:1rem;">
+    <div class="panel-block" style="border-color:var(--gold);background:linear-gradient(to bottom, var(--surface-raised), rgba(201,168,76,0.04));margin-bottom:1rem;">
       <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:0.6rem;">
         <span class="material-symbols-outlined" style="font-size:1.3rem;color:var(--gold);">smart_toy</span>
         <div>
@@ -2182,6 +2322,7 @@ function buildCommandPaletteItems() {
   nav('coaching', 'Coaching', 'Playbooks', 'school');
   nav('deals', 'Deals', 'Search and expand deal cards', 'handshake');
   nav('automation', 'Automation', 'Queue, engine, blueprint designer', 'smart_toy');
+  nav('lattice', 'Lattice Lab', 'Comparator visualization', 'account_tree');
   nav('timeline', 'Timeline', 'Activity calendar', 'calendar_month');
   nav('oracle', 'Oracle', 'AI chat workspace', 'chat');
   nav('settings', 'Settings', 'CRM IDs, API keys', 'settings');
@@ -2465,7 +2606,7 @@ function renderAutomation() {
 
     ${renderAutomationBlueprintPanel()}
 
-    <div class="panel-block" style="border-color:rgba(74,158,104,0.28);background:linear-gradient(180deg, rgba(14,20,15,0.96), rgba(10,12,10,0.98));">
+    <div class="panel-block panel-accent-ready">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.8rem;">
         <h2 style="margin-bottom:0;"><span class="material-symbols-outlined" style="font-size:1rem;color:var(--green);">mark_email_read</span> Ready To Send</h2>
         <span class="badge ready">${readySendPackets.length} approved packet${readySendPackets.length === 1 ? '' : 's'}</span>
@@ -2562,7 +2703,7 @@ function renderAutomation() {
     ` : ''}
 
     <!-- ══ LIVE CRM SNAPSHOT ══ -->
-    <div class="panel-block" style="border-color:var(--rose);background:linear-gradient(to bottom, #141414, rgba(201,168,76,0.03));">
+    <div class="panel-block" style="border-color:var(--rose);background:linear-gradient(to bottom, var(--surface-sunken), rgba(201,168,76,0.03));">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.8rem;">
         <h2 style="margin-bottom:0;"><span class="material-symbols-outlined" style="font-size:0.8rem;color:var(--coral);">circle</span> Live Close CRM Snapshot</h2>
         <div style="display:flex;align-items:center;gap:0.5rem;">
@@ -2801,6 +2942,7 @@ window.previewAttentionDeal = function(d, pin) {
     <p style="font-size:0.73rem;line-height:1.5;color:var(--maroon);opacity:0.7;">${d.reason}</p>
     <div class="pv-divider"></div>
     <div style="display:flex;flex-direction:column;gap:0.4rem;">
+      <button onclick='sweepCloseLead("${d.lead_id}",${JSON.stringify(d.name)})' style="padding:0.4rem;border-radius:0.5rem;border:none;background:#C9A84C;color:#0C0C0C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Sweep live Close intelligence</button>
       <button onclick="queueFollowUp('${d.lead_id}','${d.name.replace(/'/g,'')}')" style="padding:0.4rem;border-radius:0.5rem;border:none;background:#C9A84C;color:#0C0C0C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Draft Follow-up in Close CRM</button>
       <button type="button" onclick='openCloseCompose("email","${d.lead_id}",${JSON.stringify(d.name)})' style="padding:0.4rem;border-radius:0.5rem;border:1.5px solid rgba(201,168,76,0.45);background:rgba(201,168,76,0.08);color:#C9A84C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Send email (Close)</button>
       <button type="button" onclick='openCloseCompose("sms","${d.lead_id}",${JSON.stringify(d.name)})' style="padding:0.4rem;border-radius:0.5rem;border:1.5px solid rgba(168,216,234,0.35);background:rgba(168,216,234,0.06);color:var(--cyan);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;width:100%;">Send SMS (Close)</button>
@@ -2809,6 +2951,483 @@ window.previewAttentionDeal = function(d, pin) {
     </div>
   `, pin);
 };
+
+// ═══════════════════════════════════════
+// LATTICE LAB — Comparator Visualization
+// ═══════════════════════════════════════
+async function loadLatticeGraph(force = false) {
+  if (!force && LATTICE_GRAPH.rows?.length && LATTICE_GRAPH._loadedSource === latticeLabState.source) return LATTICE_GRAPH;
+  const source = encodeURIComponent(latticeLabState.source || 'current');
+  const r = await fetch(`${SERVER}/api/lattice/graph?source=${source}`, { cache: 'no-store' });
+  if (!r.ok) throw new Error(`Lattice graph failed (${r.status})`);
+  LATTICE_GRAPH = await r.json();
+  LATTICE_GRAPH._loadedSource = latticeLabState.source;
+  return LATTICE_GRAPH;
+}
+
+async function loadLatticeDecision(force = false) {
+  const decisionKey = [
+    latticeLabState.source,
+    latticeLabState.intent,
+    latticeLabState.comparator,
+    latticeLabState.secondary,
+    latticeLabState.tertiary,
+  ].join(':');
+  if (!force && LATTICE_DECISION.winner && LATTICE_DECISION._loadedKey === decisionKey) return LATTICE_DECISION;
+  const params = new URLSearchParams({
+    source: latticeLabState.source || 'doctrine',
+    intent: latticeLabState.intent || 'today',
+    primary: latticeLabState.comparator || 'action_now_score',
+    secondary: latticeLabState.secondary || 'doctrine_fit',
+    tertiary: latticeLabState.tertiary || 'contactability',
+    limit: '8',
+  });
+  const r = await fetch(`${SERVER}/api/lattice/decide?${params.toString()}`, { cache: 'no-store' });
+  if (!r.ok) throw new Error(`Lattice decision failed (${r.status})`);
+  LATTICE_DECISION = await r.json();
+  LATTICE_DECISION._loadedKey = decisionKey;
+  return LATTICE_DECISION;
+}
+
+function latticeScore(row, comparator = latticeLabState.comparator) {
+  return Number(row?.scores?.[comparator] ?? 0);
+}
+
+function latticeRankedRows(comparator = latticeLabState.comparator) {
+  const baseline = [...(LATTICE_GRAPH.rows || [])]
+    .sort((a, b) => latticeScore(b, 'action_now_score') - latticeScore(a, 'action_now_score'))
+    .map((r, i) => [r.lead_id, i + 1]);
+  const baselineRank = new Map(baseline);
+  return [...(LATTICE_GRAPH.rows || [])]
+    .sort((a, b) => latticeScore(b, comparator) - latticeScore(a, comparator))
+    .map((row, i) => ({
+      ...row,
+      rank: i + 1,
+      baseline_rank: baselineRank.get(row.lead_id) || i + 1,
+      rank_delta: (baselineRank.get(row.lead_id) || i + 1) - (i + 1),
+    }));
+}
+
+function latticeComparatorMeta(id) {
+  return (LATTICE_GRAPH.comparators || []).find(c => c.id === id) || { id, label: id.replace(/_/g, ' '), description: '' };
+}
+
+function aggregateDecisionContributions(decision = LATTICE_DECISION.winner) {
+  const map = new Map();
+  for (const c of (decision?.contributions || [])) {
+    const prev = map.get(c.key) || { key: c.key, contribution: 0, hits: 0, selected: false };
+    prev.contribution += Number(c.contribution || 0);
+    prev.hits += 1;
+    prev.selected = prev.selected || Boolean(c.selected);
+    map.set(c.key, prev);
+  }
+  return [...map.values()]
+    .sort((a, b) => Math.abs(b.contribution) - Math.abs(a.contribution));
+}
+
+function topLeadForComparator(comparatorId) {
+  return latticeRankedRows(comparatorId)[0] || null;
+}
+
+function comparatorRoleLabel(id) {
+  if (id === latticeLabState.comparator) return 'Primary';
+  if (id === latticeLabState.secondary) return 'Secondary';
+  if (id === latticeLabState.tertiary) return 'Tertiary';
+  return '';
+}
+
+function renderComparatorStack() {
+  const aggregates = aggregateDecisionContributions();
+  const comparators = (LATTICE_GRAPH.comparators || []).map(meta => {
+    const agg = aggregates.find(a => a.key === meta.id) || { contribution: 0, hits: 0, selected: false };
+    const top = topLeadForComparator(meta.id);
+    const role = comparatorRoleLabel(meta.id);
+    return { ...meta, contribution: agg.contribution, hits: agg.hits, selected: agg.selected, top };
+  }).sort((a, b) => Math.abs(b.contribution) - Math.abs(a.contribution));
+
+  return `
+    <section class="panel-block lattice-comparator-rail">
+      <div class="lattice-board-head">
+        <h2>Comparator Stack</h2>
+        <span class="badge gold">Doctrine-hardened</span>
+      </div>
+      <p class="panel-note">These are the levers driving the action algebra. The stack is ordered by how much each comparator is influencing the current winning recommendation.</p>
+      <div class="lattice-comparator-list">
+        ${comparators.map((meta, i) => `
+          <div class="lattice-comparator-card ${meta.id === latticeLabState.comparator ? 'active' : ''}" role="button" tabindex="0" onclick="setLatticeComparator(${JSON.stringify(meta.id)})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();setLatticeComparator(${JSON.stringify(meta.id)})}">
+            <div class="lattice-comparator-rank">#${i + 1}</div>
+            <div class="lattice-comparator-main">
+              <div class="lattice-comparator-topline">
+                <span class="lattice-comparator-name">${escapeHtml(meta.label)}</span>
+                ${comparatorRoleLabel(meta.id) ? `<span class="badge gold">${comparatorRoleLabel(meta.id)}</span>` : ''}
+              </div>
+              <div class="lattice-comparator-sub">${escapeHtml(meta.description || 'Doctrine comparator')}</div>
+              <div class="lattice-comparator-metrics">
+                <span class="lattice-comparator-impact ${meta.contribution < 0 ? 'negative' : ''}">${meta.contribution >= 0 ? '+' : ''}${meta.contribution.toFixed(1)} impact</span>
+                <span class="lattice-comparator-toplead">Top lead: ${escapeHtml(meta.top?.name || '—')}</span>
+              </div>
+              <div class="lattice-comparator-actions" onclick="event.stopPropagation()">
+                <button type="button" class="lattice-role-btn ${meta.id === latticeLabState.secondary ? 'active' : ''}" onclick="setLatticeSecondary(${JSON.stringify(meta.id)})">Y-axis</button>
+                <button type="button" class="lattice-role-btn ${meta.id === latticeLabState.tertiary ? 'active' : ''}" onclick="setLatticeTertiary(${JSON.stringify(meta.id)})">Tertiary</button>
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </section>
+  `;
+}
+
+function renderLatticeDecisionPanel() {
+  const winner = LATTICE_DECISION.winner;
+  if (!winner) {
+    return `<div class="panel-block lattice-decision"><div class="preview-empty" style="height:8rem;"><span class="material-symbols-outlined">psychology_alt</span><p>No action decision loaded yet.</p></div></div>`;
+  }
+  const action = winner.action || {};
+  const evidence = winner.evidence || {};
+  const contributions = (winner.contributions || [])
+    .slice(0, 6)
+    .map(c => `<span class="lattice-contribution ${c.contribution < 0 ? 'negative' : ''}">${escapeHtml(c.key.replace(/_/g, ' '))} ${c.contribution >= 0 ? '+' : ''}${c.contribution}</span>`)
+    .join('');
+  const questions = (winner.verification_questions || [])
+    .map(q => `<li>${escapeHtml(q)}</li>`)
+    .join('');
+  const candidates = (LATTICE_DECISION.candidates || []).slice(1, 5)
+    .map(c => `<div class="lattice-decision-alt"><span>${escapeHtml(c.lead_name)}</span><strong>${c.score}</strong></div>`)
+    .join('');
+  return `
+    <section class="panel-block lattice-decision">
+      <div class="lattice-decision-head">
+        <div>
+          <div class="pv-section-label">Best Next Action</div>
+          <h2>${escapeHtml(action.title || action.action_type || 'Review')} · ${escapeHtml(winner.lead_name)}</h2>
+          <p>${escapeHtml(evidence.why_now || 'Selected by the action algebra.')}</p>
+        </div>
+        <div class="lattice-decision-score">
+          <span>${winner.score}</span>
+          <small>action score</small>
+        </div>
+      </div>
+      <div class="lattice-decision-grid">
+        <div>
+          <div class="pv-section-label">Why this move</div>
+          <p class="pv-body">${escapeHtml(evidence.why_this_action || '')}</p>
+          ${(evidence.doctrine_read || []).map(line => `<div class="lattice-doctrine-note">${escapeHtml(line)}</div>`).join('')}
+          <div class="lattice-contributions">${contributions}</div>
+        </div>
+        <div>
+          <div class="pv-section-label">Before Andre signs off</div>
+          <ul class="lattice-question-list">${questions}</ul>
+          <div class="pv-section-label" style="margin-top:0.7rem;">What it beat</div>
+          ${candidates || '<p class="pv-body">No alternate candidates returned.</p>'}
+        </div>
+      </div>
+      ${renderPreviewActionRow([
+        `<button class="preview-action-btn gold" onclick='oracleSend(${JSON.stringify(buildDecisionOraclePrompt(winner))}, { action_type: "lattice_action_decision", lead_id: ${JSON.stringify(winner.lead_id)}, lead_name: ${JSON.stringify(winner.lead_name)}, lattice_action_id: ${JSON.stringify(action.next_best_action_id || winner.decision_id)}, source: "lattice_decision_panel" })'><span class="material-symbols-outlined">smart_toy</span>Ask Oracle to certify</button>`,
+        `<button class="preview-action-btn" onclick='previewLatticeDecision(${JSON.stringify(winner.decision_id)})'><span class="material-symbols-outlined">visibility</span>Inspect decision</button>`,
+        winner.lead_id ? `<button class="preview-action-btn" onclick='sweepCloseLead(${JSON.stringify(winner.lead_id)},${JSON.stringify(winner.lead_name)})'><span class="material-symbols-outlined">travel_explore</span>Sweep Close</button>` : '',
+      ].filter(Boolean))}
+    </section>
+  `;
+}
+
+function renderLatticeLabRows() {
+  const comparator = latticeLabState.comparator;
+  const secondary = latticeLabState.secondary;
+  const ranked = latticeRankedRows(comparator);
+  const top = ranked.slice(0, latticeLabState.limit);
+  const maxPrimary = Math.max(...ranked.map(r => latticeScore(r, comparator)), 1);
+  const maxSecondary = Math.max(...ranked.map(r => latticeScore(r, secondary)), 1);
+  const activeMeta = latticeComparatorMeta(comparator);
+
+  const listHtml = top.map(row => {
+    const score = latticeScore(row, comparator);
+    const delta = row.rank_delta;
+    const action = row.action || {};
+    const direction = delta > 0 ? 'up' : delta < 0 ? 'down' : 'flat';
+    return `
+      <button class="lattice-row" onclick="previewLatticeLabLead(${JSON.stringify(row.lead_id)})">
+        <div class="lattice-rank">#${row.rank}</div>
+        <div class="lattice-row-main">
+          <div class="lattice-row-title">${escapeHtml(row.name)}</div>
+          <div class="lattice-row-sub">${escapeHtml(action.recommended_channel || 'review')} · ${escapeHtml(action.action_type || 'next action')} · ${row.contacts} contacts · ${row.activity_volume} activity</div>
+          <div class="lattice-score-bar"><span style="width:${Math.max(4, Math.min(100, (score / maxPrimary) * 100))}%"></span></div>
+        </div>
+        <div class="lattice-score">${score}</div>
+        <div class="lattice-delta ${direction}">${delta === 0 ? 'same' : `${delta > 0 ? '+' : ''}${delta}`}</div>
+      </button>
+    `;
+  }).join('');
+
+  const plotHtml = top.map(row => {
+    const x = Math.max(4, Math.min(94, (latticeScore(row, comparator) / maxPrimary) * 88 + 4));
+    const y = 96 - Math.max(4, Math.min(90, (latticeScore(row, secondary) / maxSecondary) * 84 + 4));
+    const size = Math.max(0.75, Math.min(1.8, 0.75 + (row.activity_volume || 0) / 80));
+    return `<button class="lattice-dot" style="left:${x}%;top:${y}%;width:${size}rem;height:${size}rem;" title="${escapeHtml(row.name)}" onclick="previewLatticeLabLead(${JSON.stringify(row.lead_id)})"><span>${row.rank}</span></button>`;
+  }).join('');
+
+  const movement = ranked
+    .filter(r => r.rank_delta !== 0)
+    .sort((a, b) => Math.abs(b.rank_delta) - Math.abs(a.rank_delta))
+    .slice(0, 6)
+    .map(r => `<div class="lattice-move"><span>${escapeHtml(r.name)}</span><strong>${r.rank_delta > 0 ? '+' : ''}${r.rank_delta}</strong></div>`)
+    .join('');
+
+  return `
+    ${renderLatticeDecisionPanel()}
+    <div class="lattice-explain">
+      <div class="lattice-explain-title">${escapeHtml(activeMeta.label)}</div>
+      <p>${escapeHtml(activeMeta.description || 'Comparator changes the ordering of the same doctrine-scored lead objects so we can validate why the winning action changes.')}</p>
+    </div>
+    <div class="lattice-lab-grid doctrine">
+      ${renderComparatorStack()}
+      <section class="panel-block lattice-board">
+        <div class="lattice-board-head">
+          <h2>Lead Movement Under ${escapeHtml(activeMeta.label)}</h2>
+          <span class="badge gold">vs action-now baseline</span>
+        </div>
+        <div class="lattice-row-list">${listHtml}</div>
+      </section>
+      <section class="panel-block lattice-plot-card">
+        <div class="lattice-board-head">
+          <h2>Comparator Field</h2>
+          <span class="badge">${escapeHtml(latticeComparatorMeta(secondary).label)} Y-axis</span>
+        </div>
+        <div class="lattice-plot">
+          ${plotHtml}
+          <div class="lattice-axis x">${escapeHtml(activeMeta.label)} →</div>
+          <div class="lattice-axis y">${escapeHtml(latticeComparatorMeta(secondary).label)} ↑</div>
+        </div>
+        <div class="lattice-movement">
+          <div class="pv-section-label">Largest lead shifts</div>
+          ${movement || '<p class="pv-body">No movement against baseline.</p>'}
+        </div>
+      </section>
+    </div>
+  `;
+}
+
+function refreshLatticeLabBody() {
+  const body = $('#latticeLabBody');
+  if (!body) return;
+  body.innerHTML = renderLatticeLabRows();
+}
+
+function buildDecisionOraclePrompt(decision = LATTICE_DECISION.winner) {
+  if (!decision) return 'Use the lattice decision engine and build the best next action Andre should take right now.';
+  const action = decision.action || {};
+  const comp = decision.comparators || {};
+  const evidence = decision.evidence || {};
+  const questions = (decision.verification_questions || []).map(q => `- ${q}`).join('\n');
+  const contributions = (decision.contributions || []).map(c => `- ${c.key}: ${c.contribution >= 0 ? '+' : ''}${c.contribution} (${c.value} × ${c.weight})`).join('\n');
+  return `Certify this Ratio Lattice next-action decision for Andre.
+
+Decision:
+- Lead: ${decision.lead_name}
+- Lead ID: ${decision.lead_id}
+- Action: ${action.title || action.action_type || 'review'}
+- Channel: ${action.recommended_channel || 'review'}
+- Score: ${decision.score}
+- Intent: ${comp.intent || latticeLabState.intent}
+- Comparator triad: ${comp.primary?.id || latticeLabState.comparator}, ${comp.secondary?.id || latticeLabState.secondary}, ${comp.tertiary?.id || latticeLabState.tertiary}
+
+Decision algebra contributions:
+${contributions || '- none'}
+
+Evidence:
+- Why now: ${evidence.why_now || 'none'}
+- Why this action: ${evidence.why_this_action || 'none'}
+- What it beats: ${evidence.beats || 'none'}
+
+Verification questions before action:
+${questions || '- Verify latest Close activity and keep Andre as final approver.'}
+
+Give Andre a sign-off packet:
+1. Exactly what to do next.
+2. Why this is the best action under the selected comparators.
+3. What could make this recommendation wrong.
+4. If the action is email/SMS, draft the message, but clearly mark it as requiring approval.
+5. Ask Andre to grade the recommendation A+ through F and leave a note so HRMR can learn.`;
+}
+
+window.previewLatticeDecision = function(decisionId) {
+  const decision = (LATTICE_DECISION.candidates || []).find(c => c.decision_id === decisionId) || LATTICE_DECISION.winner;
+  if (!decision) return;
+  const action = decision.action || {};
+  const scores = Object.entries(decision.scores || {})
+    .map(([k, v]) => `<div class="pv-field"><span class="pv-field-label">${escapeHtml(k.replace(/_/g, ' '))}</span><span class="pv-field-value">${v}</span></div>`)
+    .join('');
+  const contributions = (decision.contributions || [])
+    .map(c => `<div class="pv-field"><span class="pv-field-label">${escapeHtml(c.key.replace(/_/g, ' '))}</span><span class="pv-field-value">${c.contribution >= 0 ? '+' : ''}${c.contribution}</span></div>`)
+    .join('');
+  const questions = (decision.verification_questions || [])
+    .map(q => `<div class="lattice-signal"><strong>verify</strong><span>${escapeHtml(q)}</span></div>`)
+    .join('');
+  setPreview(`
+    <div class="pv-title">${escapeHtml(decision.lead_name)}</div>
+    <div class="pv-sub">Action decision · score ${decision.score}</div>
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Recommended action</div>
+    <p class="pv-body">${escapeHtml(action.title || action.action_type || 'Review')} via ${escapeHtml(action.recommended_channel || 'review')}</p>
+    <p class="pv-body">${escapeHtml(action.reasoning || decision.evidence?.why_this_action || '')}</p>
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Algebra contributions</div>
+    ${contributions}
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Verification questions</div>
+    ${questions}
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Scores</div>
+    ${scores}
+    ${renderPreviewActionRow([
+      `<button class="preview-action-btn gold" onclick='oracleSend(${JSON.stringify(buildDecisionOraclePrompt(decision))}, { action_type: "lattice_action_decision", lead_id: ${JSON.stringify(decision.lead_id)}, lead_name: ${JSON.stringify(decision.lead_name)}, lattice_action_id: ${JSON.stringify(action.next_best_action_id || decision.decision_id)}, source: "lattice_decision_preview" })'><span class="material-symbols-outlined">smart_toy</span>Certify with Oracle</button>`,
+      `<button class="preview-action-btn" onclick='sweepCloseLead(${JSON.stringify(decision.lead_id)},${JSON.stringify(decision.lead_name)})'><span class="material-symbols-outlined">travel_explore</span>Sweep Close</button>`,
+    ])}
+  `, true);
+};
+
+window.setLatticeSource = async function(value) {
+  latticeLabState.source = value || 'current';
+  const body = $('#latticeLabBody');
+  if (body) body.innerHTML = `<div class="preview-empty" style="height:12rem;"><span class="material-symbols-outlined">account_tree</span><p>Loading ${escapeHtml(latticeLabState.source)} lattice...</p></div>`;
+  try {
+    await loadLatticeGraph(true);
+    const ids = (LATTICE_GRAPH.comparators || []).map(c => c.id);
+    if (!ids.includes(latticeLabState.comparator)) latticeLabState.comparator = ids[0] || 'balanced_lattice';
+    if (!ids.includes(latticeLabState.secondary)) latticeLabState.secondary = ids.includes('confidence') ? 'confidence' : (ids[1] || ids[0] || 'balanced_lattice');
+    if (!ids.includes(latticeLabState.tertiary)) latticeLabState.tertiary = ids.includes('contactability') ? 'contactability' : (ids[2] || ids[0] || 'balanced_lattice');
+    await loadLatticeDecision(true);
+    renderLatticeLab(false);
+  } catch (e) {
+    if (body) body.innerHTML = `<div class="panel-block"><h2>Lattice graph failed</h2><p class="pv-body">${escapeHtml(e.message)}</p></div>`;
+  }
+};
+
+window.setLatticeIntent = async function(value) {
+  latticeLabState.intent = value || 'today';
+  await loadLatticeDecision(true).catch(e => Toast.error(e.message));
+  refreshLatticeLabBody();
+};
+
+window.setLatticeComparator = async function(value) {
+  latticeLabState.comparator = value;
+  await loadLatticeDecision(true).catch(e => Toast.error(e.message));
+  refreshLatticeLabBody();
+};
+
+window.setLatticeSecondary = async function(value) {
+  latticeLabState.secondary = value;
+  await loadLatticeDecision(true).catch(e => Toast.error(e.message));
+  refreshLatticeLabBody();
+};
+
+window.setLatticeTertiary = async function(value) {
+  latticeLabState.tertiary = value;
+  await loadLatticeDecision(true).catch(e => Toast.error(e.message));
+  refreshLatticeLabBody();
+};
+
+window.previewLatticeLabLead = function(leadId) {
+  const row = (LATTICE_GRAPH.rows || []).find(r => r.lead_id === leadId);
+  if (!row) return;
+  const action = row.action || {};
+  const scoreRows = Object.entries(row.scores || {})
+    .map(([k, v]) => `<div class="pv-field"><span class="pv-field-label">${escapeHtml(k.replace(/_/g, ' '))}</span><span class="pv-field-value">${v}</span></div>`)
+    .join('');
+  const signals = (row.signals || [])
+    .map(s => `<div class="lattice-signal"><strong>${escapeHtml(s.event_type || 'signal')}</strong><span>${escapeHtml(s.summary || '')}</span></div>`)
+    .join('');
+  setPreview(`
+    <div class="pv-title">${escapeHtml(row.name)}</div>
+    <div class="pv-sub">Lattice object · ${escapeHtml(row.status_label || 'unknown')}</div>
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Current recommendation</div>
+    <p class="pv-body">${escapeHtml(action.title || 'No next-best-action generated.')}</p>
+    <div class="pv-field"><span class="pv-field-label">Channel</span><span class="pv-field-value">${escapeHtml(action.recommended_channel || 'review')}</span></div>
+    <div class="pv-field"><span class="pv-field-label">Human review</span><span class="pv-field-value">${action.human_review_required ? 'required' : 'not required'}</span></div>
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Scores</div>
+    ${scoreRows}
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Signals feeding rank</div>
+    ${signals || '<p class="pv-body">No signals loaded for this lead.</p>'}
+    ${renderPreviewActionRow([
+      `<button class="preview-action-btn gold" onclick='sweepCloseLead(${JSON.stringify(row.lead_id)},${JSON.stringify(row.name)})'><span class="material-symbols-outlined">travel_explore</span>Sweep Close</button>`,
+      `<button class="preview-action-btn" onclick='oracleSend(${JSON.stringify(`Use the lattice visualization row for ${row.name}. Explain why this lead ranks where it does under ${latticeComparatorMeta(latticeLabState.comparator).label}, and whether Andre should trust that ranking.`)}, { action_type: "lattice_validation", lead_id: ${JSON.stringify(row.lead_id)}, lattice_action_id: ${JSON.stringify(action.next_best_action_id || null)}, source: "lattice_lab" })'><span class="material-symbols-outlined">smart_toy</span>Ask Oracle</button>`,
+    ])}
+  `, true);
+};
+
+async function renderLatticeLab(force = false) {
+  const counts = LATTICE.counts || LATTICE.index?.counts || {};
+  latticeLabState.source = 'doctrine';
+  stageScroll.innerHTML = `
+    <div class="vh">
+      <span class="label"><span class="material-symbols-outlined">account_tree</span> Lattice Lab</span>
+      <h2>Doctrine Comparator Lab</h2>
+      <p>Visualize how Comeketo doctrine comparators reshape the winning action.</p>
+    </div>
+    <div class="panel-block lattice-intro">
+      <div>
+        <h2>What Rodrigo Should See</h2>
+        <p class="panel-note">This view is now anchored to the doctrine-hardened lattice only. The left rail ranks the comparators themselves, the middle shows how those comparators rearrange the lead field, and the top decision card shows the exact action those comparator choices produce.</p>
+      </div>
+      <div class="status-strip lattice-status-strip">
+        <div class="status-card"><div class="status-label">Leads</div><div class="status-value">${counts.leads || '—'}</div></div>
+        <div class="status-card"><div class="status-label">Signals</div><div class="status-value">${counts.signal_events || '—'}</div></div>
+        <div class="status-card"><div class="status-label">Actions</div><div class="status-value">${counts.next_best_actions || '—'}</div></div>
+      </div>
+    </div>
+    <div class="panel-block lattice-controls">
+      <label class="composer-field">
+        <span class="composer-label">Decision intent</span>
+        <select id="latticeIntent" class="composer-select" onchange="setLatticeIntent(this.value)">
+          <option value="today">Best move today</option>
+          <option value="fastest_money">Fastest money</option>
+          <option value="save_risk">Save highest risk</option>
+          <option value="tasting">Advance tastings</option>
+          <option value="trust_source">Protect trusted sources</option>
+        </select>
+      </label>
+      <label class="composer-field">
+        <span class="composer-label">Primary comparator</span>
+        <select id="latticeComparator" class="composer-select" onchange="setLatticeComparator(this.value)"></select>
+      </label>
+      <label class="composer-field">
+        <span class="composer-label">Plot Y-axis</span>
+        <select id="latticeSecondary" class="composer-select" onchange="setLatticeSecondary(this.value)"></select>
+      </label>
+      <label class="composer-field">
+        <span class="composer-label">Tertiary comparator</span>
+        <select id="latticeTertiary" class="composer-select" onchange="setLatticeTertiary(this.value)"></select>
+      </label>
+      <button class="preview-action-btn gold" onclick="renderLatticeLab(true)"><span class="material-symbols-outlined">refresh</span>Refresh graph</button>
+    </div>
+    <div id="latticeLabBody" class="lattice-lab-loading">
+      <div class="preview-empty" style="height:12rem;"><span class="material-symbols-outlined">account_tree</span><p>Loading lattice graph...</p></div>
+    </div>
+  `;
+  try {
+    await loadLatticeGraph(force);
+    const ids = (LATTICE_GRAPH.comparators || []).map(c => c.id);
+    if (!ids.includes(latticeLabState.comparator)) latticeLabState.comparator = ids[0] || 'balanced_lattice';
+    if (!ids.includes(latticeLabState.secondary)) latticeLabState.secondary = ids.includes('confidence') ? 'confidence' : (ids[1] || ids[0] || 'balanced_lattice');
+    if (!ids.includes(latticeLabState.tertiary)) latticeLabState.tertiary = ids.includes('contactability') ? 'contactability' : (ids[2] || ids[0] || 'balanced_lattice');
+    await loadLatticeDecision(force);
+    const options = (LATTICE_GRAPH.comparators || []).map(c => `<option value="${c.id}">${c.label}</option>`).join('');
+    const intent = $('#latticeIntent');
+    const c = $('#latticeComparator');
+    const s = $('#latticeSecondary');
+    const t = $('#latticeTertiary');
+    if (intent) intent.value = latticeLabState.intent;
+    if (c) { c.innerHTML = options; c.value = latticeLabState.comparator; }
+    if (s) { s.innerHTML = options; s.value = latticeLabState.secondary; }
+    if (t) { t.innerHTML = options; t.value = latticeLabState.tertiary; }
+    refreshLatticeLabBody();
+  } catch (e) {
+    $('#latticeLabBody').innerHTML = `<div class="panel-block"><h2>Lattice graph failed</h2><p class="pv-body">${escapeHtml(e.message)}</p></div>`;
+  }
+}
 
 // ─── Action Queue Helpers ─────────────────────────────
 function queueAgeMinutes(item) {
@@ -2835,6 +3454,66 @@ function resolveLeadIdForDeal(d) {
   return hit?.lead_id || '';
 }
 
+function renderCloseSweepSummary(packet) {
+  const p = packet?.packet || packet || {};
+  const s = p.summary || {};
+  const c = p.counts || {};
+  const leadId = p._meta?.resolved_lead_id || p.lead?.id || '';
+  const name = s.name || p.lead?.display_name || p.lead?.name || leadId || 'Close lead';
+  const recent = [
+    s.latest_email ? `<div class="pv-field"><span class="pv-field-label">Latest email</span><span class="pv-field-value">${escapeHtml(String(s.latest_email)).slice(0, 120)}</span></div>` : '',
+    s.latest_sms ? `<div class="pv-field"><span class="pv-field-label">Latest SMS</span><span class="pv-field-value">${escapeHtml(String(s.latest_sms)).slice(0, 120)}</span></div>` : '',
+    s.latest_note ? `<div class="pv-field"><span class="pv-field-label">Latest note</span><span class="pv-field-value">${escapeHtml(String(s.latest_note)).slice(0, 120)}</span></div>` : '',
+    s.next_task ? `<div class="pv-field"><span class="pv-field-label">Next task</span><span class="pv-field-value">${escapeHtml(String(s.next_task)).slice(0, 120)}</span></div>` : '',
+  ].filter(Boolean).join('');
+
+  setPreview(`
+    <div class="pv-title">${escapeHtml(name)}</div>
+    <div class="pv-sub">Live Close sweep · ${escapeHtml(s.status || 'unknown')}</div>
+    <div class="pv-divider"></div>
+    <div class="status-strip" style="grid-template-columns:repeat(3,1fr);margin-bottom:0.75rem;">
+      <div class="status-card"><div class="status-label">Email</div><div class="status-value">${c.emails || 0}</div></div>
+      <div class="status-card"><div class="status-label">SMS</div><div class="status-value">${c.sms || 0}</div></div>
+      <div class="status-card"><div class="status-label">Calls</div><div class="status-value">${c.calls || 0}</div></div>
+    </div>
+    <div class="pv-field"><span class="pv-field-label">Contacts</span><span class="pv-field-value">${c.contacts || 0}</span></div>
+    <div class="pv-field"><span class="pv-field-label">Opportunities</span><span class="pv-field-value">${c.opportunities || 0}</span></div>
+    <div class="pv-field"><span class="pv-field-label">Tasks</span><span class="pv-field-value">${c.tasks || 0}</span></div>
+    ${s.primary_email ? `<div class="pv-field"><span class="pv-field-label">Email</span><span class="pv-field-value">${escapeHtml(s.primary_email)}</span></div>` : ''}
+    ${s.primary_phone ? `<div class="pv-field"><span class="pv-field-label">Phone</span><span class="pv-field-value">${escapeHtml(s.primary_phone)}</span></div>` : ''}
+    ${recent ? `<div class="pv-divider"></div><div class="pv-section-label">Latest intelligence</div>${recent}` : ''}
+    <div class="pv-divider"></div>
+    <p class="pv-body">Saved to Andre's focused data tree and mirrored into the lattice sweep index. Use this when a duplicate surface is missing facts instead of trusting stale cards.</p>
+    ${renderPreviewActionRow([
+      leadId ? `<button class="preview-action-btn gold" onclick='openCloseCompose("email",${JSON.stringify(leadId)},${JSON.stringify(name)})'><span class="material-symbols-outlined">mail</span>Email</button>` : '',
+      leadId ? `<button class="preview-action-btn" onclick='openCloseCompose("sms",${JSON.stringify(leadId)},${JSON.stringify(name)})'><span class="material-symbols-outlined">sms</span>SMS</button>` : '',
+      `<button class="preview-action-btn" onclick='oracleSend(${JSON.stringify(`Use this live Close sweep for ${name} and tell me the single best next action, why it matters, and what to verify before Andre acts.`)}, { action_type: "close_sweep_interpretation", lead_id: ${JSON.stringify(leadId)}, lead_name: ${JSON.stringify(name)}, source: "close_sweep_side_panel" })'><span class="material-symbols-outlined">smart_toy</span>Ask Oracle</button>`,
+    ].filter(Boolean))}
+  `, true);
+}
+
+window.sweepCloseLead = async function(leadId, name) {
+  const label = name || leadId || 'lead';
+  setPreview(`<div class="pv-title">Sweeping Close...</div><div class="pv-sub">${escapeHtml(label)}</div><div class="pv-divider"></div><p class="pv-body">Pulling lead, contacts, opportunities, tasks, email, SMS, calls, and notes directly from Close.</p>`, true);
+  try {
+    const path = leadId ? `/close/lead/${encodeURIComponent(leadId)}/sweep` : '/close/lead/sweep';
+    const body = leadId ? { source: 'side-panel-sweep' } : { query: name, source: 'side-panel-name-search' };
+    const r = await fetch(`${SERVER}${path}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(data.error || `Close sweep failed (${r.status})`);
+    renderCloseSweepSummary(data.packet);
+    await refreshActivityFromServer();
+    Toast.success('Close sweep saved');
+  } catch (e) {
+    setPreview(`<div class="pv-title">Close sweep failed</div><div class="pv-sub">${escapeHtml(label)}</div><div class="pv-divider"></div><p class="pv-body">${escapeHtml(e.message || 'Unknown error')}</p>`, true);
+    Toast.error(e.message || 'Close sweep failed');
+  }
+};
+
 async function refreshActivityFromServer() {
   try {
     const r = await fetch(`${SERVER}/activity`, { cache: 'no-store' });
@@ -2860,7 +3539,7 @@ function ensureCloseComposeModal() {
   const wrap = document.createElement('div');
   wrap.innerHTML = `
     <div id="closeComposeModal" style="display:none;position:fixed;inset:0;z-index:10000;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);backdrop-filter:blur(6px);padding:1rem;">
-      <div style="width:100%;max-width:26rem;max-height:90vh;overflow:auto;background:#141414;border:1.5px solid rgba(201,168,76,0.25);border-radius:1rem;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+      <div style="width:100%;max-width:26rem;max-height:90vh;overflow:auto;background:var(--surface-modal);border:1.5px solid rgba(201,168,76,0.25);border-radius:1rem;box-shadow:var(--shadow-soft);">
         <div style="padding:1rem 1.2rem;border-bottom:1px solid rgba(201,168,76,0.1);display:flex;justify-content:space-between;align-items:start;gap:0.75rem;">
           <div>
             <div id="ccmTitle" style="font-family:'Fraunces',serif;font-weight:700;font-size:0.95rem;color:var(--maroon-deep);">Close</div>
@@ -2916,14 +3595,14 @@ function fillCloseComposeContactOptions(lead, mode) {
   sel.innerHTML = '<option value="">— Optional: pick contact —</option>';
   (lead.contacts || []).forEach(c => {
     const opt = document.createElement('option');
-    opt.value = c.id || '';
-    const emails = c.emails || [];
-    const phones = c.phones || [];
+    opt.value = c.id || c.contact_id || '';
+    const emails = c.emails || (c.email_addresses || []).map(email => ({ email }));
+    const phones = c.phones || (c.phone_numbers || []).map(phone => ({ phone }));
     const email = emails[0]?.email || emails[0] || '';
     const phone = phones[0]?.phone || phones[0] || '';
     opt.dataset.email = typeof email === 'string' ? email : (email?.email || '');
     opt.dataset.phone = typeof phone === 'string' ? phone : (phone?.phone || '');
-    const label = c.name || c.display_name || c.title || 'Contact';
+    const label = c.name || c.display_name || c.full_name || c.title || 'Contact';
     opt.textContent = `${label}${opt.dataset.email ? ' · ' + opt.dataset.email : ''}${opt.dataset.phone ? ' · ' + opt.dataset.phone : ''}`;
     sel.appendChild(opt);
   });
@@ -2963,10 +3642,23 @@ window.openCloseCompose = async function(mode, leadId, dealName, preset) {
   $('#ccmSmsText').value = preset.text || '';
 
   try {
-    const r = await fetch(`${SERVER}/close/lead/${encodeURIComponent(leadId)}`, { cache: 'no-store' });
-    if (!r.ok) throw new Error('Could not load lead from Close');
-    const lead = await r.json();
+    let lead = null;
+    const lr = await fetch(`${SERVER}/api/lattice/lead/${encodeURIComponent(leadId)}`, { cache: 'no-store' });
+    if (lr.ok) {
+      const row = await lr.json();
+      lead = { contacts: row.contacts || [] };
+    } else {
+      const r = await fetch(`${SERVER}/close/lead/${encodeURIComponent(leadId)}`, { cache: 'no-store' });
+      if (!r.ok) throw new Error('Could not load lead from Close or lattice catalog');
+      lead = await r.json();
+    }
     fillCloseComposeContactOptions(lead, mode);
+    const first = $('#ccmContactSelect')?.options?.[1];
+    if (first) {
+      $('#ccmContactSelect').selectedIndex = 1;
+      if (mode === 'email' && first.dataset.email) $('#ccmTo').value = first.dataset.email;
+      if (mode === 'sms' && first.dataset.phone) $('#ccmRemotePhone').value = first.dataset.phone;
+    }
   } catch (e) {
     Toast.error(e.message || 'Failed to load Close lead');
   }
@@ -3669,6 +4361,39 @@ function buildComposerPrompt() {
   ].filter(Boolean).join('\n\n');
 }
 
+function getTopLatticeAction() {
+  return (LATTICE.top_actions || [])[0] || null;
+}
+
+function buildNextBestActionPrompt(action = getTopLatticeAction()) {
+  const lead = action?.lead || {};
+  const scoring = action?.sales_scoring || {};
+  const outputs = action?.recommended_outputs || {};
+  const tags = Array.isArray(action?.reasoning_tags) ? action.reasoning_tags.join(', ') : '';
+  return `Use the Andre Ratio Lattice catalog to build the single next most important action Andre should take right now.
+
+Primary lattice candidate:
+- Lead: ${lead.display_name || action?.target_object_id || 'unknown'}
+- Lead ID: ${lead.lead_id || action?.target_object_id || 'unknown'}
+- Recommended channel: ${action?.recommended_channel || 'review'}
+- Title: ${action?.title || 'No lattice action loaded'}
+- Action-now score: ${scoring.action_now_score ?? '?'}
+- Priority score: ${scoring.priority_score ?? '?'}
+- Reasoning tags: ${tags || 'none'}
+- Current lattice reasoning: ${outputs.reasoning_summary || 'none'}
+- Counterfactual: ${outputs.counterfactual || 'none'}
+
+Build a sign-off packet Andre can approve or reject:
+1. The exact next action.
+2. Why this is the best move now, and what it beats.
+3. The risk if Andre does nothing today.
+4. The customer-facing draft if the next action is email or SMS.
+5. A verification checklist before sending.
+6. A simple approval line: "Approve / Revise / Reject" with what Andre should grade afterward.
+
+Make it operational. No vague advice. Use the lattice as truth and keep the customer-facing action human-approved.`;
+}
+
 window.updateOracleComposer = function(key, value) {
   oracleComposerState[key] = value;
 };
@@ -3678,9 +4403,40 @@ window.oracleDraftFromComposer = async function() {
   await oracleSend(prompt);
 };
 
+window.oracleBuildNextBestAction = async function() {
+  try {
+    await loadLatticeGraph(false);
+    await loadLatticeDecision(false);
+  } catch (e) {
+    console.warn('[LATTICE] decision unavailable for Oracle next action:', e.message || e);
+  }
+  const decision = LATTICE_DECISION.winner;
+  if (decision) {
+    await oracleSend(buildDecisionOraclePrompt(decision), {
+      action_type: 'lattice_action_decision',
+      lattice_action_id: decision.action?.next_best_action_id || decision.decision_id || null,
+      lead_id: decision.lead_id || null,
+      lead_name: decision.lead_name || null,
+      source: 'oracle_next_best_action_button',
+    });
+    return;
+  }
+  const action = getTopLatticeAction();
+  const lead = action?.lead || {};
+  await oracleSend(buildNextBestActionPrompt(action), {
+    action_type: 'lattice_next_best_action',
+    lattice_action_id: action?.next_best_action_id || null,
+    lead_id: lead.lead_id || action?.target_object_id || null,
+    lead_name: lead.display_name || action?.title || null,
+    source: 'oracle_next_best_action_button',
+  });
+};
+
 function renderOracle() {
   const aiReady = SETTINGS.ai?.openai_api_key_set;
   const topDeal = (L.high_value_deals || [])[0];
+  const topLatticeAction = getTopLatticeAction();
+  const topLatticeLead = topLatticeAction?.lead || {};
   const oracleIntelPanel = DOCS.voiceReadme || DOCS.voiceSummary;
   const composerDeals = getOracleDraftTargets().slice(0, 12);
   if (!oracleComposerState.dealName && composerDeals[0]) oracleComposerState.dealName = composerDeals[0].name;
@@ -3705,7 +4461,11 @@ function renderOracle() {
           <div class="oracle-thread-header">
             <div>
               <h2 class="oracle-thread-title"><span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);vertical-align:text-bottom;">forum</span> Conversation</h2>
-              <p class="oracle-thread-sub">Guided mode: each reply ends with sign-off next steps; your taps and A+–F grades train suggestions (local only).</p>
+              <p class="oracle-thread-sub">Guided mode: Oracle proposes the next move, Andre certifies it with A+–F + notes, and HRMR saves the signal for future recommendations.</p>
+            </div>
+            <div class="oracle-thread-controls">
+              <button type="button" class="oracle-thread-control primary" onclick="oracleBuildNextBestAction()"><span class="material-symbols-outlined">auto_awesome_motion</span>Next action</button>
+              ${chatHistory.length > 0 ? '<button type="button" class="oracle-thread-control" onclick="archiveOracleChat(true)"><span class="material-symbols-outlined">inventory_2</span>Archive + clear</button>' : ''}
             </div>
           </div>
           <div id="chatMessages" class="oracle-thread">
@@ -3716,6 +4476,10 @@ function renderOracle() {
               <p>Type below or use a shortcut. Replies appear here — scroll this panel to read the full conversation.</p>
             </div>
             <div class="oracle-quick-grid">
+              <button class="oracle-quick-btn oracle-quick-primary" onclick="oracleBuildNextBestAction()">
+                <span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">approval_delegation</span>
+                <span>Build next action</span>
+              </button>
               <button class="oracle-quick-btn" onclick="oracleSend('What are my top 3 priority deals and what should I do with each right now?')">
                 <span class="material-symbols-outlined" style="font-size:1rem;color:var(--gold);">priority_high</span>
                 <span>Top priority deals</span>
@@ -3752,7 +4516,7 @@ function renderOracle() {
             </div>
             <div class="oracle-composer-meta">
               <span>Shift+Enter new line · ${SETTINGS.ai?.model || 'OpenAI'}</span>
-              ${chatHistory.length > 0 ? '<button type="button" class="oracle-clear-chat" onclick="clearOracleChat()">Clear thread</button>' : ''}
+              ${chatHistory.length > 0 ? '<span><button type="button" class="oracle-clear-chat" onclick="archiveOracleChat(true)">Archive + clear</button><button type="button" class="oracle-clear-chat" onclick="clearOracleChat(false)">Clear local only</button></span>' : ''}
             </div>
           </div>
         </section>
@@ -3766,10 +4530,17 @@ function renderOracle() {
                 <div class="status-strip" style="grid-template-columns:repeat(3,1fr);margin-bottom:0.8rem;">
                   <div class="status-card"><div class="status-label">Pipeline</div><div class="status-value">${fmt$(L.summary?.total_pipeline)}</div></div>
                   <div class="status-card"><div class="status-label">Today</div><div class="status-value">${T.task_summary?.today || 0} tasks</div></div>
-                  <div class="status-card"><div class="status-label">At Risk</div><div class="status-value">${fmt$(L.summary?.at_risk_revenue)}</div></div>
+                  <div class="status-card"><div class="status-label">HRMR</div><div class="status-value">${HRMR.counts?.ratings || 0} grades</div></div>
+                </div>
+                <div class="oracle-certification-panel">
+                  <div class="oracle-cert-eyebrow">Current lattice candidate</div>
+                  <div class="oracle-cert-title">${topLatticeLead.display_name || 'No lattice action loaded'}</div>
+                  <div class="oracle-cert-body">${topLatticeAction?.title || 'Run the Andre saved-view export and lattice builder to refresh next-best-actions.'}</div>
+                  <div class="oracle-cert-meta">${topLatticeAction ? `Channel: ${topLatticeAction.recommended_channel || 'review'} · Action-now: ${topLatticeAction.sales_scoring?.action_now_score ?? '?'}` : 'Awaiting lattice data'}</div>
                 </div>
                 ${renderPreviewActionRow([
-                  topDeal ? `<button class="preview-action-btn gold" onclick="openDealWorkspace('${topDeal.name.replace(/'/g, "\\'")}')"><span class="material-symbols-outlined">sell</span>Open top deal</button>` : '',
+                  `<button class="preview-action-btn gold" onclick="oracleBuildNextBestAction()"><span class="material-symbols-outlined">auto_awesome_motion</span>Build next action</button>`,
+                  topLatticeAction ? `<button class="preview-action-btn" onclick="previewLatticeAction('${topLatticeAction.next_best_action_id}')"><span class="material-symbols-outlined">hub</span>Why this?</button>` : '',
                   `<button class="preview-action-btn" onclick="oracleSend('Give me a clean executive summary of everything that matters right now: biggest money, biggest risk, biggest next action.')"><span class="material-symbols-outlined">assistant</span>Exec summary</button>`
                 ].filter(Boolean))}
               </div>
@@ -3839,11 +4610,74 @@ function renderMd(text) {
   if (typeof marked !== 'undefined') {
     try {
       marked.setOptions({ breaks: true, gfm: true });
-      return marked.parse(text);
+      return enhanceMarkdownPanels(marked.parse(text));
     } catch(e) { /* fallback */ }
   }
-  // Fallback: basic escaping + line breaks
-  return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
+  return enhanceMarkdownPanels(renderBasicMarkdown(text));
+}
+
+function escapeHtml(s) {
+  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function inlineMd(s) {
+  return escapeHtml(s)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+}
+
+function renderBasicMarkdown(text) {
+  const lines = String(text || '').split(/\r?\n/);
+  let html = '';
+  let list = null;
+  let code = false;
+  let codeBuf = [];
+  const closeList = () => {
+    if (list) { html += `</${list}>`; list = null; }
+  };
+  for (const line of lines) {
+    if (/^```/.test(line.trim())) {
+      if (code) {
+        html += `<pre><code>${escapeHtml(codeBuf.join('\n'))}</code></pre>`;
+        code = false; codeBuf = [];
+      } else {
+        closeList(); code = true; codeBuf = [];
+      }
+      continue;
+    }
+    if (code) { codeBuf.push(line); continue; }
+    if (!line.trim()) { closeList(); html += '<p></p>'; continue; }
+    const h = line.match(/^(#{1,4})\s+(.+)$/);
+    if (h) { closeList(); const n = h[1].length; html += `<h${n}>${inlineMd(h[2])}</h${n}>`; continue; }
+    const bullet = line.match(/^\s*[-*]\s+(.+)$/);
+    if (bullet) {
+      if (list !== 'ul') { closeList(); list = 'ul'; html += '<ul>'; }
+      html += `<li>${inlineMd(bullet[1])}</li>`;
+      continue;
+    }
+    const ordered = line.match(/^\s*\d+\.\s+(.+)$/);
+    if (ordered) {
+      if (list !== 'ol') { closeList(); list = 'ol'; html += '<ol>'; }
+      html += `<li>${inlineMd(ordered[1])}</li>`;
+      continue;
+    }
+    const quote = line.match(/^>\s?(.+)$/);
+    if (quote) { closeList(); html += `<blockquote>${inlineMd(quote[1])}</blockquote>`; continue; }
+    closeList();
+    html += `<p>${inlineMd(line)}</p>`;
+  }
+  closeList();
+  if (code) html += `<pre><code>${escapeHtml(codeBuf.join('\n'))}</code></pre>`;
+  return html;
+}
+
+function enhanceMarkdownPanels(html) {
+  return String(html || '')
+    .replace(/<p>\s*(Note|Tip|Warning|Important|Action|Next step):\s*([\s\S]*?)<\/p>/gi, (_, label, body) =>
+      `<div class="oracle-callout oracle-callout-${label.toLowerCase().replace(/\s+/g,'-')}"><div class="oracle-callout-label">${label}</div><div>${body}</div></div>`)
+    .replace(/<h2>([\s\S]*?)<\/h2>/g, '<div class="oracle-md-panel-title">$1</div>')
+    .replace(/<hr\s*\/?>/g, '<div class="oracle-md-separator"></div>');
 }
 
 function oracleGradeNoteDomId(turnId) {
@@ -3865,7 +4699,7 @@ function renderChatMessage(m) {
   const turnIdJs = m.turnId != null ? JSON.stringify(m.turnId) : 'null';
   const noteId = !isUser && m.turnId ? oracleGradeNoteDomId(m.turnId) : '';
   const gradesRow = (!isUser && m.turnId && !m.oracleGrade && !m.oracleGradeDraft)
-    ? `<div class="oracle-grade-row"><span class="oracle-grade-label">Rate this reply</span><div class="oracle-grade-chips">${['A+','A','B','C','D','F'].map(g => `<button type="button" class="oracle-grade-chip" onclick="oraclePickGrade(${turnIdJs},${JSON.stringify(g)})">${g}</button>`).join('')}</div></div>`
+    ? `<div class="oracle-grade-row"><span class="oracle-grade-label">Rate this reply</span><div class="oracle-grade-chips">${['A+','A','B','C','D','F'].map(g => `<button type="button" class="oracle-grade-chip" data-oracle-grade="${g}">${g}</button>`).join('')}</div></div>`
     : (!isUser && m.turnId && !m.oracleGrade && m.oracleGradeDraft)
       ? `<div class="oracle-grade-row oracle-grade-draft">
           <span class="oracle-grade-label">Grade <strong>${String(m.oracleGradeDraft).replace(/</g,'&lt;')}</strong> — why? (optional, helps Oracle learn)</span>
@@ -3879,16 +4713,27 @@ function renderChatMessage(m) {
         ? `<div class="oracle-grade-done">Graded <strong>${String(m.oracleGrade).replace(/</g,'&lt;')}</strong>${m.oracleGradeNote ? ` · <span class="oracle-grade-note-preview">${String(m.oracleGradeNote).replace(/</g,'&lt;').replace(/\n/g,' ').slice(0, 160)}${(m.oracleGradeNote||'').length > 160 ? '…' : ''}</span>` : ''}</div>`
         : '');
   const stepsRow = steps.length
-    ? `<div class="oracle-next-steps"><div class="oracle-next-steps-label">Next steps</div><div class="oracle-next-steps-chips">${steps.map((s, i) => `<button type="button" class="oracle-step-chip" onclick="oracleRunGuidedStep(${turnIdJs},${i})"><span class="material-symbols-outlined">arrow_forward</span>${String(s.label).replace(/</g,'&lt;')}</button>`).join('')}</div></div>`
+    ? `<div class="oracle-next-steps"><div class="oracle-next-steps-label">Next steps</div><div class="oracle-next-steps-chips">${steps.map((s, i) => `<button type="button" class="oracle-step-chip" data-oracle-turn="${String(m.turnId || '').replace(/"/g,'&quot;')}" data-oracle-step="${i}"><span class="material-symbols-outlined">arrow_forward</span>${String(s.label).replace(/</g,'&lt;')}</button>`).join('')}</div></div>`
+    : '';
+  const certifyRow = (!isUser && m.turnId && !m.oracleGrade)
+    ? `<div class="oracle-certify-row">
+        <span class="oracle-certify-label">Certify recommendation</span>
+        <div class="oracle-certify-chips">
+          <button type="button" class="oracle-certify-chip approve" data-oracle-certify="approve"><span class="material-symbols-outlined">check_circle</span>Approve</button>
+          <button type="button" class="oracle-certify-chip revise" data-oracle-certify="revise"><span class="material-symbols-outlined">edit</span>Revise</button>
+          <button type="button" class="oracle-certify-chip reject" data-oracle-certify="reject"><span class="material-symbols-outlined">cancel</span>Reject</button>
+        </div>
+      </div>`
     : '';
   return `
-    <div style="display:flex;gap:0.6rem;align-items:flex-start;${isUser ? 'flex-direction:row-reverse;' : ''}">
+    <div data-oracle-message-turn="${String(m.turnId || '').replace(/"/g,'&quot;')}" style="display:flex;gap:0.6rem;align-items:flex-start;${isUser ? 'flex-direction:row-reverse;' : ''}">
       <div style="width:1.8rem;height:1.8rem;border-radius:0.5rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;${isUser ? 'background:rgba(201,168,76,0.15);' : 'background:rgba(74,158,104,0.1);'}">
-        <span class="material-symbols-outlined" style="font-size:0.9rem;${isUser ? 'color:#C9A84C;' : 'color:#4A9E68;'}">${isUser ? 'person' : 'smart_toy'}</span>
+        <span class="material-symbols-outlined" style="font-size:0.9rem;${isUser ? 'color:var(--gold);' : 'color:#4A9E68;'}">${isUser ? 'person' : 'smart_toy'}</span>
       </div>
-      <div class="md-content" style="max-width:80%;padding:0.8rem 1rem;border-radius:0.75rem;${isUser ? 'background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.15);' : 'background:#161616;border:1px solid rgba(255,255,255,0.05);'}">
-        <div style="font-size:0.78rem;color:#F0E8D4;line-height:1.6;">${content}</div>
+      <div class="md-content" style="max-width:80%;padding:0.8rem 1rem;border-radius:0.75rem;${isUser ? 'background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.15);' : 'background:var(--msg-assistant-bg);border:1px solid var(--msg-assistant-border);'}">
+        <div style="font-size:0.78rem;color:var(--msg-text);line-height:1.6;">${content}</div>
         ${stepsRow}
+        ${certifyRow}
         ${gradesRow}
         ${!isUser ? `<div class="chat-message-actions"><button class="preview-action-btn" onclick="pinMarkdownToPreview('Oracle Response', ${esc(m.content)})"><span class="material-symbols-outlined">push_pin</span>Pin</button><button class="preview-action-btn" onclick="navigator.clipboard.writeText(${esc(m.content)});Toast.success('Copied to clipboard')"><span class="material-symbols-outlined">content_copy</span>Copy</button></div>` : ''}
       </div>
@@ -3958,11 +4803,11 @@ function showTypingIndicator() {
       <div style="width:1.8rem;height:1.8rem;border-radius:0.5rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(74,158,104,0.1);">
         <span class="material-symbols-outlined" style="font-size:0.9rem;color:#4A9E68;">smart_toy</span>
       </div>
-      <div style="padding:0.8rem 1rem;border-radius:0.75rem;background:#161616;border:1px solid rgba(255,255,255,0.05);">
+      <div style="padding:0.8rem 1rem;border-radius:0.75rem;background:var(--msg-assistant-bg);border:1px solid var(--msg-assistant-border);">
         <div style="display:flex;gap:0.3rem;align-items:center;">
-          <div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite;"></div>
-          <div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite 0.2s;"></div>
-          <div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite 0.4s;"></div>
+          <div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite;"></div>
+          <div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite 0.2s;"></div>
+          <div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite 0.4s;"></div>
         </div>
       </div>
     </div>`;
@@ -3970,14 +4815,111 @@ function showTypingIndicator() {
 
 let oracleChatLoading = false;
 
-window.oracleSend = async function(quickMessage) {
+window.oraclePreviewGuidedStep = function(turnId, stepIndex) {
+  const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
+  const step = msg?.nextSteps?.[stepIndex];
+  if (!step) return;
+  const p = step.payload || {};
+  const safeLabel = escapeHtml(step.label || step.id || 'Next step');
+  const payloadRows = Object.entries(p)
+    .filter(([, value]) => value !== null && value !== undefined && value !== '')
+    .map(([key, value]) => `<div class="pv-field"><span class="pv-field-label">${escapeHtml(key.replace(/_/g, ' '))}</span><span class="pv-field-value">${escapeHtml(String(value)).slice(0, 140)}</span></div>`)
+    .join('');
+  const actionLabel = {
+    open_deal: 'Open deal panel',
+    open_compose: 'Open compose',
+    oracle_prompt: 'Ask Oracle',
+    preview_lattice_action: 'Show lattice why',
+    navigate: 'Go there',
+    refresh_inbox: 'Refresh intel',
+    open_palette: 'Open palette',
+  }[step.action] || 'Run step';
+
+  setPreview(`
+    <div class="pv-title">${safeLabel}</div>
+    <div class="pv-sub">Oracle next step · ${escapeHtml(step.action || 'action')}</div>
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Why this is next</div>
+    <p class="pv-body">${escapeHtml(oracleStepWhy(step))}</p>
+    ${payloadRows ? `<div class="pv-divider"></div><div class="pv-section-label">Step payload</div>${payloadRows}` : ''}
+    ${step.action === 'oracle_prompt' && p.text ? `<div class="pv-divider"></div><div class="pv-section-label">Prompt it will send</div><div class="script-block oracle-step-preview-text">${escapeHtml(p.text)}</div>` : ''}
+    ${renderPreviewActionRow([
+      `<button class="preview-action-btn gold" onclick="oracleRunGuidedStep(${JSON.stringify(turnId)},${Number(stepIndex)})"><span class="material-symbols-outlined">play_arrow</span>${actionLabel}</button>`,
+      `<button class="preview-action-btn" onclick="pinMarkdownToPreview('Oracle step: ${safeLabel.replace(/'/g, "\\'")}', ${esc(JSON.stringify(step, null, 2))})"><span class="material-symbols-outlined">push_pin</span>Pin JSON</button>`,
+    ])}
+  `, true);
+};
+
+window.oraclePreviewGrade = function(turnId, grade) {
+  const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
+  if (!msg || msg.oracleGrade) return;
+  msg.oracleGradeDraft = grade;
+  rerenderOracleChatOnly();
+  const userQuery = getPreviousUserPromptForTurn(turnId);
+  const meta = msg.oracleMeta || {};
+  setPreview(`
+    <div class="pv-title">Grade ${escapeHtml(grade)}</div>
+    <div class="pv-sub">HRMR certification note</div>
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">What this teaches Oracle</div>
+    <p class="pv-body">Your grade and note become indexed HRMR memory. A/A+ becomes a positive pattern. D/F becomes an anti-template so Oracle stops repeating that behavior.</p>
+    <div class="pv-divider"></div>
+    <div class="pv-section-label">Thread context</div>
+    <p class="pv-body">${escapeHtml(userQuery || 'No user prompt found for this turn.').slice(0, 500)}</p>
+    ${meta.lattice_action_id || meta.lead_id ? `<div class="pv-divider"></div><div class="pv-section-label">Lattice link</div>
+      ${meta.lead_id ? `<div class="pv-field"><span class="pv-field-label">Lead</span><span class="pv-field-value">${escapeHtml(meta.lead_id)}</span></div>` : ''}
+      ${meta.lattice_action_id ? `<div class="pv-field"><span class="pv-field-label">Action</span><span class="pv-field-value">${escapeHtml(meta.lattice_action_id)}</span></div>` : ''}` : ''}
+    <div class="pv-divider"></div>
+    <label class="pv-note-label" for="oraclePreviewGradeNote">Why this grade?</label>
+    <textarea id="oraclePreviewGradeNote" class="pv-note-input" rows="6" placeholder="Tell Oracle why. Example: good priority but wrong channel, too generic, perfect tone, missed the actual blocker...">${escapeHtml(msg.oracleGradeNote || '')}</textarea>
+    ${renderPreviewActionRow([
+      `<button class="preview-action-btn gold" onclick="oracleCommitGradeFromPreview(${JSON.stringify(turnId)})"><span class="material-symbols-outlined">check</span>Save HRMR grade</button>`,
+      `<button class="preview-action-btn" onclick="oracleCancelGrade(${JSON.stringify(turnId)});unpinPreview();"><span class="material-symbols-outlined">close</span>Cancel</button>`,
+    ])}
+  `, true);
+  setTimeout(() => $('#oraclePreviewGradeNote')?.focus(), 50);
+};
+
+window.oracleActivateGuidedStep = async function(turnId, stepIndex) {
+  oraclePreviewGuidedStep(turnId, stepIndex);
+  await oracleRunGuidedStep(turnId, stepIndex);
+};
+
+window.oracleCertifyReply = async function(turnId, mode) {
+  const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
+  if (!msg || msg.oracleGrade) return;
+  if (mode === 'approve') {
+    oraclePreviewGrade(turnId, 'A+');
+    const note = $('#oraclePreviewGradeNote');
+    if (note && !note.value) note.value = 'Approved. This recommendation is ready for Andre to act on after the verification checklist.';
+    Toast.success('Approval opened in HRMR');
+    return;
+  }
+  if (mode === 'reject') {
+    oraclePreviewGrade(turnId, 'F');
+    const note = $('#oraclePreviewGradeNote');
+    if (note && !note.value) note.value = 'Rejected. Explain what made this weaker than the better next move.';
+    Toast.warning('Rejection note opened');
+    return;
+  }
+  if (mode === 'revise') {
+    const prompt = `Revise your last recommendation. Keep the same lattice/CRM context, but give Andre a better next action. Be explicit about what changed, what was weak in the prior version, and what Andre should do now.`;
+    await oracleSend(prompt, {
+      ...(msg.oracleMeta || {}),
+      action_type: 'oracle_revise_recommendation',
+      source: 'oracle_certify_revise',
+    });
+  }
+};
+
+window.oracleSend = async function(quickMessage, meta = {}) {
   if (oracleChatLoading) return;
   const input = $('#oracleInput');
   const message = quickMessage || (input ? input.value.trim() : '');
   if (!message) return;
 
   const turnId = 't_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2, 9);
-  chatHistory.push({ role: 'user', content: message, turnId });
+  chatHistory.push({ role: 'user', content: message, turnId, oracleMeta: meta || {} });
   persistChatHistory();
 
   const sendBtn = $('#oracleSendBtn');
@@ -3993,14 +4935,30 @@ window.oracleSend = async function(quickMessage) {
 
   try {
     const threadMessages = buildOracleChatPayload(chatHistory);
-    const reply = await aiCall(null, null, null, threadMessages);
+    const reply = await aiCall(null, meta?.action_type || null, null, threadMessages);
     const { displayText, steps } = parseOracleGuidedReply(reply);
-    chatHistory.push({ role: 'assistant', content: displayText, turnId, nextSteps: steps });
+    const guidedSteps = normalizeOracleSteps(steps.length ? steps : buildFallbackOracleSteps(meta), meta);
+    chatHistory.push({ role: 'assistant', content: displayText, turnId, nextSteps: guidedSteps, oracleMeta: meta || {} });
     persistChatHistory();
     persistAiArtifact({ type: 'oracle_chat', title: 'Oracle Chat', content: displayText });
+    fetch(`${SERVER}/api/oracle/turn`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        id: turnId,
+        operator_key: 'andre',
+        prompt: message,
+        response: displayText,
+        action_type: meta?.action_type || 'oracle_chat',
+        model: SETTINGS.ai?.model || null,
+        lattice_action_id: meta?.lattice_action_id || null,
+        lead_id: meta?.lead_id || null,
+        source: meta?.source || 'oracle_chat',
+      })
+    }).catch(e => console.warn('[HRMR] turn persist failed:', e));
     Toast.success('Oracle responded');
   } catch(e) {
-    chatHistory.push({ role: 'assistant', content: 'Connection error — make sure the server is running and your API key is configured in Settings.', turnId, nextSteps: [] });
+    chatHistory.push({ role: 'assistant', content: 'Connection error — make sure the server is running and your API key is configured in Settings.', turnId, nextSteps: [], oracleMeta: meta || {} });
     persistChatHistory();
     Toast.error('Failed to reach Oracle');
   } finally {
@@ -4046,8 +5004,32 @@ window.oracleRunGuidedStep = async function(turnId, stepIndex) {
     await oracleSend(p.text);
     return;
   }
-  if (act === 'open_deal' && p.dealName) {
-    openDealWorkspace(p.dealName);
+  if (act === 'open_deal') {
+    const dealName = p.dealName || p.leadName || p.name || p.label || '';
+    if (p.leadId) {
+      await previewOracleLeadById(p.leadId, p.leadName || p.dealName || 'Close lead');
+      return;
+    }
+    if (dealName) {
+      openDealWorkspace(dealName);
+      return;
+    }
+  }
+  if ((act === 'open_lead' || act === 'preview_lead') && p.leadId) {
+    await previewOracleLeadById(p.leadId, p.leadName || p.dealName || 'Close lead');
+    return;
+  }
+  if (act === 'preview_lattice_action' && p.actionId) {
+    const decision = LATTICE_DECISION.winner;
+    if (decision && (decision.action?.next_best_action_id === p.actionId || decision.decision_id === p.actionId)) {
+      previewLatticeDecision(decision.decision_id);
+      return;
+    }
+    previewLatticeAction(p.actionId);
+    return;
+  }
+  if (act === 'open_compose' && p.leadId) {
+    await openCloseCompose(p.mode === 'sms' ? 'sms' : 'email', p.leadId, p.dealName || p.leadName || 'Close lead');
     return;
   }
   if (act === 'refresh_inbox') {
@@ -4061,6 +5043,38 @@ window.oracleRunGuidedStep = async function(turnId, stepIndex) {
   Toast.warning('Unknown or incomplete step: ' + (act || '?'));
 };
 
+async function previewOracleLeadById(leadId, fallbackName = 'Close lead') {
+  try {
+    const r = await fetch(`${SERVER}/api/lattice/lead/${encodeURIComponent(leadId)}`, { cache: 'no-store' });
+    if (!r.ok) throw new Error(`Lead lookup failed (${r.status})`);
+    const row = await r.json();
+    const lead = row.lead || {};
+    const actions = row.next_best_actions || [];
+    const contacts = row.contacts || [];
+    const opps = row.opportunities || [];
+    const action = actions[0] || {};
+    setPreview(`
+      <div class="pv-title">${escapeHtml(lead.display_name || lead.name || fallbackName)}</div>
+      <div class="pv-sub">Oracle opened indexed Close lead</div>
+      <div class="pv-divider"></div>
+      <div class="pv-field"><span class="pv-field-label">Lead ID</span><span class="pv-field-value">${escapeHtml(leadId)}</span></div>
+      <div class="pv-field"><span class="pv-field-label">Contacts</span><span class="pv-field-value">${contacts.length}</span></div>
+      <div class="pv-field"><span class="pv-field-label">Opportunities</span><span class="pv-field-value">${opps.length}</span></div>
+      <div class="pv-divider"></div>
+      <div class="pv-section-label">Current lattice action</div>
+      <p class="pv-body">${escapeHtml(action.title || action.recommended_outputs?.reasoning_summary || 'No lattice action found for this lead.')}</p>
+      ${contacts.slice(0, 3).map(c => `<div class="lattice-signal"><strong>${escapeHtml(c.full_name || c.name || 'contact')}</strong><span>${escapeHtml([c.email_addresses?.[0], c.phone_numbers?.[0]].filter(Boolean).join(' · ') || 'No contact coordinates indexed')}</span></div>`).join('')}
+      ${renderPreviewActionRow([
+        `<button class="preview-action-btn gold" onclick='sweepCloseLead(${JSON.stringify(leadId)},${JSON.stringify(lead.display_name || fallbackName)})'><span class="material-symbols-outlined">travel_explore</span>Sweep Close</button>`,
+        `<button class="preview-action-btn" onclick='openCloseCompose("email",${JSON.stringify(leadId)},${JSON.stringify(lead.display_name || fallbackName)})'><span class="material-symbols-outlined">mail</span>Email</button>`,
+        `<button class="preview-action-btn" onclick='openCloseCompose("sms",${JSON.stringify(leadId)},${JSON.stringify(lead.display_name || fallbackName)})'><span class="material-symbols-outlined">sms</span>SMS</button>`,
+      ])}
+    `, true);
+  } catch (e) {
+    Toast.error(e.message || 'Lead preview failed');
+  }
+}
+
 window.oraclePickGrade = function(turnId, grade) {
   if (turnId == null) return;
   const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
@@ -4073,6 +5087,14 @@ window.oraclePickGrade = function(turnId, grade) {
   }, 50);
 };
 
+window.oracleCommitGradeFromPreview = async function(turnId) {
+  const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
+  const note = ($('#oraclePreviewGradeNote')?.value || '').trim();
+  if (msg) msg.oracleGradeNote = note;
+  await oracleCommitGrade(turnId, note);
+  unpinPreview();
+};
+
 window.oracleCancelGrade = function(turnId) {
   const msg = chatHistory.find(m => m.role === 'assistant' && m.turnId === turnId);
   if (!msg) return;
@@ -4080,7 +5102,7 @@ window.oracleCancelGrade = function(turnId) {
   rerenderOracleChatOnly();
 };
 
-window.oracleCommitGrade = async function(turnId) {
+window.oracleCommitGrade = async function(turnId, noteOverride = null) {
   if (turnId == null) return;
   const idx = chatHistory.findIndex(m => m.role === 'assistant' && m.turnId === turnId);
   if (idx === -1) return;
@@ -4097,7 +5119,8 @@ window.oracleCommitGrade = async function(turnId) {
   }
 
   const noteEl = document.getElementById(oracleGradeNoteDomId(turnId));
-  const note = noteEl ? String(noteEl.value || '').trim() : '';
+  const note = noteOverride != null ? String(noteOverride || '').trim() : (noteEl ? String(noteEl.value || '').trim() : '');
+  const meta = asst.oracleMeta || {};
 
   delete asst.oracleGradeDraft;
   asst.oracleGrade = grade;
@@ -4109,7 +5132,10 @@ window.oracleCommitGrade = async function(turnId) {
     grade,
     note: note || null,
     query: userQuery.slice(0, 600),
-    response_snippet: (asst.content || '').slice(0, 900)
+    response_snippet: (asst.content || '').slice(0, 900),
+    action_type: meta.action_type || 'oracle_chat',
+    lattice_action_id: meta.lattice_action_id || null,
+    lead_id: meta.lead_id || null,
   });
   ORACLE_GRADED_CORPUS = ORACLE_GRADED_CORPUS.slice(0, 80);
   await persistOracleGraded();
@@ -4120,8 +5146,21 @@ window.oracleCommitGrade = async function(turnId) {
     await fetch(`${SERVER}/api/hrmr`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ turn_id: turnId, grade, note: note || null, rated_by: ratedBy })
+      body: JSON.stringify({
+        turn_id: turnId,
+        grade,
+        note: note || null,
+        rated_by: ratedBy,
+        query: userQuery.slice(0, 1000),
+        response_snippet: (asst.content || '').slice(0, 1400),
+        action_type: meta.action_type || 'oracle_chat',
+        lattice_action_id: meta.lattice_action_id || null,
+        lead_id: meta.lead_id || null,
+        model: SETTINGS.ai?.model || null,
+        source: meta.source || 'oracle_grade',
+      })
     });
+    await refreshHrmrSignals();
   } catch (e) {
     console.warn('[HRMR] server persist failed (local copy saved):', e);
   }
@@ -4130,7 +5169,82 @@ window.oracleCommitGrade = async function(turnId) {
   Toast.success('Rating saved — Oracle context updated');
 };
 
-window.clearOracleChat = async function() {
+document.addEventListener('click', (event) => {
+  const gradeChip = event.target.closest?.('.oracle-grade-chip');
+  if (gradeChip) {
+    event.preventDefault();
+    event.stopPropagation();
+    const msgEl = gradeChip.closest('[data-oracle-message-turn]');
+    const turnId = msgEl?.getAttribute('data-oracle-message-turn');
+    const grade = gradeChip.getAttribute('data-oracle-grade') || gradeChip.textContent.trim();
+    if (turnId && grade) oraclePreviewGrade(turnId, grade);
+    return;
+  }
+
+  const stepChip = event.target.closest?.('.oracle-step-chip');
+  if (stepChip) {
+    event.preventDefault();
+    event.stopPropagation();
+    const turnId = stepChip.getAttribute('data-oracle-turn');
+    const stepIndex = Number(stepChip.getAttribute('data-oracle-step'));
+    if (turnId && Number.isFinite(stepIndex)) oracleActivateGuidedStep(turnId, stepIndex);
+    return;
+  }
+
+  const certifyChip = event.target.closest?.('.oracle-certify-chip');
+  if (certifyChip) {
+    event.preventDefault();
+    event.stopPropagation();
+    const msgEl = certifyChip.closest('[data-oracle-message-turn]');
+    const turnId = msgEl?.getAttribute('data-oracle-message-turn');
+    const mode = certifyChip.getAttribute('data-oracle-certify');
+    if (turnId && mode) oracleCertifyReply(turnId, mode);
+  }
+}, true);
+
+function oracleArchiveTitle(messages = chatHistory) {
+  const firstUser = (messages || []).find(m => m.role === 'user');
+  return (firstUser?.content || 'Oracle conversation').replace(/\s+/g, ' ').slice(0, 90);
+}
+
+window.archiveOracleChat = async function(clearAfter = false) {
+  if (!chatHistory.length) {
+    if (clearAfter) await clearOracleChat(false);
+    return;
+  }
+  const payload = {
+    id: `conv_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`,
+    title: oracleArchiveTitle(chatHistory),
+    operator_key: 'andre',
+    source: 'browser_oracle_thread',
+    messages: chatHistory,
+  };
+  try {
+    const r = await fetch(`${SERVER}/api/oracle/archive`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    if (!r.ok) {
+      const err = await r.json().catch(() => ({}));
+      throw new Error(err.error || `Archive failed (${r.status})`);
+    }
+    await refreshHrmrSignals();
+    await refreshActivityFromServer();
+    Toast.success('Conversation archived into HRMR + lattice');
+  } catch (e) {
+    await IDB.set(`oracle_archive_failed_${payload.id}`, payload);
+    Toast.warning('Archive saved locally; server archive failed');
+    console.warn('[Oracle] archive failed, local copy retained:', e);
+  }
+  if (clearAfter) await clearOracleChat(false);
+};
+
+window.clearOracleChat = async function(archiveFirst = true) {
+  if (archiveFirst && chatHistory.length) {
+    await archiveOracleChat(true);
+    return;
+  }
   chatHistory = [];
   await persistChatHistory();
   renderOracle();
@@ -4259,8 +5373,8 @@ function showAiModal(content, icon, title) {
   if (!modal) {
     const div = document.createElement('div');
     div.innerHTML = `
-      <div id="aiModal" style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);backdrop-filter:blur(6px);animation:fadeIn 200ms ease;">
-        <div id="aiModalInner" style="width:90%;max-width:36rem;max-height:80vh;background:#141414;border:1.5px solid rgba(201,168,76,0.2);border-radius:1rem;overflow:hidden;display:flex;flex-direction:column;animation:slideUp 250ms ease;">
+      <div id="aiModal" style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:var(--palette-backdrop);backdrop-filter:blur(6px);animation:fadeIn 200ms ease;">
+        <div id="aiModalInner" style="width:90%;max-width:36rem;max-height:80vh;background:var(--surface-modal);border:1.5px solid rgba(201,168,76,0.2);border-radius:1rem;overflow:hidden;display:flex;flex-direction:column;animation:slideUp 250ms ease;">
           <div id="aiModalHeader" style="padding:1rem 1.2rem;border-bottom:1px solid rgba(201,168,76,0.1);display:flex;align-items:center;gap:0.6rem;">
             <span class="material-symbols-outlined" id="aiModalIcon" style="font-size:1.2rem;color:var(--gold);">${icon||'smart_toy'}</span>
             <span id="aiModalTitle" style="font-family:'Fraunces',serif;font-weight:700;font-size:0.95rem;color:var(--maroon-deep);flex:1;">${title||'Oracle is thinking...'}</span>
@@ -4268,11 +5382,11 @@ function showAiModal(content, icon, title) {
           </div>
           <div id="aiModalBody" style="padding:1.2rem;overflow-y:auto;flex:1;scrollbar-width:thin;scrollbar-color:rgba(201,168,76,0.2) transparent;">
             ${isLoading
-              ? '<div style="display:flex;align-items:center;gap:0.6rem;color:var(--burgundy);"><div style="display:flex;gap:0.3rem;"><div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite;"></div><div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite 0.2s;"></div><div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite 0.4s;"></div></div><span style="font-size:0.78rem;">' + content + '</span></div>'
-              : '<div class="md-content" style="font-size:0.78rem;color:#F0E8D4;line-height:1.7;">' + renderMd(content) + '</div>'}
+              ? '<div style="display:flex;align-items:center;gap:0.6rem;color:var(--burgundy);"><div style="display:flex;gap:0.3rem;"><div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite;"></div><div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite 0.2s;"></div><div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite 0.4s;"></div></div><span style="font-size:0.78rem;">' + content + '</span></div>'
+              : '<div class="md-content" style="font-size:0.78rem;color:var(--msg-text);line-height:1.7;">' + renderMd(content) + '</div>'}
           </div>
           <div id="aiModalFooter" style="padding:0.8rem 1.2rem;border-top:1px solid rgba(201,168,76,0.1);display:flex;justify-content:flex-end;gap:0.4rem;">
-            ${!isLoading ? '<button onclick="pinMarkdownToPreview($(\'#aiModalTitle\').textContent, $(\'#aiModalBody\').innerText);Toast.success(\'Pinned to preview\')" style="padding:0.4rem 1rem;border-radius:9999px;border:1.5px solid rgba(201,168,76,0.35);background:transparent;color:#F0E8D4;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;"><span class="material-symbols-outlined" style="font-size:0.75rem;">push_pin</span> Pin</button><button onclick="navigator.clipboard.writeText($(\'#aiModalBody\').innerText);Toast.success(\'Copied to clipboard\')" style="padding:0.4rem 1rem;border-radius:9999px;border:1.5px solid #C9A84C;background:transparent;color:#C9A84C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;"><span class="material-symbols-outlined" style="font-size:0.75rem;">content_copy</span> Copy</button><button onclick="$(\'#aiModal\').remove()" style="padding:0.4rem 1rem;border-radius:9999px;border:none;background:#C9A84C;color:#0C0C0C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;">Done</button>' : ''}
+            ${!isLoading ? '<button onclick="pinMarkdownToPreview($(\'#aiModalTitle\').textContent, $(\'#aiModalBody\').innerText);Toast.success(\'Pinned to preview\')" style="padding:0.4rem 1rem;border-radius:9999px;border:1.5px solid rgba(201,168,76,0.35);background:transparent;color:var(--maroon);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;"><span class="material-symbols-outlined" style="font-size:0.75rem;">push_pin</span> Pin</button><button onclick="navigator.clipboard.writeText($(\'#aiModalBody\').innerText);Toast.success(\'Copied to clipboard\')" style="padding:0.4rem 1rem;border-radius:9999px;border:1.5px solid var(--gold);background:transparent;color:var(--gold);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;"><span class="material-symbols-outlined" style="font-size:0.75rem;">content_copy</span> Copy</button><button onclick="$(\'#aiModal\').remove()" style="padding:0.4rem 1rem;border-radius:9999px;border:none;background:var(--gold);color:var(--text-on-gold);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;">Done</button>' : ''}
           </div>
         </div>
       </div>`;
@@ -4283,10 +5397,10 @@ function showAiModal(content, icon, title) {
     const mt = $('#aiModalTitle'); if (mt) mt.textContent = title || 'Oracle is thinking...';
     const mb = $('#aiModalBody');
     if (mb) mb.innerHTML = isLoading
-      ? '<div style="display:flex;align-items:center;gap:0.6rem;color:var(--burgundy);"><div style="display:flex;gap:0.3rem;"><div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite;"></div><div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite 0.2s;"></div><div style="width:6px;height:6px;border-radius:50%;background:#C9A84C;animation:typingDot 1.4s infinite 0.4s;"></div></div><span style="font-size:0.78rem;">' + content + '</span></div>'
-      : '<div class="md-content" style="font-size:0.78rem;color:#F0E8D4;line-height:1.7;">' + renderMd(content) + '</div>';
+      ? '<div style="display:flex;align-items:center;gap:0.6rem;color:var(--burgundy);"><div style="display:flex;gap:0.3rem;"><div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite;"></div><div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite 0.2s;"></div><div style="width:6px;height:6px;border-radius:50%;background:var(--gold);animation:typingDot 1.4s infinite 0.4s;"></div></div><span style="font-size:0.78rem;">' + content + '</span></div>'
+      : '<div class="md-content" style="font-size:0.78rem;color:var(--msg-text);line-height:1.7;">' + renderMd(content) + '</div>';
     const mf = $('#aiModalFooter');
-    if (mf) mf.innerHTML = !isLoading ? '<button onclick="pinMarkdownToPreview($(\'#aiModalTitle\').textContent, $(\'#aiModalBody\').innerText);Toast.success(\'Pinned to preview\')" style="padding:0.4rem 1rem;border-radius:9999px;border:1.5px solid rgba(201,168,76,0.35);background:transparent;color:#F0E8D4;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;"><span class="material-symbols-outlined" style="font-size:0.75rem;">push_pin</span> Pin</button><button onclick="navigator.clipboard.writeText($(\'#aiModalBody\').innerText);Toast.success(\'Copied to clipboard\')" style="padding:0.4rem 1rem;border-radius:9999px;border:1.5px solid #C9A84C;background:transparent;color:#C9A84C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;"><span class="material-symbols-outlined" style="font-size:0.75rem;">content_copy</span> Copy</button><button onclick="$(\'#aiModal\').remove()" style="padding:0.4rem 1rem;border-radius:9999px;border:none;background:#C9A84C;color:#0C0C0C;font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;">Done</button>' : '';
+    if (mf) mf.innerHTML = !isLoading ? '<button onclick="pinMarkdownToPreview($(\'#aiModalTitle\').textContent, $(\'#aiModalBody\').innerText);Toast.success(\'Pinned to preview\')" style="padding:0.4rem 1rem;border-radius:9999px;border:1.5px solid rgba(201,168,76,0.35);background:transparent;color:var(--maroon);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;"><span class="material-symbols-outlined" style="font-size:0.75rem;">push_pin</span> Pin</button><button onclick="navigator.clipboard.writeText($(\'#aiModalBody\').innerText);Toast.success(\'Copied to clipboard\')" style="padding:0.4rem 1rem;border-radius:9999px;border:1.5px solid var(--gold);background:transparent;color:var(--gold);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;"><span class="material-symbols-outlined" style="font-size:0.75rem;">content_copy</span> Copy</button><button onclick="$(\'#aiModal\').remove()" style="padding:0.4rem 1rem;border-radius:9999px;border:none;background:var(--gold);color:var(--text-on-gold);font-size:0.68rem;font-weight:700;cursor:pointer;font-family:inherit;">Done</button>' : '';
   }
 }
 
@@ -4296,6 +5410,16 @@ function buildOracleContext() {
   const tasks = (T.tasks?.today || []).slice(0, 5);
   const risks = (L.risk_patterns || []).slice(0, 4);
   const gaps = (P.development_areas || []).map(g => g.area + ': ' + g.description).join('; ');
+  const latticeCounts = LATTICE.counts || LATTICE.index?.counts || {};
+  const latticeActions = (LATTICE.top_actions || []).slice(0, 8);
+  const latticeLines = latticeActions.map(a => {
+    const lead = a.lead || {};
+    return `${lead.display_name || a.target_object_id}: ${a.title} via ${a.recommended_channel || 'review'} (action_now ${a.sales_scoring?.action_now_score ?? '?'}, priority ${a.sales_scoring?.priority_score ?? '?'})`;
+  }).join(' | ');
+  const decision = LATTICE_DECISION.winner || null;
+  const decisionLine = decision
+    ? `${decision.lead_name}: ${decision.action?.title || decision.action?.action_type || 'review'} via ${decision.action?.recommended_channel || 'review'} (score ${decision.score}; intent ${decision.comparators?.intent || latticeLabState.intent}; triad ${decision.comparators?.primary?.id || latticeLabState.comparator}/${decision.comparators?.secondary?.id || latticeLabState.secondary}/${decision.comparators?.tertiary?.id || latticeLabState.tertiary})`
+    : 'No lattice decision packet loaded yet.';
 
   return `[CONTEXT — Andre Raw's Current Sales State]
 Pipeline: $${(L.summary?.total_pipeline||0).toLocaleString()} total, ${e.active_deals||0} active deals, ${e.won_deals||0} won, ${fmtPct(e.win_rate)} win rate
@@ -4304,6 +5428,14 @@ Top deals: ${topDeals.map(d => d.name + ' ($' + (d.value||0).toLocaleString() + 
 Today's tasks: ${tasks.map(t => t.lead + ': ' + t.action).join(' | ')}
 Risk flags: ${risks.map(r => r.flag + ' (' + r.count + ' deals)').join(', ')}
 Development areas: ${gaps}
+
+[ANDRE RATIO LATTICE CATALOG — Current Source Of Truth]
+Catalog generated: ${LATTICE.index?.generated_at || 'unknown'}
+Indexed scope: ${latticeCounts.leads || 0} focused Andre leads, ${latticeCounts.contacts || 0} contacts, ${latticeCounts.emails || 0} emails, ${latticeCounts.sms || 0} SMS, ${latticeCounts.calls || 0} calls, ${latticeCounts.tasks || 0} tasks, ${latticeCounts.next_best_actions || 0} next-best-actions.
+Top lattice actions: ${latticeLines || 'No lattice actions loaded.'}
+Current action-decision packet: ${decisionLine}
+Oracle rule: prefer lattice next_best_action, signal_event, contact, and conversation data over stale static briefing text. If drafting outbound, use indexed contact facts and keep every customer-facing action human-approved.
+[END ANDRE RATIO LATTICE CATALOG]
 [END CONTEXT]${buildOracleDirectorContext()}`;
 }
 
@@ -4311,10 +5443,20 @@ Development areas: ${gaps}
 function buildOracleDirectorContext() {
   const choices = ORACLE_CHOICE_LOG || [];
   const grades = ORACLE_GRADED_CORPUS || [];
+  const serverSignals = HRMR.recent_signal || [];
   const recentC = choices.slice(-18);
   const recentG = grades.slice(-12);
-  if (!recentC.length && !recentG.length) return '';
+  if (!recentC.length && !recentG.length && !serverSignals.length) return '';
   let s = '\n\n[DIRECTOR SIGNAL — guided Oracle / HRMR]\n';
+  if (HRMR.counts?.ratings) {
+    s += `Durable HRMR memory: ${HRMR.counts.ratings || 0} ratings, ${HRMR.counts.notes || 0} notes, ${HRMR.counts.graded_lattice_actions || 0} graded lattice actions.\n`;
+  }
+  if (serverSignals.length) {
+    s += 'Recent durable Andre notes from HRMR index:\n';
+    serverSignals.slice(0, 10).forEach(g => {
+      s += `  • ${g.grade}${g.note ? ': "' + String(g.note).replace(/"/g, "'").slice(0, 220) + (String(g.note).length > 220 ? '…' : '') + '"' : ' (no note)'}${g.action_type ? ' [' + g.action_type + ']' : ''}\n`;
+    });
+  }
   if (recentC.length) {
     s += 'Recent one-tap actions the rep chose (oldest→newest): ' + recentC.map(c => (c.label || c.id || '?') + ' [' + (c.action || '') + ']').join(' → ') + '\n';
   }
@@ -4348,6 +5490,87 @@ function parseOracleGuidedReply(raw) {
   }
 }
 
+function buildFallbackOracleSteps(meta = {}) {
+  const decision = LATTICE_DECISION.winner || null;
+  const action = decision?.action || getTopLatticeAction();
+  const lead = action?.lead || {};
+  const leadId = meta.lead_id || decision?.lead_id || lead.lead_id || action?.target_object_id || null;
+  const leadName = meta.lead_name || decision?.lead_name || lead.display_name || action?.title || 'current lead';
+  const channel = action?.recommended_channel === 'sms' ? 'sms' : action?.recommended_channel === 'call' ? 'call' : 'email';
+  const steps = [
+    { id: 'build_next_action', label: 'Build next action', action: 'oracle_prompt', payload: { text: decision ? buildDecisionOraclePrompt(decision) : buildNextBestActionPrompt(action) } },
+    { id: 'show_why', label: 'Why this?', action: 'preview_lattice_action', payload: { actionId: action?.next_best_action_id || null } },
+  ];
+  if (leadId) {
+    steps.push({ id: 'open_lead', label: `Open ${leadName}`, action: 'open_lead', payload: { leadId, leadName } });
+    if (channel !== 'call') {
+      steps.push({ id: 'open_compose', label: channel === 'sms' ? 'Draft SMS' : 'Draft email', action: 'open_compose', payload: { mode: channel, leadId, dealName: leadName } });
+    }
+  }
+  steps.push({ id: 'open_timeline', label: 'Open timeline', action: 'navigate', payload: { view: 'timeline' } });
+  return steps.filter(s => s.action !== 'preview_lattice_action' || s.payload.actionId);
+}
+
+function inferLeadNameFromStep(step = {}) {
+  return String(step.payload?.dealName || step.payload?.leadName || step.payload?.name || step.label || '')
+    .replace(/^\s*(open|view|call|text|sms|email|draft)\s+/i, '')
+    .replace(/\s+(deal|lead|profile|record|now)$/i, '')
+    .trim();
+}
+
+function findLatticeLeadByName(name) {
+  const target = String(name || '').trim().toLowerCase();
+  if (!target) return null;
+  const actions = LATTICE.top_actions || [];
+  return actions.map(a => a.lead).filter(Boolean).find(l => {
+    const display = String(l.display_name || '').toLowerCase();
+    const id = String(l.lead_id || '').toLowerCase();
+    return display === target || display.includes(target) || target.includes(display) || id === target;
+  }) || null;
+}
+
+function normalizeOracleSteps(steps = [], meta = {}) {
+  const normalized = (steps || []).map(step => {
+    const s = { ...step, payload: { ...(step.payload || {}) } };
+    if (s.action === 'open_deal' || s.action === 'open_lead' || s.action === 'preview_lead') {
+      const inferredName = inferLeadNameFromStep(s) || meta.lead_name;
+      if (!s.payload.dealName && inferredName) s.payload.dealName = inferredName;
+      if (!s.payload.leadName && inferredName) s.payload.leadName = inferredName;
+      if (!String(s.payload.leadId || '').startsWith('lead_')) {
+        const lead = findLatticeLeadByName(s.payload.leadName || s.payload.dealName || inferredName);
+        if (lead?.lead_id) {
+          s.payload.leadId = lead.lead_id;
+          s.payload.leadName = s.payload.leadName || lead.display_name;
+        }
+      }
+    }
+    if (s.action === 'open_compose') {
+      const leadId = String(s.payload.leadId || '');
+      if (!leadId.startsWith('lead_')) {
+        const lead = findLatticeLeadByName(s.payload.dealName || s.payload.leadName || leadId || inferLeadNameFromStep(s) || meta.lead_name);
+        if (lead?.lead_id) {
+          s.payload.leadId = lead.lead_id;
+          s.payload.dealName = s.payload.dealName || lead.display_name;
+        }
+      }
+      if (!String(s.payload.leadId || '').startsWith('lead_')) return null;
+      s.payload.mode = s.payload.mode === 'sms' ? 'sms' : 'email';
+    }
+    if (s.action === 'preview_lattice_action' && !s.payload.actionId) {
+      const decisionActionId = LATTICE_DECISION.winner?.action?.next_best_action_id || null;
+      if (decisionActionId) s.payload.actionId = decisionActionId;
+      else return null;
+    }
+    return s;
+  }).filter(Boolean);
+  const hasWhy = normalized.some(s => s.action === 'preview_lattice_action');
+  const topActionId = LATTICE_DECISION.winner?.action?.next_best_action_id || getTopLatticeAction()?.next_best_action_id;
+  if (!hasWhy && topActionId) {
+    normalized.push({ id: 'show_why', label: 'Why this?', action: 'preview_lattice_action', payload: { actionId: topActionId } });
+  }
+  return normalized.slice(0, 6);
+}
+
 // ═══════════════════════════════════════
 // SETTINGS
 // ═══════════════════════════════════════
@@ -4372,7 +5595,7 @@ function renderSettings() {
   const keySet = ai.openai_api_key_set;
   const keyPreview = ai.openai_api_key_preview || '';
   const model = ai.model || 'gpt-5.4-nano';
-  const models = ai.models_available || ['gpt-5.4-nano','gpt-4.1-mini','gpt-4.1','gpt-5-mini','gpt-5'];
+  const models = ai.models_available || ['gpt-5.4-nano','gpt-5.4-mini','gpt-5.4','gpt-4.1-mini','gpt-4.1','gpt-5-mini','gpt-5'];
   const lastSyncLabel = LIVE?._meta?.last_synced ? new Date(LIVE._meta.last_synced).toLocaleString() : 'Never';
 
   stageScroll.innerHTML = `
@@ -4421,7 +5644,7 @@ function renderSettings() {
             ${models.map(m => `<option value="${m}" ${m === model ? 'selected' : ''}>${m}</option>`).join('')}
           </select>
         </div>
-        <div class="settings-hint">Choose which OpenAI model powers the AI features. Nano is cheapest, GPT-5 is most capable.</div>
+        <div class="settings-hint">Choose which OpenAI model powers the AI features. Nano is cheapest; GPT-5.4 and GPT-5.4 Mini are the higher-capability options.</div>
       </div>
 
       ${keySet ? `
@@ -4922,6 +6145,12 @@ async function refreshQueue() {
 function renderQueueStatus() {
   const el = $('#queueStatus');
   if (!el) return;
+  const counts = LATTICE.counts || LATTICE.index?.counts || {};
+  if (counts.leads || counts.next_best_actions) {
+    el.innerHTML = `<span style="color:var(--gold);font-weight:700;">${counts.next_best_actions || 0} actions</span> · ${counts.leads || 0} leads`;
+    el.title = 'Andre lattice catalog: current focused leads and generated next-best-action records.';
+    return;
+  }
   const pending = Q.pending?.length || 0;
   const done = Q.completed?.length || 0;
   el.innerHTML = pending > 0
@@ -4936,12 +6165,12 @@ async function boot() {
   // Show loading skeleton
   stageScroll.innerHTML = `
     <div style="animation:fadeIn 300ms ease;">
-      <div style="height:8rem;border-radius:1.2rem;background:linear-gradient(90deg,#1A1A1A 25%,#222 50%,#1A1A1A 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;margin-bottom:1.2rem;"></div>
+      <div style="height:8rem;border-radius:1.2rem;background:linear-gradient(90deg,var(--shimmer-a) 25%,var(--shimmer-b) 50%,var(--shimmer-a) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;margin-bottom:1.2rem;"></div>
       <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:0.55rem;margin-bottom:1.2rem;">
-        ${[1,2,3,4,5,6].map(() => '<div style="height:6rem;border-radius:1.2rem;background:linear-gradient(90deg,#1A1A1A 25%,#222 50%,#1A1A1A 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;"></div>').join('')}
+        ${[1,2,3,4,5,6].map(() => '<div style="height:6rem;border-radius:1.2rem;background:linear-gradient(90deg,var(--shimmer-a) 25%,var(--shimmer-b) 50%,var(--shimmer-a) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;"></div>').join('')}
       </div>
-      <div style="height:4rem;border-radius:0.9rem;background:linear-gradient(90deg,#1A1A1A 25%,#222 50%,#1A1A1A 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;margin-bottom:0.8rem;"></div>
-      <div style="height:12rem;border-radius:1.2rem;background:linear-gradient(90deg,#1A1A1A 25%,#222 50%,#1A1A1A 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;"></div>
+      <div style="height:4rem;border-radius:0.9rem;background:linear-gradient(90deg,var(--shimmer-a) 25%,var(--shimmer-b) 50%,var(--shimmer-a) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;margin-bottom:0.8rem;"></div>
+      <div style="height:12rem;border-radius:1.2rem;background:linear-gradient(90deg,var(--shimmer-a) 25%,var(--shimmer-b) 50%,var(--shimmer-a) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;"></div>
     </div>
   `;
 
@@ -4957,7 +6186,7 @@ async function boot() {
   // Pipeline + tasks + live snapshot are now served through /api/live/*.
   // Everything else still comes from the data/ JSON files (file-watched).
   try {
-    const [profile, kpis, pipeline, tasks, ops, templates, cadences, scenarios, live, queue, activity, voiceSummary, voiceReadme] = await Promise.all([
+    const [profile, kpis, pipeline, tasks, ops, templates, cadences, scenarios, live, lattice, hrmr, queue, activity, voiceSummary, voiceReadme] = await Promise.all([
       loadJSON(`${SERVER}/data/andre_profile.json`),
       loadJSON(`${SERVER}/data/andre_kpis.json`),
       loadJSON(`${SERVER}/api/live/pipeline`),
@@ -4967,12 +6196,14 @@ async function boot() {
       loadJSON(`${SERVER}/data/oracle_cadences.json`),
       loadJSON(`${SERVER}/data/oracle_scenarios.json`),
       loadJSON(`${SERVER}/api/live/snapshot`),
+      loadJSON(`${SERVER}/api/lattice/summary`),
+      loadJSON(`${SERVER}/api/hrmr/summary?limit=20`),
       loadJSON(`${SERVER}/data/action_queue.json`),
       loadJSON(`${SERVER}/data/activity_log.json`),
       loadText(`${SERVER}/data/andre_language_map/ANDRE_STRATEGIC_VOICE_SUMMARY.md`),
       loadText(`${SERVER}/data/andre_language_map/ASSETS_README.md`),
     ]);
-    [P, K, L, T, OPS, OT, OC, OS, LIVE, Q, ACT] = [profile, kpis, pipeline, tasks, ops, templates, cadences, scenarios, live, queue, activity];
+    [P, K, L, T, OPS, OT, OC, OS, LIVE, LATTICE, HRMR, Q, ACT] = [profile, kpis, pipeline, tasks, ops, templates, cadences, scenarios, live, lattice, hrmr, queue, activity];
     DOCS = { voiceSummary, voiceReadme };
     // Cache to IndexedDB for next load
     await IDB.cacheAll();
@@ -5101,14 +6332,9 @@ function connectDataStream() {
 const openPaletteBtn = $('#openCommandPaletteBtn');
 if (openPaletteBtn) openPaletteBtn.addEventListener('click', () => openCommandPalette());
 
-// Theme toggle (Lucide icons)
-$('#themeToggle').addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-  const lucideEl = $('#themeToggle').querySelector('[data-lucide]');
-  if (lucideEl) {
-    lucideEl.setAttribute('data-lucide', document.body.classList.contains('dark') ? 'sun' : 'moon');
-    if (window.lucide) lucide.createIcons();
-  }
+// Theme toggle: default dark; body.theme-light = cream reference palette
+$('#themeToggle')?.addEventListener('click', () => {
+  setTheme(document.body.classList.contains('theme-light') ? 'dark' : 'light');
 });
 
 $('#openSettingsBtn')?.addEventListener('click', () => {

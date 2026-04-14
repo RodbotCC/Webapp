@@ -1,0 +1,4276 @@
+[
+  {
+    "conversation_id": "conv_lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "lead_id": "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "contact_ids": [
+      "cont_I7SLQascEG3TX05uFPxstBiZ37oDKSH1AXTnfb2kn9F",
+      "cont_sqN0ql0DNGl8FaLHOHzrj9I2tqBlHRJ18ZfNGdPuKC9"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_7ycrcR9QmneldYPXPDSzw2KgufFM382aqkkI1ErdRZz",
+      "acti_gKVVjqH7h4OX4rpzDg21QFciqdXXYP7EZKZJ2FIT43V",
+      "acti_KzA2v8DjNpDalFlJHh6F0wcdFJSZ336kf2wuqAsUJIY",
+      "acti_OQ26W6DgyrMnzisRekpmNlnXV2tDqbX47v4POtlfcXo"
+    ],
+    "email_ids": [
+      "acti_XiHY9SyEP2LVXxTiTHSAEyivbRRePlPkMZfZMNen037",
+      "acti_AdznODxPUplBTaINZepGtmRGsPEIkBz7LE4bJYZIRlX",
+      "acti_OMNHcsnPTyycPLj8e44YQu0SwzSPGeN7mf8Hj1GrraS",
+      "acti_fhgj1MKcnKI20ZHtgQzj0zUqMnQQDe8m4ACBI4idzt7",
+      "acti_ZBTkv8RXP4Hz7NTrrEO7fuKRMVAma0Vj1WuwnyMd4Pb",
+      "acti_8t7Xi2gxd2OTJYKM6GOu90Ta6oeE6zgWaf2OWePvXrq",
+      "acti_gRploOT4Vmbqa053prjGh2oItP5w2XNveWq6MrHxp11",
+      "acti_7iugbcGqaMPuFmZxqzApyVPuoyY54kh860vTrA5RCFs",
+      "acti_V4PZ0ND3z7DnJvnYaFuNh3BfVgtALTmcED1Nvr1nQVb",
+      "acti_1C8dkbTUEM4kJuAyu7ts8BrD51cvzf70ODk4Vnwncgm",
+      "acti_dBT3UJngan01yQPjlUNIhUNzGdOS2ufjv40P3pf6Mbz",
+      "acti_THwA9zI44NBLS9F3736SnAHuTnTTUMaCFplpzPq7MSB",
+      "acti_RAIgJRdK6KWjbdLydOpepDFX1J1vl38Cbc0A5yGx1QJ",
+      "acti_3LimsyGpo3rOGwD7LdwhuIgogqutoZfUwuhzh6KiPOp"
+    ],
+    "sms_ids": [
+      "acti_tH2BXFcUOYdJ7KlAx8m8np5o47qupOEEMqktsyi7GnZ",
+      "acti_OyV1eiYg6YolqwjsiTGuipJqvYxfEiPwedsYZSTpMGH",
+      "acti_mZ7Cj1bprShiSA3FsEHQZe2W5MLLfqodoO91QmXnRFd",
+      "acti_xgW6kKd7z93qA8gejqspBDcEHqAxf6KGOnDJFl1jGuo"
+    ],
+    "message_count": 22,
+    "first_activity_at": "2026-03-24T22:51:56.344Z",
+    "last_activity_at": "2026-04-13T21:14:07.815Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:14:07.815Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Alex Ayala: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Alex Ayala\nCampaign: RODS WEDDING & FACELESS"
+    ],
+    "created_at": "2026-03-24T22:51:54.965000+00:00",
+    "updated_at": "2026-04-13T21:14:07.724000+00:00",
+    "sales_scoring": {
+      "momentum": 74,
+      "relationship_strength": 46,
+      "friction": 25,
+      "reply_probability": 60,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+    "lead_id": "lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+    "contact_ids": [
+      "cont_0aT46OE9DWDaE9dbheJQjBWThtlRhgwztge8j4bIKSg"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [],
+    "call_ids": [],
+    "email_ids": [],
+    "sms_ids": [],
+    "message_count": 0,
+    "first_activity_at": "2026-04-02T14:56:50.087Z",
+    "last_activity_at": "2026-04-02T14:56:50.087Z",
+    "last_inbound_at": null,
+    "last_outbound_at": null,
+    "current_state": "awaiting_customer_reply",
+    "summary": "Ana Paula- BEZ GROUP: A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "🐇🐇🐇Remind Rod to call her"
+    ],
+    "created_at": "2026-04-02T14:56:12.025000+00:00",
+    "updated_at": "2026-04-11T02:11:06.240000+00:00",
+    "sales_scoring": {
+      "momentum": 0,
+      "relationship_strength": 30,
+      "friction": 45,
+      "reply_probability": 21,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT",
+    "lead_id": "lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT",
+    "contact_ids": [
+      "cont_YNRakslQDOjGVxe4CIWp37S8ZjJJritn3zLJSDx4JW4"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_VTLgj7gVVoZiVMyqxHrHiAobbLF1XIw4Gs6kNZCUMXz",
+      "acti_vzbNtT5dTdHTuFcG4VkTi8kRp2txdDk8IuwAknItovh",
+      "acti_vOS7EGIvGSjqrUBtEEMPltJaH4zDJ8IDVWIKAEiRgen"
+    ],
+    "email_ids": [
+      "acti_txnkDPvwRFRPd2RUUG4wqYFMeQDTHIKDkfCM6oJVY4B",
+      "acti_crgvwd9RNOkaGvmwNz8ZsU5RA9pAgL6cFxKeo54nSTt",
+      "acti_uCwR6zkRCXLTualgfvzwX2017jIt5u4baQZHQITHrI7",
+      "acti_0UjprOU33vQqlH5gZhDP96MErEkaJccnzDo81tZE8ZK",
+      "acti_hvZFdJyMW2JqnPD56kq9XKw01ekiEEF41pgYbNSJKkX",
+      "acti_BPewCTDp0vVKYrKlAlRrphNOLGBNhst9Gat415bl6E2",
+      "acti_1gN7iqeG812obTn1smrjI1kIjA68hFn1XX2biEzEHLb",
+      "acti_rO7ZKspgeDEouHpLrbjGVfl72ArqCFmrYbXy0QjmHeH",
+      "acti_CoIzYPQtvBHAu6jhlJiJ30rvHhNJjtbV8Zpj8QAVOxR",
+      "acti_pmN7swnV3pAz4cJSmjDPaKdJr8E4Q8LCAlkZUVdB8o4"
+    ],
+    "sms_ids": [
+      "acti_AaknaJWoDJUe7Ap2LdiMErQIk5HBiVuAs52QUsBXF37",
+      "acti_YSACFc8in0iKz3HDmjgLow72DI3gU6IQwPPY9LeEDSg",
+      "acti_2RtQDDOOW3cfaoCOyd1FfGVBbwpGoaxEeWbRjgIOtFu",
+      "acti_HduSjDdAwFGXDuihjFGlgNCBGHkvkWtX7mDpFS082la"
+    ],
+    "message_count": 17,
+    "first_activity_at": "2026-03-15T18:59:27.000Z",
+    "last_activity_at": "2026-04-13T18:00:25.034Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T18:00:25.034Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Andraya Blair: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Andraya Blair — EXPO Day 3: Check reply. If no response, send ballpark + tasting invite."
+    ],
+    "created_at": "2026-03-15T20:43:26.078000+00:00",
+    "updated_at": "2026-04-13T18:22:37.784000+00:00",
+    "sales_scoring": {
+      "momentum": 58,
+      "relationship_strength": 42,
+      "friction": 25,
+      "reply_probability": 52,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "contact_ids": [
+      "cont_afbd58FcenieIJefNT05CJZuLD6gmnChigoqnuNaO9c",
+      "cont_3FRVCubpEbIH03tIgXEWs6iVrtNILTjx7r12rVqGc81"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_0k99XlxaF38lwCa5HR34LZmi8dAAdKlgfqBbnZEyGQe",
+      "acti_NAZIJn8T0rnFW6lN8m6axmvV1MG5oEkn9H2jtMalv1R",
+      "acti_0jxAJXghlsIIPY35edL524o62FNuZiSQrXlL2eS3cNW",
+      "acti_KPQhLZF2y2a3Nku7MTiwJ112nOBsAJMyn9kCa3osdPp",
+      "acti_WZhSyLMZ0M5KlpPzj9vLnlHyQy4bltiKyyvOAbGgssn",
+      "acti_opjRwno2PjuKCg9iuO4yP6Tkkk16nyEHXzSgcJ5CtM6",
+      "acti_Mh4wu0tl3ofWy4V5bqMeoZFKPyv8tLp6epg7u6cxa8Y",
+      "acti_1ZnRIfvAo87dBWMZzmTlobSxbYYOsBPZX3Z5o1u2Kmo",
+      "acti_9pIcMligwekMCFdXMF4RqZ9qeL60Wz8XOiiUnclwEDh"
+    ],
+    "email_ids": [
+      "acti_RSFAS5qNyOlL4ulAKy0debysRFBoAeHBchOB9g5nsWg",
+      "acti_ery42UVDMnsNMknB27MkQWCApQnySE9BewYaIybpE8s",
+      "acti_6ryNPqOZFCBQa1rbAwJukyUmGl2oD8t0j61nr5Qrz7p",
+      "acti_HMF3MVcZCSg9jOyFemGEaBGyWdkw0nlyVwCsfccWF4p",
+      "acti_lYgWnwsr4QHcVfVGMnXggaK426U96gVNLBgy79hUZ2P",
+      "acti_LSDT6lAufKlV3236yvMxbutE4TlfsCpYcujWt3BcuZf",
+      "acti_MAIymSUAxA5ybuvFPxM0XwzhbAgCh4eZ5P09n8wn6JD",
+      "acti_AavIUkkN5az11FED3nWl2J6W4HZ2DXt6C5IWKHbHzx5",
+      "acti_DbvPJu5nqwwD7zu5JnsmxoBKYN90gYbpu0Fw8rwjwx4",
+      "acti_CH9nUH9dK67f6oyhKyKDG0Z88N3YHofUtHFoFgMcwum",
+      "acti_9HdTnc1K4Oo0cmrAvvAEo486EuPlIh6DjCBY9AfAlGr",
+      "acti_UGwZBdYKDboIoKxgBOtAGDpEZengutwGMBSKUoU4pLG",
+      "acti_Izc9RFoKeEWxUaid7E1AvLPPXjGNwTXpYDkmtEIbYz2",
+      "acti_NvmB9ul8b9qULZV0up6NLwhOgxJ1DHAytEq6Tqt6vGA",
+      "acti_YJTSkWE1meT7MfrNhb5gETGbD7JmvhFUkgHVajPgDJH",
+      "acti_x7fTUrXR0zSZ7vCa5wOw8TzAS7KICCOGBKa3LWaEw0Z",
+      "acti_gfkuzpBSxrcjyf6pFVbWq1pJN7DY0O5x6COaUtzjOW8"
+    ],
+    "sms_ids": [
+      "acti_cMdHx63qGIoczYoitKZiPQsKNqhkLvng9IQMI9ITcKX",
+      "acti_OzBB7uVPs0YPBMJa5xW6AlymW3LxysLKEHT7jcLaOCx",
+      "acti_Brag91KStV9ZW8YUdmEY8WoGbRC5WeD1l1Pc4YqVg9F",
+      "acti_ygZCeg18xZA71jgJBe4inkqxyxnXyB3UxYEK5dePKSH",
+      "acti_iFOBG9qWmOZ6vbsuLHTm6DBbou9Rb2jgsEgRt04SRl5",
+      "acti_S0oDi37vWWCY2oJfzNXs8i2DsXKzNrjBCPa8P7sxiYr",
+      "acti_lBTupGmtuhqMA5CGmsnZ8ckcc4kGzC0EyvVbCwchUJK",
+      "acti_5qIeq1iu3O7id6d8qXadamUHhfxIhnRGXTs7X0GgNG1",
+      "acti_I6tnoaQvbP4lTss6evwDHYP6zlaxKAEZyDKjfPhKW7v",
+      "acti_uPovIjudvLrP6jEeDLhEi2RzQyxuA2OdtTXtjdYPGY5",
+      "acti_Iz15LbfCCGqhs3JuJtRmcqtKnknhioTjUSsxkl7JEai",
+      "acti_HgNBnFBMniHSzHhMIaisi45RDkMjdkYGOl5gOMsENnR",
+      "acti_lV6uDO8A8TCl8k9btxC98P6JzjnHER4cYXWxWPRkXRC",
+      "acti_VgPPCkaN3jGGrGEVUWzagrmCevP3KLbyVbzC14sIkgg",
+      "acti_9eM73mBpOqiwcvifzqb67MBIQdLmpcNr78YWzp2YRUa",
+      "acti_puSxXZQembVEc5ozRY7ka8bxjvBBlFJpG7W4kwx4iqJ",
+      "acti_JriKINoUyKTbfhQbfnjLg0RCF6RSnDnKhjBdrTfWouH",
+      "acti_rV1l7z4iSQG1eswnjHBJmNpANA8OrJN0532Gya3DeFB",
+      "acti_pnY6RPNXVs0gjwMbUGPLDonbn1EEVzCeduGOoXHbx4d",
+      "acti_MSTJvK9BaVlljorAWoTu1dZAGaSMM8HXE6uUGzvCBS6",
+      "acti_QTQoXLLGVqtE324R3h6XDR19aNlroFe4vkSfb2vdx2W",
+      "acti_AnkEUQDwPFr5Xq5C1A972VJ7ro67delDXk82wsA5w3v",
+      "acti_rXAMiRnVw1goes0XAAr4Qjlu62dCYfEnqodVZXNAdAh",
+      "acti_LWUBWnllGXzvpDjn6Snxj2efwjHGqceMY1uTeVGjNjP",
+      "acti_MyIJAwPOaFY9SJLvmGQyuH21LOKM4hYZ2ntt2WWZunV",
+      "acti_mscXygnEef5Q4QVisWKFB9qJFQWRQNbIN9kYqrTjXnH",
+      "acti_6Q4BL2D3IcXTcFt3l9jo3rAVRcrlWS3j1TuTEZMwo55",
+      "acti_HrOQU1wvQeX36iC1uj2DBprNiH19TdJxdjK5LEd6E4F",
+      "acti_OwGoObi4ceaEj0jh7zjPQRGiqwYSdYyeTzGv4i2ugLN",
+      "acti_YxnelmvJ3pPG14AUwApb1tVWTjc6Zmfr2A0uCNsIaqH",
+      "acti_tdDUpUFC6LEcHkcI1wuRtmKrIGvy6ip82XkI4uvv3gF",
+      "acti_QzuLDNVAHO1SeFQsvuPwkPYiHn5uRLNHamMwyy8y1tL",
+      "acti_0xVw51RVHpIYsjgv14R4gr8dmA5nJ0dQXxdbaFUV4so",
+      "acti_GWaY7yu0QTWGfSkaEifG43J69xWP2bfZiwFcLkiOQDg",
+      "acti_vt2qlbLHrna1dYKLI7ZkHtXrfcsf3oRgHD9ip0qwU9o",
+      "acti_xztIYO9JR0cfmAXiiZIKrxgVcbKJs67ZHl7kMR1hwde"
+    ],
+    "message_count": 62,
+    "first_activity_at": "2026-02-22T23:03:07.047Z",
+    "last_activity_at": "2026-04-06T15:41:29.725Z",
+    "last_inbound_at": "2026-04-06T15:41:29.725Z",
+    "last_outbound_at": "2026-04-06T15:17:04.832Z",
+    "current_state": "awaiting_rep_reply",
+    "summary": "Andreia DePina Moore: A: 🔷 07. Booked Tastings",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Confirm tasting details and next step"
+    ],
+    "created_at": "2026-02-22T23:03:05.708000+00:00",
+    "updated_at": "2026-04-11T12:42:41.332000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 85,
+      "friction": 0,
+      "reply_probability": 100,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN",
+    "lead_id": "lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN",
+    "contact_ids": [
+      "cont_xGG2A01VPCZFSjOUOttwnJNhiCBe8vXsoAHPgyecKHN"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_9FPqoT5RujEmGO9lQ3bTZI5yv7hFYB9yWaMg17BRCCm",
+      "acti_rYyBOIN4kTjIX4eYmt6xNCf9h5tZqIkVIB27kTAAONy",
+      "acti_dyczdriJ6oD9HoiIlVxm4I5OqMqbRhPf8mmrpZxDv6V",
+      "acti_bLaUGCtMsT0eiHYcYkbS6Prz1HWT3xf1UVf0vE3VqSJ"
+    ],
+    "email_ids": [
+      "acti_ZBPiY7FNCAMoanT1gSkppJDDIETE0UxOxrrDhXuQnq0",
+      "acti_VMZtj8Bm2EFrojWRyMUZqZLQvS51qdrKBrFhA3ZL4u7",
+      "acti_GRwYiplC5ngyMgBprQOQ0ovkElO01CkX3B4gIz9t8Bv",
+      "acti_dl7rVxGILEdBQGAa3G6YfXV1K3zUkR1NSCwm9CQLATz",
+      "acti_wtiX5rwjKccqQLnXg0V7E0VmbR1WuTvYnPrXQaDl5vU",
+      "acti_yPNdqXUYfdMqMA7T1tLNPjIBt8Mt08tiBghLTZZxJbW",
+      "acti_BunFr3yN2CjTOXpJU9D0LNWfKlChPxTfzLGtg7Qt7wN",
+      "acti_USq4sHck7dlJYzZ4JfQ6n1uoEyw2RMwH05ivNPJnRwp",
+      "acti_kTT8gdYUpGtjnqt9STCsLoLVBQC1GGZQLRcPYLJ3D0x",
+      "acti_TbaXkRuiEFjkGkYn9Y9ECTjophfQCPfHsa4X3P0GMfi"
+    ],
+    "sms_ids": [
+      "acti_GCwvS7YrGYujI0bl40A8Pvn067ymzOAYWaE6sGaDssg"
+    ],
+    "message_count": 15,
+    "first_activity_at": "2026-04-01T19:19:38.959Z",
+    "last_activity_at": "2026-04-13T19:09:52.334Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:09:52.334Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Anna: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "01. ➡️ Engage with website lead \"Anna"
+    ],
+    "created_at": "2026-04-01T19:19:31.687000+00:00",
+    "updated_at": "2026-04-13T19:09:52.074000+00:00",
+    "sales_scoring": {
+      "momentum": 60,
+      "relationship_strength": 46,
+      "friction": 25,
+      "reply_probability": 56,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "contact_ids": [
+      "cont_hVyeoB7NidAPLDlQhmIAyY5u9iLd9mskqnYWlhSPpYa",
+      "cont_iziAcAk9w8NIyX2YVacDrsN1DJz7IT3klgZvyU6nDFU"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_fDRwM3L9yJuG1YJRJaz6KPhn0UQHq9Ngc9zy2A9vVeg",
+      "acti_6RC3aveFkSLJRcpoeJdU86wearud0qT7JZEmPzQElJY",
+      "acti_8JHQ5S5otBeIXSG97Vm4AP1VnWYz2FRt525wcXSRXaz",
+      "acti_hcHIcrx8PF5bGpd1TzPsStdCoi2VAkgmYjWQ9VJotWi",
+      "acti_HLcRWnEilnVROepKOKQyOZ7q7093ZAHCqiXaZjRN4TJ",
+      "acti_an43lEXekXdCi396nGBavTYVVUsJ6o9IXqotTydNe40",
+      "acti_LaJZm5uW6SwspCjmoDwjgT87LPNVngd30ovYmYLpFmi",
+      "acti_y7tg594HmBmujCO8A1L5bzjX7Xay4QLZt25fTK2kWDG",
+      "acti_AmvYJI6gcMz7sk3aBsLqpbRl0GIYJQlqQJXDCqjcGVl"
+    ],
+    "email_ids": [
+      "acti_av0VjISvE67EUrBeYKEXspH1ksAdLZZtuy7bwRNDM0i",
+      "acti_HLzs88GVvtIi7CcKgfLVn4Fs3LqvuGM9FlcDHI44sab",
+      "acti_gR3OMJia6ccQ9abyasvGjK8qlMoyZ6Iyms8PzGquFL0",
+      "acti_r3a4nfOruqhvaBTUeahIYQbeEKZFiNSXZIHcb4nYV3p",
+      "acti_ALSAZXRxYQ1N2BRxzCo9zGurkLptA0ouZwouksZqtkh",
+      "acti_eVSEzqXoz5y4Gct8mrPCgVseTQrwQy4xfGF9y14JzDv",
+      "acti_TYsnL7dswggeJmVYLeQDuTwy1dt8wUkC6E0eRKkXISe",
+      "acti_Br4boccoAPkNQyBBiWsckVEBQcrKMeftmYO0gkMUrVc",
+      "acti_K4zdfP2aSjgv1BtG68Jf4YDbpiiICD2c2g9XLLvdjiW",
+      "acti_tVZV2UCxtAMGzO8ME0cfROzT7NWz3yJKEPNm5DKzhY7",
+      "acti_eo23kig9aPXgSA6aR5QF48UosnYUSFrc3oKf8lnvSny",
+      "acti_w10cFmEBALez2IRmWM1YaqrVsoso6iomqVBsZyRExOv",
+      "acti_Rw8jRJNIq4wy3Z6o7DbyYX0sPMIyAQD7BBJy3LvAwr5",
+      "acti_o8ismmrxZN7mUl0Vwg6c53fHUdMMYxOYUxhEghw2hlA",
+      "acti_ycev3qcJ2GMJQAdIQN4q4QFKtiYQ3vdpdwp89RkUfwR",
+      "acti_1c2x4SIDex9JJu49HccEhh3aLqPelRzmYtMqcG491ZS",
+      "acti_CYigLG6oX1z1ucIfylgLuPwJ41iU9hIdIfeaQbBZ1Bn",
+      "acti_GZAIy3AjFQwKaqma4riO8trMXN8S7fjpM8v0HFE5DXS",
+      "acti_q5NqFlHfjU2MqPuKd3GSPYHTTlJzQVhq9BhwEe0MX3M",
+      "acti_Zs9zftlpo2zmJ7hmgL6vKYS3IzdhQ3VINWwYT7854Bi"
+    ],
+    "sms_ids": [
+      "acti_tSl65h0RfBZ2tpBpy9e82oZh9q3Y4JOvvT45EStxx9U",
+      "acti_4Sjc6ry6s4HUvAHpNl2MwA83eFLEtgPJ147aHd8LJPn",
+      "acti_DR0u88mZZeVC0kLDSAaNngp2TEJvFLjqY3WgJUIcW5z",
+      "acti_wu26fCC5SnGo4ONbVI4AE9wg96Ixd1v0Rhz6TmHQC4Y",
+      "acti_2h2xKwrV6FLUUCok57SZ1sP5jxzjk6qgF3AqEcPmr4U",
+      "acti_03rdyIifaKdxuQG1XlBv4Bc37yFKvNZTbwgsNQzK8E8",
+      "acti_1QfQwqbz5dfZOmFl28CviqZmNazJLPAR4ho6gAApSQc",
+      "acti_iTDSF1jcxlA0qp6IYXcPGY5DhmFRowWaednoLObF3lv",
+      "acti_cIqPqfYw1lBMNmb988KvyQOFEh97vPBc0xGVAJAsHwh",
+      "acti_ug2klZu0hXhQ4e5mN4pt7bQiK8sxTKStTXZS6S23oPq",
+      "acti_XLjXAIs8NqwZq1kvfZiBReFqNt64Fl6Ly6VWKEDdaUF",
+      "acti_vh8P0TWl25gnv5BjKeHo8vOkICJFs7jmZMMdzzvEOSY",
+      "acti_RzmfHdNE364dinp5mDj0joCU7Ew70lYTcKXPI55DTaN",
+      "acti_d9scGRN0HyeVGGX6693TP5aAsojGIe7Fh631dixp7Qc",
+      "acti_FnGn1YFKCjaeJX2FLKZH5djk9OW1iM5CeenkCaxgf69",
+      "acti_q1JtE7fZWriKE4L1jFqjh2hIAETZKnmTTEbtVgmVMV0",
+      "acti_Yhr2r808UkgLG55JGIsT4idhKIdM0sBGocMfuE46rsN",
+      "acti_hh5H1319LyRuoGTXHmFTyglXlUbsAdBJlUFdmiIdrdV",
+      "acti_7N4HLSXYkKYqMq9wAVOjSSlTHkcdfcOUoB3tIkH9vrO",
+      "acti_UD4bYJVF9TqOGa0wkbcg9Qd2JYRChCsTYhYvd3BS8QD",
+      "acti_jzMWIJLeKMIwNoiG0IRrmzStxWAlM6jfPvsTQ9fkWor"
+    ],
+    "message_count": 50,
+    "first_activity_at": "2026-02-22T18:53:15.783Z",
+    "last_activity_at": "2026-04-13T21:13:57.999Z",
+    "last_inbound_at": "2026-03-27T14:21:52.738Z",
+    "last_outbound_at": "2026-04-13T21:13:57.999Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Anna Julia Duarte: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "[OOPS] Please add a task to your most recently updated lead"
+    ],
+    "created_at": "2026-02-22T18:53:14.178000+00:00",
+    "updated_at": "2026-04-13T21:13:57.634000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 78,
+      "friction": 25,
+      "reply_probability": 98,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "contact_ids": [
+      "cont_nKRR3sNCmu9u0Orh1Lw7VjsE8vTA9j1uN5YoDMD1FJm",
+      "cont_fPQu3U6bWdvIx3VTI6tx8J76WcI0h6vjDuT8szYQPO1"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_3nQuJmosvKpQDbAoN5xqKAq2Nq8a0xXPQh90DLwAOgJ",
+      "acti_ETPqw7mptOUbg23m2oP0AUzwqy2JVX7DGhp0OjoG5UA",
+      "acti_fs1Q9UycinWkvFguZcFhMvSd2fsUn8tTwehSZ7DgMFO",
+      "acti_1pNWHHBG7b5hnbCq2VRDa03YSPCH9hppRJcxrzUi23G",
+      "acti_4vN0kAQbp5Og9M0Etf8kkzzk1ICMNDsZUBCfpEusV08",
+      "acti_q6AK28K37O9FFRPN7sYClflJ1RtnMx6gvw4zRQs50Vm",
+      "acti_SsJyeoSCIJX6t6ID17Gp6qUXKARZqG2MHpRx1YjwCMr",
+      "acti_q4KTGUQAeYm37B2lYDSQJTKZOGaA7YUEklsHZOfxvaQ",
+      "acti_AENdItOixbBCGQ1Tju0npEY62jGRv1rIg9M7ab3jKJy",
+      "acti_dRYgn2XPV9Gqvdgy1xuCdCvuoL5x4wQQdtNGA2pgqBz",
+      "acti_DACRwzziD03BCRENWwxlHiuLIBlR8b25qg6WcJnmlEU",
+      "acti_e3uvYUIpU8OefTMCDWt7eFpiyUIrJiaNiDpeWVZ2oVJ",
+      "acti_at6mECttDRME6YdE0H3Lwu9S3a3pxAWtFUFlZ4rZaK5"
+    ],
+    "email_ids": [
+      "acti_OBsRRgz7Sge2SrsqjSUHJNKtyDvBdZt8gA7cPngQEwd",
+      "acti_YJNLd9oWkM9SgwG8fTKUbU3lPhj78Gkki4hwCvXmSeL",
+      "acti_mXlkuujxQcen8IdayhM9hGHqYq5nie4D6rLnZRghZA8",
+      "acti_2OEKxemaStEgYH9IzrjfVTosCwtwtc93eGLMy56X1vo",
+      "acti_YFNcDipSFSVOSkDQlPGbx0AG2RYACKqGQwpNKf1VKAS",
+      "acti_w3kePjFWxd8Y6oBwqs6Um5lcjuCQseIqq6mQ0n9kfm2",
+      "acti_hPAziKWgweeDlnBIaRVuqOVFOk00Oqkixx3DSYobsSS",
+      "acti_nMw9jcN6HSyTiKnbbGrZsxWUZ2X4d0yZOOUmcr9ieXM",
+      "acti_fmpH4qkdWIXPWaMvMsNHaVlqpdStJxCAHl60u8aOHXv",
+      "acti_DaPxrLgqCnMXrQdVTItBufvAxAtb2dcuoACgjbCz50I",
+      "acti_aFsQtmik01OPX8DbEGL5aCLQALT6G6xgc3NEkRVw4h7",
+      "acti_sevqnctK3YXpoDES7gSNNghGEvBFUsZmgV9ceuatW66",
+      "acti_13ehrt0ePaVIOBlx1Do4GjKCOP0nUu7X93mkGQGrBGd",
+      "acti_LYARUDZ6xfi7FdRTumy22gafyaVq6yGfRbHq4cBPfV3",
+      "acti_fsm49DVbi65ePiazACpMaSbPhykrlobMg46zsQ4qWIP"
+    ],
+    "sms_ids": [
+      "acti_m1IIhqSyPJtgdGRZM1jeHxUc0UMtFHUZWQCDwhOGuTd",
+      "acti_JPRsF3LND7YaHHtj7ly6v0gsEpQHcKDJbqJPzR3wcsJ",
+      "acti_fnfYNRpa5EENujSOYAAESTT0g8O3s6WmrMGETgDZRnM",
+      "acti_drXjV0DxXoPsD86c7kvyY29E2kFY7vcVI8eVtJrlblb",
+      "acti_rTytGf1m8KXuemHTaYeI1JzPX8hQpof8MGWdT9QP5Un",
+      "acti_vW4XDto1JfwQNVpnkgz9fUVvfs7nj25w9huVt0Rz4Fz",
+      "acti_jSHRkSPI9buYNnhgCijIgdK1LdPL8nRdAUgymvknaUm",
+      "acti_kv9vYKxV6mobjA7HnNhbuhf3eByrNhmsP8SgVmJzK7X",
+      "acti_FIAoeZx0uXZqoe4dYpOYQMj1KBwKDS9tounllnS73QU",
+      "acti_9nMQFaCBIj3d9YJ3G1WB0Wcp2IgMfCYf1rXHP4hy8TQ",
+      "acti_VXxIAGRxzyLQ0z4IzSXh5cU5p4sLD7lbZkFHwgQkEs5",
+      "acti_bUe0GaADYPE0y9LzJzJyLKflgh5rgurHmk8nxuSkzrl",
+      "acti_QmuqKxzxWZtb7WHxkUnBQKaLTQMAYNOzbYbPDn9yYrY",
+      "acti_I8nr0cU7WdDyf0KgvN1FpCsSUPjFjRkMEHmnl98PHKZ"
+    ],
+    "message_count": 42,
+    "first_activity_at": "2026-02-16T21:16:30.811Z",
+    "last_activity_at": "2026-04-13T21:42:36.659Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:42:36.659Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Ari: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get them on the phone soon"
+    ],
+    "created_at": "2026-02-16T21:16:29.408000+00:00",
+    "updated_at": "2026-04-13T21:42:36.417000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 70,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd",
+    "lead_id": "lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd",
+    "contact_ids": [
+      "cont_WLCTc1CcZ0JneLAjrqW3vJumBQFzNAr9PEr1jp8jNnD"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_uNKW0UC9Fd3kOha4DQBY6Q14aEdHRB9HMupfPF32XMQ",
+      "acti_OXlQFe3cgZhPXTXVdGZZrCj2a3M6cIvmL2uhrd1fDTv"
+    ],
+    "email_ids": [
+      "acti_1t4TDxala0tKg9rO4322Zs9vImhMxrwwsdZkeL5CdeO",
+      "acti_DxTRwM8dRTnW0rCRcvcC2l713sHFDRuJrCJ0lHcPUO8",
+      "acti_NUBlEwe5aWmdNFDMZy7i4LntKnqqMoWf4xjT1WEaOvR",
+      "acti_um8mxhmVDqX15fUUH4luNaA3KEEQw706RvT5kz1UfXB",
+      "acti_rxLEKQuiZIjWsmQPURTimJzYNi2KRDqE231wnIH8i1M"
+    ],
+    "sms_ids": [
+      "acti_R1Ad85XkLW5HErpRnczVeeC81qAN6IZpP5mLoZvOKUy",
+      "acti_3MgdN4OibatZUxZ55T6DvefQ8qAJ0E7ZO5Q61ckagGN",
+      "acti_8SKeZmWn3cpRH0MMF1jdNOYqUgfyr3njyLIjdDmHi6u"
+    ],
+    "message_count": 10,
+    "first_activity_at": "2026-03-15T18:12:15.000Z",
+    "last_activity_at": "2026-04-07T03:20:18.655Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-07T03:20:18.655Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Ashley Wood: A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "[OOPS] Please add a task to your most recently updated lead"
+    ],
+    "created_at": "2026-03-15T20:43:22.731000+00:00",
+    "updated_at": "2026-04-07T03:20:18.929000+00:00",
+    "sales_scoring": {
+      "momentum": 30,
+      "relationship_strength": 38,
+      "friction": 25,
+      "reply_probability": 41,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "contact_ids": [
+      "cont_UY8ueFgUXefRbDYRVK3XrgJJJNLHz85yDEqgH6dvO6v",
+      "cont_NWoAryZXaSxRHitQGMwBT0TkLnYtUbIuzI9GhClWGEM"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_2Q11sFSNoJbtkoXtqEuKjsgVHaLz07noPCFbfgWggI3",
+      "acti_7fxkR2yPHiAqSTU709Y44d27kw5cnspaIfg5CQNbhUC"
+    ],
+    "email_ids": [
+      "acti_1HsF6WAVmCj4MjwyxmLcKGzyJZKMKJJ9SYBpKGRevjT",
+      "acti_UNaG1V1KaSv8qftYFiqZivPAcPFI6tg9aLV9wMUe4IJ",
+      "acti_Jg588vJKU1ZAsGiL6U4gQ6CesxhSz6N9ebrO7u0tXjS",
+      "acti_ie8zKDxxKX30rlkYQLg7oMNoBXrrdWYdonOT7FDyeN0",
+      "acti_00084U2PeyZ4EIHfS6Q892ZrnIWaIywdXwdttfcznwU",
+      "acti_903wJVEazMZq9p1PSfgkLvKLmYoriNrby1jDQjtxtqD",
+      "acti_lamkiR90b0I7qjTjEkbD0rDyamjyq3oYQQEd49xXQTb",
+      "acti_yWe1OZHFCk8TCmHjU8uS0xnvCSM63qqj9hxwmnl2AJI",
+      "acti_xEzmnV2XtD5rzREBmM6MZtSF20Ollzi3R7Isxou2LGD"
+    ],
+    "sms_ids": [
+      "acti_JfB4V3CazErqGxDUDu7xYTLl2A6Uj2Lxx7tK1AVvMov",
+      "acti_0UhGAHbbr6I2Xa8lSq2zt7z0QgLVrZu5lg4X7bNrJnQ",
+      "acti_F8b2Gm4TTGacIuPECr6Wqpfmy0LMIgUtLeyipJaX2oz",
+      "acti_PL00nXfTCWm5gE3J9BOr49I2uJtv3YxqNWkErNzYZRW",
+      "acti_0N0J2wlHKQ0DjZSUTD4PiZNC1000mfDBljP6PdqrUhp",
+      "acti_cmnR8qTzQaGZINJK0D0RTpVMll1e7dQXnrS7aCr2o96"
+    ],
+    "message_count": 17,
+    "first_activity_at": "2026-04-01T11:37:50.945Z",
+    "last_activity_at": "2026-04-13T19:10:01.053Z",
+    "last_inbound_at": "2026-04-01T11:39:31.558Z",
+    "last_outbound_at": "2026-04-13T19:10:01.053Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Ben Todd: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get him on the phone Friday"
+    ],
+    "created_at": "2026-04-01T11:37:49.492000+00:00",
+    "updated_at": "2026-04-13T19:10:00.764000+00:00",
+    "sales_scoring": {
+      "momentum": 70,
+      "relationship_strength": 45,
+      "friction": 25,
+      "reply_probability": 58,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "lead_id": "lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "contact_ids": [
+      "cont_hyP1dtkfUfzIxuXHnNbaZJRdnMXXG1wsVxVBfvqJLc1"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_ooUlT4JZm4N5DF01Ncz5sP1ifjKiGekMqFLu5ZUlVme",
+      "acti_vAoMxlpLCJ8bpG9pxxbbJwWnRnoTEJj5zjVj1qp8NnH",
+      "acti_u594tUF0dQi9p3dLrVG5fl1qyFFusc9lOlfMqSZR0NI",
+      "acti_uaNoEPfJNOokmnSLkG2Fx672gtv93JXwqRgSW9G0OAS",
+      "acti_ptyMXe8wtqBcxAC547NSQVhJnVIDnaHMFEPBiA9vMlc",
+      "acti_AOKYk43IYrjdCg9XKkonPL7V5NtkQOQCmyfSHOovD7o",
+      "acti_3uvsNIS4FviTv3cd00xuQOUariKBKVyUaczOoZr04GM",
+      "acti_koSvk6k3cQY7IZRVg787xedZ9GnUHvmkFrgWjwZipaK",
+      "acti_4RV2rq4pjGmkVsuLnqoY5gjDeCQJJoPPZzZz905f6nQ",
+      "acti_UHMiWA5v3mI8mA5UnyKXdsu688I20F3Kw9hTktZmTfR",
+      "acti_KnymIZH65hTEkoD0tM2YzK0kRdagoOOxqraGMN0fqUN"
+    ],
+    "email_ids": [
+      "acti_kmqgC3l95Q50nXXdLwUgccH0sFNvfP4t9YwQLs3jyxT",
+      "acti_fH1uWKQfB6VY3DOjANB688C3gMrUJBnu1AjLI06W5d9",
+      "acti_7bE9PG5lvdSPgM3Z7LqQcqHRuGpppFBBZyzILkWPKHc",
+      "acti_v4nSlKSWxChZ07D04scEJKAM0EozAdR5ZPJuSOoA5FO",
+      "acti_xiKZpZeYxalQfHN4DsGLYGoB7BEbS6yBgt01iX0QFHy",
+      "acti_7akeHHM6TXZ9VXIhwR5CK462M5rE1pH7KbAR3oCbbqp",
+      "acti_k9OexPyvA2EfdtWV3JXgZAQNKiLwdUAw3wX1qRao3sB",
+      "acti_qpnPRuSgXU5hVnjjApPuJllyHUpTqguJrvu5PWQFcRa",
+      "acti_uVwnWIEWrGlEE0YvIWrkB0fdGj8d6G0IbPY7p4B5ZOs",
+      "acti_C9UuHo4286ObNpPnB7KNFsFKK3LYBJQCTm8lJSc7DEy",
+      "acti_gS8bAUz4w0WsFCIsIjPq6hXR9TTeepNKpVv0l67Uagd"
+    ],
+    "sms_ids": [
+      "acti_L5OttPD0fcCNIPqsQOJedMBv2Hwf1pAwLRgilwzPaZq",
+      "acti_mQ5vBgHnYUyZWcOFgRboYdYfv0o6DDnPug4YPD89qFL",
+      "acti_wyZPNEt0PUncWeHSPI0HBAoRsO9raqOPvw1lL5peipF",
+      "acti_UtawHNaEifTk5J4PiGCYJtYvIqzB6cYhl8GAv4d4V4E",
+      "acti_uIITG21HmALzl1IzZucsXJXhqqs3iAKtRXZfXc3YFe8",
+      "acti_iNTSeFGM3VO4CgfaNvISjZyfYi4o8gNc9fBF6bgOMbb",
+      "acti_rwzozpmwFPJ47tRQRkn3cCxt8LX9ChoePfk5PZXtFoq",
+      "acti_qpcFC38E94C51QBk0KREJJ4bGtEyYe3uOodfiYny1cK"
+    ],
+    "message_count": 30,
+    "first_activity_at": "2026-02-19T22:33:43.066Z",
+    "last_activity_at": "2026-04-13T21:42:15.666Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:42:15.666Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "BriAnna Nixie: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get her on the phone"
+    ],
+    "created_at": "2026-02-19T22:33:38.606000+00:00",
+    "updated_at": "2026-04-13T21:42:15.427000+00:00",
+    "sales_scoring": {
+      "momentum": 90,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 68,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+    "lead_id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+    "contact_ids": [
+      "cont_1YqwTPLXZJ4Q0jLxCVo5f9YVTivTFPWZaz9RoJa6F3D"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email"
+    ],
+    "call_ids": [],
+    "email_ids": [
+      "acti_R4Kpo5sxXybyMJQUra9OFVGH0xeKUeHYrAlGmA6vZJv",
+      "acti_kcdFnmZnEniDvrfEaD5WWAPfQsj2mQfil4tXuJb1WMu",
+      "acti_Rm8sApeZyJbOhbkw9ESpaHlnQjcYfE7dCKEtQ5tzt9w",
+      "acti_yLe1gqyol4ZPF58dp3VHX2Vg7qpW67jUPKOh8X8hH89",
+      "acti_Eq5ENDIea28cigEktPiuBgXrsbSIHShpkII4ReZsbs2",
+      "acti_4I5Ao1KogPpsadtIxM5BdpllPRwgLTdwhN7IGnOUQU8",
+      "acti_CfMPMlDA0041b013lAdJQwwzagJMBSVFG5LwHxkWXTo",
+      "acti_tPH9uu8QUw9a2Mm000xB0dtKjWB0LoyD6UeXPTKHqCA",
+      "acti_Ccy0Y0O2Y9T3HR5KAQ6L6q2TnZGDHLaqxnJpLb1NYjb",
+      "acti_Vu1E2LUL8w8c1mR9EFyJ56vdnX5a56MeDxYxdI8ipDH"
+    ],
+    "sms_ids": [],
+    "message_count": 10,
+    "first_activity_at": "2026-04-06T16:59:18.031Z",
+    "last_activity_at": "2026-04-13T13:00:36.538Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T13:00:36.538Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Cadence Fell: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "[OOPS] Please add a task to your most recently updated lead"
+    ],
+    "created_at": "2026-04-06T16:58:09.228000+00:00",
+    "updated_at": "2026-04-13T16:11:36.959000+00:00",
+    "sales_scoring": {
+      "momentum": 50,
+      "relationship_strength": 30,
+      "friction": 50,
+      "reply_probability": 33,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "contact_ids": [
+      "cont_P6LPjliqPcoNVhxgZhBVxT0DeJPrGJW5GOreJM6EYC7",
+      "cont_nJjbArIaZo0eIo8nZNykM0Pf7lQrbt7Cb8zc5EbMe7k"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_lDIF1fK5KyfT5dCq5tMP2kiSZBnHrqspO0c2zqUqyMB",
+      "acti_U9LR0j2XgEM6pFCWIoy11f20O1VBVBEQJGoe9dakyqq",
+      "acti_9sVWu6CR5DBa35trd5ynqDsw6PMvBKWyfV4R8h4t4x5"
+    ],
+    "email_ids": [
+      "acti_1BvjHdZ7jBIOJSGOzWYAuSt0B6V8QfrnClJPLoantia",
+      "acti_ItNgtFlIVZcB4ZM2oNnzaRHBLf3LsWtX493uNtmDdcp",
+      "acti_CGTtl05MUMgTqheIrge7y1JtLUNOslizV8KtPixrsDp",
+      "acti_tsRNgSISUCsYDVdpgCR0e4du2WDlClK71MYlulbkOY9",
+      "acti_SSDzJKnjPQJ7Qq0A40KqkeFLuiyHdy0WqkI2kLprlfy",
+      "acti_vAOLXp1EnIjdhafaMd7BzjcIN3ujT4TRteqhJtYVEZC",
+      "acti_x3IKoPLB0WtUKmuWugOkwsUCsJeItvnPlBMLGA9LTzx",
+      "acti_AkWSH76zIaZihAdrSxhNM08i2qmvECG161S9VG420Ic",
+      "acti_aNxNnfxd8lx3WILGTtFgXnk3YX9cNaLq1622MxfHgat"
+    ],
+    "sms_ids": [
+      "acti_gb6z1YbpAW3nkkj5ptAe4AmONlZDe66ndNiGNuF7zep",
+      "acti_uxyAv2f5HtkAe3B2hc4xGh2kYkem1LiqtzfAT7ZSeao",
+      "acti_iTKJ4RM1QdgVMieE4BHWDwgdfZnVwufEmzvyAgclHDv",
+      "acti_mMZbIE5fHaQqKPTyyk260EM1C3d0g6eH643u1tVj4FI"
+    ],
+    "message_count": 16,
+    "first_activity_at": "2026-04-05T23:35:53.876Z",
+    "last_activity_at": "2026-04-13T19:09:29.200Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:09:29.200Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Camille Griffin: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: camille Griffin\nCampaign: 3 STILLS"
+    ],
+    "created_at": "2026-04-05T23:35:51.782000+00:00",
+    "updated_at": "2026-04-13T19:09:28.572000+00:00",
+    "sales_scoring": {
+      "momentum": 60,
+      "relationship_strength": 42,
+      "friction": 25,
+      "reply_probability": 52,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "contact_ids": [
+      "cont_b7CAS53EeSsEyxGvixrB0LkFOgTjmfqGPP3iLA4EUZC",
+      "cont_XjGZZpzQOAd7zpNiuKCuWwUif81DamKxfOumk7pOJ4z"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_TPTc2PXCTSDI7p0HgQllQO1RuFbmLLagH7pbQn7XuNR",
+      "acti_ngADebezy7yKUgF2zR4zVvcEPEaZeKn5Z4OzCSzgc2u",
+      "acti_Ne7b9K2pK2ysCSuPFnJcwGV03V0MbR6u30F4vbYCbex",
+      "acti_ssalepqME3835FIhNQTFE13bV6TIIzMnf8W2nKNfm9U",
+      "acti_IXR4lu1hpq2QYMTE50KzKF7yvJzcSZhNLpVYIS6NLP0"
+    ],
+    "email_ids": [
+      "acti_qmyUYTr3yXS38yM2NJjKkasNgteeOj4WamgNmp2UtTS",
+      "acti_77xoAxNw8jEbHuYY9KcwF0qEACnKUq843QgWVKoDdxM",
+      "acti_vYaQ7mn7JA9aw1h0Pq81zFAaICOlfPfjnzNDCuGU8Vq",
+      "acti_WC7klvZ2KQVYK6XbuMgSb3RaWhyTLYPgg9mlEErT2ga",
+      "acti_pGhtB468E8FBHUXVCt1UJg8qGLwuVYwxNJ4t5nQJ7yr",
+      "acti_xHovhxOcyp8bqgfSjNU8f02zM0UNioMa23yVg14dqxX"
+    ],
+    "sms_ids": [
+      "acti_QWqGUZN9I5xZlYwpHTtTfE3qtNXlxISlu2a7hhwABLT",
+      "acti_JECrovtvY3Oy2z8NeYB4IqwjY5xhf2R1byM8e6dlXob"
+    ],
+    "message_count": 13,
+    "first_activity_at": "2026-04-07T02:32:36.822Z",
+    "last_activity_at": "2026-04-13T19:09:14.618Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:09:14.618Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Carolyn Boumila-Vega: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Carolyn Boumila-Vega\nCampaign: RODS WEDDING & FACELESS"
+    ],
+    "created_at": "2026-04-07T02:32:35.386000+00:00",
+    "updated_at": "2026-04-13T19:36:21.499000+00:00",
+    "sales_scoring": {
+      "momentum": 56,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 59,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "contact_ids": [
+      "cont_2k0tyfnTtZuejjabUpWs5tRoEQw9GE3EkP5SeQUVLCA",
+      "cont_1HJCuZKP2pkEfSKoRS1vGSEWgDiwoU4BRSe2MAH8gEu"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_ljzUr8RInjI07CCWdqaVjfg2Fmz2wUpXHkwZ5fqilc9",
+      "acti_vpisDIf8DywyM6wBDWvt3Evqb3CpuOZ5Q8u8NIhKRMa"
+    ],
+    "email_ids": [
+      "acti_b3gJqvoKF05p1EaCakzi8P36JRovABn7GbE2IZ7eHon",
+      "acti_7oxDfrHWioJ4pDK7KDkSZ1jD1kooosgNhIQLB3elzZH",
+      "acti_D6igB0mk4lpkhtAsrUtKu0dNS2oS1rNe0npyRKhrEWi",
+      "acti_I8N6DQiSljcfIhXU3BrpSUKgBeGGdi6eZjIjtSA0gQP",
+      "acti_C4T8TRNcYgx0rqYBjA4UG95JKB8cAh0oy2V7o9s00OB",
+      "acti_ZodCO2QIWIr8R3feuJZ0iKaZx99zGnCldaNRwaD3P5g",
+      "acti_B5hJCnxPdxt2Gy6cqM9FHvHsd2fzcSTadaMHlcxMMUi",
+      "acti_Hw7ZUBTbsL7335NcxTDkVMFG09nI13NHy1yA80EY1Mi"
+    ],
+    "sms_ids": [
+      "acti_rZ36xtaGxvSxT1ELYWhxa5nDAGqLXzBfAS6OmswA7E2",
+      "acti_9Y5pFhAbUGjmwLcjsEOiilWQ75CoBdHljaAyNrZ8TG7",
+      "acti_YRonJoDEC8ySXnk2gj6cNN0VkgX9b84aMxIFrzdXgax",
+      "acti_c2AwzmTbkfIwlLYBVsa39vuXoam585ykDmYpnchmb83",
+      "acti_kVZA7OXIYLv1dubPdYulpzPoMkyx8zOCVPsOQddlo7F",
+      "acti_sgCMLbXzP6K2ad4MIai2nmRac2KJ2bh1ZVOZN9S4sLO",
+      "acti_87LtM7wXEpk2cKmQtYzUBZevqwT0YJryxTBCA7yWNRm",
+      "acti_ql6eOekN9CqnEpBAcXHX3lWrCYiPJGMwrrxDL2xKfbU",
+      "acti_thyokVMOLYLYHRxXd8anNZ8IZjOH0zcUfN8sqRQDDwZ"
+    ],
+    "message_count": 19,
+    "first_activity_at": "2026-04-06T23:34:13.520Z",
+    "last_activity_at": "2026-04-12T00:38:15.522Z",
+    "last_inbound_at": "2026-04-12T00:38:15.522Z",
+    "last_outbound_at": "2026-04-12T00:37:02.406Z",
+    "current_state": "awaiting_rep_reply",
+    "summary": "Coreen Miranda: A: 🔷 03. Day 6-10 Cadence",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Coreen Miranda\nCampaign: 3 STILLS"
+    ],
+    "created_at": "2026-04-06T23:34:11.320000+00:00",
+    "updated_at": "2026-04-12T00:38:15.534000+00:00",
+    "sales_scoring": {
+      "momentum": 81,
+      "relationship_strength": 59,
+      "friction": 0,
+      "reply_probability": 79,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f",
+    "lead_id": "lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f",
+    "contact_ids": [
+      "cont_wUDrnrbwcc2Mtn3fA7BTVxBs30XBNqbkG2R85hOR69W"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_cDYGRcLgZObftD3pR7XBGV4qU6S3xAZt0PjpKFlTJS9",
+      "acti_tJedT9HsoDzyUGrcLEJJNn5xbIfprpO4AesDu8eb4Be",
+      "acti_48jomhCTDdSDZZ6KQfuOBRBf1R53knC0OQcr9AUcw49"
+    ],
+    "email_ids": [
+      "acti_tJG9uRCGNw2Fy3Md1RD57pre6rNIkakRVENrTFc8Jq7",
+      "acti_4XpzLDRxKNSbJC5pXqieVN2jC0u9bzGtTCBpSLJ0fSb",
+      "acti_2mUMs8VZXUcOzKUXQVOuhVfDmzuwQkMeayHZsyx97Sh",
+      "acti_MDjOe9XxYNaZeYcga852suaC8nWMdwOfbY6lYHMPh5u",
+      "acti_nAb2rYNm6RydrQdssDLMOxYQz2BtoB9JJFC7FlBjmCq",
+      "acti_5Ui5FZX2bBgmdIWzpUGOsVgI22yp7YnKc3fFnoslFz5"
+    ],
+    "sms_ids": [
+      "acti_Bzvyu2HTvGlz1kLMT5JL7BGWGvE4oCGmpl2d1tgTo76",
+      "acti_czky3TZYWCXGoXbI9p5wqVHYSZBinJYFR7f42wiqOs7",
+      "acti_n4B8IQWGPnZYIAbg4w4ALLjgqiWuEkIRnRvRUMhGPIV",
+      "acti_lo4WE3n3kbdXTlIELclx4ggyt5xzwPJq3uVTEHtxQw8"
+    ],
+    "message_count": 13,
+    "first_activity_at": "2026-03-15T17:57:04.000Z",
+    "last_activity_at": "2026-04-13T06:34:52.141Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T06:34:52.141Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Corliss Lau: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "[OOPS] Please add a task to your most recently updated lead"
+    ],
+    "created_at": "2026-03-15T20:43:21.529000+00:00",
+    "updated_at": "2026-04-13T06:34:52.331000+00:00",
+    "sales_scoring": {
+      "momentum": 54,
+      "relationship_strength": 42,
+      "friction": 25,
+      "reply_probability": 51,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+    "lead_id": "lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+    "contact_ids": [
+      "cont_vw84cqZ6x0LJE4qNgBTrwFfFfchzi6a9xwu4QPTONpa",
+      "cont_iRDUdEDQQ5rxQ6OU0fXmk88ckNSX2BjXdg7QbyCk4yF"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_ZGNu4TQqMDAddqk8gN9aySNyJtvTBO0HiXYaVvSREUE",
+      "acti_x9N6lPVVyO2PYcrgrRtpsMhzCPVEOE2eGtPIzjwI3Qr",
+      "acti_ooelZ6B8lDKMZxr739sORQQCAroIHsXnfuX17ANsikg"
+    ],
+    "email_ids": [
+      "acti_0wdfVwA1exE4lRBeCaXIbbdPR9qbrvTAlJe5FdsKxDC",
+      "acti_GhWA7tbkwEjqt2dtIMwyBk3QaEVrzU7LzLMNNwh5EA7",
+      "acti_5sZD2JrrNXI5FlF2HTyla56hBlz4yJc8NXsO1n694lR",
+      "acti_iungwGks6se1RidQNpcnbmaUEayge98mHSe0HUEMj5N",
+      "acti_GXPEFx5gquRX0XBJRL2PR4gUTEY8HUDQrXpb0N7oA90",
+      "acti_NCoxYTz7lnGG93m6yTDDOpUr29wx8wgksqr5wPonte3",
+      "acti_uhf2K9CeyAmG7he4n72cweCQj0KER7YMcoIsxeCBQR8",
+      "acti_Hu8rV96IHXXt8nwOc4oOgsnv3FHTyaYZOzl1nQJ4BPI",
+      "acti_nJTMBDtVX0Q4yB6WFWfhKMEvdQV7vK06udfQ1TkNNOR",
+      "acti_ur4pWgOQFUibGGvH0kXlj3j17V5fCvmySN6H2qaH0gQ"
+    ],
+    "sms_ids": [
+      "acti_Lfs4uWAJDqv5cZE4Zyscpk293DJa4sULapO7xFQsVKD",
+      "acti_pMwE8HN3LogPgxtaHyvLhj5W6c7T13KfWoZEmExBb6T",
+      "acti_PKmy0Yd2MhoAGzIm5Xa3aY2h32ieB1c0G0bcHL2pB2d",
+      "acti_Yi473m7odePhYEYrSjpIIXJtcI9KGzsAWe6uaG96O3p",
+      "acti_Eesj6P164Lc7XKQ50qahI1uqvsNiM3t3rBMhsRkiTU1",
+      "acti_vqAuJBSt0N2weQfbeeQe7vhZZ9wWJpSlj2p7sRvVd48"
+    ],
+    "message_count": 19,
+    "first_activity_at": "2026-03-24T21:20:02.184Z",
+    "last_activity_at": "2026-04-13T21:14:13.486Z",
+    "last_inbound_at": "2026-03-24T21:20:33.976Z",
+    "last_outbound_at": "2026-04-13T21:14:13.486Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Darlene Scott: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Darlene Scott\nCampaign: RODS WEDDING & FACELESS"
+    ],
+    "created_at": "2026-03-24T21:20:00.386000+00:00",
+    "updated_at": "2026-04-13T21:14:13.169000+00:00",
+    "sales_scoring": {
+      "momentum": 72,
+      "relationship_strength": 49,
+      "friction": 25,
+      "reply_probability": 62,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+    "lead_id": "lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+    "contact_ids": [
+      "cont_koczATn1xYYm1TeGyonRJMtPVVKRCrenaiw31ixmhds",
+      "cont_FDPZ5XATuao9yUx7L29SoEK1WmYUYC1nCK990xIGPjG"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_61fMmdu2qRawE5JtgzuWzDkZ8GeymW8mdhK1DAudyJV",
+      "acti_beryDwyRNzVyoNeHuqDF9KbOjm2PyUhkeYKOy1x0Q9R",
+      "acti_1PxnEKL31iDuSpfUUHgnMUYMGBF5dKLdeteVYw0bSMj"
+    ],
+    "email_ids": [
+      "acti_I1SO9c37pF1dQ5cmYzd6aUiVkU3aqeE31jR918hF4pq",
+      "acti_R6YthEGtpqeS4nSM2fybLQoUgJmUsFiM6DhAfhMTf1w",
+      "acti_SOL5A5CnAWiL49o6YfAlI2hcCESXsUxqPtT99n85GAw",
+      "acti_8GeJC0onFdLEze3wbpkuNA9ukpYjXYhPtH27T7smsCL",
+      "acti_aZ26akGDlWlXIbWEnCKONCSoHyHUWoB20pI9QYV8WIg",
+      "acti_UABHqexXUE6LytOOfxltaGkhQRsNbnpHTxMrOHpuozW",
+      "acti_3bdR3v03qEhe4RygBdoJFyRhYXa6WfJyIcpqkfTbQPu",
+      "acti_y6SYbKgI4lEf39vcTJprlV0FPuM25dJtxHfWkMoKJRC",
+      "acti_493p56wIZJ2nLi4ffNkOCNUfvt1Pl2ObJN3uRoAnXfy"
+    ],
+    "sms_ids": [
+      "acti_IrcxnI2BiPWoKCLmWMa4qI5dt6VQS1JKMwAzWP9fn26",
+      "acti_nmxIr1qdinDWbvjEMDRcA4kos46i1rMI96XOaXPWitr",
+      "acti_E248yJYE2oRaVTMr0HNrbucn5UPw2iYtdC3tItKfiYj",
+      "acti_jEL25csC8KO4NjiC6nV7OaOeiRQknKmAS820aarEyHw",
+      "acti_1y8Y9393HB2m4MagaBsiHS8AfX9UGEFn7JAZ2xJjNTM",
+      "acti_YufWAQDxcX7IqjsmQUEkw2gEUPZLEleQwgLxrPfX202",
+      "acti_jOIDUuYM9q5ZrMMQA30tMRN8JK9oRT15Gy61oTqayCv"
+    ],
+    "message_count": 19,
+    "first_activity_at": "2026-03-28T21:43:07.735Z",
+    "last_activity_at": "2026-04-13T19:10:14.359Z",
+    "last_inbound_at": "2026-03-28T23:10:28.299Z",
+    "last_outbound_at": "2026-04-13T19:10:14.359Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Darnika Joseph: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Darnika Joseph\nCampaign: 3 STILLS"
+    ],
+    "created_at": "2026-03-28T21:43:06.163000+00:00",
+    "updated_at": "2026-04-13T19:15:39.452000+00:00",
+    "sales_scoring": {
+      "momentum": 72,
+      "relationship_strength": 49,
+      "friction": 25,
+      "reply_probability": 62,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+    "lead_id": "lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+    "contact_ids": [
+      "cont_nRwuB7XPY0yGT0GMsHwnFWIyBNdkrZFDNyGv2a6CkNl",
+      "cont_JnLlx9udCI7U7WOGbxb2WAuPy62GsHAtayqMx9KCuIF"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_F6zDkl3AhgpE6glG4lLplVIrF8NNCoEtJM1UFWdF9U1",
+      "acti_WY5dBg6kJCo80nIA2ERu6udh6fhSeSikth5U6CR59D7",
+      "acti_tqaNIwdlqorMLwSyG6X5nZe6insjhqHFbRTFn1bHNXf",
+      "acti_rgomAFarqs6TirDEU8sHeczgfBRMBVlhIqRD2sJMDYg",
+      "acti_N8rsQRDOoRZlFYt6fnmUmtaFQbyYNS98IoiDPyUjSkg",
+      "acti_C472Ixf50IMiTKzpW1ZvgDyepEhRC9QrM35LCLl9qFB",
+      "acti_VR78s9CnepfA6HE5Lc5ZYlxuhDYradrJvflIhEBl9TF",
+      "acti_7ZENp1OgJf5eTeA8lnjcgrI2hKDF05fPXjAq5zm8CPb",
+      "acti_hodq287YlGE4Syxi9yVDLOU6WbQBld7mjLfXOwpJmvJ",
+      "acti_l5Koz8bOwD6MpBui1AP7sJuqMcnQXKiBQCYVgzXWwGG",
+      "acti_4vT34SiJNsEF3zzg1aDkY2hiJXvo1pqQX8nAzT2cT1I",
+      "acti_CtDQCsf1yKuMn5NBB6FjxnePip5kVDRKdk06RbWLOUg",
+      "acti_9pgLqGFnK7hWnrCWW71yR3FEx13dxplbnWDJcxL7Ywu"
+    ],
+    "email_ids": [
+      "acti_PjDn0YxdqsU8MgLmNUyedgUdf8a4VNNoyQdWyOwsOE6",
+      "acti_8Djy8Pck2JmUkJn6mXZqabTUeJEjyTCV5eQ0QEyWWqJ",
+      "acti_hddHtiTribgsym9shDzX7lhiyuan6IiVR3x0ymfYIMX",
+      "acti_r7jjPJBZcCrCxcrlNkms94uePSu1yHuC2JLfJvuV73E",
+      "acti_SPv9sRZIL7OZ6p6FPcYGMXXcQDrstL6CQjjCVe5jSsI",
+      "acti_cXgQpwcgCXYZn9bB4skvnKT6z6q2YAvYs4rG6GBJgVE",
+      "acti_SudWkCMr8FpTlb31dLquCnEdW6l7L2JpIdR85RF58Ot",
+      "acti_6I4vaJMt5FqdcIfZfmFCap256TzlyvYHzOMDaRRu77f",
+      "acti_Uo1NgokwpZxmX0b6xjEKlfvhrfNBuWVi7ibCx3kjl1T",
+      "acti_BBWuafKyki7F1dBgbSy44vp2ezZoQnje09l5MeyKVNs",
+      "acti_cmltFVLVvUKnzYpKCVggVuSdoWvtFZfSYGDydx3dPC7",
+      "acti_rQ6uDkLoxFVGs7sVQWUx6F5Y4Ec4QPTkT64JJgYMvfO",
+      "acti_Wk2IsGoyFcmOU7VZUehhGu4Eg4vV7u2nnUqexBeqLkY"
+    ],
+    "sms_ids": [
+      "acti_y6h1hvFac94FGqa7oMUgeezxHQF8kiTRXGo3lwf29kN",
+      "acti_LphZFhgp75EcqFOyQC5b1b9poRMzFExABgvS2yQ3q5d",
+      "acti_XTFJhAJMLEzuIKDksjZIFSlMYSX9vSnHAdeehhCEHcY",
+      "acti_6fhWrFE0YeTrfEFy4l9SVy95ry0oqZmtCt1rNHegUxI"
+    ],
+    "message_count": 30,
+    "first_activity_at": "2026-03-12T17:56:30.568Z",
+    "last_activity_at": "2026-04-13T21:15:16.292Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:15:16.292Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Diana Medrano: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Call and get her on the phone"
+    ],
+    "created_at": "2026-03-12T17:56:27.465000+00:00",
+    "updated_at": "2026-04-13T21:15:16.216000+00:00",
+    "sales_scoring": {
+      "momentum": 88,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 67,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "contact_ids": [
+      "cont_1s0QMLJLkPu8zJV8EpngdYEFFMp2CYAf4AbYNGpX4tY",
+      "cont_uxHbdCQhcmXYRtMu3ZwkjthGdA8Sajf2CYWsx8HXPTs"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_hyzEDl8182yQXMcY8op8eqmrCesXibyc6p5rzOGFNDQ",
+      "acti_W8CMr78TetXdOuuITcTmsDBkHN3Ugan5hkKA8eiFyAH",
+      "acti_088SPNkMumOKyrwP9rP9cBQCBx4IRx0Xh9ugSdG0UTw",
+      "acti_w3wVT9dqsDKBcHJ6zGbMC13Z1FwojO3y6QEb36c39aX",
+      "acti_Cw21feHu0oWCdJozrLNP2TgeZKQ2wFRVV6jKePdphw4",
+      "acti_TvGSUwMenUYgwmYJl7ml46U9NiC28bBFFONHBR3C90D",
+      "acti_JSagXI56K5ljao54znIvTuSeeev2goNEPMnnIPUjnVq",
+      "acti_kv2vDa25tQ3OBbhOYmXZZYFs8KPCQgfcE2dZUtcuV7w",
+      "acti_nGB0SSnSLv5EaDxHr1eapEYpRPj6tVyAzBuhERVHpXs"
+    ],
+    "email_ids": [
+      "acti_6OPy8ERzJ1x5dF2DGl9VxgWkqGhhbs1b19iV8dEqKZE",
+      "acti_LoIOcevvt0Jb8ro9wU6QaNO9eQlSZZoOtdiPoutchT1",
+      "acti_KSrth6D0tVXvnuzaBJvfHqayRCwvkRj5LCRzKSPEcMh"
+    ],
+    "sms_ids": [
+      "acti_R9eCZpDnos8cGk72i5eHF5tecZGVXqfnKD8iEX7HocK",
+      "acti_ucWeXzg3fQk1DVJGqlx9eytyIowYilkrseebf3tXgTR",
+      "acti_xozb3deVnfqgObOjfUwulOaPHEc1rpnyxoTqprPpZzQ",
+      "acti_Ou09vJMfCNnX2OTeyWn3nz5EN7UaK2ELl3WhpnMzgox",
+      "acti_eYSvhpCuCgClnxmaL85LI4CIKIwhoVD9O7y7ktU6tCM",
+      "acti_mzNSPTyqwiLQ8Bz74Ouaficcl9qtCGHWpXAtm6h8bMX"
+    ],
+    "message_count": 18,
+    "first_activity_at": "2026-03-20T00:21:26.373Z",
+    "last_activity_at": "2026-04-09T01:34:01.133Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-09T01:34:01.133Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Edwin Portillo: A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get him on the phone and into tasting"
+    ],
+    "created_at": "2026-03-20T00:21:24.945000+00:00",
+    "updated_at": "2026-04-13T16:12:05.160000+00:00",
+    "sales_scoring": {
+      "momentum": 54,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 59,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
+    "lead_id": "lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
+    "contact_ids": [
+      "cont_MofdNTzVTWwPixNAGNDIpAeiFOHSZzZG9fxBc31G1zS"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_BLbT3gFjPSNEtk7rgsSwGeD99qMSRE27ZxAJTgGDQtj",
+      "acti_lR8te2RqaBbU7DRau5haKPBP4XPJtoTcGAsqbJeNpkL",
+      "acti_l1xNLIIRsZ9Y5ZaE0R3aKCj82GDSjg7Yax3TdTMfIp9",
+      "acti_OTYyp0Wj3WTxzeachYjUvotXMjxrcv75HbJZI921ydl"
+    ],
+    "email_ids": [
+      "acti_v1suFLlAQConzwPE8xcxD0v8On0DDZS5DyE70lZ1BFH",
+      "acti_gC4FgkznwhDNLpVcoWqoI79Ey1guI7FqT78Cu0pydel",
+      "acti_ToxKhQ5hzRPV9z82KWu4MNpbdcmdZ75aY70yc9Ijg9L",
+      "acti_9n9ZLd8zgYS1SOR6wAenMArb2Ef3CG7sD6oR9c6ZdTN",
+      "acti_grvljUFakwycgGJXYSCwjbSVDbaWbdDx0rRlfaMsieB",
+      "acti_kP92rKwiKZHyxa9ClKfIWYo5ReE4MxEmeqB6OkQfh2s",
+      "acti_LbwpOafM8GabjyqoKrJpuT8gcpJVjx9CXTqBrK5b9GA",
+      "acti_K7yjXqRz5eyAqkMuvEbkfij7R7UJgL0iRXkQVAghcs2"
+    ],
+    "sms_ids": [
+      "acti_SSonQuAGwuZqn3043Lw3xhCnwuKm65966YRxSixHZ8C",
+      "acti_SilxMjm6t42pkHCKPESOrTSlFD8i9ba7dkjH1cyIQxO",
+      "acti_f0SC7E0MNtccuKbTTYr7j2iZ8wrFFaPi2zqoL1WByW0"
+    ],
+    "message_count": 15,
+    "first_activity_at": "2026-04-01T17:14:22.264Z",
+    "last_activity_at": "2026-04-13T19:09:56.483Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:09:56.483Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Elciane Gomes: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Engage & Sell a tasting"
+    ],
+    "created_at": "2026-04-01T17:14:20.698000+00:00",
+    "updated_at": "2026-04-13T19:09:56.187000+00:00",
+    "sales_scoring": {
+      "momentum": 60,
+      "relationship_strength": 46,
+      "friction": 25,
+      "reply_probability": 56,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "contact_ids": [
+      "cont_joHwxOghHODoITsHyQL09X8pxYvVdruy9XMH8g7MnpQ",
+      "cont_1etTNbjciM2h7RBf9MR97ZsDWlqhbC2Vt73Y3A12Sd3"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_faszhgJjjmTGlr0d8PzhLkbg3ra3WzAMUYPuxv0I1Br",
+      "acti_k6BeEwDnD0LP2FMWuaxr6jKxH1MrZ65FqY5jUNnd8PQ",
+      "acti_ClRxm9UfZGMbdlHlaPL9nKH7EqrXHw5OivcLHPWce67",
+      "acti_EP3m6f9lQbsAGV6klcQ1hGUaSvgyM7VDpneDISdWGmm"
+    ],
+    "email_ids": [
+      "acti_SCeqR52jD2Phpt8t9gHLOJa6uxJheZWZgtJlndA098l",
+      "acti_ElGx8iaBBaVMaE4vl4WhFQrZUy9skjGHNdhBTVjGbIa",
+      "acti_uynAASH4mSBCCcAq4jLu1BiXNv6Q7NmlQiFVU8BDhcL",
+      "acti_rrCjKqA8Q3iGEiAbBqO7HOPY5LdaH3V9DDODUYP1d6e",
+      "acti_xovAUUUN4ta8QAB0Ucs2ZquYIv8hW1RVbogml7LzXe4"
+    ],
+    "sms_ids": [
+      "acti_pAClt2cFftuacifvGUyYNseUaY4Vo6wixBU2sKwxiPx",
+      "acti_o8KF20xYYsZlUCJ5a6vd7tr66rHw4QxtOK5AoQfUay9",
+      "acti_tHUoOdSQpqprQUvFZZHSOSsyOdI1piK0n36cMnMnaBR"
+    ],
+    "message_count": 12,
+    "first_activity_at": "2026-04-07T12:07:34.833Z",
+    "last_activity_at": "2026-04-13T20:33:04.297Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-09T16:01:49.310Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Gabby Garcia Serrano: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get her on the phone soon"
+    ],
+    "created_at": "2026-04-07T12:07:33.228000+00:00",
+    "updated_at": "2026-04-13T20:33:04.430000+00:00",
+    "sales_scoring": {
+      "momentum": 52,
+      "relationship_strength": 46,
+      "friction": 25,
+      "reply_probability": 54,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+    "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+    "contact_ids": [
+      "cont_4SZ7rFKn3whhVldxJjg1QmOYrqWcDBqe70ONRtrEtxF"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "call"
+    ],
+    "call_ids": [
+      "acti_HpnerzDD9fVHFpLN6W2YQB8JaysSzNVJh4qNojbNdI9",
+      "acti_MK0RMLFqYQcG8HCccFc9Js6sp5ocMdJrMRDtV4pghol"
+    ],
+    "email_ids": [
+      "acti_8JwhGTKpeU1Km0LObY8mPJGhU2UHNDG72nFpZZrO1nW",
+      "acti_IazcGVE5pvfsmD9usSbFqSFzhvmoZRjrXlCcDWUWuRB",
+      "acti_u4G19kkjLcYRjDpTIKYtSRgp3iNp8ZGmOrobBGK8uEv",
+      "acti_uuC0TeORMqcEFV9tQW6LVgEmn5sSfcdMmCgamxxi6Zr",
+      "acti_66cuAbfSCZRkPegosDEgPyi2P1J8DtuoLiBWN3F7iJA",
+      "acti_JtbBeGOn7WZVJyknfkhMF3AzMOqYrgWGrTyp5MNEV1Q",
+      "acti_Nr5KlRkXiHe6qD5Yw6jOZPms2o4B96k24KoAVP5xgXN"
+    ],
+    "sms_ids": [],
+    "message_count": 9,
+    "first_activity_at": "2026-04-04T20:01:30.000Z",
+    "last_activity_at": "2026-04-13T18:00:28.086Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T18:00:28.086Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Gina Gallagher: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "[OOPS] Please add a task to your most recently updated lead"
+    ],
+    "created_at": "2026-04-05T03:45:28.936000+00:00",
+    "updated_at": "2026-04-13T18:00:27.432000+00:00",
+    "sales_scoring": {
+      "momentum": 46,
+      "relationship_strength": 38,
+      "friction": 25,
+      "reply_probability": 45,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "lead_id": "lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "contact_ids": [
+      "cont_37COWtKNQyo36sB5RaJF5WTcgbFesCdV5hSGSTo2RPa"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_NA8qoWkLinX5yuMJ95RwSBao5EuuyILgWC0EjVSV6Ua",
+      "acti_lL5LqhJGmPyaT7QcC19bpRPW2TX7vW734IRrujLDuv8"
+    ],
+    "email_ids": [
+      "acti_cbounuMNidLYvZroLRNKHKDq65086y0Qmtk0m2d75yF",
+      "acti_FtBV67CbHefaDmgaVoM7XwLk3ZKTDb1mwt2plUr7N3h",
+      "acti_RCmhHTt6MVWt9EbtIgVc2bItP8Y0mwdLDkllXsFR4Re",
+      "acti_54EfAXwPiTSVJDQiKSi6h8WVUhNvyssw9gGLLVoab7M",
+      "acti_uJZZaibzT5lvakJ7AgmuHfEOd43E6MP5tObnpT4uhHX",
+      "acti_ozx5QBoTkb6gnuYs0Z1LS2F3rrSTbl80DK2TT2Yf3s0",
+      "acti_rRqnCF8n2WhoRcDOAUvxMEi2aONOqAen2gWHtMSsMA3"
+    ],
+    "sms_ids": [
+      "acti_EmBCbrUh2TIP0GOyGllJvWnPuCc7pd740dmikhEMvPg",
+      "acti_XqsVh1zylIa9C4MPBtOQMjeE5fdugWhGYLSSDFHiuFQ",
+      "acti_ainlwFJHCpdAfVSoy7gTUZbHVzs7A3afu8NPIyy33Kb",
+      "acti_LJr6ry3vmXisEbvPZZkYKiIrk9gNjgX83QS3jd0v9oD",
+      "acti_GkDuQKQWsdsenY0i27IBNBByVBQowZYOEtCP2bLlt7l"
+    ],
+    "message_count": 14,
+    "first_activity_at": "2025-07-10T17:10:36.543Z",
+    "last_activity_at": "2025-11-13T13:30:06.409Z",
+    "last_inbound_at": "2025-09-12T15:25:23.959Z",
+    "last_outbound_at": "2025-11-13T13:30:06.409Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Gisele Chartrand Elgart: A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Make first real connection attempt"
+    ],
+    "created_at": "2025-07-10T17:09:28.920000+00:00",
+    "updated_at": "2026-02-12T03:32:15.886000+00:00",
+    "sales_scoring": {
+      "momentum": 0,
+      "relationship_strength": 52,
+      "friction": 25,
+      "reply_probability": 47,
+      "clarity_of_next_step": 65
+    }
+  },
+  {
+    "conversation_id": "conv_lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA",
+    "lead_id": "lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA",
+    "contact_ids": [
+      "cont_mH1O0oIrTqsM3TlW9VfnPhavJEktIDrmACBmFDVXRVV"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_MIcQnvo7ezaO4gWfFYLfqkJcgSVFZR7OWwqS0JkRg6W"
+    ],
+    "email_ids": [
+      "acti_B3nCtoXqyqIE4gIXfMAEoCQsDoKFlY5Pb2xC2vc2kVY",
+      "acti_ZqovsxUFTILoMv3lYlIqaitV2iVjO9KQtIlDBDoZEnd",
+      "acti_xCkWUlFf9uLGo9KFW1amKYEKzrt9Einl8YWWVlv27XH",
+      "acti_5kXMuYy7hesyQL0B82gQlSrRIbSPcSpjrsLhqZuQLuU",
+      "acti_3munSSHYvMSEYWhQSqfDKNdH90opjJ7gOciMk5hdkJp",
+      "acti_ovzyKq7yI1BmvdE2XkF2bGJhuRuIcEhPNxSZzoRZApX",
+      "acti_OrDXpqMm4IyjQQ7HKu5GjJsWyTJdKvQ4eNrUe1hFWWg",
+      "acti_6NsbskcDokzFGIplnKk3VcZMvKqlLMtiQ7OUY43o7hE",
+      "acti_RLgusYuvuxo5YEbbDAj1SlPGoxWcqXd59WRnNYu5bKN",
+      "acti_vRWWQiKi6zSzyotrfPBaIzuzF4qfPplYjsZpMgO6jO1"
+    ],
+    "sms_ids": [
+      "acti_xNqaYPX24TMMsPW7Iev5wU5qbG2hW6D8iNwAJbXRNUy",
+      "acti_aufyr4d7vzSEEcznWJBPgJZ8PGdlXRmfAbNyiQdRtef",
+      "acti_3NKehijUrKuOPEHTRbV1Q7oMSKnCs4ZKmqyLWWPJvpt",
+      "acti_2PFDymwE1e845Jzd1OOlhlsyrpBOy7rKTmhnNhzFbgi"
+    ],
+    "message_count": 15,
+    "first_activity_at": "2026-03-15T19:25:37.000Z",
+    "last_activity_at": "2026-04-13T21:15:06.108Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:15:06.108Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Heli Parekh: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Heli Parekh — EXPO Day 3: Check reply. If no response, send ballpark + venue help."
+    ],
+    "created_at": "2026-03-15T20:43:27.351000+00:00",
+    "updated_at": "2026-04-13T21:17:00.969000+00:00",
+    "sales_scoring": {
+      "momentum": 56,
+      "relationship_strength": 34,
+      "friction": 25,
+      "reply_probability": 43,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+    "lead_id": "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+    "contact_ids": [
+      "cont_H8A6g0tcB8EyuFJvETM8XnyA6NoA0cU3O0T7oPu28l5"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_dWD5ibYSj1Gm0WuGXhcLd5x929zDmG2UR9FbBux5Bur",
+      "acti_7DZoNvyf4ZnyMmk2BV6WgYP7EsuovCZDbAaqb5tgHPR",
+      "acti_vxQje76m1dRWUhCxz2ZYfAZX04rroBWl0bl9R3a5vBb"
+    ],
+    "email_ids": [],
+    "sms_ids": [
+      "acti_MzZC4L7kFHqTvDhFrmNvCfI9cWpANx0Qblj5QiZY6au",
+      "acti_gSoYMw7dmylT2fuBVkaBiEBsehpTSH7Kceg5L7nwWcs",
+      "acti_eTPyoDu0heePNEUPGbUkZE9CbqnGHTVhzuYDZRyuL1w"
+    ],
+    "message_count": 6,
+    "first_activity_at": "2026-02-09T17:51:07.415Z",
+    "last_activity_at": "2026-03-16T21:53:21.657Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-03-16T21:53:21.657Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Igreja Evangelica Avivamento Da Fe Na Revere: A: 🔷 08. Long-Term / Dormant Followup",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Follow up"
+    ],
+    "created_at": "2026-01-22T23:58:10.480000+00:00",
+    "updated_at": "2026-04-13T20:21:49.707000+00:00",
+    "sales_scoring": {
+      "momentum": 0,
+      "relationship_strength": 42,
+      "friction": 55,
+      "reply_probability": 31,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "lead_id": "lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "contact_ids": [
+      "cont_rLYDLmM9vYMBgIShDxuTKE4q58OH7iIzRQzq4yKwrDF"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_AJFAF65FIH6YveJFLNRPMgqPOY1LbygaecW6XqUS5Bx",
+      "acti_seZUQKYeQdAzsP720UXbcK0QkiBBVU9tkswijXXVUB4",
+      "acti_QQhxwIzRKGASc6KMYQyXsbZtnznYBpMBHoM271p3D4v",
+      "acti_LFESKSgBp4uPbVgoSrnSJ1iDLzCpxA4B3zSetOmtl23",
+      "acti_WJxLrLDojBZvtoFT8EetBEOZJ0vizXG7Nk8aknB76ld",
+      "acti_wchwWEWlKQHUuBdLT2CVs15eJXZYC0CUfBoiCeBCjZ2",
+      "acti_wE0tq2jzFZFn4gk82MayeJzbzjzFNAIJkXZBl0SCckZ"
+    ],
+    "email_ids": [
+      "acti_sDyvZY5bw1iMzVZA9v8st6TUpksY7FLFLcLH4Nl1cQx",
+      "acti_4Pe870b19bhi9U5hpBiw8RdIuOBzrL04YedA1uaQs8n",
+      "acti_x8lWVOvOjgtnzfIZH36WaxpvSoWJxCVDtbHWvvrlDPR",
+      "acti_jOydWVIoaNZcKxPieYq0eZ2ctalSVjsu3x8wuMZvxaP",
+      "acti_eSQl8pw8o6TWuUZuo6iQZm2GjQomBMJ8IPlRdptn2Vz",
+      "acti_bnPKvppRDXhcAc7IvXVhGMWaSPBFebmFBXAdbXKf1ce",
+      "acti_ovmdLMe25PnUi1PhlniskUvj54Q0SF42FPRae6I1elL",
+      "acti_2t6k7n5Zy2x1hYDmcomftrLaMIo4HdcsR7j3qKS2yys",
+      "acti_KUVrBE4YUDSLjHoF3wLXLJEQU85G6MwtQqg9GOkgu8G"
+    ],
+    "sms_ids": [
+      "acti_6joHwj1N3FsX0iELigikQpGmsW4YwhUi2Ts6wUQBvoF",
+      "acti_T8450VOQ5r6tbMnBA6EHjpdllmpCutynC59IBgdP43B"
+    ],
+    "message_count": 18,
+    "first_activity_at": "2026-03-05T21:00:22.326Z",
+    "last_activity_at": "2026-04-13T19:09:11.065Z",
+    "last_inbound_at": "2026-04-10T20:02:50.699Z",
+    "last_outbound_at": "2026-04-13T19:09:11.065Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Inna Shvetsova: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Follow up"
+    ],
+    "created_at": "2026-03-05T20:56:33.446000+00:00",
+    "updated_at": "2026-04-13T19:09:10.325000+00:00",
+    "sales_scoring": {
+      "momentum": 72,
+      "relationship_strength": 57,
+      "friction": 25,
+      "reply_probability": 70,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "lead_id": "lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "contact_ids": [
+      "cont_BBY9VFA0PeoGC712L040kLXOWNo1wvyumyfjtzeOAGT"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_XbemMA00cKcwh7K8D6tkyM8t5aMQzds2He9v0O3BgD9"
+    ],
+    "email_ids": [
+      "acti_RC1K6lmPFkQ30wH8Ynze5BI1M2y20YqtVqucipJQFql",
+      "acti_STkzEgJrjabu266kntOTG2yo2arQAaSyNyWmRb7XFT6",
+      "acti_5xVtFHUF5kwKOlsTwmJ43edEtSyYfXSktASYzpfIiZx",
+      "acti_mQDAFbo5GBzqEfvEjMY4LCIdg324oN5FLQMXBQ1WiWh",
+      "acti_pib5csXmH0RFeo4st8EiGk0mVAE6zAerx7AA43UIYgU",
+      "acti_Wd3yn5IzYfyYAzAdmy0O5IvFXuE5NJ4IKoQv9l516hP",
+      "acti_AAsAzheIUFCIe24TUuhLDYuz1MYqy9hfu905rqTbF5X",
+      "acti_rXO0yXYq1yk87Kb783NnbgG5dhVzYL2ld6P11sey734"
+    ],
+    "sms_ids": [
+      "acti_Cj9GTbDAUnV12rPaVAXu8owtesL76c22NE6docdk66F",
+      "acti_F2CzQUJpMwvLq1sKEaiqc2aA8CNW7aEydqg2SHilB8x",
+      "acti_liGbD5cLwHHhfmxjpuJE3Tn8AP3IgFwNy5fL4L3pZEV",
+      "acti_xok9WxebUNkuYyJ7XIuLT6CU6Aak4gijTHua0JFPnU0",
+      "acti_EM75OgfF7zJsJWPgRfY9QczKunGdsIAaz0saDvHSr8P",
+      "acti_jLXnr0x2TMpE46rQdP0UMYi1HJPlGrfkStUdlGAmCNQ",
+      "acti_snbQmRfKMrQoimNRpeDWohMFvc1dU0NkK70MngrE0dy",
+      "acti_L46orDz0jZsjOv5m8kMtGRZypjSX8uI2hTpIMCDnO9Z",
+      "acti_q6DCXsYKU2wxGSrQyPqgMy1WKSaUJir7a9gbOaCg8BD",
+      "acti_2qxcxqnWG4Cfe35469W5rcHuJe5b9J7q3zTaqR2Y6wX",
+      "acti_LmEYLyP0xJyv6nGWUb9LkZp2gSq9PE6jv3C7wS0S6W7",
+      "acti_Gp3DTu3wiKJsbYIDLgRK3ZrOyEqrFA7mY3sa2u9bWRz",
+      "acti_6YEDmCJKbsQYlAlcbwbgBrqvCGGo004efZTHODXMTSW",
+      "acti_8BODA9sX0YueXRfWZdoNGFnFwH4rGjlDGyZAFhddNe0",
+      "acti_HxIf89g0J1XVVtVmclsmlicviKa4SHCugnVQLfYbs2X",
+      "acti_B93ZiBTt0tLlHTBGe5vlR6YrrZxHKpswLE7mGypPZrT",
+      "acti_O22l6bVxzzRMR0Xe8A8bZfa66k3GKg8bBVZW3xpMjDg",
+      "acti_mz3VnwreOj1NJP3fFSZMUDl4pOcXvON35COYaaxEG7U",
+      "acti_s6zUMz3wbhjLikNNhmHfArYOFRhIAfiNBWJNdzyivsh",
+      "acti_llzYAMe7lVBduFTwxsCVHBVOYUvhcZhA3S2L3rLFcg7"
+    ],
+    "message_count": 29,
+    "first_activity_at": "2026-04-01T10:41:12.731Z",
+    "last_activity_at": "2026-04-04T16:35:53.236Z",
+    "last_inbound_at": "2026-04-04T16:35:53.236Z",
+    "last_outbound_at": "2026-04-04T16:35:39.835Z",
+    "current_state": "awaiting_rep_reply",
+    "summary": "Isabella Mathis: A: 🔷 07. Booked Tastings",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Confirm tasting details and next step"
+    ],
+    "created_at": "2026-04-01T10:41:10.584000+00:00",
+    "updated_at": "2026-04-09T06:44:39.416000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 69,
+      "friction": 0,
+      "reply_probability": 94,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "lead_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "contact_ids": [
+      "cont_wxmS3cOVwwKqcCHPQOy64KwAOi9GtWhyO101heBnZXv",
+      "cont_bBDjbyfDJIehC47GinQJBIsTIAor7XsHgz7YDxiW5IY"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_kJww03nPOSEydcbDY5Aei9Ounn0d3Osw5CHAoQswgXC",
+      "acti_ToxPaxjBLjRh0FEPTsNtnR9qCz149RZcPtv0tiGizNn"
+    ],
+    "email_ids": [
+      "acti_q765W4YnD47iiJREUdUG6JZJHbfALnTP6NoMxn14qKJ",
+      "acti_cAwGaLjxsD4EpLIhC5PAKxuFLmuXfHGj9AcxDz2sdJ9",
+      "acti_vrnzKBHHUsjF2ivldpOXpDsai08QMdG9HWqCjbuJy4K",
+      "acti_wxwhnFEjYcocsbAA14XleVAfpCAQoRSX1IfzV9pGlb1",
+      "acti_ZCy20LO9PU9G5AGeM4lHaoJdzxFeYF6qDnc7Mcuv9Kj",
+      "acti_yNsAjlQrrNjwXeZz47yJT6fcU6dBgC94lRfnkfCwDGg",
+      "acti_Tgc3LDfoaMNSolyR1m9Q0UbmhWgntnkfQ0wEYDcr2dK",
+      "acti_yWcrzHT14AdyD7pmfM9aUPvuwpuIUZ46o5VWkx8LlDx"
+    ],
+    "sms_ids": [
+      "acti_Am26GgMXLKT84ksy8bn06TXpirG1XQDFwZ6b2PcrOVi",
+      "acti_FZbj8ZNwOHtV5lQngY25GHcEdp4nvOSH1KwUyYUblDE",
+      "acti_7Gzjxc6O4DYAcoF8rAewbkiPGiM70x3jV2vqM8rE2R4"
+    ],
+    "message_count": 13,
+    "first_activity_at": "2026-03-28T01:06:26.240Z",
+    "last_activity_at": "2026-04-13T21:13:49.736Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:13:49.736Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Ivy Elien: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Ivy Elien\nCampaign: 3 STILLS"
+    ],
+    "created_at": "2026-03-28T01:06:24.646000+00:00",
+    "updated_at": "2026-04-13T21:13:49.595000+00:00",
+    "sales_scoring": {
+      "momentum": 56,
+      "relationship_strength": 38,
+      "friction": 25,
+      "reply_probability": 47,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "lead_id": "lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "contact_ids": [
+      "cont_PDJRWBrG0wLzZu9TP1D3YHgGtJRhcaGPdDqAvDCi4qB",
+      "cont_aCPjCbhlNIbE2C5CvCcvY22TyI80e52DrMntJiHW9O1"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_VAX01KGmF7HDimKT451CbZWdGviH9bOBXcfyHPXwkjs",
+      "acti_glETPvSjhe6K9swlgBafwnhBAKpIuxzmXSanPJHVngM",
+      "acti_0oZwZfBof4pv5ImxGhvaeCJlb7mm5AkMXQMyoGhhXme",
+      "acti_bVksPjRmxkNUr3Qo02XUMoKf0ubJiyIlfnKQJj1Kf6x",
+      "acti_AxwcvaPPHTGFa8i96GF7K6S9TItuj8dPT68v9o319A9",
+      "acti_BS303bCoBShx4nUH0ga2rDJUzwBCnoPGytu1s1prPgR",
+      "acti_71TO6d7YkJmFbgywXEU2g0ATFKr4kkTWjX6vqbVHx3O",
+      "acti_Cq7WCgbn8Q3hIPUTNlJJl7i2AGhyeifWYSKYSkY18TZ",
+      "acti_wUvCqZXEmpDnLDZWaVmVMsRjAl3BeLEYWVgMmRFqxS3",
+      "acti_1hHLp1dvae9EG0YKX4FdFFxznw69MAVHweVMx59263V",
+      "acti_SKH1JmOUmpfC756TcRtHUJdpaRUURlrtCyNC4sA9BYy",
+      "acti_l1dPQEem7SM0owKgncunTfxXIIH052DrfcW1lD9Gmuo",
+      "acti_ObbFZ9pIA9VSKhPUJgybcKAH7riYJ6j0alhIME3X35e"
+    ],
+    "email_ids": [
+      "acti_leHw0T2pnrIF67wpgJazd0yhEfapF3vbQYhNwfrASIj",
+      "acti_YIGmL674msRnrvq3ZMIbpkXNMLQTi4of0Tfb9ASbJhN",
+      "acti_itPfx5JkBorWyuXHqqMgkGNBidA73nPQKcOOS8Ot9mC",
+      "acti_TUmBdef12oOXmrqQC8dnnQ0wsOttU9I8EU9Beh6B4Kc",
+      "acti_4yXjpAfSsl6TN8lHiLsio2sfNsVgsRTLyKvVrr7bcbW",
+      "acti_PZ9BwI4f4QPWvVgXalWD3Bjdwf93UA8ytqI6R0LviND",
+      "acti_B5qgzt7BD0sj7gy3IZKLGEGMYYcnZCSzcwaecBfFN0i",
+      "acti_07lAhlcbtkugFGHXJBDHNaVyrTqXh9vyfEKDU4H8D0y",
+      "acti_v9R6mRZBjFexagkuTchaf10jOnFKPmLc7hLYk4aawSe",
+      "acti_cFyubi9VOpON5ObTPlN30yw5HhXR0akLNqqQq0bYmP3",
+      "acti_UlHtCrMeNw3ci3WRi5dlmsuTy5PuHurrXchUvM4j1tO",
+      "acti_oEa3lXwJo3sVD07e17YTyEYZmQB6ZwUGrRqqgxplIcu",
+      "acti_uuTPDrCNSPRrH6g314ZaaUr0z56i5FPyLARLTj48Yf0",
+      "acti_oQmKwjjBRCktl6SdEVcH93ImvOLitjbG9FxMkFgPXqN"
+    ],
+    "sms_ids": [
+      "acti_6zPfT4fswljDD69tXUV9imOkTkKQbsTOcaVjZWYOwH7",
+      "acti_dog5xCCDaWGcKTzRuwPdKXfnh6jd5sJ7Nrv0PDmQipG",
+      "acti_7yMcd7HOV4Aw1ejZ3AqOo2S3i7nsQMylqXDGHXlKciN",
+      "acti_bO5DPDX4deolqqgmCHP5QCwd0fi70EyYGrYTqtmk8Yz",
+      "acti_BWTdytJEy3TO4KaihrfZGptVfOHA7nYNSU5vd37nacX",
+      "acti_K1r0TDqk1Bx3OhVnk3wwxyu40205FhtbgDyT5Ks0emt",
+      "acti_jAiMUIKuS8SPFi3wrksNlxYNpcXerwJjz9uog4umLwM",
+      "acti_7BcYZco3CLzHntCnosQjhrXsI4vGCp2QrmIZfjLIIss",
+      "acti_2CMavjUtLB8jcL93DAD9ShlK5o9ahGgFIVj0fckkoiT",
+      "acti_xfRlBBPhYo2pIesV6lZs50IdLAwKhWgS6OgLZ16M2WJ",
+      "acti_gu9qIX8XDnfwlN0nU7Vj40eCBsFYnBtKhUfAF3V5xIX",
+      "acti_UTLk7MHQehkoTs1L1leIQUqJXqVd0gsVx7TAboCcbFa",
+      "acti_4so7yeluO2yI6nMb0pXY1ECvsorePK4WzU8XQHheWbU",
+      "acti_hky6btcs3JOPOryeeJ03B81BreHN1qPTslwWNj45Ehu",
+      "acti_Uu6HvQJnOXAxHinIxgFvCAHKi1WYyrqTDZUzyuTbqHW",
+      "acti_CYiaoIgCorBS0DAvinV0JUZUmgZ4nj38ujXmzInkAZQ",
+      "acti_7xMt659sc7n2voO4j2pevXLKBOEQLOy79vpLTUvJois",
+      "acti_ETIWuL9TYTXPF1YO4Ao2eGlC0gHVGDnDwcKymgLneY1",
+      "acti_evI4uAN9BoCzfDXOSBK3bzddfYBvmhENpfq3j4eXyXV",
+      "acti_NcZ53BInr678relum0VYxV0rjdWj2BYxlmIkX66pxJy",
+      "acti_9Mev8glNnA7VW4lUURVeI7K1Vi8dGmaPuLLJzu1x1JE",
+      "acti_eP28gBCLiV3vTsd4zabdJvuly3qzT93z4AVU22vUWi9",
+      "acti_orhwWPwcR3p6kVamnklpOmH4mBS3v0sNAAYiPaMPAR0",
+      "acti_7GTrTRaxctIaQ5UweyShOYCgAl6ECeAZCwhcrPkoITy",
+      "acti_6ZmjJriQCsmIVP2cKG6dSRbOarkGij5w1cHXR8J5jB1",
+      "acti_9YoDKxuhlZlicgFetOYYrpUZ4JSG6LtjB0NhOuyk9dt"
+    ],
+    "message_count": 53,
+    "first_activity_at": "2026-02-27T17:44:05.791Z",
+    "last_activity_at": "2026-04-13T21:41:47.777Z",
+    "last_inbound_at": "2026-03-12T01:22:36.361Z",
+    "last_outbound_at": "2026-04-13T21:41:47.777Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Jeanette Comire: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get her on the phone soon"
+    ],
+    "created_at": "2026-02-27T17:44:04.163000+00:00",
+    "updated_at": "2026-04-13T21:41:47.638000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 85,
+      "friction": 25,
+      "reply_probability": 100,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "lead_id": "lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "contact_ids": [
+      "cont_WEAfc01G5d5bI0GJr4koeEY1llzozLK1RgRVXTIRRsN"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_Q2lWByxq2ztvm3gKsM2jURp5e20hwgBk8eYar7IpFKJ",
+      "acti_C0yz3Wenwu3yC60CS48KqTxd1liEhni7q5vPnMaXrR4",
+      "acti_xOPjrdUpHRw6RbzX0xGB6yPKZL89Xq54YeBPhSvDGkw"
+    ],
+    "email_ids": [
+      "acti_mPPvOJNqUWPA6JvLl0iEyPTEypwKGzLcMvGkyjjjeiC",
+      "acti_8DjZSOcMB1eopEhCIAy23BtXqeIfIhxVkBKe9Vxz6Xq",
+      "acti_idVr8Q0pFu9VzhFRmZGXCWDwegzJgjRKfSMZxeuHTaL",
+      "acti_JFxlnVyfAVHMx5fKktiCO8fdIA2x7oUoL8aLpWcOgUy",
+      "acti_wWPATkqS2SLoMk4w7c7YdfG8FbCFQuVzp1lhzqZnlcm",
+      "acti_VSAQtbD87WpVCJ8Q7joNKtHfAkYOiqgG3BY3RLLtucG",
+      "acti_7Z4VrsxiBk5blfASwqYcevoBGmXwI3zZYj5vd2Stgfq"
+    ],
+    "sms_ids": [
+      "acti_9qPeqqaXv7O98h2ymZ1373iZb36Eu9NhfQODRImNr9q",
+      "acti_A2phChcxF7NA7V0ovqMXHQJWMtq2TKGDf32m7A4oUHY",
+      "acti_xlcAYex1qlSchUMhgAKMtpzAfg1P8m2941J375wGZJy",
+      "acti_XVK2EwVVjNU9JPLT6XCHBdIWpcpRbTdRDUG9ajyxjkN",
+      "acti_s6Xns1h0cPOXO2bZoTjZGJrfwbDhUrElKqlKNa9DqSI",
+      "acti_DadRiPX1cex170bEiUFvMRUIQoZfRVqU2CE02dRo1Ty",
+      "acti_LwMTGHOxXjrNx7BcK8bxM6mqBsje4lE0c52OHwKt31q",
+      "acti_JMIHytxWAeyBEghSWvpX3j5p5tGoucE69Mn53rKRY0T",
+      "acti_KHL3mzuZKINZ4ONW0lun9wLQ8fGFqx1M0qnFtjUz2eH",
+      "acti_BXj4bX1paIbe4EgkvUXFHwso2XB5FUYN97dSt2fM2LE",
+      "acti_DEnCKjAl6x2vBZtlhkURXoH9rk4dbgPylJeIYOM1G72",
+      "acti_oI7th5LTVY1q3eLAiJORah8FSkpXOLIysa4RIDHQmAG",
+      "acti_3goVgZ7WMuzYCaI7rCqZIAV76NgWBVZ3juySL2F5i6r",
+      "acti_YArwN0InuV4YVFy8b2ZejcL1oI5yQOEQm7mbPCakeu3",
+      "acti_bk5EY3r5O7LnzfqoBWby2tnCh7xVj7CBPPVU61sH18X",
+      "acti_BWX8NDxS3eRMNdaCa2WpALCDAfHu4kJ7uhzz2Ivwscw",
+      "acti_UeCkT7oh6q318QQn5Q575rIL1qjs542nTWhlIeR4O6k",
+      "acti_5kWlXoGnnkfYarJwDhiEPyULBzpYYSqSbLjzGzdBGiq",
+      "acti_Q0btOKdrstMPRTluXFjE28GmpOhbDyTLvqRo9cIWy3H",
+      "acti_S43Mh9D5b0tm21FB2hTeCRU2eTaVz7kWBq19gvl4lYv",
+      "acti_EbnuPekmdCGwHKpw9hkylwMonCjeFFYi5mLDkgBTa7b",
+      "acti_yhhc5NEmOsVRYaSLpIfHyK5ZTKPox9UREqgNFLGjnOn"
+    ],
+    "message_count": 32,
+    "first_activity_at": "2026-03-16T23:18:17.295Z",
+    "last_activity_at": "2026-04-06T15:55:13.862Z",
+    "last_inbound_at": "2026-04-06T15:55:13.862Z",
+    "last_outbound_at": "2026-04-06T13:55:21.896Z",
+    "current_state": "awaiting_rep_reply",
+    "summary": "Jenn Smiley: A: 🔷 07. Booked Tastings",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Confirm tasting details and next step"
+    ],
+    "created_at": "2026-03-16T23:18:15.345000+00:00",
+    "updated_at": "2026-04-11T12:42:43.056000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 77,
+      "friction": 0,
+      "reply_probability": 100,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "contact_ids": [
+      "cont_6Rujl1txLaavj51n4nRWqCvaMNXvcpeP2GThCTclUwM",
+      "cont_1jWppCMAy05XAbpzj5yXgxmD8qHwcrsmGFmGifE1n9z",
+      "cont_G9GY69YphC25h8sRkoPjging994hHVi5fKx9UpuAAUd",
+      "cont_WbzBlk7bSjelai66AZHXKNOVSsN4aaUJB9rfcuqLY7I",
+      "cont_qsuZXNCDzOSJCZfyuK8rloklWbM8Z2IwUBFr8XRezU1"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_IQKnmOkX8cWbC9LEum62DQgsXh322eFUK3UKXvTCvaZ",
+      "acti_VfNV6tK9jaCkl95NuSSLrGLZwUZlSRZuTKwOaCfVsBU",
+      "acti_jGfEQu90nbJ64RhbiOiMPAPkLW09t7iBrTe4OA6VcOd"
+    ],
+    "email_ids": [
+      "acti_RuR91s2NFljMof61STg8CfaA9XpRatr2HUXtrB4C4IT",
+      "acti_OWp5VWoJ5VBbl17y21UwyMmWAJApuarnrcN16h3y80Y",
+      "acti_8KmuNASlzvIy9zuvQLdm3sT0YbPpXO2En2BPdDtRj1G",
+      "acti_Mt8GtwKmZWrXpNzs2NQn0GOwkGFa6eav5dBXdxapNLH",
+      "acti_2CHEkPwMSu7w8ir9eHVgmR0NVO22Kjlv0z047IFnsfa",
+      "acti_8Xd7v3VBI9Rs8IVzKI4pamQs2z323n5MF2DQT6UcRfK",
+      "acti_maWEMQzymEcreS6rUOQyDYvt7rG7M5x5AhikEOgr70s",
+      "acti_cPEW7CR1qjR5wxhifbXXYTWy9NOeBTgn6GGHH1fEsoY",
+      "acti_96hmJgcyrEiFM0qUZJxVo0GDgSEMKbnSNBJKbMJm07J",
+      "acti_JY2oWvPqgBtzPC2CFU6STiCYvRq4El6aQo3jCxXlMmv",
+      "acti_mwvZSMWtmJM2lpkmcy6Ox6n2Hu4AiAchEb7UNHqy2JW",
+      "acti_xSrruI8ws3rfYyxUED8tykydeFw2Beh1xHXZGcH05Lw",
+      "acti_tTHLjiW6PHdACIBJ7i9nJnp43Em6QWrZimXi24msm08",
+      "acti_F831qladFISkdOAofCMTd9sYCwJGbagPzalf9LQLBQI",
+      "acti_Vr4tGfWtfcZMWLkUXvhCcOuP1RVnDyjpX3HxZZdRpwV"
+    ],
+    "sms_ids": [
+      "acti_UIOkFq66eKDXrVbsxaObsAXtWar94EosqxRuNAPixbN",
+      "acti_IJJivBTtMyQP6RJVyszA4i02v0ku9BDrZvZs0pSfOnG",
+      "acti_E6hRyHkQXxzd5ySQAaEzOWR1SFlD5bUzOxEowYKW6fG",
+      "acti_NEntzxqhJqbxmJNr3zGALcmTvxmtBXMr4miKGhfmcZW",
+      "acti_UQaGRd0RXlxmbFTjWjssaNdwxogKRJUmrklwexUKURD",
+      "acti_ARrFIHZRsQsWIgLhMQlQoGjA6lJjIcTX00aU6wKc38X",
+      "acti_LDjOF14hpVb3pgXtVfdXEXXf2L5TmTBgUrwvYKCLENf"
+    ],
+    "message_count": 25,
+    "first_activity_at": "2026-04-06T22:14:01.677Z",
+    "last_activity_at": "2026-04-13T19:25:58.434Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:09:20.388Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Jennifer Jones: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Engage & Sell a tasting"
+    ],
+    "created_at": "2026-04-06T22:13:56.586000+00:00",
+    "updated_at": "2026-04-13T19:25:58.571000+00:00",
+    "sales_scoring": {
+      "momentum": 76,
+      "relationship_strength": 42,
+      "friction": 25,
+      "reply_probability": 56,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+    "lead_id": "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+    "contact_ids": [
+      "cont_vbMPXEI80XXanjEjxydRU1joGP4MEzMaz8hgj46X47S"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_9ENfxloz6gEGVVXaJhLzSb0nI1UjXPLAyXVGo5epkiS"
+    ],
+    "email_ids": [
+      "acti_TpvrKaJfvFLTc1tK9SBojeT6Ssc5b0in5iLUrDTYgeR",
+      "acti_rLQylQlpMnhFel0uBaizw2AI5v76blC0s3s7iFUOdpT",
+      "acti_SEdAHygXWUf3JjlTVExppkm0zXwhEBGZpOznphfUMGF"
+    ],
+    "sms_ids": [
+      "acti_CGkfsqWY6Hp8ORHo3pyJAthPPVtsCdqoH5MSZgnIMEz",
+      "acti_qMVLtzFIG9EjCFurM5NpSQQtvWoDfwyZ8hZLPY2ZJaD",
+      "acti_dlCtTTuF8pNxQqwDBiHjukLgGSovgU6Jqc2zd8DGSOW",
+      "acti_6D3pXlIHzVJxE9yLvtX6eJtAMcx86bfjtlqsfxlMPfz",
+      "acti_9LnfWjVowCZpVVD86KZJM3MckVF2b69DA4TK2qJEAiD"
+    ],
+    "message_count": 9,
+    "first_activity_at": "2026-03-05T21:53:26.718Z",
+    "last_activity_at": "2026-03-13T18:36:34.817Z",
+    "last_inbound_at": "2026-03-13T16:48:43.258Z",
+    "last_outbound_at": "2026-03-13T18:36:34.817Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Jessica McGory: A: 🔷 08. Long-Term / Dormant Followup",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Send reactivation follow-up"
+    ],
+    "created_at": "2026-03-05T10:23:48.440000+00:00",
+    "updated_at": "2026-04-05T00:28:03.240000+00:00",
+    "sales_scoring": {
+      "momentum": 0,
+      "relationship_strength": 41,
+      "friction": 35,
+      "reply_probability": 34,
+      "clarity_of_next_step": 45
+    }
+  },
+  {
+    "conversation_id": "conv_lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "contact_ids": [
+      "cont_5AsyMNiDrTT8UZrlsj3ZJvRVCn0Kl5ge1MiJjqC3R7R",
+      "cont_BQXcdeKDVIEmDEddty2kYzor5wpSSVglgdtXcWYV07D"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms"
+    ],
+    "call_ids": [],
+    "email_ids": [
+      "acti_EzHhRHvRXF2U1UHSf0ur3tdlkg82FNc4lQddBh2xfPX",
+      "acti_QHJYLd4WUAS0qJABBoEsCe8dEqJOFJemufSaGx66Dlw",
+      "acti_oKGMti1EArdZLuc2aFxdguPhsseaRFI6hKyPO8Imj7V",
+      "acti_j3BwWxCF2OItZf1gRIo1RGkAUiEPCCJzqTAbR3xXSFN",
+      "acti_Ij8OmDFxi03vWoNz68C1uKvMCzOlXQilnZCrSqYD5F9",
+      "acti_yDVvSS5342Oog5WSJpfc8pMxjXEk67SVW9E3U7Fpeas",
+      "acti_u77vxKvOMmHjD7jTKtOfRWC9MPWllPIZ7AFiFjLdgEU",
+      "acti_HP9icA1xqCsMpvlEmxftJGR95t1grm0QuYH5DXWH1Zk"
+    ],
+    "sms_ids": [
+      "acti_9pg9OAjA9tuDxP6vH02I6oMjBjJPGSnlxnAzDgNtSHO",
+      "acti_AnX8Dmt6BscBQ6Ui7t4Yh5O0Zvn5Ohqv2GPn1ShfEjd",
+      "acti_4vcX7DzqPIIHmUExR3sQB32wtlr5qDs6uHxzG89YlIF",
+      "acti_Lq2q0TaQHbVBbJUytdSt26Xe1qm0XEmBbM1vmzU9YB0",
+      "acti_R6u3g0veSd5cz7vXcujL6j5uh2QF67PjvVBjBun19az",
+      "acti_6LguQXC8c0PIojABXiMqiV3aEK6ufGbkFDfGoTryO7L",
+      "acti_09vEC8xrZAKbyFCj2sqIHRtMd4WJv1sL5Rkr96yqAt5",
+      "acti_HwLDK3mibDuShQRPRzsWsF0mGZ862zULZ7YKAJ1Q5yF",
+      "acti_Dq6QIyxmzPBKIxYqrtmDq9H7lmKoczwzIjKbTEh6X1R",
+      "acti_DQQVNhfG2GIEeWa6hSfsBjHrAVcVHM7er8eVHfOmgxK",
+      "acti_eksq8QdoudCjkc5dQS9737Nbdtsda1e3tPE8sqXtKYw",
+      "acti_AFBvMOckrW5CNF3PIMZf1ReLM4u94mTjiYpS7q8OUx9"
+    ],
+    "message_count": 20,
+    "first_activity_at": "2026-04-06T01:43:18.632Z",
+    "last_activity_at": "2026-04-13T20:21:16.162Z",
+    "last_inbound_at": "2026-04-06T21:12:41.880Z",
+    "last_outbound_at": "2026-04-13T19:09:25.279Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Jessica Molina: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get her on the phone"
+    ],
+    "created_at": "2026-04-06T01:43:16.202000+00:00",
+    "updated_at": "2026-04-13T20:21:16.272000+00:00",
+    "sales_scoring": {
+      "momentum": 80,
+      "relationship_strength": 44,
+      "friction": 25,
+      "reply_probability": 59,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "contact_ids": [
+      "cont_5egvkfFDhIiCMpakSJiW2p0MjN8yoS30S8DxxXsd1sX",
+      "cont_fVwpV2IZHkPCemxV0Jyr9K9RELoGVwBiDkIXsvOMi1T",
+      "cont_TyvW783SOp5pymjSgeFbcFeU4QTGej1OngdkK6cL6Kw"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_oAOWpG4GNo14JnADdVo6p4TlTB1G8HJoBcq0IyAbOzm",
+      "acti_fjox0Y142jTDplqvuf0GkdZi3iXo3SwaJaE3rMWzHHC",
+      "acti_CTh7MBYrBg8G8G9z6YZYbHePSrl1nXQyvSzwWkjp0u1"
+    ],
+    "email_ids": [
+      "acti_5lehGz6VIpaIaVFdLq9nasljEXVfEOkUt7p1hfN7bpn",
+      "acti_erPL2Ox9vqMjAYmklyw9WlXkNbbYewPDPvtoevneCL8",
+      "acti_KY4rYh8WL7UQNiC4IaJHUHWPcJ5ZpTwxERw0PPQXYfA",
+      "acti_PCY2altZDhETrwkU02fAPTkBqcwblxb0O4MetPgpm3E",
+      "acti_mxWB81SycCcQIyUvON3532SIX4gd45hmazK5H87nXKT",
+      "acti_2jD5Od30XMBXAij1H4PV54tdzpNwwcDlOkzXZnoCE5Q",
+      "acti_3S6UqeIsivIfhFtjtvmUa6tpa1Wo0DqxBGdW5tew59x",
+      "acti_iPVch4HzHa0HC3yOTzjWm1ZUW9pYPxg6sNKFOjcit9U",
+      "acti_M4UROftQTRvhuNMOAtlouqhwyIwsZgQqztD2C1gvUhu"
+    ],
+    "sms_ids": [
+      "acti_bm4ZWYnGNbUM4Puk1C5crQQIzjW6vOap4EnJihVIV8Q",
+      "acti_rQfe6TkkILHFPAcRWPRT7h9WJKbFp6HVEHYlQcyXw5h",
+      "acti_pqrBPQZsdFpsCwDCZsFkcyQoDv2FiyZ684DywCRiYub",
+      "acti_kYtvovDF9o2FIIiJxDI2tA9mUlnRbv1UFsXJnfEoUQK",
+      "acti_U9kzSZHcnDy6ppxkIGgQCKN9ZqOSFZKLlOCFfASJpIp",
+      "acti_OdWZQlbptcNCErYBUG9qRXTm5JSl4CVTae5aPCgGzVD",
+      "acti_LqO5mZxdlpeAZ7IOeIhLlPypgpWA08x8uXviSGVtpp1",
+      "acti_XEO3dsI6ewhbHjpJKbdRdEkaiXcR0wGJYs6iUO8aIgu",
+      "acti_I8NCCogZPFXvaw5mFWoFXgaRIZQUHhWar31x6nN3hyO",
+      "acti_Gler7vqQVN9LqR8QFi7729jTOKzhdTAIZWmoJP87Hd8",
+      "acti_xFLO7BQEY5UMjzv01GzBDXkZ1AOLHru1Brx645lKh0j",
+      "acti_Z7kNPwMG4lXnifEjaGwy3x2F7lpswsb29hevDs53e5K",
+      "acti_qN4oQzVJeC9CFwmVxx1JfSC6gNg5cfQTNPxL5CKKNK0",
+      "acti_YxAVco7hdEibDqJle925EkTcatnrr6G7jrATAFypeAA",
+      "acti_dzhF9D1PxGpCis0HbGScRfJRRfh2525nbVzD0I7Tbxu",
+      "acti_sFA4UR9FsfVvPoIHqvq0th25AGILloBGM6BgRQIhKPF",
+      "acti_Me6XBwmNZ5c162yJXxVoWQHzm7NxrX0As1onHUnGMvd",
+      "acti_1n3jY3iRCv1PVu8Ly1ghvIhwkUzfwPX6o0tHLOon8PA",
+      "acti_bgxY8i3EYbSB2YxAAi2IV2oFmyQirMeP6U3DnCahFD3",
+      "acti_NO6P2WR2M1F9eLSR8I3qASPUulu1ApZHFrSkVKd5mlR",
+      "acti_ugNW45Z97lnNIv6j8OOkFxoPQGI4S7FWnOlnZzLlIXz",
+      "acti_npI7jBA3QHMDucjdJJgTT97FjB42zUpEwac6BxUwua8",
+      "acti_tiF5QnAlTFuza4W4UT1AT5cGkOqgt7LEUqvGtOSswUy",
+      "acti_VU5tk8CzSW5EhQdii0uXILIKI9rK0duszPspfMUJoBJ",
+      "acti_Q76J0ozDpTW5R4QSWnRW8fsjkey5AarI1OqoNiZDMef"
+    ],
+    "message_count": 37,
+    "first_activity_at": "2026-04-02T01:03:01.292Z",
+    "last_activity_at": "2026-04-08T20:37:49.869Z",
+    "last_inbound_at": "2026-04-08T20:37:49.869Z",
+    "last_outbound_at": "2026-04-08T16:56:29.661Z",
+    "current_state": "awaiting_rep_reply",
+    "summary": "Jose Quefau: A: 🔷 07. Booked Tastings",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Confirm tasting details and next step"
+    ],
+    "created_at": "2026-04-02T01:02:57.356000+00:00",
+    "updated_at": "2026-04-09T01:28:43.378000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 77,
+      "friction": 0,
+      "reply_probability": 100,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "contact_ids": [
+      "cont_bZ2VHgYSqlCAiCXa74EmHGk3uH2OdJkNdnGZuPPTi82",
+      "cont_M5YURc2QHud7V01eSZgd3u8UVs6EzATGtBLkBsrcCKx"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_DUQZlJS2tLCx1lVXTcldgOgEahFs6CVMgMJQcPXMdMW",
+      "acti_ajHJRJ1TMrVt9a7kPzExrnLEf2r4DeOAIA2imWme624",
+      "acti_MKWEzHAQo04s5PerdeoODr8Miyv2q2X6jcDDYlxcno1",
+      "acti_7YEW0351OkgXFaS748FEXVtDlpn6uWPMGFnSta9fbQB",
+      "acti_SUEEGjQXbwwytj1ZSQiL4YvEfsSXeN5RRZyfJkzM9WE"
+    ],
+    "email_ids": [
+      "acti_5fbxn6AGdZ4T2ZDEW3W7OsnbHt85AqJt9blMbpYc2yQ",
+      "acti_iGbOHpFjISFIUDEOHFFFr4jpgiDYKhQYdPhkxzUemKS",
+      "acti_GjxYDFsVFSbo5zuVl4MIY6xewiSYuL9hsXUuzt2tXjV",
+      "acti_ZE28EbqySfaEDJ5VWcKn2ndr8wAkfBZN5mlhmFFkDcL",
+      "acti_QNbrujG2RKWicUegRf1PZMdRGQdSmFugW4VfgaXNrhd",
+      "acti_8N1twZmeNZUXoPMAF9BlVIHqBxoX20sdCCPk3u3Yg1G",
+      "acti_mIb2Km9WJtljecoDW5SSDERT0Nkhf4yI87bVRzB3YC9",
+      "acti_J8pYQggqUKnvYdWHydqoB0SFsQBd9CwGk9awErBREEE",
+      "acti_wtC6T8XKoSrcsxFPZPK78FvamVIjF2TkhPt68zA59LC"
+    ],
+    "sms_ids": [
+      "acti_Hfj725Yfq9k0oYhyR6C2nnjlReyFFIuFiZUPH0q1CUZ",
+      "acti_YSYUWdmq1xqW9rodXpeFlN2FMVEIXvQF5MxDVNMkaDe",
+      "acti_oLqYyn2fNPP2guxHkMd0mduqSQiC4xlsjyqk8ZaQHQu"
+    ],
+    "message_count": 17,
+    "first_activity_at": "2026-04-07T20:50:21.992Z",
+    "last_activity_at": "2026-04-13T19:51:18.765Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T18:00:29.550Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Ju: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get her on the phone"
+    ],
+    "created_at": "2026-04-07T20:50:20.599000+00:00",
+    "updated_at": "2026-04-13T19:51:18.898000+00:00",
+    "sales_scoring": {
+      "momentum": 60,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 60,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA",
+    "lead_id": "lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA",
+    "contact_ids": [
+      "cont_bXfTODDp7RgNDplYbF8COxHneUl36zK3NW1Wlvky8Yz"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "call"
+    ],
+    "call_ids": [
+      "acti_xhVaM38XZwIti9fj0FQbn7JKBoWuWOXVu54SGVz8EEQ",
+      "acti_5XcYYrwXoJsev7pRl4Y4qJFapQQYhqXzOA47kWpEW2F",
+      "acti_vX69AhO8AJFmnph4ZSMRpygbQOpLp9N46Dq5qpP8WPm",
+      "acti_EQ89UjfxGJAy37voD1716Y1u8Br2qUPDDbVxLrrAcEv",
+      "acti_lzzId7gqcXxSEi2vI9dhn5rTDMBLfHrbfRdZPMdPXH6"
+    ],
+    "email_ids": [
+      "acti_6KgDmYgD5lJPfk9Jq74ziRvnwImLecSlDtVQ9pZiy3x",
+      "acti_hT3fSavoAcEekTr2FyCkXNO7F4qtIygGOCN229pUzOe",
+      "acti_5zrbd270ElWNXleuHtwCWJoHn3xYalKRmxHpUqtYXgR",
+      "acti_8wuJk10fiJXWDKgjMXfjJeAmapdpKY4bubgiN49GCNc",
+      "acti_aTxebI4AgbL0JVNiVQvycI7Q4fYFmZZ5KI3Yn1ivhzB",
+      "acti_tJBoz5NdgQdt1eRqTQufUDnp30FZ8TPSN9SGXO39W7M",
+      "acti_STPSb8UoTPD7XrDQfcYJ1u5NoGexta3HU9vYsME6wrn"
+    ],
+    "sms_ids": [],
+    "message_count": 12,
+    "first_activity_at": "2026-03-05T21:53:25.591Z",
+    "last_activity_at": "2026-04-13T19:08:53.601Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:08:53.601Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Kaitlyn Nichols: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Follow up"
+    ],
+    "created_at": "2026-03-05T10:42:19.949000+00:00",
+    "updated_at": "2026-04-13T19:08:53.186000+00:00",
+    "sales_scoring": {
+      "momentum": 54,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 59,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+    "lead_id": "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+    "contact_ids": [
+      "cont_txdy5GgHOV9gQAS0IzsuKg1xVemKqYosmmGEYQO2arQ"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "call"
+    ],
+    "call_ids": [
+      "acti_nZG7VpClDdKNvfhFN4SCrqjjHJ3xZvus94oCnajVi9g",
+      "acti_M3utRfq6M14szJABZ7ohE3KTXa9AIczWcTMUjlq75TR",
+      "acti_3zus7ACa0Lw5449T3F0L5mGKn12Zum1sm6CTl8M0ryz"
+    ],
+    "email_ids": [
+      "acti_l51Lm0mcILMpSBRu2PUV2Y394b4Lcen7ul9qDAetCSV",
+      "acti_MI2K6FR1NFm8rDM9aQ6m7aUFYZdiv0nEvvA66wXTl7M"
+    ],
+    "sms_ids": [],
+    "message_count": 5,
+    "first_activity_at": "2026-03-05T21:52:48.567Z",
+    "last_activity_at": "2026-03-10T17:18:04.934Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-03-10T17:18:04.934Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Katerina St. Angelo: A: 🔷 08. Long-Term / Dormant Followup",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Follow up"
+    ],
+    "created_at": "2026-03-05T12:01:53.994000+00:00",
+    "updated_at": "2026-04-10T00:33:19.962000+00:00",
+    "sales_scoring": {
+      "momentum": 0,
+      "relationship_strength": 42,
+      "friction": 35,
+      "reply_probability": 35,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz",
+    "lead_id": "lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz",
+    "contact_ids": [
+      "cont_dKxpxmB4nQd1KJ3uNsrLHxw6q2DotZwsGdWNDRJiDz3"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_r10Es7tQwFv06Hz1JNuqtR0WK0UhKBJOeXUwdKTEyMc",
+      "acti_1pUq0H5AW7Lg7nYwJDU5v18TghiMJWxCbtzIMfOIR3t",
+      "acti_Srlq6noYLGGqZ2Rw80uqbTeccuZqcmY46X1052zYVbQ",
+      "acti_Lk3rWixRcQVZJ7mNccofcJPKheOkJsEM8yFaAJSpwsR",
+      "acti_o6zk93vsxV8pVsJ5cuKvGVs2Tz1fGFucas3sAs8Tio0"
+    ],
+    "email_ids": [
+      "acti_7xyxoquVI7M7CYBKt4aTZZUjTuxyNlzmOq4CVxwlJNM",
+      "acti_RqWWbUiLHBVqx4J3fVFOLcKOtRPUiU0J9d8iLrsftte",
+      "acti_QGd0aFjy08009AzbGoit1ZDKhljXb9Ca7CisunLa1u3",
+      "acti_Y3GqIBlnzUDKHhJa9wTxNav1mLUGVouxnsAyLGNcTUV",
+      "acti_3lpqep47E9FhovgIC20gUa0qjGm9YUYl136N1Nitm56",
+      "acti_b5EHtEKETEOGLs0jMDViPtUb5NNPwYwgcK18ehgxYY4",
+      "acti_ncciJWamVENrzAtugd68hAuwDWctvHpNxN0SVFHlTVz"
+    ],
+    "sms_ids": [
+      "acti_0DgYy3TFLXdMt9GYLIyXwJXAct5zYMg589Lu8wEZ8gJ",
+      "acti_fg7SkXrke3LvOpWcXIc3oaVVwO1R0nc9R7aQfSlDX1B",
+      "acti_9u3EUnMCVoaWTlArTucwkvAVPOWyvZqR1GDnZ36iIBt"
+    ],
+    "message_count": 15,
+    "first_activity_at": "2026-03-04T17:42:15.139Z",
+    "last_activity_at": "2026-03-16T17:13:14.547Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-03-16T17:13:14.547Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Kenia Valdivia: A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Follow up"
+    ],
+    "created_at": "2026-03-04T13:37:50.390000+00:00",
+    "updated_at": "2026-04-08T20:04:51.891000+00:00",
+    "sales_scoring": {
+      "momentum": 0,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 45,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "contact_ids": [
+      "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+      "cont_tn5SVG3y1DD5xn7MbElwuhbQpG8MNNoyBpmpDd5A521"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_CZ2ncixVz2VwhuRZNzoN1sxyFl9Hc9jIuwbMqmosH5M",
+      "acti_Og9E4OxpbYVJFrHTLTPSBMBv9xARSJOr2T28WldfWqc"
+    ],
+    "email_ids": [
+      "acti_NPoqhrIq96rAmvJpWLVZDVReiP9pKEjbecYnbDbcsG4",
+      "acti_hSfO8sCFsnzCZxLqaEYvpf8KvyxQONRoVzEDq15TdZn",
+      "acti_NGcRYZ2xtbkLTnnzdwUaG41tFK4oNoCX6B0zQigalID"
+    ],
+    "sms_ids": [
+      "acti_uAdQtphms97xMBIgucN3AzZzKJFumLSD5K27lgXCc2x",
+      "acti_CJQwHvl41TeewIId2gQIdunDPmC8pHm7JCwiSTzmTTG",
+      "acti_8X2fTKrR72AJvkZjRm1zooay7pAOQvh1oanDZZtndkc",
+      "acti_vhOsHkgXcKovcBnht9dPudZ8WXdEh4JiTJ18pJEXBxd",
+      "acti_AUPD53zlaDos2FVpaS8joNC99SpiLCAthdk3hCzPmVc",
+      "acti_rrR0DcNNdVNjnXuHO0VdD0veUR3vcJqGgbSxDRvCbVe",
+      "acti_RHdG0fyIaxB08qh88HS5k46s0YD03VwFVvF6YMDG6ZZ"
+    ],
+    "message_count": 12,
+    "first_activity_at": "2026-04-13T19:14:58.866Z",
+    "last_activity_at": "2026-04-13T20:31:10.636Z",
+    "last_inbound_at": "2026-04-13T19:59:13.271Z",
+    "last_outbound_at": "2026-04-13T19:57:28.476Z",
+    "current_state": "awaiting_rep_reply",
+    "summary": "Laine Martins: A: 🔷 01. Today's Leads",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS"
+    ],
+    "created_at": "2026-04-13T19:14:57.338000+00:00",
+    "updated_at": "2026-04-13T20:31:10.757000+00:00",
+    "sales_scoring": {
+      "momentum": 68,
+      "relationship_strength": 59,
+      "friction": 0,
+      "reply_probability": 76,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+    "lead_id": "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+    "contact_ids": [
+      "cont_h8RXrkLOVWGfJO7nB6VGTmGiU8chX6idodFYWjXpwqj"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "call"
+    ],
+    "call_ids": [
+      "acti_waNcOPYVQQLUQCJ4GHY5yJcH9W0tCWntW0VAbIrPZxf",
+      "acti_C9Hy36hGNO2y9aapDxyBDfEMMs1cYvTbETy4fcAf8cI"
+    ],
+    "email_ids": [
+      "acti_YHkGGkEJe0VLn4wUVCzBssl0k5nW7sFVMSsWzLvdO7W",
+      "acti_GguC908sCJfHV4DjVC782pqGQlNeUnBV7G4pRdC4nst",
+      "acti_uOuERVJgnpUpadc2NaAyTurAS05cbdeQDyCC6gf8pfK",
+      "acti_xVD8uaqatl4WnXNUxKEdeynwsPwUc7MXy10nUKnO1R9",
+      "acti_BcXVLdNhiyGnRJIeKQvsEP2Xroy0U7cCcTjniMRrC2X",
+      "acti_Scu5nDgFPrSFf3KUmrYTqXOJHK9N17LX3eD4oEw2Pnv",
+      "acti_opVJeCvtwq0cWJZx2QHZp5tfmBeRWpZ79Pu1rTjby11"
+    ],
+    "sms_ids": [],
+    "message_count": 9,
+    "first_activity_at": "2026-04-04T19:21:17.000Z",
+    "last_activity_at": "2026-04-13T20:46:36.255Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T13:00:13.369Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "LeaAnthony: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "[OOPS] Please add a task to your most recently updated lead"
+    ],
+    "created_at": "2026-04-05T03:45:30.149000+00:00",
+    "updated_at": "2026-04-13T20:46:36.368000+00:00",
+    "sales_scoring": {
+      "momentum": 42,
+      "relationship_strength": 38,
+      "friction": 25,
+      "reply_probability": 44,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "contact_ids": [
+      "cont_n1jKJnE3WjJgQRa0uhBioNUXzhIEmwP9bK4tYorh0ge",
+      "cont_bzsly8zfK3pr0gPWH2HYS69bSFTbk0icGCERPqwOGlu"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_u5saqAAWtFEbDLSsLdrWDzkSjIGzFy09pqJ8fJD48YM",
+      "acti_TIZULZAW7JwC7ls4Xmc44nHdfGRgH5dsiIY3RtT901E"
+    ],
+    "email_ids": [
+      "acti_ADqpp0wiuk1osfVrQiE8oYM0HJ7vVViXc9K9AdOtc0H",
+      "acti_OfnH1JVsrYzKzAhIQMrK51QNbUZoSML6aVGy83dut8E",
+      "acti_0cOPlVVH25zbKJ49cDaerlBBUJmSxL6tAZTrrwywnOW",
+      "acti_VjXK56gmBemRARMFtKWJsFhBaOmmdrC0GYXsOeVRqk1",
+      "acti_4lrFfscuXuyYczt9gTyXqKrxUzR3orjh3BgKAaLNJLl",
+      "acti_Woe3LnMovINXmVdE5n6kjN8DQZLViaGc1RiZ16hDnEZ",
+      "acti_BVkbqqR5VK2leM2wbFJ0HG9butq0MWJ6uiJx1UJYTMc",
+      "acti_olRfjrL3hB895JJFIDkn2vOAhKIUXDT5F8lUKvELCrA",
+      "acti_p9SigwvQ7a7Vd3BznQhqFycPyMG8krGSnzhRcmOZ8t2",
+      "acti_4HjxVo97gn323IvFFwjEH6d1EERJWcRpGso7FGYJgg7",
+      "acti_wG7vIT0xs1Rvgj0FVOk0lbcQXYce79mWmslOZlHPMoI",
+      "acti_b1Nw3udpLtDvxgtaTZuJGFjI2HzCBIXUuQskDD1R4tJ",
+      "acti_8ceUEtDSda7ItnV1owTYrExAjEtSF5w0WNEXtU1i0k7",
+      "acti_y0mPRL776u1iCHOZh2WAUOwLWyKpHfjj4G74p9n66cV",
+      "acti_wcRZsw1ggd61MaCOb42Ob8KGou0tY6hJDLpVVeJbPWd",
+      "acti_RYnYSe8Q5Uu5Tnpb434CSstBwNIM10ke3oz3UJHNE6A"
+    ],
+    "sms_ids": [
+      "acti_edQz6Jf9igLWjkR271JHBXJYF1hIgkT5Ze3eXAVNglu",
+      "acti_XprYzPC9MNrk331s3x82ZjskHGRKODX0Xb87Usa2d4l",
+      "acti_E6dkWXDy0v6hl5zGdQgULSTewYzuS4YFv50GeGzL4M4",
+      "acti_mKvkRZBa5yqsnIbPDxBTj9xYyL7mKzxaLB1ZCut6vdW",
+      "acti_WMbHLeYVL7pRUB6oz8DhQ3Dy1mgU584iuTeGTy1nb1M",
+      "acti_DJlhjV1iW3nWmwKyllQ44oyEptd3eF86jqnVovs7fyI",
+      "acti_UjUb2u19BN8wuoRJYQXYYpPYPdGCgHHkNCcBnYabJ8K",
+      "acti_r5TMr7J1teHUqBQ6hJdHHvAKLRXnlvGtMI3qu7qLrqj",
+      "acti_usE5FFoprR3lFJdHui6ZGYAT8VOkjha8AgcO7J0OBDC",
+      "acti_Gkj5eyyDl7dSm3ggZHPi79bvLhvEYcpbggaDLgIPDGS",
+      "acti_T9XwwkeoBY3Oc8uliThwZ7eXbanv8wwU5DeDOOo6lTJ",
+      "acti_XLlxawnNeML5YRI77iQA1w6gdmpOqhKuwF364QYhabu",
+      "acti_ThFtJc8fbo3lmpLdYSAGbeftF6qLDG0IHNMHm1eckm3",
+      "acti_KQs6CcQYPzUdUGJUKjPmskIdRZMVEH42ju1Ztx7LtcC",
+      "acti_oujHEZDszUI52H4srvBQicb2D18LUgWNXwWYaO08cZX"
+    ],
+    "message_count": 33,
+    "first_activity_at": "2026-02-13T17:35:27.585Z",
+    "last_activity_at": "2026-03-13T22:48:26.742Z",
+    "last_inbound_at": "2026-03-13T21:06:44.449Z",
+    "last_outbound_at": "2026-03-13T22:48:24.421Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Leigh: A: 🔷 08. Long-Term / Dormant Followup",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Send message Mid April"
+    ],
+    "created_at": "2026-02-13T17:35:25.183000+00:00",
+    "updated_at": "2026-03-23T17:28:13.257000+00:00",
+    "sales_scoring": {
+      "momentum": 34,
+      "relationship_strength": 73,
+      "friction": 35,
+      "reply_probability": 75,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "contact_ids": [
+      "cont_lFXkcwyhBqXHGUQMzQbdjLlfywM4BdXMynbeTZMkFNd",
+      "cont_UzDgSmFtKwG4SgZDgd1jlyNluXRj7ZtvmuULj8aGlSX"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_Ic9oxmfejGm23Q6iQbtkYUzpGGbSoLrAj0Pkwh4vrLZ",
+      "acti_8KfjSMf9Tz0eI8Qa3rcMMw5ncAsa7ZbQEXvcmgoL2Pm",
+      "acti_Gxlg65hZkthzIgU21jAKrw5AyxvN4R3eknXOWS6BTYZ",
+      "acti_QOlIiX8gIQrZy4wixSFjbIhc86QNXbqyPlJoImYjv5v",
+      "acti_XVYwDRzABGPm1NToa74RWasct0QR9DrVJKHsjTiNgk0"
+    ],
+    "email_ids": [
+      "acti_F00tDC8c98DaftWB6KTWbYaaNFdDLR5F0oKFkqSw5MV",
+      "acti_PZiv5FLXEMIPL7PPCHjouK8BLPhIy4gMGe39FdmYRag",
+      "acti_0G0jT8gaphswxTUZlnjvFEsOKfEK2zxNLsVqVf5H3Bo",
+      "acti_Vt7MzauGCAnT8NMxRXEqoySWNGv36n6VDek4PpTrqpL",
+      "acti_KcU5cQDDiBXKhCCua5NDIUrWzhuxFP1xaBpnkYfXg6e",
+      "acti_uLElZmuNyoDDxckstBJM0PKfWIvOBYqfXbEf1xFF2yF",
+      "acti_LYbVy2UlhJBuX3Tk468UKBuR6eGeDmjVcjetwfcVJp7",
+      "acti_nRypJU1Vc5VBVsegP7UcFFGZioKRAnbGZAya6c2t660"
+    ],
+    "sms_ids": [
+      "acti_FmGQ1peEyIDLhv4CsH7fpSnDNCORwZiwhxTG1pvKTgC",
+      "acti_YkHTPiakzgpjijUXcD6UtLQTqh1PlRzwwoM79oB8MsU",
+      "acti_eD5h9m5McpTSfwIYG0tYuasaERqU9fDU1gm4sTr8mIJ"
+    ],
+    "message_count": 16,
+    "first_activity_at": "2026-03-21T21:02:36.512Z",
+    "last_activity_at": "2026-04-13T21:14:24.870Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:14:24.870Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Lisandra Lopez: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "[OOPS] Please add a task to your most recently updated lead"
+    ],
+    "created_at": "2026-03-21T21:02:35.078000+00:00",
+    "updated_at": "2026-04-13T21:14:24.374000+00:00",
+    "sales_scoring": {
+      "momentum": 62,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 61,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "contact_ids": [
+      "cont_DVg25gUjE9oxGOC9VmwUeJNhI63wAiOcyjoEWTDZFG0",
+      "cont_ZaXNzXGpyvdvQKImdyisUqeRTasxoyQBlSJRDTIxluz"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_C0VnhgqmuuOHCsbNnhdly6iJtkGWftjYqOC2SW9TJzo",
+      "acti_aDwX8DiysBPQh6Y362Beq4o2YSw7Dy9jIeVw6Rj2inG",
+      "acti_BmI5WQ4LlwWqjOOFieYaCWsVndOTwDhcAhLoj6INJAu",
+      "acti_g4p4VgKKkEiPI8CbbituBgX0OoBGdJwD1yNB9eEsdtE"
+    ],
+    "email_ids": [
+      "acti_M70KG2G8JnCY8k6BMQBCq2D0yygwhFhvaH9ll6wmDOb",
+      "acti_GuoAAKc9mnmYleCa89NqtDmACOcAsISzNs2g5V1wAfs",
+      "acti_YpHEO6Y2jHsYW2G5SnTd0gcT4880NOj0Fa3Ob8ucfZH",
+      "acti_YwXzXCNpe7le3NiiICFVg8PGYAyf2o4hRg3bw2Rv3Nk",
+      "acti_DKFuAgzDc3ncf9PkdJP5tMhaHIiGxiR6U6bszMDjWdk",
+      "acti_7huyUeT04SLp0TKHhdPw7sotTSEeXdNJbALw0eqv1bq"
+    ],
+    "sms_ids": [
+      "acti_MRVe1ZSgMT2LzsCx99I1vIjm3mqeOWdSVqOCybBHUdn",
+      "acti_he1MVDe6tpsjSqTeWiwOzijVldmhWVMgToBmc9y0Fky",
+      "acti_Q0dVQ1FLHj5s2iJRzXgYlpDefwBu0UYRQ93ENtYFJ2m",
+      "acti_EdQCjnDri01NaXVH3jpNzHVQ9w2t2nR5xTOFWZ27LJj",
+      "acti_7VWfeExJNzd9oSxki3l53sWS5AHnVNhKNWp67hxhvIu"
+    ],
+    "message_count": 15,
+    "first_activity_at": "2026-04-06T17:11:31.801Z",
+    "last_activity_at": "2026-04-13T17:03:07.582Z",
+    "last_inbound_at": "2026-04-06T17:14:33.543Z",
+    "last_outbound_at": "2026-04-13T17:03:07.582Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Maria A. Cutler: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "get her on the phone"
+    ],
+    "created_at": "2026-04-06T17:11:30.316000+00:00",
+    "updated_at": "2026-04-13T17:03:07.962000+00:00",
+    "sales_scoring": {
+      "momentum": 66,
+      "relationship_strength": 53,
+      "friction": 25,
+      "reply_probability": 65,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "lead_id": "lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "contact_ids": [
+      "cont_t6AFlLnseZvov0AZbwLMHDY9yP8GqGXOoG5lWm1n6iJ",
+      "cont_X8ItupBRFONuPGoB3lKVh4q03UAB8bqilAMMj2dz5Gz"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_Qk8joRBdbaHLYb5OwbqBNtKV7WCqgzXpWX4CgZd8Ge7",
+      "acti_3t6PzQdigA886xLMomwKb0PDO1vWXoFBd1ilT1uBicM",
+      "acti_qT6wSBGdLKud21h6o5GbS6XiyohGzuIvpwI0cy6DzLU",
+      "acti_ZD5KELPBXKM3os6AgHnEzzeUsoL1rqiKje71D3ZOjip",
+      "acti_RRdQB6G4RZqEYq5Q9qwGdhoXAqDm9M7qtIbGhgo0Ctv",
+      "acti_hXAwiXNUaFM0fKCAH8guBIqN3Nqc0YS8yHCRuyoBwvo",
+      "acti_7HhWC9HaLREYKRt85MAv3Tshwfq3BjaL27LNmC1oVSw",
+      "acti_1qK9LniPzd5hAdhek6113sdZOP0NHsVnPK2Qi9bE5O5",
+      "acti_IukSYJq4vjFPWoic1hegEp7W2ZLxCoXuwg7p4oBosFv"
+    ],
+    "email_ids": [
+      "acti_R0yiCv5Laz99L5OFwIWaKHg6fEEQnqEo3lKJ7I8yuk1",
+      "acti_rr4pRBb0Vo6Gw8p1tfDOu6FMf98nbYv3ey8xgWxB1oN",
+      "acti_vWnvr6RpXwOqCnwaoDCVQEkGaPbwAaAeOX8YU4hHaCm",
+      "acti_QNLBjiT3M4TXtcUppn1nAovEnZ14vJI7D1oWpOrg4Ab",
+      "acti_nheUw5qXm6xEztgpL0XWJzJXRshW8OFp5HHcVFXjjhI",
+      "acti_qdK8Hb7dMEJtpgnwMhyr2Aq5bxG1sJJmnFtjgEV98GL",
+      "acti_aH36R4d6B5w51mphdd6YRSkMZUNwwP6sAWJDGnBBpwU",
+      "acti_mccDhmpHq0XzmgrXVQ5EKsk2AedswC5VAyrzMmhEQkP",
+      "acti_AzE1pUcjWFmEhlTaBd9aHIC2s3UcUHPe5TU1QdVHAuQ",
+      "acti_8iZTH413fXilA95IJAti1FHCkCNnanwfOowbHds4AT0",
+      "acti_WpH5yjaG8HlHh5q8U8f2OCHos6SuYqMVT84ZeD6048P"
+    ],
+    "sms_ids": [
+      "acti_aoxWV7iHSSg0LEQAwLANJZ4LtY8TVyxthrwIRwdqQqb",
+      "acti_jmCKScqnRlQooRp2Yl90WbmG3rUeVbuirCjxjs8km5U",
+      "acti_Rs7AH9AsbBZlQOwLA3GMICao0dKZhmtGtOygXhsk8Ts",
+      "acti_iAZrp7DaQRQpok4Owi3Ko0uurf2UZbcI234Ifm1T0ew",
+      "acti_bCxKuNsa0Bw0czyEqcWOJYX8dPcn9YVw4Nn0Zz6HoGl",
+      "acti_HrnqU41HmubhZdcKxEQKdB3tw9MZ9eyVNrzEsTBYyB8",
+      "acti_dbj7a955bhW5KIm1MdA0wzF5Qxq1sD6KioSypziTGct",
+      "acti_hveoatsPZlWYpVbdCsWRhKTuiJln4K8hXqmaO4KLHYD"
+    ],
+    "message_count": 28,
+    "first_activity_at": "2026-03-21T18:51:12.637Z",
+    "last_activity_at": "2026-04-13T21:14:31.335Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:14:31.335Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Maria Barros: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "[OOPS] Please add a task to your most recently updated lead"
+    ],
+    "created_at": "2026-03-21T18:51:10.974000+00:00",
+    "updated_at": "2026-04-13T21:14:30.932000+00:00",
+    "sales_scoring": {
+      "momentum": 86,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 67,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "lead_id": "lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "contact_ids": [
+      "cont_HXoT7hKvOrmbKaUZoxcoU3W8JFfrzMejpPjT89LPcN8",
+      "cont_VyEbUz2LlF8ntPoIwddQHJXugY68bHV6Zou6O77negx"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_ZVfIXJWG108LUmrJiiOdx88HPrfyBmWOi4N29ZnOcvm",
+      "acti_ObFz6AijhG9kpwXHCTb5zBVa6YiuMXX6eCUNKR1mcAm",
+      "acti_T0KtBPEvYJfzXiOOWmvXbpdNSGjPI9P239tksGubQeS",
+      "acti_RL5ekPXB3dubYcE2ytNWIB4ck6pXxMGTybmRvCeKzeK",
+      "acti_Y61RfQDzue2XlnX18epUCFjB3g0RHCsAHzkwH7vRlEv",
+      "acti_a4WuBQP4Ynk7ipCIslAvtiWBKTBJYB14E7yU4tbz6ij",
+      "acti_n7Jymiwn4WeOqidPuReCKwN2LH2IzsyjuqPyJtdnT11",
+      "acti_aVoqttWThnjGHH8UAAjryD7zZwlNa4gJlVTxmT6Pue6",
+      "acti_aJHlyMYXGMTSSyknXJKbNhLaVhqoNAwy49X0Hww79hC",
+      "acti_AzN9DyTSW5wLCD7cV5OFHs7Zm9NIEuCVR0DmurQImTd",
+      "acti_gkklYIMPFmpXCKs6MQiDETSFhe3kNg9RQDKlpQcmgbb",
+      "acti_59GeGDE9VzIBDso4FK6bNrs94pEm7CPPhnNR5Kh1Xge"
+    ],
+    "email_ids": [
+      "acti_2oF5z5U3RXjZTRM62LQoSbIdXwbUDFpBjm6uUOWM9SS",
+      "acti_Jk5nRsTwZpFgsF6zxAKWweug2ZXgJGaQpclqYazKm30",
+      "acti_Zg2iG2xywz2PHSkj2hJiwFNilMUe0NSxHtZb7FOlO9L",
+      "acti_ubfXI1i1SSs8XrHNziKyRuVEngkPvqooNiJskPCPbvb",
+      "acti_0fC8h5uVF5Zwa1RCesaWkx03tFzxufFXufCuDOjBbk0",
+      "acti_a6Y8dB9bYZG89ke1d75nB3OIr5gNwSdWlLpnN3xNR3e",
+      "acti_1qqsTAofwXHIjrEcbfaiCwCVfe8GxvKlAdsW7Ho72oU",
+      "acti_LACa8uAip2YSZ0CcGSSCcLqDN7lAklLtxZflcGlVGmB",
+      "acti_gnqvwIwGAtN7UdpAokXBjlaUbxr2kA7fF46CKw1yjA7"
+    ],
+    "sms_ids": [
+      "acti_c2mXLshQvJtQ4XxTUK9Zh22KjJ6wmAFIxO4nhGYczJM",
+      "acti_F22atAq9y0MXovSdKBgKkXFyxzZETjNcfBTLmNIVP7d",
+      "acti_pRmJoGgBuZi4dxA754xvj0ScLo9PneI2UdWmrxkQ4hS",
+      "acti_UGpqWjEEkqRP8hgMI189QiJNQCYLWtZuGsi4lSMxgwQ",
+      "acti_gfp5wlyncqE86ThTGA18Je7CYdCVIUBMLOXTI1GOGaa",
+      "acti_aMZ9sDWpM0b505dOpBtWe50Bc8F1nnlfONuiQhKBx2T",
+      "acti_11pSbJgGlkqGFBVZwuxpYawQ9NhYNLgZeSNUYCo3mIs",
+      "acti_6R1ikAPdO6fdh4DTMUQ9RGVzEEIuxgovn4eGk37dVaP",
+      "acti_uWvB2pafxMeBro1ieow41O7eo5f575lue6zN8fFxQrB",
+      "acti_hCRUR6PPVDkfxeLeDCIOaphAWPVv6LVFFweMcPYkNOr",
+      "acti_DoijglDsNCFS8f1WyXrzxZtb8bVjoREjcDsAQ7RrQh9"
+    ],
+    "message_count": 32,
+    "first_activity_at": "2026-01-24T13:27:21.532Z",
+    "last_activity_at": "2026-04-13T19:09:06.874Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:09:06.874Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Marni Wheeler: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get them on the phone soon"
+    ],
+    "created_at": "2026-01-24T13:27:19.906000+00:00",
+    "updated_at": "2026-04-13T19:28:30.198000+00:00",
+    "sales_scoring": {
+      "momentum": 94,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 69,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "contact_ids": [
+      "cont_0pqCr42PP9VpxKk6KPJwtkvGncoxnsJ3U3C6bEIDjcd"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_o5ob6Zjnj0ftQxAz2KTTgk05vYGhwmRIGGCPuTnENAd",
+      "acti_u9nEt6nASbiK7j41McJxTVF8PGjmijLG1JzdXBZTZpX"
+    ],
+    "email_ids": [
+      "acti_x0IFi2E4gJArntEL0ntrOzQW4gkLfhO484f7M0Gsi6D",
+      "acti_hEjMdvbwrfgf3W3etJYOcrYs0QxrDgAgBWBY8xJFLHf",
+      "acti_mPwx6tX6ciLfzsdL7Md8YpHnEjrZni5vwp39i86iKiK",
+      "acti_vM5zn19N07HN95J8rDTLtVCJGbxlfP0m0BArFedmCCZ",
+      "acti_IfkGNbvixgRfe5CUHJgMxUkappMap9dVfgHnSLnmIh9"
+    ],
+    "sms_ids": [
+      "acti_sf9VftrZVILbMNw7r5c9NRkAtlJrhPrFc5Vt392o05S"
+    ],
+    "message_count": 8,
+    "first_activity_at": "2025-08-07T16:02:08.136Z",
+    "last_activity_at": "2025-11-11T21:16:51.816Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2025-09-24T15:26:31.288Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Mary Ann Hughes: A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Make first real connection attempt"
+    ],
+    "created_at": "2025-08-07T16:00:21.121000+00:00",
+    "updated_at": "2026-02-12T03:36:49.260000+00:00",
+    "sales_scoring": {
+      "momentum": 0,
+      "relationship_strength": 38,
+      "friction": 25,
+      "reply_probability": 33,
+      "clarity_of_next_step": 65
+    }
+  },
+  {
+    "conversation_id": "conv_lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "lead_id": "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "contact_ids": [
+      "cont_NFCYfzxSwoJKj49fJ2ta6tJxvrftOyO9xiSF758tjep",
+      "cont_Vhq7urEOePpnaaqv5JTwDGC7TWjgtfRF6FQ0RWsiHGB"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_21ZWG4qewmBAUUmWSg8CJM44FvjYgL60gPEsUcooFtD",
+      "acti_yMIoIdlVfbjSdxb4ZVkGTdbFrdNJpKvJU3Fogsh6cMz",
+      "acti_qAnI1B8AuzmeiJjmO7vdNCQdRzBdMuaHGuCQs8zAfLV",
+      "acti_QSajqGT5eUIUcborrnfspMQVELx3x2Fx0nE5E4mHlEb",
+      "acti_nWMNzZFXOlcb2KRtAoFsNf8XnyWfBRTH7S6hJL4bEuG"
+    ],
+    "email_ids": [
+      "acti_EQrUrVNqm85E3xECJBYAYikRv2KRdGfJjxXWfDDZCd1",
+      "acti_Nzn6anNt0cJghqo5599ga4pvkPIgHE4KfhViFxUXVjg",
+      "acti_aZUgcTnfDFZRAvkvQxhRbII1CVKeUu5YiAWoqeYOB1s",
+      "acti_jBLIYCumIHIWJ6GJGxyYSRyCXBEq22d7PxHQLOMuIKc",
+      "acti_DQwsKYzyFtzgRVExB8RIrKWYaAOESk6vP6s66xNVtDx"
+    ],
+    "sms_ids": [
+      "acti_Kv95tr3R2CPoYq3b0WsSq02JtwspuHaW8JOma0PqGNA",
+      "acti_OhsEQsPwR31L6OcD0geNbTBED5NVlSu8NWhS0zrg0U2",
+      "acti_dkGsekGB2g5FNYvU2cAtZBkSfAXPW4jmiTA0atpSOwl",
+      "acti_B3gDgluKqWx1f826SJlcGxl5F06e2PMdJSl8p472gtd",
+      "acti_VH5sCFiVlDlMXQXmksGk3l578jow5OC4L2dr9tUBAXE",
+      "acti_MdkC8iMzEUp0notn0x0tqEGhF8zEkcGJwg6uAlEehNE"
+    ],
+    "message_count": 16,
+    "first_activity_at": "2026-04-01T22:38:59.591Z",
+    "last_activity_at": "2026-04-13T19:09:47.959Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:09:47.959Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Megan Szwarckop: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Megan Szwarckop\nCampaign: 3 STILLS"
+    ],
+    "created_at": "2026-04-01T22:38:58.202000+00:00",
+    "updated_at": "2026-04-13T19:09:47.815000+00:00",
+    "sales_scoring": {
+      "momentum": 62,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 61,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+    "lead_id": "lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+    "contact_ids": [
+      "cont_Y72ZMUjjsIPF86bZsJBCESyj7eFHIYxTqqYZ23eXExI",
+      "cont_fihPbwTtSqHKAYDDBrQcxRSInBmRklS99L2hbfsFNaW"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_hJWXeQd1fOOSnqN0G0ORJuUWEQ44YRnbeWJWUCyfLM1",
+      "acti_rpCrnEtoZkwsLc5leZCki2DXTwavMVlFh697JBhQZ6n",
+      "acti_8kxlbsPqycpJ0OFPv964G7Q37WGUWJcOak21uW9PIyD",
+      "acti_WYp58w1oz22Migw8VTkYk3pN6LiIVa0WWPXWBnmE8AO",
+      "acti_h650cV9sjkP8ZYHABsIFnWH1zqJQ9ujtkui1NupkVL3"
+    ],
+    "email_ids": [
+      "acti_AXcgUOuYVT737fSLTdBYJ4DC5kkXeMmbF9ezaDSmV3w",
+      "acti_Nlmo4upv2dbap4bSVYzQeqFpe9rv1Ca8GXCVaZpeibr",
+      "acti_fVmhGfkdHhU38hzabwFeBddN1Z5ASZ3A0pUvIjiChfv",
+      "acti_WVnVu9APPF1QoKT8QTIuGFjJtdHUBRJCRKkwV7vrkd7",
+      "acti_EgviKsBeZO6Tr2KNRLVUimU9qqTLMmGnyf7wPqAwumc",
+      "acti_A3ajSzvnrbQ9xqTr5ksqQX79KXR5vtfFXUWMlvuNvH4",
+      "acti_6TxED1Q20BWsU67iJSpLW0hBgtH84C03zUn5SPk6DDa",
+      "acti_QAClBxQXFuBMkbdTs6fFV9NsW71qF05zYDEQPgrEmgR"
+    ],
+    "sms_ids": [
+      "acti_jmWErCXb0DUuzB5oPbIFU8dhZ9qllob3nKrZRVIdJNj",
+      "acti_2rwdZgfn6UN9SAdNxlrPhyte53Jjj6rsIHBhFk2ZgUy",
+      "acti_ULislywJjXu3iY1yNbBYx3QcqdB9yKqpYp8sWIiDaZ6",
+      "acti_mdiGji68JckZ4Ob5yGjZm2hwaMFwq6Ot6If5s3ShdXF",
+      "acti_Hjup0jD36LGmumN5K2vGUCC3l3lf6hjaxyz9xIGUci7",
+      "acti_eb17gARjM00rGhkm4mKCNFpP1btbhNOFSmO9YG9xM53",
+      "acti_RHbqB4HngGXEKOT1gIw5Naf7MmMDrhVcsQ1Nevx3UIH",
+      "acti_yOZN1fDO2aFgwUk3jQ0m4WMOQubdP55HZktNr6wOv4F"
+    ],
+    "message_count": 21,
+    "first_activity_at": "2026-03-05T11:32:45.664Z",
+    "last_activity_at": "2026-04-13T21:41:38.882Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:41:38.882Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Mika Pierre: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "NEPQ sent 3/13. Check for reply. March 29 tasting push. Facebook Lead Ads: Mika Pierre\nCampaign:"
+    ],
+    "created_at": "2026-03-05T11:32:43.288000+00:00",
+    "updated_at": "2026-04-13T21:41:38.458000+00:00",
+    "sales_scoring": {
+      "momentum": 72,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 63,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "lead_id": "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "contact_ids": [
+      "cont_ot7qFSrcSb6fEWgiDkVQ5HOqOUxuvtn0L0z7z7AWur4",
+      "cont_P11cM3CSr8LjpBwS17NqgK11fjLDPreZseQhvTKxyP3"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_xObGraRLtMYUPkWlqhYzLZyewTdMvJYzwpx4F6qzAVj",
+      "acti_2vKJnY3nj1SKBAF9BnjJTlOtLilUzF90vvyleDnUfbW",
+      "acti_qh7WAhAOEwNb6MqSXQFN7B9i1YE7y3vZp4seFd3JOBi",
+      "acti_sSxleRHI9Q9jmsC9kyzPAOl4Gu2lYFSqLvhlvPaagyZ",
+      "acti_6WID2pReRn6anNy6LgJaoNwcTAW7taoZYZGOtmovnI3",
+      "acti_GQZx1gJ1cWNMqtzOu5D1t5guv9fVBQPWwhxYZQkWbij",
+      "acti_xcjmfg3kgD60sNG7C3dYEetvZQ25906gCao5cagCKoh"
+    ],
+    "email_ids": [
+      "acti_H9EUJr3VQ6kd8s4ZY6LefJrmRuzM0rAJsD2UTdJAIn6",
+      "acti_uKRH5OwOSEJ1eWSM0qhQxB0Z9Pdyg2ua6n5IKMORoVA",
+      "acti_YQQtfOK8xbDMHev4fbBqfskmVB42kjKFZLDIMnwckir",
+      "acti_Pcm1eYwJzpnyiEaHZ3ezTGkNOlO13jy1D39iHtFFxyX",
+      "acti_DLATN7x1ABlSg5UADvrgJS4LdsEbIOJg6vSvUBFX9k3",
+      "acti_LY8X3rFCyc21z0D39xcfg9bMmzj4S1egfhDbvd0GYBa",
+      "acti_dpfebjvEhoV60vE6q2vanX7JAPSB3KU1Tl3qXNQ0KaR",
+      "acti_NodDtsuje4PPqxwA6DdXiVMCwoiXTmiZIqI6cogSXhM",
+      "acti_IeOuPDG7sZFqfR3tkkj46uQPIFnWYfmJ20mpuet7oNT"
+    ],
+    "sms_ids": [
+      "acti_P5UxoURsju8FY7aZdX9Ke0Tjogu1JCXQasKd9CGUN98",
+      "acti_4xuXRr7WCIW5j71lIiWANJUXOS9vmBY7PsA2c6zEM5c",
+      "acti_4qaWjkwJt6I5IwUiiZ33spEzpvYlTttajxtdQ2PiRLt",
+      "acti_1m4m4JaXbNCDMhOfPKgRZhicADz4MvzsuMmQvTUrsih",
+      "acti_dBBAIpRGLWS5tTXyMVNvpdZ380AuROoMTFevZEMr2yk",
+      "acti_ZcI6iy6JUKTFt37Lan7uA8JpTFiopD0cZOdcRAkapc8",
+      "acti_1aV1le0HXSj1cep8VMEheZUrG4AaezMN0jaBMxmp5rQ",
+      "acti_bU2RUzNykbjwMV1RxYMnhh38PG7pdDw3STAA9J7tXyX"
+    ],
+    "message_count": 24,
+    "first_activity_at": "2026-03-31T00:32:21.737Z",
+    "last_activity_at": "2026-04-13T19:10:06.742Z",
+    "last_inbound_at": "2026-03-31T00:34:17.368Z",
+    "last_outbound_at": "2026-04-13T19:10:06.742Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Neri Nogueira: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Neri Nogueira\nCampaign: 3 STILLS"
+    ],
+    "created_at": "2026-03-31T00:32:20.366000+00:00",
+    "updated_at": "2026-04-13T19:10:05.909000+00:00",
+    "sales_scoring": {
+      "momentum": 84,
+      "relationship_strength": 57,
+      "friction": 25,
+      "reply_probability": 73,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+    "lead_id": "lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+    "contact_ids": [
+      "cont_ou2YqSjcFmIL3r9hrRPkt2F41AyV22uag6U4oQb3Ax0"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_22N8A7hmidywSa20wwU6D9n5K8yg81qEgnxblwSjeL2",
+      "acti_F7mtnJTfLfufbFrnvtpiVGaBpULdr2TKfdzqwwlJLCG",
+      "acti_xOFmxwS7mbpC09UgLIPCXpOxRmFvnPlWrnEIT8RLUQG",
+      "acti_xdsKD9XVWfVglmBltyCMbPzZfdxMUaqG212shJDCWcm",
+      "acti_9981ywpqfNNvl64JCpHfM05B1Vrlpbe2JpEQk60DHwY",
+      "acti_ZW3fD7FPPc7ZjKznzaAsjZmcVJdGqD68S8SXfhwKSye"
+    ],
+    "email_ids": [
+      "acti_k6pxR5SFMKJFeW9MqqbV2KlNxt8SEgeEdwODqz6tS5v",
+      "acti_9IExJET0SFq3LZPK9MEspXKGKgmMqSIQWNDeWtDoWIG",
+      "acti_r3L12XfmXwqMBrB1pa3fgoHORgUNnblpW0BTIeHlgYb",
+      "acti_M0AATGFbn2EaOGkcjw2X0Sl6VvJFHkCmFazSruAVYnq",
+      "acti_ov9i6GkfTXTJ8n3tmkfxF0ssrQ1kMJFpuvaMmMRuJGY",
+      "acti_wFOn5CdBBVt2U9pni5dwv7R04qLjWBs708bzxm4dmvT",
+      "acti_pK8KrLm9yI06q7tRtYgVlAMxbaCqAyrdHy4ubOWR6us"
+    ],
+    "sms_ids": [
+      "acti_NbplauPyeSXB3eFXD60ZFXaXJVGXoZ0eKrrhgUCkgm9",
+      "acti_EMz0wHF4y4i6vtwWsWUNs71zHvX8HWHGhGKgdhXwB0G",
+      "acti_tzJqFqZk8bniaw6KrD51MtPXvijhcxMvFaG2PHAk8Im",
+      "acti_xriuavyir3NnJL8HDeLWoHlTOTBCeJEpHBphs9JqldR",
+      "acti_hy6EFF60eabYlNasrD0l91pRJbxIts73Dd32wJX1gBs",
+      "acti_sjxNENFTqouBjRRVCLvwVEj3yqvD877ZCUSijaWmpRV"
+    ],
+    "message_count": 19,
+    "first_activity_at": "2026-02-04T14:31:59.908Z",
+    "last_activity_at": "2026-02-12T17:38:54.165Z",
+    "last_inbound_at": "2026-02-04T15:27:55.640Z",
+    "last_outbound_at": "2026-02-12T17:38:54.165Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Precious Montgomery: A: 🔷 05. No Connect Made, A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Follow up"
+    ],
+    "created_at": "2026-02-04T14:29:38.038000+00:00",
+    "updated_at": "2026-04-08T20:05:05.558000+00:00",
+    "sales_scoring": {
+      "momentum": 0,
+      "relationship_strength": 57,
+      "friction": 25,
+      "reply_probability": 52,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "lead_id": "lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "contact_ids": [
+      "cont_SiHyyUGAJNzLDLYHQYShwny6txtyjLmzMxlmmRhbex6",
+      "cont_6jRnhsOqZyqpbv8lmWPW8xS8rsbb49WEkkduiCDWZxN"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_SfyJKOPhAQco72DGmEHIr1DBLF5Gq8r4utsg6I57Afl",
+      "acti_sL2CLzzxytxFGV5VxJ9U7C45vx4Rp4DbZZexVjlCHC9",
+      "acti_4Eum9tMK4bYEke4MacGEqMo9Qvm2d90wVYxnathz4ZF",
+      "acti_EylWMovH6ZFFUXRhBmeXa8OPV9gSViQRX0Z2omZ7ekV",
+      "acti_v1m1eum3buXKJVSDJpSJEOx4OTJmNIrvM88OidtTWGF",
+      "acti_BLx5GbWeEEmRyxQG82kGhkTK6wztd7BYGm2HAJa5GD3",
+      "acti_5Yv2L1cw4yt62jKH4FTBmj4iC1lN1sNhnff3tnjxVeo",
+      "acti_pNfB4HfiEwkzqZTQVQ8DWZNXRgPM2hGfrXpUcvzzbvg"
+    ],
+    "email_ids": [
+      "acti_JJNEiJPm9mPrurSBJkjYXrYM5xU9xS6PxSNlsxQQovr",
+      "acti_ZlCOEyARzMTLNOPhx7AWEnIJiAz2cQh9poOknDvlvus",
+      "acti_jnZeSLFAAwm6PDY5okzTdHRS2e0At62adEd12BvFcQa",
+      "acti_AsZzEpGlV0oncQP6suusecdUakE9Xcu8HMbT9nf8GOF",
+      "acti_UWFrPSm5YY7SrLsdxkxMPOvBzbArlxrun60SQGO6AQ9",
+      "acti_snoNPs9lsQkNEWiTsOUIxSzJSVapxW3LlvRqLHRmk3L"
+    ],
+    "sms_ids": [
+      "acti_yXDneVPTvptWpBRtPetPjBfGHulykwxI7cotN7QRgnf",
+      "acti_65DSk1QCgxZLXelH0VRjs2nMAtfGPLKmBTgslbGvbYT",
+      "acti_o8dEqvJ4Fvsjb968n25rGpqYWiO3vGIZmX3bzFy78N7",
+      "acti_PpO3vsmJ414TN8qgEgNUbPxueNkSe35c3EChso0bkpr",
+      "acti_7pVCmacX539swuV3bGGBDVGeCRYqPFvJPNIUcHZ35iU",
+      "acti_cZbusZZDcEQgY5xD3TdWc4kq5dl8vgt5CXN7JOlRVh7",
+      "acti_9O8ko6NBoCoPd9yHnsyAOrnbjN6mZOUiYEBpQICn6dc",
+      "acti_Zavry5zNFaxAugGwanuY2WLq4N7stJhv0PDTKnmtVB8",
+      "acti_5ltTP6jt7WixJKco7h6MjFuV02BnHO3KBQtdyKLSxWy"
+    ],
+    "message_count": 23,
+    "first_activity_at": "2026-03-12T06:41:33.775Z",
+    "last_activity_at": "2026-04-03T21:00:48.577Z",
+    "last_inbound_at": "2026-03-17T18:02:34.470Z",
+    "last_outbound_at": "2026-04-03T21:00:48.577Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Rachel Sawyer: A: 🔷 10. All Other Followup (Copy)",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Rachel Sawyer\nCampaign: $19 GALLERY"
+    ],
+    "created_at": "2026-03-12T06:41:32.155000+00:00",
+    "updated_at": "2026-04-12T00:33:18.315000+00:00",
+    "sales_scoring": {
+      "momentum": 64,
+      "relationship_strength": 71,
+      "friction": 0,
+      "reply_probability": 87,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "lead_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "contact_ids": [
+      "cont_cDzaEVQf4DBOENIN2S5H7N2cc643i1YvJXa6LncbdUL"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email"
+    ],
+    "call_ids": [],
+    "email_ids": [
+      "acti_7vzDLPp7tOz7PIS6F2YN5HPLKul24RZio23FbuyYYEL",
+      "acti_Nvq9EC0ctbMRUzS2e0p8qmynLEeAX5iRNsUCmHr3OoX",
+      "acti_HbEC1FtUaCoJLIWNiaLfdJyBNa5uaeZqykcySijDPl3",
+      "acti_aDgGXXGJQUJUxVoVF7J9mSfUTKqcHJceJWlAMvhnwlG",
+      "acti_8o8Cf4NfUOMKfOAZBfrS8AHIhrZty9GeSKJccim8U6I",
+      "acti_4w5G6pE7ajsn6VjXRe3Mha04Tqhd0cJG5QaPYdDvtCk"
+    ],
+    "sms_ids": [],
+    "message_count": 6,
+    "first_activity_at": "2026-04-04T12:15:08.450Z",
+    "last_activity_at": "2026-04-13T13:34:12.943Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T13:34:12.943Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Raddison7902: A: 🔷 03. Day 6-10 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Change the name of the lead once you find it what it is (both lead record and contact name)"
+    ],
+    "created_at": "2026-04-04T12:15:06.523000+00:00",
+    "updated_at": "2026-04-13T13:34:13.221000+00:00",
+    "sales_scoring": {
+      "momentum": 42,
+      "relationship_strength": 30,
+      "friction": 50,
+      "reply_probability": 31,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "contact_ids": [
+      "cont_ZOTXTa1CYHlt9HlGKO6GRyEhnGM6aPAzWdm3qgfvdrb",
+      "cont_yNPfGhebnnd7yXGnXcqKTieHQKFbZPDKcXtglka5bKd"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_V5XeIiWGHy8zBJwBoJapW5oOt34Sp1oqTwuIMGa2YV7",
+      "acti_MC3s2ftUORgMhD4oxn5mJ6HvXbArWYvYI43snM8p236",
+      "acti_ARSLMy0wJy6HMWU9PzMZY7s075M4AGgIT2Wcodd7fdH",
+      "acti_5cpC5YuDxDgvzqktBj7YC69GDTrQSn390a1Sn95O4GE",
+      "acti_5yo5AtJcwfbJORh89vL3Ug437TzpPx695qylW8KeUxC",
+      "acti_L2rzDLLLlqePwGQGdXZ5oLf9kK1qz8W3vJrpzz8xqPb",
+      "acti_Qmc88qljvGfGD0O94BNtdSQQ0ufSukZUrmTU6LnHaiT",
+      "acti_L44L4AOQmfhteaTG9Wi4iRbWagOfon1L4tWqdKuo3kb",
+      "acti_949RutjdPS1Xl0Fiuc1eAukkF2Ms4oPHiwR3fBhdQDu",
+      "acti_Pbqe650BM6NAaeH292gZImRpcDc0t3svfJFcTMdoKXG",
+      "acti_xiSrDJd4yqmxmOxs024beZq9CdiWnbmyZ1c6txWoIFF",
+      "acti_SaeRr8racdrrYjALKAxLlpwMfgFVCKFRL2WrbAry5b5",
+      "acti_ezLzlVNgiVtZ1SdgosHQmhJSQd8uBtJwHiH2FbqUJV0",
+      "acti_yMpB7wF708l9WRqLEoERYAMPh7DsSKxgjZo5rKYDpSv",
+      "acti_R7IFcaowQQZ59KfGOYnxXSaH0XnSoTFbWJTdfkB1UdI",
+      "acti_MqZrXfvdtOY3O5xW2OfdDKENePkZejngZQDNAqRoaMS",
+      "acti_y0geLxwQsYj2QVb3TyQW3Quwr1OA7pv07GJEEheOoCw",
+      "acti_iORerpRDGa0gMyUMfxtEDJxwKSsXaG7JHAU7KDVheUA",
+      "acti_UV4awnyofAmLt2ps6kGjmxmUupTVxcSiL14f0d3lzZ2",
+      "acti_jtmqhEVNW6N87dTtWupaBiRkhaPrf5HRll7nGZTVBdO",
+      "acti_d0Y1SOMt21qCXMLc1IAdzD9DK4w40bOeym6QQL29CKs",
+      "acti_a0mNE3AqcCvXGMSUimG4igM480PLpcclIS9lgBRdKLI",
+      "acti_fnSOZ2FHVV4U7GZwcCAidT4TvR89QI1Wpk5Vzp7Oyw7",
+      "acti_Ht82vlk9fp2TXN0io1rn1Zsor30wiuGbaQ5ZkMC470G",
+      "acti_ZBu30floMclW24psOn0zGkcMSCwH2H4nxrQ9hvpI4vT",
+      "acti_6dOEmoUdvrctVVNRGvSm7KSLKU8wQeK8dcMTNqZdr0Q",
+      "acti_GMmfIVfqPbDMNAOcqZbQheRcc4D9DauijXPpxZR284R",
+      "acti_UXxUmPeC2qY96h2As4T1bw9lSmDmooJbiv3kj6VrGMj",
+      "acti_wOZcooeWwMfaMIX9dCuDVLOZGp1IlAVsKNeR8gLaP8Z",
+      "acti_YkSTpc2HuhwfGT8FMGiU7Pkh4IhpCM4iGbaFmUhD9Om",
+      "acti_8IZu1PlQUJ6NLbC7VS8pI6nt5fKw9sjxv1WdoorisA3",
+      "acti_CloqN6hDrFMmU6kJeRSYI1vCVrGZSWpZaOTIrWlSns8"
+    ],
+    "email_ids": [
+      "acti_Q2o3eciWC628a9p9NyC5tBiC6OnlZbctVOkFMTx5gfJ",
+      "acti_0TEZYiuZ7rAghEzpgF0VfKtkg3Ut5AJnfCMgNfUOurd",
+      "acti_WC0Fc1rKHjgGvghNZDD2pb5iVRMavpsLQKARniGyaOC",
+      "acti_RCc57AHSVrZtAaaweSMuTTJuh6xwP0PMlaX5nbZg1Op",
+      "acti_Mwavw2fHYUp4rS2wvb01a48nztNtGaQaW1CjW5kqhxf",
+      "acti_5TWRodeI341Txt4wWus9liT5EzhSzxXRuTYsTE1Wxmg",
+      "acti_WD4cNXvwTgR0EBIsANrCM0f5v72n5IC4S6t0939cVdG",
+      "acti_mk57QyErgGubZMar6dZPi0xe9VTcBByUBxGb37V4L5f",
+      "acti_8xELDh4Sd3JWylbvhqrjALWCnqKXIGhY8V3N7hpwRqu",
+      "acti_V96rzcYfooCJlO2jYkMHULjwgkRrDmKKp6QOLJnmDG1",
+      "acti_YXMLRagrZtah1gD2s71GtqgrnWIyBxVymi1tuEiknM3",
+      "acti_JFTDpCrBhw1QcQ4dMVnjYBk7RuN1Oq7QrxHJCTPVknz",
+      "acti_R8hyopj3afULQTbrxJ5vfXXYJwvep8fId1kuE8ntg11",
+      "acti_lYwfrofeiTypnVHoVfCgnma6LkLpWOaBCRiTXQ94OQk"
+    ],
+    "sms_ids": [
+      "acti_IOTyIITUH6b8aq8OBlzZRCBeNXO3Bqw2fiA8n29ef9i",
+      "acti_gzHVlC6pWeiQNaNd0rt9XGViTyIsxX4Hgd8fjoKF4pV",
+      "acti_MDn3IlVQbiJOLPuVf03J99MD4A6I0fFPKLUH9hSoK5T",
+      "acti_w9WEngZIVRfVeETKnBoewWikIIqLrNC2xnZ8bRDa7vz",
+      "acti_b685BoXEYyRncBTDANFa6XGQLU9W9DMegrTQJ5BHjND",
+      "acti_GuJ0mstsKtRqBRYo59JA5MPvz77IOyXcEWgVckWlcxO",
+      "acti_Yo1FH52qvkwZx5nTXmFDzhRmjlfEHn0qX97bXx0kAhM",
+      "acti_fSxyhYtRKOa2Vqr5cwT7wpLbGm1jFaHmB8ZnjeJbO2n",
+      "acti_2v3UESSJzE32Jt0yvOLtg5lZ5bAXV9k2KqrCIsyFQm1",
+      "acti_aTo55HD2CKj7iKgyj55wHhRHyi42m11yqRfI40dC0Bt",
+      "acti_mifhx4JCrKXW3H1FbVxIgN5G74nookq3kM3wB8VxdID",
+      "acti_11Be4PtlIbe7YiXaZgZFmnfoffBKXU41iWc8fgGiynU",
+      "acti_8MomqGseNONcerFgMloi9HYPzxJZP0G3H4qJtsu5XbO",
+      "acti_guThXkF6HRYAldv2uGeCIXoJ7d5pqsu2U7pWm9BdfkS",
+      "acti_9tok5ZlpUpHdu0pMX2GyQFNAsDSGjDz0MInEOUkoOfB",
+      "acti_r8oyLWz3SCOurX0j0tMBT4HLbXa6JDpKFTn198itzgN",
+      "acti_UpHdCjhQdSQTXSP7np7bSmXwPn91j5DvL36TCFpAk48",
+      "acti_UkO4ikioz8QaO2lX1m8ChnXt9TK5csbusiz5JHrklNL",
+      "acti_Bg6lBsMlkGn06A7Be5CD66Q1V5FJ5Gr0e8qkBD1zSSg",
+      "acti_rU5qzcgNvVVoHsPhAs08ZTEY5wBgewOxknSewKqFDsC",
+      "acti_HRLUvK2V5fysXcWyiFpXGeXQ1Ukyekwz4sRit8a3ZsH",
+      "acti_DPeISR6jIwgJS8k84McwOPjx405Wg4un5GfjsL4j4FU",
+      "acti_EUwvl4xGRzrVS8xAHg269OIpKfddQbqaSk3WRBpVfhV",
+      "acti_XZcgqH1byI6QloQmaXpwzWyWD2FdVaiA1vPfnKthGM5",
+      "acti_UUAE2yDht4SaLMe5NajUvJuR6wYdtX8geB5nlmOJP2K",
+      "acti_NHImQy9NNYECHtduooeuLMbWbt06y6hBENjZcUFPhSP",
+      "acti_S4r7NmUr5C93anZ3Sh5252qt2h1YRqDaxqzscvb73OY",
+      "acti_n5SAEhDiys7mjP3uOpoac56jYOEfwEFpCyEhxRHzykz",
+      "acti_4xApBvexrPtESR9xLZSRc7bpwvQgAPDjnUIvMRE4MSe",
+      "acti_8yuQjSy2yqrIg4LD82BUQqPqiVSyl57Z0iEuu2vInX3",
+      "acti_2TgCpROXSm8F6X4Pqi6lfhPNfoKehoM1IK5jcaXl0QJ",
+      "acti_Ic7c8mCy8AzCFVwmVqGUv73ZZaUxttmlLxApLKSUS8h",
+      "acti_YJxpu8UK9IdqErFQtOMPJyRJHrp92swOOMIgWQk4sl1",
+      "acti_0zCDU9y4i7EGQm63eCktE8mH9yYmJhsxkac7HqF0LHh",
+      "acti_3GcE2BS8XGLjFzcPx7cV0DZlbExfH7Eqt09RV6KKUhk",
+      "acti_R07xUyCNx6gu759K9RnKg9wOtB9k3B7ltcWKrxgKK9Q",
+      "acti_8Qm5UtfoEoQOboBxQI8RHPEdPhbAhgnIrvBwVb78JTQ",
+      "acti_kabeGsiqvoxHpaojvO5VUl9chFE608mxMY6euh7Ajom",
+      "acti_qbdvLEEE1CzmY9ayz4Uz46JH7IXcdppxLPHNFbR7L4m",
+      "acti_yR3BuBxj2k6lRqBxVWoU2Q2xqAWh62bJYHiNnbjJAFm",
+      "acti_gRCSSxOiG9TGfxGbgUc8ddPf3EykL7vt2l3sh3YxAyS",
+      "acti_eemWne6hvFPTObQAqAUpLJQ5Pk1Lm6WVCwCJKLys5lO",
+      "acti_1arwWEiapcWJQawwfcqSLdOx7Nomx0TmxZ1z1TTTamu",
+      "acti_U1kB7rSyy7CVYkKIYG9JYtGFFW18AFtOX8aQHBfmQzi",
+      "acti_uON7PO20WNuvipsjlzdzGrxJiIEbRZ2CS7xsZWWaA81",
+      "acti_eEd6zRH7ygJITUgXwPX3E9YqiV2J1JgcSPjaXQz2ksU",
+      "acti_QdhMSXEBPnEiaWqdm7ZPMCiAhPGgT1mdbDNVULAWRH1",
+      "acti_7rWXpvU7AHxU3Z8YrTruazRwKDZamTBLADIonn5ChSd",
+      "acti_DmrirRTSMU6HyraJo1CLKlc3vY6m1VzzuEUQYnHIa1d",
+      "acti_FW9cTZCLh13X3GzzstXk2uEm9Wm7HwRoyEYzvoIsZJC",
+      "acti_pgiyxjZ6TvK4gIqBH2w4ABBCYZ7snEm2N0xZ0eOQxDj",
+      "acti_BhpTcmfl9CPPUyEubYELBW44f89LfXUAuywTV0hTG58",
+      "acti_U1fOzc3pOgR9RTdvTksh0Ug0X38f7q911kSY2RmEAtV",
+      "acti_ZDdQut0dzU1NGvFjDo5dKBAUd8Mq6AZ7ZZP7NM08HmZ",
+      "acti_kZUUWJRMGwajl9HR8may7FQmxqfYpOaFc7zX72OFSEf",
+      "acti_9EF8L1EH4Fabw1vTyBDvAAeiPPa8UnBZU03ZxrbNu8Q",
+      "acti_MGzC1V7lMx5AVpQLLXESjUMit7dOlUJ79UUFNKyh7Bs",
+      "acti_kTr69U7UJUD7UwsFeGOuieCd3vpHZza0BjCkQgxQMkD",
+      "acti_bMd7fhkSUUEadRxstzQ9zoKD9yJPyq2TkGtfkPNslgX",
+      "acti_WGLunDEDYobO7gjMdeRbXVCRt89STckk8B174ri867S",
+      "acti_VMd07qx6eAF0ODT7jMGmE4KvsLFmsDSafbHrYHUCElu"
+    ],
+    "message_count": 107,
+    "first_activity_at": "2026-01-14T19:08:51.880Z",
+    "last_activity_at": "2026-04-03T20:53:19.872Z",
+    "last_inbound_at": "2026-03-22T00:43:38.949Z",
+    "last_outbound_at": "2026-04-03T20:53:19.872Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Rebecca Almeida: A: 🔷 07. Booked Tastings",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Confirm tasting details and next step"
+    ],
+    "created_at": "2026-01-14T19:08:50.457000+00:00",
+    "updated_at": "2026-04-11T12:42:53.754000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 85,
+      "friction": 0,
+      "reply_probability": 100,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "lead_id": "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "contact_ids": [
+      "cont_h90nRaUucRA5T4aMYJuVWJBTKgZq1ybs5554dDZ7ZQG",
+      "cont_IgA1kWDr1lJNKGfJo1ODVay2Vwc0pes4ube7pyCKIhC"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_t30BpfEK6JuLCRbz9DxpQ0HTfj7x9UMdos3dBAQpoUA",
+      "acti_mpKvofe0Kp3qDXopXBAQBbKT6xuvgHVCEkSNBHtAfkw",
+      "acti_kOsr6Rm6O7uIPdjDOQMc0z8vrGkEjKKw0X2rx1LB85b",
+      "acti_nlvAIQLOzKUIdIPKGiIQd2XLoXntfmmfekc3A6jPBBe",
+      "acti_DDtckWrGuEH3Zn8w3yMeBojNx4tWvlxkXW2YcPvldjM"
+    ],
+    "email_ids": [
+      "acti_fROlBRQlQfKM4ZJ8lYsacajsTcTCSzxYKPVQm8ZehWg",
+      "acti_Rl18P9yG4KhJvk7J3cIym9JcuYSPtR2eIuS0EkhHbdn",
+      "acti_tQZfIKLwAkVzL05q4V1Nm4t9xOLfu4LEazFb1lBPoht",
+      "acti_g1CE4vnDXlzHiChhVLofr7N4kV7LXEF7BdzSU9ReiSp",
+      "acti_Oo8ItTWKFStygXaVLZMXjoI6men3XluVTqW1vFlnyKv",
+      "acti_7bdkyN53zUv79afYKYvGpLDJdItj1oWP0ZkA0P7kkT1",
+      "acti_iy6mSgk2JQrWa2rzdAa1oDz4KEdJ9IW20VVHXy3xKYB",
+      "acti_MdIlvlxIeNMQjU57U0HVgxaRIzlGK5rILxIaXzAkHls",
+      "acti_dhi9Kz2guDyPceorTf1PwOqA9QuyQWgw29h2gnGivZc"
+    ],
+    "sms_ids": [
+      "acti_ZF0KC2zXkHMG2QGRnDcfBmMIe4j15SupUFKsWjEEVGb",
+      "acti_X7aova2jRhZ2pmvqFb9o60ZpyRmZ3zA2t5gTWEsqIHX",
+      "acti_ZX660KZNMuHlUu0CfBexUavbwrE85mpENx9Oajl7PFc",
+      "acti_QauwzawmrqJgluU2xlsQEkNCt1wqpq0AwkElWjwteRD"
+    ],
+    "message_count": 18,
+    "first_activity_at": "2026-03-28T18:54:32.220Z",
+    "last_activity_at": "2026-04-13T19:10:18.809Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:10:18.809Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Samantha Machie: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Samantha Machie\nCampaign: RODS WEDDING & FACELESS"
+    ],
+    "created_at": "2026-03-28T18:54:30.837000+00:00",
+    "updated_at": "2026-04-13T20:04:43.327000+00:00",
+    "sales_scoring": {
+      "momentum": 66,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 62,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "lead_id": "lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "contact_ids": [
+      "cont_oHZOprsuwoQ2wLW5VkPkyc9m6ceWcFUgu2GfdBWWkKC"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_L6Ym4CZ27JFlYQytupw7OcIYJG9gNYMIDWvdFyZT4IO",
+      "acti_boxo3HFhVR1rWPimH3XQQ7ijRsZyBk7BZXvojEHmyrK",
+      "acti_oihpJMtTcxlVmrnFLXOJ1LquyTAHNPGAUVgsXmAXd5C",
+      "acti_xXoKXLaounHKKpNzpqO7mmOMJ5DSEVBqRi4ueFrv5Nu",
+      "acti_y2tnH8Qe9TtAH9MK64pX397eobwDBmLTVP9uxblAlQ2",
+      "acti_84ZUfTGnpJVH4nSSNRoCGY6ner4YH1qaNbIeAlP0hH4",
+      "acti_BAW7VgPyoVfyKDn83mjSVrx0hI1ZJTtxmH7X8h9DyXP",
+      "acti_UnQTw3h2f7RQaMmqPa95iEjAgibXqDFzJy07kB1sEKA",
+      "acti_yL5ZDMpazoCGxjCQZ42aO7yeGrzHmtpiLICWWK9StW1",
+      "acti_yfr4mefr77XrQNlIynx5YrIE7MpAaS6a2pyqvPfcG6z",
+      "acti_eLeWQGokeP69kqVelJAH25Hb8EdznfTZJS55CjAM0YV"
+    ],
+    "email_ids": [
+      "acti_BB57YDsqb44cqEWnC1cic4eZSShTIpDrla4mjOnki2K",
+      "acti_AUlO7SOXm1d7ZawpsVmFwLx3AOBhWzz5r5T8QnH37PT",
+      "acti_Ye8RhJTzTUrKAKU8IDM2ZIDOvZVV4CcRiFOVyekEY8U",
+      "acti_MQsBl3bOkTkkb2BoK0IxCIfTkVb6DM6FFhVfiZeBYsx",
+      "acti_R3zbPmjY3n7zg8ICjYZ0rfsap1OOtlrgHehYI4tUcB8",
+      "acti_C5pHnLMPg5PMUoD52IG24wx0hiMSlm9ng39lOHsx1WC",
+      "acti_44ChDIEE3hrIEgiBUMC8VjF6YrJPUBGbVX5pwg3vXHN",
+      "acti_OHFGL69iseRGSniHnh9mjInc86MyTj3sy3UCO49R83i",
+      "acti_7st49kohxYQxcdinGnRK11r1AW5eld8FCpTpgAkPaqb",
+      "acti_ZNM2wFsqnekHqHxWf1CoIQaUfBVR5rOqkCWxSgZB8Q1",
+      "acti_8Gm7UjSj5CUXToYGorOmJxIXilLXZDqGPyywgE5QY66",
+      "acti_Finp08x9VeBqUgLGxUOSZNjeXsxKNmGBkiCjoARSmZK"
+    ],
+    "sms_ids": [
+      "acti_VraYPHkM2iqUq9uBr74I8RLE8p8sRUmU5R6UAbRDTE8",
+      "acti_4mLInehfUlxcsY7SWUTinG05jU6Vj70SUXehkglxpFV",
+      "acti_0jWvUgtkDEi3F9Q02cNHo0m6Eu8AFFAzJVYyfKpV59J",
+      "acti_uFCY2u6uVlax6M7CwGDcF0cngaezmwltv75MNhOIuRg",
+      "acti_SjbrVpWpvSstaINmhI1A8qomtqvvDOqS7VZ9sLCTLFq",
+      "acti_9zuaYzgLu254OzqC89VqJhLs2kgFPT4MN18D8YEYuQp",
+      "acti_RDVx4bqM6LmRD6Abu9sWhusd8SzrRRzhIXR4aPoeIHJ",
+      "acti_7lWnNfDTLqaiqTi1IF29IpvvYn4ECwz8q174OrepkZb",
+      "acti_r4uMwxpPnsbaaDWMlPz0XeUg1d8dylVRx586IFLbJe3"
+    ],
+    "message_count": 32,
+    "first_activity_at": "2026-02-12T14:03:16.726Z",
+    "last_activity_at": "2026-04-13T21:42:50.159Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:42:50.159Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Sierra Harken & Zachariah: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "NEPQ sent 3/13. Check for reply. March 29 tasting push. Andre contact her"
+    ],
+    "created_at": "2026-02-12T14:02:54.365000+00:00",
+    "updated_at": "2026-04-13T21:50:13.346000+00:00",
+    "sales_scoring": {
+      "momentum": 94,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 69,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "lead_id": "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "contact_ids": [
+      "cont_QA4RzcuEWEHufT2OT2q9J5o472sYzptp8PjcbwLeWmK",
+      "cont_cvm2YBqa5wUaLyQe8lkBcuEr2CqYxMXjTMqdYczI56C"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_QiL17f80cOVhNDu3h7AELSltM9Hslx6KTKUzvUK2oIx",
+      "acti_HG7WwsWUx4T9jvRtPOQBLVTx3R7X9g1uafRcMDM3ab7",
+      "acti_4XpvwbGgyeSHfMmyVhSQxvKlDpaVoN7LadrKVHCWIO9"
+    ],
+    "email_ids": [
+      "acti_wACDdklhAZyOreP8SE0xVPn1yvg7OW6NWblfxUU52HU",
+      "acti_jl7ZOAjCb2xcspCJpp09O3ckdLIBusI1M8Mex4qzThj",
+      "acti_cy3cdSRGlsvrjgj4nF5bzpt5JGP79bAB5vPFRWrsR99",
+      "acti_pn6dRdOjm4abqdfSHvvlnvqCvoeIGxF4FIU4RGG2izM",
+      "acti_E4XrPTsW4I6xL5XsgCKXTPTn5nxwx9N0lrFnOj1wLVr",
+      "acti_cm7lUL7lJlZKlgOAh7GkdIt9ZJhafbqbfSn50mmme5B",
+      "acti_ijERXxpX6WtDN8vGDvYxmbDc5OMEUxob61QRMwSscMG",
+      "acti_m1zFVlq3jrfXDnOK2nGAaia0tyUuH1yGIgy1I5xiP9s",
+      "acti_s1Lhm7w9fh4UCtfhWI2VGgDAyWD4BhAdH5iDheoZ763"
+    ],
+    "sms_ids": [
+      "acti_LDcyyTx5zwQT1dXZLi2vGgY5iTKzPFA5SxiKwlgIrod",
+      "acti_S6RKZFcpiX4dQ1oLVDSeztbwIq5qPBVjqKlIPHq2439",
+      "acti_7ej6FWB9MMG4Xo0BhkJBVZuZCSc76fjORrXCIWeIdvG",
+      "acti_nITaY7HEdHbSjFimmp3C6BbeISzVdxrRB9PnBpmXsio"
+    ],
+    "message_count": 16,
+    "first_activity_at": "2026-04-02T15:36:57.060Z",
+    "last_activity_at": "2026-04-13T21:28:45.160Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T19:09:43.895Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Sirena Ivette Ramos: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get her on the phone"
+    ],
+    "created_at": "2026-04-02T15:36:55.431000+00:00",
+    "updated_at": "2026-04-13T21:28:45.275000+00:00",
+    "sales_scoring": {
+      "momentum": 60,
+      "relationship_strength": 42,
+      "friction": 25,
+      "reply_probability": 52,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "lead_id": "lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "contact_ids": [
+      "cont_SH0obDB9hQTYybm0Ik6MxsXVYrgyDE8ABUyorGIqNh3"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_ktA5VvgxPBA4tLVPHfOj6bglRjhIB0aVZMIUXyt99yU",
+      "acti_q1vxZhL9VYIjOHKGaTb9fMMNZA14m2Aj1wtuOdKBDex",
+      "acti_9xmTgV6Sn6zlxholggAmOAOZf1Qbb3Wvc6tpw71WF6D",
+      "acti_nwIc9wvi14BHCrn5W6qyoMeW6Fmax1axOB3bYNERVgR",
+      "acti_jwlaE9t6cGeYyLFRfD7FnHXo7hhYlXrcjd6wccFOevV",
+      "acti_F1Zk7g22vfDVCSwjXdwpOh4zB6IRvji6Jw4GPibecnb",
+      "acti_0sghhybJo3XetlCFpJ40gAW0wgZkDwnBcvpnbNkFbtK",
+      "acti_X9EiLrzdyFTMaOZPosfQtTumDvE4vpazgp99bhQ6lwP",
+      "acti_Q1EChKorvxHBpoWUiwkHvuSMCvbTu0bSdj9QfilFIhK",
+      "acti_VfpUmOBIHkCMblcYIaSbIRD9dW5MMAyH12vxfSIKSum",
+      "acti_Ra3dCl5gMhICGERhQODqkZyYzKHK3tUWlDsj5ENrBiX",
+      "acti_KokcSfYgzqz2CjyMgOTlSHfr1qM6aGhNdQsHwcB1Lwu",
+      "acti_OstRI7JEoTpxbf0BQdP0j9lPSPYwtSYj8jmuBI5BIER",
+      "acti_BDEPVzg7QLKzOFPKhqIPKJaOYGz18L9vLGRZCnvVCoC"
+    ],
+    "email_ids": [
+      "acti_3zr4YcTCnNdPK9s662Ab8B9zPA2DNfXz3foOO52ElcC",
+      "acti_dAqimg4jeLcYHtS5Nzzpe11farql8mCJoOyUasy1bD0",
+      "acti_XnVeir0o9nJThlII9WXEapeTBrt0LASw2euklYZdckT",
+      "acti_VocL6yw1f3EJgQ4aC6kB08x1IEgcfNkVVjWb53Ya7Hf",
+      "acti_jGAc31j10s2Uu3jF7Vqv73tCnVQrf5ZL1EfkOMaj8kp",
+      "acti_83Lo2dI5CErpMzr0U6l6uk4C7yJjiSw86OZnWLP7M3r",
+      "acti_7ubDBkqKYzcSRGtVHY2lroM9164V96ff2x95iUD36R2",
+      "acti_8ttozKyGTFjaO6U17xEMysiX7BjmRSpTz4kRmWR3aT4",
+      "acti_RJBfUDZWWmInp7bcbCO1va58y80J4exV4pxmjTV8XB6",
+      "acti_cAZRTt1FdNI2yYZj1GoqfpZOVKFsPUg9WSfwAzYxFcm",
+      "acti_xFARZaMBV7Y15VcH2h0PGfloTrbxhyQ6jPpcXSzJjFi",
+      "acti_FlCNWZPG4WQsgDQ5a7PCzjvonlcvW9EHBo7u2xqvOil"
+    ],
+    "sms_ids": [
+      "acti_5FGRAgBui8V5ljTc6D3j2axquDsgnyVcVW5hFsowF7M",
+      "acti_aI3a5KtszmYlbs5fqLvghAgYthwlm9FsLRaSM4BlGGy",
+      "acti_3XJElQLnV2pezRqsZTg4YmEW5lqOT5VLOyb3cET3JZQ",
+      "acti_GtXHAP2zwiRm4XcRenWB35kz974b2st1IQLbZm8ZqcQ",
+      "acti_6BWAL6XKEscxvHBVh9uDPl520H6FgDbPsU7ysTbopER",
+      "acti_sXIU4wb6stqFqv36HjQMSUVuuGVdFKicKqUgxgCQyjr",
+      "acti_3wPmQAvyrMqp0ZB5y3mu6I1uPsVFY9rsuLEjfRqtEJu",
+      "acti_ISRgz1gmoetHjWISrTKMFDUDpYPGZ3bdLaMXE4tYkAX"
+    ],
+    "message_count": 34,
+    "first_activity_at": "2026-02-16T14:10:34.236Z",
+    "last_activity_at": "2026-04-13T21:42:43.580Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T21:42:43.580Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Suzi & Chris: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get them on the phone and into Tasting s"
+    ],
+    "created_at": "2026-02-16T14:09:08.683000+00:00",
+    "updated_at": "2026-04-13T21:42:43.049000+00:00",
+    "sales_scoring": {
+      "momentum": 98,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 70,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G",
+    "lead_id": "lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G",
+    "contact_ids": [
+      "cont_HJRCKkamwpdC3lSFGoHu2F38BSIiQLXRBMPRi3tWDR0"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_SvLfmxsYOKllVeJmOsDaTHiikMtds9A1MUcbysYVbag",
+      "acti_4rC2j78Q0RVZgq4oGvZKSTeRNlZwT8WCZOKfTK0N7jJ",
+      "acti_Y6Vs1x0iDCseDmMtaaZNcaPVEL4QVyUr48HWAz7kqbS",
+      "acti_KqpzjW0LgWhPFbLJF9x3jhyFHaXdNgO56YipRfK5aAt",
+      "acti_o8LErflCkKb1USS0jTSXBUqeI79XFsb8nKrjrveIZPP",
+      "acti_YZNipUIhgGfFyMTOxd4Nu2mZlD2ctzAiVUgVh03SqwQ",
+      "acti_ptLXqDSlOXm3MjnEguX2TXTjcxTAwGybd3B75d1zRvN",
+      "acti_uXSXaY4A953sm1p3kGNdfwmvJJvU5JQDmjdaTYaPhtB"
+    ],
+    "email_ids": [
+      "acti_tuEUvqowNmVq9yOFiqSsCUguWPplS9Y7QX4yYgh7JQl",
+      "acti_JmpL2DXYr76QFP7Ps7J7QUN24L6kAhrTD8Z2AdvZWEV",
+      "acti_FsAxHEBjqu9yhWshJTNUqEytgTMZvT5SawKnIWCX7LH",
+      "acti_PGefjYVtEVUBe5nzZ3onpWmiZS6cbqDYGoHK0Slsgj9",
+      "acti_AMMcQDkVY4Sv34VP4K0lqvLxpscGxf38RVxEHJHC3jf",
+      "acti_DVCUWwiFIokwWPIyetJKzbQXPM92dvrgRykQNtkZ6Eg",
+      "acti_MsAiQiL3kJ9Z3bXXL0ccVSky5hvobHwgbkybh4Zuy7i",
+      "acti_oENIt73ZQNDrwqqTzsb7DB59TdSnirzrNCD1mikHFEx",
+      "acti_D6rpQ3MZ0iZVU7XbzEKnqQb8MdHo3C1KsYa881I52iN",
+      "acti_OGhl6ZhBiNVjyxyyZGg3LfFZhdYjxIBd6OKULSxjfMz",
+      "acti_KPX3g3fyh5IGyAU74ozJeut5NnlDigUBrmJuhDyDOfY",
+      "acti_MvslehEZrVhENOfRG1AZL6fPKooEZYQqnMpsFcy94d4"
+    ],
+    "sms_ids": [
+      "acti_9vQmGr33iPPJYL19B7yowE2DfCW4teU2bF3RM7UW4lB",
+      "acti_Y2LrwCltMwrUClScK28BwOsS30A7F81YNuyUg7LpPKn",
+      "acti_cHTCv4zoIgxv8d1ySfzFm0gqpm1qJnsrxmjPQ7pYFnK"
+    ],
+    "message_count": 23,
+    "first_activity_at": "2026-03-12T23:55:27.524Z",
+    "last_activity_at": "2026-04-13T15:40:33.973Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T15:40:33.973Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Terry Heinrich: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Terry Heinrich — Day 3: Check reply. If no response, send ballpark + tasting invite."
+    ],
+    "created_at": "2026-03-12T23:55:25.771000+00:00",
+    "updated_at": "2026-04-13T18:59:55.534000+00:00",
+    "sales_scoring": {
+      "momentum": 76,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 64,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "lead_id": "lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "contact_ids": [
+      "cont_6mguFnGr2L5plPbLBkQY97323hkgb3JSZLs0OxItf6p",
+      "cont_gRf1TXmROH7jfSn0t8HfzX2Qyhr2P4lKa4b5UwhTODl"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_3mihSBXQSx9o4eBGBolg27xQxpcd0SgHYhJjmRsMvoo",
+      "acti_JJTxPIKsKafuim62hVBmUEAIECXgetuqKOVFvyed1fU",
+      "acti_Ilgvv8kMQ4NSHN0LNFM3z1imOfkwQ8b38wgo1xBM5du",
+      "acti_AjE6ImQ45ybG2vKHq88YHMOJrmvI343TUNNo8dBDGYx",
+      "acti_cQ8LkI44VVXHgXmI2H68zRdtCRWowwo94RS81Klnvq5",
+      "acti_TCZzVZ65jWw2AD4qF0B2EWvIgrvWaK727co5jMCMoBW",
+      "acti_TbxSCqa5N54wyWcckf1ahPVdKmqePNXRm439mLcUues",
+      "acti_1kM4NFytL6TS75elDm6jZGJoTdFGhfWUM3DbKKONgqb",
+      "acti_bh8NXV2qbRCDIubpavGJUiETHdzugGYPXyqhtqNBcLX",
+      "acti_iz2O1rOmSGfYzBjaYctDNuecvdDOkBmXbl3ojHQeNgK"
+    ],
+    "email_ids": [
+      "acti_w0lELtCx6cg61slVwBiSWEVLKatsRjPwJGcYO9ckPHJ",
+      "acti_nrBlgznmpO0QhDmyWqtv733TNdcRkQo4aGZiRodrH0H",
+      "acti_JBBIlzYMpoFPDKrmGTq6F75klAbvrnKoC9FD5hAosNL",
+      "acti_QTP8615bbROYIKzJqK59ni3oqGl1MLjcO9rHnJZpla8",
+      "acti_mNbHhjWpnmY7dMZteB6yA2R9rORwpHpOUr7xG3HaDkm",
+      "acti_3RMrbjfbQzARUTcVS9Vn54DKrFAZKOAXa7Vk2WnAAlp",
+      "acti_y6wcqJuBOnbc2fex5YkjUGV4QRR9xsLgs9WzWcBF7Y8",
+      "acti_9o11AI6zr2rZkdON8GbEVufc3avy1TtrPHcWZjXEWmB",
+      "acti_byQuznxtuk9hO276IEYbdvEXkshBl5gbPy3uJxl78SC",
+      "acti_uE9B1u7hvbDfdGUB289eQcohVmcbwATuZbQqIrf55Eg",
+      "acti_u5tCuOElitDw1joeGBJaR7pGiKAgCl9NsEoogZ6xIJu"
+    ],
+    "sms_ids": [
+      "acti_ZZ7CXMaA632WUk0WnHtboXQyguxwr46iZkvI6KH29wI",
+      "acti_3PiyBmQTfvFKKaSzrmk78K2GUIkg02PuZYEVKJfih8Y",
+      "acti_NLkiFmHkjaCtfCriXUBoA0hEAXNdYcrCSoChn91Nevm",
+      "acti_rqoLDJoB38JJGz77kwRhkUCBuiDEcV1EuMOVTeD4sWC",
+      "acti_AgS7SzSAX2yVpiCukm9fAiZCxEgYytePeKw4dIxCeBQ"
+    ],
+    "message_count": 26,
+    "first_activity_at": "2026-03-22T21:50:02.552Z",
+    "last_activity_at": "2026-04-13T18:00:31.435Z",
+    "last_inbound_at": null,
+    "last_outbound_at": "2026-04-13T18:00:31.435Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Traci Troy: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Traci Troy\nCampaign: 3 STILLS"
+    ],
+    "created_at": "2026-03-22T21:50:00.149000+00:00",
+    "updated_at": "2026-04-13T18:00:31.293000+00:00",
+    "sales_scoring": {
+      "momentum": 82,
+      "relationship_strength": 50,
+      "friction": 25,
+      "reply_probability": 66,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "lead_id": "lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "contact_ids": [
+      "cont_ELfC1xn534ACCMNc767UGRAMset0r2oXfQ5qu9oOv6c"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms"
+    ],
+    "call_ids": [],
+    "email_ids": [
+      "acti_lpPocboSJaHqi1b3tqdrkr7BKG4fy3gc0pp3rY6EtYl",
+      "acti_MphZF93leWeiAswIUTvYaW6kv61eSYfJGIpbitf7shO",
+      "acti_yTrCwbgsKnu3zfJ0fLxFKSlJIgO4ilVgCmfoo9xgVfP",
+      "acti_vlWoskRpo8pYQ02PwLw7YZXhBbIXINkDSVdVyHLpZOc",
+      "acti_LcY8AExN77X86Own2lMyHHCfsHzui4PSRfpoNpBxoHV",
+      "acti_2JzpkFxt86NXtTkZen0ZQppYUskD67n88TYmbXkvr6d"
+    ],
+    "sms_ids": [
+      "acti_8ACqfSAutzeDbnOFDeksylTfbjNwq2g1YTva6GJJ1Ey",
+      "acti_kSNXWt5AQ2vsvz2CErcAc7MMJPg1V1wgk4EnUljm6Bx",
+      "acti_os65vOFagciHpJC5B3z89Gc4UcaTpAxLorK7QEVOL8E",
+      "acti_FQLb9dqDdTu7NZOijZaLUgWa5ejTdB52eNbulzwoMFe"
+    ],
+    "message_count": 10,
+    "first_activity_at": "2026-04-13T19:48:20.206Z",
+    "last_activity_at": "2026-04-13T20:49:24.905Z",
+    "last_inbound_at": "2026-04-13T20:46:27.536Z",
+    "last_outbound_at": "2026-04-13T20:48:53.630Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Urisha Joshi: A: 🔷 01. Today's Leads, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Change the name of the lead once you find it what it is (both lead record and contact name)"
+    ],
+    "created_at": "2026-04-13T19:48:13.370000+00:00",
+    "updated_at": "2026-04-13T20:51:54.011000+00:00",
+    "sales_scoring": {
+      "momentum": 52,
+      "relationship_strength": 37,
+      "friction": 25,
+      "reply_probability": 45,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "lead_id": "lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "contact_ids": [
+      "cont_3UdWgI6AxdP1yQzdfB0mryYIfLjud0LsmlTxUc4ovZA",
+      "cont_ZNFwlL7Gv9E1Oty4Zf6Yme3umnYvbiUxHkMOQqSJBG6"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_K6ZmcFfg8if1f0sbVDFYDlZ5RIwcI6NlfEETuuoeyok",
+      "acti_Qj5SP56sXAXamKvAYTEKhwyYSNfkXUp7aNV1GU8Cg9q",
+      "acti_LClbCgQ0NadrjGD0V4gI2HX1BXqmK3FLNDTF1zQPHwa",
+      "acti_lsgXm8fY4xgPtYJG3ThvT9jmOKWPKsA4bCEUtBqoDi8",
+      "acti_Jsc4H8i9PO93tu9IA4M9KBdPDhCPReYWhoRy5L1iy3L",
+      "acti_Kmd08wSZIFgEewffx9cKKAtOTdDqQsN7e25wXp2d2Vt",
+      "acti_pwcXqrJYjI9qsbwW0NEaQq5MuYel0tiF6erltCbDny3",
+      "acti_C6OHk9Z3nrkfaGTx4dHYGVZMA0k9iqyKRWAHaHffBtO",
+      "acti_xIJbgmOUSgHJSwNWKoH3FVzYgzCp7HzpyNydac0LgDo"
+    ],
+    "email_ids": [
+      "acti_LasO9ijbLRyjVE4p1uZWW2gTkbnpM5At6R5vnQFntBW",
+      "acti_Q509nBNBC83xJXJVV5nwDcbhc13bQ0tQAUPUkrBjygR",
+      "acti_NZZfi3eDt7QXxPqfyB6qrlbrJZ9I3O5Zbd5OqsdCZew",
+      "acti_kDjczn4KGAGWP4tlBwynDRNH1U9L35XdErEOUKZxuRs",
+      "acti_hTqgbbKBPMSqPduJ2Uka4uW1WUCoIYW4ZlVyJEjFFAs",
+      "acti_kuyI0ItTQCmi1tSjXsYzJMD3uiD0PKkMm5I5HBZZWWY"
+    ],
+    "sms_ids": [
+      "acti_ZAlUhBBbdspBXh9WR2iASbnO9aLPgxdS2WnyHh3S1qn",
+      "acti_wGiHsYX5BAoHdE5V3I9qf8uyRp8wvxUGrjVQp1yJgXJ",
+      "acti_dvUgVDeZr7z0ou4MRBZxdKD2pDGGb9dxC9CfT7g5Ld1",
+      "acti_fCPfdUwiZcODvLaasc4yBhzhkNFFcRAKEaAdtf0OExl",
+      "acti_sSMxpWMeOPHEMU3tihYAirLNm64Ap5eguyr4amZzshO",
+      "acti_VTLJB53pPTZFkKXX8k2lf5rgdj36rxUwiemVVXAxMR7",
+      "acti_BFKmtk1EWnrczdRuWLzIUlDE8dIBfnN41DGHDwS4xDJ"
+    ],
+    "message_count": 22,
+    "first_activity_at": "2026-03-13T23:01:52.768Z",
+    "last_activity_at": "2026-04-13T18:00:27.016Z",
+    "last_inbound_at": "2026-03-13T23:24:59.752Z",
+    "last_outbound_at": "2026-04-13T18:00:27.016Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Veronica Houck: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Facebook Lead Ads: Veronica Houck\nCampaign: 3 STILLS"
+    ],
+    "created_at": "2026-03-13T23:01:49.834000+00:00",
+    "updated_at": "2026-04-13T18:00:26.532000+00:00",
+    "sales_scoring": {
+      "momentum": 80,
+      "relationship_strength": 57,
+      "friction": 25,
+      "reply_probability": 72,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "contact_ids": [
+      "cont_1T5JLlVu2DDHs7gNco8E0ZW6ZRtTPvDWeKbmQru07TK",
+      "cont_kvi2OThpkAbG5iM5sBFu6VAGkRQVkbCH3qutFxql0yM",
+      "cont_YwhXL2w0IrHZtmj84zPILSPXtw5awDZ2SotaQlHhNw4"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_BOdNdLERSrNmv65rAY8epos8UzpcHv3lw6zXVe6Gy6T",
+      "acti_tEqEXqoOxPzZ76Hsj0QU143tf4JMrkJrTOnzTjtXjiN",
+      "acti_Szt7ty0ADQsSsMTNVNBDDhgQRczbiEHLiDYDo125PC9",
+      "acti_CL82PP5Pge12EOFdp1OzFu50g0MHEShE37s3dWManhe",
+      "acti_3vRbhSD5c8QbTBcjk1pICZSscuaVG0xhJEx0fQ8Bwwa",
+      "acti_XxnkKsSeDb62Cu7jKXZhdRICErqWQ84P35N1e0WeD3D",
+      "acti_faY1BMfKb3oSvjKyM1AL8hBwEVwDAMoZXay8mZN2eUO",
+      "acti_GoPXJOivEB4ty0WsOEMbeDDoYy4RRbmtrZy0zwfp63m",
+      "acti_QfTtTMLLDx2f6h0VmKNRgoWfATzeOIrL1XMvVPY9rvp"
+    ],
+    "email_ids": [
+      "acti_SOYxKSqkGnl9VXVk4EWaSqNaYUm5j7dllA1xIOqMKFx",
+      "acti_t54PxoOIo2Tyi85kVPQHqjQmIuHGSWlqHmy1O94yJ6x",
+      "acti_lk7PGc77B6BVvYnWx4qNwEKkkuL5NyjaqMF3oKmUvUB",
+      "acti_4Ic2GQ3arBm9bB0LIY0S6JxcGpY6FtnCdlPAHTNHLae",
+      "acti_RTQbdIyQBS2HBKigxO3L12HO1riDnVpFWiI0NQqPsZy",
+      "acti_NpcahNEZlentjg4Vi6lKBx9yXGKDjNzrYsc1Ew6C7WQ",
+      "acti_09NDFRWn5lm0KEUggP8k1ldCINJ6m6ZmvAbwBbb2QkM",
+      "acti_QLZbY1pCYjCqfq4RjflcctczMaM2i5bLrWHvVOy62Rj",
+      "acti_EQ2UHsF5MjzsYHQuBxHBuIFB3SNgjQAYJUnZ2ysTfVY",
+      "acti_eeIG4EdR543FcDWxOouzvTrhhfGpO03X72uSkLqhlwq",
+      "acti_aIVT3oLt2bYhmhPGjcWrJn8TuP8kvRZ15KAkbRHiVRn",
+      "acti_wfAli123oKFRMcSfeEDVGrOVXTEUmkhW1zB6n5Mi6Vy",
+      "acti_0wQoBapDV23VDogHerpXjDuROWEmLa7LXt2oKLW1AIw",
+      "acti_F9mmFB06FBqRooDiYzsKrmEppAuCr5EP6RLIv1qnTf4"
+    ],
+    "sms_ids": [
+      "acti_UMvokgIMhabYuPBJpVbMSSjLPQVFXhAoAVgVwUBag52",
+      "acti_FzNP9wu9EXK7pURNVNMTQI9l5eEUS7TV9QHColvA8mr",
+      "acti_NABT6VDjfROLbIpT1uZEgynpZFYFpahCam0aRWlpgI7",
+      "acti_FpMnyXanJeFqs48OUW0VERMiv3K9TyBtoOKGofKiF6z",
+      "acti_CFiEXggEyRxzxGJ9XRhABR1wrBrLAybzjC8UZiowKnQ",
+      "acti_uAcdBSpbSCy0AJ0VQ1KwIIJrM9TJxVMbSyfYQwKClr4",
+      "acti_FArPe7jUGXUGaMNOrAj28erxfYgO4SFNHpxZLykhwyr",
+      "acti_3F9SRSvMsXq0VdUepwGbMpms1e2HnWcYMefVp5GexdL",
+      "acti_bM6MzjnAAb1a9G97JAmuPBqQ26xqAJLNVgzIYVSUO4k"
+    ],
+    "message_count": 32,
+    "first_activity_at": "2026-03-21T16:05:52.173Z",
+    "last_activity_at": "2026-04-13T21:14:53.412Z",
+    "last_inbound_at": "2026-04-09T14:37:13.204Z",
+    "last_outbound_at": "2026-04-13T21:14:53.412Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Williams Brown: A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Follow up"
+    ],
+    "created_at": "2026-03-21T16:04:53.175000+00:00",
+    "updated_at": "2026-04-13T21:14:53.295000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 64,
+      "friction": 25,
+      "reply_probability": 84,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ",
+    "lead_id": "lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ",
+    "contact_ids": [
+      "cont_cqpMxQ8cqUpc46ajM1D4xGajBAOH7mW1B1O16oVysc1"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_FCFYKNJccPI7bPe5t5Rn5kuFFw1FKqlce5g7JZYKHPW",
+      "acti_XQEw6RkzFAWz7a4Tc9EmBXLPSHKYcNEzjfj2hVtUHBo",
+      "acti_UGkXLfG4LDELVdmfMIQMFA97PJ4D8WJDt4BLF4LEroA"
+    ],
+    "email_ids": [],
+    "sms_ids": [
+      "acti_h5ID8O13SD9MqUFvE0IsGmJz0eRoDGz6mkUNuz5Svru",
+      "acti_tKJL7xJMIgqkKnaObuUIG3BCVodDgbZiBhEhGcawedm"
+    ],
+    "message_count": 5,
+    "first_activity_at": "2026-04-13T13:00:07.438Z",
+    "last_activity_at": "2026-04-13T19:49:17.294Z",
+    "last_inbound_at": "2026-04-13T19:49:17.294Z",
+    "last_outbound_at": "2026-04-13T16:35:10.134Z",
+    "current_state": "awaiting_rep_reply",
+    "summary": "Yesenia Salazar: A: 🔷 01. Today's Leads",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Contact yessenia at 11"
+    ],
+    "created_at": "2026-04-13T12:58:52.335000+00:00",
+    "updated_at": "2026-04-13T19:49:17.312000+00:00",
+    "sales_scoring": {
+      "momentum": 46,
+      "relationship_strength": 49,
+      "friction": 20,
+      "reply_probability": 57,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "contact_ids": [
+      "cont_lGJ3shwTxKN79RbCJW3k30vJCNhCgadsDila2gJXXQr",
+      "cont_xmf1JvDktzcI5zv00txEg3kLvFBkuwSZPR4pAWkMcJM"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_EiCuXy734i726W3GFGj2PWXHvtIwPExUJ5g77MvhBRd",
+      "acti_R96E48Rqp4NsLKK8T1ADZRSJuSKdfm2PENhmt8z45KZ"
+    ],
+    "email_ids": [
+      "acti_0TyD3CS0JGtbXmuNc7da5EWfd8gBgJKl76hTR0esTiI",
+      "acti_dZ9qhfpoulVgO8KGzgJJUW39pJXaFwJVrjSveu1tIpy",
+      "acti_j4sQdxKNR2C0z77i4jgr9GPSYylaLHTCKqy5c19mTrq",
+      "acti_xrBmAYP7zIAQosI07giNFz2nhKdVxvZkQ95HWh7thAm",
+      "acti_AokbK5YIaAIi5GoDN7mOW56VPkHNLxOpPUzjJMujemO",
+      "acti_wPe0T7dyp19gePWlbhkmpWsr7vMcHo4SRueyUUOHHBl"
+    ],
+    "sms_ids": [
+      "acti_aTlGyA0TAYFYXcU8zKlfV64oM2MXWBZRlIqxTj3NqwP",
+      "acti_vb5vy2fYSFhFdkjUym3I2VmLzyDVAdorAg1Mn9xkA1e",
+      "acti_PYAFbA91UbM4hjE4iDia7AQPKDxaHmcGSvf2RmL2Xaf",
+      "acti_Kp3EEclbJ1jucg1WWeZ4yzGIBPPsf7QO6xLf5f6eTvs",
+      "acti_QWJodj0z0ACDvZ1e9BQkebAad8hEMZnyu5Yjl2voaJF",
+      "acti_0DBzIiFCHThUILKXhhxuYuHGkgg3shMOtjsHOPId97A",
+      "acti_03T616Z13JttYR0QhtAgfahFAcMBrl7hffzSw0pIwnx"
+    ],
+    "message_count": 15,
+    "first_activity_at": "2026-04-08T16:53:22.829Z",
+    "last_activity_at": "2026-04-13T18:00:30.376Z",
+    "last_inbound_at": "2026-04-08T21:43:34.636Z",
+    "last_outbound_at": "2026-04-13T18:00:30.376Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Yuni Colindres: A: 🔷 02. Day 1-5 Cadence, A: 🔷 05. No Connect Made",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Get her on the phone and into testing"
+    ],
+    "created_at": "2026-04-08T16:53:20.768000+00:00",
+    "updated_at": "2026-04-13T18:00:30.246000+00:00",
+    "sales_scoring": {
+      "momentum": 72,
+      "relationship_strength": 52,
+      "friction": 25,
+      "reply_probability": 65,
+      "clarity_of_next_step": 80
+    }
+  },
+  {
+    "conversation_id": "conv_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "contact_ids": [
+      "cont_iUf4YJ67ruTPmzCNTJA9ExzgqqVXY8T8LBBbVrUE9Sj",
+      "cont_hDKxS7fDnAJGihpVJcKjhzptwTQQM3ZDzgD7mO3xMue"
+    ],
+    "owner_user_id": "andre",
+    "channel_mix": [
+      "email",
+      "sms",
+      "call"
+    ],
+    "call_ids": [
+      "acti_wka6EU33ryMWYjKGcd7pyNYSzJRN2HGSceZYoEpz7Vi",
+      "acti_ZEFqgUC7N8sJ1WdI8Ut6U61EwyGv77P12pzIZMzxH9G",
+      "acti_2aEMsjepnzHoQ1XInps4yQ8HHk4FeB1S696SDCOvZY5",
+      "acti_d5UwTnIEAch0eEe45Q6iudQFYOI1qdTyCfuCm8UCymN",
+      "acti_jxcvaD5jxkUoQsy3zz9c72IOMYgY8LMCjQiPEsRzOHo",
+      "acti_YlQhnLKu3z2ObVzx6EbFpJgtXh9teUe9GQygHXqZvrE",
+      "acti_LBAbvmt7v8O3shpoEmVrAgvEkKQKAt19YAt6wHCSDTN",
+      "acti_awO1HC9iVWC5TN4lNMXkXnWSqsqiN7aj0NoqcndGUMX",
+      "acti_7Ab2YqtJI5fBQp44v9UcXez1LtWcvWBDKq3JMT2eOxu",
+      "acti_jmj4bTXP0HGZHLOCJkH9lbvbDjLzuXAKbSd4lC4u2Ip",
+      "acti_4UsfiqdLFZglDxtbssdgN2SvQpxXa9wLU4UgK19QIqD",
+      "acti_3bxvqMQQJdzD83bhLChobvoqKxPAGj6f3Q7WQkXU92y",
+      "acti_l0M0iqAIq25h1JqCRtr4sP1SXKww0Yw7XBIbtqGPI7x",
+      "acti_iEPmb9pfeMZXkerA132S7WrRZeMTaaOZ0k9ZGRWJVIu",
+      "acti_szPk2uhSR9RXAAtu7ZQmt5QKplARUiZf0WR3hCLd8vJ",
+      "acti_3nm2CBJdiPsOK9fX2ozJUk0rgd3x4ll3gBysMFXRh5H",
+      "acti_N1WQNVTOXTKz7uHBz3jtCCXA0CpdKzan6pSv4lmjZNb",
+      "acti_6aSncFhs11dTNFWoFu3MVKlvd6J13vALWux6hAqnFku",
+      "acti_eC835lN1fTn3rFKQ98asw7AnFTZGh3t9nEA5egihxt8",
+      "acti_hK7i6AsQuDD03pZGdQxPh8haziENruvFu56sNWQSgPn",
+      "acti_Cp5A3YQKxh25iIrjl7yV4olBte9UdQcvbKCxFfceOtA",
+      "acti_8JcWXVAigEcnri8Kuiru3zARtxXi7vfFngbjeJoFpP0",
+      "acti_J0F64vOtEAKD8AkF6k007kJyB4tDVrtLlT2eDyU15lG",
+      "acti_aONzMNfbPaGaKCo51K1kP2NNJeKZrtB2iewcLqEwHhd",
+      "acti_Qs4POVoFQC9SwwyCc4usPkmSAEngZRsBXzIotbhQDEX",
+      "acti_FSCVrLvhuESzjizNxSn47FL1pRRoSCliHk5t4PLSSaU",
+      "acti_RaIkpe2Lf34nkH1bHSSjm1UjtCPIZkTcweWerh4guGu",
+      "acti_0YwgMdVZYlkqVioXdiSUTtcdt0W6jnziXKXoh4voub0",
+      "acti_qdipD3uKNIWGxHtuRA1LijFvYZmu9QCydmyUTYJRDrM"
+    ],
+    "email_ids": [
+      "acti_0IRlDykyhPqQGRxdN2t1w6vW4R5mmH36GIGXhmtc0U0",
+      "acti_r0115CyWXrmkNBcgwPQ8YlS3TSAJdEeu4tEApZ4fLPt",
+      "acti_q6woGDCflh8SWpjM5A12IAsXZJclKVUIlAZ4h57xKtO",
+      "acti_qKZGkquLIBMmzkzsg3FzENQVvb220acPEnPWze7CrJa",
+      "acti_Qq6SSuxA6ODS9hJNxW7I2w6bruDVpGTPvkSAODaqlCx",
+      "acti_yGy4QozLsuwVK5PvwepVaADxL9vMrSIV0cAgh1narRm",
+      "acti_vGxlNRL9SM1NKosfo3KNuamBzl1VrDnx1dMTYnuAtNi",
+      "acti_1dqEfIwLMR4ZMR8BFFmgMAj1D1w2h0wfKSLVeClwgqz",
+      "acti_M3o4JHcwmLi67eQWOyXkEwJon3CyeGaE60mSoMfV4az",
+      "acti_4sPX1d47hf060iu6Wg0OLrwM3udx6PFuPUo9Hr4CEeT",
+      "acti_SzdVqQnRgfg7aAAbYrD0fBaD8XqCcYsRyAWaBvvjvX0",
+      "acti_Ofo8LvieOycqDxstBJzKCeURSCYipLLZP3iD31E5AWf",
+      "acti_0vVu8LTvYUWJ2oMLL55IueKDX0Um3fFtXcCpWD33hTH",
+      "acti_kImjw3jWn4PU7bKnaZK5dCK6DsBeBiVhZ2TgzIKAvqQ",
+      "acti_jSXEIrulh53WjSB9qtejTXQ8vpNvg1dNyNWvSq5uXT1",
+      "acti_LiBfB7mdZuYezNoGFVL1Do6K2fF8oFEpzP7jGCre1Yc",
+      "acti_TimzUsfdeMg9ddu45SggCRPvyRjdHWkpaVCSEFjzEBE",
+      "acti_WMoJoF4ax6luxqZx1Ah74JztyapLmzHyWnoCgBv6w4R",
+      "acti_1tvsjtip2YEyrZUmCxRIsND1G3UuHcJynPWGy4pFmIO",
+      "acti_0V364tZWlGh7pCbdXbKSmLyseKrAmTKfScE8P5xv2Xy",
+      "acti_RhfgiF3293ljoTesUzjA1DsSgeZgFvbfE43dosX4Wob",
+      "acti_QW9CoLBIdVVEeCNj7Ej6UjYeYwrcI0LePbfoNJkoEZm",
+      "acti_9qn8rvwAi003NADKeZ5g0aiS84iJS30AL3sPpQ6I6Ek",
+      "acti_Y2LXqumon1VOXpiWWGB51mB2QtXSa4irjlHPrEGYhRi",
+      "acti_HkclrZbEnhvpsxXkYKDmIIbAhvydx5CCZbUMHgyrb4q"
+    ],
+    "sms_ids": [
+      "acti_iwW5vgCM47Ifu2rTRGVN5N0U2nZPdZCyPmgZCL69RXs",
+      "acti_bwjQl7Cv4MMyXMkidG6pd4QTX37tquoMANIF6A8MqsK",
+      "acti_kYRgEWaOPyMy5vI4kkgaUDWD4oVoLeARHUmwYyk6yR0",
+      "acti_t3DqmlAmivuabofS1VdCBjZcZVljoRSXidB4yX9R1ru",
+      "acti_eN6KuMWWmO8mDMmG5sQGBw9BrpRzvWJitYKNAQgikF1",
+      "acti_CAnGoi3ayXguXuDC1BJsQrh9ELT3aj3ntMChE73YOSd",
+      "acti_NrS5GPIxhooM7ZWHpLNzBAlAQrsFJ7t4IJSveir5X9k",
+      "acti_DD6GD53C6T878UU8VaF8Gecr4jIaEehVlCbNHeGoIqG",
+      "acti_Aeo6mvXOL8cyNQc9P6Dvcjqwb84c0KAu8LmoQ7YmM8E",
+      "acti_cblHNh4qeZdtSNpo7oUb9ltMBBjR10puaiuQk3WfuUa",
+      "acti_rV2HDkdkBFp6TF02jzGbV1JAKAmxRwf2bueruB4o0Tz",
+      "acti_CN1e1ci6m7ffaDcYxm0HGDKdOZFxSvdjiSROzxWPty5",
+      "acti_eBksVjecA1upsWXW0wLFlOJVcB8VIIBBfBsjFS8jA5N",
+      "acti_gAMZnT4UZohKnrFKk27zz114AWFuTQN75VMOl3IRtr4",
+      "acti_CAzzHBdDHm7rydkBcTmKPeFf3knpwb7RK0bJKE0fCBH",
+      "acti_sE6vA8SXxOjmNcmzDV4jefharvKmKAZTzFtiGwVFhyP",
+      "acti_hsJn98Tb9FnuYPZalviUFo8dJNtkTL8ivUtUR8TD0h0",
+      "acti_oZvyiGLmGVEe2tW7TNDclKE37jGOwneYrnDr0pzDNcc",
+      "acti_5SlwJic4681i74oUgTAFUpXBj6tXU8wzDsqrFuLkfIl",
+      "acti_WqfpE5Ja9oa3RCVT3gvEGYkssqm8b6jlabsRmdptJAQ",
+      "acti_LQdy4ZudTqHwCwwl2YO4Fklk7j20IPqcjAdAq6xXYYv",
+      "acti_lF6xAG3ylylfd9AbMZe6ym5kwScTJX485fGLZLxFu3n",
+      "acti_oWLnlVJHU92fe8CMv2f6Im0iAxsELNpLtHRRF6qOAC1",
+      "acti_mgrmMEY06eVdb0wJUy1Tq55cWPFptk2FRgXb6RXq9i8",
+      "acti_7oaeLtSEJQfCmBAwVEwd7sVVrxY6DbXqL5lTkpN3zbE",
+      "acti_jyU0ExCTjDQIbpVV5ynaaU7tETMzvRLuEgjwDej9sHa",
+      "acti_uuoHGvAt8Oirb9NE5gnv8jrcEsFDqS60FSknDVFzJ0y",
+      "acti_1pvzNUJAsQFO0Lh2JXmxqJElDnmyXlvEJ39kdUZUYxM",
+      "acti_jmVIGUWZOH7V8Be0RmrV4yrN305yL3NB8iAlKMNp4KU",
+      "acti_pGijXys0fYqSy1ms8OjJP03ykjIc1mbt9xycTfw7SAS",
+      "acti_iNWohn82tgwPs0swZIoKdZXMrrkvmFIEeKlXA5N3os7",
+      "acti_stqgHYSAEmvNjPMr8bANTRRUmwE21HQEOUuukaLAddx",
+      "acti_VzIcJfgQCp3TOhoc1FlXQG34bMyiPY63aPkT4yNPx27",
+      "acti_rJRUv3tJqmcmZnbt23vcECqWde86IyC1T8KsLm3W1gK",
+      "acti_GMP7vAVSwiX0oqxJ2mhx5IUKHfPu581MZxBOMnAL2n8",
+      "acti_6cwWH6u5rsHKKMxp1Cg272IGXBZM8jTzpUH5pzEOAVG",
+      "acti_TgNtjju4IgUyoWaEt0NySE9AouI1LnBtTboj3ytdaEK",
+      "acti_XdCWdoOMcXLLrbM7h21HF7hRPf71QkTMaNaNHuoyY2g",
+      "acti_sfKT2IJQxHhXS5eWoVVpNZaFK9qy3JkS7m5ldKPgxUD",
+      "acti_QUUK24CRU7d1EBwr2oS4IPP3yYT3eK0UNxZJDM7YjvK",
+      "acti_gdn1KPDuC2hBflxjGyCA1Ebq21ZismiDPmHdMKAHH9I",
+      "acti_AxvUdxblqy9OrDGPLkrt3dh8KEnh3YINF7TK3fJ4TQi",
+      "acti_dLGzuNS2GqjOmH5AUz5sDqeyVAkJBSNvMuF9eligJpe",
+      "acti_bqRKGMdXPY9B3xypIR8ER5g1RDkSqE9ATQ1rG0ENg57",
+      "acti_XteZ54PDXiEWGPYA5Rdr9x2yG3g4kDKecZajfIeCaTJ",
+      "acti_aMhPnx0eWqwqfRTUix6fNpGfTNl2GyU8OnXTjCTqBBF",
+      "acti_Fvg2Pr24bCKPT4AnwvyR35DYrkDOJ2Ae3T5sslv3nJn",
+      "acti_QeWREDWpaO3Zf9B52W9KlkH83tSymPd9Tleq8qS4Bfu",
+      "acti_mOt28BkrGmqUO3QEDR1K0BtCA2nZ2nzwgnZyHZjgUBG",
+      "acti_vlDnNFJ3ZQGqXMwogFmzixsJmAb9gv6NegAfnLB2zWy",
+      "acti_VP3I8NDAoYcBpbHxmm64rd1wHxM0jePdc3wvLnKcQAV",
+      "acti_KV7BiHq5pSlLN7Rz03yAndIrwrJDGwspZJNALkzHhKW",
+      "acti_c2D87JJgt6KEgHH0zItf8Tt3uWiA9chEOlJX2J3jAsc",
+      "acti_RrGnLO4cl4Pwt3Sahdl40OAsZFfLHvLWnHut56XgEew",
+      "acti_oQEplMnNhGLYpP3nxbXJiTy7mjnCqiOTfzKPyJ1nyCA",
+      "acti_aoeOotPVwgiCkN1jgTYIfdQP91wRq7TwNG7imyRtOPo",
+      "acti_dh7rvJDXOwnpOlYVzPH9BgXiqgcXfTn6Vg6nYN3Ttof",
+      "acti_faiiKp1gIVC46lYZuR1znNvRHYZP2v2Gs4qXrPcA7NG",
+      "acti_mJ5oWbtbMw6acb2LFnhsRpeeKGS5DDeuYvdWybwsWV8",
+      "acti_amLcvLZjMKzvKfOPstHitn1vOPK3obmcXBLg9T1ZcSo",
+      "acti_VsHLIUSNSNtFQ4pIe2BDC5mWb7BxhCTeuvPsovU5UVO",
+      "acti_pGIgSjW8kHRXJW4XehajA7pcEY7k8kxUqf4wWO3QW0t",
+      "acti_Le7C5WY2IGKvUkvZDD0WOuiiTw2mCs1YrESIiPfq7Mk",
+      "acti_j5N748kwhEhXnt0dQVFRYQQWMIjkGbaN84fyXJQ096V",
+      "acti_KdwNRs8tL81esZxhHC3ykcYaOgz8UwpRvIhlQuOZ0Br",
+      "acti_0GUQV6NHP1V3iWTHitVYoM3wE0UeSpDW2gh2ByHn1j9",
+      "acti_uEnwiMwnSiQzlToWcK4hTMRNW6IQAUn8cWXcrV847Ji",
+      "acti_3mJTWtyB7tmofKsyoWwlmmBlAZLASqIaA0awxpmd4xN",
+      "acti_tRXciB5KFgaeOvDPo1qZL22N4mmqLTkZt6Oczeq5mmP",
+      "acti_sQvTXi3TvfdSAq400RikdNJkxExcSzYTTv84NbdGGS4",
+      "acti_OI9yUA6i4nNYfM26J4hzthhLnRN1AMrPppGHYLpOXK9",
+      "acti_sJuFShRfxtGrY0Gp7KWAzOBINnWnYy0pJPK7T2rncYW",
+      "acti_RKXzTkgFHpER6I6jdp1WKhEt73rxueKxGsbdVCAJfx6",
+      "acti_fbDgrf44fv8rDdmAQLqgsiYWkUMPjZHZ97KT6IQbsV8",
+      "acti_sEphw7tnt5wFKdI0hmz8HMVIOrT52LmQtSUa3oMLla7",
+      "acti_ePxZmWtOOs5LS6aVzDyePdafoUZ3rU85tHp5gK3PlJF",
+      "acti_po174XXdNaLxy7gwXoDV38bIcp5EAzg5RcRtPIWsRA8",
+      "acti_gonwwm8wrlL2ioqPhbNzdrUGdEzCpCi2QOurAsRqAi7",
+      "acti_UNiuBPVynvlIXRcicxnyEiQ5IjVySPRQHT6SaoJCwhn",
+      "acti_8p6tBrJhooX2WOg1vpjnq6J6SrBGx4g15YDmSvkoqyk",
+      "acti_PXSjfdN4TSIwHZgkLOL24p0UqtiE1xXKxcMqkRjOo6m",
+      "acti_2SWYeXmdw7F1OiBIVfj9PEyXMLGGoOPnA2nuxurufAF",
+      "acti_8HhrKBCI4Da3iY7NSXnFE2oWqFUSzmTyri1Kpo5W1PD",
+      "acti_fA4Gqy1I1Z4nlhpkXFhefJ8XyB6udI9OTtMs0qn7vxh",
+      "acti_8GXbokcfTfMwc9xTmYD0Tyqvvc06wiJphsu6vspIbzY",
+      "acti_EkNpNpAB6tMGvRIKWUmovmWALwYuk6bISP0hBFr7h6U",
+      "acti_QDn1S88rh3FXRaJzptBk4aSbM5gntw2XaCcgoDojA2w",
+      "acti_nh1cZExxucKaskRlnm5kwBNKvjQ9TDx02efBEbjkPyS",
+      "acti_1n0ZJOYWgOJAIgaIh5dxzSffICGVEJcBXxk1RYVgNq9",
+      "acti_wYX2ghW6s8eXu88VOuIq3cjNra8KIBweOxk7ezIcOHk",
+      "acti_eghXYS8Esy4xmTfHSBVK8tYRan37km4QdbJvuy24UXY",
+      "acti_evXHfemZFQZSECg7AvrnFCEfuf7Wkf9CS5imo4v0k61",
+      "acti_S6yfPbz6zUrzcKlwl9gSRneQYuRNdNVgzNWnf5Eidic",
+      "acti_4P3aYtvh9h3iDbjE4bja3VFNqvQCq3RRmxYqYniTaGK",
+      "acti_IJHrMnu82TnU69du4PeaQXoFQovgNYJxHUlMeb1oilK",
+      "acti_Bkm6xiVIiC9pS9zqNFlTuQQefJ53FWF7lHL8ieWCVHr",
+      "acti_BCXefDsSOuZc1YjzpFb9YEEzcaSQnFfWBBkMZfejVw5",
+      "acti_bkbEgJPIPGZ9mvCtB47ZdwbTXx0PO9QsrgW0TlcW8zN",
+      "acti_H31LhTJIRvvdVIonjEyIGbDYBrbIKVLiGCJQJOsBTj8"
+    ],
+    "message_count": 153,
+    "first_activity_at": "2025-07-21T15:35:27.757Z",
+    "last_activity_at": "2026-03-05T01:29:35.382Z",
+    "last_inbound_at": "2025-12-30T18:27:26.656Z",
+    "last_outbound_at": "2026-03-05T01:29:35.382Z",
+    "current_state": "awaiting_customer_reply",
+    "summary": "Zilah conserve: A: 🔷 08. Long-Term / Dormant Followup",
+    "sentiment": null,
+    "intent_signals": [],
+    "objection_signals": [],
+    "commitment_signals": [],
+    "next_step_mentions": [
+      "Send reactivation follow-up"
+    ],
+    "created_at": "2025-07-21T15:35:12.812000+00:00",
+    "updated_at": "2026-03-19T00:32:01.190000+00:00",
+    "sales_scoring": {
+      "momentum": 100,
+      "relationship_strength": 85,
+      "friction": 35,
+      "reply_probability": 100,
+      "clarity_of_next_step": 45
+    }
+  }
+]

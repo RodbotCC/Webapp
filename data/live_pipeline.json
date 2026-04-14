@@ -1,26 +1,19 @@
 {
   "summary": {
-    "total_pipeline": 70392,
+    "total_pipeline": 69372,
     "total_deals": 13,
-    "avg_deal_value": 5415,
-    "locked_in_revenue": 119508,
-    "at_risk_revenue": 49707,
+    "avg_deal_value": 5336,
+    "locked_in_revenue": 115887,
+    "at_risk_revenue": 57687,
     "largest_deal": 11685,
-    "won_count": 17,
-    "lost_count": 70
+    "won_count": 16,
+    "lost_count": 71
   },
   "stages": [
     {
       "label": "⬜ 00. Prospect",
-      "count": 9,
-      "value": 40257,
-      "color": "#A8D8EA",
-      "emoji": "🔹"
-    },
-    {
-      "label": "📲 02. Setting Tasting Appointment",
-      "count": 2,
-      "value": 14670,
+      "count": 11,
+      "value": 53907,
       "color": "#A8D8EA",
       "emoji": "🔹"
     },
@@ -32,7 +25,7 @@
       "emoji": "🔹"
     },
     {
-      "label": "🔥 03. Booked for Tasting",
+      "label": "🔥 04. Attended Tasting",
       "count": 1,
       "value": 3780,
       "color": "#A8D8EA",
@@ -40,14 +33,14 @@
     }
   ],
   "priority_distribution": {
-    "high": 5,
-    "medium": 8,
+    "high": 4,
+    "medium": 9,
     "low": 0
   },
   "risk_patterns": [
     {
       "flag": "Low confidence (<50%)",
-      "count": 11,
+      "count": 12,
       "severity": "warning"
     },
     {
@@ -77,23 +70,25 @@
       "created_at": "2025-10-30T13:12:55.691000+00:00"
     },
     {
-      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
-      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
-      "name": "Mary McGahan",
-      "value": 9000,
-      "stage": "📲 02. Setting Tasting Appointment",
+      "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+      "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "name": "Laine Martins",
+      "value": 9450,
+      "stage": "⬜ 00. Prospect",
       "event": "",
       "venue": "",
       "guests": "",
-      "confidence": 80,
+      "confidence": 20,
       "priority": "high",
       "urgency": "high",
       "status": "active",
-      "risk": [],
+      "risk": [
+        "low confidence"
+      ],
       "close_at": null,
       "event_date": null,
-      "updated_at": "2026-03-02T16:49:26.502000+00:00",
-      "created_at": "2025-11-17T05:07:54.238000+00:00"
+      "updated_at": "2026-04-13T19:53:50.704000+00:00",
+      "created_at": "2026-04-13T19:15:01.500000+00:00"
     },
     {
       "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
@@ -115,27 +110,6 @@
       "event_date": null,
       "updated_at": "2026-03-30T16:48:15.751000+00:00",
       "created_at": "2026-03-28T16:23:10.680000+00:00"
-    },
-    {
-      "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
-      "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
-      "name": "Leslie Kearse Smith",
-      "value": 5670,
-      "stage": "📲 02. Setting Tasting Appointment",
-      "event": "",
-      "venue": "",
-      "guests": "",
-      "confidence": 20,
-      "priority": "high",
-      "urgency": "high",
-      "status": "active",
-      "risk": [
-        "low confidence"
-      ],
-      "close_at": null,
-      "event_date": null,
-      "updated_at": "2026-04-02T16:35:46.716000+00:00",
-      "created_at": "2026-03-20T18:16:17.677000+00:00"
     },
     {
       "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
@@ -180,6 +154,27 @@
       "created_at": "2026-03-20T00:21:28.852000+00:00"
     },
     {
+      "id": "oppo_GtI7vs0EkdoOIhazvcWMUHYw5C91cguwpfYMn2MzrtV",
+      "lead_id": "lead_BO4sSWyy05VAsEeoAxUBQaM6hPRu8WJ1QQyhirsCeFJ",
+      "name": "Gaby Mejia",
+      "value": 4200,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-14T14:26:19.878000+00:00",
+      "created_at": "2026-04-14T11:59:08.092000+00:00"
+    },
+    {
       "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
       "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
       "name": "Ari",
@@ -205,7 +200,7 @@
       "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
       "name": "Rebecca Almeida",
       "value": 3780,
-      "stage": "🔥 03. Booked for Tasting",
+      "stage": "🔥 04. Attended Tasting",
       "event": "",
       "venue": "",
       "guests": "",
@@ -218,7 +213,7 @@
       ],
       "close_at": null,
       "event_date": null,
-      "updated_at": "2026-03-16T15:20:30.077000+00:00",
+      "updated_at": "2026-04-14T16:24:09.820000+00:00",
       "created_at": "2026-01-14T19:08:55.250000+00:00"
     },
     {
@@ -327,23 +322,25 @@
       "created_at": "2025-10-30T13:12:55.691000+00:00"
     },
     {
-      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
-      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
-      "name": "Mary McGahan",
-      "value": 9000,
-      "stage": "📲 02. Setting Tasting Appointment",
+      "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+      "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "name": "Laine Martins",
+      "value": 9450,
+      "stage": "⬜ 00. Prospect",
       "event": "",
       "venue": "",
       "guests": "",
-      "confidence": 80,
+      "confidence": 20,
       "priority": "high",
       "urgency": "high",
       "status": "active",
-      "risk": [],
+      "risk": [
+        "low confidence"
+      ],
       "close_at": null,
       "event_date": null,
-      "updated_at": "2026-03-02T16:49:26.502000+00:00",
-      "created_at": "2025-11-17T05:07:54.238000+00:00"
+      "updated_at": "2026-04-13T19:53:50.704000+00:00",
+      "created_at": "2026-04-13T19:15:01.500000+00:00"
     },
     {
       "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
@@ -365,27 +362,6 @@
       "event_date": null,
       "updated_at": "2026-03-30T16:48:15.751000+00:00",
       "created_at": "2026-03-28T16:23:10.680000+00:00"
-    },
-    {
-      "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
-      "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
-      "name": "Leslie Kearse Smith",
-      "value": 5670,
-      "stage": "📲 02. Setting Tasting Appointment",
-      "event": "",
-      "venue": "",
-      "guests": "",
-      "confidence": 20,
-      "priority": "high",
-      "urgency": "high",
-      "status": "active",
-      "risk": [
-        "low confidence"
-      ],
-      "close_at": null,
-      "event_date": null,
-      "updated_at": "2026-04-02T16:35:46.716000+00:00",
-      "created_at": "2026-03-20T18:16:17.677000+00:00"
     },
     {
       "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
@@ -430,6 +406,27 @@
       "created_at": "2026-03-20T00:21:28.852000+00:00"
     },
     {
+      "id": "oppo_GtI7vs0EkdoOIhazvcWMUHYw5C91cguwpfYMn2MzrtV",
+      "lead_id": "lead_BO4sSWyy05VAsEeoAxUBQaM6hPRu8WJ1QQyhirsCeFJ",
+      "name": "Gaby Mejia",
+      "value": 4200,
+      "stage": "⬜ 00. Prospect",
+      "event": "",
+      "venue": "",
+      "guests": "",
+      "confidence": 20,
+      "priority": "medium",
+      "urgency": "medium",
+      "status": "active",
+      "risk": [
+        "low confidence"
+      ],
+      "close_at": null,
+      "event_date": null,
+      "updated_at": "2026-04-14T14:26:19.878000+00:00",
+      "created_at": "2026-04-14T11:59:08.092000+00:00"
+    },
+    {
       "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
       "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
       "name": "Ari",
@@ -455,7 +452,7 @@
       "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
       "name": "Rebecca Almeida",
       "value": 3780,
-      "stage": "🔥 03. Booked for Tasting",
+      "stage": "🔥 04. Attended Tasting",
       "event": "",
       "venue": "",
       "guests": "",
@@ -468,7 +465,7 @@
       ],
       "close_at": null,
       "event_date": null,
-      "updated_at": "2026-03-16T15:20:30.077000+00:00",
+      "updated_at": "2026-04-14T16:24:09.820000+00:00",
       "created_at": "2026-01-14T19:08:55.250000+00:00"
     },
     {
@@ -579,7 +576,7 @@
   ],
   "_meta": {
     "source": "close-api:file-tree",
-    "generated_at": "2026-04-13T19:39:26.833Z",
+    "generated_at": "2026-04-14T20:28:50.464Z",
     "note": "Andre-focused file-backed pipeline. Supabase is optional, not required."
   }
 }

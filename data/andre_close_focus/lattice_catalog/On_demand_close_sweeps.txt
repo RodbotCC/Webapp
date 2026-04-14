@@ -1,0 +1,54 @@
+[
+  {
+    "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "name": "Laine Martins",
+    "generated_at": "2026-04-14T19:44:52.820Z",
+    "counts": {
+      "contacts": 2,
+      "opportunities": 1,
+      "tasks": 1,
+      "emails": 3,
+      "sms": 7,
+      "calls": 2,
+      "notes": 2
+    },
+    "summary": {
+      "name": "Laine Martins",
+      "status": "🔘 Maybe",
+      "primary_email": "laine_demoura@hotmail.com",
+      "primary_phone": "+17814857940",
+      "latest_email": "Understanding Our Catering Service Types",
+      "latest_sms": "acabei de encaminhar o email e tambem mandei uma mensagem privada pra ela. \nCreio q ela te respondera ate amanha",
+      "latest_call": "2026-04-13T19:34:14.647000+00:00",
+      "latest_note": "LIVE CHAT STARTED 04/13/26 03:25PM",
+      "next_task": "Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS"
+    },
+    "file": "data/andre_close_focus/on_demand_sweeps/lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv.json"
+  },
+  {
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "name": "Rebecca Almeida",
+    "generated_at": "2026-04-14T07:01:21.620Z",
+    "counts": {
+      "contacts": 2,
+      "opportunities": 1,
+      "tasks": 3,
+      "emails": 14,
+      "sms": 25,
+      "calls": 25,
+      "notes": 7
+    },
+    "summary": {
+      "name": "Rebecca Almeida",
+      "status": "🔥 Definitely",
+      "primary_email": "beckiealmeida@yahoo.com",
+      "primary_phone": "+17742184088",
+      "latest_email": "Few Days Away! Your Tasting Event Details 🎉🍽️",
+      "latest_sms": "Hey Rebecca, André here from Comeketo Catering. Let me know when it's the best time for us to talk. Okay, hope everything is going well. Talk to you soon",
+      "latest_call": "2026-03-17T16:25:34.011000+00:00",
+      "latest_note": "she asked to get in touch again mid April since she is tryiing to get things\ndone with the Venue",
+      "next_task": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get her on the phone and sell"
+    },
+    "file": "data/andre_close_focus/on_demand_sweeps/lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN.json"
+  }
+]

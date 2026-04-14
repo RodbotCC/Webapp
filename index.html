@@ -27,12 +27,21 @@
     <button type="button" class="sb-btn" data-surface="nav-primary" data-view="coaching" aria-label="Coaching"><i data-lucide="graduation-cap" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Coach</span></button>
     <button type="button" class="sb-btn" data-surface="nav-primary" data-view="deals" aria-label="Deals"><i data-lucide="handshake" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Deals</span></button>
     <button type="button" class="sb-btn" data-surface="nav-primary" data-view="automation" aria-label="Automation"><i data-lucide="bot" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Auto</span></button>
+    <button type="button" class="sb-btn" data-surface="nav-primary" data-view="lattice" aria-label="Lattice Lab"><i data-lucide="git-branch" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Lattice</span></button>
     <button type="button" class="sb-btn" data-surface="nav-primary" data-view="timeline" aria-label="Timeline"><i data-lucide="calendar-range" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Timeline</span></button>
     <button type="button" class="sb-btn" data-surface="nav-primary" data-view="oracle" aria-label="Oracle AI chat"><i data-lucide="message-square-text" style="width:1.1rem;height:1.1rem;"></i><span class="sb-label">Oracle</span></button>
     <div class="sb-spacer"></div>
     <button type="button" class="sb-bottom-btn" id="themeToggle" data-surface="theme-toggle" title="Toggle light/dark theme" aria-label="Toggle theme"><i data-lucide="moon" style="width:1rem;height:1rem;"></i></button>
     <button type="button" class="sb-bottom-btn" id="openSettingsBtn" data-surface="settings-trigger" title="Settings" aria-label="Open settings"><i data-lucide="settings" style="width:1rem;height:1rem;"></i></button>
   </nav>
+<script>
+try {
+  var _lt = localStorage.getItem('comeketo-theme') === 'light';
+  if (_lt) document.body.classList.add('theme-light');
+  var _ti = document.querySelector('#themeToggle [data-lucide]');
+  if (_ti) _ti.setAttribute('data-lucide', _lt ? 'sun' : 'moon');
+} catch (e) {}
+</script>
 
   <!-- MAIN -->
   <div class="main-area" data-surface="shell-main">
@@ -78,7 +87,13 @@
 <script src="app.js"></script>
 <script>
   // Initialize Lucide icons after DOM is ready
-  document.addEventListener('DOMContentLoaded', () => { if (window.lucide) lucide.createIcons(); });
+  document.addEventListener('DOMContentLoaded', () => {
+    try {
+      const icon = document.querySelector('#themeToggle [data-lucide]');
+      if (icon) icon.setAttribute('data-lucide', document.body.classList.contains('theme-light') ? 'sun' : 'moon');
+    } catch (e) {}
+    if (window.lucide) lucide.createIcons();
+  });
 </script>
 </body>
 </html>

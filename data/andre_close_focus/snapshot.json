@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "close-api:file-tree-andre-focus",
-    "generated_at": "2026-04-13T19:39:26.837Z",
+    "generated_at": "2026-04-14T20:28:50.469Z",
     "note": "Focused Andre source pack generated from Close direct file-backed pipeline/tasks."
   },
   "views": [
@@ -9,8 +9,20 @@
       "id": "todays_leads",
       "label": "01. Today's Leads",
       "count": 5,
-      "total_value": 24570,
+      "total_value": 30807,
       "items": [
+        {
+          "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "name": "Laine Martins",
+          "value": 9450,
+          "stage": "⬜ 00. Prospect",
+          "confidence": 20,
+          "urgency": "high",
+          "close_at": null,
+          "updated_at": "2026-04-13T19:53:50.704000+00:00",
+          "reason": "Open task due today"
+        },
         {
           "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
           "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
@@ -24,15 +36,27 @@
           "reason": "Open task due today"
         },
         {
-          "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
-          "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
-          "name": "Leslie Kearse Smith",
-          "value": 5670,
-          "stage": "📲 02. Setting Tasting Appointment",
+          "id": "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f",
+          "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+          "name": "Ben Todd",
+          "value": 5103,
+          "stage": "⬜ 00. Prospect",
           "confidence": 20,
           "urgency": "high",
           "close_at": null,
-          "updated_at": "2026-04-02T16:35:46.716000+00:00",
+          "updated_at": "2026-04-01T16:10:22.173000+00:00",
+          "reason": "Open task due today"
+        },
+        {
+          "id": "oppo_FmnFVaiJSHLWUHylKf3K3VKXxJqrJV4NSOOGwMSvaEQ",
+          "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+          "name": "Edwin Portillo",
+          "value": 4914,
+          "stage": "⬜ 00. Prospect",
+          "confidence": 20,
+          "urgency": "medium",
+          "close_at": null,
+          "updated_at": "2026-03-20T01:13:37.005000+00:00",
           "reason": "Open task due today"
         },
         {
@@ -46,30 +70,6 @@
           "close_at": null,
           "updated_at": "2026-02-19T00:38:28.951000+00:00",
           "reason": "Open task due today"
-        },
-        {
-          "id": "oppo_jQBuH8wJC2dG53iU4E9LIRCUU5ASSltuMwG0Y0NQhEl",
-          "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
-          "name": "Rebecca Almeida",
-          "value": 3780,
-          "stage": "🔥 03. Booked for Tasting",
-          "confidence": 20,
-          "urgency": "medium",
-          "close_at": null,
-          "updated_at": "2026-03-16T15:20:30.077000+00:00",
-          "reason": "Open task due today"
-        },
-        {
-          "id": "oppo_nQwFF0ZRSK9nGOn0h3EpduzDFw0Ap94xJYvRL5XcxyL",
-          "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
-          "name": "Gabby Garcia Serrano",
-          "value": 3780,
-          "stage": "⬜ 00. Prospect",
-          "confidence": 20,
-          "urgency": "medium",
-          "close_at": null,
-          "updated_at": "2026-04-07T15:37:42.847000+00:00",
-          "reason": "Open task due today"
         }
       ]
     },
@@ -77,27 +77,27 @@
       "id": "day_1_5_cadence",
       "label": "02. Day 1-5 Cadence",
       "count": 1,
-      "total_value": 3780,
+      "total_value": 9450,
       "items": [
         {
-          "id": "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW",
-          "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
-          "name": "Ju",
-          "value": 3780,
+          "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "name": "Laine Martins",
+          "value": 9450,
           "stage": "⬜ 00. Prospect",
           "confidence": 20,
-          "urgency": "medium",
+          "urgency": "high",
           "close_at": null,
-          "updated_at": "2026-04-07T21:07:38.396000+00:00",
-          "reason": "Lead age 5 days"
+          "updated_at": "2026-04-13T19:53:50.704000+00:00",
+          "reason": "Lead age 1 days"
         }
       ]
     },
     {
       "id": "day_6_10_cadence",
       "label": "03. Day 6-10 Cadence",
-      "count": 4,
-      "total_value": 15120,
+      "count": 5,
+      "total_value": 18900,
       "items": [
         {
           "id": "oppo_nWf8fup5t0yk5Pa2rDx4TMqcmKa18TghG0ts41Mse5g",
@@ -109,7 +109,7 @@
           "urgency": "medium",
           "close_at": null,
           "updated_at": "2026-04-06T21:47:41.606000+00:00",
-          "reason": "Lead age 7 days"
+          "reason": "Lead age 8 days"
         },
         {
           "id": "oppo_ugTLwzSvl1bz2pQnvUT0fM0nfF5hZcparNIH3pl8vhQ",
@@ -121,7 +121,7 @@
           "urgency": "medium",
           "close_at": null,
           "updated_at": "2026-04-07T13:00:56.685000+00:00",
-          "reason": "Lead age 6 days"
+          "reason": "Lead age 7 days"
         },
         {
           "id": "oppo_UWRBCudnXDceSUK9MOlBHrJ7dNV1aOT0FYOCVe9n3NU",
@@ -133,7 +133,7 @@
           "urgency": "medium",
           "close_at": null,
           "updated_at": "2026-04-09T01:31:06.836000+00:00",
-          "reason": "Lead age 6 days"
+          "reason": "Lead age 7 days"
         },
         {
           "id": "oppo_nQwFF0ZRSK9nGOn0h3EpduzDFw0Ap94xJYvRL5XcxyL",
@@ -145,6 +145,18 @@
           "urgency": "medium",
           "close_at": null,
           "updated_at": "2026-04-07T15:37:42.847000+00:00",
+          "reason": "Lead age 7 days"
+        },
+        {
+          "id": "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW",
+          "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+          "name": "Ju",
+          "value": 3780,
+          "stage": "⬜ 00. Prospect",
+          "confidence": 20,
+          "urgency": "medium",
+          "close_at": null,
+          "updated_at": "2026-04-07T21:07:38.396000+00:00",
           "reason": "Lead age 6 days"
         }
       ]
@@ -167,7 +179,7 @@
       "id": "needs_response",
       "label": "06. Needs Response",
       "count": 13,
-      "total_value": 70392,
+      "total_value": 69372,
       "items": [
         {
           "id": "oppo_Ds6lt6sfKZ8cngRKS3IBRu1XqD3VDzfSp3PUjciTLy8",
@@ -182,22 +194,10 @@
           "reason": "High-priority active opportunity"
         },
         {
-          "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
-          "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
-          "name": "Mary McGahan",
-          "value": 9000,
-          "stage": "📲 02. Setting Tasting Appointment",
-          "confidence": 80,
-          "urgency": "high",
-          "close_at": null,
-          "updated_at": null,
-          "reason": "High-priority active opportunity"
-        },
-        {
-          "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
-          "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
-          "name": "Karla Velazquez",
-          "value": 7245,
+          "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+          "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+          "name": "Laine Martins",
+          "value": 9450,
           "stage": "⬜ 00. Prospect",
           "confidence": 20,
           "urgency": "high",
@@ -206,11 +206,11 @@
           "reason": "Low confidence - at risk"
         },
         {
-          "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
-          "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
-          "name": "Leslie Kearse Smith",
-          "value": 5670,
-          "stage": "📲 02. Setting Tasting Appointment",
+          "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
+          "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+          "name": "Karla Velazquez",
+          "value": 7245,
+          "stage": "⬜ 00. Prospect",
           "confidence": 20,
           "urgency": "high",
           "close_at": null,
@@ -242,6 +242,18 @@
           "reason": "Low confidence - at risk"
         },
         {
+          "id": "oppo_GtI7vs0EkdoOIhazvcWMUHYw5C91cguwpfYMn2MzrtV",
+          "lead_id": "lead_BO4sSWyy05VAsEeoAxUBQaM6hPRu8WJ1QQyhirsCeFJ",
+          "name": "Gaby Mejia",
+          "value": 4200,
+          "stage": "⬜ 00. Prospect",
+          "confidence": 20,
+          "urgency": "medium",
+          "close_at": null,
+          "updated_at": null,
+          "reason": "Low confidence - at risk"
+        },
+        {
           "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
           "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
           "name": "Ari",
@@ -258,7 +270,7 @@
           "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
           "name": "Rebecca Almeida",
           "value": 3780,
-          "stage": "🔥 03. Booked for Tasting",
+          "stage": "🔥 04. Attended Tasting",
           "confidence": 20,
           "urgency": "medium",
           "close_at": null,
@@ -330,46 +342,9 @@
     {
       "id": "booked_tastings",
       "label": "07. Booked Tastings",
-      "count": 3,
-      "total_value": 18450,
-      "items": [
-        {
-          "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
-          "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
-          "name": "Mary McGahan",
-          "value": 9000,
-          "stage": "📲 02. Setting Tasting Appointment",
-          "confidence": 80,
-          "urgency": "high",
-          "close_at": null,
-          "updated_at": "2026-03-02T16:49:26.502000+00:00",
-          "reason": "Tasting-stage opportunity"
-        },
-        {
-          "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
-          "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
-          "name": "Leslie Kearse Smith",
-          "value": 5670,
-          "stage": "📲 02. Setting Tasting Appointment",
-          "confidence": 20,
-          "urgency": "high",
-          "close_at": null,
-          "updated_at": "2026-04-02T16:35:46.716000+00:00",
-          "reason": "Tasting-stage opportunity"
-        },
-        {
-          "id": "oppo_jQBuH8wJC2dG53iU4E9LIRCUU5ASSltuMwG0Y0NQhEl",
-          "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
-          "name": "Rebecca Almeida",
-          "value": 3780,
-          "stage": "🔥 03. Booked for Tasting",
-          "confidence": 20,
-          "urgency": "medium",
-          "close_at": null,
-          "updated_at": "2026-03-16T15:20:30.077000+00:00",
-          "reason": "Tasting-stage opportunity"
-        }
-      ]
+      "count": 0,
+      "total_value": 0,
+      "items": []
     },
     {
       "id": "long_term_dormant",

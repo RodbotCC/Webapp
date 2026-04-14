@@ -1,0 +1,184 @@
+{
+  "view": {
+    "id": "save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD",
+    "url": "https://app.close.com/leads/save_c0EpJDt37R6CZ6SSIYiVMZktjjny2RQiDZi7E64FgkD/",
+    "name": "A: 🔷 04. Opened Email (24hr) (Copy)",
+    "description": "",
+    "selected_fields": [
+      {
+        "field_id": "display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_phone",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_email",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "status_id",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_summary",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "next_task_text",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "last_communication_date",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "primary_opportunity_status_display_name",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+        "type_id": "lead"
+      },
+      {
+        "field_id": "cf_9vVeQH1oYtJbtdHoL9VPwGhNpuCzVCgi95p7MCasszj",
+        "type_id": "lead"
+      }
+    ],
+    "query": null,
+    "s_query": {
+      "query": {
+        "negate": false,
+        "queries": [
+          {
+            "negate": false,
+            "object_type": "lead",
+            "type": "object_type"
+          },
+          {
+            "negate": false,
+            "queries": [
+              {
+                "negate": false,
+                "queries": [
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "type": "term",
+                          "values": [
+                            "01. 😎 Andre"
+                          ]
+                        },
+                        "field": {
+                          "custom_field_id": "cf_xF8FLufgEx9bsijfRAfHhgIrPBQ5ajuohcazC7OtNmT",
+                          "type": "custom_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "queries": [
+                      {
+                        "condition": {
+                          "before": {
+                            "type": "now"
+                          },
+                          "on_or_after": {
+                            "direction": "past",
+                            "moment": {
+                              "type": "now"
+                            },
+                            "offset": {
+                              "days": 0,
+                              "hours": 24,
+                              "minutes": 0,
+                              "months": 0,
+                              "seconds": 0,
+                              "weeks": 0,
+                              "years": 0
+                            },
+                            "type": "offset",
+                            "which_day_end": "start"
+                          },
+                          "type": "moment_range"
+                        },
+                        "field": {
+                          "field_name": "last_email_last_open_date",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": false,
+                        "type": "field_condition"
+                      },
+                      {
+                        "condition": {
+                          "object_ids": [
+                            "stat_lFhsqm3auHFu7YqtvgteNRN9bT4EelnKGZrW0pmLGEA"
+                          ],
+                          "reference_type": "status.lead",
+                          "type": "reference"
+                        },
+                        "field": {
+                          "field_name": "status_id",
+                          "object_type": "lead",
+                          "type": "regular_field"
+                        },
+                        "negate": true,
+                        "type": "field_condition"
+                      }
+                    ],
+                    "type": "and"
+                  },
+                  {
+                    "negate": false,
+                    "related_object_type": "opportunity",
+                    "related_query": {
+                      "negate": false,
+                      "queries": [
+                        {
+                          "condition": {
+                            "object_ids": [
+                              "stat_JsVAn7jtb6qbyxc0j77Kh6SkONCIC6gpsTF21WUkFvs"
+                            ],
+                            "reference_type": "status.opportunity",
+                            "type": "reference"
+                          },
+                          "field": {
+                            "field_name": "status_id",
+                            "object_type": "opportunity",
+                            "type": "regular_field"
+                          },
+                          "negate": true,
+                          "type": "field_condition"
+                        }
+                      ],
+                      "type": "and"
+                    },
+                    "this_object_type": "lead",
+                    "type": "has_related"
+                  }
+                ],
+                "type": "and"
+              }
+            ],
+            "type": "and"
+          }
+        ],
+        "type": "and"
+      },
+      "results_limit": null,
+      "sort": []
+    },
+    "lead_count": 0,
+    "reconstruction": "local-filtered-from-close-leads",
+    "lead_ids": []
+  },
+  "leads": []
+}

@@ -1,0 +1,5380 @@
+[
+  {
+    "lead_id": "lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu",
+    "crm_source": "close",
+    "display_name": "Alex Ayala",
+    "company_name": null,
+    "primary_contact_id": "cont_I7SLQascEG3TX05uFPxstBiZ37oDKSH1AXTnfb2kn9F",
+    "contact_ids": [
+      "cont_I7SLQascEG3TX05uFPxstBiZ37oDKSH1AXTnfb2kn9F",
+      "cont_sqN0ql0DNGl8FaLHOHzrj9I2tqBlHRJ18ZfNGdPuKC9"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_37cy141ccMaU9WCL7M5n9mgHGX7C2oK1UazHjEJtaTS"
+    ],
+    "conversation_ids": [
+      "conv_lead_jhFsNRvUCAFZM0f6qUc50Z3MODjko0iD6f2nj2qiIpu"
+    ],
+    "task_ids": [
+      "task_ID8z2VdDEvL2ssvD84rtjEIbMumN3ciHhROftgxGHT0"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:14:07.815Z",
+    "last_activity_at": "2026-04-13T21:14:07.815Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-24T22:51:54.965000+00:00",
+    "updated_at": "2026-04-13T21:14:07.724000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "32724"
+    ],
+    "notes_summary": "Zip: 32724\nPeople 60\nEvent Desc: Wedding\nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 74,
+      "friction": 25,
+      "relationship_strength": 46,
+      "close_probability": 49,
+      "revenue_value": 15,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 40,
+      "saveability_score": 54,
+      "decay_risk_score": 38,
+      "action_now_score": 49
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Alex Ayala\nCampaign: RODS WEDDING & FACELESS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT",
+    "crm_source": "close",
+    "display_name": "Ana Paula- BEZ GROUP",
+    "company_name": null,
+    "primary_contact_id": "cont_0aT46OE9DWDaE9dbheJQjBWThtlRhgwztge8j4bIKSg",
+    "contact_ids": [
+      "cont_0aT46OE9DWDaE9dbheJQjBWThtlRhgwztge8j4bIKSg"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_TZJJIy2J6dapvqprVhoCtxt2GDl7Z0T78xxvag7gMwJ"
+    ],
+    "conversation_ids": [
+      "conv_lead_gzqxGRtwXhSRnHbGV6C9FvgtczhKqavq9PhayyCQJXT"
+    ],
+    "task_ids": [
+      "task_sV80cqhuZz5bfPpzvjZmhxgq9ZGqtrRejYqKP1r41dz"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": null,
+    "last_activity_at": "2026-04-02T14:56:50.087Z",
+    "next_due_at": "2026-04-13T13:00:00+00:00",
+    "created_at": "2026-04-02T14:56:12.025000+00:00",
+    "updated_at": "2026-04-11T02:11:06.240000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2026-05-31T15:00:00+00:00"
+    ],
+    "notes_summary": "Ana Paula\nMay 31st\nbiz conference\nPortuguese speaker ...\njust sent her a 1st  msg",
+    "sales_scoring": {
+      "urgency": 31,
+      "momentum": 0,
+      "friction": 45,
+      "relationship_strength": 30,
+      "close_probability": 26,
+      "revenue_value": 20,
+      "attention_cost": 54,
+      "next_action_clarity": 80,
+      "priority_score": 18,
+      "saveability_score": 25,
+      "decay_risk_score": 51,
+      "action_now_score": 23
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "🐇🐇🐇Remind Rod to call her",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT",
+    "crm_source": "close",
+    "display_name": "Andraya Blair",
+    "company_name": null,
+    "primary_contact_id": "cont_YNRakslQDOjGVxe4CIWp37S8ZjJJritn3zLJSDx4JW4",
+    "contact_ids": [
+      "cont_YNRakslQDOjGVxe4CIWp37S8ZjJJritn3zLJSDx4JW4"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_sSaJABFj1ppwU6NGpgE8tym1wgq7cu5i1aC6ak10ggr"
+    ],
+    "conversation_ids": [
+      "conv_lead_kuaRJQxKGJhPzNizQwPxm9vkFl8JktIxBTGn13wrqZT"
+    ],
+    "task_ids": [
+      "task_ZGktKr247sEvxFy1yUudP7CoLFx46vIyIf6NEtFmraI",
+      "task_Z8q5LQFQYiAkauSlZx1PZifNvTfjA2DzltSS61mxfKE",
+      "task_nO0zpd8KoBTw5fg5fCrCPAl0LNYMhspPQ3K1HhCtupm"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T18:00:25.034Z",
+    "last_activity_at": "2026-04-13T18:00:25.034Z",
+    "next_due_at": "2026-03-17T13:00:00+00:00",
+    "created_at": "2026-03-15T20:43:26.078000+00:00",
+    "updated_at": "2026-04-13T18:22:37.784000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2026-03-15",
+      "Not specified"
+    ],
+    "notes_summary": "📋 EXPO LEAD — March 15, 2026\nEvent Date: TBD\nVenue: Not specified\nEmail Permission: Yes\nSource: Expo Booth FormSubmit",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 58,
+      "friction": 25,
+      "relationship_strength": 42,
+      "close_probability": 45,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 50,
+      "decay_risk_score": 42,
+      "action_now_score": 45
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Andraya Blair — EXPO Day 3: Check reply. If no response, send ballpark + tasting invite.",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub",
+    "crm_source": "close",
+    "display_name": "Andreia DePina Moore",
+    "company_name": null,
+    "primary_contact_id": "cont_afbd58FcenieIJefNT05CJZuLD6gmnChigoqnuNaO9c",
+    "contact_ids": [
+      "cont_afbd58FcenieIJefNT05CJZuLD6gmnChigoqnuNaO9c",
+      "cont_3FRVCubpEbIH03tIgXEWs6iVrtNILTjx7r12rVqGc81"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🟢 Probably",
+    "opportunity_ids": [
+      "oppo_BJWoouwMugEVErZnbSRiZUYFUqthHRZFEponxaCs3Yj"
+    ],
+    "conversation_ids": [
+      "conv_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub"
+    ],
+    "task_ids": [
+      "task_fTDTBo5JBeqHJwaTJ9O3g4duLTR8LAjPj7aYFDhAhCV",
+      "task_YbugX5OblsGt1ziRKEfILhLhOOmhDzFzwcDQM8KeCpp"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [
+      "tasting_lead_wCrBQUqjdQ2W9LUjHNZjE5WnubehOgzxvmxWaxAElub"
+    ],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-04-06T15:41:29.725Z",
+    "latest_outbound_at": "2026-04-06T15:17:04.832Z",
+    "last_activity_at": "2026-04-06T15:41:29.725Z",
+    "next_due_at": "2026-03-16",
+    "created_at": "2026-02-22T23:03:05.708000+00:00",
+    "updated_at": "2026-04-11T12:42:41.332000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 07. Booked Tastings",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "-",
+      "02119"
+    ],
+    "notes_summary": "Boston Zip: 02119\nPeople 25\nEvent Desc: Anniversary\nEvent Date: August 1\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 39,
+      "momentum": 100,
+      "friction": 0,
+      "relationship_strength": 85,
+      "close_probability": 75,
+      "revenue_value": 5,
+      "attention_cost": 38,
+      "next_action_clarity": 80,
+      "priority_score": 50,
+      "saveability_score": 73,
+      "decay_risk_score": 17,
+      "action_now_score": 54
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Confirm tasting details and next step",
+      "recommended_channel": "sms",
+      "reasoning_tags": [
+        "A: 🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN",
+    "crm_source": "close",
+    "display_name": "Anna",
+    "company_name": null,
+    "primary_contact_id": "cont_xGG2A01VPCZFSjOUOttwnJNhiCBe8vXsoAHPgyecKHN",
+    "contact_ids": [
+      "cont_xGG2A01VPCZFSjOUOttwnJNhiCBe8vXsoAHPgyecKHN"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🟢 Probably",
+    "opportunity_ids": [
+      "oppo_E2udP7xx9sYtDAxpANaJ6b3d28pI9LvTiVVFPOFWIXv"
+    ],
+    "conversation_ids": [
+      "conv_lead_DJaxvlNheydM9EYjU0RO85Hqhfqr15hVuk8HCc3QBCN"
+    ],
+    "task_ids": [
+      "task_KG1xZOxuwHTjm4JoxhqkxoHOVLOSbohKHickfRioWed",
+      "task_veOMP2ltsDOEh57qIOQjGgiXA45evkIp0ikNS4Rn4aF",
+      "task_PwlZv8ZsKIsVgpdAHN3O7MaA2CSNv6yotlCr5tRZqft"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:09:52.334Z",
+    "last_activity_at": "2026-04-13T19:09:52.334Z",
+    "next_due_at": "2026-04-01T13:00:00+00:00",
+    "created_at": "2026-04-01T19:19:31.687000+00:00",
+    "updated_at": "2026-04-13T19:09:52.074000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. ➡️ Visited high-intent web pages / website",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "174.235.169.24",
+      "95376"
+    ],
+    "notes_summary": "51-75\n🔥 Grilling On Site (Churrasco)\nBirthday\nJuly 11, 2026?\nFrom comeketocatering.com",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 60,
+      "friction": 25,
+      "relationship_strength": 46,
+      "close_probability": 45,
+      "revenue_value": 13,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 37,
+      "saveability_score": 50,
+      "decay_risk_score": 41,
+      "action_now_score": 45
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "01. ➡️ Engage with website lead \"Anna",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E",
+    "crm_source": "close",
+    "display_name": "Anna Julia Duarte",
+    "company_name": null,
+    "primary_contact_id": "cont_hVyeoB7NidAPLDlQhmIAyY5u9iLd9mskqnYWlhSPpYa",
+    "contact_ids": [
+      "cont_hVyeoB7NidAPLDlQhmIAyY5u9iLd9mskqnYWlhSPpYa",
+      "cont_iziAcAk9w8NIyX2YVacDrsN1DJz7IT3klgZvyU6nDFU"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_beLVQv9IiB4GiiVrTCdHMPhWaInnr26QsGjtX2SImPt"
+    ],
+    "conversation_ids": [
+      "conv_lead_X3HPwSo54A5hRihhlTZ5bRl7ZqeNbQ5wl1nmgSnLj7E"
+    ],
+    "task_ids": [
+      "task_JuBMkiLHJ8u3h1laV1ZZaq7cVbpjnFFvuwGXvVuhaci",
+      "task_LIoXAhSifmtuzgN1zAIGT9z1gg7Huk6jET5B6EfXxlm",
+      "task_N0RTVwdsKm7DY0wKbHK6b3JrDn0jy3yecUg22oQTr0i",
+      "task_3VMWWGlvGqwwSrhDb8oKNNtTi0wHf98tMPhQWMpmbdt"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-03-27T14:21:52.738Z",
+    "latest_outbound_at": "2026-04-13T21:13:57.999Z",
+    "last_activity_at": "2026-04-13T21:13:57.999Z",
+    "next_due_at": "2026-03-04T14:00:00+00:00",
+    "created_at": "2026-02-22T18:53:14.178000+00:00",
+    "updated_at": "2026-04-13T21:13:57.634000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "🚫 Lost - Win back",
+      "Comeketo",
+      "01752"
+    ],
+    "notes_summary": "Marlborough Zip: 01752\nPeople 70\nEvent Desc: Wedding\nEvent Date: 08/22/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 100,
+      "friction": 25,
+      "relationship_strength": 78,
+      "close_probability": 55,
+      "revenue_value": 18,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 49,
+      "saveability_score": 71,
+      "decay_risk_score": 29,
+      "action_now_score": 55
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "[OOPS] Please add a task to your most recently updated lead",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
+    "crm_source": "close",
+    "display_name": "Ari",
+    "company_name": null,
+    "primary_contact_id": "cont_nKRR3sNCmu9u0Orh1Lw7VjsE8vTA9j1uN5YoDMD1FJm",
+    "contact_ids": [
+      "cont_nKRR3sNCmu9u0Orh1Lw7VjsE8vTA9j1uN5YoDMD1FJm",
+      "cont_fPQu3U6bWdvIx3VTI6tx8J76WcI0h6vjDuT8szYQPO1"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA"
+    ],
+    "conversation_ids": [
+      "conv_lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK"
+    ],
+    "task_ids": [
+      "task_Lk6cwHIYsVeeT4TTUYnfflr0irrOYxqw1Qm6joSrGFU",
+      "task_nB2VF99OkOmgr8xPCSzZsbUsZa1ZCTR2QnKHZzbNt6e"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:42:36.659Z",
+    "last_activity_at": "2026-04-13T21:42:36.659Z",
+    "next_due_at": "2026-02-18T14:00:00+00:00",
+    "created_at": "2026-02-16T21:16:29.408000+00:00",
+    "updated_at": "2026-04-13T21:42:36.417000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "03275"
+    ],
+    "notes_summary": "Suncook Zip: 03275\nPeople 130\nEvent Desc: Party\nEvent Date: 8/21/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 100,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 55,
+      "revenue_value": 27,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 47,
+      "saveability_score": 64,
+      "decay_risk_score": 33,
+      "action_now_score": 56
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get them on the phone soon",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd",
+    "crm_source": "close",
+    "display_name": "Ashley Wood",
+    "company_name": null,
+    "primary_contact_id": "cont_WLCTc1CcZ0JneLAjrqW3vJumBQFzNAr9PEr1jp8jNnD",
+    "contact_ids": [
+      "cont_WLCTc1CcZ0JneLAjrqW3vJumBQFzNAr9PEr1jp8jNnD"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_QoEjIItZpEdKAsznDQIkrBoWg0a6KBpjCvACud49unG"
+    ],
+    "conversation_ids": [
+      "conv_lead_jgFkUECX4tJAlxfUvJpzrGPAsF5JiNrw1yaqkuMFJLd"
+    ],
+    "task_ids": [
+      "task_N1MMMuVc0BT5u4LydU3gGSU8kcEZZNwr66LCVTKDEFt",
+      "task_3waqfvkxW2Uj8Ct7iof2ibsV8fAxLwlCcLy8Gag5lC6",
+      "task_ItuxuPxdwWfn8vhVOlLl4DVGSoz82yXbcABWMx1ZIzM"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-07T03:20:18.655Z",
+    "last_activity_at": "2026-04-07T03:20:18.655Z",
+    "next_due_at": "2026-03-24",
+    "created_at": "2026-03-15T20:43:22.731000+00:00",
+    "updated_at": "2026-04-07T03:20:18.929000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2026-03-15",
+      "Still looking"
+    ],
+    "notes_summary": "📋 EXPO LEAD — March 15, 2026\nEvent Date: Fall 2027\nVenue: Still looking\nEmail Permission: Yes\nSource: Expo Booth FormSubmit",
+    "sales_scoring": {
+      "urgency": 41,
+      "momentum": 30,
+      "friction": 25,
+      "relationship_strength": 38,
+      "close_probability": 38,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 29,
+      "saveability_score": 40,
+      "decay_risk_score": 43,
+      "action_now_score": 35
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "[OOPS] Please add a task to your most recently updated lead",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C",
+    "crm_source": "close",
+    "display_name": "Ben Todd",
+    "company_name": null,
+    "primary_contact_id": "cont_UY8ueFgUXefRbDYRVK3XrgJJJNLHz85yDEqgH6dvO6v",
+    "contact_ids": [
+      "cont_UY8ueFgUXefRbDYRVK3XrgJJJNLHz85yDEqgH6dvO6v",
+      "cont_NWoAryZXaSxRHitQGMwBT0TkLnYtUbIuzI9GhClWGEM"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_bazHH6CARWa7tu0EjULuGlJXwfgx8tdK5rEXh9wha0f"
+    ],
+    "conversation_ids": [
+      "conv_lead_W47ZZcVMpFaTxYL35XWn5WQ0TGlXD6EbWeZIq9oYH8C"
+    ],
+    "task_ids": [
+      "task_1v1WO1FcaMCtO3e0G3bCc4YD2v4uxIO32iMgksV1okZ"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-04-01T11:39:31.558Z",
+    "latest_outbound_at": "2026-04-13T19:10:01.053Z",
+    "last_activity_at": "2026-04-13T19:10:01.053Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-01T11:37:49.492000+00:00",
+    "updated_at": "2026-04-13T19:10:00.764000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "-05. 📅 Event is far away (12mo+)",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2027-06-12T15:00:00+00:00",
+      "01020"
+    ],
+    "notes_summary": "Chicopee Zip: 01020\nPeople 135\nEvent Desc: Wedding\nEvent Date: 6/12/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 70,
+      "friction": 25,
+      "relationship_strength": 45,
+      "close_probability": 48,
+      "revenue_value": 34,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 43,
+      "saveability_score": 57,
+      "decay_risk_score": 39,
+      "action_now_score": 49
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get him on the phone Friday",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5",
+    "crm_source": "close",
+    "display_name": "BriAnna Nixie",
+    "company_name": null,
+    "primary_contact_id": "cont_hyP1dtkfUfzIxuXHnNbaZJRdnMXXG1wsVxVBfvqJLc1",
+    "contact_ids": [
+      "cont_hyP1dtkfUfzIxuXHnNbaZJRdnMXXG1wsVxVBfvqJLc1"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_xPOu31Lcgk0XstYwdGoSMyfRGjVgjB1uvi2vrAaxHSx"
+    ],
+    "conversation_ids": [
+      "conv_lead_QW1PQXTrr1LW8Rh6t09vfhOumvbk6vsCrZf8uNfu5C5"
+    ],
+    "task_ids": [
+      "task_BgdXUDnMHSPeC36OjZ66zWEG32f1ukj0MjNSu6JvLgs",
+      "task_WhiVVu0lZjEybWSYhIr17nXgZrlbMGtV7ywA9JeXJca"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:42:15.666Z",
+    "last_activity_at": "2026-04-13T21:42:15.666Z",
+    "next_due_at": "2026-02-19",
+    "created_at": "2026-02-19T22:33:38.606000+00:00",
+    "updated_at": "2026-04-13T21:42:15.427000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2028-02-14T15:00:00+00:00",
+      "06042"
+    ],
+    "notes_summary": "What Type of Event?: wedding\nZip code: 06042\nFull name: BriAnna Nixie\nEmail: briannaandtimothy@gmail.com\nPhone number: (860) 840-1030\nEstimated Guest Count: 100\nEvent Date: 2/14/28",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 90,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 53,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 44,
+      "saveability_score": 60,
+      "decay_risk_score": 35,
+      "action_now_score": 53
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get her on the phone",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX",
+    "crm_source": "close",
+    "display_name": "Cadence Fell",
+    "company_name": null,
+    "primary_contact_id": "cont_1YqwTPLXZJ4Q0jLxCVo5f9YVTivTFPWZaz9RoJa6F3D",
+    "contact_ids": [
+      "cont_1YqwTPLXZJ4Q0jLxCVo5f9YVTivTFPWZaz9RoJa6F3D"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_qgN8zVLxXOMi8WEFDZZx8BATvvK2f41A2BdZL2nxxvN"
+    ],
+    "conversation_ids": [
+      "conv_lead_PuE0Ez1j5NADmcBQYj1fJ5YXGhl4VNKRVtF4hhO7sUX"
+    ],
+    "task_ids": [
+      "task_BvjEWQ071jyjTU8OyJhxuaVjTzetzFX1zIhCM2cx0R2"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T13:00:36.538Z",
+    "last_activity_at": "2026-04-13T13:00:36.538Z",
+    "next_due_at": "2026-04-13T13:00:00+00:00",
+    "created_at": "2026-04-06T16:58:09.228000+00:00",
+    "updated_at": "2026-04-13T16:11:36.959000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "02. 📞 DAY 2 CALL",
+      "2028-08-18T15:00:00+00:00"
+    ],
+    "notes_summary": "Wedding Date\nFri, Aug 18, 2028\nWedding Location\nJohnson City, TN\nNumber of Guests\n51 - 100",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 50,
+      "friction": 50,
+      "relationship_strength": 30,
+      "close_probability": 38,
+      "revenue_value": 20,
+      "attention_cost": 56,
+      "next_action_clarity": 80,
+      "priority_score": 31,
+      "saveability_score": 39,
+      "decay_risk_score": 51,
+      "action_now_score": 41
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "[OOPS] Please add a task to your most recently updated lead",
+      "recommended_channel": "email",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS",
+    "crm_source": "close",
+    "display_name": "Camille Griffin",
+    "company_name": null,
+    "primary_contact_id": "cont_P6LPjliqPcoNVhxgZhBVxT0DeJPrGJW5GOreJM6EYC7",
+    "contact_ids": [
+      "cont_P6LPjliqPcoNVhxgZhBVxT0DeJPrGJW5GOreJM6EYC7",
+      "cont_nJjbArIaZo0eIo8nZNykM0Pf7lQrbt7Cb8zc5EbMe7k"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_uTzlSqY6ixOmZ4crRZV0r4J8kgJ5F0IThgeA5wBSzOI"
+    ],
+    "conversation_ids": [
+      "conv_lead_1RLAmiOGLr3jC7cq0iAm8PoMn7ztWPzZL5sVpKMyefS"
+    ],
+    "task_ids": [
+      "task_4TWCtnHGw8mW2SUsBcrc1gQ97nVitOTAoOLRKqLJvUC"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:09:29.200Z",
+    "last_activity_at": "2026-04-13T19:09:29.200Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-05T23:35:51.782000+00:00",
+    "updated_at": "2026-04-13T19:09:28.572000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. ⏰ Immediate need (within 3 months)",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "02703"
+    ],
+    "notes_summary": "Attleboro Zip: 02703\nPeople 50\nEvent Desc: birthday\nEvent Date: 5/2/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 60,
+      "friction": 25,
+      "relationship_strength": 42,
+      "close_probability": 45,
+      "revenue_value": 12,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 36,
+      "saveability_score": 49,
+      "decay_risk_score": 41,
+      "action_now_score": 45
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: camille Griffin\nCampaign: 3 STILLS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9",
+    "crm_source": "close",
+    "display_name": "Carolyn Boumila-Vega",
+    "company_name": null,
+    "primary_contact_id": "cont_b7CAS53EeSsEyxGvixrB0LkFOgTjmfqGPP3iLA4EUZC",
+    "contact_ids": [
+      "cont_b7CAS53EeSsEyxGvixrB0LkFOgTjmfqGPP3iLA4EUZC",
+      "cont_XjGZZpzQOAd7zpNiuKCuWwUif81DamKxfOumk7pOJ4z"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_UWRBCudnXDceSUK9MOlBHrJ7dNV1aOT0FYOCVe9n3NU"
+    ],
+    "conversation_ids": [
+      "conv_lead_fqIdRtaIUw49dJQ8Xywj27zg7bj488znzxoaWxepFf9"
+    ],
+    "task_ids": [
+      "task_cmwVYkbo6cnGiKNnHcbWlc2ReQztjvI1eQXU3JDNm4P"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:09:14.618Z",
+    "last_activity_at": "2026-04-13T19:09:14.618Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-07T02:32:35.386000+00:00",
+    "updated_at": "2026-04-13T19:36:21.499000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "VIDEO  RODS WEDDING & FACELESS",
+      "RODS WEDDING & FACELESS",
+      "01. [CATER[ LF EVERGREEN - QUOTE",
+      "02150"
+    ],
+    "notes_summary": "Chelsea Zip: 02150\nPeople 100\nEvent Desc: Wedding reception\nEvent Date: 2/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 56,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 44,
+      "revenue_value": 25,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 39,
+      "saveability_score": 53,
+      "decay_risk_score": 41,
+      "action_now_score": 45
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Carolyn Boumila-Vega\nCampaign: RODS WEDDING & FACELESS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q",
+    "crm_source": "close",
+    "display_name": "Coreen Miranda",
+    "company_name": null,
+    "primary_contact_id": "cont_2k0tyfnTtZuejjabUpWs5tRoEQw9GE3EkP5SeQUVLCA",
+    "contact_ids": [
+      "cont_2k0tyfnTtZuejjabUpWs5tRoEQw9GE3EkP5SeQUVLCA",
+      "cont_1HJCuZKP2pkEfSKoRS1vGSEWgDiwoU4BRSe2MAH8gEu"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🟢 Probably",
+    "opportunity_ids": [
+      "oppo_nert95ewmnr1pLubJLfZb4DBgCUJLJnDBi9nZjUyNEB"
+    ],
+    "conversation_ids": [
+      "conv_lead_P78IbFGbcx1llwW8ETAyWZjOp6TTNTWdVsaCpvBV63q"
+    ],
+    "task_ids": [
+      "task_mUplf28QeTj4uU35oB2FQJaSKtckSJogbeYpg1O9Q99"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-04-12T00:38:15.522Z",
+    "latest_outbound_at": "2026-04-12T00:37:02.406Z",
+    "last_activity_at": "2026-04-12T00:38:15.522Z",
+    "next_due_at": "2026-04-13T13:00:00+00:00",
+    "created_at": "2026-04-06T23:34:11.320000+00:00",
+    "updated_at": "2026-04-12T00:38:15.534000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "STILLS  GALLERY  $19 PACKAGE",
+      "3 STILLS",
+      "01. [CATER[ LF EVERGREEN - QUOTE",
+      "02149"
+    ],
+    "notes_summary": "Everett Zip: 02149\nPeople 50\nEvent Desc: Graduation party\nEvent Date: June 13\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 51,
+      "momentum": 81,
+      "friction": 0,
+      "relationship_strength": 59,
+      "close_probability": 55,
+      "revenue_value": 11,
+      "attention_cost": 38,
+      "next_action_clarity": 80,
+      "priority_score": 45,
+      "saveability_score": 64,
+      "decay_risk_score": 29,
+      "action_now_score": 51
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Coreen Miranda\nCampaign: 3 STILLS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f",
+    "crm_source": "close",
+    "display_name": "Corliss Lau",
+    "company_name": null,
+    "primary_contact_id": "cont_wUDrnrbwcc2Mtn3fA7BTVxBs30XBNqbkG2R85hOR69W",
+    "contact_ids": [
+      "cont_wUDrnrbwcc2Mtn3fA7BTVxBs30XBNqbkG2R85hOR69W"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_TmCtCDQgZp0Cpy51ltOaeW7sJp9chQWpPzJyVBZR0yE"
+    ],
+    "conversation_ids": [
+      "conv_lead_oWylIRw7WwNcq5FnopCCaQdZtlajTT1nWn0hGjnc83f"
+    ],
+    "task_ids": [
+      "task_PM4ff6TsXh3ilrJgVfn8Xnn3dU30d5eB8AnLYu7s4RO",
+      "task_ad7g3SFhPQby0oBfYIU2B5yojyEsrD6ffmVVOavGRDh",
+      "task_tcZm03ZroMFjbKcRLiCWpXb4FrB364ij1I31C0Kyq6i"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T06:34:52.141Z",
+    "last_activity_at": "2026-04-13T06:34:52.141Z",
+    "next_due_at": "2026-03-24",
+    "created_at": "2026-03-15T20:43:21.529000+00:00",
+    "updated_at": "2026-04-13T06:34:52.331000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2026-03-15",
+      "Still looking"
+    ],
+    "notes_summary": "📋 EXPO LEAD — March 15, 2026\nEvent Date: 2027\nVenue: Still looking\nEmail Permission: Yes\nSource: Expo Booth FormSubmit",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 54,
+      "friction": 25,
+      "relationship_strength": 42,
+      "close_probability": 44,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 37,
+      "saveability_score": 49,
+      "decay_risk_score": 42,
+      "action_now_score": 44
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "[OOPS] Please add a task to your most recently updated lead",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI",
+    "crm_source": "close",
+    "display_name": "Darlene Scott",
+    "company_name": null,
+    "primary_contact_id": "cont_vw84cqZ6x0LJE4qNgBTrwFfFfchzi6a9xwu4QPTONpa",
+    "contact_ids": [
+      "cont_vw84cqZ6x0LJE4qNgBTrwFfFfchzi6a9xwu4QPTONpa",
+      "cont_iRDUdEDQQ5rxQ6OU0fXmk88ckNSX2BjXdg7QbyCk4yF"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_fF5sJzS6lYtx4I9VrEMRTfZ42b39jwvxHi20ZdKjwAb"
+    ],
+    "conversation_ids": [
+      "conv_lead_bZZfFliuxA1oMoj5dJyelLiZTQuRpQbDIjkOAemVyoI"
+    ],
+    "task_ids": [
+      "task_xMRIPQJPWryTzIiYuzUyv9pMLe0yWF2Ve0HQRqE2IvV"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-03-24T21:20:33.976Z",
+    "latest_outbound_at": "2026-04-13T21:14:13.486Z",
+    "last_activity_at": "2026-04-13T21:14:13.486Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-24T21:20:00.386000+00:00",
+    "updated_at": "2026-04-13T21:14:13.169000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "76502"
+    ],
+    "notes_summary": "Zip: 76502\nPeople 5o\nEvent Desc: birthday\nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 72,
+      "friction": 25,
+      "relationship_strength": 49,
+      "close_probability": 48,
+      "revenue_value": 1,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 37,
+      "saveability_score": 52,
+      "decay_risk_score": 38,
+      "action_now_score": 47
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Darlene Scott\nCampaign: RODS WEDDING & FACELESS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV",
+    "crm_source": "close",
+    "display_name": "Darnika Joseph",
+    "company_name": null,
+    "primary_contact_id": "cont_koczATn1xYYm1TeGyonRJMtPVVKRCrenaiw31ixmhds",
+    "contact_ids": [
+      "cont_koczATn1xYYm1TeGyonRJMtPVVKRCrenaiw31ixmhds",
+      "cont_FDPZ5XATuao9yUx7L29SoEK1WmYUYC1nCK990xIGPjG"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_830nED1gaD10nik8x4A0jO2Liwt7TmdfaPtjMEOHOqw"
+    ],
+    "conversation_ids": [
+      "conv_lead_rQWwpBl2Tvjmf81rKa6WMi0nXsBJDVOxppKKhT9GlrV"
+    ],
+    "task_ids": [
+      "task_Y0uUIEQ6ud1oAjVOii22fTRVp7WTV1pwTmhhhKz7tjj"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-03-28T23:10:28.299Z",
+    "latest_outbound_at": "2026-04-13T19:10:14.359Z",
+    "last_activity_at": "2026-04-13T19:10:14.359Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-28T21:43:06.163000+00:00",
+    "updated_at": "2026-04-13T19:15:39.452000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. ⏰ Immediate need (within 3 months)",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "02. 📞 DAY 2 CALL",
+      "02631"
+    ],
+    "notes_summary": "Zip: 02631\nPeople 25\nEvent Desc: Wedding\nEvent Date: 6/3/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 72,
+      "friction": 25,
+      "relationship_strength": 49,
+      "close_probability": 48,
+      "revenue_value": 7,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 53,
+      "decay_risk_score": 38,
+      "action_now_score": 47
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Darnika Joseph\nCampaign: 3 STILLS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW",
+    "crm_source": "close",
+    "display_name": "Diana Medrano",
+    "company_name": null,
+    "primary_contact_id": "cont_nRwuB7XPY0yGT0GMsHwnFWIyBNdkrZFDNyGv2a6CkNl",
+    "contact_ids": [
+      "cont_nRwuB7XPY0yGT0GMsHwnFWIyBNdkrZFDNyGv2a6CkNl",
+      "cont_JnLlx9udCI7U7WOGbxb2WAuPy62GsHAtayqMx9KCuIF"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_C2sr1ZWuw2tJi8DAlXjEl9EiAx7chLgBIH4pIJ8cZLf"
+    ],
+    "conversation_ids": [
+      "conv_lead_s4xVv1FF4E0vakK98K9j9mlBPuhSDQQOMFakpxF3OAW"
+    ],
+    "task_ids": [
+      "task_vLuAmgZdAsezXjMr1CQSXtoO5HTcgjuwrIrDSVabyvS"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:15:16.292Z",
+    "last_activity_at": "2026-04-13T21:15:16.292Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-12T17:56:27.465000+00:00",
+    "updated_at": "2026-04-13T21:15:16.216000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "-05. 📅 Event is far away (12mo+)",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01841"
+    ],
+    "notes_summary": "Lawrence Zip: 01841\nPeople 30\nEvent Desc: Wedding intimate\nEvent Date: June 2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 88,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 52,
+      "revenue_value": 8,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 42,
+      "saveability_score": 58,
+      "decay_risk_score": 35,
+      "action_now_score": 51
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Call and get her on the phone",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e",
+    "crm_source": "close",
+    "display_name": "Edwin Portillo",
+    "company_name": null,
+    "primary_contact_id": "cont_1s0QMLJLkPu8zJV8EpngdYEFFMp2CYAf4AbYNGpX4tY",
+    "contact_ids": [
+      "cont_1s0QMLJLkPu8zJV8EpngdYEFFMp2CYAf4AbYNGpX4tY",
+      "cont_uxHbdCQhcmXYRtMu3ZwkjthGdA8Sajf2CYWsx8HXPTs"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_FmnFVaiJSHLWUHylKf3K3VKXxJqrJV4NSOOGwMSvaEQ"
+    ],
+    "conversation_ids": [
+      "conv_lead_CG0nY8iHxQXXR0oAeLgz3WbCYJwfVIIi3cMR5GF6B9e"
+    ],
+    "task_ids": [
+      "task_DQjFcc8molEi6RgNuFNtIQdPSurPPSmiRCAiC7wqoA2"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-09T01:34:01.133Z",
+    "last_activity_at": "2026-04-09T01:34:01.133Z",
+    "next_due_at": "2026-04-14T13:00:00+00:00",
+    "created_at": "2026-03-20T00:21:24.945000+00:00",
+    "updated_at": "2026-04-13T16:12:05.160000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "02. 📞 DAY 2 CALL",
+      "03. 💌 DAY 3 EMAIL ONLY",
+      "Created",
+      "0",
+      "02149"
+    ],
+    "notes_summary": "Everett Zip: 02149\nPeople 130\nEvent Desc: Wedding\nEvent Date: 04/182026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 45,
+      "momentum": 54,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 44,
+      "revenue_value": 33,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 53,
+      "decay_risk_score": 39,
+      "action_now_score": 43
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get him on the phone and into tasting",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z",
+    "crm_source": "close",
+    "display_name": "Elciane Gomes",
+    "company_name": null,
+    "primary_contact_id": "cont_MofdNTzVTWwPixNAGNDIpAeiFOHSZzZG9fxBc31G1zS",
+    "contact_ids": [
+      "cont_MofdNTzVTWwPixNAGNDIpAeiFOHSZzZG9fxBc31G1zS"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_tUQyumoODvyZ9kLCIu3JV0Y7z3tGFww2dVA1KHdfQ6Y"
+    ],
+    "conversation_ids": [
+      "conv_lead_qbiCzCNBDemrLllk3TMeU2h3Fq3Oy4cybDC6Y9i428z"
+    ],
+    "task_ids": [
+      "task_08lIMsv5r7mvxZgan6jjWnzIJA9PdJCkB4qcQw27grX"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:09:56.483Z",
+    "last_activity_at": "2026-04-13T19:09:56.483Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-01T17:14:20.698000+00:00",
+    "updated_at": "2026-04-13T19:09:56.187000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. ➡️ Visited high-intent web pages / website",
+      "🍽️ Free Tasting Opt-In Form",
+      "01. 📞 DAY 1 CALL"
+    ],
+    "notes_summary": null,
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 60,
+      "friction": 25,
+      "relationship_strength": 46,
+      "close_probability": 45,
+      "revenue_value": 0,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 35,
+      "saveability_score": 48,
+      "decay_risk_score": 41,
+      "action_now_score": 44
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Engage & Sell a tasting",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof",
+    "crm_source": "close",
+    "display_name": "Gabby Garcia Serrano",
+    "company_name": null,
+    "primary_contact_id": "cont_joHwxOghHODoITsHyQL09X8pxYvVdruy9XMH8g7MnpQ",
+    "contact_ids": [
+      "cont_joHwxOghHODoITsHyQL09X8pxYvVdruy9XMH8g7MnpQ",
+      "cont_1etTNbjciM2h7RBf9MR97ZsDWlqhbC2Vt73Y3A12Sd3"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_nQwFF0ZRSK9nGOn0h3EpduzDFw0Ap94xJYvRL5XcxyL"
+    ],
+    "conversation_ids": [
+      "conv_lead_E9IV4TtelTmDq6d2I10EAvEkyuapEAax04RQOdzcWof"
+    ],
+    "task_ids": [
+      "task_Ivi5039Ncr2CFgObGmIs6tRbA0onAUy66qLTsKpV6vu"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-09T16:01:49.310Z",
+    "last_activity_at": "2026-04-09T16:01:49.310Z",
+    "next_due_at": "2026-04-13T13:00:00+00:00",
+    "created_at": "2026-04-07T12:07:33.228000+00:00",
+    "updated_at": "2026-04-13T20:33:04.430000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "DOM'S FACELESS",
+      "DOM'S FACELESS",
+      "01. [CATER[ LF EVERGREEN - QUOTE",
+      "78217"
+    ],
+    "notes_summary": "Zip: 78217\nPeople 100\nEvent Desc: Wedding\nEvent Date: 8/08/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 52,
+      "friction": 25,
+      "relationship_strength": 46,
+      "close_probability": 43,
+      "revenue_value": 25,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 51,
+      "decay_risk_score": 42,
+      "action_now_score": 44
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get her on the phone soon",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo",
+    "crm_source": "close",
+    "display_name": "Gina Gallagher",
+    "company_name": null,
+    "primary_contact_id": "cont_4SZ7rFKn3whhVldxJjg1QmOYrqWcDBqe70ONRtrEtxF",
+    "contact_ids": [
+      "cont_4SZ7rFKn3whhVldxJjg1QmOYrqWcDBqe70ONRtrEtxF"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_IKXLeMvHAIR25U7bAW4heyp81kysk4ZDXxp3WEsWJzI"
+    ],
+    "conversation_ids": [
+      "conv_lead_udVhuo2WHWM6Jp5lc9kbPC1YCPcGipAypuoKd8j5DLo"
+    ],
+    "task_ids": [
+      "task_pla2nzzAp4futih86y49yVIvKUBMuMGWYRnQjKiy2Mq"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T18:00:28.086Z",
+    "last_activity_at": "2026-04-13T18:00:28.086Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-05T03:45:28.936000+00:00",
+    "updated_at": "2026-04-13T18:00:27.432000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre"
+    ],
+    "notes_summary": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T20:01:29.418Z\nEvent Date: December 2027\nVenue: \nEmail Permission: Yes\nImport Note: Imported from FormSubmit expo submissions.",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 46,
+      "friction": 25,
+      "relationship_strength": 38,
+      "close_probability": 42,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 35,
+      "saveability_score": 46,
+      "decay_risk_score": 44,
+      "action_now_score": 42
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "[OOPS] Please add a task to your most recently updated lead",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn",
+    "crm_source": "close",
+    "display_name": "Gisele Chartrand Elgart",
+    "company_name": null,
+    "primary_contact_id": "cont_37COWtKNQyo36sB5RaJF5WTcgbFesCdV5hSGSTo2RPa",
+    "contact_ids": [
+      "cont_37COWtKNQyo36sB5RaJF5WTcgbFesCdV5hSGSTo2RPa"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_Gr85YcDA80m5DQ5IA2Nl8YMBDIVTzPiAiyu9tdVm4kw"
+    ],
+    "conversation_ids": [
+      "conv_lead_Yf9qvPwNZOzAAGGACqtyAsUdU2wpD7dgoYpVfnhNbZn"
+    ],
+    "task_ids": [
+      "task_A9ywoz8P7Cb2KlJB1cshx0MJES90SoMtECOi7Ex08RE",
+      "task_oCVFyLZq1pO120B6BZA4wKYsyZzUAvWfaiVk7klqo9k"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2025-09-12T15:25:23.959Z",
+    "latest_outbound_at": "2025-11-13T13:30:06.409Z",
+    "last_activity_at": "2025-11-13T13:30:06.409Z",
+    "next_due_at": "2025-07-24",
+    "created_at": "2025-07-10T17:09:28.920000+00:00",
+    "updated_at": "2026-02-12T03:32:15.886000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "2025-09-13T15:00:00+00:00",
+      "✅ Active"
+    ],
+    "notes_summary": "Gisele's Memorial Service\n100 Guests\nSat, Sep 13, 2025\n(date flexible)\n6:00 PM (4.0 Hours)\nFlexible Budget\n gisele@elgart.com \n617-320-6805",
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 0,
+      "friction": 25,
+      "relationship_strength": 52,
+      "close_probability": 30,
+      "revenue_value": 20,
+      "attention_cost": 39,
+      "next_action_clarity": 65,
+      "priority_score": 15,
+      "saveability_score": 28,
+      "decay_risk_score": 34,
+      "action_now_score": 14
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": false,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Make first real connection attempt",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA",
+    "crm_source": "close",
+    "display_name": "Heli Parekh",
+    "company_name": null,
+    "primary_contact_id": "cont_mH1O0oIrTqsM3TlW9VfnPhavJEktIDrmACBmFDVXRVV",
+    "contact_ids": [
+      "cont_mH1O0oIrTqsM3TlW9VfnPhavJEktIDrmACBmFDVXRVV"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_1ee3ilBF8KDCAhG6eGtWtp0ScBSpj1eN9mjREJgJNt0"
+    ],
+    "conversation_ids": [
+      "conv_lead_8gUBJOTXtzPoqJ6FHDvimMDF22j0BoskRHR7aaDFnDA"
+    ],
+    "task_ids": [
+      "task_F4PrQiRPXwX3LLyqA7B3jGMlo7oiBy3GYx3P4astEIc",
+      "task_DzqO4illg33CxBQyJNvu65Wes5heekcjrEwwQnnSipB",
+      "task_mBvo2RbHOkIf4sqjkNwD8IrrE2EAqliez8BUgdRlZkB"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:15:06.108Z",
+    "last_activity_at": "2026-04-13T21:15:06.108Z",
+    "next_due_at": "2026-03-17T13:00:00+00:00",
+    "created_at": "2026-03-15T20:43:27.351000+00:00",
+    "updated_at": "2026-04-13T21:17:00.969000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2027-10-01T15:00:00+00:00",
+      "2026-03-15",
+      "Still looking"
+    ],
+    "notes_summary": "📋 EXPO LEAD — March 15, 2026\nEvent Date: Oct 2027\nVenue: Still looking\nEmail Permission: No\nSource: Expo Booth FormSubmit",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 56,
+      "friction": 25,
+      "relationship_strength": 34,
+      "close_probability": 44,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 36,
+      "saveability_score": 47,
+      "decay_risk_score": 43,
+      "action_now_score": 45
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Heli Parekh — EXPO Day 3: Check reply. If no response, send ballpark + venue help.",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK",
+    "crm_source": "close",
+    "display_name": "Igreja Evangelica Avivamento Da Fe Na Revere",
+    "company_name": null,
+    "primary_contact_id": "cont_H8A6g0tcB8EyuFJvETM8XnyA6NoA0cU3O0T7oPu28l5",
+    "contact_ids": [
+      "cont_H8A6g0tcB8EyuFJvETM8XnyA6NoA0cU3O0T7oPu28l5"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_Dj02nBKvxq8pSjKIRMIbld9CDWnzYwpwyAxIaJhj7Yt"
+    ],
+    "conversation_ids": [
+      "conv_lead_KY9j50R43BiNLvyEVZq8EPCoF2D1HYPzaSoQCTdb9mK"
+    ],
+    "task_ids": [
+      "task_g84E7s50P1DcBKWdlBseMEYda7CAO5bSIprEJ6zLVoo",
+      "task_IJC74AG8DFTPrgr3UDHgSfPrIFR5R8AZToiZ64WpJBj",
+      "task_q4Ubmq5oFY8J7ENyuREePlvGNF2qXoTSBN0F5YrMswT",
+      "task_g5A7KRaHiZTDogeyZ358ciI80Q7ZMZrIPn0rgtQsLUi"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-03-16T21:53:21.657Z",
+    "last_activity_at": "2026-03-16T21:53:21.657Z",
+    "next_due_at": "2026-01-29T14:00:00+00:00",
+    "created_at": "2026-01-22T23:58:10.480000+00:00",
+    "updated_at": "2026-04-13T20:21:49.707000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 08. Long-Term / Dormant Followup",
+      "01. 😎 Andre",
+      "Dormant 12 Email Nurture",
+      "106 Squire Rd #4, Revere, MA 02151, Estados Unidos",
+      "Not yet Connected"
+    ],
+    "notes_summary": "From Camila church list\nhttps://www.instagram.com/avivamentodafe1/",
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 0,
+      "friction": 55,
+      "relationship_strength": 42,
+      "close_probability": 24,
+      "revenue_value": 20,
+      "attention_cost": 57,
+      "next_action_clarity": 80,
+      "priority_score": 10,
+      "saveability_score": 22,
+      "decay_risk_score": 41,
+      "action_now_score": 13
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Follow up",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O",
+    "crm_source": "close",
+    "display_name": "Inna Shvetsova",
+    "company_name": null,
+    "primary_contact_id": "cont_rLYDLmM9vYMBgIShDxuTKE4q58OH7iIzRQzq4yKwrDF",
+    "contact_ids": [
+      "cont_rLYDLmM9vYMBgIShDxuTKE4q58OH7iIzRQzq4yKwrDF"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_taeZGNephvAGR8K59W9MMS2HCDgeQO49wT5wNpTsrHR"
+    ],
+    "conversation_ids": [
+      "conv_lead_cwYccP1Jdm9vQEHkmRLGUekeKVcmx4dRpi1Dm5Oyn6O"
+    ],
+    "task_ids": [
+      "task_AgBh9PaBe2n6vrN2x7beYmt2ugWT5mKRVQf6ABte8xq",
+      "task_gFKHG4MvlvWmyG4onDun4cY1cF9cuvDfxhm4Rz8aGem"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-04-10T20:02:50.699Z",
+    "latest_outbound_at": "2026-04-13T19:09:11.065Z",
+    "last_activity_at": "2026-04-13T19:09:11.065Z",
+    "next_due_at": "2026-03-09T13:00:00+00:00",
+    "created_at": "2026-03-05T20:56:33.446000+00:00",
+    "updated_at": "2026-04-13T19:09:10.325000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL"
+    ],
+    "notes_summary": null,
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 72,
+      "friction": 25,
+      "relationship_strength": 57,
+      "close_probability": 48,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 42,
+      "saveability_score": 58,
+      "decay_risk_score": 37,
+      "action_now_score": 48
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Follow up",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO",
+    "crm_source": "close",
+    "display_name": "Isabella Mathis",
+    "company_name": null,
+    "primary_contact_id": "cont_BBY9VFA0PeoGC712L040kLXOWNo1wvyumyfjtzeOAGT",
+    "contact_ids": [
+      "cont_BBY9VFA0PeoGC712L040kLXOWNo1wvyumyfjtzeOAGT"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔥 Definitely",
+    "opportunity_ids": [
+      "oppo_gTzoAkBMnYTCO9nBaQro7EJARqo4ZhsjA3dLwrN0NnF"
+    ],
+    "conversation_ids": [
+      "conv_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO"
+    ],
+    "task_ids": [
+      "task_p3J1zAulRBdrj6aFMWpJTrsgaHq9zRHy9MWt2hV4Y1m",
+      "task_QtprTjvLuI0Xoj7mPsjXSQXqIonvqDUCxTRF5W52ffM",
+      "task_7BwR2VifCN9d6S0WvzLlzu55n2xKmdMly9c9s6z1yLp",
+      "task_wUmIAplV8oRiE1qigoXWUp34eJsuQG5LTQGfss0PxlK"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [
+      "tasting_lead_jR09VyBxVBfIhijDENuH0s0BlPHUq7H61hlDVzOy8bO"
+    ],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-04-04T16:35:53.236Z",
+    "latest_outbound_at": "2026-04-04T16:35:39.835Z",
+    "last_activity_at": "2026-04-04T16:35:53.236Z",
+    "next_due_at": "2026-04-01",
+    "created_at": "2026-04-01T10:41:10.584000+00:00",
+    "updated_at": "2026-04-09T06:44:39.416000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 07. Booked Tastings",
+      "01. 😎 Andre",
+      "-05. 📅 Event is far away (12mo+)",
+      "05. ➡️ Visited high-intent web pages / website",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "🍽️ Free Tasting Opt-In Form",
+      "01. 📞 DAY 1 CALL",
+      "131.239.124.179",
+      "01473"
+    ],
+    "notes_summary": "Isabella Mathis and Jocelyn Williams\n 7/27/2027 and we are planning for the ceremony to start at 4pm, cocktail hr at 4:30-5:30, and dinner from 5:30-7:30 but the wedding will officially end at 10 pm",
+    "sales_scoring": {
+      "urgency": 35,
+      "momentum": 100,
+      "friction": 0,
+      "relationship_strength": 69,
+      "close_probability": 75,
+      "revenue_value": 22,
+      "attention_cost": 38,
+      "next_action_clarity": 80,
+      "priority_score": 50,
+      "saveability_score": 71,
+      "decay_risk_score": 18,
+      "action_now_score": 54
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Confirm tasting details and next step",
+      "recommended_channel": "sms",
+      "reasoning_tags": [
+        "A: 🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3",
+    "crm_source": "close",
+    "display_name": "Ivy Elien",
+    "company_name": null,
+    "primary_contact_id": "cont_wxmS3cOVwwKqcCHPQOy64KwAOi9GtWhyO101heBnZXv",
+    "contact_ids": [
+      "cont_wxmS3cOVwwKqcCHPQOy64KwAOi9GtWhyO101heBnZXv",
+      "cont_bBDjbyfDJIehC47GinQJBIsTIAor7XsHgz7YDxiW5IY"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_fa8QZr6Vqex5m1f6eGkWmvjrusIoD9SnsQkAnHssl51"
+    ],
+    "conversation_ids": [
+      "conv_lead_miKQUQ9BYsLpJynpmsGnPQP4GgYhVc4ROWz1XqXBtR3"
+    ],
+    "task_ids": [
+      "task_O2FtMD4bkS8rlLwKY1uwzEMMfqP3fht1WoxoqpzjHzq"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:13:49.736Z",
+    "last_activity_at": "2026-04-13T21:13:49.736Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-28T01:06:24.646000+00:00",
+    "updated_at": "2026-04-13T21:13:49.595000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "02343"
+    ],
+    "notes_summary": "Zip: 02343\nPeople 100\nEvent Desc: birthday\nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 56,
+      "friction": 25,
+      "relationship_strength": 38,
+      "close_probability": 44,
+      "revenue_value": 21,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 37,
+      "saveability_score": 49,
+      "decay_risk_score": 43,
+      "action_now_score": 45
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Ivy Elien\nCampaign: 3 STILLS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK",
+    "crm_source": "close",
+    "display_name": "Jeanette Comire",
+    "company_name": null,
+    "primary_contact_id": "cont_PDJRWBrG0wLzZu9TP1D3YHgGtJRhcaGPdDqAvDCi4qB",
+    "contact_ids": [
+      "cont_PDJRWBrG0wLzZu9TP1D3YHgGtJRhcaGPdDqAvDCi4qB",
+      "cont_aCPjCbhlNIbE2C5CvCcvY22TyI80e52DrMntJiHW9O1"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_xK4QdqBNVCEAkDex7sZe3jBLaMpfBsE7F35Y74PGqF5"
+    ],
+    "conversation_ids": [
+      "conv_lead_n6AhuTIbNSGZ7lbOMEVufz4Bt7rSTFRzOOxswjHC8WK"
+    ],
+    "task_ids": [
+      "task_fQw7muyBYvR3UZLxzkcqur14ztUK9pZPSGlmg5OLLZj"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-03-12T01:22:36.361Z",
+    "latest_outbound_at": "2026-04-13T21:41:47.777Z",
+    "last_activity_at": "2026-04-13T21:41:47.777Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-02-27T17:44:04.163000+00:00",
+    "updated_at": "2026-04-13T21:41:47.638000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "03055"
+    ],
+    "notes_summary": "Milford Zip: 03055\nPeople 90\nEvent Desc: Wedding\nEvent Date: 10/ 326\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 100,
+      "friction": 25,
+      "relationship_strength": 85,
+      "close_probability": 55,
+      "revenue_value": 23,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 50,
+      "saveability_score": 74,
+      "decay_risk_score": 28,
+      "action_now_score": 55
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get her on the phone soon",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv",
+    "crm_source": "close",
+    "display_name": "Jenn Smiley",
+    "company_name": null,
+    "primary_contact_id": "cont_WEAfc01G5d5bI0GJr4koeEY1llzozLK1RgRVXTIRRsN",
+    "contact_ids": [
+      "cont_WEAfc01G5d5bI0GJr4koeEY1llzozLK1RgRVXTIRRsN"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🟢 Probably",
+    "opportunity_ids": [
+      "oppo_4VJemEjgNy2sPqrv8WvsnivNYZZ64yCHQ5XyyzIAcdW"
+    ],
+    "conversation_ids": [
+      "conv_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv"
+    ],
+    "task_ids": [
+      "task_80bVtmC8rJg09tLj2lsABs3j4nL5kL1xpCbv0fe6oC2",
+      "task_5aRz30SmjtE8WJ53VHzAF9QOmyY4kDDAMVNuPIYaAPC",
+      "task_w8a3Mir9YANYlFKdy775LzLwhCXTQseUm8wtJReyNfU",
+      "task_MOlvxgdcRAerjZpPJLszs85e4Mq2fgMMCrDgm20peZs"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [
+      "tasting_lead_PS3uxxtU8HDNXucLB9Fff3dkyauEF4WzhJw9tGA0gsv"
+    ],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-04-06T15:55:13.862Z",
+    "latest_outbound_at": "2026-04-06T13:55:21.896Z",
+    "last_activity_at": "2026-04-06T15:55:13.862Z",
+    "next_due_at": "2026-03-19",
+    "created_at": "2026-03-16T23:18:15.345000+00:00",
+    "updated_at": "2026-04-11T12:42:43.056000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 07. Booked Tastings",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "-",
+      "Springfield Ma"
+    ],
+    "notes_summary": null,
+    "sales_scoring": {
+      "urgency": 39,
+      "momentum": 100,
+      "friction": 0,
+      "relationship_strength": 77,
+      "close_probability": 75,
+      "revenue_value": 20,
+      "attention_cost": 38,
+      "next_action_clarity": 80,
+      "priority_score": 52,
+      "saveability_score": 74,
+      "decay_risk_score": 18,
+      "action_now_score": 55
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Confirm tasting details and next step",
+      "recommended_channel": "sms",
+      "reasoning_tags": [
+        "A: 🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp",
+    "crm_source": "close",
+    "display_name": "Jennifer Jones",
+    "company_name": null,
+    "primary_contact_id": "cont_6Rujl1txLaavj51n4nRWqCvaMNXvcpeP2GThCTclUwM",
+    "contact_ids": [
+      "cont_6Rujl1txLaavj51n4nRWqCvaMNXvcpeP2GThCTclUwM",
+      "cont_1jWppCMAy05XAbpzj5yXgxmD8qHwcrsmGFmGifE1n9z",
+      "cont_G9GY69YphC25h8sRkoPjging994hHVi5fKx9UpuAAUd",
+      "cont_WbzBlk7bSjelai66AZHXKNOVSsN4aaUJB9rfcuqLY7I",
+      "cont_qsuZXNCDzOSJCZfyuK8rloklWbM8Z2IwUBFr8XRezU1"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_5AzEmzT3gAhursXdcolDAHfJTCm3H4X2ZpEN6QxsnTc",
+      "oppo_Bi0yDS2UQ6XOC3tTxRPPuD8LzB5jh2ROeCo7p7Pd8mT",
+      "oppo_ugTLwzSvl1bz2pQnvUT0fM0nfF5hZcparNIH3pl8vhQ"
+    ],
+    "conversation_ids": [
+      "conv_lead_K5rdw2RyOodmeH4St70WgDvzPzfENoZneRwWqADkcIp"
+    ],
+    "task_ids": [
+      "task_1KtfgFB9WlejY9nek6Dq2aGrkODIFJickO0imqKrNa5",
+      "task_Maaz9vvBqM4aRnblsR9vHihneCdg2mjehx9mlPk6nrk",
+      "task_yhPo9AeBRadHs3qWkWXktZJZWHljdNZmXyh6O77aIGf",
+      "task_G1fQwhtSW7Tfl9FK6IpkZFm3ZPueblPeltBwUKpuSVL",
+      "task_PjG2KBAUa46oZenxBWcDHgMBjcNrp1WJEUHXweJh4cW",
+      "task_PUNmoz2mC0J8V2jE5fXOlQxHkHiQWY38AiqlLoBqKLO",
+      "task_s1SfNEuNUMvja1sNQfMudPcTTwEmaW159dNIQDLs5iM",
+      "task_bCU3odScf8uH4yorG3vLDnYSm1Wsmii0ArTm55xnAY7",
+      "task_Cp1TylUjq2uSlFwxcOwxOXn8SGvEw4Js8TU70QRTmdA"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:09:20.388Z",
+    "last_activity_at": "2026-04-13T19:09:20.388Z",
+    "next_due_at": "2026-04-06T13:00:00+00:00",
+    "created_at": "2026-04-06T22:13:56.586000+00:00",
+    "updated_at": "2026-04-13T19:25:58.571000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. ➡️ Visited high-intent web pages / website",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "🍽️ Free Tasting Opt-In Form",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2026-08-15T15:00:00+00:00",
+      "STILLS  GALLERY  $19 PACKAGE",
+      "3 STILLS",
+      "01. [CATER[ LF EVERGREEN - QUOTE",
+      "172.56.112.153",
+      "02779"
+    ],
+    "notes_summary": "76-100\n🛎️ Full-Service Catering\nWedding\nAugust 15 2026\nFrom comeketocatering.com",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 76,
+      "friction": 25,
+      "relationship_strength": 42,
+      "close_probability": 49,
+      "revenue_value": 47,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 46,
+      "saveability_score": 60,
+      "decay_risk_score": 38,
+      "action_now_score": 52
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Engage & Sell a tasting",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps",
+    "crm_source": "close",
+    "display_name": "Jessica McGory",
+    "company_name": null,
+    "primary_contact_id": "cont_vbMPXEI80XXanjEjxydRU1joGP4MEzMaz8hgj46X47S",
+    "contact_ids": [
+      "cont_vbMPXEI80XXanjEjxydRU1joGP4MEzMaz8hgj46X47S"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔴 Lost",
+    "opportunity_ids": [
+      "oppo_VwEiXqK29gVyYum2D3n9YMISlfulKIhI3KCYpNis1lL",
+      "oppo_xNP1yDxyKDRLrKM0SLJ2HlzH3sfyTrw81wn0mRwOhYA"
+    ],
+    "conversation_ids": [
+      "conv_lead_BBbfPnL32BZ1jbvM4Z01R8XW74ExkJwZIAiWyoOfUps"
+    ],
+    "task_ids": [
+      "task_EPrKuZu0BhNEGtWZwOojqeilKX0SgI7r2vgtbbU86lT",
+      "task_ggcW1ea2a2b81b6lsCDRb5JyZFFcsezZS2VnytR35sn"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-03-13T16:48:43.258Z",
+    "latest_outbound_at": "2026-03-13T18:36:34.817Z",
+    "last_activity_at": "2026-03-13T18:36:34.817Z",
+    "next_due_at": "2026-03-13T13:00:00+00:00",
+    "created_at": "2026-03-05T10:23:48.440000+00:00",
+    "updated_at": "2026-04-05T00:28:03.240000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 08. Long-Term / Dormant Followup",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2026-07-26T15:00:00+00:00",
+      "2026-03-01",
+      "2026-03-01",
+      "Blithewold Manor",
+      "$70,000-$79,000"
+    ],
+    "notes_summary": "07/26/2026\n\nAaron Lipp is the groom",
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 0,
+      "friction": 35,
+      "relationship_strength": 41,
+      "close_probability": 28,
+      "revenue_value": 20,
+      "attention_cost": 42,
+      "next_action_clarity": 45,
+      "priority_score": 10,
+      "saveability_score": 18,
+      "decay_risk_score": 40,
+      "action_now_score": 9
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": false,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Send reactivation follow-up",
+      "recommended_channel": "email",
+      "reasoning_tags": [
+        "A: 🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR",
+    "crm_source": "close",
+    "display_name": "Jessica Molina",
+    "company_name": null,
+    "primary_contact_id": "cont_5AsyMNiDrTT8UZrlsj3ZJvRVCn0Kl5ge1MiJjqC3R7R",
+    "contact_ids": [
+      "cont_5AsyMNiDrTT8UZrlsj3ZJvRVCn0Kl5ge1MiJjqC3R7R",
+      "cont_BQXcdeKDVIEmDEddty2kYzor5wpSSVglgdtXcWYV07D"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_nWf8fup5t0yk5Pa2rDx4TMqcmKa18TghG0ts41Mse5g"
+    ],
+    "conversation_ids": [
+      "conv_lead_RXonJr7hbndzjrlszr6L9MMEppLme60GcPgutFQWxBR"
+    ],
+    "task_ids": [
+      "task_DyMbQGZyc4TRwWNhDF5SYEBnXRT7XPa6MJIxSuk51oN"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-04-06T21:12:41.880Z",
+    "latest_outbound_at": "2026-04-13T19:09:25.279Z",
+    "last_activity_at": "2026-04-13T19:09:25.279Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-06T01:43:16.202000+00:00",
+    "updated_at": "2026-04-13T20:21:16.272000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "-05. 📅 Event is far away (12mo+)",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2027-06-04T15:00:00+00:00",
+      "02145"
+    ],
+    "notes_summary": "Somerville Zip: 02145\nPeople 100\nEvent Desc: Wedding\nEvent Date: 6/4/27\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 80,
+      "friction": 25,
+      "relationship_strength": 44,
+      "close_probability": 50,
+      "revenue_value": 25,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 43,
+      "saveability_score": 57,
+      "decay_risk_score": 37,
+      "action_now_score": 51
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get her on the phone",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t",
+    "crm_source": "close",
+    "display_name": "Jose Quefau",
+    "company_name": null,
+    "primary_contact_id": "cont_5egvkfFDhIiCMpakSJiW2p0MjN8yoS30S8DxxXsd1sX",
+    "contact_ids": [
+      "cont_5egvkfFDhIiCMpakSJiW2p0MjN8yoS30S8DxxXsd1sX",
+      "cont_fVwpV2IZHkPCemxV0Jyr9K9RELoGVwBiDkIXsvOMi1T",
+      "cont_TyvW783SOp5pymjSgeFbcFeU4QTGej1OngdkK6cL6Kw"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔥 Definitely",
+    "opportunity_ids": [
+      "oppo_0B1Tjf8uMx6MeZ4nE3fTHf2wUIJjOF2YIHKb9cEf5oL"
+    ],
+    "conversation_ids": [
+      "conv_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t"
+    ],
+    "task_ids": [
+      "task_mjHT4QEIJkGqgfS465nuxuXzWVoR0dYyu9Pq7FpWI6O",
+      "task_2W70wrVQ60W9waIKJ5xGW5pIGw8fygDjsfv99DzfRfI"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [
+      "tasting_lead_VTBL7f5EFXqwjSKYUh2UZSv61I0NaA5wPayYdEp937t"
+    ],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-04-08T20:37:49.869Z",
+    "latest_outbound_at": "2026-04-08T16:56:29.661Z",
+    "last_activity_at": "2026-04-08T20:37:49.869Z",
+    "next_due_at": "2026-04-08",
+    "created_at": "2026-04-02T01:02:57.356000+00:00",
+    "updated_at": "2026-04-09T01:28:43.378000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 07. Booked Tastings",
+      "01. 😎 Andre",
+      "-05. 📅 Event is far away (12mo+)",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "02. 📞 DAY 2 CALL",
+      "Created",
+      "0",
+      "01420"
+    ],
+    "notes_summary": "Fitchburg Zip: 01420\nPeople 100 personas\nEvent Desc: 15 años\nEvent Date: 11-13-2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 43,
+      "momentum": 100,
+      "friction": 0,
+      "relationship_strength": 77,
+      "close_probability": 75,
+      "revenue_value": 21,
+      "attention_cost": 38,
+      "next_action_clarity": 80,
+      "priority_score": 53,
+      "saveability_score": 75,
+      "decay_risk_score": 20,
+      "action_now_score": 57
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Confirm tasting details and next step",
+      "recommended_channel": "sms",
+      "reasoning_tags": [
+        "A: 🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr",
+    "crm_source": "close",
+    "display_name": "Ju",
+    "company_name": null,
+    "primary_contact_id": "cont_bZ2VHgYSqlCAiCXa74EmHGk3uH2OdJkNdnGZuPPTi82",
+    "contact_ids": [
+      "cont_bZ2VHgYSqlCAiCXa74EmHGk3uH2OdJkNdnGZuPPTi82",
+      "cont_M5YURc2QHud7V01eSZgd3u8UVs6EzATGtBLkBsrcCKx"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_iTfRuYGyGOSS7D281AQplqLykQQSyojMmyfryQYJmaW"
+    ],
+    "conversation_ids": [
+      "conv_lead_5mFrzPL7S2xFTiKjg9X2RWHWe1QgVMj7O2QA9xkIyHr"
+    ],
+    "task_ids": [
+      "task_5Gzbet6sxy38XvqxNuaEzb6vpGLm9HGSfFDRN4AUk7D",
+      "task_Lg50JwjQNnOCH1W2DGAPdWgA9xrOTOqYWnjMRYCSEMn"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T18:00:29.550Z",
+    "last_activity_at": "2026-04-13T18:00:29.550Z",
+    "next_due_at": "2026-04-07T13:00:00+00:00",
+    "created_at": "2026-04-07T20:50:20.599000+00:00",
+    "updated_at": "2026-04-13T19:51:18.898000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2026-12-12T15:00:00+00:00",
+      "VIDEO  RODS WEDDING & FACELESS",
+      "RODS WEDDING & FACELESS",
+      "01. [CATER[ LF EVERGREEN - QUOTE",
+      "01532"
+    ],
+    "notes_summary": "Northborough Zip: 01532\nPeople 120\nEvent Desc: Sweet 15\nEvent Date: 12/12/26\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 60,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 45,
+      "revenue_value": 25,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 40,
+      "saveability_score": 54,
+      "decay_risk_score": 40,
+      "action_now_score": 46
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get her on the phone",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA",
+    "crm_source": "close",
+    "display_name": "Kaitlyn Nichols",
+    "company_name": null,
+    "primary_contact_id": "cont_bXfTODDp7RgNDplYbF8COxHneUl36zK3NW1Wlvky8Yz",
+    "contact_ids": [
+      "cont_bXfTODDp7RgNDplYbF8COxHneUl36zK3NW1Wlvky8Yz"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_hwV1PcnkMZM37LZOCCFMwJMxhUBONalK8KrwHxJkWh6"
+    ],
+    "conversation_ids": [
+      "conv_lead_8e3DPmouGcsvgBoqs9QNPv9gO84bcLSpSdjknOM3LTA"
+    ],
+    "task_ids": [
+      "task_4EWwnE9zeVwDS83fKbnx3unFJko1RpT8tvuLOyKgvuE",
+      "task_0G62wimTsJxKc8JY6oIXKa6wxBqvkCrAAtS8liXfwv1"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:08:53.601Z",
+    "last_activity_at": "2026-04-13T19:08:53.601Z",
+    "next_due_at": "2026-03-16",
+    "created_at": "2026-03-05T10:42:19.949000+00:00",
+    "updated_at": "2026-04-13T19:08:53.186000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "2027-06-12T15:00:00+00:00",
+      "2026-03-01",
+      "2026-03-01"
+    ],
+    "notes_summary": null,
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 54,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 44,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 51,
+      "decay_risk_score": 41,
+      "action_now_score": 44
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Follow up",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS",
+    "crm_source": "close",
+    "display_name": "Katerina St. Angelo",
+    "company_name": null,
+    "primary_contact_id": "cont_txdy5GgHOV9gQAS0IzsuKg1xVemKqYosmmGEYQO2arQ",
+    "contact_ids": [
+      "cont_txdy5GgHOV9gQAS0IzsuKg1xVemKqYosmmGEYQO2arQ"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_56BlJtHwk7uXaiB9MCcnXj6anMukcx0Lx2w4twzYhmV"
+    ],
+    "conversation_ids": [
+      "conv_lead_rI0tOVPkud6QAhSwkV69Rp1ZJPc0NvpClNkJwsFnpSS"
+    ],
+    "task_ids": [
+      "task_irycMSOgLtpCcFsiULjA4pwGVMETr6l6u3tABwXmTtl",
+      "task_VVxUmYCLHIhN2RXqxSRwc9J32yTv86X747FpmtHdkrD"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-03-10T17:18:04.934Z",
+    "last_activity_at": "2026-03-10T17:18:04.934Z",
+    "next_due_at": "2026-03-09T13:00:00+00:00",
+    "created_at": "2026-03-05T12:01:53.994000+00:00",
+    "updated_at": "2026-04-10T00:33:19.962000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 08. Long-Term / Dormant Followup",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2026-03-01",
+      "2026-03-01",
+      "Cranston",
+      "$30,000 or less"
+    ],
+    "notes_summary": "Sept 2027 o r Nov 2027\nLucia Achilli Bridal Party",
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 0,
+      "friction": 35,
+      "relationship_strength": 42,
+      "close_probability": 28,
+      "revenue_value": 20,
+      "attention_cost": 50,
+      "next_action_clarity": 80,
+      "priority_score": 13,
+      "saveability_score": 26,
+      "decay_risk_score": 37,
+      "action_now_score": 15
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Follow up",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz",
+    "crm_source": "close",
+    "display_name": "Kenia Valdivia",
+    "company_name": null,
+    "primary_contact_id": "cont_dKxpxmB4nQd1KJ3uNsrLHxw6q2DotZwsGdWNDRJiDz3",
+    "contact_ids": [
+      "cont_dKxpxmB4nQd1KJ3uNsrLHxw6q2DotZwsGdWNDRJiDz3"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_YF4vpLBBRihocDVDY4Xql7tK5XPMYUpwTg73eRLGG3a"
+    ],
+    "conversation_ids": [
+      "conv_lead_YYZaqJYvheRr9usEDNHQdhcm4M44slXCmulDuqHBgRz"
+    ],
+    "task_ids": [
+      "task_SvtAbwcENwYTBsmh55wjmlaEtn60e2HO2TuI8DBYDII",
+      "task_MQoksPIzkCHbwYxtw1V0fnCIn7gz86m2KTnG2d61iBs"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-03-16T17:13:14.547Z",
+    "last_activity_at": "2026-03-16T17:13:14.547Z",
+    "next_due_at": "2026-03-16",
+    "created_at": "2026-03-04T13:37:50.390000+00:00",
+    "updated_at": "2026-04-08T20:04:51.891000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2026-10-18T15:00:00+00:00",
+      "2026-03-01",
+      "2026-03-01",
+      "Wadsworth mansion",
+      "$40,000-$49,000 | $50,000-$59,000"
+    ],
+    "notes_summary": "10/18/2026",
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 0,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 30,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 15,
+      "saveability_score": 30,
+      "decay_risk_score": 33,
+      "action_now_score": 15
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Follow up",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+    "crm_source": "close",
+    "display_name": "Laine Martins",
+    "company_name": null,
+    "primary_contact_id": "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+    "contact_ids": [
+      "cont_VmH8CnxiAzYcIOSE3RyH0kTgAS8iGc2TiznoUOxGNLV",
+      "cont_tn5SVG3y1DD5xn7MbElwuhbQpG8MNNoyBpmpDd5A521"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy"
+    ],
+    "conversation_ids": [
+      "conv_lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+    ],
+    "task_ids": [
+      "task_3trlSbejjgw2pGBYYvpvtb6kxEUHiFCOgO01b53BQnb"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-04-13T19:59:13.271Z",
+    "latest_outbound_at": "2026-04-13T19:57:28.476Z",
+    "last_activity_at": "2026-04-13T19:59:13.271Z",
+    "next_due_at": "2026-04-14T13:00:00+00:00",
+    "created_at": "2026-04-13T19:14:57.338000+00:00",
+    "updated_at": "2026-04-13T20:31:10.757000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 01. Today's Leads",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "VIDEO  RODS WEDDING & FACELESS",
+      "RODS WEDDING & FACELESS",
+      "01. [CATER[ LF EVERGREEN - QUOTE",
+      "01960"
+    ],
+    "notes_summary": "Peabody Zip: 01960\nPeople 300\nEvent Desc: Church gatherings\nEvent Date: July\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 98,
+      "momentum": 68,
+      "friction": 0,
+      "relationship_strength": 59,
+      "close_probability": 52,
+      "revenue_value": 63,
+      "attention_cost": 38,
+      "next_action_clarity": 80,
+      "priority_score": 63,
+      "saveability_score": 78,
+      "decay_risk_score": 47,
+      "action_now_score": 67
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Laine Martins\nCampaign: RODS WEDDING & FACELESS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 01. Today's Leads"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM",
+    "crm_source": "close",
+    "display_name": "LeaAnthony",
+    "company_name": null,
+    "primary_contact_id": "cont_h8RXrkLOVWGfJO7nB6VGTmGiU8chX6idodFYWjXpwqj",
+    "contact_ids": [
+      "cont_h8RXrkLOVWGfJO7nB6VGTmGiU8chX6idodFYWjXpwqj"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_VjZPu3mwcIM2ZCXcrRJLf3XqS6OQCHgpGQDRBBX8O3b"
+    ],
+    "conversation_ids": [
+      "conv_lead_KL8x74l2RwdHIycSeTRYBRAePGHY6HKf1Ifyw0245gM"
+    ],
+    "task_ids": [
+      "task_y7UfIHvpERSevtIIs4Y8V1ghXxVSTaOgU8SfSCV6Sep"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T13:00:13.369Z",
+    "last_activity_at": "2026-04-13T13:00:13.369Z",
+    "next_due_at": "2026-04-10T13:00:00+00:00",
+    "created_at": "2026-04-05T03:45:30.149000+00:00",
+    "updated_at": "2026-04-13T20:46:36.368000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre"
+    ],
+    "notes_summary": "Campaign Name:\nExpo 4/4/2026\nSource: Expo Booth\nCaptured At: 2026-04-04T19:21:16.894Z\nEvent Date: Venue\nVenue: \nEmail Permission: No\nImport Note: Imported from FormSubmit expo submissions.",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 42,
+      "friction": 25,
+      "relationship_strength": 38,
+      "close_probability": 41,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 34,
+      "saveability_score": 45,
+      "decay_risk_score": 45,
+      "action_now_score": 41
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "[OOPS] Please add a task to your most recently updated lead",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i",
+    "crm_source": "close",
+    "display_name": "Leigh",
+    "company_name": null,
+    "primary_contact_id": "cont_n1jKJnE3WjJgQRa0uhBioNUXzhIEmwP9bK4tYorh0ge",
+    "contact_ids": [
+      "cont_n1jKJnE3WjJgQRa0uhBioNUXzhIEmwP9bK4tYorh0ge",
+      "cont_bzsly8zfK3pr0gPWH2HYS69bSFTbk0icGCERPqwOGlu"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_5HYdIoO4GgRQbPcftc4r44O3YKFT62f6OYtaNEsRuqZ"
+    ],
+    "conversation_ids": [
+      "conv_lead_rU8jt417PEdNGX7ZB6ua5J5o1s1XmShupXglQBuCf3i"
+    ],
+    "task_ids": [
+      "task_n8kQaLV9oSi2ASvrYydqbP1ue6lkd0ljDekFDDewQGS",
+      "task_hKtBv6bgpPbGnPuIQ0WOWZeauouJdcV4wQBH9QeXn0t"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-03-13T21:06:44.449Z",
+    "latest_outbound_at": "2026-03-13T22:48:24.421Z",
+    "last_activity_at": "2026-03-13T22:48:26.742Z",
+    "next_due_at": "2026-03-02",
+    "created_at": "2026-02-13T17:35:25.183000+00:00",
+    "updated_at": "2026-03-23T17:28:13.257000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 08. Long-Term / Dormant Followup",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "André",
+      "535 Barrington Dr, Roswell, GA 30075, Estados Unidos",
+      "Created",
+      "0",
+      "2026-10-03T15:00:00+00:00",
+      "-",
+      "Barrington Hall"
+    ],
+    "notes_summary": "Venue\nhttps://www.barringtonhallgb.com/\nevents@barringtonhallgb.com\n(413) 645-3116",
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 34,
+      "friction": 35,
+      "relationship_strength": 73,
+      "close_probability": 37,
+      "revenue_value": 20,
+      "attention_cost": 50,
+      "next_action_clarity": 80,
+      "priority_score": 22,
+      "saveability_score": 43,
+      "decay_risk_score": 26,
+      "action_now_score": 23
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Send message Mid April",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo",
+    "crm_source": "close",
+    "display_name": "Lisandra Lopez",
+    "company_name": null,
+    "primary_contact_id": "cont_lFXkcwyhBqXHGUQMzQbdjLlfywM4BdXMynbeTZMkFNd",
+    "contact_ids": [
+      "cont_lFXkcwyhBqXHGUQMzQbdjLlfywM4BdXMynbeTZMkFNd",
+      "cont_UzDgSmFtKwG4SgZDgd1jlyNluXRj7ZtvmuULj8aGlSX"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_fEXcvKun6Dz8bSRCmWkuRGk7yHklfk7k0HvHzkyinN0"
+    ],
+    "conversation_ids": [
+      "conv_lead_kaFS30UfOJfyUVOR4WUpFWps9tNCwkgd7KWfy6nceHo"
+    ],
+    "task_ids": [
+      "task_1sMbE5VK4mGoX1OrTT1EHJgK5GWmFFTNX1YphvStLnX",
+      "task_9VHmk1megdibCf0LbQ01nbdN7aAOAGLeBeAmoJZUnKb"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:14:24.870Z",
+    "last_activity_at": "2026-04-13T21:14:24.870Z",
+    "next_due_at": "2026-03-24",
+    "created_at": "2026-03-21T21:02:35.078000+00:00",
+    "updated_at": "2026-04-13T21:14:24.374000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "-05. 📅 Event is far away (12mo+)",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "06513"
+    ],
+    "notes_summary": "New Haven Zip: 06513\nPeople 80\nEvent Desc: Bridgerton\nEvent Date: June 17,2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 62,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 46,
+      "revenue_value": 16,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 53,
+      "decay_risk_score": 40,
+      "action_now_score": 46
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "[OOPS] Please add a task to your most recently updated lead",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q",
+    "crm_source": "close",
+    "display_name": "Maria A. Cutler",
+    "company_name": null,
+    "primary_contact_id": "cont_DVg25gUjE9oxGOC9VmwUeJNhI63wAiOcyjoEWTDZFG0",
+    "contact_ids": [
+      "cont_DVg25gUjE9oxGOC9VmwUeJNhI63wAiOcyjoEWTDZFG0",
+      "cont_ZaXNzXGpyvdvQKImdyisUqeRTasxoyQBlSJRDTIxluz"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_VuJ6QCyItI8FDgkRIQYUD1PBMaDDUCW8KddAdjOYENh"
+    ],
+    "conversation_ids": [
+      "conv_lead_L46zGZFljcxs8EunYrSd0Ypdhy4SHQE77d7UbmJj73Q"
+    ],
+    "task_ids": [
+      "task_0P9Auv7LbvqYfdS1NCCQndoyCJeYvTRaRqzUDJBMdy5",
+      "task_n3Heh8MRUtiorW8EFqrOJEvYKfu93nIRSKdrUMGWkLT"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-04-06T17:14:33.543Z",
+    "latest_outbound_at": "2026-04-13T17:03:07.582Z",
+    "last_activity_at": "2026-04-13T17:03:07.582Z",
+    "next_due_at": "2026-04-06T13:00:00+00:00",
+    "created_at": "2026-04-06T17:11:30.316000+00:00",
+    "updated_at": "2026-04-13T17:03:07.962000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "02151"
+    ],
+    "notes_summary": "Revere Zip: 02151\nPeople 30\nEvent Desc: Graduation\nEvent Date: June\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 66,
+      "friction": 25,
+      "relationship_strength": 53,
+      "close_probability": 47,
+      "revenue_value": 6,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 53,
+      "decay_risk_score": 39,
+      "action_now_score": 46
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "get her on the phone",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc",
+    "crm_source": "close",
+    "display_name": "Maria Barros",
+    "company_name": null,
+    "primary_contact_id": "cont_t6AFlLnseZvov0AZbwLMHDY9yP8GqGXOoG5lWm1n6iJ",
+    "contact_ids": [
+      "cont_t6AFlLnseZvov0AZbwLMHDY9yP8GqGXOoG5lWm1n6iJ",
+      "cont_X8ItupBRFONuPGoB3lKVh4q03UAB8bqilAMMj2dz5Gz"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_0g91tT1Z60kOosqYrgqlDpCE9PyKgpnEjGC9oLWOxA3"
+    ],
+    "conversation_ids": [
+      "conv_lead_41tiRvk3p2PEiRk0dhAhIdpcJoB5w5gJ2SP74rzRYMc"
+    ],
+    "task_ids": [
+      "task_Ho02b5PA45SaAVembKWRpJDIjdsNYVhyWdnIjnlYqCq",
+      "task_nrhoYRBfejJqobuimRKqStDcP8ZXGuxXUYaB0XpX3Iy"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:14:31.335Z",
+    "last_activity_at": "2026-04-13T21:14:31.335Z",
+    "next_due_at": "2026-03-21T13:00:00+00:00",
+    "created_at": "2026-03-21T18:51:10.974000+00:00",
+    "updated_at": "2026-04-13T21:14:30.932000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "02125"
+    ],
+    "notes_summary": "Boston Zip: 02125\nPeople 02125\nEvent Desc: \nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 86,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 52,
+      "revenue_value": 100,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 58,
+      "saveability_score": 75,
+      "decay_risk_score": 36,
+      "action_now_score": 60
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "[OOPS] Please add a task to your most recently updated lead",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD",
+    "crm_source": "close",
+    "display_name": "Marni Wheeler",
+    "company_name": null,
+    "primary_contact_id": "cont_HXoT7hKvOrmbKaUZoxcoU3W8JFfrzMejpPjT89LPcN8",
+    "contact_ids": [
+      "cont_HXoT7hKvOrmbKaUZoxcoU3W8JFfrzMejpPjT89LPcN8",
+      "cont_VyEbUz2LlF8ntPoIwddQHJXugY68bHV6Zou6O77negx"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_7HundSerGIDTVk2nm8wBZBluCqioovq2mtFuuTQ5Vhq"
+    ],
+    "conversation_ids": [
+      "conv_lead_sDO0o170hbCTw6YrlG9qYchV8WTpfgmv9L4p7kDOeVD"
+    ],
+    "task_ids": [
+      "task_qMv3GCCNyaBwqMhIxHfGCIJLbJm6sAPUU7QJkUzVn8K",
+      "task_4rWWUcnyaPm5YuRPwT9wU2HeHHB4ytrCbqNjoUyE4g1",
+      "task_4VHhPujuw7IHCvqBtcA5yx88AB0pWhfHWkO9IDATRqM"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:09:06.874Z",
+    "last_activity_at": "2026-04-13T19:09:06.874Z",
+    "next_due_at": "2026-02-12T14:00:00+00:00",
+    "created_at": "2026-01-24T13:27:19.906000+00:00",
+    "updated_at": "2026-04-13T19:28:30.198000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "Created",
+      "0",
+      "03052"
+    ],
+    "notes_summary": "Zip: 03052\nPeople 50\nEvent Desc: Confirmation\nEvent Date: April 18\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 94,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 54,
+      "revenue_value": 13,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 44,
+      "saveability_score": 60,
+      "decay_risk_score": 34,
+      "action_now_score": 53
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get them on the phone soon",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i",
+    "crm_source": "close",
+    "display_name": "Mary Ann Hughes",
+    "company_name": null,
+    "primary_contact_id": "cont_0pqCr42PP9VpxKk6KPJwtkvGncoxnsJ3U3C6bEIDjcd",
+    "contact_ids": [
+      "cont_0pqCr42PP9VpxKk6KPJwtkvGncoxnsJ3U3C6bEIDjcd"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_lsKGrGPkVlQ0LqAxgb6eVA4RzkrMmb5tXEIt8L5ya9Y"
+    ],
+    "conversation_ids": [
+      "conv_lead_0cenDuAYGWu7kv2ElWLgs9SUPNsHVtHgAiiFd5K4R2i"
+    ],
+    "task_ids": [
+      "task_83oVjcofvdUBVKXtKEvfHGUGvtHE9iPR52nimjgzSGM"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2025-09-24T15:26:31.288Z",
+    "last_activity_at": "2025-09-24T15:26:31.288Z",
+    "next_due_at": "2025-08-07T13:00:00+00:00",
+    "created_at": "2025-08-07T16:00:21.121000+00:00",
+    "updated_at": "2026-02-12T03:36:49.260000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "03. 💌 DAY 3 EMAIL ONLY",
+      "2025-10-04T15:00:00+00:00",
+      "https://www.eventective.com/myeventective/#/crm/Event/Messages/EGI5L41T"
+    ],
+    "notes_summary": "Mary's Party\n80 Guests\nSat, Oct 4, 2025\n(date flexible)\n1:00 PM (3.0 Hours)\n$15 - $25 / person Budget\nmahughes123@verizon.net \n508-330-4614",
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 0,
+      "friction": 25,
+      "relationship_strength": 38,
+      "close_probability": 30,
+      "revenue_value": 20,
+      "attention_cost": 39,
+      "next_action_clarity": 65,
+      "priority_score": 13,
+      "saveability_score": 23,
+      "decay_risk_score": 36,
+      "action_now_score": 14
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": false,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Make first real connection attempt",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a",
+    "crm_source": "close",
+    "display_name": "Megan Szwarckop",
+    "company_name": null,
+    "primary_contact_id": "cont_NFCYfzxSwoJKj49fJ2ta6tJxvrftOyO9xiSF758tjep",
+    "contact_ids": [
+      "cont_NFCYfzxSwoJKj49fJ2ta6tJxvrftOyO9xiSF758tjep",
+      "cont_Vhq7urEOePpnaaqv5JTwDGC7TWjgtfRF6FQ0RWsiHGB"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_RhX1LyKBE9punocyPyUJsK8U0EDrT23qoyYJWvE8kMR"
+    ],
+    "conversation_ids": [
+      "conv_lead_Q15hb94ZC4VijuaL5gWWPOUUDjQsdx5evRnIEhAud7a"
+    ],
+    "task_ids": [
+      "task_TdHvQopOCulxx9TX0GP72kvcB8wD7sjNJVFp2N5FBGO"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:09:47.959Z",
+    "last_activity_at": "2026-04-13T19:09:47.959Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-01T22:38:58.202000+00:00",
+    "updated_at": "2026-04-13T19:09:47.815000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. ⏰ Immediate need (within 3 months)",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2026-06-27T15:00:00+00:00",
+      "01082"
+    ],
+    "notes_summary": "Zip: 01082\nPeople 15\nEvent Desc: Wedding\nEvent Date: June 27,2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 62,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 46,
+      "revenue_value": 4,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 36,
+      "saveability_score": 50,
+      "decay_risk_score": 40,
+      "action_now_score": 45
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Megan Szwarckop\nCampaign: 3 STILLS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe",
+    "crm_source": "close",
+    "display_name": "Mika Pierre",
+    "company_name": null,
+    "primary_contact_id": "cont_Y72ZMUjjsIPF86bZsJBCESyj7eFHIYxTqqYZ23eXExI",
+    "contact_ids": [
+      "cont_Y72ZMUjjsIPF86bZsJBCESyj7eFHIYxTqqYZ23eXExI",
+      "cont_fihPbwTtSqHKAYDDBrQcxRSInBmRklS99L2hbfsFNaW"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_u6rppi1ZbTz2L903qU5wi7Toy7VZUac2GnoT1QeJuUY"
+    ],
+    "conversation_ids": [
+      "conv_lead_sSxh7Od81jmMJXUIPjNZUFg1DfusmIHOIQXlpK4prOe"
+    ],
+    "task_ids": [
+      "task_15EvPgFWBTqpJnkDKHCoqcQ4UXxpUzFH5Wo81NFd3lC"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:41:38.882Z",
+    "last_activity_at": "2026-04-13T21:41:38.882Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-05T11:32:43.288000+00:00",
+    "updated_at": "2026-04-13T21:41:38.458000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "02919"
+    ],
+    "notes_summary": "Zip: 02919\nPeople 30\nEvent Desc: Graduation party\nEvent Date: June 6th\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 72,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 48,
+      "revenue_value": 6,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 53,
+      "decay_risk_score": 38,
+      "action_now_score": 47
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Facebook Lead Ads: Mika Pierre\nCampaign:",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku",
+    "crm_source": "close",
+    "display_name": "Neri Nogueira",
+    "company_name": null,
+    "primary_contact_id": "cont_ot7qFSrcSb6fEWgiDkVQ5HOqOUxuvtn0L0z7z7AWur4",
+    "contact_ids": [
+      "cont_ot7qFSrcSb6fEWgiDkVQ5HOqOUxuvtn0L0z7z7AWur4",
+      "cont_P11cM3CSr8LjpBwS17NqgK11fjLDPreZseQhvTKxyP3"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_xVoly3tUDvQrA7jykqBcr33J50R8u2Exm0QBAY6HFAa"
+    ],
+    "conversation_ids": [
+      "conv_lead_4LSQwyTAiubRnkTBIPOBSNNaDmcyXr2eYFiVuMtixku"
+    ],
+    "task_ids": [
+      "task_YQJErPPgiBfFADVsC6GWes7kRi6NNwUmnHq5o9PTS5O"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-03-31T00:34:17.368Z",
+    "latest_outbound_at": "2026-04-13T19:10:06.742Z",
+    "last_activity_at": "2026-04-13T19:10:06.742Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-31T00:32:20.366000+00:00",
+    "updated_at": "2026-04-13T19:10:05.909000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. ⏰ Immediate need (within 3 months)",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2026-06-14T15:00:00+00:00",
+      "02655"
+    ],
+    "notes_summary": "Zip: 02655\nPeople 100\nEvent Desc: Graduation celebration\nEvent Date: 06/14/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 84,
+      "friction": 25,
+      "relationship_strength": 57,
+      "close_probability": 51,
+      "revenue_value": 23,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 44,
+      "saveability_score": 62,
+      "decay_risk_score": 35,
+      "action_now_score": 52
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Neri Nogueira\nCampaign: 3 STILLS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx",
+    "crm_source": "close",
+    "display_name": "Precious Montgomery",
+    "company_name": null,
+    "primary_contact_id": "cont_ou2YqSjcFmIL3r9hrRPkt2F41AyV22uag6U4oQb3Ax0",
+    "contact_ids": [
+      "cont_ou2YqSjcFmIL3r9hrRPkt2F41AyV22uag6U4oQb3Ax0"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_MCATgsf7KCcBokZy5ISEu5WctHZoyKLMVKWW5vWhOQC"
+    ],
+    "conversation_ids": [
+      "conv_lead_r0OkVcqHA2sSsIh5AXoiT7OUgpKvxqiEMXxJ321SPOx"
+    ],
+    "task_ids": [
+      "task_GnKoGIypz09jHnnbWOZPavMhDO2cSYVvzMASiVLJV7N",
+      "task_dLM399RWkgt2iS96AYwxxN0E198Up7MHLCJfvxvNGri",
+      "task_oird3hf2eOlD0bLz0sI8XUIkRaPNzD20CYW6oPCUIYl",
+      "task_1nGX86hImZOwVqzTiXyQa9nWCxpM1BprnOt7T8NUdVA"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-02-04T15:27:55.640Z",
+    "latest_outbound_at": "2026-02-12T17:38:54.165Z",
+    "last_activity_at": "2026-02-12T17:38:54.165Z",
+    "next_due_at": "2026-02-04T14:00:00+00:00",
+    "created_at": "2026-02-04T14:29:38.038000+00:00",
+    "updated_at": "2026-04-08T20:05:05.558000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "Laurel Hill Rd, Springfield, MA 01108, United States",
+      "Barney Carriage House, Springfield, MA"
+    ],
+    "notes_summary": null,
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 0,
+      "friction": 25,
+      "relationship_strength": 57,
+      "close_probability": 30,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 16,
+      "saveability_score": 32,
+      "decay_risk_score": 32,
+      "action_now_score": 15
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Follow up",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made",
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB",
+    "crm_source": "close",
+    "display_name": "Rachel Sawyer",
+    "company_name": null,
+    "primary_contact_id": "cont_SiHyyUGAJNzLDLYHQYShwny6txtyjLmzMxlmmRhbex6",
+    "contact_ids": [
+      "cont_SiHyyUGAJNzLDLYHQYShwny6txtyjLmzMxlmmRhbex6",
+      "cont_6jRnhsOqZyqpbv8lmWPW8xS8rsbb49WEkkduiCDWZxN"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_tBoFJRYyr3bocKhIIQRpWVkmzfprgIHOKM9hJRop9GX"
+    ],
+    "conversation_ids": [
+      "conv_lead_yBbHVw7byMWycWLiaKGZEs2iBg7urqO5aLyqHo8ChJB"
+    ],
+    "task_ids": [
+      "task_FH4jw5OweI8WmWSpsBa0eoksrXCvuN90jL5qSvKjGtM"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-03-17T18:02:34.470Z",
+    "latest_outbound_at": "2026-04-03T21:00:48.577Z",
+    "last_activity_at": "2026-04-03T21:00:48.577Z",
+    "next_due_at": "2026-04-20",
+    "created_at": "2026-03-12T06:41:32.155000+00:00",
+    "updated_at": "2026-04-12T00:33:18.315000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 10. All Other Followup (Copy)",
+      "01. 😎 Andre",
+      "-05. 📅 Event is far away (12mo+)",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "Created",
+      "0",
+      "01970"
+    ],
+    "notes_summary": "Salem Zip: 01970\nPeople 60\nEvent Desc: Wedding\nEvent Date: May 20, 2028\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 33,
+      "momentum": 64,
+      "friction": 0,
+      "relationship_strength": 71,
+      "close_probability": 75,
+      "revenue_value": 15,
+      "attention_cost": 38,
+      "next_action_clarity": 80,
+      "priority_score": 44,
+      "saveability_score": 61,
+      "decay_risk_score": 24,
+      "action_now_score": 46
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Rachel Sawyer\nCampaign: $19 GALLERY",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 10. All Other Followup (Copy)"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH",
+    "crm_source": "close",
+    "display_name": "Raddison7902",
+    "company_name": null,
+    "primary_contact_id": "cont_cDzaEVQf4DBOENIN2S5H7N2cc643i1YvJXa6LncbdUL",
+    "contact_ids": [
+      "cont_cDzaEVQf4DBOENIN2S5H7N2cc643i1YvJXa6LncbdUL"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_WS14ljD8gSjyOqozbuZcFOebl3bobjejZnzaxuzk9IQ"
+    ],
+    "conversation_ids": [
+      "conv_lead_DzXu2HaomBk5jPVGgduQVNe9wXX1ndyYS4pbvlRwEmH"
+    ],
+    "task_ids": [
+      "task_e0SdM1QmQj4pAy1XNfZiIDshrtf2pb4NsngL4mUSdM0"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T13:34:12.943Z",
+    "last_activity_at": "2026-04-13T13:34:12.943Z",
+    "next_due_at": "2026-04-10",
+    "created_at": "2026-04-04T12:15:06.523000+00:00",
+    "updated_at": "2026-04-13T13:34:13.221000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 03. Day 6-10 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0"
+    ],
+    "notes_summary": null,
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 42,
+      "friction": 50,
+      "relationship_strength": 30,
+      "close_probability": 36,
+      "revenue_value": 20,
+      "attention_cost": 56,
+      "next_action_clarity": 80,
+      "priority_score": 30,
+      "saveability_score": 37,
+      "decay_risk_score": 52,
+      "action_now_score": 39
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Change the name of the lead once you find it what it is (both lead record and contact name)",
+      "recommended_channel": "email",
+      "reasoning_tags": [
+        "A: 🔷 03. Day 6-10 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
+    "crm_source": "close",
+    "display_name": "Rebecca Almeida",
+    "company_name": null,
+    "primary_contact_id": "cont_ZOTXTa1CYHlt9HlGKO6GRyEhnGM6aPAzWdm3qgfvdrb",
+    "contact_ids": [
+      "cont_ZOTXTa1CYHlt9HlGKO6GRyEhnGM6aPAzWdm3qgfvdrb",
+      "cont_yNPfGhebnnd7yXGnXcqKTieHQKFbZPDKcXtglka5bKd"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔥 Definitely",
+    "opportunity_ids": [
+      "oppo_jQBuH8wJC2dG53iU4E9LIRCUU5ASSltuMwG0Y0NQhEl"
+    ],
+    "conversation_ids": [
+      "conv_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN"
+    ],
+    "task_ids": [
+      "task_soYvbO8Qvd428Qpds8uGbjBSUEW5Sx6PSgY9Zi6SHTF",
+      "task_legBR388zo5qyVk8Rveofapqrl1gsNGUzAS51CrWB0o",
+      "task_O14qQXF4teJI1V8ttNlZtGQnUXMSSZnneSzuqCqKIvL"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [
+      "tasting_lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN"
+    ],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-03-22T00:43:38.949Z",
+    "latest_outbound_at": "2026-04-03T20:53:19.872Z",
+    "last_activity_at": "2026-04-03T20:53:19.872Z",
+    "next_due_at": "2026-02-16T14:00:00+00:00",
+    "created_at": "2026-01-14T19:08:50.457000+00:00",
+    "updated_at": "2026-04-11T12:42:53.754000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 07. Booked Tastings",
+      "01. 😎 Andre",
+      "-05. 📅 Event is far away (12mo+)",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "Created",
+      "0",
+      "02301"
+    ],
+    "notes_summary": "Brockton Zip: 02301\nPeople 100\nEvent Desc: wedding\nEvent Date: 10/10/2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 33,
+      "momentum": 100,
+      "friction": 0,
+      "relationship_strength": 85,
+      "close_probability": 75,
+      "revenue_value": 25,
+      "attention_cost": 38,
+      "next_action_clarity": 80,
+      "priority_score": 52,
+      "saveability_score": 76,
+      "decay_risk_score": 15,
+      "action_now_score": 54
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Confirm tasting details and next step",
+      "recommended_channel": "sms",
+      "reasoning_tags": [
+        "A: 🔷 07. Booked Tastings"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv",
+    "crm_source": "close",
+    "display_name": "Samantha Machie",
+    "company_name": null,
+    "primary_contact_id": "cont_h90nRaUucRA5T4aMYJuVWJBTKgZq1ybs5554dDZ7ZQG",
+    "contact_ids": [
+      "cont_h90nRaUucRA5T4aMYJuVWJBTKgZq1ybs5554dDZ7ZQG",
+      "cont_IgA1kWDr1lJNKGfJo1ODVay2Vwc0pes4ube7pyCKIhC"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_kMlfadVQinSWydrKxKJlgEPsNVu5btU8Zwee8ITQVEB"
+    ],
+    "conversation_ids": [
+      "conv_lead_JDEZeeoUvNhITgq02QSJ8dpunBzOaiBuszPzW459Jwv"
+    ],
+    "task_ids": [
+      "task_1EEFvQPPhEzzqlZkK7JcRlb9ybji0tkLyabSNcsbZ6q"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:10:18.809Z",
+    "last_activity_at": "2026-04-13T19:10:18.809Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-28T18:54:30.837000+00:00",
+    "updated_at": "2026-04-13T20:04:43.327000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2027-04-02T15:00:00+00:00",
+      "02148"
+    ],
+    "notes_summary": "Malden Zip: 02148\nPeople 40\nEvent Desc: Wedding\nEvent Date: 4/2027\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 66,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 47,
+      "revenue_value": 10,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 38,
+      "saveability_score": 52,
+      "decay_risk_score": 39,
+      "action_now_score": 46
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Samantha Machie\nCampaign: RODS WEDDING & FACELESS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF",
+    "crm_source": "close",
+    "display_name": "Sierra Harken & Zachariah",
+    "company_name": null,
+    "primary_contact_id": "cont_oHZOprsuwoQ2wLW5VkPkyc9m6ceWcFUgu2GfdBWWkKC",
+    "contact_ids": [
+      "cont_oHZOprsuwoQ2wLW5VkPkyc9m6ceWcFUgu2GfdBWWkKC"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_Eb8dUxJZXzjapwSyCz07p25FRYjITWx6APVnFYEhgKK",
+      "oppo_WVCYCf2yWCsgnv7ivnSnODWWMnkKbIxsRADI1Ea21pd"
+    ],
+    "conversation_ids": [
+      "conv_lead_Peo5fr1BVFdY07YWUYrs6wuLMQQCKskUDH5poUgyafF"
+    ],
+    "task_ids": [
+      "task_fYiWNVJkWxbZKXn7dpSRS2C8cVRRYJObfO4dlEA6UXl",
+      "task_14OSeT1PHSpI6ey5GZXpZY0yJTG0MPgeoVlUeZ9SUBL"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:42:50.159Z",
+    "last_activity_at": "2026-04-13T21:42:50.159Z",
+    "next_due_at": "2026-02-12T14:00:00+00:00",
+    "created_at": "2026-02-12T14:02:54.365000+00:00",
+    "updated_at": "2026-04-13T21:50:13.346000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "✔️ Handled",
+      "01. 📞 DAY 1 CALL",
+      "2026-10-04T15:00:00+00:00",
+      "Westmoreland, NH"
+    ],
+    "notes_summary": "Wedding date\nThey request: Oct 4, 2026\n\nGuest count\n100 guests\nThey’re flexible\n\nVenue: Stone Garden",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 94,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 54,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 45,
+      "saveability_score": 61,
+      "decay_risk_score": 34,
+      "action_now_score": 54
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Andre contact her",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE",
+    "crm_source": "close",
+    "display_name": "Sirena Ivette Ramos",
+    "company_name": null,
+    "primary_contact_id": "cont_QA4RzcuEWEHufT2OT2q9J5o472sYzptp8PjcbwLeWmK",
+    "contact_ids": [
+      "cont_QA4RzcuEWEHufT2OT2q9J5o472sYzptp8PjcbwLeWmK",
+      "cont_cvm2YBqa5wUaLyQe8lkBcuEr2CqYxMXjTMqdYczI56C"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_frOM83Q5CJtjbiclcX5g7gt6BR46xgONCYaft9pbS0q"
+    ],
+    "conversation_ids": [
+      "conv_lead_4zCQxDWc1gIIxKnK5G20fsW2PTpvMhKBMyMIvKO29KE"
+    ],
+    "task_ids": [
+      "task_WJPmrI4Ax0kLlaYQeIas2EEtW3juCjkcPYXr8WsY5bq"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T19:09:43.895Z",
+    "last_activity_at": "2026-04-13T19:09:43.895Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-02T15:36:55.431000+00:00",
+    "updated_at": "2026-04-13T21:28:45.275000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2026-08-15T15:00:00+00:00",
+      "01610"
+    ],
+    "notes_summary": "Worcester Zip: 01610\nPeople 80\nEvent Desc: Sweet sixteen\nEvent Date: 08/15/2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 60,
+      "friction": 25,
+      "relationship_strength": 42,
+      "close_probability": 45,
+      "revenue_value": 17,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 37,
+      "saveability_score": 50,
+      "decay_risk_score": 41,
+      "action_now_score": 45
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get her on the phone",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB",
+    "crm_source": "close",
+    "display_name": "Suzi & Chris",
+    "company_name": null,
+    "primary_contact_id": "cont_SH0obDB9hQTYybm0Ik6MxsXVYrgyDE8ABUyorGIqNh3",
+    "contact_ids": [
+      "cont_SH0obDB9hQTYybm0Ik6MxsXVYrgyDE8ABUyorGIqNh3"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_bA5DFXi2mjACdctAzSkn7dTYxqgwlFKJyOc3RAr9sYq"
+    ],
+    "conversation_ids": [
+      "conv_lead_HOhFJodDowZ3uo7MyTrFEhewq6hbIlPNCYZzF481RbB"
+    ],
+    "task_ids": [
+      "task_iyjb9CkOqvwWoMZrhhZ90TZrHnjt8pgqEn72cywadxd"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T21:42:43.580Z",
+    "last_activity_at": "2026-04-13T21:42:43.580Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-02-16T14:09:08.683000+00:00",
+    "updated_at": "2026-04-13T21:42:43.049000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "204 Hartford Pike, Dayville, CT 06241, Estados Unidos",
+      "2026-06-26T15:00:00+00:00",
+      "Evergreen Farms"
+    ],
+    "notes_summary": "Wedding details\nLocation\nDayville, CT\nWithin your serviced market of Eastern Connecticut\nVenue: Evergreen Farms\nWedding date\nThey request: Jun 26, 2026\nBudget\nWedding budget: Up to $25,000\nTheir budget exceeds your starting price of $500\nGuest count\nUp to 150 guests\nhttps://www.zola.com/wedding-vendors/wedding-venues/evergreen-farms",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 98,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 55,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 46,
+      "saveability_score": 62,
+      "decay_risk_score": 33,
+      "action_now_score": 55
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "NEPQ sent 3/13. Check for reply. March 29 tasting push. Get them on the phone and into Tasting s",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G",
+    "crm_source": "close",
+    "display_name": "Terry Heinrich",
+    "company_name": null,
+    "primary_contact_id": "cont_HJRCKkamwpdC3lSFGoHu2F38BSIiQLXRBMPRi3tWDR0",
+    "contact_ids": [
+      "cont_HJRCKkamwpdC3lSFGoHu2F38BSIiQLXRBMPRi3tWDR0"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_tWf5JjaQkCOfdqSsxuV9RTRwXMmkHflLSJY6d0Fo24N"
+    ],
+    "conversation_ids": [
+      "conv_lead_ifLPTRHrJHyLiNxS14J12F6LeAwSmecPllkwfCNR56G"
+    ],
+    "task_ids": [
+      "task_AELEYkwjbVlA1tNtuflLsK0dyoV3KEExaysJ3ZSCg1B",
+      "task_70MhrqcyjXkt9e2EeotW1K6mI8ngEZrOrAOA9zZjH9x",
+      "task_riqMfN7Htfawdr2LUQZOlcJZsuUyqiJ9xJxejDuxx1i"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T15:40:33.973Z",
+    "last_activity_at": "2026-04-13T15:40:33.973Z",
+    "next_due_at": "2026-03-19",
+    "created_at": "2026-03-12T23:55:25.771000+00:00",
+    "updated_at": "2026-04-13T18:59:55.534000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2026-08-15T15:00:00+00:00"
+    ],
+    "notes_summary": "What Type of Event?: Wedding\nZip code: 02740\nFull name: Terry Heinrich\nEmail: terry-heinrich@hotmail.com\nPhone number: (508) 717-2815\nEstimated Guest Count: 100\nEvent Date: 08/ 15/26",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 76,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 49,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 42,
+      "saveability_score": 57,
+      "decay_risk_score": 37,
+      "action_now_score": 49
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Terry Heinrich — Day 3: Check reply. If no response, send ballpark + tasting invite.",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS",
+    "crm_source": "close",
+    "display_name": "Traci Troy",
+    "company_name": null,
+    "primary_contact_id": "cont_6mguFnGr2L5plPbLBkQY97323hkgb3JSZLs0OxItf6p",
+    "contact_ids": [
+      "cont_6mguFnGr2L5plPbLBkQY97323hkgb3JSZLs0OxItf6p",
+      "cont_gRf1TXmROH7jfSn0t8HfzX2Qyhr2P4lKa4b5UwhTODl"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_Sa6Gl3zlNvqgGuK3vxDkSdoMjyoGJFNqIB9lSbSONG4"
+    ],
+    "conversation_ids": [
+      "conv_lead_3sRyDxnl8JuQPiZW3sDONOKfnJzbzoB1QAeoBoKtYFS"
+    ],
+    "task_ids": [
+      "task_CmCbPae618UOUAupPYHpmyu6fhoagc68p7doumC4Cvl"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": null,
+    "latest_outbound_at": "2026-04-13T18:00:31.435Z",
+    "last_activity_at": "2026-04-13T18:00:31.435Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-22T21:50:00.149000+00:00",
+    "updated_at": "2026-04-13T18:00:31.293000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "01230"
+    ],
+    "notes_summary": "Housatonic Zip: 01230\nPeople 60-70\nEvent Desc: Wedding\nEvent Date: July 18 2026\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 82,
+      "friction": 25,
+      "relationship_strength": 50,
+      "close_probability": 51,
+      "revenue_value": 16,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 42,
+      "saveability_score": 58,
+      "decay_risk_score": 36,
+      "action_now_score": 51
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Traci Troy\nCampaign: 3 STILLS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu",
+    "crm_source": "close",
+    "display_name": "Urisha Joshi",
+    "company_name": null,
+    "primary_contact_id": "cont_ELfC1xn534ACCMNc767UGRAMset0r2oXfQ5qu9oOv6c",
+    "contact_ids": [
+      "cont_ELfC1xn534ACCMNc767UGRAMset0r2oXfQ5qu9oOv6c"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_MloVtkUVlhLl484GNtXs6mYqVKbkDf19y5qbjWy9pTy"
+    ],
+    "conversation_ids": [
+      "conv_lead_Dl89GcEx7ZbNoZPCkNCq0MyTA0fQA7wT9n1o4sZveeu"
+    ],
+    "task_ids": [
+      "task_5GnhABMJfErTQZx71kND9loz38udtF5r3qovu0jATXq"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-04-13T20:46:27.536Z",
+    "latest_outbound_at": "2026-04-13T20:48:53.630Z",
+    "last_activity_at": "2026-04-13T20:48:53.630Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-13T19:48:13.370000+00:00",
+    "updated_at": "2026-04-13T20:51:54.011000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 01. Today's Leads",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "backyard party"
+    ],
+    "notes_summary": "Email: urishajoshi@gmail.com\nPhone number: +8574988489\nFull name: Urisha Joshi\nZip code: 02176\nEstimated Guest Count: 25\nWhat Type of Event?: Gargering\nEvent Date:\nBackyard party",
+    "sales_scoring": {
+      "urgency": 98,
+      "momentum": 52,
+      "friction": 25,
+      "relationship_strength": 37,
+      "close_probability": 43,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 47,
+      "saveability_score": 54,
+      "decay_risk_score": 59,
+      "action_now_score": 57
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Change the name of the lead once you find it what it is (both lead record and contact name)",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 01. Today's Leads",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ",
+    "crm_source": "close",
+    "display_name": "Veronica Houck",
+    "company_name": null,
+    "primary_contact_id": "cont_3UdWgI6AxdP1yQzdfB0mryYIfLjud0LsmlTxUc4ovZA",
+    "contact_ids": [
+      "cont_3UdWgI6AxdP1yQzdfB0mryYIfLjud0LsmlTxUc4ovZA",
+      "cont_ZNFwlL7Gv9E1Oty4Zf6Yme3umnYvbiUxHkMOQqSJBG6"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_RrZRIicvbHFhoaLFjmqYnPAcsXZ5dBkd8B2CUu6kFUJ"
+    ],
+    "conversation_ids": [
+      "conv_lead_Wujmqfbs3wP0oFDxXl92BX0BHZrOOh02KlMI89n2CuQ"
+    ],
+    "task_ids": [
+      "task_0x1yyhX7HHuFus1RTzzDmx2yf846CsX8KlldhKXVGwR"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-03-13T23:24:59.752Z",
+    "latest_outbound_at": "2026-04-13T18:00:27.016Z",
+    "last_activity_at": "2026-04-13T18:00:27.016Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-13T23:01:49.834000+00:00",
+    "updated_at": "2026-04-13T18:00:26.532000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "05. 📍 Within immediate area",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "01570"
+    ],
+    "notes_summary": "Zip: 01570\nPeople 75\nEvent Desc: Wedding\nEvent Date: \nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 80,
+      "friction": 25,
+      "relationship_strength": 57,
+      "close_probability": 50,
+      "revenue_value": 19,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 43,
+      "saveability_score": 60,
+      "decay_risk_score": 36,
+      "action_now_score": 50
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Facebook Lead Ads: Veronica Houck\nCampaign: 3 STILLS",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB",
+    "crm_source": "close",
+    "display_name": "Williams Brown",
+    "company_name": null,
+    "primary_contact_id": "cont_1T5JLlVu2DDHs7gNco8E0ZW6ZRtTPvDWeKbmQru07TK",
+    "contact_ids": [
+      "cont_1T5JLlVu2DDHs7gNco8E0ZW6ZRtTPvDWeKbmQru07TK",
+      "cont_kvi2OThpkAbG5iM5sBFu6VAGkRQVkbCH3qutFxql0yM",
+      "cont_YwhXL2w0IrHZtmj84zPILSPXtw5awDZ2SotaQlHhNw4"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_axlG1EJZJK5uKw0u1Crqf0nsmNHkMDsimPaPfbDCLKi"
+    ],
+    "conversation_ids": [
+      "conv_lead_WqWCgjiQYKowFNQYBrULiQG1gYS90r3pIvUYt1sPphB"
+    ],
+    "task_ids": [
+      "task_eaOau0Gz6NY8fN9X03V2lern98wMaGwPUciOZRO4Vtg"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-04-09T14:37:13.204Z",
+    "latest_outbound_at": "2026-04-13T21:14:53.412Z",
+    "last_activity_at": "2026-04-13T21:14:53.412Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-03-21T16:04:53.175000+00:00",
+    "updated_at": "2026-04-13T21:14:53.295000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2027-05-21T15:00:00+00:00",
+      "Newton, MA"
+    ],
+    "notes_summary": "Suspects of scam all have the same phone number\n\nWilliams Brown's wedding details\nWedding date: Wed 4/15/2026\nGuest count: 151 - 200\nWedding location: Hampden, MA\nPartner's Name: Garcia Olivia\n\nNino Bennys Wedding Details\nWedding Date: Sun, Apr 5, 2026\nWedding Location: Haverhill, MA\nNumber of Guests: 151 - 200\nPartner's Name: Mira Vera\n\nDavid Anthony's wedding details\nWedding date: Fri 5/21/2027\nGuest count: 101 - 150\nWedding location: Newton, MA",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 100,
+      "friction": 25,
+      "relationship_strength": 64,
+      "close_probability": 55,
+      "revenue_value": 20,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 47,
+      "saveability_score": 67,
+      "decay_risk_score": 31,
+      "action_now_score": 55
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Follow up",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ",
+    "crm_source": "close",
+    "display_name": "Yesenia Salazar",
+    "company_name": null,
+    "primary_contact_id": "cont_cqpMxQ8cqUpc46ajM1D4xGajBAOH7mW1B1O16oVysc1",
+    "contact_ids": [
+      "cont_cqpMxQ8cqUpc46ajM1D4xGajBAOH7mW1B1O16oVysc1"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "⚪ Probably Not",
+    "opportunity_ids": [
+      "oppo_IsfHcB9rK46EZWhxDeF6RAoWvexOS8LulnwT7ZNmFex"
+    ],
+    "conversation_ids": [
+      "conv_lead_2I1FOPX6Ez1Xe0s85CKMwymeNn1sesJj2PVtXRBTVOJ"
+    ],
+    "task_ids": [
+      "task_vSXzOqeziC2VLdZUBnY9SsORQSumTyHYfmv5a4zcKuB"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2026-04-13T19:49:17.294Z",
+    "latest_outbound_at": "2026-04-13T16:35:10.134Z",
+    "last_activity_at": "2026-04-13T19:49:17.294Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-13T12:58:52.335000+00:00",
+    "updated_at": "2026-04-13T19:49:17.312000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 01. Today's Leads",
+      "01. 😎 Andre",
+      "01. 📞 DAY 1 CALL",
+      "2026-05-30T15:00:00+00:00"
+    ],
+    "notes_summary": "Estamos buscando un catering para una fiesta de graduación sábado 30 de mayo con 80 personas. Estamos en North Chelmsford Ma",
+    "sales_scoring": {
+      "urgency": 98,
+      "momentum": 46,
+      "friction": 20,
+      "relationship_strength": 49,
+      "close_probability": 43,
+      "revenue_value": 3,
+      "attention_cost": 45,
+      "next_action_clarity": 80,
+      "priority_score": 45,
+      "saveability_score": 54,
+      "decay_risk_score": 57,
+      "action_now_score": 55
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": false,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Contact yessenia at 11",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 01. Today's Leads"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz",
+    "crm_source": "close",
+    "display_name": "Yuni Colindres",
+    "company_name": null,
+    "primary_contact_id": "cont_lGJ3shwTxKN79RbCJW3k30vJCNhCgadsDila2gJXXQr",
+    "contact_ids": [
+      "cont_lGJ3shwTxKN79RbCJW3k30vJCNhCgadsDila2gJXXQr",
+      "cont_xmf1JvDktzcI5zv00txEg3kLvFBkuwSZPR4pAWkMcJM"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔘 Maybe",
+    "opportunity_ids": [
+      "oppo_kv52oYlo7ZQnzgqjlWNBWwlq9A1stSznlBM6UsxaANX"
+    ],
+    "conversation_ids": [
+      "conv_lead_Pqqzq7VPBzIoQM2inotY9ExRMVxdQBg4NGw0K2HFtXz"
+    ],
+    "task_ids": [
+      "task_2oguflVmObJN7VRBCwXTi59lxdTH4PANEuYFraek5wZ"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": "Comeketo"
+    },
+    "latest_inbound_at": "2026-04-08T21:43:34.636Z",
+    "latest_outbound_at": "2026-04-13T18:00:30.376Z",
+    "last_activity_at": "2026-04-13T18:00:30.376Z",
+    "next_due_at": "2026-04-14",
+    "created_at": "2026-04-08T16:53:20.768000+00:00",
+    "updated_at": "2026-04-13T18:00:30.246000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 02. Day 1-5 Cadence",
+      "A: 🔷 05. No Connect Made",
+      "01. 😎 Andre",
+      "5x5",
+      "✉️ FB Lead Form 1EMAIL",
+      "Comeketo",
+      "01. 📞 DAY 1 CALL",
+      "Created",
+      "0",
+      "2026-05-31T15:00:00+00:00",
+      "STILLS  GALLERY  $19 PACKAGE",
+      "3 STILLS",
+      "01. [CATER[ LF EVERGREEN - QUOTE",
+      "02860"
+    ],
+    "notes_summary": "Pawtucket Zip: 02860\nPeople 50\nEvent Desc: baby shower\nEvent Date: 5/31\nCampaign Name:\n01. [CATER[ LF EVERGREEN - QUOTE",
+    "sales_scoring": {
+      "urgency": 53,
+      "momentum": 72,
+      "friction": 25,
+      "relationship_strength": 52,
+      "close_probability": 48,
+      "revenue_value": 11,
+      "attention_cost": 47,
+      "next_action_clarity": 80,
+      "priority_score": 39,
+      "saveability_score": 55,
+      "decay_risk_score": 38,
+      "action_now_score": 48
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": true,
+      "has_budget_friction": false,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Get her on the phone and into testing",
+      "recommended_channel": "call",
+      "reasoning_tags": [
+        "A: 🔷 02. Day 1-5 Cadence",
+        "A: 🔷 05. No Connect Made"
+      ]
+    }
+  },
+  {
+    "lead_id": "lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr",
+    "crm_source": "close",
+    "display_name": "Zilah conserve",
+    "company_name": null,
+    "primary_contact_id": "cont_iUf4YJ67ruTPmzCNTJA9ExzgqqVXY8T8LBBbVrUE9Sj",
+    "contact_ids": [
+      "cont_iUf4YJ67ruTPmzCNTJA9ExzgqqVXY8T8LBBbVrUE9Sj",
+      "cont_hDKxS7fDnAJGihpVJcKjhzptwTQQM3ZDzgD7mO3xMue"
+    ],
+    "owner_user_id": "andre",
+    "lead_status": "🔴 Lost",
+    "opportunity_ids": [
+      "oppo_xS1BQKdw9jXk8w4uva62dwwlnC5TejDQqD2UzBtbV2w"
+    ],
+    "conversation_ids": [
+      "conv_lead_xLpKLnopgcCCodYgAbw5oGBpf4cRFTPebajYCCp0XKr"
+    ],
+    "task_ids": [
+      "task_jTEFQMvwrdtdqgXDf9QSi69fMyYtgPFQwvtxpqxnIqd",
+      "task_aaLaSrSvsi4lunj01kxLk9iUqVb07ZFrWAU6mWtx3RT",
+      "task_962shOuHPIfXQjsTWO3ESVufea8Wq7yr3CeujXNHYNs",
+      "task_F2ATZgsCjCLXMkys3PUfKMezvkWeDuN66lbFDxWTnrd",
+      "task_5SErN5OsmOFzPCfuIm60eyNGt8kCACp59GwU9L0IHRn",
+      "task_IsyvfuMJt9QZhTg6Hz8c15spG4xemw6geYqWHvORaxL",
+      "task_qc6GrZgJVFufJIYzCcKb0Fw21uvEHSbbV3RCKCwKoks"
+    ],
+    "quote_ids": [],
+    "tasting_ids": [],
+    "custom_field_values": {
+      "event_date": null,
+      "event_type": null,
+      "guest_count": null,
+      "budget_range": null,
+      "venue": null,
+      "city": null,
+      "source_channel": null
+    },
+    "latest_inbound_at": "2025-12-30T18:27:26.656Z",
+    "latest_outbound_at": "2026-03-05T01:29:35.382Z",
+    "last_activity_at": "2026-03-05T01:29:35.382Z",
+    "next_due_at": "2025-07-21T13:00:00+00:00",
+    "created_at": "2025-07-21T15:35:12.812000+00:00",
+    "updated_at": "2026-03-19T00:32:01.190000+00:00",
+    "archived": false,
+    "tags": [
+      "A: 🔷 08. Long-Term / Dormant Followup",
+      "01. 😎 Andre",
+      "05. ➡️ Visited high-intent web pages / website",
+      "05. 💵 Big Event / Budget",
+      "5x5",
+      "✉️ FB Lead Form 1SMS 1EMAIL",
+      "🚫 Lost - Win back",
+      "02. 📞 DAY 2 CALL",
+      "03. 💌 DAY 3 EMAIL ONLY",
+      "2600:4040:5a00:3000:e566:d83f:9e9c:3a38",
+      "Yes",
+      "Yes",
+      "-",
+      "Pawtucket",
+      "49",
+      "02860"
+    ],
+    "notes_summary": "101-200\n🥂 Bar & Beverage Service; 🚚 Dropoff Style Catering; 🔥 Grilling On Site (Churrasco); 🍢 Finger Foods & Appetziers; 🛎️ Full-Service Catering\nWedding\n8/1322027\nFrom comeketocatering.com",
+    "sales_scoring": {
+      "urgency": 0,
+      "momentum": 100,
+      "friction": 35,
+      "relationship_strength": 85,
+      "close_probability": 53,
+      "revenue_value": 100,
+      "attention_cost": 42,
+      "next_action_clarity": 45,
+      "priority_score": 47,
+      "saveability_score": 73,
+      "decay_risk_score": 16,
+      "action_now_score": 41
+    },
+    "derived_flags": {
+      "is_stalled": false,
+      "is_hot": false,
+      "has_quote_out": true,
+      "has_upcoming_event": false,
+      "has_pending_promise": false,
+      "has_budget_friction": true,
+      "needs_human_review": true
+    },
+    "recommended_outputs": {
+      "recommended_next_action": "Send reactivation follow-up",
+      "recommended_channel": "email",
+      "reasoning_tags": [
+        "A: 🔷 08. Long-Term / Dormant Followup"
+      ]
+    }
+  }
+]

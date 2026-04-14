@@ -2405,6 +2405,1389 @@
       "summary": "Close direct file-tree sync started",
       "details": "Source: server.js auto-execute",
       "related": []
+    },
+    {
+      "ts": "2026-04-13T22:46:15.995Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T22:46:16.783Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw\",\"name\":\"ETS EQUIPMENT\",\"requested_at\":\"2026-04-13T22:46:16.779Z\",\"automation_reason\":\"High-priority active opportunity\"}",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-13T22:46:16.994Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\",\"name\":\"Laine Martins\",\"requested_at\":\"2026-04-13T22:46:16.992Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Laine Martins"
+      ]
+    },
+    {
+      "ts": "2026-04-13T22:46:17.215Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY\",\"name\":\"Karla Velazquez\",\"requested_at\":\"2026-04-13T22:46:17.213Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Karla Velazquez"
+      ]
+    },
+    {
+      "ts": "2026-04-13T22:46:17.427Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "12 due now · 70 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T22:46:17.432Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "12 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T22:48:09.277Z",
+      "type": "ai",
+      "category": "draft_followup",
+      "summary": "AI draft followup",
+      "details": "Hi Ari — saw you’re still in the exploring stage, and I don’t want this to turn into “someday” planning.\n\nIf you’re comparing caterers, the real question is whether you want a Brazilian churrasco expe...",
+      "related": [
+        "Ari"
+      ]
+    },
+    {
+      "ts": "2026-04-13T22:48:18.861Z",
+      "type": "ai",
+      "category": "analyze_deal",
+      "summary": "AI analyze deal",
+      "details": "Right now this is a hot lead in the “they’ve heard of us and seem open” phase. With 80% confidence but no event date/venue/guests recorded, the real decision the buyer is facing is whether to keep the...",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-13T22:49:00.699Z",
+      "type": "ai",
+      "category": "draft_followup",
+      "summary": "AI draft followup",
+      "details": "You’ve probably got a few moving pieces still unsettled on this event, and at this stage the real question usually isn’t “food or no food” — it’s whether the team handling it is going to make this eas...",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-13T22:49:28.524Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw\",\"name\":\"ETS EQUIPMENT\",\"requested_at\":\"2026-04-13T22:49:28.479Z\"}",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-13T22:51:17.280Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T22:57:15.786Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:00:15.530Z",
+      "type": "ai",
+      "category": "hrmr_rating",
+      "summary": "Oracle reply graded A",
+      "details": "Smoke test: confirms file backed HRMR writes. Remove if desired.",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:02:57.327Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:04:58.567Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Best moves today: stop working the whole pipeline and attack the stalls that can still be moved.\n\nFirst, **Laine Martins**. This is the highest-action lead in the lattice right now, and it’s still ear...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:05:42.174Z",
+      "type": "ai",
+      "category": "analyze_deal",
+      "summary": "AI analyze deal",
+      "details": "This is not a real deal yet — it’s still a lead with money attached. The buyer hasn’t made a decision because the decision itself hasn’t been defined: no event, no venue, no guest count, no timetable....",
+      "related": [
+        "Laine Martins"
+      ]
+    },
+    {
+      "ts": "2026-04-13T23:07:18.305Z",
+      "type": "ai",
+      "category": "oracle_conversation_archived",
+      "summary": "Oracle conversation archived",
+      "details": "4 messages · 0 grade(s) · What are my top 3 priority deals and what should I do with each right now?",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:07:56.857Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "You’re not in a volume problem. You’re in a leverage problem.\n\nToday’s money is sitting in three places: the big open deals that can move with one good conversation, the tastings that are close enough...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:08:46.622Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:14:02.382Z",
+      "type": "ai",
+      "category": "lattice_next_best_action",
+      "summary": "AI lattice next best action",
+      "details": "## Single next move\n\n**Call Laine Martins now** on **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**.\n\nThis is the best move because it has the highest immediate action score in the lattice and the...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:14:32.617Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:14:48.127Z",
+      "type": "ai",
+      "category": "lattice_next_best_action",
+      "summary": "AI lattice next best action",
+      "details": "## Single next move\n\n**Call Laine Martins now** on **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**.\n\nThis is the best move because it’s the highest-action lead in the lattice and it has the faste...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:15:17.653Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Subject: Curious About Your Catering Plans\n\nHi Laine,\n\nThanks for reaching out. Sounds like you care about getting this right, but you also don’t want the process to turn into a second job.\n\nMost peop...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:16:14.159Z",
+      "type": "sync",
+      "category": "close_lead_sweep",
+      "summary": "Close lead swept: Laine Martins",
+      "details": "3 emails · 7 SMS · 2 calls · 1 tasks",
+      "related": [
+        "Laine Martins"
+      ]
+    },
+    {
+      "ts": "2026-04-13T23:19:56.441Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:25:45.993Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:31:38.980Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:32:26.043Z",
+      "type": "ai",
+      "category": "oracle_conversation_archived",
+      "summary": "Oracle conversation archived",
+      "details": "8 messages · 0 grade(s) · Give me my game plan for today. Prioritize by what moves the most money the fastest. Be sp",
+      "related": [
+        "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv"
+      ]
+    },
+    {
+      "ts": "2026-04-13T23:32:53.953Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Your money is sitting in three places today: fast-moving warm deals, stalled tasting conversions, and anything with a real reply already in motion. Ignore the cold noise until the high-intent stuff is...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:33:21.530Z",
+      "type": "ai",
+      "category": "lattice_next_best_action",
+      "summary": "AI lattice next best action",
+      "details": "## Single next move\n\n**Call Laine Martins now.**  \nLead: **Laine Martins**  \nLead ID: **lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv**  \nChannel: **call**  \nDeal: **Facebook Lead Ads: Laine Martin...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:37:39.001Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:43:39.023Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:46:39.036Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "13 due now · 70 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:49:39.033Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-13T23:55:39.047Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:01:39.006Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:07:39.015Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:13:39.020Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:19:39.001Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:25:39.007Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:31:39.012Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:37:39.017Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:43:39.014Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:46:39.026Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "79 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:47:39.022Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "79 due now · 8 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:49:39.018Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T00:55:39.029Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:01:39.060Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:07:39.064Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:13:39.071Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:19:38.975Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:25:38.971Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:31:38.970Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:37:38.966Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:43:39.040Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:47:39.039Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "79 due now · 8 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:49:39.033Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T01:55:39.034Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:01:39.038Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:07:39.124Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:13:39.139Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:19:39.149Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:25:39.164Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:31:39.171Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:37:39.183Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:43:39.192Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:46:39.208Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "79 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:47:39.214Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "79 due now · 8 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:49:39.228Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T02:50:39.246Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw\",\"name\":\"ETS EQUIPMENT\",\"requested_at\":\"2026-04-14T02:50:39.229Z\",\"automation_reason\":\"High-priority active opportunity\"}",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-14T02:50:39.844Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\",\"name\":\"Laine Martins\",\"requested_at\":\"2026-04-14T02:50:39.828Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Laine Martins"
+      ]
+    },
+    {
+      "ts": "2026-04-14T02:50:40.072Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY\",\"name\":\"Karla Velazquez\",\"requested_at\":\"2026-04-14T02:50:40.065Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Karla Velazquez"
+      ]
+    },
+    {
+      "ts": "2026-04-14T02:55:39.244Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:01:39.261Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:07:39.272Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:13:39.275Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:19:39.290Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:25:39.302Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:31:39.312Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:37:39.337Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:43:39.349Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:47:39.366Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "79 due now · 8 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:49:39.364Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T03:55:39.383Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:01:38.697Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:07:03.644Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:13:03.656Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:19:03.667Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:25:03.665Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:31:03.826Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:36:57.236Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:37:49.787Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Approved. Call Laine Martins now.\n\nOpen with a clean frame: you’re following up because the event looks important and you want to make the next step simple. Then quickly sort the deal into the right l...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:42:57.191Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:46:57.202Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "79 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:47:57.256Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "79 due now · 8 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:48:57.211Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T04:54:57.225Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T05:00:57.231Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T05:06:57.208Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T05:12:57.213Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T05:18:57.214Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T05:24:57.212Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T05:30:57.219Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T05:36:57.226Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T06:58:42.596Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T06:58:43.368Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw\",\"name\":\"ETS EQUIPMENT\",\"requested_at\":\"2026-04-14T06:58:43.362Z\",\"automation_reason\":\"High-priority active opportunity\"}",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-14T06:58:43.619Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\",\"name\":\"Laine Martins\",\"requested_at\":\"2026-04-14T06:58:43.616Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Laine Martins"
+      ]
+    },
+    {
+      "ts": "2026-04-14T06:58:43.854Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY\",\"name\":\"Karla Velazquez\",\"requested_at\":\"2026-04-14T06:58:43.846Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Karla Velazquez"
+      ]
+    },
+    {
+      "ts": "2026-04-14T06:58:44.076Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "79 due now · 8 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T06:58:44.081Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "79 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T07:01:21.631Z",
+      "type": "sync",
+      "category": "close_lead_sweep",
+      "summary": "Close lead swept: Rebecca Almeida",
+      "details": "14 emails · 25 SMS · 25 calls · 3 tasks",
+      "related": [
+        "Rebecca Almeida"
+      ]
+    },
+    {
+      "ts": "2026-04-14T07:01:38.575Z",
+      "type": "ai",
+      "category": "lattice_action_decision",
+      "summary": "AI lattice action decision",
+      "details": "## Certification: Approved\n\n**Exact next move:**  \n**Call Rebecca Almeida now** on **lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN** to **confirm tasting details and the next step**.\n\nThis is the r...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T07:03:45.413Z",
+      "type": "ai",
+      "category": "tasting_followup",
+      "summary": "AI tasting followup",
+      "details": "Loved having you in for the tasting — the churrasco, the garlic steak, and the way the pacing felt smooth from start to finish gave a really clear picture of the experience.\n\nI know this part of the p...",
+      "related": [
+        "Rebecca Almeida"
+      ]
+    },
+    {
+      "ts": "2026-04-14T07:03:57.486Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T07:09:56.012Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:09:50.775Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:09:51.567Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_LCS2ZDBSILLFUTBXekNr3gYAGbE08omF8Pm0EkSSAxw\",\"name\":\"ETS EQUIPMENT\",\"requested_at\":\"2026-04-14T18:09:51.563Z\",\"automation_reason\":\"High-priority active opportunity\"}",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-14T18:09:51.831Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv\",\"name\":\"Laine Martins\",\"requested_at\":\"2026-04-14T18:09:51.828Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Laine Martins"
+      ]
+    },
+    {
+      "ts": "2026-04-14T18:09:52.087Z",
+      "type": "queue",
+      "category": "draft_close_crm_followup",
+      "summary": "Queued: draft close crm followup",
+      "details": "{\"lead_id\":\"lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY\",\"name\":\"Karla Velazquez\",\"requested_at\":\"2026-04-14T18:09:52.085Z\",\"automation_reason\":\"Low confidence - at risk\"}",
+      "related": [
+        "Karla Velazquez"
+      ]
+    },
+    {
+      "ts": "2026-04-14T18:09:52.443Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "61 due now · 15 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:09:52.448Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "61 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:15:49.266Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:16:11.385Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Ready. Send the lead, thread, or deal note — I’ll tell you exactly what to do next.",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:21:49.270Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:23:31.963Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:25:17.674Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: manual /api/sync/run",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:25:32.367Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "61 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:25:32.384Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "61 due now · 15 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:28:49.321Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:34:49.331Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:40:49.342Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:46:49.351Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:52:49.370Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T18:58:49.373Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:04:49.386Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:09:47.846Z",
+      "type": "ai",
+      "category": "oracle_conversation_archived",
+      "summary": "Oracle conversation archived",
+      "details": "8 messages · 0 grade(s) · Give me my game plan for today. Prioritize by what moves the most money the fastest. Be sp",
+      "related": [
+        "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+        "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN"
+      ]
+    },
+    {
+      "ts": "2026-04-14T19:10:08.190Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Your money is in the middle of the pipeline, not the pretty top-line score.\n\nThe fastest cash is not “more leads.” It’s: fix the deals already warm enough to close, then clear the ones blocking deposi...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:10:49.393Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:13:01.823Z",
+      "type": "ai",
+      "category": "draft_followup",
+      "summary": "AI draft followup",
+      "details": "Hi Rebecca — it was great having you in for the tasting. At this stage, the real question usually isn’t whether the food works; it’s whether the plan feels clear enough to move forward without surpris...",
+      "related": [
+        "Rebecca Almeida"
+      ]
+    },
+    {
+      "ts": "2026-04-14T19:14:04.315Z",
+      "type": "ai",
+      "category": "coaching_tip",
+      "summary": "AI coaching tip",
+      "details": "Rebecca is not stuck on food — she’s stuck on committing to a real event, which is why the deal is still at 20% after the tasting and the event details are blank. Right now the mistake would be chasin...",
+      "related": [
+        "Rebecca Almeida"
+      ]
+    },
+    {
+      "ts": "2026-04-14T19:14:30.333Z",
+      "type": "ai",
+      "category": "analyze_deal",
+      "summary": "AI analyze deal",
+      "details": "This isn’t a close yet — it’s a tasting that didn’t convert into a decision. The real question the buyer is facing is not “do we like the food?” It’s “do we trust this team enough to commit, and what ...",
+      "related": [
+        "Rebecca Almeida"
+      ]
+    },
+    {
+      "ts": "2026-04-14T19:16:49.410Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:22:49.415Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:25:49.411Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "59 due now · 15 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:28:49.406Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:34:49.413Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:37:50.725Z",
+      "type": "ai",
+      "category": "lattice_action_decision",
+      "summary": "AI lattice action decision",
+      "details": "## Certify: Yes — this is the right next move\n\nRebecca Almeida is the cleanest money-move on the board right now.\n\nShe’s not a cold prospect. She’s not a vague nurture lead. She’s already in tasting t...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:38:21.104Z",
+      "type": "ai",
+      "category": "lattice_action_decision",
+      "summary": "AI lattice action decision",
+      "details": "## Sign-off packet: Approved\n\n### 1) Exactly what to do next\nCall **Rebecca Almeida** **now** and confirm the tasting details.  \nDon’t “check in.” Confirm the logistics, who’s attending, and what stil...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:38:46.826Z",
+      "type": "ai",
+      "category": "lattice_action_decision",
+      "summary": "AI lattice action decision",
+      "details": "### Sign-off packet: Approved\n\nRebecca Almeida is the right next move.\n\nShe’s already past curiosity and into real event motion. That means the job now is not persuasion. It’s removing ambiguity and m...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:39:07.277Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Yes. Move off Rebecca.\n\nShe was the cleanest near-term conversion. If she’s actually done, the next best move is not another polite follow-up. It’s the next highest-money deal with real motion.\n\n### N...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:40:49.416Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:43:02.597Z",
+      "type": "ai",
+      "category": "draft_followup",
+      "summary": "AI draft followup",
+      "details": "Hey — since you’re still in the early stage, I want to make sure we’re comparing the right things before you get buried in options. For a $11.7k catering decision, the real question usually isn’t just...",
+      "related": [
+        "ETS EQUIPMENT"
+      ]
+    },
+    {
+      "ts": "2026-04-14T19:43:42.950Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Good. Then the next best move is **Laine Martins — $9,450 — Prospect**.\n\nNot because it’s prettier. Because it’s the next biggest check you can still pull forward today.\n\nLaine is still early, so the ...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:44:52.827Z",
+      "type": "sync",
+      "category": "close_lead_sweep",
+      "summary": "Close lead swept: Laine Martins",
+      "details": "3 emails · 7 SMS · 2 calls · 1 tasks",
+      "related": [
+        "Laine Martins"
+      ]
+    },
+    {
+      "ts": "2026-04-14T19:46:49.418Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:52:49.428Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:58:34.166Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "“Active” means the deal is still live in the pipeline — not won, not lost, not archived, not fully dead.\n\nIn practice here, it usually means there’s still a realistic path to revenue, even if the buye...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T19:58:49.447Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:03:49.641Z",
+      "type": "ai",
+      "category": "chat",
+      "summary": "Oracle chat",
+      "details": "Yes. In your app, **“active” should mean leads that still have a live sales motion attached to them**.\n\nSo if you have 130 total leads, only 13 “active” means only 13 are currently in a state where so...",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:04:49.455Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:10:49.467Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:16:49.475Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:22:49.485Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:25:49.493Z",
+      "type": "automation",
+      "category": "check_cadences_due",
+      "summary": "Cadence watch refreshed",
+      "details": "46 due now · 28 within 48h",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:25:49.501Z",
+      "type": "automation",
+      "category": "generate_morning_brief",
+      "summary": "Morning brief refreshed",
+      "details": "46 tasks today · 13 need attention · 0 closing this week",
+      "related": []
+    },
+    {
+      "ts": "2026-04-14T20:28:49.497Z",
+      "type": "sync",
+      "category": "crm_sync",
+      "summary": "Close direct file-tree sync started",
+      "details": "Source: server.js auto-execute",
+      "related": []
     }
   ]
 }

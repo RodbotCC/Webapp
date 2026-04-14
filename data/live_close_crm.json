@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_synced": "2026-04-13T19:39:26.835Z",
+    "last_synced": "2026-04-14T20:28:50.469Z",
     "synced_by": "server.js auto-execute",
     "source": "close-api:file-tree"
   },
@@ -24,21 +24,10 @@
       "reason": "High-priority active opportunity"
     },
     {
-      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
-      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
-      "name": "Mary McGahan",
-      "value": 9000,
-      "stage": "📲 02. Setting Tasting Appointment",
-      "confidence": 80,
-      "close_at": null,
-      "urgency": "high",
-      "reason": "High-priority active opportunity"
-    },
-    {
-      "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
-      "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
-      "name": "Karla Velazquez",
-      "value": 7245,
+      "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+      "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "name": "Laine Martins",
+      "value": 9450,
       "stage": "⬜ 00. Prospect",
       "confidence": 20,
       "close_at": null,
@@ -46,11 +35,11 @@
       "reason": "Low confidence - at risk"
     },
     {
-      "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
-      "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
-      "name": "Leslie Kearse Smith",
-      "value": 5670,
-      "stage": "📲 02. Setting Tasting Appointment",
+      "id": "oppo_ZrB4jbGK5rlp9bnnjgKgtyFLBqhzV51VowRdXyj32YZ",
+      "lead_id": "lead_kQe4s2nc81KMhW0DlyytnbeS0czIIYcmdfZf1B9deCY",
+      "name": "Karla Velazquez",
+      "value": 7245,
+      "stage": "⬜ 00. Prospect",
       "confidence": 20,
       "close_at": null,
       "urgency": "high",
@@ -79,6 +68,17 @@
       "reason": "Low confidence - at risk"
     },
     {
+      "id": "oppo_GtI7vs0EkdoOIhazvcWMUHYw5C91cguwpfYMn2MzrtV",
+      "lead_id": "lead_BO4sSWyy05VAsEeoAxUBQaM6hPRu8WJ1QQyhirsCeFJ",
+      "name": "Gaby Mejia",
+      "value": 4200,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null,
+      "urgency": "medium",
+      "reason": "Low confidence - at risk"
+    },
+    {
       "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
       "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
       "name": "Ari",
@@ -94,7 +94,7 @@
       "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
       "name": "Rebecca Almeida",
       "value": 3780,
-      "stage": "🔥 03. Booked for Tasting",
+      "stage": "🔥 04. Attended Tasting",
       "confidence": 20,
       "close_at": null,
       "urgency": "medium",
@@ -168,12 +168,12 @@
       "close_at": null
     },
     {
-      "id": "oppo_KjiRNpJZQU0rgsJMFizrBuvtQHieYb38hWfm9hhrNTE",
-      "lead_id": "lead_7cU9dAP1OgLRpq7TiC65NmIf1AIzzSUOoJA9T5e8BjI",
-      "name": "Mary McGahan",
-      "value": 9000,
-      "stage": "📲 02. Setting Tasting Appointment",
-      "confidence": 80,
+      "id": "oppo_OR6Lmd9wliPdYfHA8Hn96j4NAyj4e5CE0s2u9bVZxgy",
+      "lead_id": "lead_UFK012RmG6jHU7qc0fFYCPOTJyBko2LPa8CLrAPykKv",
+      "name": "Laine Martins",
+      "value": 9450,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
       "close_at": null
     },
     {
@@ -182,15 +182,6 @@
       "name": "Karla Velazquez",
       "value": 7245,
       "stage": "⬜ 00. Prospect",
-      "confidence": 20,
-      "close_at": null
-    },
-    {
-      "id": "oppo_uMNAbpK0x28ZkQoga35UaXtP1xV3c0WjzzTvewmDMEn",
-      "lead_id": "lead_xa4jQBsskaIvYrRoCJpFJjDHbcLRSGA5En6dTm3lF6A",
-      "name": "Leslie Kearse Smith",
-      "value": 5670,
-      "stage": "📲 02. Setting Tasting Appointment",
       "confidence": 20,
       "close_at": null
     },
@@ -213,6 +204,15 @@
       "close_at": null
     },
     {
+      "id": "oppo_GtI7vs0EkdoOIhazvcWMUHYw5C91cguwpfYMn2MzrtV",
+      "lead_id": "lead_BO4sSWyy05VAsEeoAxUBQaM6hPRu8WJ1QQyhirsCeFJ",
+      "name": "Gaby Mejia",
+      "value": 4200,
+      "stage": "⬜ 00. Prospect",
+      "confidence": 20,
+      "close_at": null
+    },
+    {
       "id": "oppo_9AxdDN5kXWlaGlj6OcVp2JiU3UqdzpnpaLECWFDOyXA",
       "lead_id": "lead_7BlXxxSZ8Z3fwInxzf1YOJo1aP9Pa6m6dMSrkSmnomK",
       "name": "Ari",
@@ -226,7 +226,7 @@
       "lead_id": "lead_4sz22T6bgDA9WBcHcroFZ1vjzhRtzH8RzCBUOVBuVLN",
       "name": "Rebecca Almeida",
       "value": 3780,
-      "stage": "🔥 03. Booked for Tasting",
+      "stage": "🔥 04. Attended Tasting",
       "confidence": 20,
       "close_at": null
     },
@@ -251,7 +251,7 @@
   ],
   "alerts": [],
   "verification": {
-    "checked_at": "2026-04-13T19:39:26.835Z",
+    "checked_at": "2026-04-14T20:28:50.469Z",
     "status": "ok",
     "metric": "close_api_file_tree",
     "coverage_pct": 100,
